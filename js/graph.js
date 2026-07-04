@@ -172,11 +172,28 @@
     edgeElasticity: 120, nestingFactor: 1.1, gravity: 0.6, numIter: 1200,
     randomize: false, componentSpacing: 90, padding: 40,
   };
-  function runLayout() {
-    cy.layout(HAS_FCOSE ? fcoseOpts : coseOpts).run();
-    cy.fit(undefined, 60);
+  // Lay out only what is VISIBLE. The default landing shows the curated core (~71
+  // nodes), so we never pay a full-ontology physics layout on load — that cost is
+  // deferred to the moment a user actually expands to the full graph, then cached.
+  const laidOut = new Set();
+  function layoutVisible(fit) {
+    const vis = cy.elements(':visible');
+    if (!vis.nodes().length) return;
+    cy.layout(Object.assign({}, HAS_FCOSE ? fcoseOpts : coseOpts, { eles: vis })).run();
+    vis.nodes('[!isCluster]').forEach((n) => laidOut.add(n.id()));
+    if (fit !== false) cy.fit(vis, 60);
   }
-  runLayout();
+  // Run physics only when a now-visible node has never been positioned; otherwise
+  // just reframe. Keeps cluster reveals and core toggles instant once warmed up.
+  function ensureLayout() {
+    let need = false;
+    cy.nodes('[!isCluster]').forEach((n) => { if (n.visible() && !laidOut.has(n.id())) need = true; });
+    if (need) { layoutVisible(true); return; }
+    const vis = cy.elements(':visible');
+    if (vis.nodes().length) cy.animate({ fit: { eles: vis, padding: 60 } }, { duration: 300 });
+  }
+  // "Recompute layout" button: force a fresh physics pass over the visible graph.
+  function runLayout() { layoutVisible(true); }
 
   // ---- Detail panel ----------------------------------------------------------
   const panel = document.getElementById('panel');
@@ -389,7 +406,7 @@
   });
 
   // Core / full-ontology toggle (reuses Bodhi's "new chip" slot). Core = the 71 curated
-  // loan-origination concepts, the clean, learner-first landing view; toggle for all 1,284.
+  // loan-origination concepts, the clean, learner-first landing view; toggle for all 3,104.
   const coreChip = document.getElementById('newChip');
   if (coreChip) {
     const coreCount = cy.nodes('[?isCore]').length;
@@ -399,10 +416,11 @@
       coreOnly = !coreOnly;
       coreChip.classList.toggle('active', coreOnly);
       applyFilters();
-      runLayout();
+      ensureLayout();   // first expansion to the full graph pays one layout, then it's cached
     });
   }
   applyFilters();                                  // land on the curated core view
+  layoutVisible(true);                             // lay out just the visible core — fast first paint
   runLayout();
 
   // ---- Cluster legend: grouped by learning phase, collapsible, with counts ---
@@ -804,7 +822,7 @@
   const welcomeCard = document.getElementById('welcomeCard');
   const WELCOME_FEATURES = [
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.8 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg>',
-      t: 'Curated core view', d: 'You start on 71 hand-picked loan-origination concepts. Toggle Core → full ontology to reveal all 1,440.' },
+      t: 'Curated core view', d: 'You start on 71 hand-picked loan-origination concepts. Toggle Core → full ontology to reveal all 3,104.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>',
       t: 'Guided tour', d: 'Walk the underwriting arc: application → borrower → collateral → LTV → decision → HMDA report.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h7"/><path d="M17 14l4 3-4 3" stroke-dasharray="3 2"/></svg>',
