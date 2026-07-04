@@ -101,7 +101,7 @@ isn't a real FIBO class, so a use case can never reference a concept that doesn'
 `okf.config.js` holds everything that isn't a concept: the domains (split into module sub-clusters),
 maturity levels, relation styling (curated bridges drawn distinctly), and the interactive flows.
 `scripts/okf.js build` emits `js/data.js`. `js/graph.js` (forked from Bodhi) renders it with
-Cytoscape + fcose; the CSS is byte-identical to Bodhi. The default view lays out only the visible
+Cytoscape + fcose; the CSS is forked from Bodhi (with our additions). The default view lays out only the visible
 core, so load stays fast even on the full 3,104-node ontology, and a use-case lens focuses one use
 case at a time.
 

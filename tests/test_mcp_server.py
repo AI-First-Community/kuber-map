@@ -20,7 +20,7 @@ def _req(method, rid=1, **params):
 def test_initialize_reports_protocol_and_server():
     r = mcp_server.handle(_req("initialize"), PACK)
     assert r["result"]["protocolVersion"] == mcp_server.PROTOCOL_VERSION
-    assert r["result"]["serverInfo"]["name"] == "bodhi-fibo-grounding"
+    assert r["result"]["serverInfo"]["name"] == "kuber-map-grounding"
 
 
 def test_tools_list_exposes_three_tools():

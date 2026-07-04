@@ -1,5 +1,5 @@
 /* ============================================================================
-   LLM BODHI — Styles
+   Kuber Map — Styles. Forked from Bodhi Map (MIT).
    Theme system: dark (default) + light, toggled via [data-theme] on <html>.
    All chrome reads from semantic CSS variables so both themes stay in sync.
    Typeface: Manrope, vendored locally (offline — no font CDN).

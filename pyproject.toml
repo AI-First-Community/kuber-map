@@ -1,5 +1,5 @@
 [project]
-name = "bodhi-fibo"
+name = "kuber-map"
 version = "0.1.0"
 description = "Curated, learner-first knowledge map of FIBO in OKF format, for humans and AI agents"
 readme = "README.md"

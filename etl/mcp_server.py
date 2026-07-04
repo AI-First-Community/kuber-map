@@ -23,7 +23,7 @@ import sys
 from retrieval import Pack
 
 PROTOCOL_VERSION = "2024-11-05"
-SERVER_INFO = {"name": "bodhi-fibo-grounding", "version": "0.1.0"}
+SERVER_INFO = {"name": "kuber-map-grounding", "version": "0.1.0"}
 
 TOOLS = [
     {

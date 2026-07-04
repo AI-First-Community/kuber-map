@@ -106,8 +106,8 @@ rationale + citation — no unverified FIBO properties are asserted.
   comparison tables), all referenced by FIBO IRI.
 - `scripts/okf.js build` reads the bundle + config and emits `js/data.js`: nodes + typed,
   provenance-tagged edges, with the flow IRIs resolved to node ids.
-- `js/graph.js` (forked from Bodhi, ~6 small edits) renders it with Cytoscape + fcose. `css` is
-  byte-identical to Bodhi. The detail card surfaces each concept's definition, examples,
+- `js/graph.js` (forked from Bodhi, then substantially extended) renders it with Cytoscape + fcose. `css` is
+  forked from Bodhi (with our additions). The detail card surfaces each concept's definition, examples,
   provenance, and its **FIBO IRI citation**.
 
 ## The context pack (`etl/export_pack.py`)

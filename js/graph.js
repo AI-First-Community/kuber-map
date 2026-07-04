@@ -1,5 +1,5 @@
 /* ============================================================================
-   LLM BODHI, Graph rendering & interaction (Cytoscape.js)
+   Kuber Map — Graph rendering & interaction (Cytoscape.js). Forked from Bodhi Map (MIT).
    ============================================================================ */
 
 (function () {
@@ -769,7 +769,7 @@
 
   function setTheme(t) {
     root.setAttribute('data-theme', t);
-    try { localStorage.setItem('bodhi-theme', t); } catch (e) {}
+    try { localStorage.setItem('kuber-theme', t); } catch (e) {}
     themeBtn.innerHTML = t === 'dark' ? SUN : MOON;
     applyGraphTheme(t);
   }
@@ -782,12 +782,12 @@
   function setDock(collapsed) {
     dockEl.classList.toggle('collapsed', collapsed);
     dockToggleBtn.classList.toggle('show', collapsed);           // show only while collapsed
-    try { localStorage.setItem('bodhi-dock', collapsed ? '1' : '0'); } catch (e) { /* ignore */ }
+    try { localStorage.setItem('kuber-dock', collapsed ? '1' : '0'); } catch (e) { /* ignore */ }
   }
   document.getElementById('dockCollapse').onclick = () => setDock(true);
   dockToggleBtn.onclick = () => setDock(false);
   let dockCollapsed = false;
-  try { dockCollapsed = localStorage.getItem('bodhi-dock') === '1'; } catch (e) { /* ignore */ }
+  try { dockCollapsed = localStorage.getItem('kuber-dock') === '1'; } catch (e) { /* ignore */ }
   setDock(dockCollapsed);
 
   // ---- Toast -----------------------------------------------------------------
@@ -970,14 +970,14 @@
   }
   function closeWelcome() {
     welcomeModal.classList.remove('open');
-    try { localStorage.setItem('bodhi-welcomed', '1'); } catch (e) { /* ignore */ }
+    try { localStorage.setItem('kuber-welcomed', '1'); } catch (e) { /* ignore */ }
   }
   welcomeModal.onclick = (e) => { if (e.target === welcomeModal) closeWelcome(); };
   document.getElementById('helpBtn').onclick = openWelcome;
   // show automatically on first visit (unless arriving via a shared deep link)
   function maybeShowWelcome() {
     let seen = false;
-    try { seen = !!localStorage.getItem('bodhi-welcomed'); } catch (e) { /* ignore */ }
+    try { seen = !!localStorage.getItem('kuber-welcomed'); } catch (e) { /* ignore */ }
     if (!seen && !location.hash) welcomeModal.classList.add('open'), renderWelcome();
   }
 
@@ -1020,14 +1020,14 @@
     activeClusters.clear();
     ALL_CLUSTERS.forEach((c) => { if (set.has(c)) activeClusters.add(c); });
     syncLegend(); applyFilters();
-    if (opts.save !== false) { try { localStorage.setItem('bodhi-mymap', [...set].join(',')); } catch (e) {} }
+    if (opts.save !== false) { try { localStorage.setItem('kuber-mymap', [...set].join(',')); } catch (e) {} }
     if (opts.hash !== false) updateHash('map=' + [...set].join(','));
     if (opts.fit !== false) { const vis = cy.nodes('[!isCluster]').filter((n) => set.has(n.data('cluster'))); if (vis.length) cy.animate({ fit: { eles: vis, padding: 55 } }, { duration: 450 }); }
   }
   function clearMap() {
     activeClusters.clear(); ALL_CLUSTERS.forEach((c) => activeClusters.add(c));
     syncLegend(); applyFilters();
-    try { localStorage.removeItem('bodhi-mymap'); } catch (e) {}
+    try { localStorage.removeItem('kuber-mymap'); } catch (e) {}
     updateHash('');
   }
   function copyMapLink(sel) {
@@ -1038,7 +1038,7 @@
   function selectedInMap() { return [...mapCard.querySelectorAll('input:checked')].map((i) => i.value); }
   function openMap() {
     let saved = [];
-    try { const s = localStorage.getItem('bodhi-mymap'); if (s) saved = s.split(','); } catch (e) {}
+    try { const s = localStorage.getItem('kuber-mymap'); if (s) saved = s.split(','); } catch (e) {}
     const isOn = (c) => saved.length ? saved.indexOf(c) !== -1 : activeClusters.has(c);
     const rows = ALL_CLUSTERS.map((c) => {
       const cl = CLUSTERS[c], cnt = GRAPH.nodes.filter((n) => n.cluster === c).length;
@@ -1151,7 +1151,7 @@
   // restore state from a shared deep link (#concept=... / #compare=... / #map=...)
   applyHash();
   // restore a saved "My Map" topic filter when not arriving via a deep link
-  if (!location.hash) { try { const svMap = localStorage.getItem('bodhi-mymap'); if (svMap) applyMap(svMap.split(','), { save: false, hash: false, fit: false }); } catch (e) {} }
+  if (!location.hash) { try { const svMap = localStorage.getItem('kuber-mymap'); if (svMap) applyMap(svMap.split(','), { save: false, hash: false, fit: false }); } catch (e) {} }
   // first-visit onboarding (skipped when arriving via a shared deep link)
   maybeShowWelcome();
 
