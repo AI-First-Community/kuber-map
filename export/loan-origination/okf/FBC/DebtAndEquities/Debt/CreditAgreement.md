@@ -5,6 +5,11 @@ description: "contractual agreement in which a debtor receives something of valu
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreement
 tags: [FBC, Release]
 core: true
+detail: "The binding contract — note plus loan and security agreement — setting the amount, rate, repayment schedule, and the lender's remedies on default."
+detail_provenance: curated
+examples:
+  - "The signed mortgage note and loan agreement between borrower and lender."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Agreements/Contracts/WrittenContract.md", provenance: fibo}
   - {type: has-contract-party, target: "/FBC/DebtAndEquities/Debt/Creditor.md", provenance: fibo}

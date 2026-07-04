@@ -5,6 +5,11 @@ description: "loan secured by real estate with no ability for the borrower to re
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/ClosedEndMortgageLoan
 tags: [LOAN, Release]
 core: true
+detail: "The common purchase or refinance mortgage: the full amount is advanced at closing and repaid on a fixed schedule, with no further draws permitted."
+detail_provenance: curated
+examples:
+  - "A 30-year fixed-rate purchase mortgage with no further draws."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/LOAN/LoansGeneral/Loans/ClosedEndCredit.md", provenance: fibo}
   - {type: is-a, target: "/LOAN/RealEstateLoans/Mortgages/LoanSecuredByRealEstate.md", provenance: fibo}

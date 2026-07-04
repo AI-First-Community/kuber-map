@@ -6,6 +6,11 @@ definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement
 tags: [LOAN, Provisional]
 core: true
+detail: "In the US these are implemented through the TILA-RESPA Integrated Disclosure (TRID) rule, giving borrowers standardized Loan Estimate and Closing Disclosure documents."
+detail_provenance: curated
+examples:
+  - "The TILA-RESPA (TRID) Loan Estimate a lender must give within 3 business days."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/LOAN/LoansGeneral/LoansRegulatory/DisclosureRequirement.md", provenance: fibo}
   - {type: confers, target: "/LOAN/LoansGeneral/LoansRegulatory/ProductDisclosureRight.md", provenance: fibo}

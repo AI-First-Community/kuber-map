@@ -1,0 +1,536 @@
+{
+  "use_case": "Securities Instruments & Issuance (capital markets)",
+  "core": [
+    {
+      "facet": "Securities (roots & forms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security",
+      "id": "Security",
+      "cluster": "FBC",
+      "title": "security",
+      "description": "financial instrument that can be bought or sold",
+      "core": true
+    },
+    {
+      "facet": "Securities (roots & forms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument",
+      "id": "DebtInstrument",
+      "cluster": "FBC",
+      "title": "debt instrument",
+      "description": "financial instrument and credit agreement evidencing monies owed by the issuer to the holder on terms as specified",
+      "core": true
+    },
+    {
+      "facet": "Securities (roots & forms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument",
+      "id": "TradableDebtInstrument",
+      "cluster": "SEC",
+      "title": "tradable debt instrument",
+      "description": "a debt instrument that is also a security, i.e., that can be bought and sold by the holder",
+      "core": true
+    },
+    {
+      "facet": "Securities (roots & forms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/EquityInstrument",
+      "id": "EquityInstrument",
+      "cluster": "FBC",
+      "title": "equity instrument",
+      "description": "financial instrument representing an ownership interest in an entity or pool of assets",
+      "core": true
+    },
+    {
+      "facet": "Securities (roots & forms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share",
+      "id": "Share",
+      "cluster": "SEC",
+      "title": "share",
+      "description": "financial instrument that signifies a unit of equity ownership in a corporation, or a unit of ownership in a mutual fund, or interest in a general or limited partnership, or a unit of ownership in a structured product, such as a real estate investment trust",
+      "core": true
+    },
+    {
+      "facet": "Securities (roots & forms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/ListedSecurity",
+      "id": "ListedSecurity",
+      "cluster": "SEC",
+      "title": "listed security",
+      "description": "registered security listed on at least one exchange",
+      "core": true
+    },
+    {
+      "facet": "Securities (roots & forms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityForm",
+      "id": "SecurityForm",
+      "cluster": "SEC",
+      "title": "security form",
+      "description": "nature of the proof of ownership of a security",
+      "core": true
+    },
+    {
+      "facet": "Bonds & debt securities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond",
+      "id": "Bond",
+      "cluster": "SEC",
+      "title": "bond",
+      "description": "tradable debt instrument representing a loan in which the issuer owes the holder(s) a debt",
+      "core": true
+    },
+    {
+      "facet": "Bonds & debt securities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/GovernmentBond",
+      "id": "GovernmentBond",
+      "cluster": "SEC",
+      "title": "government bond",
+      "description": "debt security issued by a government to fund government spending",
+      "core": true
+    },
+    {
+      "facet": "Bonds & debt securities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/CorporateBond",
+      "id": "CorporateBond",
+      "cluster": "SEC",
+      "title": "corporate bond",
+      "description": "bond issued by a company in order to raise financing",
+      "core": true
+    },
+    {
+      "facet": "Bonds & debt securities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/MunicipalBond",
+      "id": "MunicipalBond",
+      "cluster": "SEC",
+      "title": "municipal bond",
+      "description": "government bond that may be issued by a regional, rather than national, authority",
+      "core": true
+    },
+    {
+      "facet": "Bonds & debt securities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ZeroCouponBond",
+      "id": "ZeroCouponBond",
+      "cluster": "SEC",
+      "title": "zero coupon bond",
+      "description": "bond issued with a coupon rate of zero and that trades at a deep discount to face value",
+      "core": true
+    },
+    {
+      "facet": "Bonds & debt securities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FixedCouponBond",
+      "id": "FixedCouponBond",
+      "cluster": "SEC",
+      "title": "fixed coupon bond",
+      "description": "bond whose coupon rate and principal amount are fixed at the time of origination or sale and remain constant while the security is outstanding",
+      "core": true
+    },
+    {
+      "facet": "Bonds & debt securities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ConvertibleBond",
+      "id": "ConvertibleBond",
+      "cluster": "SEC",
+      "title": "convertible bond",
+      "description": "bond that gives the holder the right to convert the bond into a fixed number of shares (conversion ratio) if the equity price rises above a specified level (strike price)",
+      "core": true
+    },
+    {
+      "facet": "Bonds & debt securities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/CallableBond",
+      "id": "CallableBond",
+      "cluster": "SEC",
+      "title": "callable bond",
+      "description": "bond that includes a stipulation allowing the issuer the right to repurchase and retire the bond at the call price after the call protection period",
+      "core": true
+    },
+    {
+      "facet": "Bonds & debt securities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FloatingRateNote",
+      "id": "FloatingRateNote",
+      "cluster": "SEC",
+      "title": "floating rate note",
+      "description": "bond with a variable interest rate based on a published reference interest rate",
+      "core": true
+    },
+    {
+      "facet": "Bonds & debt securities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/TradedShortTermDebt/CommercialPaper",
+      "id": "CommercialPaper",
+      "cluster": "SEC",
+      "title": "commercial paper",
+      "description": "an unsecured short-term debt instrument typically issued by a bank, corporation, or foreign government to obtain funds to meet short-term debt obligations, such as accounts receivable, inventories, or payroll, backed only by an issuing bank or company promise to pay the face amount on the maturity date specified on the note",
+      "core": true
+    },
+    {
+      "facet": "Bonds & debt securities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/TreasuryBill",
+      "id": "TreasuryBill",
+      "cluster": "SEC",
+      "title": "treasury bill",
+      "description": "short-term zero coupon treasury obligation with a maturity ranging from one to twelve months",
+      "core": true
+    },
+    {
+      "facet": "Bonds & debt securities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/BondCoupon",
+      "id": "BondCoupon",
+      "cluster": "SEC",
+      "title": "bond coupon",
+      "description": "interest rate on a debt security that the issuer promises to pay to the holder until maturity, expressed as an annual percentage of the face value",
+      "core": true
+    },
+    {
+      "facet": "Bonds & debt securities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/SovereignDebtInstrument",
+      "id": "SovereignDebtInstrument",
+      "cluster": "SEC",
+      "title": "sovereign debt instrument",
+      "description": "debt security issued by the government of a country",
+      "core": true
+    },
+    {
+      "facet": "Equity & shares",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/CommonShare",
+      "id": "CommonShare",
+      "cluster": "SEC",
+      "title": "common share",
+      "description": "share that signifies a unit of ownership in a corporation and represents a claim on part of the corporation's assets and earnings",
+      "core": true
+    },
+    {
+      "facet": "Equity & shares",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PreferredShare",
+      "id": "PreferredShare",
+      "cluster": "SEC",
+      "title": "preferred share",
+      "description": "share that pays dividends at a specified rate and has preference over common shares in the payment of dividends and liquidation of corporate assets",
+      "core": true
+    },
+    {
+      "facet": "Equity & shares",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/NonVotingShare",
+      "id": "NonVotingShare",
+      "cluster": "SEC",
+      "title": "non-voting share",
+      "description": "share that has no voting right",
+      "core": true
+    },
+    {
+      "facet": "Equity & shares",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PartiallyPaidShare",
+      "id": "PartiallyPaidShare",
+      "cluster": "SEC",
+      "title": "partially paid share",
+      "description": "share whose payment status indicates that only a portion of the market value has been received by the company for the shares",
+      "core": true
+    },
+    {
+      "facet": "Equity & shares",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/DepositaryReceipt",
+      "id": "DepositaryReceipt",
+      "cluster": "SEC",
+      "title": "depositary receipt",
+      "description": "negotiable financial instrument issued by a trust company, security depositary, or bank that is evidence of the deposit of publicly traded securities and that facilitates the ownership of securities traded in other jurisdictions",
+      "core": true
+    },
+    {
+      "facet": "Equity & shares",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/AmericanDepositaryReceipt",
+      "id": "AmericanDepositaryReceipt",
+      "cluster": "SEC",
+      "title": "American depositary receipt",
+      "description": "depositary receipt that represents securities of a foreign company and allows that company's securities to trade in the U.S. financial markets",
+      "core": true
+    },
+    {
+      "facet": "Equity & shares",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/GlobalDepositaryReceipt",
+      "id": "GlobalDepositaryReceipt",
+      "cluster": "SEC",
+      "title": "global depositary receipt",
+      "description": "depositary receipt where a certificate issued by a depositary bank, which purchases securities of foreign companies, creates a security on a local exchange backed by those securities",
+      "core": true
+    },
+    {
+      "facet": "Equity & shares",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Dividend",
+      "id": "Dividend",
+      "cluster": "SEC",
+      "title": "dividend",
+      "description": "announced commitment to make a specific distribution of a portion of earnings to shareholders, prorated by class of security",
+      "core": true
+    },
+    {
+      "facet": "Equity & shares",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/FixedRateDividend",
+      "id": "FixedRateDividend",
+      "cluster": "SEC",
+      "title": "fixed rate dividend",
+      "description": "dividend that provides a specified annual return on the nominal value (and any premium) paid on shares",
+      "core": true
+    },
+    {
+      "facet": "Equity & shares",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareYield",
+      "id": "ShareYield",
+      "cluster": "SEC",
+      "title": "share yield",
+      "description": "ratio of the annualized dividend per share divided by the (current) price per share",
+      "core": true
+    },
+    {
+      "facet": "Securitized & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/AssetBackedSecurity",
+      "id": "AssetBackedSecurity",
+      "cluster": "SEC",
+      "title": "asset-backed security",
+      "description": "debt instrument backed by receivables other than those arising out of real estate loans or mortgages",
+      "core": true
+    },
+    {
+      "facet": "Securitized & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MortgageBackedSecurity",
+      "id": "MortgageBackedSecurity",
+      "cluster": "SEC",
+      "title": "mortgage-backed security",
+      "description": "debt obligations that represent claims to the cash flows from pools of mortgage loans, most commonly on residential property",
+      "core": true
+    },
+    {
+      "facet": "Securitized & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/CollateralizedDebtObligations/CollateralizedDebtObligation",
+      "id": "CollateralizedDebtObligation",
+      "cluster": "SEC",
+      "title": "collateralized debt obligation",
+      "description": "structured finance constructed from a portfolio of fixed income assets including corporate loans and mortgage backed securities. A special purpose vehicle (SPV) issues notes to investors in order to raise funds that are invested in a portfolio of those fixed income assets, held by the SPV as collateral for the notes. Further notes: Collateralized Debt Obligation, for example, ABS CDO which consists of a portfolio of different ABS bonds, and the payments to the holders of these trust certificates are derived from the cash flows of the ABS bonds. This CDO instrument is part of a CDO issue, consisting of individual CDO instruments of a given seniority. Often referred to as tranches and slices (Investopedia). Investopedia: Similar in structure to a collateralized mortgage obligation (CMO) or collateralized bond obligation (CBO), CDOs are unique in that they represent different types of debt and credit risk. In the case of CDOs, these different types of debt are often referred to as 'tranches' or 'slices'. Each slice has a different maturity and risk associated with it. The higher the risk, the more the CDO pays. Further details: Collateralized Debt obligations are securitized interests in pools of - generally non-mortgage - assets. Assets - called collateral - usually comprise loans or debt instruments. A CDO may be called a collateralized loan obligation (CLO) or collateralized bond obligation (CBO) if it holds only loans or bonds, respectively. Investors bear the credit risk of the collateral. Multiple tranches of securities are issued by the CDO, offering investors various maturity and credit risk characteristics.",
+      "core": true
+    },
+    {
+      "facet": "Securitized & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/Tranche",
+      "id": "Tranche",
+      "cluster": "SEC",
+      "title": "tranche",
+      "description": "segment of a pool of securities, typically debt instruments",
+      "core": true
+    },
+    {
+      "facet": "Securitized & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/Pool",
+      "id": "Pool",
+      "cluster": "SEC",
+      "title": "pool",
+      "description": "combination of resources for a common purpose or benefit",
+      "core": true
+    },
+    {
+      "facet": "Securitized & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MBSPool",
+      "id": "MBSPool",
+      "cluster": "SEC",
+      "title": "m b s pool",
+      "description": "A pool investment consisting of a collection of MBS instruments.",
+      "core": true
+    },
+    {
+      "facet": "Securitized & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/CollateralizedDebtObligations/CDOPool",
+      "id": "CDOPool",
+      "cluster": "SEC",
+      "title": "c d o pool",
+      "description": "A pool of CDO securities. The underlying of the CDO Squared is a pool of CDO instruments.",
+      "core": true
+    },
+    {
+      "facet": "Funds & collective investment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/CollectiveInvestmentVehicle",
+      "id": "CollectiveInvestmentVehicle",
+      "cluster": "SEC",
+      "title": "collective investment vehicle",
+      "description": "assets pooled by investors whose share capital remains separate from the assets of the vehicle",
+      "core": true
+    },
+    {
+      "facet": "Funds & collective investment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/MutualFund",
+      "id": "MutualFund",
+      "cluster": "SEC",
+      "title": "mutual fund",
+      "description": "open-end professionally managed investment fund established for the purpose of investing in securities such as stocks, bonds, money market instruments and similar assets",
+      "core": true
+    },
+    {
+      "facet": "Funds & collective investment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/ExchangeTradedFund",
+      "id": "ExchangeTradedFund",
+      "cluster": "SEC",
+      "title": "exchange-traded fund",
+      "description": "investment fund whose fund units are traded on an exchange, much like stocks",
+      "core": true
+    },
+    {
+      "facet": "Funds & collective investment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/HedgeFund",
+      "id": "HedgeFund",
+      "cluster": "SEC",
+      "title": "hedge fund",
+      "description": "investment fund that pursues a total return and is usually open to qualified investors only",
+      "core": true
+    },
+    {
+      "facet": "Funds & collective investment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/EquityFund",
+      "id": "EquityFund",
+      "cluster": "SEC",
+      "title": "equity fund",
+      "description": "A fund which invests in at least 85% shares.",
+      "core": true
+    },
+    {
+      "facet": "Funds & collective investment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/FundUnit",
+      "id": "FundUnit",
+      "cluster": "SEC",
+      "title": "fund unit",
+      "description": "quantified share of beneficial interest in a pooled fund, representing a proportional claim on the fund's assets, income, or entitlements",
+      "core": true
+    },
+    {
+      "facet": "Issuance, parties & offering",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Issuer",
+      "id": "Issuer",
+      "cluster": "FBC",
+      "title": "issuer",
+      "description": "role of a party that issues (or proposes to issue in a formal filing) one or more financial instruments",
+      "core": true
+    },
+    {
+      "facet": "Issuance, parties & offering",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareIssuer",
+      "id": "ShareIssuer",
+      "cluster": "SEC",
+      "title": "share issuer",
+      "description": "issuer of securities that represent an ownership interest in something",
+      "core": true
+    },
+    {
+      "facet": "Issuance, parties & offering",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MBSIssuer",
+      "id": "MBSIssuer",
+      "cluster": "SEC",
+      "title": "m b s issuer",
+      "description": "The issuer of a Mortgage Backed Security.",
+      "core": true
+    },
+    {
+      "facet": "Issuance, parties & offering",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityUnderwriter",
+      "id": "SecurityUnderwriter",
+      "cluster": "SEC",
+      "title": "security underwriter",
+      "description": "party that has purchased from an issuer with a view to, or sells for an issuer in connection with, the distribution of any security, or participates or has a direct or indirect participation in any such undertaking, or participates or has a participation in the direct or indirect underwriting of any such undertaking",
+      "core": true
+    },
+    {
+      "facet": "Issuance, parties & offering",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/Underwriter",
+      "id": "Underwriter",
+      "cluster": "FBC",
+      "title": "underwriter",
+      "description": "financial service provider that evaluates and assumes another party's risk for a fee, such as a commission, premium, spread or interest",
+      "core": true
+    },
+    {
+      "facet": "Issuance, parties & offering",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityUnderwritingArrangement",
+      "id": "SecurityUnderwritingArrangement",
+      "cluster": "SEC",
+      "title": "security underwriting arrangement",
+      "description": "underwriting agreement between an organization (typically an investment bank) and a securities issuer that commits the underwriter to assuming risk involved in buying a new issue of securities and reselling it to the public",
+      "core": true
+    },
+    {
+      "facet": "Issuance, parties & offering",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/Prospectus",
+      "id": "Prospectus",
+      "cluster": "SEC",
+      "title": "prospectus",
+      "description": "formal, written offering document to sell securities that provides the facts an investor needs to make an informed investment decision",
+      "core": true
+    },
+    {
+      "facet": "Identification, listing & holdings",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber",
+      "id": "InternationalSecuritiesIdentificationNumber",
+      "cluster": "SEC",
+      "title": "international securities identification number",
+      "description": "security identifier that is defined as specified in ISO 6166, Securities and related financial instruments -- International securities identification numbering system (ISIN)",
+      "core": true
+    },
+    {
+      "facet": "Identification, listing & holdings",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/SecurityRegistry",
+      "id": "SecurityRegistry",
+      "cluster": "SEC",
+      "title": "security registry",
+      "description": "registry used to manage security identifiers and related information",
+      "core": true
+    },
+    {
+      "facet": "Identification, listing & holdings",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing",
+      "id": "Listing",
+      "cluster": "SEC",
+      "title": "listing",
+      "description": "catalog entry for a securities offering managed by an exchange that provides the terms under which that security is made available on that exchange",
+      "core": true
+    },
+    {
+      "facet": "Identification, listing & holdings",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Baskets/BasketOfSecurities",
+      "id": "BasketOfSecurities",
+      "cluster": "SEC",
+      "title": "basket of securities",
+      "description": "basket composed of securities, typically of a particular asset class such as equities or bonds",
+      "core": true
+    },
+    {
+      "facet": "Identification, listing & holdings",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecurityAssets/Portfolio",
+      "id": "Portfolio",
+      "cluster": "SEC",
+      "title": "portfolio",
+      "description": "collection of investments (financial assets) such as stocks, bonds and cash equivalents, as well as mutual funds, real estate, and so forth",
+      "core": true
+    },
+    {
+      "facet": "Identification, listing & holdings",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/WeightedAverageMaturity",
+      "id": "WeightedAverageMaturity",
+      "cluster": "SEC",
+      "title": "weighted average maturity",
+      "description": "weighted average amount of time until the maturities on mortgages in a mortgage-backed security (MBS)",
+      "core": true
+    },
+    {
+      "facet": "Identification, listing & holdings",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/RedemptionSchedule",
+      "id": "RedemptionSchedule",
+      "cluster": "SEC",
+      "title": "redemption schedule",
+      "description": "repayment schedule whereby a given percentage of a bond issue is redeemed on predefined dates",
+      "core": true
+    },
+    {
+      "facet": "Identification, listing & holdings",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RedemptionEvent",
+      "id": "RedemptionEvent",
+      "cluster": "SEC",
+      "title": "redemption event",
+      "description": "a prescriptive event involving the return of an investor's principal in a fixed-income security, such as a preferred stock or bond, or the sale of units in a mutual fund",
+      "core": true
+    },
+    {
+      "facet": "Identification, listing & holdings",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/Yield",
+      "id": "Yield",
+      "cluster": "FBC",
+      "title": "yield",
+      "description": "return on the investor's capital investment",
+      "core": true
+    }
+  ]
+}

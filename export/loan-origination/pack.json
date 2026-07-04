@@ -27,7 +27,7 @@
         {
           "type": "is-a",
           "target": "https://www.omg.org/spec/Commons/Classifiers/Classifier",
-          "target_title": "Classifier",
+          "target_title": "classifier",
           "provenance": "fibo"
         }
       ]
@@ -145,7 +145,7 @@
         {
           "type": "has-date-period",
           "target": "https://www.omg.org/spec/Commons/DatesAndTimes/DatePeriod",
-          "target_title": "DatePeriod",
+          "target_title": "date period",
           "provenance": "fibo"
         }
       ]
@@ -238,7 +238,7 @@
         {
           "type": "is-a",
           "target": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/ScalarQuantityValue",
-          "target_title": "ScalarQuantityValue",
+          "target_title": "scalar quantity value",
           "provenance": "fibo"
         },
         {
@@ -269,7 +269,7 @@
         {
           "type": "has-pre-payment-penalty-term",
           "target": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDuration",
-          "target_title": "ExplicitDuration",
+          "target_title": "explicit duration",
           "provenance": "fibo"
         }
       ]
@@ -326,7 +326,7 @@
         {
           "type": "is-a",
           "target": "https://www.omg.org/spec/Commons/Documents/Document",
-          "target_title": "Document",
+          "target_title": "document",
           "provenance": "fibo"
         },
         {
@@ -362,13 +362,13 @@
         {
           "type": "has-application-date",
           "target": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate",
-          "target_title": "ExplicitDate",
+          "target_title": "explicit date",
           "provenance": "fibo"
         },
         {
           "type": "has-date-received",
           "target": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate",
-          "target_title": "ExplicitDate",
+          "target_title": "explicit date",
           "provenance": "fibo"
         },
         {
@@ -593,7 +593,7 @@
         {
           "type": "is-a",
           "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/Undergoer",
-          "target_title": "Undergoer",
+          "target_title": "undergoer",
           "provenance": "fibo"
         },
         {
@@ -618,7 +618,7 @@
         {
           "type": "is-a",
           "target": "https://www.omg.org/spec/Commons/Classifiers/Classifier",
-          "target_title": "Classifier",
+          "target_title": "classifier",
           "provenance": "fibo"
         }
       ]
@@ -637,7 +637,7 @@
         {
           "type": "is-a",
           "target": "https://www.omg.org/spec/Commons/Classifiers/Classifier",
-          "target_title": "Classifier",
+          "target_title": "classifier",
           "provenance": "fibo"
         },
         {
@@ -662,7 +662,7 @@
         {
           "type": "is-a",
           "target": "https://www.omg.org/spec/Commons/Classifiers/Classifier",
-          "target_title": "Classifier",
+          "target_title": "classifier",
           "provenance": "fibo"
         }
       ]
@@ -778,13 +778,13 @@
         {
           "type": "has-initial-exchange-date",
           "target": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate",
-          "target_title": "ExplicitDate",
+          "target_title": "explicit date",
           "provenance": "fibo"
         },
         {
           "type": "has-maturity-date",
           "target": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate",
-          "target_title": "ExplicitDate",
+          "target_title": "explicit date",
           "provenance": "fibo"
         },
         {
@@ -834,7 +834,7 @@
         {
           "type": "is-applicable-in",
           "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction",
-          "target_title": "Jurisdiction",
+          "target_title": "jurisdiction",
           "provenance": "fibo"
         }
       ]
@@ -897,7 +897,7 @@
         {
           "type": "is-a",
           "target": "https://www.omg.org/spec/Commons/Classifiers/Aspect",
-          "target_title": "Aspect",
+          "target_title": "aspect",
           "provenance": "fibo"
         },
         {
@@ -1052,7 +1052,7 @@
         {
           "type": "has-maturity-date",
           "target": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate",
-          "target_title": "ExplicitDate",
+          "target_title": "explicit date",
           "provenance": "fibo"
         },
         {
@@ -1435,7 +1435,7 @@
         {
           "type": "is-played-by",
           "target": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
-          "target_title": "LegalPerson",
+          "target_title": "legal person",
           "provenance": "fibo"
         }
       ]
@@ -1460,7 +1460,7 @@
         {
           "type": "is-regulated-by",
           "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
-          "target_title": "RegulatoryAgency",
+          "target_title": "regulatory agency",
           "provenance": "fibo"
         },
         {
@@ -1497,7 +1497,7 @@
         {
           "type": "is-played-by",
           "target": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
-          "target_title": "LegalPerson",
+          "target_title": "legal person",
           "provenance": "fibo"
         }
       ]
@@ -1616,7 +1616,7 @@
         {
           "type": "is-a",
           "target": "https://www.omg.org/spec/Commons/Classifiers/Classifier",
-          "target_title": "Classifier",
+          "target_title": "classifier",
           "provenance": "fibo"
         }
       ]
@@ -1672,7 +1672,7 @@
         {
           "type": "is-submitted-to",
           "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
-          "target_title": "RegulatoryAgency",
+          "target_title": "regulatory agency",
           "provenance": "fibo"
         }
       ]
@@ -1766,7 +1766,7 @@
         {
           "type": "administered-by",
           "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
-          "target_title": "RegulatoryAgency",
+          "target_title": "regulatory agency",
           "provenance": "fibo"
         },
         {
@@ -1915,7 +1915,7 @@
         {
           "type": "has-date-of-assessment",
           "target": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate",
-          "target_title": "ExplicitDate",
+          "target_title": "explicit date",
           "provenance": "fibo"
         },
         {
@@ -2125,7 +2125,7 @@
         {
           "type": "is-a",
           "target": "https://www.omg.org/spec/Commons/Classifiers/Classifier",
-          "target_title": "Classifier",
+          "target_title": "classifier",
           "provenance": "fibo"
         }
       ]

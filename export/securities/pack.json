@@ -1,0 +1,1878 @@
+{
+  "use_case": "Securities Instruments & Issuance (capital markets)",
+  "generated_from": {
+    "intermediate": "out/intermediate.json",
+    "core": "curation/securities.json",
+    "bridges": "curation/securities-bridges.json",
+    "definitions": "curation/definitions.json"
+  },
+  "counts": {
+    "concepts": 59,
+    "bridges": 3,
+    "curated_definitions": 0,
+    "concepts_without_definition": 0
+  },
+  "concepts": [
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond",
+      "title": "bond",
+      "facet": "Bonds & debt securities",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "tradable debt instrument representing a loan in which the issuer owes the holder(s) a debt",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreementRepaidAtMaturity",
+          "target_title": "credit agreement repaid at maturity",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument",
+          "target_title": "tradable debt instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-interest-payment-terms",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/CouponPaymentTerms",
+          "target_title": "coupon payment terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-repayment-terms",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/BondPrincipalRepaymentTerms",
+          "target_title": "bond principal repayment terms",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/BondCoupon",
+      "title": "bond coupon",
+      "facet": "Bonds & debt securities",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "interest rate on a debt security that the issuer promises to pay to the holder until maturity, expressed as an annual percentage of the face value",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/BondCoupon",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/InterestRate",
+          "target_title": "interest rate",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/CallableBond",
+      "title": "callable bond",
+      "facet": "Bonds & debt securities",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "bond that includes a stipulation allowing the issuer the right to repurchase and retire the bond at the call price after the call protection period",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/CallableBond",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond",
+          "target_title": "bond",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-call-feature",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallFeature",
+          "target_title": "call feature",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-extraordinary-redemption-provision",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ExtraordinaryRedemptionProvision",
+          "target_title": "extraordinary redemption provision",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/TradedShortTermDebt/CommercialPaper",
+      "title": "commercial paper",
+      "facet": "Bonds & debt securities",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "an unsecured short-term debt instrument typically issued by a bank, corporation, or foreign government to obtain funds to meet short-term debt obligations, such as accounts receivable, inventories, or payroll, backed only by an issuing bank or company promise to pay the face amount on the maturity date specified on the note",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/TradedShortTermDebt/CommercialPaper",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/TradedShortTermDebt/MoneyMarketInstrument",
+          "target_title": "money market instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-relative-price-at-issue",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/AtADiscount",
+          "target_title": "AtADiscount",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-relative-price-at-maturity",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/ParValue",
+          "target_title": "ParValue",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ConvertibleBond",
+      "title": "convertible bond",
+      "facet": "Bonds & debt securities",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "bond that gives the holder the right to convert the bond into a fixed number of shares (conversion ratio) if the equity price rises above a specified level (strike price)",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ConvertibleBond",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond",
+          "target_title": "bond",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/ConvertibleSecurity",
+          "target_title": "convertible security",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-contractual-element",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/BondConversionTerms",
+          "target_title": "bond conversion terms",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/CorporateBond",
+      "title": "corporate bond",
+      "facet": "Bonds & debt securities",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "bond issued by a company in order to raise financing",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/CorporateBond",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond",
+          "target_title": "bond",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FixedCouponBond",
+      "title": "fixed coupon bond",
+      "facet": "Bonds & debt securities",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "bond whose coupon rate and principal amount are fixed at the time of origination or sale and remain constant while the security is outstanding",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FixedCouponBond",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond",
+          "target_title": "bond",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/FixedIncomeSecurity",
+          "target_title": "fixed income security",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-interest-payment-terms",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FixedCouponTerms",
+          "target_title": "fixed coupon terms",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FloatingRateNote",
+      "title": "floating rate note",
+      "facet": "Bonds & debt securities",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "bond with a variable interest rate based on a published reference interest rate",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FloatingRateNote",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/VariableCouponBond",
+          "target_title": "variable coupon bond",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-interest-rate",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/InterestRates/ReferenceInterestRate",
+          "target_title": "reference interest rate",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/GovernmentBond",
+      "title": "government bond",
+      "facet": "Bonds & debt securities",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "debt security issued by a government to fund government spending",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/GovernmentBond",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond",
+          "target_title": "bond",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/GovernmentIssuedDebtSecurity",
+          "target_title": "government issued debt security",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/MunicipalBond",
+      "title": "municipal bond",
+      "facet": "Bonds & debt securities",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "government bond that may be issued by a regional, rather than national, authority",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/MunicipalBond",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/GovernmentBond",
+          "target_title": "government bond",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/MunicipalSecurity",
+          "target_title": "municipal security",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/SovereignDebtInstrument",
+      "title": "sovereign debt instrument",
+      "facet": "Bonds & debt securities",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "debt security issued by the government of a country",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/SovereignDebtInstrument",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/GovernmentIssuedDebtSecurity",
+          "target_title": "government issued debt security",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/TreasuryBill",
+      "title": "treasury bill",
+      "facet": "Bonds & debt securities",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "short-term zero coupon treasury obligation with a maturity ranging from one to twelve months",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/TreasuryBill",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/USTreasurySecurity",
+          "target_title": "U.S. Treasury security",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/TradedShortTermDebt/MoneyMarketInstrument",
+          "target_title": "money market instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-interest-rate",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/InterestRates/ReferenceInterestRate",
+          "target_title": "reference interest rate",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-relative-price-at-issue",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/AtADiscount",
+          "target_title": "AtADiscount",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-relative-price-at-maturity",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/ParValue",
+          "target_title": "ParValue",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ZeroCouponBond",
+      "title": "zero coupon bond",
+      "facet": "Bonds & debt securities",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "bond issued with a coupon rate of zero and that trades at a deep discount to face value",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ZeroCouponBond",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond",
+          "target_title": "bond",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/FixedIncomeSecurity",
+          "target_title": "fixed income security",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-interest-payment-terms",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ZeroCouponTerms",
+          "target_title": "zero coupon terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-original-issue-discount-amount",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount",
+          "target_title": "monetary amount",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-relative-price-at-maturity",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/ParValue",
+          "target_title": "ParValue",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/AmericanDepositaryReceipt",
+      "title": "American depositary receipt",
+      "facet": "Equity & shares",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "depositary receipt that represents securities of a foreign company and allows that company's securities to trade in the U.S. financial markets",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/AmericanDepositaryReceipt",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/DepositaryReceipt",
+          "target_title": "depositary receipt",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/AmericanDepositaryReceiptLevel",
+          "target_title": "American depositary receipt level",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-legally-recorded-in",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/UnitedStatesJurisdiction",
+          "target_title": "UnitedStatesJurisdiction",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/CommonShare",
+      "title": "common share",
+      "facet": "Equity & shares",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "share that signifies a unit of ownership in a corporation and represents a claim on part of the corporation's assets and earnings",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/CommonShare",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share",
+          "target_title": "share",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-dividend",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/OrdinaryDividend",
+          "target_title": "ordinary dividend",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/DepositaryReceipt",
+      "title": "depositary receipt",
+      "facet": "Equity & shares",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "negotiable financial instrument issued by a trust company, security depositary, or bank that is evidence of the deposit of publicly traded securities and that facilitates the ownership of securities traded in other jurisdictions",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/DepositaryReceipt",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security",
+          "target_title": "security",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-traded-security",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security",
+          "target_title": "security",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Dividend",
+      "title": "dividend",
+      "facet": "Equity & shares",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "announced commitment to make a specific distribution of a portion of earnings to shareholders, prorated by class of security",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Dividend",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Agreements/Commitment",
+          "target_title": "commitment",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-distribution-method",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/DividendDistributionMethod",
+          "target_title": "dividend distribution method",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-payment-amount",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount",
+          "target_title": "monetary amount",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-schedule",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/DividendSchedule",
+          "target_title": "dividend schedule",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/FixedRateDividend",
+      "title": "fixed rate dividend",
+      "facet": "Equity & shares",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "dividend that provides a specified annual return on the nominal value (and any premium) paid on shares",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/FixedRateDividend",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PreferredDividend",
+          "target_title": "preferred dividend",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-fixed-dividend-rate",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/PercentageMonetaryAmount",
+          "target_title": "percentage monetary amount",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/GlobalDepositaryReceipt",
+      "title": "global depositary receipt",
+      "facet": "Equity & shares",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "depositary receipt where a certificate issued by a depositary bank, which purchases securities of foreign companies, creates a security on a local exchange backed by those securities",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/GlobalDepositaryReceipt",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/DepositaryReceipt",
+          "target_title": "depositary receipt",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/NonVotingShare",
+      "title": "non-voting share",
+      "facet": "Equity & shares",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "share that has no voting right",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/NonVotingShare",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share",
+          "target_title": "share",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PartiallyPaidShare",
+      "title": "partially paid share",
+      "facet": "Equity & shares",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "share whose payment status indicates that only a portion of the market value has been received by the company for the shares",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PartiallyPaidShare",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share",
+          "target_title": "share",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-share-payment-status",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PartiallyPaidShareStatus",
+          "target_title": "PartiallyPaidShareStatus",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PreferredShare",
+      "title": "preferred share",
+      "facet": "Equity & shares",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "share that pays dividends at a specified rate and has preference over common shares in the payment of dividends and liquidation of corporate assets",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PreferredShare",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share",
+          "target_title": "share",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-maturity-date",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate",
+          "target_title": "explicit date",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-senior-to",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/CommonShare",
+          "target_title": "common share",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareYield",
+      "title": "share yield",
+      "facet": "Equity & shares",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "ratio of the annualized dividend per share divided by the (current) price per share",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareYield",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/Yield",
+          "target_title": "yield",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/CollectiveInvestmentVehicle",
+      "title": "collective investment vehicle",
+      "facet": "Funds & collective investment",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "assets pooled by investors whose share capital remains separate from the assets of the vehicle",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/CollectiveInvestmentVehicle",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/PooledFund",
+          "target_title": "pooled fund",
+          "provenance": "fibo"
+        },
+        {
+          "type": "administered-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/FundAdministrator",
+          "target_title": "fund administrator",
+          "provenance": "fibo"
+        },
+        {
+          "type": "advised-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/RegisteredInvestmentAdvisor",
+          "target_title": "registered investment advisor",
+          "provenance": "fibo"
+        },
+        {
+          "type": "distributed-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundDistributor",
+          "target_title": "fund distributor",
+          "provenance": "fibo"
+        },
+        {
+          "type": "fund-has-related-party",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundsProcessingParty",
+          "target_title": "funds processing party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-additional-information",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/OtherInvestmentFundInformation",
+          "target_title": "other investment fund information",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-auditor",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/ExternalAuditor",
+          "target_title": "external auditor",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-currency",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/Currency",
+          "target_title": "currency",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-data-provider",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/MarketDataProvider",
+          "target_title": "market data provider",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-depository",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundDepositary",
+          "target_title": "fund depositary",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-fund-policy",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundInvestmentPolicy",
+          "target_title": "fund investment policy",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-legal-structure",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/LegalFundStructure",
+          "target_title": "legal fund structure",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-management-company",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/FundManager",
+          "target_title": "fund manager",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-related-fund-terms",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundProcessingTerms",
+          "target_title": "fund processing terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-strategy",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundUnitDistributionMethod",
+          "target_title": "fund unit distribution method",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-subscription-terms",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundSubscriptionTerms",
+          "target_title": "fund subscription terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-transfer-agent",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundTransferAgent",
+          "target_title": "fund transfer agent",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-described-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/Prospectus",
+          "target_title": "prospectus",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-issued-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/UnitIssuer",
+          "target_title": "unit issuer",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-legally-recorded-in",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction",
+          "target_title": "jurisdiction",
+          "provenance": "fibo"
+        },
+        {
+          "type": "supervised-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundSupervisoryAuthority",
+          "target_title": "fund supervisory authority",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/EquityFund",
+      "title": "equity fund",
+      "facet": "Funds & collective investment",
+      "cluster": "SEC",
+      "maturity": "Provisional",
+      "definition": "A fund which invests in at least 85% shares.",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/EquityFund",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/CollectiveInvestmentVehicle",
+          "target_title": "collective investment vehicle",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/EquityPortfolio",
+          "target_title": "equity portfolio",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/ExchangeTradedFund",
+      "title": "exchange-traded fund",
+      "facet": "Funds & collective investment",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "investment fund whose fund units are traded on an exchange, much like stocks",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/ExchangeTradedFund",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/OpenEndInvestment",
+          "target_title": "open-end investment",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/FundUnit",
+      "title": "fund unit",
+      "facet": "Funds & collective investment",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "quantified share of beneficial interest in a pooled fund, representing a proportional claim on the fund's assets, income, or entitlements",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/FundUnit",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/ContractualInterest",
+          "target_title": "contractual interest",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-currency",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/Currency",
+          "target_title": "currency",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-details",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/NetAssetValueCalculationMethod",
+          "target_title": "net asset value calculation method",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-fund-processing-terms",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundProcessingGeneralTerms",
+          "target_title": "fund processing general terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-fund-processing-terms",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundRedemptionTerms",
+          "target_title": "fund redemption terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-part-of",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/PooledFund",
+          "target_title": "pooled fund",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/HedgeFund",
+      "title": "hedge fund",
+      "facet": "Funds & collective investment",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "investment fund that pursues a total return and is usually open to qualified investors only",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/HedgeFund",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/OpenEndInvestment",
+          "target_title": "open-end investment",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/MutualFund",
+      "title": "mutual fund",
+      "facet": "Funds & collective investment",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "open-end professionally managed investment fund established for the purpose of investing in securities such as stocks, bonds, money market instruments and similar assets",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/MutualFund",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/OpenEndInvestment",
+          "target_title": "open-end investment",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Baskets/BasketOfSecurities",
+      "title": "basket of securities",
+      "facet": "Identification, listing & holdings",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "basket composed of securities, typically of a particular asset class such as equities or bonds",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Baskets/BasketOfSecurities",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/WeightedBasket",
+          "target_title": "weighted basket",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/DatedStructuredCollection",
+          "target_title": "dated structured collection",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-member",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Baskets/SecuritiesBasketConstituent",
+          "target_title": "securities basket constituent",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber",
+      "title": "international securities identification number",
+      "facet": "Identification, listing & holdings",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "security identifier that is defined as specified in ISO 6166, Securities and related financial instruments -- International securities identification numbering system (ISIN)",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/SecurityIdentifier",
+          "target_title": "security identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/ContextualIdentifiers/StructuredIdentifier",
+          "target_title": "structured identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/NationalSecuritiesIdentifyingNumber",
+          "target_title": "National Securities Identifying Number",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://www.omg.org/spec/LCC/Countries/CountryRepresentation/Alpha2Code",
+          "target_title": "Alpha2Code",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing",
+      "title": "listing",
+      "facet": "Identification, listing & holdings",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "catalog entry for a securities offering managed by an exchange that provides the terms under which that security is made available on that exchange",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/SecurityRegistryEntry",
+          "target_title": "security registry entry",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-currency",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/Currency",
+          "target_title": "currency",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-last-trading-date-and-time",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/DateTime",
+          "target_title": "date time",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-registration-status",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/RegistrationStatus",
+          "target_title": "registration status",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-restriction",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/SecuritiesRestriction",
+          "target_title": "securities restriction",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-tick-size",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount",
+          "target_title": "monetary amount",
+          "provenance": "fibo"
+        },
+        {
+          "type": "lists",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecuritiesOffering",
+          "target_title": "securities offering",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecurityAssets/Portfolio",
+      "title": "portfolio",
+      "facet": "Identification, listing & holdings",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "collection of investments (financial assets) such as stocks, bonds and cash equivalents, as well as mutual funds, real estate, and so forth",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecurityAssets/Portfolio",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/FinancialAsset",
+          "target_title": "financial asset",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Collections/Collection",
+          "target_title": "collection",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Asset",
+          "target_title": "asset",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RedemptionEvent",
+      "title": "redemption event",
+      "facet": "Identification, listing & holdings",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "a prescriptive event involving the return of an investor's principal in a fixed-income security, such as a preferred stock or bond, or the sale of units in a mutual fund",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RedemptionEvent",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PrescriptiveEvent",
+          "target_title": "prescriptive event",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/RedemptionSchedule",
+      "title": "redemption schedule",
+      "facet": "Identification, listing & holdings",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "repayment schedule whereby a given percentage of a bond issue is redeemed on predefined dates",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/RedemptionSchedule",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/PaymentSchedule",
+          "target_title": "payment schedule",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RedemptionEvent",
+          "target_title": "redemption event",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/SecurityRegistry",
+      "title": "security registry",
+      "facet": "Identification, listing & holdings",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "registry used to manage security identifiers and related information",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/SecurityRegistry",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/RegistrationAuthorities/Registry",
+          "target_title": "registry",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/SecurityRegistryEntry",
+          "target_title": "security registry entry",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-characterized-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/SecurityIdentificationScheme",
+          "target_title": "security identification scheme",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-managed-by",
+          "target": "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistrationAuthority",
+          "target_title": "registration authority",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/WeightedAverageMaturity",
+      "title": "weighted average maturity",
+      "facet": "Identification, listing & holdings",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "weighted average amount of time until the maturities on mortgages in a mortgage-backed security (MBS)",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/WeightedAverageMaturity",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/ArithmeticMean",
+          "target_title": "arithmetic mean",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/DebtPoolStatisticalMeasure",
+          "target_title": "debt pool statistical measure",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/Yield",
+      "title": "yield",
+      "facet": "Identification, listing & holdings",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "return on the investor's capital investment",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/Yield",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/Percentage",
+          "target_title": "percentage",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-applicable-period",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/DatePeriod",
+          "target_title": "date period",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-currency",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/Currency",
+          "target_title": "currency",
+          "provenance": "fibo"
+        },
+        {
+          "type": "refers-to",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security",
+          "target_title": "security",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Issuer",
+      "title": "issuer",
+      "facet": "Issuance, parties & offering",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "role of a party that issues (or proposes to issue in a formal filing) one or more financial instruments",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Issuer",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractPrincipal",
+          "target_title": "contract principal",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MBSIssuer",
+      "title": "m b s issuer",
+      "facet": "Issuance, parties & offering",
+      "cluster": "SEC",
+      "maturity": "Provisional",
+      "definition": "The issuer of a Mortgage Backed Security.",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MBSIssuer",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Issuer",
+          "target_title": "issuer",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/Prospectus",
+      "title": "prospectus",
+      "facet": "Issuance, parties & offering",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "formal, written offering document to sell securities that provides the facts an investor needs to make an informed investment decision",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/Prospectus",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/OfferingDocument",
+          "target_title": "offering document",
+          "provenance": "fibo"
+        },
+        {
+          "type": "outlines",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundInvestmentObjective",
+          "target_title": "fund investment objective",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityUnderwriter",
+      "title": "security underwriter",
+      "facet": "Issuance, parties & offering",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "party that has purchased from an issuer with a view to, or sells for an issuer in connection with, the distribution of any security, or participates or has a direct or indirect participation in any such undertaking, or participates or has a participation in the direct or indirect underwriting of any such undertaking",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityUnderwriter",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/Underwriter",
+          "target_title": "underwriter",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/ThirdPartyAgent",
+          "target_title": "third-party agent",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractThirdParty",
+          "target_title": "contract third party",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityUnderwritingArrangement",
+      "title": "security underwriting arrangement",
+      "facet": "Issuance, parties & offering",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "underwriting agreement between an organization (typically an investment bank) and a securities issuer that commits the underwriter to assuming risk involved in buying a new issue of securities and reselling it to the public",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityUnderwritingArrangement",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement",
+          "target_title": "underwriting arrangement",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-party-role",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityUnderwriter",
+          "target_title": "security underwriter",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareIssuer",
+      "title": "share issuer",
+      "facet": "Issuance, parties & offering",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "issuer of securities that represent an ownership interest in something",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareIssuer",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Issuer",
+          "target_title": "issuer",
+          "provenance": "fibo"
+        },
+        {
+          "type": "issues",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share",
+          "target_title": "share",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/Underwriter",
+      "title": "underwriter",
+      "facet": "Issuance, parties & offering",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "financial service provider that evaluates and assumes another party's risk for a fee, such as a commission, premium, spread or interest",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/Underwriter",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider",
+          "target_title": "financial service provider",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument",
+      "title": "debt instrument",
+      "facet": "Securities (roots & forms)",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "financial instrument and credit agreement evidencing monies owed by the issuer to the holder on terms as specified",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreement",
+          "target_title": "credit agreement",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/FinancialInstrument",
+          "target_title": "financial instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-borrower",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Borrower",
+          "target_title": "borrower",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-call-feature",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallFeature",
+          "target_title": "call feature",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-interest-payment-terms",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/InterestPaymentTerms",
+          "target_title": "interest payment terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-lender",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Lender",
+          "target_title": "lender",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-offering",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/DebtOffering",
+          "target_title": "debt offering",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-put-feature",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutFeature",
+          "target_title": "put feature",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-redemption-terms",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/RedemptionProvision",
+          "target_title": "redemption provision",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-repayment-terms",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/PrincipalRepaymentTerms",
+          "target_title": "principal repayment terms",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/EquityInstrument",
+      "title": "equity instrument",
+      "facet": "Securities (roots & forms)",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "financial instrument representing an ownership interest in an entity or pool of assets",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/EquityInstrument",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security",
+          "target_title": "security",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/ListedSecurity",
+      "title": "listed security",
+      "facet": "Securities (roots & forms)",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "registered security listed on at least one exchange",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/ListedSecurity",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/RegisteredSecurity",
+          "target_title": "registered security",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-home-exchange",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange",
+          "target_title": "exchange",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-original-place-of-listing",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange",
+          "target_title": "exchange",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-listed-via",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing",
+          "target_title": "listing",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security",
+      "title": "security",
+      "facet": "Securities (roots & forms)",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "financial instrument that can be bought or sold",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/FinancialInstrument",
+          "target_title": "financial instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-issued-in-form",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityForm",
+          "target_title": "security form",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-legally-recorded-in",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction",
+          "target_title": "jurisdiction",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-registered",
+          "target": "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistrationAuthority",
+          "target_title": "registration authority",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityForm",
+      "title": "security form",
+      "facet": "Securities (roots & forms)",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "nature of the proof of ownership of a security",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityForm",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractDocument",
+          "target_title": "contract document",
+          "provenance": "fibo"
+        },
+        {
+          "type": "applies-to",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security",
+          "target_title": "security",
+          "provenance": "fibo"
+        },
+        {
+          "type": "exemplifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/FinancialAsset",
+          "target_title": "financial asset",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share",
+      "title": "share",
+      "facet": "Securities (roots & forms)",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "financial instrument that signifies a unit of equity ownership in a corporation, or a unit of ownership in a mutual fund, or interest in a general or limited partnership, or a unit of ownership in a structured product, such as a real estate investment trust",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/EquityInstrument",
+          "target_title": "equity instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "confers-ownership-of",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/ShareholdersEquity",
+          "target_title": "shareholders' equity",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-share-payment-status",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/SharePaymentStatus",
+          "target_title": "share payment status",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-shares-authorized",
+          "target": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+          "target_title": "nonNegativeInteger",
+          "provenance": "fibo"
+        },
+        {
+          "type": "number-of-votes-per-share",
+          "target": "http://www.w3.org/2001/XMLSchema#decimal",
+          "target_title": "decimal",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument",
+      "title": "tradable debt instrument",
+      "facet": "Securities (roots & forms)",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "a debt instrument that is also a security, i.e., that can be bought and sold by the holder",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument",
+          "target_title": "debt instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security",
+          "target_title": "security",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-guarantor",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Guaranty/Guarantor",
+          "target_title": "guarantor",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-yield",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/MD/DebtTemporal/DebtAnalytics/DebtInstrumentYield",
+          "target_title": "debt instrument yield",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/AssetBackedSecurity",
+      "title": "asset-backed security",
+      "facet": "Securitized & structured",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "debt instrument backed by receivables other than those arising out of real estate loans or mortgages",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/AssetBackedSecurity",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/PoolBackedSecurity",
+          "target_title": "pool-backed security",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-tranche-type",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/CollateralizedDebtObligations/TrancheType",
+          "target_title": "tranche type",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/CollateralizedDebtObligations/CDOPool",
+      "title": "c d o pool",
+      "facet": "Securitized & structured",
+      "cluster": "SEC",
+      "maturity": "Provisional",
+      "definition": "A pool of CDO securities. The underlying of the CDO Squared is a pool of CDO instruments.",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/CollateralizedDebtObligations/CDOPool",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/DebtPool",
+          "target_title": "debt pool",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/CollateralizedDebtObligations/CollateralizedDebtObligation",
+      "title": "collateralized debt obligation",
+      "facet": "Securitized & structured",
+      "cluster": "SEC",
+      "maturity": "Provisional",
+      "definition": "structured finance constructed from a portfolio of fixed income assets including corporate loans and mortgage backed securities. A special purpose vehicle (SPV) issues notes to investors in order to raise funds that are invested in a portfolio of those fixed income assets, held by the SPV as collateral for the notes. Further notes: Collateralized Debt Obligation, for example, ABS CDO which consists of a portfolio of different ABS bonds, and the payments to the holders of these trust certificates are derived from the cash flows of the ABS bonds. This CDO instrument is part of a CDO issue, consisting of individual CDO instruments of a given seniority. Often referred to as tranches and slices (Investopedia). Investopedia: Similar in structure to a collateralized mortgage obligation (CMO) or collateralized bond obligation (CBO), CDOs are unique in that they represent different types of debt and credit risk. In the case of CDOs, these different types of debt are often referred to as 'tranches' or 'slices'. Each slice has a different maturity and risk associated with it. The higher the risk, the more the CDO pays. Further details: Collateralized Debt obligations are securitized interests in pools of - generally non-mortgage - assets. Assets - called collateral - usually comprise loans or debt instruments. A CDO may be called a collateralized loan obligation (CLO) or collateralized bond obligation (CBO) if it holds only loans or bonds, respectively. Investors bear the credit risk of the collateral. Multiple tranches of securities are issued by the CDO, offering investors various maturity and credit risk characteristics.",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/CollateralizedDebtObligations/CollateralizedDebtObligation",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/StructuredFinanceInstrument",
+          "target_title": "structured finance instrument",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MBSPool",
+      "title": "m b s pool",
+      "facet": "Securitized & structured",
+      "cluster": "SEC",
+      "maturity": "Provisional",
+      "definition": "A pool investment consisting of a collection of MBS instruments.",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MBSPool",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/DebtPool",
+          "target_title": "debt pool",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MortgageBackedSecurity",
+      "title": "mortgage-backed security",
+      "facet": "Securitized & structured",
+      "cluster": "SEC",
+      "maturity": "Provisional",
+      "definition": "debt obligations that represent claims to the cash flows from pools of mortgage loans, most commonly on residential property",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MortgageBackedSecurity",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/PoolBackedSecurity",
+          "target_title": "pool-backed security",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-wac",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/WeightedAverageCoupon",
+          "target_title": "weighted average coupon",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-characterized-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/WeightedAverageRemainingTerm",
+          "target_title": "weighted average remaining term",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-issued-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MBSIssuer",
+          "target_title": "m b s issuer",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/Pool",
+      "title": "pool",
+      "facet": "Securitized & structured",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "combination of resources for a common purpose or benefit",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/Pool",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Collections/Collection",
+          "target_title": "collection",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-member",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/PoolConstituent",
+          "target_title": "pool constituent",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/Tranche",
+      "title": "tranche",
+      "facet": "Securitized & structured",
+      "cluster": "SEC",
+      "maturity": "Release",
+      "definition": "segment of a pool of securities, typically debt instruments",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/Tranche",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/StructuredFinanceInstrument",
+          "target_title": "structured finance instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-attachment-point",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/AttachmentPoint",
+          "target_title": "attachment point",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-detachment-point",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/DetachmentPoint",
+          "target_title": "detachment point",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-estimated-value-of",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CollateralValueAsOfDate",
+          "target_title": "collateral value as of date",
+          "provenance": "fibo"
+        }
+      ]
+    }
+  ],
+  "bridges": [
+    {
+      "id": "mbs-backed-by-mortgage",
+      "edge": "backed-by",
+      "kind": "cross-domain (SEC->LOAN)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MortgageBackedSecurity",
+      "source_title": "mortgage-backed security",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/Mortgage",
+      "target_title": "mortgage",
+      "provenance": "curated",
+      "rationale": "A mortgage-backed security represents claims on the cash flows from an underlying pool of mortgage loans. FIBO models the security (SEC) and the mortgage instrument (LOAN) in separate domains but does not draw the edge from the MBS to the mortgage loans that back it, which securitization and loan-level disclosure analysis need.",
+      "citation": "SEC Regulation AB, 17 CFR 229.1100 (asset-backed securities, loan-level data)"
+    },
+    {
+      "id": "abs-backed-by-loan",
+      "edge": "backed-by",
+      "kind": "cross-domain (SEC->LOAN)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/AssetBackedSecurity",
+      "source_title": "asset-backed security",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Loan",
+      "target_title": "loan",
+      "provenance": "curated",
+      "rationale": "An asset-backed security is collateralized by a pool of receivables such as auto or consumer loans. FIBO defines the ABS in SEC and the loan in LOAN but leaves the backing relationship between the security and its underlying loans implicit.",
+      "citation": "SEC Regulation AB, 17 CFR 229.1100; securitization structuring"
+    },
+    {
+      "id": "issuer-identified-by-lei",
+      "edge": "identified-by",
+      "kind": "cross-domain (FBC->BE)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Issuer",
+      "source_title": "issuer",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "target_title": "legal entity identifier",
+      "provenance": "curated",
+      "rationale": "For securities issuance and regulatory reporting a securities issuer is identified by its Legal Entity Identifier. FIBO defines the Issuer role (FBC) and the LegalEntityIdentifier (BE) but does not connect an issuer to its LEI.",
+      "citation": "ISO 17442 (LEI); MiFID II / ESMA and SEC issuer identification"
+    }
+  ]
+}

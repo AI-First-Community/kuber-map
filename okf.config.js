@@ -66,6 +66,7 @@
     'filed-by':         { label: 'filed by',         color: '#e11d48', style: 'dashed' },
     'played-by':        { label: 'played by',        color: '#e11d48', style: 'dashed' },
     'identified-by':    { label: 'identified by',    color: '#e11d48', style: 'dashed' },
+    'backed-by':        { label: 'backed by',        color: '#e11d48', style: 'dashed' },
   };
 
   // Decision wizard: "Which FIBO concept models what I'm working with?" (rec = FIBO IRI).

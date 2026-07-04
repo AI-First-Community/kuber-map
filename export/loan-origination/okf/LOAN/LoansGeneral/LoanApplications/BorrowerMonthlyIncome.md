@@ -5,6 +5,11 @@ description: "total monthly qualifying income of a potential borrower"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/BorrowerMonthlyIncome
 tags: [LOAN, Provisional]
 core: true
+detail: "A key underwriting input; combined with monthly debt obligations it yields the debt-to-income ratio that drives the credit decision."
+detail_provenance: curated
+examples:
+  - "$8,000/month gross qualifying income from salary plus bonus."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Accounting/AccountingEquity/Income.md", provenance: fibo}
   - {type: is-a, target: "/FND/Accounting/CurrencyAmount/MonetaryAmount.md", provenance: fibo}

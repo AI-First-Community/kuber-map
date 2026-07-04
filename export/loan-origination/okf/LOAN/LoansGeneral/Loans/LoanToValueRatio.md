@@ -5,6 +5,13 @@ description: "ratio, expressed as a percentage, between the principal amount of 
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LoanToValueRatio
 tags: [LOAN, Release]
 core: true
+detail: "A primary risk measure: a higher LTV means less borrower equity and greater loss on default, and above roughly 80% it commonly triggers mortgage insurance."
+detail_provenance: curated
+examples:
+  - "A $240,000 loan on a $300,000 appraised home = 80% LTV."
+examples_provenance: curated
+synonyms:
+  - "LTV"
 relations:
   - {type: is-a, target: "/FND/Accounting/CurrencyAmount/PercentageMonetaryAmount.md", provenance: fibo}
   - {type: applies-to, target: "/FND/OwnershipAndControl/Ownership/Asset.md", provenance: fibo}

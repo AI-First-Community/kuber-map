@@ -6,6 +6,15 @@ definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationStatus
 tags: [LOAN, Provisional]
 core: true
+detail: "A point-in-time state (submitted, in review, approved, declined, withdrawn) used for pipeline reporting and borrower communication."
+detail_provenance: curated
+examples:
+  - "Submitted"
+  - "Under review"
+  - "Approved"
+  - "Declined"
+  - "Withdrawn"
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Arrangements/Lifecycles/LifecycleStatus.md", provenance: fibo}
 ---

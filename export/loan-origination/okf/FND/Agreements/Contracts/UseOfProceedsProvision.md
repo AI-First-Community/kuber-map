@@ -5,6 +5,10 @@ description: "contract provision specifying how funds obtained through financing
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/UseOfProceedsProvision
 tags: [FND, Release]
 core: true
+detail: "Examples include for working capital and corporate expenses, for the purchase or upgrades to facilities and/or equipment, and so forth."
+examples:
+  - "A clause requiring loan funds be used only to purchase the specified home."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Agreements/Contracts/ContractualCommitment.md", provenance: fibo}
 ---

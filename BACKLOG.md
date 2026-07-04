@@ -21,7 +21,8 @@ Last updated: 2026-07-04
 - ✅ **Context-pack export** (the product, `etl/export_pack.py` + `make pack`) — `export/loan-origination/` with `pack.json` (structured RAG records), `context.md` (LLM-injectable grounding doc), and a self-contained `okf/` slice. 71 concepts + 4 bridges, each carrying its FIBO IRI as citation + `provenance` on every edge/definition.
 - ✅ **MCP retrieval endpoint** — `etl/mcp_server.py` (stdlib-only MCP stdio server) + `etl/retrieval.py` (weighted keyword search). Tools: `search_concepts`, `get_concept`, `list_bridges`; every hit carries citation IRI + provenance. Reusable by the eval runner.
 - ✅ **Eval harness + benchmark** — `eval/` with 53 gold questions (all `grounds` IRIs resolved from the pack), deterministic scoring (accuracy / hallucination / auditability), and a pluggable model adapter (`make eval` = offline mechanism check; `--adapter llm` = live via a user `EVAL_LLM_CMD`, no vendor SDK). **Live value-proof numbers still pending** (needs model choice + question review).
-- ✅ **Second use case (KYC / beneficial-ownership)** — 58 core + 4 bridges + pack, via spec-driven `nominate_core`/`bridges` (`curation/usecases/`). Map now shows 8 curated bridges.
+- ✅ **Second use case (KYC / beneficial-ownership)** — 58 core + 4 bridges + pack, via spec-driven `nominate_core`/`bridges` (`curation/usecases/`).
+- ✅ **Third use case (Securities instruments & issuance)** — 59 curated core concepts (`curation/securities.json`) + **curated illustrative examples on the cards** (`curation/securities-examples.json`, 59 concepts) + 3 validated cross-domain bridges (`curation/securities-bridges.json`: MBS→mortgage, ABS→loan, issuer→LEI) + pack (`export/securities/`). Map now shows **11 curated bridges**.
 - ✅ Published to GitHub (private): `AI-First-Community/Bodhi-Map-For-FinTech`, reproducible via `make fibo`.
 
 **Map UI (E2):** data layer + vendored frontend + FIBO `app.html`/`graph.js` shipped (core-default view, domain/maturity filters, provenance-styled bridges, IRI-citation panel, offline PWA). Needs browser visual verification.
@@ -68,6 +69,7 @@ Last updated: 2026-07-04
 - [ ] Decide fate of intra-domain bridges (e.g. `lender played-by financial-institution`) vs cross-domain-only for EDM
 - [ ] Map working bridge edge-names → formal FIBO object properties
 - [x] **Second use case: KYC / beneficial-ownership** — 58 curated core concepts (`curation/kyc.json`) + 4 cross-domain bridges (`curation/kyc-bridges.json`) + context pack (`export/kyc/`). Backbone party/entity classes come from Commons (CMNS). Tooling is now **spec-driven** (`curation/usecases/*.json`), so a use case is a repeatable recipe.
+- [x] **Third use case: Securities instruments & issuance** — 59 core (`curation/securities.json`), curated examples overlay for the cards (`curation/securities-examples.json`), 3 cross-domain bridges (`curation/securities-bridges.json`), pack (`export/securities/`). New `backed-by` relation added for the MBS→mortgage / ABS→loan bridges.
 - [ ] Regulatory-reporting use case (BE + FBC + MD) — needs MD domain
 
 ### E4 — Scale domains

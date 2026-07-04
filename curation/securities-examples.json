@@ -1,0 +1,418 @@
+{
+  "_comment": "Curated illustrative examples for the Securities use-case core concepts. Real-world capital-markets instances (general domain knowledge), not FIBO axioms. Applied by etl/to_okf.py when FIBO supplies none; provenance curated.",
+  "examples": [
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security",
+      "title": "security",
+      "examples": [
+        "A share of Apple Inc. common stock, or a US Treasury note."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument",
+      "title": "debt instrument",
+      "examples": [
+        "A 10-year US Treasury note paying semi-annual interest."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument",
+      "title": "tradable debt instrument",
+      "examples": [
+        "A 5-year corporate note that is listed and can be bought or sold on an exchange."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/EquityInstrument",
+      "title": "equity instrument",
+      "examples": [
+        "A common share of Microsoft Corporation."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share",
+      "title": "share",
+      "examples": [
+        "One share of Tesla, Inc. common stock."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/ListedSecurity",
+      "title": "listed security",
+      "examples": [
+        "Apple Inc. (AAPL) common stock, listed on Nasdaq."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityForm",
+      "title": "security form",
+      "examples": [
+        "Registered form (the issuer records the holder) versus bearer form (whoever holds the certificate owns it)."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond",
+      "title": "bond",
+      "examples": [
+        "A US$1,000 face-value, 10-year US Treasury bond paying a 4% coupon."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/GovernmentBond",
+      "title": "government bond",
+      "examples": [
+        "A German Bund or a US Treasury bond."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/CorporateBond",
+      "title": "corporate bond",
+      "examples": [
+        "A 30-year bond issued by AT&T Inc. to fund network investment."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/MunicipalBond",
+      "title": "municipal bond",
+      "examples": [
+        "A general-obligation bond issued by the State of California to fund infrastructure."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ZeroCouponBond",
+      "title": "zero coupon bond",
+      "examples": [
+        "A US Treasury STRIPS that pays no coupon and trades at a discount to its face value."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FixedCouponBond",
+      "title": "fixed coupon bond",
+      "examples": [
+        "A 5-year bond paying a fixed 3.5% annual coupon."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ConvertibleBond",
+      "title": "convertible bond",
+      "examples": [
+        "A Tesla convertible note the holder can convert into a set number of Tesla shares."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/CallableBond",
+      "title": "callable bond",
+      "examples": [
+        "A corporate bond the issuer may redeem after five years if interest rates fall."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FloatingRateNote",
+      "title": "floating rate note",
+      "examples": [
+        "A 3-year note paying SOFR + 0.50%, resetting quarterly."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/TradedShortTermDebt/CommercialPaper",
+      "title": "commercial paper",
+      "examples": [
+        "90-day unsecured commercial paper issued by a large corporation to fund working capital."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/TreasuryBill",
+      "title": "treasury bill",
+      "examples": [
+        "A 13-week US Treasury bill sold at a discount to its US$1,000 face value."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/BondCoupon",
+      "title": "bond coupon",
+      "examples": [
+        "The semi-annual 2% interest payment on a bond with a 4% annual coupon."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/SovereignDebtInstrument",
+      "title": "sovereign debt instrument",
+      "examples": [
+        "A Japanese Government Bond (JGB) issued by the government of Japan."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/CommonShare",
+      "title": "common share",
+      "examples": [
+        "One ordinary share of Amazon.com, Inc. carrying one vote."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PreferredShare",
+      "title": "preferred share",
+      "examples": [
+        "A 5% preferred share paying a fixed dividend ahead of common shareholders."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/NonVotingShare",
+      "title": "non-voting share",
+      "examples": [
+        "A Class C Alphabet share (GOOG), which carries no voting rights."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PartiallyPaidShare",
+      "title": "partially paid share",
+      "examples": [
+        "A share issued where only part of the subscription price has been called and paid."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/DepositaryReceipt",
+      "title": "depositary receipt",
+      "examples": [
+        "A receipt representing shares of a foreign company held by a depositary bank."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/AmericanDepositaryReceipt",
+      "title": "American depositary receipt",
+      "examples": [
+        "An ADR representing shares of Toyota, traded on a US exchange in US dollars."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/GlobalDepositaryReceipt",
+      "title": "global depositary receipt",
+      "examples": [
+        "A GDR representing shares of an Indian company, traded on the London Stock Exchange."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Dividend",
+      "title": "dividend",
+      "examples": [
+        "A quarterly cash dividend of US$0.24 per share declared by a company's board."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/FixedRateDividend",
+      "title": "fixed rate dividend",
+      "examples": [
+        "A preferred share's fixed 6% annual dividend."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareYield",
+      "title": "share yield",
+      "examples": [
+        "A US$2 annual dividend on a US$50 share, a 4% dividend yield."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/AssetBackedSecurity",
+      "title": "asset-backed security",
+      "examples": [
+        "A security backed by a pool of auto loans or credit-card receivables."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MortgageBackedSecurity",
+      "title": "mortgage-backed security",
+      "examples": [
+        "A Ginnie Mae pass-through backed by a pool of residential mortgages."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/CollateralizedDebtObligations/CollateralizedDebtObligation",
+      "title": "collateralized debt obligation",
+      "examples": [
+        "A CDO whose tranches are backed by a portfolio of corporate bonds and loans."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/Tranche",
+      "title": "tranche",
+      "examples": [
+        "The senior AAA-rated tranche of a securitization, paid before the junior tranches."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/Pool",
+      "title": "pool",
+      "examples": [
+        "A pool of residential mortgages underlying a mortgage-backed security."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MBSPool",
+      "title": "m b s pool",
+      "examples": [
+        "The pool of conforming 30-year mortgages backing a Fannie Mae MBS."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/CollateralizedDebtObligations/CDOPool",
+      "title": "c d o pool",
+      "examples": [
+        "The portfolio of leveraged loans backing a collateralized loan obligation."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/CollectiveInvestmentVehicle",
+      "title": "collective investment vehicle",
+      "examples": [
+        "A UCITS fund that pools money from many investors."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/MutualFund",
+      "title": "mutual fund",
+      "examples": [
+        "The Vanguard 500 Index Fund, an open-end fund tracking the S&P 500."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/ExchangeTradedFund",
+      "title": "exchange-traded fund",
+      "examples": [
+        "SPDR S&P 500 ETF (SPY), traded intraday on an exchange."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/HedgeFund",
+      "title": "hedge fund",
+      "examples": [
+        "A long/short equity hedge fund open only to accredited investors."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/EquityFund",
+      "title": "equity fund",
+      "examples": [
+        "A large-cap equity fund that invests primarily in common shares."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/FundUnit",
+      "title": "fund unit",
+      "examples": [
+        "One unit of a mutual fund, priced at its net asset value (NAV)."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Issuer",
+      "title": "issuer",
+      "examples": [
+        "Apple Inc., the issuer of AAPL shares and its corporate bonds."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareIssuer",
+      "title": "share issuer",
+      "examples": [
+        "A corporation that issues common shares to raise equity capital."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MBSIssuer",
+      "title": "m b s issuer",
+      "examples": [
+        "A government-sponsored enterprise such as Fannie Mae issuing mortgage-backed securities."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityUnderwriter",
+      "title": "security underwriter",
+      "examples": [
+        "An investment bank that buys a new bond issue from the issuer to resell to investors."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/Underwriter",
+      "title": "underwriter",
+      "examples": [
+        "The lead investment bank in an IPO syndicate."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityUnderwritingArrangement",
+      "title": "security underwriting arrangement",
+      "examples": [
+        "A firm-commitment underwriting agreement for an initial public offering."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/Prospectus",
+      "title": "prospectus",
+      "examples": [
+        "The prospectus filed with the SEC for an initial public offering."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber",
+      "title": "international securities identification number",
+      "examples": [
+        "US0378331005, the ISIN for Apple Inc. common stock."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/SecurityRegistry",
+      "title": "security registry",
+      "examples": [
+        "A registrar maintaining the register of a company's shareholders."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing",
+      "title": "listing",
+      "examples": [
+        "Apple Inc.'s listing on the Nasdaq Stock Market under ticker AAPL."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Baskets/BasketOfSecurities",
+      "title": "basket of securities",
+      "examples": [
+        "The basket of 500 stocks underlying an S&P 500 index fund."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecurityAssets/Portfolio",
+      "title": "portfolio",
+      "examples": [
+        "A diversified portfolio of 60% equities and 40% bonds."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/WeightedAverageMaturity",
+      "title": "weighted average maturity",
+      "examples": [
+        "The 18-month weighted-average maturity of a money-market fund's holdings."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/RedemptionSchedule",
+      "title": "redemption schedule",
+      "examples": [
+        "A sinking-fund schedule that redeems 10% of a bond issue each year."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RedemptionEvent",
+      "title": "redemption event",
+      "examples": [
+        "A bond reaching maturity and repaying principal to its holders."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/Yield",
+      "title": "yield",
+      "examples": [
+        "A bond bought at US$950 that pays US$40 a year has roughly a 4.2% current yield."
+      ]
+    }
+  ]
+}

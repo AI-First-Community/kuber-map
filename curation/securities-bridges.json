@@ -1,0 +1,31 @@
+{
+  "bridges": [
+    {
+      "id": "mbs-backed-by-mortgage",
+      "edge": "backed-by",
+      "kind": "cross-domain (SEC->LOAN)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MortgageBackedSecurity",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/Mortgage",
+      "rationale": "A mortgage-backed security represents claims on the cash flows from an underlying pool of mortgage loans. FIBO models the security (SEC) and the mortgage instrument (LOAN) in separate domains but does not draw the edge from the MBS to the mortgage loans that back it, which securitization and loan-level disclosure analysis need.",
+      "citation": "SEC Regulation AB, 17 CFR 229.1100 (asset-backed securities, loan-level data)"
+    },
+    {
+      "id": "abs-backed-by-loan",
+      "edge": "backed-by",
+      "kind": "cross-domain (SEC->LOAN)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/AssetBackedSecurity",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Loan",
+      "rationale": "An asset-backed security is collateralized by a pool of receivables such as auto or consumer loans. FIBO defines the ABS in SEC and the loan in LOAN but leaves the backing relationship between the security and its underlying loans implicit.",
+      "citation": "SEC Regulation AB, 17 CFR 229.1100; securitization structuring"
+    },
+    {
+      "id": "issuer-identified-by-lei",
+      "edge": "identified-by",
+      "kind": "cross-domain (FBC->BE)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Issuer",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "rationale": "For securities issuance and regulatory reporting a securities issuer is identified by its Legal Entity Identifier. FIBO defines the Issuer role (FBC) and the LegalEntityIdentifier (BE) but does not connect an issuer to its LEI.",
+      "citation": "ISO 17442 (LEI); MiFID II / ESMA and SEC issuer identification"
+    }
+  ]
+}

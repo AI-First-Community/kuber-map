@@ -5,6 +5,11 @@ description: "a party to whom an obligation, such as an amount of money, or good
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Creditor
 tags: [FBC, Release]
 core: true
+detail: "The party entitled to repayment; in a mortgage the lender is the creditor, though the debt may later be sold to another creditor in the secondary market."
+detail_provenance: curated
+examples:
+  - "The bank owed repayment under a mortgage note."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Agreements/Agreements/Obligee.md", provenance: fibo}
   - {type: is-owed, target: "/FBC/DebtAndEquities/Debt/Debt.md", provenance: fibo}

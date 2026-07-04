@@ -5,6 +5,10 @@ description: "risk assessment that focuses on determining the likelihood of a po
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/CreditRiskAssessment
 tags: [LOAN, Provisional]
 core: true
+detail: "If the risk assessment is based on one of the automated underwriting sytems, then the underwriting automation category is 'automated'. This dependency could be automated (as it were)."
+examples:
+  - "Scoring an applicant's probability of default from credit and income data."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Arrangements/Assessments/AssessmentActivity.md", provenance: fibo}
   - {type: applies-to, target: "/LOAN/LoansGeneral/Loans/Loan.md", provenance: fibo}

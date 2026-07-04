@@ -1,0 +1,39 @@
+{
+  "use_case": "Securities Instruments & Issuance (capital markets)",
+  "_comment": "Facet spec for the Securities use case. Each entry is [local-id, cluster], grounded in the extract (nominate_core.py verifies each exists and reports any that don't). Instrument roots (Security, DebtInstrument, EquityInstrument, Issuer, Underwriter, Yield) live in FBC; the securities-specific taxonomy lives in SEC.",
+  "facets": {
+    "Securities (roots & forms)": [
+      ["Security", "FBC"], ["DebtInstrument", "FBC"], ["TradableDebtInstrument", "SEC"],
+      ["EquityInstrument", "FBC"], ["Share", "SEC"], ["ListedSecurity", "SEC"], ["SecurityForm", "SEC"]
+    ],
+    "Bonds & debt securities": [
+      ["Bond", "SEC"], ["GovernmentBond", "SEC"], ["CorporateBond", "SEC"], ["MunicipalBond", "SEC"],
+      ["ZeroCouponBond", "SEC"], ["FixedCouponBond", "SEC"], ["ConvertibleBond", "SEC"],
+      ["CallableBond", "SEC"], ["FloatingRateNote", "SEC"], ["CommercialPaper", "SEC"],
+      ["TreasuryBill", "SEC"], ["BondCoupon", "SEC"], ["SovereignDebtInstrument", "SEC"]
+    ],
+    "Equity & shares": [
+      ["CommonShare", "SEC"], ["PreferredShare", "SEC"], ["NonVotingShare", "SEC"],
+      ["PartiallyPaidShare", "SEC"], ["DepositaryReceipt", "SEC"], ["AmericanDepositaryReceipt", "SEC"],
+      ["GlobalDepositaryReceipt", "SEC"], ["Dividend", "SEC"], ["FixedRateDividend", "SEC"], ["ShareYield", "SEC"]
+    ],
+    "Securitized & structured": [
+      ["AssetBackedSecurity", "SEC"], ["MortgageBackedSecurity", "SEC"],
+      ["CollateralizedDebtObligation", "SEC"], ["Tranche", "SEC"], ["Pool", "SEC"],
+      ["MBSPool", "SEC"], ["CDOPool", "SEC"]
+    ],
+    "Funds & collective investment": [
+      ["CollectiveInvestmentVehicle", "SEC"], ["MutualFund", "SEC"], ["ExchangeTradedFund", "SEC"],
+      ["HedgeFund", "SEC"], ["EquityFund", "SEC"], ["FundUnit", "SEC"]
+    ],
+    "Issuance, parties & offering": [
+      ["Issuer", "FBC"], ["ShareIssuer", "SEC"], ["MBSIssuer", "SEC"], ["SecurityUnderwriter", "SEC"],
+      ["Underwriter", "FBC"], ["SecurityUnderwritingArrangement", "SEC"], ["Prospectus", "SEC"]
+    ],
+    "Identification, listing & holdings": [
+      ["InternationalSecuritiesIdentificationNumber", "SEC"], ["SecurityRegistry", "SEC"],
+      ["Listing", "SEC"], ["BasketOfSecurities", "SEC"], ["Portfolio", "SEC"],
+      ["WeightedAverageMaturity", "SEC"], ["RedemptionSchedule", "SEC"], ["RedemptionEvent", "SEC"], ["Yield", "FBC"]
+    ]
+  }
+}

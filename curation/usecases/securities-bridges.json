@@ -1,0 +1,29 @@
+[
+  {
+    "id": "mbs-backed-by-mortgage",
+    "source": ["MortgageBackedSecurity", "SEC"],
+    "edge": "backed-by",
+    "target": ["Mortgage", "LOAN"],
+    "kind": "cross-domain (SEC->LOAN)",
+    "rationale": "A mortgage-backed security represents claims on the cash flows from an underlying pool of mortgage loans. FIBO models the security (SEC) and the mortgage instrument (LOAN) in separate domains but does not draw the edge from the MBS to the mortgage loans that back it, which securitization and loan-level disclosure analysis need.",
+    "citation": "SEC Regulation AB, 17 CFR 229.1100 (asset-backed securities, loan-level data)"
+  },
+  {
+    "id": "abs-backed-by-loan",
+    "source": ["AssetBackedSecurity", "SEC"],
+    "edge": "backed-by",
+    "target": ["Loan", "LOAN"],
+    "kind": "cross-domain (SEC->LOAN)",
+    "rationale": "An asset-backed security is collateralized by a pool of receivables such as auto or consumer loans. FIBO defines the ABS in SEC and the loan in LOAN but leaves the backing relationship between the security and its underlying loans implicit.",
+    "citation": "SEC Regulation AB, 17 CFR 229.1100; securitization structuring"
+  },
+  {
+    "id": "issuer-identified-by-lei",
+    "source": ["Issuer", "FBC"],
+    "edge": "identified-by",
+    "target": ["LegalEntityIdentifier", "BE"],
+    "kind": "cross-domain (FBC->BE)",
+    "rationale": "For securities issuance and regulatory reporting a securities issuer is identified by its Legal Entity Identifier. FIBO defines the Issuer role (FBC) and the LegalEntityIdentifier (BE) but does not connect an issuer to its LEI.",
+    "citation": "ISO 17442 (LEI); MiFID II / ESMA and SEC issuer identification"
+  }
+]

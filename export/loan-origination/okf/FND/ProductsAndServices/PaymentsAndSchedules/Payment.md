@@ -5,6 +5,11 @@ description: "delivery of money in fulfillment of an obligation, such as to sati
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/Payment
 tags: [FND, Release]
 core: true
+detail: "A transfer of money settling part of the obligation; mortgage payments typically bundle principal, interest, and escrowed taxes and insurance."
+detail_provenance: curated
+examples:
+  - "A $1,800 monthly mortgage payment of principal and interest."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/DatesAndTimes/Occurrences/Occurrence.md", provenance: fibo}
   - {type: has-payment-amount, target: "/FND/Accounting/CurrencyAmount/MonetaryAmount.md", provenance: fibo}

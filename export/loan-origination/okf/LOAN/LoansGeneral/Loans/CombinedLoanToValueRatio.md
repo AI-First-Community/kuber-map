@@ -5,6 +5,10 @@ description: "ratio of the total amount of debt that is secured by the asset(s) 
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/CombinedLoanToValueRatio
 tags: [LOAN, Release]
 core: true
+detail: "This is particularly important for secondary loans, or for refinancing that combines outstanding loans against a given asset. Lenders use this ratio to evaluate the risk of extending a loan to a borrower(s) in cases where multiple loans are involved."
+examples:
+  - "A $240k first mortgage + a $30k HELOC on a $300k home = 90% CLTV."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Accounting/CurrencyAmount/PercentageMonetaryAmount.md", provenance: fibo}
   - {type: applies-to, target: "/FND/OwnershipAndControl/Ownership/Asset.md", provenance: fibo}

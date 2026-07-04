@@ -9,7 +9,7 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### amortization type  [LOAN/Provisional]
 - **definition:** classifier of amortization algorithms
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/AmortizationType
-- **relations:** is-a → Classifier
+- **relations:** is-a → classifier
 
 ### borrower monthly income  [LOAN/Provisional]
 - **definition:** total monthly qualifying income of a potential borrower
@@ -29,7 +29,7 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### income  [FND/Release]
 - **definition:** revenue received during a period of time
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/Income
-- **relations:** is-a → monetary amount; has-date-period → DatePeriod
+- **relations:** is-a → monetary amount; has-date-period → date period
 
 ### loan payment schedule  [LOAN/Release]
 - **definition:** regular or explicit (ad hoc) payment schedule associated with a given loan-specific account
@@ -44,12 +44,12 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### monetary amount  [FND/Release]
 - **definition:** measure that is an amount of money specified in monetary units
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount
-- **relations:** is-a → ScalarQuantityValue; has-currency → currency
+- **relations:** is-a → scalar quantity value; has-currency → currency
 
 ### pre-payment terms  [LOAN/Release]
 - **definition:** principal repayment terms related to payment of the loan prior to maturity
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/PrepaymentTerms
-- **relations:** is-a → principal repayment terms; has-pre-payment-penalty-term → ExplicitDuration
+- **relations:** is-a → principal repayment terms; has-pre-payment-penalty-term → explicit duration
 
 ### total debt expense ratio  [LOAN/Provisional]
 - **definition:** ratio of all monthly debt payments of all borrowers, including proposed expenses, with respect to the income of the borrowers as relied upon to make a credit decision
@@ -66,7 +66,7 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### loan application  [LOAN/Provisional]
 - **definition:** request by a potential borrower to a potential lender to borrow money containing information used to decide whether to grant the loan
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplication
-- **relations:** is-a → Document; comprises → all borrowers' monthly income; comprises → borrower monthly income; comprises → total debt expense ratio; comprises → combined loan-to-value ratio; comprises → loan-to-value ratio; has-application-date → ExplicitDate; has-date-received → ExplicitDate; is-pre-approval-requested → boolean; is-submitted-by → requester
+- **relations:** is-a → document; comprises → all borrowers' monthly income; comprises → borrower monthly income; comprises → total debt expense ratio; comprises → combined loan-to-value ratio; comprises → loan-to-value ratio; has-application-date → explicit date; has-date-received → explicit date; is-pre-approval-requested → boolean; is-submitted-by → requester
 
 ### loan application phase  [LOAN/Provisional]
 - **definition:** distinct phase in the lifecycle of a loan application, such as pre-qualification, application intake, underwriting, or decisioning _(definition: curated)_
@@ -113,22 +113,22 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### collateral  [FBC/Release]
 - **definition:** something pledged as security to ensure fulfillment of an obligation to another party, to lend money, extend credit, or provision securities
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Collateral
-- **relations:** is-a → Undergoer; is-collateralization-of → asset
+- **relations:** is-a → undergoer; is-collateralization-of → asset
 
 ### lender lien position  [LOAN/Release]
 - **definition:** classifier indicating whether the lender has the primary lien position with respect to an asset used as collateral for the loan
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LenderLienPosition
-- **relations:** is-a → Classifier
+- **relations:** is-a → classifier
 
 ### ownership interest  [LOAN/Release]
 - **definition:** classifier indicating the nature of the applicant's or borrower's ownership or leasehold interest in an asset used as collateral for the loan
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/OwnershipInterest
-- **relations:** is-a → Classifier; classifies → ownership
+- **relations:** is-a → classifier; classifies → ownership
 
 ### property usage  [LOAN/Provisional]
 - **definition:** a category indicating the manner in which the borrower intends to utilize the property
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/PropertyUsage
-- **relations:** is-a → Classifier
+- **relations:** is-a → classifier
 
 ### real property  [FND/Release]
 - **definition:** physical asset defined as land together with any structures that are permanently attached to that land, such as houses, trees, fences and improvements
@@ -140,7 +140,7 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### credit agreement  [FBC/Release]
 - **definition:** contractual agreement in which a debtor receives something of value and typically agrees to repay the creditor by some date in the future, in some form (e.g., cash, securities, etc.), generally with interest
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreement
-- **relations:** is-a → written contract; has-contract-party → creditor; has-contract-party → debtor; has-contractual-element → debt terms; has-contractual-element → use of proceeds provision; has-corresponding-account → loan or credit account; has-currency → currency; has-initial-exchange-date → ExplicitDate; has-maturity-date → ExplicitDate; is-collateralized-by → collateral
+- **relations:** is-a → written contract; has-contract-party → creditor; has-contract-party → debtor; has-contractual-element → debt terms; has-contractual-element → use of proceeds provision; has-corresponding-account → loan or credit account; has-currency → currency; has-initial-exchange-date → explicit date; has-maturity-date → explicit date; is-collateralized-by → collateral
 
 ### disclosure provision  [FND/Release]
 - **definition:** contractual provision that outlines the requirements and responsibilities of one or both parties to reveal certain information to each other
@@ -150,7 +150,7 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### legal obligation  [FND/Release]
 - **definition:** an obligation or duty that is enforceable by a court
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation
-- **relations:** is-a → duty; is-applicable-in → Jurisdiction
+- **relations:** is-a → duty; is-applicable-in → jurisdiction
 
 ### loan or credit account  [FBC/Release]
 - **definition:** account associated with a service in which the account holder receives funds from the account provider under certain terms and conditions for repayment
@@ -165,7 +165,7 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### principal  [FBC/Release]
 - **definition:** with respect to a debt: the value of an obligation, such as a bond or loan, raised and that must be repaid at maturity; for investments: the original amount of money invested, separate from any associated interest, dividends or capital gains
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Principal
-- **relations:** is-a → Aspect; is-principal-of → debt
+- **relations:** is-a → aspect; is-principal-of → debt
 
 ### use of proceeds provision  [FND/Release]
 - **definition:** contract provision specifying how funds obtained through financing, such as through a credit agreement, offering, warrant, or other instrument are intended to be used
@@ -192,7 +192,7 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### loan  [LOAN/Release]
 - **definition:** debt instrument whereby one party extends money or credit to another party (or parties) with the understanding that the borrowed money will be repaid according to the terms of the contract
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Loan
-- **relations:** is-a → credit agreement repaid periodically; is-a → debt instrument; has-corresponding-account → loan-specific customer account; has-guarantor → guarantor; has-maturity-date → ExplicitDate; has-principal-amount → monetary amount; has-third-party → contract third party; has-total-closing-costs → monetary amount; has-total-points-and-fees → monetary amount; is-classified-by → lender lien position; is-classified-by → loan market category; is-performed-by → servicer
+- **relations:** is-a → credit agreement repaid periodically; is-a → debt instrument; has-corresponding-account → loan-specific customer account; has-guarantor → guarantor; has-maturity-date → explicit date; has-principal-amount → monetary amount; has-third-party → contract third party; has-total-closing-costs → monetary amount; has-total-points-and-fees → monetary amount; is-classified-by → lender lien position; is-classified-by → loan market category; is-performed-by → servicer
 
 ### loan offering  [LOAN/Provisional]
 - **definition:** offering related to a loan product that may be a tailored to particular circumstances, aimed at a group of borrowers or individual borrower
@@ -249,17 +249,17 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### creditor  [FBC/Release]
 - **definition:** a party to whom an obligation, such as an amount of money, or good, or performance of some service exists
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Creditor
-- **relations:** is-a → obligee; is-owed → debt; is-played-by → LegalPerson
+- **relations:** is-a → obligee; is-owed → debt; is-played-by → legal person
 
 ### financial institution  [FBC/Release]
 - **definition:** financial service provider identified as either a government agency or privately owned entity that collects funds from the public and from other institutions, and invests those funds in financial assets, such as loans, securities, bank deposits, and income-generating property
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution
-- **relations:** is-a → financial service provider; is-regulated-by → RegulatoryAgency; provides → financial service
+- **relations:** is-a → financial service provider; is-regulated-by → regulatory agency; provides → financial service
 
 ### guarantor  [FBC/Release]
 - **definition:** party that guarantees, endorses, or provides indemnity for some obligation on behalf of some other party
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Guaranty/Guarantor
-- **relations:** is-a → de jure controlling interest party; is-a → contract third party; is-played-by → LegalPerson
+- **relations:** is-a → de jure controlling interest party; is-a → contract third party; is-played-by → legal person
 
 ### lender  [FBC/Release]
 - **definition:** a party that extends credit or money to a borrower with the expectation of being repaid, usually with interest
@@ -286,7 +286,7 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### mortgage loan purpose  [LOAN/Provisional]
 - **definition:** the purpose for which mortgage loan proceeds will be used, such as real property purchase, dwelling construction, or loan refinancing
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/MortgageLoanPurpose
-- **relations:** is-a → loan purpose; is-a → Classifier
+- **relations:** is-a → loan purpose; is-a → classifier
 
 ## Regulatory & disclosure (US)
 
@@ -298,7 +298,7 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### HMDA report  [LOAN/Provisional]
 - **definition:** a report prepared to satisfy HMDA regulatory reporting requirements as described US section 1003.3(c) of the Revised Home Mortgage Disclosure Act of 2015
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report
-- **relations:** is-a → report; has-number-of-entries → positiveInteger; is-submitted-to → RegulatoryAgency
+- **relations:** is-a → report; has-number-of-entries → positiveInteger; is-submitted-to → regulatory agency
 
 ### Nationwide Mortgage Licensing System and Registry Identifier  [LOAN/Provisional]
 - **definition:** the number permanently assigned by the Nationwide Mortgage Licensing System and Registry (NMLS) for each company, branch, and individual that maintains a single account on NMLS.
@@ -318,7 +318,7 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### loan regulatory requirement  [LOAN/Provisional]
 - **definition:** A regulatory requirement defined in regulations by a comsumer credit act or other legislation.
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/LoanRegulatoryRequirement
-- **relations:** is-a → legal obligation; administered-by → RegulatoryAgency; is-mandated-by → consumer credit protection law; regulates → loan
+- **relations:** is-a → legal obligation; administered-by → regulatory agency; is-mandated-by → consumer credit protection law; regulates → loan
 
 ### reg b  [LOAN/Provisional]
 - **definition:** US regulation concerning "Equal credit opportunity act" Electronic delivery of disclosures
@@ -345,7 +345,7 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### borrower assessment  [LOAN/Provisional]
 - **definition:** assessment report detailing information about the borrower and their credit history that may be relevant to the loan application
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/BorrowerAssessment
-- **relations:** is-a → assessment report; comprises → income verification report; comprises → individual person credit rating; comprises → payment history; has-date-of-assessment → ExplicitDate; is-about → borrower; is-about → loan application
+- **relations:** is-a → assessment report; comprises → income verification report; comprises → individual person credit rating; comprises → payment history; has-date-of-assessment → explicit date; is-about → borrower; is-about → loan application
 
 ### collateral valuation  [LOAN/Provisional]
 - **definition:** assessment activity resulting in the valuation of real property as collateral
@@ -375,7 +375,7 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 ### underwriting decision  [LOAN/Provisional]
 - **definition:** classifier providing a loan approval recommendation determined either manually or by an automated underwriting system
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/UnderwritingDecision
-- **relations:** is-a → Classifier
+- **relations:** is-a → classifier
 
 ## Cross-domain bridges (curated)
 
