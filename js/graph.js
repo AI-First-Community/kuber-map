@@ -663,12 +663,12 @@
     const rel = (r) => (RELATIONS[r] || {}).label || r;
 
     const out = [];
-    out.push('# LLM Bodhi — Knowledge Bundle (Open Knowledge Format, single-file export)');
+    out.push('# Kuber Map — FIBO Knowledge Bundle (Open Knowledge Format, single-file export)');
     out.push('');
-    out.push(`> Curated knowledge graph of LLM & fine-tuning concepts. ${nodes.length} concepts, ` +
-             `${GRAPH.edges.filter((e) => e.r !== 'path').length} typed relations. Conforms to the spirit of ` +
-             'Google Open Knowledge Format v0.1 — each concept has a `type`; relations are typed links.');
-    out.push('> Use this as grounding context for an LLM/agent. Concept IDs are stable anchors.');
+    out.push(`> Curated map of the Financial Industry Business Ontology (FIBO). ${nodes.length} concepts, ` +
+             `${GRAPH.edges.filter((e) => e.r !== 'path').length} typed, provenance-tagged relations. Each concept ` +
+             'carries its FIBO `resource` IRI as an audit citation; curated cross-domain bridges are marked.');
+    out.push('> Use this as audit-ready grounding context for a financial AI agent. Concept IDs are stable anchors.');
     out.push('');
     out.push('## Index');
     out.push('');
@@ -719,8 +719,8 @@
 
   document.getElementById('exportBtn').onclick = () => {
     const md = buildAgentBundle();
-    downloadText('llm-bodhi-knowledge.md', md);
-    toast(`Exported ${GRAPH.nodes.length} concepts → llm-bodhi-knowledge.md`);
+    downloadText('kuber-map-knowledge.md', md);
+    toast(`Exported ${GRAPH.nodes.length} concepts → kuber-map-knowledge.md`);
   };
 
   // ---- Compare modal: techniques side-by-side across dimensions --------------
@@ -786,31 +786,31 @@
   const welcomeModal = document.getElementById('welcomeModal');
   const welcomeCard = document.getElementById('welcomeCard');
   const WELCOME_FEATURES = [
-    { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>',
-      t: 'Which technique?', d: 'A wizard that recommends the right adaptation method for your case.' },
+    { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.8 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg>',
+      t: 'Curated core view', d: 'You start on 71 hand-picked loan-origination concepts. Toggle Core → full ontology to reveal all 1,440.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>',
-      t: 'Guided Path', d: 'Walk a real workflow: base model → SFT → LoRA → DPO → eval → quantize.' },
-    { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>',
-      t: 'Compare', d: 'Side-by-side tables: PEFT, preference optimization, attention, architectures…' },
+      t: 'Guided tour', d: 'Walk the underwriting arc: application → borrower → collateral → LTV → decision → HMDA report.' },
+    { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h7"/><path d="M17 14l4 3-4 3" stroke-dasharray="3 2"/></svg>',
+      t: 'Curated bridges', d: 'Dashed red edges are cross-domain links FIBO doesn\'t draw natively — the project\'s contribution.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg>',
       t: 'Search <kbd>f</kbd>', d: 'Fuzzy search; navigate results with <kbd>↑</kbd><kbd>↓</kbd><kbd>↵</kbd>.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18"/></svg>',
-      t: 'Click any node', d: 'Open a detail panel: explanation, when-to-use, code, links, references.' },
+      t: 'Click any node', d: 'A detail panel with the definition, examples, provenance, and the concept\'s FIBO IRI — the audit citation.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
       t: 'Light / dark <kbd>t</kbd>', d: 'Toggle theme (top-right). Links are shareable via the URL.' },
   ];
   function renderWelcome() {
     welcomeCard.innerHTML = `
       <div class="modal-head" style="margin-bottom:2px">
-        <div class="welcome-head"><span class="om" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/><path d="M12 6.2V2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g stroke="#0a3f24" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round"><path d="M12 7.3V20"/><path d="M12 10.1 8.9 8.3"/><path d="M12 10.1 15.1 8.3"/><path d="M12 12.9 8.6 11.3"/><path d="M12 12.9 15.4 11.3"/><path d="M12 15.6 9.2 14.5"/><path d="M12 15.6 14.8 14.5"/></g></svg></span><h2>Welcome to Bodhi Map</h2><span class="wbadge">Innovate with Sanjeev</span></div>
+        <div class="welcome-head"><span class="om" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/><path d="M12 6.2V2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g stroke="#0a3f24" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round"><path d="M12 7.3V20"/><path d="M12 10.1 8.9 8.3"/><path d="M12 10.1 15.1 8.3"/><path d="M12 12.9 8.6 11.3"/><path d="M12 12.9 15.4 11.3"/><path d="M12 15.6 9.2 14.5"/><path d="M12 15.6 14.8 14.5"/></g></svg></span><h2>Welcome to Kuber Map</h2><span class="wbadge">the treasury of financial meaning</span></div>
         <button class="fb-close" id="welClose" aria-label="Close">×</button>
       </div>
-      <p class="welcome-sub">An interactive map of <b>${GRAPH.nodes.length} concepts</b> from LLM basics to advanced fine-tuning, reasoning, and agents — clusters are colour-coded, and edges show how techniques relate. Here's how to explore:</p>
+      <p class="welcome-sub">A curated, learner-first map of the <b>Financial Industry Business Ontology</b> — audit-ready grounding for financial AI agents. You start on <b>71 loan-origination concepts</b> (of ${GRAPH.nodes.length}); domains are colour-coded and every concept carries its FIBO IRI. Here's how to explore:</p>
       <div class="welcome-features">
         ${WELCOME_FEATURES.map((f) => `<div class="welcome-feature"><span class="wf-ic">${f.ic}</span><div><b>${f.t}</b><span>${f.d}</span></div></div>`).join('')}
       </div>
       <div class="welcome-cta">
-        <button class="accent" id="welStart">▶ Start the Guided Path</button>
+        <button class="accent" id="welStart">▶ Start the guided tour</button>
         <button id="welExplore">Explore on my own</button>
       </div>`;
     document.getElementById('welClose').onclick = closeWelcome;

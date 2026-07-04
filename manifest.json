@@ -1,7 +1,7 @@
 {
-  "name": "Bodhi Map for FIBO — Curated Financial Ontology",
-  "short_name": "Bodhi FIBO",
-  "description": "A curated, learner-first map of the Financial Industry Business Ontology (FIBO) — audit-ready grounding for financial AI agents. Fully offline.",
+  "name": "Kuber Map — the treasury of financial meaning",
+  "short_name": "Kuber Map",
+  "description": "A curated, learner-first map of the Financial Industry Business Ontology (FIBO) — audit-ready grounding for financial AI agents. Inspired by Bodhi Map. Fully offline.",
   "start_url": "app.html",
   "scope": "./",
   "display": "standalone",

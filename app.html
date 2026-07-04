@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bodhi Map for FIBO — Curated Financial Ontology Graph</title>
+  <title>Kuber Map — the treasury of financial meaning</title>
   <!-- PWA -->
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#0e1a13" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="Bodhi FIBO" />
+  <meta name="apple-mobile-web-app-title" content="Kuber Map" />
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
   <link rel="stylesheet" href="css/style.css" />
   <!-- set theme before paint to avoid flash -->
@@ -22,7 +22,7 @@
 <body>
   <!-- Top bar -->
   <header class="topbar">
-    <a class="brand" href="index.html" data-tip="Home — about Bodhi Map for FIBO" aria-label="Home — Bodhi Map for FIBO"><span class="om" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/><path d="M12 6.2V2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g stroke="#0a3f24" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round"><path d="M12 7.3V20"/><path d="M12 10.1 8.9 8.3"/><path d="M12 10.1 15.1 8.3"/><path d="M12 12.9 8.6 11.3"/><path d="M12 12.9 15.4 11.3"/><path d="M12 15.6 9.2 14.5"/><path d="M12 15.6 14.8 14.5"/></g></svg></span><span class="brand-text"><span class="brand-name">Bodhi&nbsp;Map for FIBO</span><span class="sub">audit-ready financial ontology</span></span></a>
+    <a class="brand" href="index.html" data-tip="Home — about Kuber Map" aria-label="Home — Kuber Map"><span class="om" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/><path d="M12 6.2V2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g stroke="#0a3f24" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round"><path d="M12 7.3V20"/><path d="M12 10.1 8.9 8.3"/><path d="M12 10.1 15.1 8.3"/><path d="M12 12.9 8.6 11.3"/><path d="M12 12.9 15.4 11.3"/><path d="M12 15.6 9.2 14.5"/><path d="M12 15.6 14.8 14.5"/></g></svg></span><span class="brand-text"><span class="brand-name">Kuber&nbsp;Map</span><span class="sub">the treasury of financial meaning</span></span></a>
 
     <div class="search-wrap">
       <input id="search" type="text" placeholder="Search concepts…  (f)" autocomplete="off" aria-label="Search concepts" />
@@ -34,7 +34,7 @@
       <button class="level-chip active" data-level="1" data-tip="FIBO Release — production maturity" aria-label="Toggle Release"><span class="num">Release</span></button>
       <button class="level-chip active" data-level="2" data-tip="FIBO Provisional — under review" aria-label="Toggle Provisional"><span class="num">Provisional</span></button>
       <button class="level-chip active" data-level="3" data-tip="FIBO Informative / unspecified" aria-label="Toggle Informative"><span class="num">Informative</span></button>
-      <button class="new-chip active" id="newChip" data-tip="Toggle between the curated core (71) and the full ontology (1,284)" aria-label="Toggle core / full ontology"><span class="spark" aria-hidden="true">★</span><span class="lbl">Core</span><span class="new-count">0</span></button>
+      <button class="new-chip active" id="newChip" data-tip="Toggle between the curated core (71) and the full ontology (1,440)" aria-label="Toggle core / full ontology"><span class="spark" aria-hidden="true">★</span><span class="lbl">Core</span><span class="new-count">0</span></button>
     </div>
 
     <div class="toolbar">
@@ -121,7 +121,7 @@
   <div id="decisionBox" class="float-box"></div>
 
   <!-- Welcome / onboarding modal -->
-  <div id="welcomeModal" class="modal" role="dialog" aria-modal="true" aria-label="Welcome to Bodhi Map for FIBO">
+  <div id="welcomeModal" class="modal" role="dialog" aria-modal="true" aria-label="Welcome to Kuber Map">
     <div class="modal-card welcome-card" id="welcomeCard"></div>
   </div>
 
@@ -138,7 +138,7 @@
   <!-- Toast -->
   <div id="toast" class="toast"></div>
 
-  <div class="hint">Curated core is the default — toggle Core for all 1,284 · click a node for its FIBO IRI · drag to pan · scroll to zoom · <kbd>f</kbd> search <kbd>↑</kbd><kbd>↓</kbd><kbd>↵</kbd> · <kbd>t</kbd> theme · <kbd>m</kbd> map · <kbd>?</kbd> help · <kbd>Esc</kbd> close · shareable</div>
+  <div class="hint">Curated core is the default — toggle Core for all 1,440 · click a node for its FIBO IRI · drag to pan · scroll to zoom · <kbd>f</kbd> search <kbd>↑</kbd><kbd>↓</kbd><kbd>↵</kbd> · <kbd>t</kbd> theme · <kbd>m</kbd> map · <kbd>?</kbd> help · <kbd>Esc</kbd> close · shareable</div>
 
   <script src="js/cytoscape.min.js"></script>
   <!-- fcose layout extension (offline) — load order: layout-base → cose-base → fcose -->

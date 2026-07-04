@@ -1,11 +1,12 @@
-# Bodhi Map for FIBO
+# Kuber Map — the treasury of financial meaning
 
 A curated, learner-first knowledge map of the **Financial Industry Business Ontology
 ([FIBO](https://github.com/edmcouncil/fibo))**, stored in Google's **Open Knowledge Format
 (OKF)** — and designed to double as **audit-ready grounding context for financial AI agents**.
 
-Inspired by the [Bodhi Map](https://github.com/AI-First-Community/Bodhi) approach: reveal how
-concepts *connect*, not just what they mean.
+Named for **Kubera**, the treasurer / god of wealth. Inspired by the
+[Bodhi Map](https://github.com/AI-First-Community/Bodhi) approach: reveal how concepts
+*connect*, not just what they mean.
 
 > **Status:** early build. The FIBO→OKF pipeline is working on FND + LOAN; the curated
 > learning map, cross-domain bridges, and agent-grounding layer are in progress. See
