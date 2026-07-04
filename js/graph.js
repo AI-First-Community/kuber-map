@@ -172,7 +172,7 @@
     edgeElasticity: 120, nestingFactor: 1.1, gravity: 0.6, numIter: 1200,
     randomize: false, componentSpacing: 90, padding: 40,
   };
-  // Lay out only what is VISIBLE. The default landing shows the curated core (~71
+  // Lay out only what is VISIBLE. The default landing shows the curated core (~190
   // nodes), so we never pay a full-ontology physics layout on load — that cost is
   // deferred to the moment a user actually expands to the full graph, then cached.
   const laidOut = new Set();
@@ -454,8 +454,9 @@
     });
   });
 
-  // Core / full-ontology toggle (reuses Bodhi's "new chip" slot). Core = the 71 curated
-  // loan-origination concepts, the clean, learner-first landing view; toggle for all 3,104.
+  // Core / full-ontology toggle (reuses Bodhi's "new chip" slot). Core = the curated
+  // concepts across the loan-origination, KYC and securities use cases (the clean,
+  // learner-first landing view); toggle for the full ontology (all 3,104).
   const coreChip = document.getElementById('newChip');
   if (coreChip) {
     const coreCount = cy.nodes('[?isCore]').length;
@@ -885,9 +886,10 @@
   // ---- Welcome / onboarding -------------------------------------------------
   const welcomeModal = document.getElementById('welcomeModal');
   const welcomeCard = document.getElementById('welcomeCard');
+  const CORE_N = GRAPH.nodes.filter((n) => n.core).length;
   const WELCOME_FEATURES = [
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.8 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg>',
-      t: 'Curated core view', d: 'You start on 71 hand-picked loan-origination concepts. Toggle Core → full ontology to reveal all 3,104.' },
+      t: 'Curated core view', d: `You start on ${CORE_N} curated concepts spanning loan origination, KYC and securities. Toggle Core → full ontology to reveal all ${GRAPH.nodes.length}.` },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>',
       t: 'Guided tour', d: 'Walk the underwriting arc: application → borrower → collateral → LTV → decision → HMDA report.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h7"/><path d="M17 14l4 3-4 3" stroke-dasharray="3 2"/></svg>',
@@ -905,7 +907,7 @@
         <div class="welcome-head"><span class="om" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/><path d="M12 6.2V2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g stroke="#0a3f24" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round"><path d="M12 7.3V20"/><path d="M12 10.1 8.9 8.3"/><path d="M12 10.1 15.1 8.3"/><path d="M12 12.9 8.6 11.3"/><path d="M12 12.9 15.4 11.3"/><path d="M12 15.6 9.2 14.5"/><path d="M12 15.6 14.8 14.5"/></g></svg></span><h2>Welcome to Kuber Map</h2><span class="wbadge">the treasury of financial knowledge</span></div>
         <button class="fb-close" id="welClose" aria-label="Close">×</button>
       </div>
-      <p class="welcome-sub">A curated, learner-first map of the <b>Financial Industry Business Ontology</b>, the knowledge base and taxonomy for building AI and agentic AI in finance. You start on <b>71 loan-origination concepts</b> (of ${GRAPH.nodes.length}), grounded and audit-ready; every concept carries its FIBO IRI. Here's how to explore:</p>
+      <p class="welcome-sub">A curated, learner-first map of the <b>Financial Industry Business Ontology</b>, the knowledge base and taxonomy for building AI and agentic AI in finance. You start on <b>${CORE_N} curated concepts</b> across loan origination, KYC and securities (of ${GRAPH.nodes.length}), grounded and audit-ready; every concept carries its FIBO IRI. Here's how to explore:</p>
       <div class="welcome-features">
         ${WELCOME_FEATURES.map((f) => `<div class="welcome-feature"><span class="wf-ic">${f.ic}</span><div><b>${f.t}</b><span>${f.d}</span></div></div>`).join('')}
       </div>

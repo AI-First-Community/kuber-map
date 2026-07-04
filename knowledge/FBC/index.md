@@ -26,7 +26,7 @@
 - [U.S. credit union](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/USCreditUnion.md) — cooperative association organized for the purpose of promoting thrift among its members and creating a source of credit 
 - [account](ProductsAndServices/ClientsAndAccounts/Account.md) — container for records associated with a business arrangement for regular transactions and services
 - [account as an asset](ProductsAndServices/ClientsAndAccounts/AccountAsAnAsset.md) — financial asset in the form of an account
-- [account holder](ProductsAndServices/ClientsAndAccounts/AccountHolder.md) — party that owns an account
+- core · [account holder](ProductsAndServices/ClientsAndAccounts/AccountHolder.md) — party that owns an account
 - [account identifier](ProductsAndServices/ClientsAndAccounts/AccountIdentifier.md) — identifier that denotes an account
 - [account ownership](ProductsAndServices/ClientsAndAccounts/AccountOwnership.md) — holding of an account
 - [account provider](ProductsAndServices/ClientsAndAccounts/AccountProvider.md) — party that provides and services an account
@@ -78,14 +78,14 @@
 - [business center code](FunctionalEntities/BusinessCenters/BusinessCenterCode.md) — code used to denote a metropolitan area where business is conducted
 - [business center code set](FunctionalEntities/BusinessCenters/BusinessCenterCodeScheme.md) — coding scheme used to define a set of codes for municipalities or business centers
 - [business day adjustment code](FunctionalEntities/BusinessCenters/BusinessDayAdjustmentCode.md) — code used to denote a convention for specifying what happens when a date falls on a day that is weekend or holiday in so
-- [business identifier code](FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCode.md) — international identifier for financial and non-financial institutions used to facilitate automated processing of informa
+- core · [business identifier code](FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCode.md) — international identifier for financial and non-financial institutions used to facilitate automated processing of informa
 - [business identifier code data record](FunctionalEntities/InternationalRegistriesAndAuthorities/BusinessIdentifierCodeDataRecord.md) — entry in a registry that conforms to ISO 9362 for the management of BIC codes and related registration information
 - [business identifier code scheme](FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCodeScheme.md) — scheme that specifies the elements of a unique business identifier code (BIC) scheme to identify financial and non-finan
 - [business number](FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/BusinessNumber.md) — unique, 9-digit number that is the standard identifier for legal entities in Canada which are typically a business
 - [business party prefix](FunctionalEntities/FinancialServicesEntities/BusinessPartyPrefix.md) — four-character (4 alphanumeric) code associated with an organization for the purposes of banking telecommunications
 - [business party suffix](FunctionalEntities/FinancialServicesEntities/BusinessPartySuffix.md) — two-character (2 alphanumeric) code associated with the organization for the purposes of banking telecommunications
-- [business register identifier](FunctionalEntities/BusinessRegistries/BusinessRegisterIdentifier.md) — identifier that uniquely identifies a business register, such as a register identified by the Global Legal Entity Identi
-- [business registration authority](FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority.md) — registration authority that is responsible for maintaining a registry of business entities
+- core · [business register identifier](FunctionalEntities/BusinessRegistries/BusinessRegisterIdentifier.md) — identifier that uniquely identifies a business register, such as a register identified by the Global Legal Entity Identi
+- core · [business registration authority](FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority.md) — registration authority that is responsible for maintaining a registry of business entities
 - [business registry](FunctionalEntities/BusinessRegistries/BusinessRegistry.md) — registry for registering and maintaining information about business entities
 - [business registry entry](FunctionalEntities/BusinessRegistries/BusinessRegistryEntry.md) — entry in a business registry
 - [calculation agent](FinancialInstruments/FinancialInstruments/CalculationAgent.md) — party that is responsible for determining the value of an instrument and in some cases, determines how much the parties 
@@ -160,8 +160,8 @@
 - [cross default provision](DebtAndEquities/CreditEvents/CrossDefaultProvision.md) — contract provision that triggers a default under one contract if the borrower defaults on another related obligation
 - [crypto asset services provider](FunctionalEntities/Markets/CryptoAssetServicesProvider.md) — financial services provider that provides services for crypto assets that enable the control of crypto assets, and parti
 - [currency instrument](FinancialInstruments/FinancialInstruments/CurrencyInstrument.md) — financial instrument used for the purposes of currency trading
-- [customer account](ProductsAndServices/ClientsAndAccounts/CustomerAccount.md) — account that represents an identified, named collection of balances and cumulative totals used to summarize customer tra
-- [customer account holder](ProductsAndServices/ClientsAndAccounts/CustomerAccountHolder.md) — party that owns a customer account
+- core · [customer account](ProductsAndServices/ClientsAndAccounts/CustomerAccount.md) — account that represents an identified, named collection of balances and cumulative totals used to summarize customer tra
+- core · [customer account holder](ProductsAndServices/ClientsAndAccounts/CustomerAccountHolder.md) — party that owns a customer account
 - [dark pool](FunctionalEntities/Markets/DarkPool.md) — privately organized alternative trading system, that allows institutional investors the ability to trade without exposur
 - [data processing service](FunctionalEntities/FinancialServicesEntities/DataProcessingService.md) — financial service offered by an entity primarily engaged in providing infrastructure for hosting or data processing serv
 - [data processing servicer](FunctionalEntities/FinancialServicesEntities/DataProcessingServicer.md) — finance services provider primarily engaged in providing infrastructure for hosting or data processing services
@@ -169,7 +169,7 @@
 - [day-count convention](DebtAndEquities/Debt/DayCountConvention.md) — a business recurrence interval convention that is used to calculate the number of days in an interest payment, which app
 - [dealer](ProductsAndServices/FinancialProductsAndServices/Dealer.md) — any party that purchases goods or services for resale and acts on their own behalf in a transaction
 - [debt](DebtAndEquities/Debt/Debt.md) — obligation to pay something, such as an amount of money, good, service, or instrument
-- [debt instrument](FinancialInstruments/FinancialInstruments/DebtInstrument.md) — financial instrument and credit agreement evidencing monies owed by the issuer to the holder on terms as specified
+- core · [debt instrument](FinancialInstruments/FinancialInstruments/DebtInstrument.md) — financial instrument and credit agreement evidencing monies owed by the issuer to the holder on terms as specified
 - [debt terms](DebtAndEquities/Debt/DebtTerms.md) — contract terms that specify the formal rights and obligations of borrower and lender under a contract in which funds are
 - [debtor](DebtAndEquities/Debt/Debtor.md) — a party that owes a debt or other obligation to another party
 - [default event](DebtAndEquities/CreditEvents/DefaultEvent.md) — credit event representing a failure to meet a contractual obligation, such as failure to repay a debt including interest
@@ -204,7 +204,7 @@
 - [entity status](FunctionalEntities/BusinessRegistries/EntityStatus.md) — lifecycle stage indicating the operational and/or legal status of an entity
 - [entity validation level](FunctionalEntities/BusinessRegistries/EntityValidationLevel.md) — code for the level of validation performed by the GLEIF or LOU with respect to the reference data provided by the regist
 - [entity-specific credit event](DebtAndEquities/CreditEvents/EntitySpecificCreditEvent.md) — credit event that applies to a given legal person
-- [equity instrument](FinancialInstruments/FinancialInstruments/EquityInstrument.md) — financial instrument representing an ownership interest in an entity or pool of assets
+- core · [equity instrument](FinancialInstruments/FinancialInstruments/EquityInstrument.md) — financial instrument representing an ownership interest in an entity or pool of assets
 - [examiner](FunctionalEntities/RegulatoryAgencies/Examiner.md) — party empowered as an official representative by a regulatory agency to investigate and review specified documents for a
 - [exchange](FunctionalEntities/Markets/Exchange.md) — any organization, association, or group of persons, whether incorporated or unincorporated, which constitutes, maintains
 - [exchange participant](FunctionalEntities/Markets/ExchangeParticipant.md) — registered agent who, in accordance with the rules of an exchange, may trade on or through the exchange and whose name i
@@ -295,14 +295,14 @@
 - [investment firm](FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities/InvestmentFirm.md) — any legal person whose regular occupation or business is the provision of one or more investment services to third parti
 - [investment or deposit account](ProductsAndServices/ClientsAndAccounts/InvestmentOrDepositAccount.md) — account associated with a product or service that requires the account holder to provide funds for management by the acc
 - [investment service](FunctionalEntities/FinancialServicesEntities/InvestmentService.md) — financial service designed to assist investors in using capital to create more money, either through income-producing ve
-- [issuer](FinancialInstruments/FinancialInstruments/Issuer.md) — role of a party that issues (or proposes to issue in a formal filing) one or more financial instruments
+- core · [issuer](FinancialInstruments/FinancialInstruments/Issuer.md) — role of a party that issues (or proposes to issue in a formal filing) one or more financial instruments
 - [issuer identification number](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/IssuerIdentificationNumber.md) — a numbering system that allows a credit, debit, or other card to be identified as having been issued by a particular fin
 - [joint guaranty](DebtAndEquities/Guaranty/JointGuaranty.md) — guaranty provided by at least two parties, jointly and severally
 - [lease](DebtAndEquities/Debt/Lease.md) — credit agreement permitting the use of real estate, equipment or another asset, such as a vehicle, by the owner of that 
 - [ledger account](ProductsAndServices/ClientsAndAccounts/LedgerAccount.md) — individual record for one element or sub-element in a ledger that records and summarizes increases, decreases, and balan
 - [ledger account classifier](ProductsAndServices/ClientsAndAccounts/LedgerAccountClassifier.md) — classifier used to organize an entity's financial accounts in accordance with applicable legal, regulatory, and reportin
 - [legal agent](ProductsAndServices/FinancialProductsAndServices/LegalAgent.md) — any party that has been legally empowered to act on behalf of another party
-- [legal entity identifier registry](FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry.md) — registry for registering and maintaining information about business entities for a particular jurisdiction
+- core · [legal entity identifier registry](FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry.md) — registry for registering and maintaining information about business entities for a particular jurisdiction
 - [legal entity identifier registry entry](FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry.md) — entry in a legal entity identifier registry that conforms to ISO 17442 and the Global Legal Entity Identifier Foundation
 - core · [lender](DebtAndEquities/Debt/Lender.md) — a party that extends credit or money to a borrower with the expectation of being repaid, usually with interest
 - [lending officer](ProductsAndServices/ClientsAndAccounts/LendingOfficer.md) — corporate officer that has overarching responsibility for the relationship with a specific borrower or account
@@ -407,7 +407,7 @@
 - [registered charity program number](FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/RegisteredCharityProgramNumber.md) — concatenation of an entity's business number, the 'RR' abbreviation and a 4-digit subaccount number used for registered 
 - [registered investment advisor](FunctionalEntities/FinancialServicesEntities/RegisteredInvestmentAdvisor.md) — registered agent and financial service provider that advises high net worth individuals on investments and manages their
 - [registered multilateral trading facility](FunctionalEntities/Markets/RegisteredMultilateralTradingFacility.md) — multilateral system operated by an investment firm or market operator, which brings together multiple third-party buying
-- [registration authority code](FunctionalEntities/BusinessRegistries/RegistrationAuthorityCode.md) — identifier that uniquely identifies a business registry, and is associated with a registration authority and jurisdictio
+- core · [registration authority code](FunctionalEntities/BusinessRegistries/RegistrationAuthorityCode.md) — identifier that uniquely identifies a business registry, and is associated with a registration authority and jurisdictio
 - [registration status](FunctionalEntities/BusinessRegistries/RegistrationStatus.md) — lifecycle stage indicating the status of a given registration of something, such as a business or legal entity, as speci
 - [regulated commodity](ProductsAndServices/FinancialProductsAndServices/RegulatedCommodity.md) — commodity under the jurisdiction of the regulatory agency, such as the Commodities Futures Trading Commission (CFTF) in 
 - [regulated exchange](FunctionalEntities/Markets/RegulatedExchange.md) — regulated market that is operated by and/or managed by a market operator that brings together or facilitates the bringin
@@ -427,7 +427,7 @@
 - [savings loan association](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/SavingsLoanAssociation.md) — financial institution that accepts deposits primarily from individuals and channels its funds primarily into residential
 - [savings loan holding company](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/SavingsLoanHoldingCompany.md) — company that directly or indirectly controls a savings association or related holding company, and explicitly excludes a
 - [securities transaction](FinancialInstruments/FinancialInstruments/SecuritiesTransaction.md) — transaction between two or more parties involving the exchange of commonly defined financial products
-- [security](FinancialInstruments/FinancialInstruments/Security.md) — financial instrument that can be bought or sold
+- core · [security](FinancialInstruments/FinancialInstruments/Security.md) — financial instrument that can be bought or sold
 - [security agreement](DebtAndEquities/Debt/SecurityAgreement.md) — collateral agreement that grants a financial interest in some collateral to a party that is not an owner of that collate
 - [security price](FinancialInstruments/InstrumentPricing/SecurityPrice.md) — monetary price for a financial instrument at some point in time
 - [self-regulating organization](FunctionalEntities/FinancialServicesEntities/SelfRegulatingOrganization.md) — non-governmental organization that has the power to create and exercise some degree of regulatory authority over an indu
@@ -484,7 +484,7 @@
 - [uncommitted credit facility](DebtAndEquities/Debt/UncommittedCreditFacility.md) — credit facility that has yet to be confirmed as a source of financing for the borrower
 - [uncommitted sub-facility](DebtAndEquities/Debt/UncommittedSubFacility.md) — sub-facility that has yet to be confirmed as a source of financing for the borrower
 - [underlier](FinancialInstruments/FinancialInstruments/Underlier.md) — something that can be assigned a value in the marketplace that forms the basis for a derivative or pool-backed instrumen
-- [underwriter](FunctionalEntities/FinancialServicesEntities/Underwriter.md) — financial service provider that evaluates and assumes another party's risk for a fee, such as a commission, premium, spr
+- core · [underwriter](FunctionalEntities/FinancialServicesEntities/Underwriter.md) — financial service provider that evaluates and assumes another party's risk for a fee, such as a commission, premium, spr
 - [underwriting arrangement](FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement.md) — written contract between parties that commits the underwriter to assuming risk
 - [uninsured federal agency of foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/UninsuredFederalAgencyOfForeignBankingOrganization.md) — agency of a foreign bank established and operating under section 3102 of CFR Title 12, Chapter 32 and section 4 of the I
 - [uninsured federal branch of foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/UninsuredFederalBranchOfForeignBankingOrganization.md) — any office or any place of business of a foreign bank located in any State of the United States at which deposits are re
@@ -499,5 +499,5 @@
 - [weighted basket](ProductsAndServices/FinancialProductsAndServices/WeightedBasket.md) — basket whose constituents have some relative importance with respect to one another
 - [weighted basket constituent](ProductsAndServices/FinancialProductsAndServices/WeightedBasketConstituent.md) — component of a basket whose relative importance with respect to other basket constituents is known
 - [write-down](DebtAndEquities/CreditEvents/WriteDown.md) — obligation-specific credit event whereby the book value of the obligation, such as the outstanding principal amount, is 
-- [yield](FinancialInstruments/InstrumentPricing/Yield.md) — return on the investor's capital investment
+- core · [yield](FinancialInstruments/InstrumentPricing/Yield.md) — return on the investor's capital investment
 - [yield spread](FinancialInstruments/InstrumentPricing/YieldSpread.md) — the spread between the yields of two items

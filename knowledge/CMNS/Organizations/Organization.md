@@ -4,6 +4,7 @@ title: "organization"
 description: "framework of authority within which a person, persons, or groups of people act, or are designated to act, towards some purpose, such as to meet a need or pursue collective goals"
 resource: https://www.omg.org/spec/Commons/Organizations/Organization
 tags: [CMNS]
+core: true
 examples:
   - "This may be a business entity, government, international organization, not-for-profit, academic institution, or other unincorporated and/or informal social organization."
 relations:

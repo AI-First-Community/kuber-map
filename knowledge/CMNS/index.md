@@ -1,7 +1,7 @@
 # CMNS
 
 - [actor](PartiesAndSituations/Actor.md) — primary performer in a relationship between parties, i
-- [agent](PartiesAndSituations/Agent.md) — something autonomous that can adapt to and interact with its environment
+- core · [agent](PartiesAndSituations/Agent.md) — something autonomous that can adapt to and interact with its environment
 - [agent role](PartiesAndSituations/AgentRole.md) — role played by any agent
 - [arbitrary unit](QuantitiesAndUnits/ArbitraryUnit.md) — arbitrarily defined unit of measurement, where a relation of the unit to a physical unit of the SI does not exist or is 
 - [arrangement](Collections/Arrangement.md) — systematic plan, manner, or method for making, doing, achieving, or organizing something
@@ -55,7 +55,7 @@
 - [factor](QuantitiesAndUnits/Factor.md) — number or quantity that when multiplied with another produces a given number or expression
 - [federal capital area](Locations/FederalCapitalArea.md) — country subdivision that is or includes the municipality or capital city that acts as the seat of the federal government
 - [federal state](Locations/FederalState.md) — self-governing geopolitical unit which forms part of a wider geopolitical unit that is recognized as a country
-- [formal organization](Organizations/FormalOrganization.md) — organization that is recognized in some legal jurisdiction, with associated rights and responsibilities
+- core · [formal organization](Organizations/FormalOrganization.md) — organization that is recognized in some legal jurisdiction, with associated rights and responsibilities
 - [functional role](RolesAndCompositions/FunctionalRole.md) — role representing an underlying functionality that something, such as a person, organization, process, or service, is ex
 - [geodetic coordinate system](Locations/GeodeticCoordinateSystem.md) — three-dimensional reference system that is a global frame of reference for precisely representing the position of locati
 - [geographic region](Locations/GeographicRegion.md) — area of land that has common features
@@ -69,8 +69,8 @@
 - [interval scale](QuantitiesAndUnits/IntervalScale.md) — measurement scale that represents quantitative values and for which mode, median and mean can be calculated
 - [jurisdiction](RegulatoryAgencies/Jurisdiction.md) — power of a court or regulatory agency to adjudicate cases, issue orders, and interpret and apply the law with respect to
 - [legal document](Documents/LegalDocument.md) — document specifying the terms of, or provides evidence for, an agreement, attestation, certification, conditions, permis
-- [legal entity](Organizations/LegalEntity.md) — legal person that is a partnership, corporation, or other organization having the capacity to negotiate contracts, assum
-- [legal person](Organizations/LegalPerson.md) — party that is recognized as having rights and obligations under the law, including but not limited to the right to sue a
+- core · [legal entity](Organizations/LegalEntity.md) — legal person that is a partnership, corporation, or other organization having the capacity to negotiate contracts, assum
+- core · [legal person](Organizations/LegalPerson.md) — party that is recognized as having rights and obligations under the law, including but not limited to the right to sue a
 - [legally delegated authority](BusinessAuthorizations/LegallyDelegatedAuthority.md) — authorized party empowered with some level of legal control and corresponding responsibility
 - [location](Locations/Location.md) — place or position in time and/or space, including a virtual place
 - [logarithmic scale](QuantitiesAndUnits/LogarithmicScale.md) — measurement scale on which the actual distance of a point from the scale's zero is proportional to the logarithm of the 
@@ -87,14 +87,14 @@
 - [nominal scale](QuantitiesAndUnits/NominalScale.md) — measurement scale that represents objects as belonging to classes that have no particular order
 - [notice](Documents/Notice.md) — announcement, communication, intimation, or advance warning of something, usually, but not necessarily, to allow prepara
 - [ordinal scale](QuantitiesAndUnits/OrdinalScale.md) — quantity-value scale for ordinal quantities, i
-- [organization](Organizations/Organization.md) — framework of authority within which a person, persons, or groups of people act, or are designated to act, towards some p
+- core · [organization](Organizations/Organization.md) — framework of authority within which a person, persons, or groups of people act, or are designated to act, towards some p
 - [organization identification scheme](Organizations/OrganizationIdentificationScheme.md) — identification scheme dedicated to the unique identification of organizations
 - [organization identifier](Organizations/OrganizationIdentifier.md) — identifier assigned to an organization within an organization identification scheme, and unique within that scheme
 - [organization member](Organizations/OrganizationMember.md) — party (person or organization) that has a membership role with respect to some organization
 - [organization name](Organizations/OrganizationName.md) — designation by which some organization is known in some context
 - [organization sub-unit identifier](Organizations/OrganizationSubUnitIdentifier.md) — identifier allocated to a particular organizational sub-unit
 - [organizational sub-unit](Organizations/OrganizationalSubUnit.md) — any department or other entity within a larger organization that only has full recognition within the context of that or
-- [party](PartiesAndSituations/Party.md) — person or organization
+- core · [party](PartiesAndSituations/Party.md) — person or organization
 - [party role](PartiesAndSituations/PartyRole.md) — role played by an organization or individual that may be time bound
 - [percentage](QuantitiesAndUnits/Percentage.md) — ratio value expressed as a fraction of 100, i
 - [physical location](Locations/PhysicalLocation.md) — location in physical space

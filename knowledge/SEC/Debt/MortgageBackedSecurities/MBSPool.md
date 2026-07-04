@@ -4,6 +4,7 @@ title: "m b s pool"
 description: "A pool investment consisting of a collection of MBS instruments."
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MBSPool
 tags: [SEC, Provisional]
+core: true
 examples:
   - "The pool of conforming 30-year mortgages backing a Fannie Mae MBS."
 examples_provenance: curated

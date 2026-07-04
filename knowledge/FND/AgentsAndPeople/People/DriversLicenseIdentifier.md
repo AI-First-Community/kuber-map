@@ -4,6 +4,7 @@ title: "driver's license identifier"
 description: "identifier associated with a drivers' or operating license for operating a motor vehicle or non-driver identification card"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DriversLicenseIdentifier
 tags: [FND, Release]
+core: true
 synonyms:
   - "driver's license number"
 relations:

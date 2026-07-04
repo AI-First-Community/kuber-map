@@ -59,8 +59,8 @@
 - [cash flow](Accounting/CashFlows/CashFlow.md) — the movement of money from some source to some sink
 - [cash flow structure](Accounting/CashFlows/CashFlowStructure.md) — the structure related to one or more cash flows
 - [claim](Law/LegalCapacity/Claim.md) — demand or assertion made by one party on another, based on facts that, taken together, give rise to a legally enforceabl
-- [client](ProductsAndServices/ProductsAndServices/Client.md) — party that purchases professional services from, or has a formal relationship to purchase services from another party
-- [client identifier](ProductsAndServices/ProductsAndServices/ClientIdentifier.md) — sequence of characters uniquely identifying a client within the context of some organization
+- core · [client](ProductsAndServices/ProductsAndServices/Client.md) — party that purchases professional services from, or has a formal relationship to purchase services from another party
+- core · [client identifier](ProductsAndServices/ProductsAndServices/ClientIdentifier.md) — sequence of characters uniquely identifying a client within the context of some organization
 - [close-out netting provision](Agreements/Contracts/CloseOutNettingProvision.md) — netting provision that may be triggered when a counterparty defaults, leading to the termination of all outstanding tran
 - [collateral agreement](Agreements/Contracts/CollateralAgreement.md) — written contract related to another contract designed to provide clarity and additional protection for all parties invol
 - [commitment](Agreements/Agreements/Commitment.md) — promise made by some party to act or refrain from acting in some manner
@@ -77,7 +77,7 @@
 - [contract](Agreements/Contracts/Contract.md) — voluntary, deliberate agreement between competent parties to which the parties agree to be legally bound, and for which 
 - [contract document](Agreements/Contracts/ContractDocument.md) — legal document that records the formal terms and conditions of some contract
 - [contract milestone](Agreements/Contracts/ContractMilestone.md) — classifier for an event (milestone), or set of events related to the status or level of completion of a designated activ
-- [contract party](Agreements/Contracts/ContractParty.md) — legally competent party that has entered into a binding agreement, accepting and conceding obligations, responsibilities
+- core · [contract party](Agreements/Contracts/ContractParty.md) — legally competent party that has entered into a binding agreement, accepting and conceding obligations, responsibilities
 - [contract principal](Agreements/Contracts/ContractPrincipal.md) — party that originates a contract and is identified as the first party to that contract, in the event that the contract d
 - [contract third party](Agreements/Contracts/ContractThirdParty.md) — party that is indirectly involved in, but not a counterparty to, an agreement
 - [contractual capability](Law/LegalCapacity/ContractualCapability.md) — the capacity to enter into legally binding contracts
@@ -93,9 +93,9 @@
 - [contractual template product](ProductsAndServices/ProductsAndServices/ContractualTemplateProduct.md) — contractual product that is finalized through specification of values for parameters defined in a template
 - [contractual transaction](TransactionsExt/REATransactions/ContractualTransaction.md) — An economic transaction which has some contractual basis
 - [contractual transaction party](TransactionsExt/REATransactions/ContractualTransactionParty.md) — That which is party to a transaction which has contractual standing
-- [control](OwnershipAndControl/Control/Control.md) — situation in which some party has the power to direct or strongly influence the direction of the management and policies
+- core · [control](OwnershipAndControl/Control/Control.md) — situation in which some party has the power to direct or strongly influence the direction of the management and policies
 - [controlled thing](OwnershipAndControl/Control/ControlledThing.md) — something over which some party exercises some form of control with respect to some situation
-- [controlling party](OwnershipAndControl/Control/ControllingParty.md) — actor that exercises some form of control in the context of some situation
+- core · [controlling party](OwnershipAndControl/Control/ControllingParty.md) — actor that exercises some form of control in the context of some situation
 - [convention](DatesAndTimes/BusinessDates/Convention.md) — widely accepted or established way of doing 'something' within some community of practice
 - [conventional street address](Places/Addresses/ConventionalStreetAddress.md) — physical address that identifies a location on a street to which communications may be delivered
 - [counterparty](Agreements/Contracts/Counterparty.md) — party to a contract with whom one negotiates on a given agreement
@@ -105,16 +105,16 @@
 - [currency basket](Accounting/CurrencyAmount/CurrencyBasket.md) — selected group of currencies, in which the weighted average is used as a measure of the value or the amount of an obliga
 - [currency identifier](Accounting/CurrencyAmount/CurrencyIdentifier.md) — sequence of characters representing some currency
 - [custom product](ProductsAndServices/ProductsAndServices/CustomProduct.md) — product that is made to order, commissioned based on a customer's specifications
-- [customer](ProductsAndServices/ProductsAndServices/Customer.md) — party that receives or consumes products (goods or services) and has the ability to choose between different products an
-- [customer identifier](ProductsAndServices/ProductsAndServices/CustomerIdentifier.md) — sequence of characters uniquely identifying a customer within the context of some organization
+- core · [customer](ProductsAndServices/ProductsAndServices/Customer.md) — party that receives or consumes products (goods or services) and has the ability to choose between different products an
+- core · [customer identifier](ProductsAndServices/ProductsAndServices/CustomerIdentifier.md) — sequence of characters uniquely identifying a customer within the context of some organization
 - [date of birth](AgentsAndPeople/People/DateOfBirth.md) — explicit date, i
 - [date of death](AgentsAndPeople/People/DateOfDeath.md) — explicit date, i
 - [dated collection constituent](DatesAndTimes/FinancialDates/DatedCollectionConstituent.md) — element of a collection that is associated with a date and time
 - [dated structured collection](DatesAndTimes/FinancialDates/DatedStructuredCollection.md) — structured collection whose elements are required to have a date and time
 - [day of month](DatesAndTimes/BusinessDates/DayOfMonth.md) — specific, recurring day of the month
 - [day of the week](DatesAndTimes/BusinessDates/DayOfWeek.md) — specific, recurring day of the week
-- [de facto control](OwnershipAndControl/Control/DeFactoControl.md) — control that exists informally and is accepted, although not formally recognized
-- [de jure control](OwnershipAndControl/Control/DeJureControl.md) — control that exists as a matter of law, i
+- core · [de facto control](OwnershipAndControl/Control/DeFactoControl.md) — control that exists informally and is accepted, although not formally recognized
+- core · [de jure control](OwnershipAndControl/Control/DeJureControl.md) — control that exists as a matter of law, i
 - [death certificate](AgentsAndPeople/People/DeathCertificate.md) — original document certifying the circumstances of the death (such as how and when it occurred), or a certified copy of o
 - [death certificate identification scheme](AgentsAndPeople/People/DeathCertificateIdentificationScheme.md) — system for allocating identifiers to death certificates
 - [death certificate identifier](AgentsAndPeople/People/DeathCertificateIdentifier.md) — identifier associated with a vital record documenting the death of an individual
@@ -130,7 +130,7 @@
 - [distribution strategy](GoalsAndObjectives/Objectives/DistributionStrategy.md) — strategy for making a product or service available, or for distributing funds, such as in the form of a dividend or coup
 - [driver's license](AgentsAndPeople/People/DriversLicense.md) — an official document which states that a person may operate a motorized vehicle, such as a motorcycle, car, truck or a b
 - [driver's license identification scheme](AgentsAndPeople/People/DriversLicenseIdentificationScheme.md) — system for allocating identifiers to driver's, operating, or non-driver identification documents
-- [driver's license identifier](AgentsAndPeople/People/DriversLicenseIdentifier.md) — identifier associated with a drivers' or operating license for operating a motor vehicle or non-driver identification ca
+- core · [driver's license identifier](AgentsAndPeople/People/DriversLicenseIdentifier.md) — identifier associated with a drivers' or operating license for operating a motor vehicle or non-driver identification ca
 - [duty](Law/LegalCapacity/Duty.md) — some obligation which exists and is imposed on some individual
 - [early termination provision](Agreements/Contracts/EarlyTerminationProvision.md) — termination of an agreement for any reason prior to its expiration date
 - [earnings before interest, taxes, depreciation and amortization](Accounting/AccountingEquity/EarningsBeforeInterestTaxesDepreciationAmortization.md) — measure of potential cash flow that excludes the effects of capital structure, taxes and non-cash expenses
@@ -169,7 +169,7 @@
 - [highway contract address](Places/NorthAmerica/USPostalServiceAddresses/HighwayContractRouteAddress.md) — delivery address whose delivery address line uses the abbreviation 'HC', followed by the route identifier, followed by '
 - [highway contract route](Places/NorthAmerica/USPostalServiceAddresses/HighwayContractRoute.md) — highway contract route associated with an address
 - [highway contract route address](Places/NorthAmerica/USPostalServiceAddresses/RuralRoute.md) — mail route outside the city or township limits in a rural area associated with an address
-- [identity document](AgentsAndPeople/People/IdentityDocument.md) — any legal document which may be used to verify aspects of a person's identity
+- core · [identity document](AgentsAndPeople/People/IdentityDocument.md) — any legal document which may be used to verify aspects of a person's identity
 - [incapacitated adult](AgentsAndPeople/People/IncapacitatedAdult.md) — an adult who is legally identified as not having legal capacity, typically as a result of some inherent physical or ment
 - core · [income](Accounting/AccountingEquity/Income.md) — revenue received during a period of time
 - [index](Arrangements/IdentifiersAndIndices/Index.md) — indirect shortcut derived from and pointing into, a greater volume of values, data, information or knowledge
@@ -250,8 +250,8 @@
 - [overseas military address](Places/NorthAmerica/USPostalServiceAddresses/OverseasMilitaryAddress.md) — delivery address whose delivery address line uses an abbreviation for the unit or command such as 'CMR', 'PSC', or 'UNIT
 - [owner](OwnershipAndControl/Ownership/Owner.md) — party that is legally recognized as having the right to possess, the privilege to use, and ability to transfer any right
 - [owners' equity](Accounting/AccountingEquity/OwnersEquity.md) — owners' share in a business plus operating profit
-- [ownership](OwnershipAndControl/Ownership/Ownership.md) — situation in which some party holds the legal title to something (explicitly or implicitly) and has the right to transfe
-- [ownership control situation](OwnershipAndControl/OwnershipAndControl/OwnershipControlSituation.md) — situation in which some party owns and controls something
+- core · [ownership](OwnershipAndControl/Ownership/Ownership.md) — situation in which some party holds the legal title to something (explicitly or implicitly) and has the right to transfe
+- core · [ownership control situation](OwnershipAndControl/OwnershipAndControl/OwnershipControlSituation.md) — situation in which some party owns and controls something
 - [paid-in capital](Accounting/AccountingEquity/PaidInCapital.md) — assets received from investors in exchange for an ownership interest
 - [party role identification scheme](Parties/Parties/PartyRoleIdentificationScheme.md) — system for allocating identifiers to roles that parties play
 - [party role identifier](Parties/Parties/PartyRoleIdentifier.md) — sequence of characters, capable of uniquely identifying a party based on a specific role that they play in some context
@@ -266,8 +266,8 @@
 - [payment obligation](ProductsAndServices/PaymentsAndSchedules/PaymentObligation.md) — legally enforceable duty to pay a sum of money according to the terms stated in a contract
 - [payment schedule](ProductsAndServices/PaymentsAndSchedules/PaymentSchedule.md) — schedule for delivery of money in fulfillment of an obligation
 - [percentage monetary amount](Accounting/CurrencyAmount/PercentageMonetaryAmount.md) — measure of some amount of money expressed as a percentage of some other amount, some notional amount or some concrete mo
-- [person](AgentsAndPeople/People/Person.md) — individual human being, with consciousness of self
-- [person name](AgentsAndPeople/People/PersonName.md) — designation by which someone is known in some context
+- core · [person](AgentsAndPeople/People/Person.md) — individual human being, with consciousness of self
+- core · [person name](AgentsAndPeople/People/PersonName.md) — designation by which someone is known in some context
 - [personal property](Places/RealProperty/PersonalProperty.md) — asset that is a movable item or possession not fixed to land
 - [physical address](Places/Addresses/PhysicalAddress.md) — physical address where communications can be addressed, papers served or representatives located for any kind of organiz
 - [physical address identifier](Places/Addresses/PhysicalAddressIdentifier.md) — unique identifier for a physical address

@@ -4,6 +4,7 @@ title: "listed security"
 description: "registered security listed on at least one exchange"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/ListedSecurity
 tags: [SEC, Release]
+core: true
 detail: "One can, as appropriate, multiply classify a share as being a common share and listed share, and, in the case whereby multiple securities are issued in different currencies (i.e., there are multiple listed shares corresponding to a given common share that have different identifiers, including more than one ISIN, CUSIP, share class FIGI), multiply classify the listed share individuals as individuals of the same common share."
 examples:
   - "Apple Inc. (AAPL) common stock, listed on Nasdaq."

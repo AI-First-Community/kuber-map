@@ -4,6 +4,7 @@ title: "fixed coupon bond"
 description: "bond whose coupon rate and principal amount are fixed at the time of origination or sale and remain constant while the security is outstanding"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FixedCouponBond
 tags: [SEC, Release]
+core: true
 examples:
   - "A 5-year bond paying a fixed 3.5% annual coupon."
 examples_provenance: curated

@@ -4,6 +4,7 @@ title: "formal organization"
 description: "organization that is recognized in some legal jurisdiction, with associated rights and responsibilities"
 resource: https://www.omg.org/spec/Commons/Organizations/FormalOrganization
 tags: [CMNS]
+core: true
 examples:
   - "Examples include a corporation, charity, government or church."
 relations:

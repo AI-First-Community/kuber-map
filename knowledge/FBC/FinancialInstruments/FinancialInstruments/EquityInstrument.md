@@ -4,6 +4,7 @@ title: "equity instrument"
 description: "financial instrument representing an ownership interest in an entity or pool of assets"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/EquityInstrument
 tags: [FBC, Release]
+core: true
 examples:
   - "A common share of Microsoft Corporation."
 examples_provenance: curated

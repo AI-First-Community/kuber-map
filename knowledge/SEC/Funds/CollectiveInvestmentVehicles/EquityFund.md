@@ -4,6 +4,7 @@ title: "equity fund"
 description: "A fund which invests in at least 85% shares."
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/EquityFund
 tags: [SEC, Provisional]
+core: true
 examples:
   - "A large-cap equity fund that invests primarily in common shares."
 examples_provenance: curated

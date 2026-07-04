@@ -4,6 +4,7 @@ title: "treasury bill"
 description: "short-term zero coupon treasury obligation with a maturity ranging from one to twelve months"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/TreasuryBill
 tags: [SEC, Release]
+core: true
 detail: "The pricing of T-bills is unique among U.S. government debt issues. Treasury bills are offered in multiples of $100 and in terms ranging from a few days to 52 weeks. Rather than providing interest payments as Treasury Bonds or Notes do, T-bills are sold at a discount, and the entire return is realized upon maturity. The price of a bill is determined at auction. The annualized interest rate earned on T-bills is equal to the difference between the purchase price and maturity value, divided by the maturity value."
 examples:
   - "A 13-week US Treasury bill sold at a discount to its US$1,000 face value."

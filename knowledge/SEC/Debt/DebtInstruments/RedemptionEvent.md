@@ -4,6 +4,7 @@ title: "redemption event"
 description: "a prescriptive event involving the return of an investor's principal in a fixed-income security, such as a preferred stock or bond, or the sale of units in a mutual fund"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RedemptionEvent
 tags: [SEC, Release]
+core: true
 examples:
   - "A bond reaching maturity and repaying principal to its holders."
 examples_provenance: curated

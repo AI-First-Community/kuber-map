@@ -4,6 +4,7 @@ title: "zero coupon bond"
 description: "bond issued with a coupon rate of zero and that trades at a deep discount to face value"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ZeroCouponBond
 tags: [SEC, Release]
+core: true
 detail: "Fannie Mae also issues zero-coupon callable debt securities. Zero-coupon notes are debt securities on which no coupon interest is paid to the investor. Rather, the security is purchased at a discounted dollar price and matures at par. If the option on a callable zero-coupon security is exercised, it is redeemed at a higher dollar price than the original issue price. The yield for a callable zero-coupon security is based on the difference between the original discounted price and the principal payment at the call date. The principal amount accretes over time at a constant accrual rate and is redeemed at full face value at maturity. In effect, the accrual rate is the coupon rate or yield which is added to the outstanding principal rather than being paid out to investors."
 examples:
   - "A US Treasury STRIPS that pays no coupon and trades at a discount to its face value."

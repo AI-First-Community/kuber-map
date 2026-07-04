@@ -131,7 +131,8 @@ def main():
     ap.add_argument("--bundle", default="knowledge")
     ap.add_argument("--clusters", nargs="+", default=["FND", "LOAN"])
     ap.add_argument("--curation", nargs="+",
-                    default=["curation/loan-origination.json", "curation/definitions.json",
+                    default=["curation/loan-origination.json", "curation/kyc.json",
+                             "curation/securities.json", "curation/definitions.json",
                              "curation/examples.json", "curation/notes.json",
                              "curation/securities-examples.json"],
                     help="curation JSON: `core:` stamps core; `definitions:`/`examples:`/`notes:` overlay content")

@@ -1,6 +1,6 @@
 # SEC
 
-- [American depositary receipt](Equities/DepositaryReceipts/AmericanDepositaryReceipt.md) — depositary receipt that represents securities of a foreign company and allows that company's securities to trade in the 
+- core · [American depositary receipt](Equities/DepositaryReceipts/AmericanDepositaryReceipt.md) — depositary receipt that represents securities of a foreign company and allows that company's securities to trade in the 
 - [American depositary receipt level](Equities/DepositaryReceipts/AmericanDepositaryReceiptLevel.md) — classifier for American depositary receipts that categorizes ADRs into levels based on the extent to which the foreign c
 - [American depositary receipt level scheme](Equities/DepositaryReceipts/AmericanDepositaryReceiptLevelScheme.md) — classifier for American depositary receipts that categorizes ADRs into levels based on the extent to which the foreign c
 - [American exercise terms](Debt/ExerciseConventions/AmericanExerciseTerms.md) — exercise terms that stipulate that an option may be exercised on or before the date of expiration
@@ -67,7 +67,7 @@
 - [arbitrage synthetic c d o](Debt/SyntheticCDOs/ArbitrageSyntheticCDO.md) — Arbitrage synthetic CDO deals are motivated by regulatory or practical considerations that might make a bank want to ret
 - [asset class](Securities/SecuritiesClassification/AssetClass.md) — financial instrument classifier for a group of securities that exhibit similar characteristics, behave similarly in the 
 - [asset class strategy](Funds/CollectiveInvestmentVehicles/AssetClassStrategy.md) — Strategy which is asset class based
-- [asset-backed security](Debt/PoolBackedSecurities/AssetBackedSecurity.md) — debt instrument backed by receivables other than those arising out of real estate loans or mortgages
+- core · [asset-backed security](Debt/PoolBackedSecurities/AssetBackedSecurity.md) — debt instrument backed by receivables other than those arising out of real estate loans or mortgages
 - [attachment point](Debt/PoolBackedSecurities/AttachmentPoint.md) — lower tranche boundary of a tranche defined as a percentage of the value of the total pool of collateral, either at issu
 - [auction date rule](Securities/ParametricSchedules/AuctionDateRule.md) — business recurrence interval convention that is a published rule for defining the date of some auction event
 - [auction rate dividend](Equities/EquityInstruments/AuctionRateDividend.md) — preferred share dividend whose rate is periodically reset through an auction, typically every 7, 14, 28, or 35 days
@@ -78,15 +78,15 @@
 - [balance sheet c d o objective](Debt/CollateralizedDebtObligations/BalanceSheetCDOObjective.md) — The objective is that the CDO is created to move assets off the originator balance sheet
 - [bankers' acceptance](Debt/TradedShortTermDebt/BankersAcceptance.md) — short-term debt instrument that is guaranteed and paid by a bank and used as a relatively safe form of payment for large
 - [basket Of indices constituent](Securities/Baskets/BasketOfIndicesConstituent.md) — single constituent of a basket of indices
-- [basket of securities](Securities/Baskets/BasketOfSecurities.md) — basket composed of securities, typically of a particular asset class such as equities or bonds
+- core · [basket of securities](Securities/Baskets/BasketOfSecurities.md) — basket composed of securities, typically of a particular asset class such as equities or bonds
 - [best efforts offering](Securities/SecuritiesIssuance/BestEffortsOffering.md) — securities offering whereby investment bankers commit to doing their best to sell the securities offered, but do not ass
 - [bill of exchange](Debt/TradedShortTermDebt/BillOfExchange.md) — short-term negotiable financial instrument consisting of an order in writing addressed by one person (the seller of good
 - [blue sky law](Securities/NorthAmericanSecurities/USSecuritiesRestrictions/BlueSkyLaw.md) — state-level securities regulation, designed to protect investors against securities fraud that require issuers to be reg
-- [bond](Debt/Bonds/Bond.md) — tradable debt instrument representing a loan in which the issuer owes the holder(s) a debt
+- core · [bond](Debt/Bonds/Bond.md) — tradable debt instrument representing a loan in which the issuer owes the holder(s) a debt
 - [bond amortization payment terms](Debt/Bonds/BondAmortizationPaymentTerms.md) — terms that include a schedule for repayment of the principal over the lifetime of the bond, typically in equal payments 
 - [bond bullet principal repayment terms](Debt/Bonds/BulletPrincipalRepaymentTerms.md) — terms for repayment of the principal for a bond as a single payment covering the whole principal amount
 - [bond conversion terms](Debt/Bonds/BondConversionTerms.md) — terms indicating when a convertible bond can be converted to another security (usually a publicly traded share issued by
-- [bond coupon](Debt/Bonds/BondCoupon.md) — interest rate on a debt security that the issuer promises to pay to the holder until maturity, expressed as an annual pe
+- core · [bond coupon](Debt/Bonds/BondCoupon.md) — interest rate on a debt security that the issuer promises to pay to the holder until maturity, expressed as an annual pe
 - [bond insurance](Debt/Bonds/BondInsurance.md) — insurance policy that a bond issuer purchases that guarantees the repayment of the principal and all associated interest
 - [bond pool](Debt/AssetBackedSecurities/BondPool.md) — debt pool of consisting of bonds
 - [bond principal repayment terms](Debt/Bonds/BondPrincipalRepaymentTerms.md) — terms for the repayment of the principal on a bond
@@ -101,7 +101,7 @@
 - [c d o deal](Debt/CollateralizedDebtObligations/CDODeal.md) — An Issue of a set of CDO tranches as part of an offering to the market
 - [c d o management style](Debt/CollateralizedDebtObligations/CDOManagementStyle.md) — The manner in which reference assets are managed during the life of a CDO
 - [c d o origination objective](Debt/CollateralizedDebtObligations/CDOOriginationObjective.md) — The origin or motivation behind a CDO issue
-- [c d o pool](Debt/CollateralizedDebtObligations/CDOPool.md) — A pool of CDO securities
+- core · [c d o pool](Debt/CollateralizedDebtObligations/CDOPool.md) — A pool of CDO securities
 - [c d o portfolio](Debt/CollateralizedDebtObligations/CDOPortfolio.md) — A portfolio in which the reference assets of the CDO are held
 - [c d o portfolio manager](Debt/CollateralizedDebtObligations/CDOPortfolioManager.md) — The portfolio manager for a managed CDO or arbitrage CDO (also called an asset manager)
 - [c d o squared deal](Debt/CollateralizedDebtObligations/CDOSquaredDeal.md) — An issue of CDO Squared notes
@@ -113,7 +113,7 @@
 - [call premium](Debt/DebtInstruments/CallPremium.md) — the price over par paid by an issuer to redeem securities when exercising a call provision
 - [call schedule](Debt/DebtInstruments/CallSchedule.md) — a schedule of call prices and when they are in effect
 - [call window](Debt/DebtInstruments/CallWindow.md) — an explicit period of time prior to a call date during which an issuer or agent must give notice to holders
-- [callable bond](Debt/Bonds/CallableBond.md) — bond that includes a stipulation allowing the issuer the right to repurchase and retire the bond at the call price after
+- core · [callable bond](Debt/Bonds/CallableBond.md) — bond that includes a stipulation allowing the issuer the right to repurchase and retire the bond at the call price after
 - [callable convertible bond](Debt/Bonds/CallableConvertibleBond.md) — convertible bond that is also callable
 - [canary exercise terms](Debt/ExerciseConventions/CanaryExerciseTerms.md) — exercise terms that stipulate that an option may only be exercised on predetermined dates until the first step is reache
 - [cash a b s pool](Debt/CollateralizedDebtObligations/CashABSPool.md) — A pool investment consisting of a collection of cash ABS instruments
@@ -126,13 +126,13 @@
 - [classification of financial instruments code scheme](Securities/SecuritiesClassification/ClassificationOfFinancialInstrumentsCodeScheme.md) — classification scheme for set of codes for financial instruments that can be used globally for straight-through processi
 - [closed-end investment](Funds/Funds/ClosedEndInvestment.md) — investment fund that has a fixed number of shares offered by an investment company through an initial public offering
 - [collateralized bond obligation](Debt/CollateralizedDebtObligations/CollateralizedBondObligation.md) — structured debt security that has investment-grade bonds as its underlying assets backed by the receivables on high-yiel
-- [collateralized debt obligation](Debt/CollateralizedDebtObligations/CollateralizedDebtObligation.md) — structured finance constructed from a portfolio of fixed income assets including corporate loans and mortgage backed sec
+- core · [collateralized debt obligation](Debt/CollateralizedDebtObligations/CollateralizedDebtObligation.md) — structured finance constructed from a portfolio of fixed income assets including corporate loans and mortgage backed sec
 - [collateralized loan obligation offering](Debt/CollateralizedDebtObligations/CollateralizedLoanObligationOffering.md) — 
-- [collective investment vehicle](Securities/Pools/CollectiveInvestmentVehicle.md) — assets pooled by investors whose share capital remains separate from the assets of the vehicle
+- core · [collective investment vehicle](Securities/Pools/CollectiveInvestmentVehicle.md) — assets pooled by investors whose share capital remains separate from the assets of the vehicle
 - [commercial m b s](Debt/MortgageBackedSecurities/CommercialMBS.md) — 
-- [commercial paper](Debt/TradedShortTermDebt/CommercialPaper.md) — an unsecured short-term debt instrument typically issued by a bank, corporation, or foreign government to obtain funds t
+- core · [commercial paper](Debt/TradedShortTermDebt/CommercialPaper.md) — an unsecured short-term debt instrument typically issued by a bank, corporation, or foreign government to obtain funds t
 - [common code registry entry](Securities/SecuritiesIdentificationIndividuals/CommonCodeRegistryEntry.md) — entry in a common code registry
-- [common share](Equities/EquityInstruments/CommonShare.md) — share that signifies a unit of ownership in a corporation and represents a claim on part of the corporation's assets and
+- core · [common share](Equities/EquityInstruments/CommonShare.md) — share that signifies a unit of ownership in a corporation and represents a claim on part of the corporation's assets and
 - [common share in fund](Funds/CollectiveInvestmentVehicles/CommonShareInFund.md) — A share unit in a fund, which is classified as a Common Share class
 - [common, enhanced voting, restricted, fully-paid, registered share](Equities/EquityCFIClassificationIndividuals/CommonEnhancedVotingRestrictedFullyPaidRegisteredShare.md) — common share that confers multiple votes per share, is restricted from a sales / transfer perspective, is fully paid and
 - [common, enhanced voting, restricted, nil paid, registered share](Equities/EquityCFIClassificationIndividuals/CommonEnhancedVotingRestrictedNilPaidRegisteredShare.md) — common share that confers multiple votes per share, is restricted from a sales / transfer perspective, is nil paid and i
@@ -164,11 +164,11 @@
 - [controlled amortization asset-backed security](Debt/AssetBackedSecurities/ControlledAmortizationAssetBackedSecurity.md) — asset-backed security based on a pool of bonds securitized using a controlled amortization structure
 - [conventional gilt](Debt/Bonds/ConventionalGilt.md) — fixed coupon bond issued by HM Treasury that guarantees to pay the holder of the gilt a fixed cash payment (coupon) ever
 - [conversion terms](Securities/SecuritiesIssuance/ConversionTerms.md) — contract terms specifying when and how a security may be converted to another security (usually of the same issuer)
-- [convertible bond](Debt/Bonds/ConvertibleBond.md) — bond that gives the holder the right to convert the bond into a fixed number of shares (conversion ratio) if the equity 
+- core · [convertible bond](Debt/Bonds/ConvertibleBond.md) — bond that gives the holder the right to convert the bond into a fixed number of shares (conversion ratio) if the equity 
 - [convertible common share](Equities/EquityInstruments/ConvertibleCommonShare.md) — common share that is convertible into another security
 - [convertible preferred share](Equities/EquityInstruments/ConvertiblePreferredShare.md) — preferred share that includes an option for the holder to convert the shares into a fixed number of common shares after 
 - [convertible security](Securities/SecuritiesIssuance/ConvertibleSecurity.md) — security that can be converted into another security
-- [corporate bond](Debt/Bonds/CorporateBond.md) — bond issued by a company in order to raise financing
+- core · [corporate bond](Debt/Bonds/CorporateBond.md) — bond issued by a company in order to raise financing
 - [coupon payment terms](Debt/Bonds/CouponPaymentTerms.md) — terms for payment of interest on a bond
 - [credit card account pool](Debt/AssetBackedSecurities/CreditCardAccountPool.md) — pool of credit card receivables associated with designated accounts
 - [credit card asset-backed security](Debt/AssetBackedSecurities/CreditCardAssetBackedSecurity.md) — asset-backed security based on credit card receivables
@@ -181,11 +181,11 @@
 - [debt pool](Securities/Pools/DebtPool.md) — pool consisting of debt instruments, such as bonds, loans or mortgages
 - [debt pool statistical measure](Debt/PoolBackedSecurities/DebtPoolStatisticalMeasure.md) — qualified measure of some aspect of the behavior of one or more debt instrument(s) that may vary over time
 - [default rate](Debt/PoolBackedSecurities/DefaultRate.md) — qualified measure of the rate at which holders of the debt instruments in the pool default on those instruments
-- [depositary receipt](Equities/DepositaryReceipts/DepositaryReceipt.md) — negotiable financial instrument issued by a trust company, security depositary, or bank that is evidence of the deposit 
+- core · [depositary receipt](Equities/DepositaryReceipts/DepositaryReceipt.md) — negotiable financial instrument issued by a trust company, security depositary, or bank that is evidence of the deposit 
 - [detachment point](Debt/PoolBackedSecurities/DetachmentPoint.md) — upper tranche boundary of a tranche defined as a percentage of the value of the total pool of collateral, either at issu
 - [distributing share class](Funds/CollectiveInvestmentVehicles/DistributingShareClass.md) — 
 - [diversified community investment fund](Funds/Funds/DiversifiedCommunityInvestmentFund.md) — community investment fund that invests primarily in real estate but can also invest in any local business or project, an
-- [dividend](Equities/EquityInstruments/Dividend.md) — announced commitment to make a specific distribution of a portion of earnings to shareholders, prorated by class of secu
+- core · [dividend](Equities/EquityInstruments/Dividend.md) — announced commitment to make a specific distribution of a portion of earnings to shareholders, prorated by class of secu
 - [dividend distribution method](Equities/EquityInstruments/DividendDistributionMethod.md) — convention by which dividends are provided to shareholders
 - [dividend schedule](Equities/EquityInstruments/DividendSchedule.md) — payment schedule indicating the dates on which dividends are due to be paid
 - [documentation agent](Debt/DistributedLoans/DocumentationAgent.md) — financial institution designated to oversee the drafting, negotiation, and finalization of the loan documentation
@@ -193,14 +193,14 @@
 - [drawer](Debt/TradedShortTermDebt/Drawer.md) — party that requires a drawee to pay either a third party or themselves with respect to a bill of exchange
 - [enhanced voting share](Equities/EquityInstruments/EnhancedVotingShare.md) — share that confers more than one vote per share
 - [equity conversion terms](Equities/EquityInstruments/EquityConversionTerms.md) — conversion terms specifying the details regarding conversion of shares into other securities
-- [equity fund](Funds/CollectiveInvestmentVehicles/EquityFund.md) — A fund which invests in at least 85% shares
+- core · [equity fund](Funds/CollectiveInvestmentVehicles/EquityFund.md) — A fund which invests in at least 85% shares
 - [equity linked bond](Debt/Bonds/EquityLinkedBond.md) — bond based on the return on an equity over time, i
 - [equity portfolio](Funds/CollectiveInvestmentVehicles/EquityPortfolio.md) — A portfolio which has at least 85% exposure to shares
 - [equity position](Equities/EquityInstruments/EquityPosition.md) — position in an equity instrument
 - [equity redemption provision](Equities/EquityInstruments/EquityRedemptionProvision.md) — redemption provision that specifies the conditions under which the issuer or shareholder may redeem the shares
 - [equity redemption provision with extendable redemption date](Equities/EquityInstruments/EquityRedemptionProvisionWithExtendableRedemptionDate.md) — equity redemption provision that allows modification of the redemption date beyond the original specified date
 - [eurodollar deposit](Debt/TradedShortTermDebt/EurodollarDeposit.md) — a certificate of deposit with a fixed interest rate issued in U
-- [exchange-traded fund](Funds/Funds/ExchangeTradedFund.md) — investment fund whose fund units are traded on an exchange, much like stocks
+- core · [exchange-traded fund](Funds/Funds/ExchangeTradedFund.md) — investment fund whose fund units are traded on an exchange, much like stocks
 - [exchangeable preferred share](Equities/EquityInstruments/ExchangeablePreferredShare.md) — preferred share that may be exchanged for a security of another issuer
 - [exempt issuer](Securities/SecuritiesIssuance/ExemptIssuer.md) — issuer that issues securities that are excused from certain regulatory reporting requirements
 - [exempt offering](Securities/SecuritiesIssuance/ExemptOffering.md) — public offering involving securities that are excused from certain regulatory reporting requirements
@@ -219,12 +219,12 @@
 - [financial instrument short name](Securities/SecuritiesIssuance/FinancialInstrumentShortName.md) — abbreviated name for a financial instrument within a defined structure as specified in ISO 18774
 - [firm commitment offering](Securities/SecuritiesIssuance/FirmCommitmentOffering.md) — securities offering whereby the underwriter purchases the securities outright for their own account
 - [first regular coupon date](Debt/Bonds/FirstRegularCouponDate.md) — scheduled date for the first regular coupon payment, in a regular repeating series of coupon periods, after any non stan
-- [fixed coupon bond](Debt/Bonds/FixedCouponBond.md) — bond whose coupon rate and principal amount are fixed at the time of origination or sale and remain constant while the s
+- core · [fixed coupon bond](Debt/Bonds/FixedCouponBond.md) — bond whose coupon rate and principal amount are fixed at the time of origination or sale and remain constant while the s
 - [fixed coupon terms](Debt/Bonds/FixedCouponTerms.md) — terms for payment of interest on a bond with a fixed interest rate
 - [fixed income security](Debt/DebtInstruments/FixedIncomeSecurity.md) — tradeable debt instrument that provides a return in the form of fixed periodic payments and typically the return of prin
-- [fixed rate dividend](Equities/EquityInstruments/FixedRateDividend.md) — dividend that provides a specified annual return on the nominal value (and any premium) paid on shares
+- core · [fixed rate dividend](Equities/EquityInstruments/FixedRateDividend.md) — dividend that provides a specified annual return on the nominal value (and any premium) paid on shares
 - [floater tranche](Debt/CollateralizedDebtObligations/FloaterTranche.md) — A floater tranche is a tranche that is keyed to an index and a spread
-- [floating rate note](Debt/Bonds/FloatingRateNote.md) — bond with a variable interest rate based on a published reference interest rate
+- core · [floating rate note](Debt/Bonds/FloatingRateNote.md) — bond with a variable interest rate based on a published reference interest rate
 - [floating-rate note date](Securities/ParametricSchedules/FloatingRateNoteDate.md) — calculated date associated with a floating-rate note, also known as a floater or FRN, which is a debt instrument with a 
 - [floating-rate note date rule](Securities/ParametricSchedules/FloatingRateNoteDateRule.md) — business day adjustment rule applied to floating-rate note instruments
 - [fonds commun de placement](Funds/CollectiveInvestmentVehicles/FondsCommunDePlacement.md) — open-ended collective investment fund, which is a contractual form set up between the fund manager and investors and not
@@ -268,7 +268,7 @@
 - [fund subscription terms](Funds/CollectiveInvestmentVehicles/FundSubscriptionTerms.md) — Subscription terms for the fund
 - [fund supervisory authority](Funds/CollectiveInvestmentVehicles/FundSupervisoryAuthority.md) — party that supervises the fund or fund industry
 - [fund transfer agent](Funds/CollectiveInvestmentVehicles/FundTransferAgent.md) — An entity that undertakes the execution of subscription, redemption and switch orders on behalf of a fund
-- [fund unit](Funds/Funds/FundUnit.md) — quantified share of beneficial interest in a pooled fund, representing a proportional claim on the fund's assets, income
+- core · [fund unit](Funds/Funds/FundUnit.md) — quantified share of beneficial interest in a pooled fund, representing a proportional claim on the fund's assets, income
 - [fund unit distribution method](Funds/CollectiveInvestmentVehicles/FundUnitDistributionMethod.md) — The normal distribution policy for funds
 - [fund unit distribution policy](Funds/CollectiveInvestmentVehicles/FundUnitDistributionPolicy.md) — policy relating to the unit, e
 - [funds cash distribution](Funds/CollectiveInvestmentVehicles/FundsCashDistribution.md) — Accrued income is distributed periodically to the investor
@@ -276,13 +276,13 @@
 - [funds processing account](Funds/CollectiveInvestmentVehicles/FundsProcessingAccount.md) — An account used specifically in the processing of funds
 - [funds processing party](Funds/CollectiveInvestmentVehicles/FundsProcessingParty.md) — party involved in the processing of funds
 - [general obligation municipal bond](Debt/Bonds/GeneralObligationMunicipalBond.md) — municipal bond that is backed by the full faith and credit and general resources of the issuing municipality, including 
-- [global depositary receipt](Equities/DepositaryReceipts/GlobalDepositaryReceipt.md) — depositary receipt where a certificate issued by a depositary bank, which purchases securities of foreign companies, cre
-- [government bond](Debt/Bonds/GovernmentBond.md) — debt security issued by a government to fund government spending
+- core · [global depositary receipt](Equities/DepositaryReceipts/GlobalDepositaryReceipt.md) — depositary receipt where a certificate issued by a depositary bank, which purchases securities of foreign companies, cre
+- core · [government bond](Debt/Bonds/GovernmentBond.md) — debt security issued by a government to fund government spending
 - [government issued debt security](Debt/Bonds/GovernmentIssuedDebtSecurity.md) — debt security issued by some government on behalf of some polity, including sovereign and municipal debt
 - [government mortgage agency](Debt/MortgageBackedSecurities/GovernmentMortgageAgency.md) — An agency set up by a government for the purpose of issuing mortgages
 - [green bond](Debt/Bonds/GreenBond.md) — bond issued specifically to fund climate or environmental projects
 - [hard retractable preferred share](Equities/EquityInstruments/HardRetractablePreferredShare.md) — retractable preferred share whose retraction value must be paid in cash
-- [hedge fund](Funds/Funds/HedgeFund.md) — investment fund that pursues a total return and is usually open to qualified investors only
+- core · [hedge fund](Funds/Funds/HedgeFund.md) — investment fund that pursues a total return and is usually open to qualified investors only
 - [home equity line of credit pool](Debt/AssetBackedSecurities/HomeEquityLineOfCreditPool.md) — debt pool consisting of home equity loans
 - [home equity loan asset-backed security](Debt/AssetBackedSecurities/HomeEquityLoanAssetBackedSecurity.md) — asset-backed security based on home equity loan receivables
 - [hybrid c d o](Debt/CollateralizedDebtObligations/HybridCDO.md) — A CDO which combines features both of the cash and synthetic CDO
@@ -297,7 +297,7 @@
 - [instrument pool](Securities/Pools/InstrumentPool.md) — pool consisting of financial instruments that may be included in the same investment vehicle
 - [instrument pool as asset](Securities/Pools/InstrumentPoolAsAsset.md) — financial asset in the form of an instrument pool
 - [interest-only strip](Debt/DebtInstruments/InterestOnlyStrip.md) — a strip that represents the non-principal portion of the monthly payments on the underlying debt instrument, such as a b
-- [international securities identification number](Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber.md) — security identifier that is defined as specified in ISO 6166, Securities and related financial instruments -- Internatio
+- core · [international securities identification number](Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber.md) — security identifier that is defined as specified in ISO 6166, Securities and related financial instruments -- Internatio
 - [international securities identification numbering scheme](Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumberingScheme.md) — formal definition of the structure and application of a ISINs as defined in ISO 6166
 - [inverse floater tranche](Debt/CollateralizedDebtObligations/InverseFloaterTranche.md) — 
 - [investment strategy](Funds/CollectiveInvestmentVehicles/InvestmentStrategy.md) — plan, method, or series of maneuvers or stratagems for obtaining a specific investment goal
@@ -315,16 +315,16 @@
 - [legal holding restriction](Securities/SecuritiesRestrictions/LegalHoldingRestriction.md) — security restriction applicable to holding the security
 - [limited partnership unit](Equities/EquityInstruments/LimitedPartnershipUnit.md) — share in a form of partnership similar to a general partnership, except that in addition to one or more general partners
 - [listed bond](Debt/Bonds/ListedBond.md) — bond that may be traded on an exchange
-- [listed security](Securities/SecuritiesListings/ListedSecurity.md) — registered security listed on at least one exchange
+- core · [listed security](Securities/SecuritiesListings/ListedSecurity.md) — registered security listed on at least one exchange
 - [listed security identifier](Securities/SecuritiesIdentification/ListedSecurityIdentifier.md) — security identifier issued in the public domain and referred to in listings and other relevant publications
 - [listed share](Equities/EquityInstruments/ListedShare.md) — share that is listed on at least one platform
-- [listing](Securities/SecuritiesListings/Listing.md) — catalog entry for a securities offering managed by an exchange that provides the terms under which that security is made
+- core · [listing](Securities/SecuritiesListings/Listing.md) — catalog entry for a securities offering managed by an exchange that provides the terms under which that security is made
 - [listing service](Securities/SecuritiesListings/ListingService.md) — service provided by an exchange to facilitate securities trading
 - [loan participation note](Debt/DistributedLoans/LoanParticipationNote.md) — credit facility and fixed-income security that may be distributed across a group of lenders
 - [loan pool](Debt/CollateralizedDebtObligations/LoanPool.md) — debt pool whose consituents are loans
 - [m b s instrument slice](Debt/CollateralizedDebtObligations/MBSInstrumentSlice.md) — A holding of an individual slice or slices of a tranche
-- [m b s issuer](Debt/MortgageBackedSecurities/MBSIssuer.md) — The issuer of a Mortgage Backed Security
-- [m b s pool](Debt/MortgageBackedSecurities/MBSPool.md) — A pool investment consisting of a collection of MBS instruments
+- core · [m b s issuer](Debt/MortgageBackedSecurities/MBSIssuer.md) — The issuer of a Mortgage Backed Security
+- core · [m b s pool](Debt/MortgageBackedSecurities/MBSPool.md) — A pool investment consisting of a collection of MBS instruments
 - [m b s tranche note](Debt/CollateralizedDebtObligations/MBSTrancheNote.md) — An individual note of a tranche
 - [make whole call](Debt/Bonds/MakeWholeCall.md) — call allowing the issuer to pay off remaining debt early
 - [make whole feature](Debt/DebtInstruments/MakeWholeFeature.md) — a call provision allowing the issuer to pay off remaining debt early
@@ -343,16 +343,16 @@
 - [mixed basket](Securities/Baskets/MixedBasket.md) — basket that has a mix of constituents, including securities and indices
 - [money market instrument](Debt/TradedShortTermDebt/MoneyMarketInstrument.md) — a short-term debt security that gives the owner the unconditional right to receive a stated, fixed sum of money on a spe
 - [mortgage pool](Debt/MortgageBackedSecurities/MortgagePool.md) — loan pool consisting of mortgages that are held in trust as collateral for the issuance of a mortgage-backed security
-- [mortgage-backed security](Debt/MortgageBackedSecurities/MortgageBackedSecurity.md) — debt obligations that represent claims to the cash flows from pools of mortgage loans, most commonly on residential prop
+- core · [mortgage-backed security](Debt/MortgageBackedSecurities/MortgageBackedSecurity.md) — debt obligations that represent claims to the cash flows from pools of mortgage loans, most commonly on residential prop
 - [mortgage-backed security offering prospectus](Debt/MortgageBackedSecurities/MortgageBackedSecurityOfferingProspectus.md) — Prospectus describing the terms of the issue and each of the instruments included in the mortgage backed security issue
-- [municipal bond](Debt/Bonds/MunicipalBond.md) — government bond that may be issued by a regional, rather than national, authority
+- core · [municipal bond](Debt/Bonds/MunicipalBond.md) — government bond that may be issued by a regional, rather than national, authority
 - [municipal debt funds usage](Debt/Bonds/MunicipalDebtFundsUsage.md) — official statement specifying how the funds raised via a new issue of municipal securities are to be applied
 - [municipal debt remarketing agent](Debt/Bonds/MunicipalDebtRemarketingAgent.md) — municipal securities dealer responsible for reselling to investors securities (such as variable rate demand obligations 
 - [municipal debt source of funds](Debt/Bonds/MunicipalDebtSourceOfFunds.md) — official statement identifying the source of funds for a new issue of municipal securities
 - [municipal note](Debt/Bonds/MunicipalNote.md) — short-term obligation to repay a specified principal amount on a certain date, together with interest at a stated rate, 
 - [municipal security](Debt/Bonds/MunicipalSecurity.md) — debt obligation issued by a regional governmental entity
 - [municipal trustee](Debt/Bonds/MunicipalTrustee.md) — financial institution with trust powers, designated by the issuer, that acts, pursuant to a bond contract, in a fiduciar
-- [mutual fund](Funds/Funds/MutualFund.md) — open-end professionally managed investment fund established for the purpose of investing in securities such as stocks, b
+- core · [mutual fund](Funds/Funds/MutualFund.md) — open-end professionally managed investment fund established for the purpose of investing in securities such as stocks, b
 - [national numbering agency](Securities/SecuritiesIdentification/NationalNumberingAgency.md) — registration authority responsible for issuing and managing National Securities Identifying Numbers for securities in ac
 - [national numbering agency registry entry](Securities/SecuritiesIdentification/NationalSecuritiesIdentifyingNumberRegistryEntry.md) — entry in a National Securities Identifying Number registry
 - [national security identification scheme](Securities/SecuritiesIdentification/NationalSecurityIdentificationScheme.md) — security identification scheme, defining the format and structure of a National Securities Identifying Number (NSIN), pu
@@ -371,7 +371,7 @@
 - [non-participating preferred share](Equities/EquityInstruments/NonParticipatingPreferredShare.md) — preferred share that is not a participating preferred share
 - [non-tradable debt instrument](Debt/DebtInstruments/NonTradableDebtInstrument.md) — a debt instrument that may not be bought or sold
 - [non-tradable fund unit](Funds/Funds/NonTradableFundUnit.md) — security representing an interest in a fund that cannot be traded ontside of the fund itself
-- [non-voting share](Equities/EquityInstruments/NonVotingShare.md) — share that has no voting right
+- core · [non-voting share](Equities/EquityInstruments/NonVotingShare.md) — share that has no voting right
 - [nonprofit fund](Funds/Funds/NonprofitFund.md) — investment vehicle designed to support a nonprofit mission, whose objectives include environmental stewardship and/or so
 - [note fund](Funds/CollectiveInvestmentVehicles/NoteFund.md) — pooled investment vehicle that issues debt instruments (notes) to investors rather than (or in addition to) traditional 
 - [note fund share](Funds/CollectiveInvestmentVehicles/NoteFundShare.md) — investment interest in a fund that issues notes rather than traditional equity, in cases where the fund is structured as
@@ -394,7 +394,7 @@
 - [partial call](Debt/Bonds/PartialCall.md) — call of part of an issue
 - [partial call feature](Debt/Bonds/PartialCallFeature.md) — call feature whereby the issuer can recall part of the issue on scheduled dates, where bonds are selected to be called a
 - [partial redemption allocation convention](Debt/Bonds/PartialRedemptionAllocationConvention.md) — convention used to determine how the partial call will be actioned with respect to bond selection
-- [partially paid share](Equities/EquityInstruments/PartiallyPaidShare.md) — share whose payment status indicates that only a portion of the market value has been received by the company for the sh
+- core · [partially paid share](Equities/EquityInstruments/PartiallyPaidShare.md) — share whose payment status indicates that only a portion of the market value has been received by the company for the sh
 - [participating preferred share](Equities/EquityInstruments/ParticipatingPreferredShare.md) — preferred share that, in addition to paying a stipulated dividend, gives the holder the right to participate with common
 - [participatory note](Equities/DepositaryReceipts/ParticipatoryNote.md) — tradable debt instrument that facilitates the ownership of securities traded in other jurisdictions
 - [pass through m b s deal](Debt/MortgageBackedSecurities/PassThroughMBSDeal.md) — An issue of Mortgage Backed Security instruments in which payments on the pool are passed through to investors
@@ -408,16 +408,16 @@
 - [perpetual bond](Debt/Bonds/PerpetualBond.md) — bond that has no maturity date, i
 - [perpetual preferred share](Equities/EquityInstruments/PerpetualPreferredShare.md) — preferred share that has no fixed maturity date
 - [planned amortization class bond](Debt/CollateralizedDebtObligations/PlannedAmortizationClassBond.md) — Planned Amortization Class tranche
-- [pool](Securities/Pools/Pool.md) — combination of resources for a common purpose or benefit
+- core · [pool](Securities/Pools/Pool.md) — combination of resources for a common purpose or benefit
 - [pool constituent](Securities/Pools/PoolConstituent.md) — component of a pool
 - [pool-backed security](Debt/PoolBackedSecurities/PoolBackedSecurity.md) — debt instrument that derives its cashflow from an underlying pool of mortgage loans or other receivables
 - [pooled fund](Securities/Pools/PooledFund.md) — pool of funds that a group of investors combines for common benefit
-- [portfolio](Securities/SecurityAssets/Portfolio.md) — collection of investments (financial assets) such as stocks, bonds and cash equivalents, as well as mutual funds, real e
+- core · [portfolio](Securities/SecurityAssets/Portfolio.md) — collection of investments (financial assets) such as stocks, bonds and cash equivalents, as well as mutual funds, real e
 - [portfolio benchmark](Funds/CollectiveInvestmentVehicles/PortfolioBenchmark.md) — Security or other price against which the performance of the portfolio is evaluated
 - [portfolio investment strategy](Funds/CollectiveInvestmentVehicles/PortfolioInvestmentStrategy.md) — The manner in which the portfolio manager tries to reach the funds objectives
 - [precedence right](Equities/EquityInstruments/PrecedenceRight.md) — right that give the shareholder higher priority with respect to certain pre-defined dividend payments over other shareho
 - [preferred dividend](Equities/EquityInstruments/PreferredDividend.md) — commitment to distribute a portion of earnings to shareholders, similar to a dividend but often with a fixed payment amo
-- [preferred share](Equities/EquityInstruments/PreferredShare.md) — share that pays dividends at a specified rate and has preference over common shares in the payment of dividends and liqu
+- core · [preferred share](Equities/EquityInstruments/PreferredShare.md) — share that pays dividends at a specified rate and has preference over common shares in the payment of dividends and liqu
 - [preferred share in fund](Funds/CollectiveInvestmentVehicles/PreferredShareInFund.md) — 
 - [preferred share with adjustable rate dividend](Equities/EquityInstruments/PreferredShareWithAdjustableRateDividend.md) — preferred share whose dividend rate varies according to some benchmark
 - [preferred share with auction rate dividend](Equities/EquityInstruments/PreferredShareWithAuctionRateDividend.md) — preferred share whose dividend rate is periodically reset through an auction, such as a Dutch auction
@@ -635,7 +635,7 @@
 - [privately placed depositary receipt](Equities/DepositaryReceipts/PrivatelyPlacedDepositaryReceipt.md) — depositary receipt that represents shares in a private placement under the SEC Rule 144-A
 - [proprietary security identification scheme](Securities/SecuritiesIdentification/ProprietarySecurityIdentificationScheme.md) — security identification scheme published by a commercial entity
 - [proprietary security identifier](Securities/SecuritiesIdentification/ProprietarySecurityIdentifier.md) — identifier supplied by a commercial entity
-- [prospectus](Securities/SecuritiesIssuance/Prospectus.md) — formal, written offering document to sell securities that provides the facts an investor needs to make an informed inves
+- core · [prospectus](Securities/SecuritiesIssuance/Prospectus.md) — formal, written offering document to sell securities that provides the facts an investor needs to make an informed inves
 - [public offering](Securities/SecuritiesIssuance/PublicOffering.md) — offering of securities for sale to the investment public, after compliance with registration requirements of the relevan
 - [publicly issued debt](Debt/DebtInstruments/PubliclyIssuedDebt.md) — an issued debt in the form of a tradable debt instrument (security)
 - [put event](Debt/DebtInstruments/PutEvent.md) — an event associated with the put schedule for a debt instrument, i
@@ -653,9 +653,9 @@
 - [redeemable preferred share](Equities/EquityInstruments/RedeemablePreferredShare.md) — preferred share that gives the issuer the right to redeem the stock under specified conditions
 - [redeemable preferred share with extendable maturity date](Equities/EquityInstruments/RedeemablePreferredShareWithExtendableMaturityDate.md) — redeemable preferred share with a fixed maturity date whose issuer has the option to extend the maturity date
 - [redeemable preferred share with extendable redemption date](Equities/EquityInstruments/RedeemablePreferredShareWithExtendableRedemptionDate.md) — redeemable preferred share whose redemption date can be modified
-- [redemption event](Debt/DebtInstruments/RedemptionEvent.md) — a prescriptive event involving the return of an investor's principal in a fixed-income security, such as a preferred sto
+- core · [redemption event](Debt/DebtInstruments/RedemptionEvent.md) — a prescriptive event involving the return of an investor's principal in a fixed-income security, such as a preferred sto
 - [redemption payment](Debt/Bonds/RedemptionPayment.md) — repayment event involving payment of a bond's principal amount at maturity or when it is called
-- [redemption schedule](Debt/Bonds/RedemptionSchedule.md) — repayment schedule whereby a given percentage of a bond issue is redeemed on predefined dates
+- core · [redemption schedule](Debt/Bonds/RedemptionSchedule.md) — repayment schedule whereby a given percentage of a bond issue is redeemed on predefined dates
 - [refer to fund order desk](Funds/CollectiveInvestmentVehicles/ReferToFundOrderDesk.md) — Restriction requiring an investor to refer to the fund order desk prior to redeeming a fund
 - [registered security](Securities/SecuritiesListings/RegisteredSecurity.md) — security that is registered with some registration authority
 - [regular floater tranche](Debt/CollateralizedDebtObligations/RegularFloaterTranche.md) — A floater tranche is a tranche that is keyed to an index and a spread
@@ -683,26 +683,26 @@
 - [securities pool](Securities/Pools/SecuritiesPool.md) — pool of securities organized for the purpose of issuing notes against those securities
 - [securities regulation](Securities/SecuritiesRestrictions/SecuritiesRegulation.md) — regulation codified in law specific to securities and investments
 - [securities restriction](Securities/SecuritiesRestrictions/SecuritiesRestriction.md) — legal obligation that is applicable to a financial instrument or listing as mandated in a law or by contract
-- [security form](Securities/SecuritiesIssuance/SecurityForm.md) — nature of the proof of ownership of a security
+- core · [security form](Securities/SecuritiesIssuance/SecurityForm.md) — nature of the proof of ownership of a security
 - [security identification scheme](Securities/SecuritiesIdentification/SecurityIdentificationScheme.md) — formal definition of the structure and application of a particular set of securities identifiers
 - [security identifier](Securities/SecuritiesIdentification/SecurityIdentifier.md) — any publicly available identifier that is used to identify a security
-- [security registry](Securities/SecuritiesIdentification/SecurityRegistry.md) — registry used to manage security identifiers and related information
+- core · [security registry](Securities/SecuritiesIdentification/SecurityRegistry.md) — registry used to manage security identifiers and related information
 - [security registry entry](Securities/SecuritiesIdentification/SecurityRegistryEntry.md) — record for a security in a securities registry
-- [security underwriter](Securities/SecuritiesIssuance/SecurityUnderwriter.md) — party that has purchased from an issuer with a view to, or sells for an issuer in connection with, the distribution of a
-- [security underwriting arrangement](Securities/SecuritiesIssuance/SecurityUnderwritingArrangement.md) — underwriting agreement between an organization (typically an investment bank) and a securities issuer that commits the u
+- core · [security underwriter](Securities/SecuritiesIssuance/SecurityUnderwriter.md) — party that has purchased from an issuer with a view to, or sells for an issuer in connection with, the distribution of a
+- core · [security underwriting arrangement](Securities/SecuritiesIssuance/SecurityUnderwritingArrangement.md) — underwriting agreement between an organization (typically an investment bank) and a securities issuer that commits the u
 - [senior c d o tranche](Debt/CollateralizedDebtObligations/SeniorCDOTranche.md) — The most senior tranche of the CDO issue
 - [senior m b s tranche](Debt/CollateralizedDebtObligations/SeniorMBSTranche.md) — Specific kinds of tranche are modeled for example and investigation only and have been removed from the diagrams
 - [settlement date rule](Securities/ParametricSchedules/SettlementDateRule.md) — convention for determining settlement dates by reference to some jurisdiction or as set by a given exchange or similar v
-- [share](Equities/EquityInstruments/Share.md) — financial instrument that signifies a unit of equity ownership in a corporation, or a unit of ownership in a mutual fund
-- [share issuer](Equities/EquityInstruments/ShareIssuer.md) — issuer of securities that represent an ownership interest in something
+- core · [share](Equities/EquityInstruments/Share.md) — financial instrument that signifies a unit of equity ownership in a corporation, or a unit of ownership in a mutual fund
+- core · [share issuer](Equities/EquityInstruments/ShareIssuer.md) — issuer of securities that represent an ownership interest in something
 - [share payment status](Equities/EquityInstruments/SharePaymentStatus.md) — classifier that specifies the overall payment status for shares issued
-- [share yield](Equities/EquityInstruments/ShareYield.md) — ratio of the annualized dividend per share divided by the (current) price per share
+- core · [share yield](Equities/EquityInstruments/ShareYield.md) — ratio of the annualized dividend per share divided by the (current) price per share
 - [single monthly mortality](Debt/PoolBackedSecurities/SingleMonthlyMortality.md) — estimated per-month percentage of mortgages in an MBS pool that will be paid off early
 - [single voting share](Equities/EquityInstruments/SingleVotingShare.md) — share that has the right to exactly one vote
 - [sinking fund amortization terms](Debt/Bonds/SinkingFundAmortizationTerms.md) — terms for the paydown of principal in a sinking fund type of amortizing security
 - [soft retractable preferred share](Equities/EquityInstruments/SoftRetractablePreferredShare.md) — retractable preferred share whose retraction value may be paid in cash or in an equal value of common stock of the issue
 - [sovereign bond](Debt/Bonds/SovereignBond.md) — bond issued by the government of a country
-- [sovereign debt instrument](Debt/Bonds/SovereignDebtInstrument.md) — debt security issued by the government of a country
+- core · [sovereign debt instrument](Debt/Bonds/SovereignDebtInstrument.md) — debt security issued by the government of a country
 - [sovereign wealth fund](Funds/Funds/SovereignWealthFund.md) — state-owned investment fund that consists of pools of money derived from a country's reserves
 - [special assessment bond](Debt/Bonds/SpecialAssessmentBond.md) — municipal bond used to fund a development project that is payable from the revenues of an assessment (tax) on the commun
 - [special dividend](Equities/EquityInstruments/SpecialDividend.md) — dividend that is paid to shareholders on a one-time basis
@@ -746,17 +746,17 @@
 - [t a c tranche amortization schedule](Debt/CollateralizedDebtObligations/TACTrancheAmortizationSchedule.md) — 
 - [tax allocation bond](Debt/Bonds/TaxAllocationBond.md) — bond payable from the incremental increase in tax revenues realized from any increase in property value and other econom
 - [ticker symbol](Securities/SecuritiesIdentification/TickerSymbol.md) — reassignable identifier of relatively short character string length that is unique within an exchange for a particular f
-- [tradable debt instrument](Debt/DebtInstruments/TradableDebtInstrument.md) — a debt instrument that is also a security, i
+- core · [tradable debt instrument](Debt/DebtInstruments/TradableDebtInstrument.md) — a debt instrument that is also a security, i
 - [tradable fund unit](Funds/Funds/TradableFundUnit.md) — security representing a tradable interest in a fund
 - [trading date rule](Securities/ParametricSchedules/TradingDateRule.md) — convention for determining trading dates defined with reference to some trading date calendar published by some trading 
 - [trading restriction](Securities/SecuritiesRestrictions/TradingRestriction.md) — restriction that limits trading in some manner, typically summarized on term sheets or in other documentation, including
-- [tranche](Debt/PoolBackedSecurities/Tranche.md) — segment of a pool of securities, typically debt instruments
+- core · [tranche](Debt/PoolBackedSecurities/Tranche.md) — segment of a pool of securities, typically debt instruments
 - [tranche rating at issue](Debt/CollateralizedDebtObligations/TrancheRatingAtIssue.md) — The rating at issue of a tranche of a security
 - [tranche type](Debt/CollateralizedDebtObligations/TrancheType.md) — the type of tranche in a tranched MBS security
 - [tranched m b s deal](Debt/CollateralizedDebtObligations/TranchedMBSDeal.md) — 
 - [tranched m b s deal prospectus](Debt/CollateralizedDebtObligations/TranchedMBSDealProspectus.md) — 
 - [tranched m b s instrument](Debt/CollateralizedDebtObligations/TranchedMBSInstrument.md) — 
-- [treasury bill](Debt/Bonds/TreasuryBill.md) — short-term zero coupon treasury obligation with a maturity ranging from one to twelve months
+- core · [treasury bill](Debt/Bonds/TreasuryBill.md) — short-term zero coupon treasury obligation with a maturity ranging from one to twelve months
 - [treasury bond](Debt/Bonds/TreasuryBond.md) — long term term coupon bearing treasury obligation issued in terms of 20 years or 30 years that pays interest every six m
 - [treasury inflation-protected security](Debt/Bonds/TreasuryInflationProtectedSecurity.md) — variable income bond whose principal is indexed to inflation or deflation and thus changes over the life of the security
 - [treasury note](Debt/Bonds/TreasuryNote.md) — medium term coupon bearing treasury obligation with original maturity ranging from two to ten years
@@ -782,7 +782,7 @@
 - [weighted average coupon](Debt/PoolBackedSecurities/WeightedAverageCoupon.md) — weighted-average gross interest rates of the pool of mortgages that underlie a mortgage-backed security (MBS) weighed by
 - [weighted average life](Debt/PoolBackedSecurities/WeightedAverageLife.md) — weighted average of the times of the principal repayments Average life is calculated using the weighted average time to 
 - [weighted average loan age](Debt/PoolBackedSecurities/WeightedAverageLoanAge.md) — dollar-weighted average measuring the age of the individual loans in a mortgage pass-through or pooled security
-- [weighted average maturity](Debt/PoolBackedSecurities/WeightedAverageMaturity.md) — weighted average amount of time until the maturities on mortgages in a mortgage-backed security (MBS)
+- core · [weighted average maturity](Debt/PoolBackedSecurities/WeightedAverageMaturity.md) — weighted average amount of time until the maturities on mortgages in a mortgage-backed security (MBS)
 - [weighted average remaining term](Debt/PoolBackedSecurities/WeightedAverageRemainingTerm.md) — weighted average time to maturity of a portfolio of asset-backed securities (ABS) or mortgage-backed (MBS) securities
-- [zero coupon bond](Debt/Bonds/ZeroCouponBond.md) — bond issued with a coupon rate of zero and that trades at a deep discount to face value
+- core · [zero coupon bond](Debt/Bonds/ZeroCouponBond.md) — bond issued with a coupon rate of zero and that trades at a deep discount to face value
 - [zero coupon terms](Debt/Bonds/ZeroCouponTerms.md) — terms for payment of interest on a zero coupon bond

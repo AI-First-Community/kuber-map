@@ -4,6 +4,7 @@ title: "tranche"
 description: "segment of a pool of securities, typically debt instruments"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/Tranche
 tags: [SEC, Release]
+core: true
 detail: "A tranche is one of a number of related securities in the same offering that represents a partition of a debt pool whose cash flow is derived from the combined cash flows of the instruments in that partition."
 examples:
   - "The senior AAA-rated tranche of a securitization, paid before the junior tranches."

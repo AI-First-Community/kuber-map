@@ -4,6 +4,7 @@ title: "client identifier"
 description: "sequence of characters uniquely identifying a client within the context of some organization"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/ClientIdentifier
 tags: [FND, Release]
+core: true
 relations:
   - {type: is-a, target: "/FND/Parties/Parties/PartyRoleIdentifier.md", provenance: fibo}
   - {type: identifies, target: "/FND/ProductsAndServices/ProductsAndServices/Client.md", provenance: fibo}

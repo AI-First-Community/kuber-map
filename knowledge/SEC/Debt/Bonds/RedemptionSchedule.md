@@ -4,6 +4,7 @@ title: "redemption schedule"
 description: "repayment schedule whereby a given percentage of a bond issue is redeemed on predefined dates"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/RedemptionSchedule
 tags: [SEC, Release]
+core: true
 examples:
   - "A sinking-fund schedule that redeems 10% of a bond issue each year."
 examples_provenance: curated

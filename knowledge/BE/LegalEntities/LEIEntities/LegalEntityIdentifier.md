@@ -4,6 +4,7 @@ title: "legal entity identifier"
 description: "an organization identifier that uniquely identifies a legal person as defined in ISO 17442"
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier
 tags: [BE, Release]
+core: true
 relations:
   - {type: is-a, target: "/CMNS/Organizations/OrganizationIdentifier.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/RegistrationAuthorities/RegisteredIdentifier.md", provenance: fibo}

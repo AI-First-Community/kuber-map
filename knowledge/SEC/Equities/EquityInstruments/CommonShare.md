@@ -4,6 +4,7 @@ title: "common share"
 description: "share that signifies a unit of ownership in a corporation and represents a claim on part of the corporation's assets and earnings"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/CommonShare
 tags: [SEC, Release]
+core: true
 detail: "In the event that the corporation is liquidated, claims of secured and unsecured creditors and owners of bonds and preferred shares take precedence over claims of common share holders."
 examples:
   - "One ordinary share of Amazon.com, Inc. carrying one vote."

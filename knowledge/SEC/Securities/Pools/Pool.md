@@ -4,6 +4,7 @@ title: "pool"
 description: "combination of resources for a common purpose or benefit"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/Pool
 tags: [SEC, Release]
+core: true
 examples:
   - "A pool of residential mortgages underlying a mortgage-backed security."
 examples_provenance: curated

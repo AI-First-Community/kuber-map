@@ -1,7 +1,7 @@
 # BE
 
 - [API-first market data provider](FunctionalEntities/Publishers/APIFirstMarketDataProvider.md) — market data provider that delivers financial information primarily through programmatic interfaces, offering real-time o
-- [LEI registered entity](LegalEntities/LEIEntities/LEIRegisteredEntity.md) — a legal person that has registered for and is identified by a legal entity identifier
+- core · [LEI registered entity](LegalEntities/LEIEntities/LEIRegisteredEntity.md) — a legal person that has registered for and is identified by a legal entity identifier
 - [accounting framework](LegalEntities/LEIEntities/AccountingFramework.md) — framework, including policies, methods, rules, and processes, used to measure, recognize, present, and disclose the info
 - [affiliate](OwnershipAndControl/CorporateControl/Affiliate.md) — party that is related to a legal entity, directly, or indirectly through one or more intermediaries, and controls, or is
 - [affiliation](OwnershipAndControl/CorporateControl/Affiliation.md) — situation in which a controlled party is affiliated with a controlling party for some period of time
@@ -10,12 +10,12 @@
 - [association](FunctionalEntities/FunctionalEntities/Association.md) — not-for-profit organization that is owned by and acts on behalf of its members
 - [auditor](OwnershipAndControl/Executives/Auditor.md) — party qualified and authorized to review and verify the accuracy of financial records and ensure that companies comply w
 - [authorized individual](OwnershipAndControl/Executives/AuthorizedIndividual.md) — role of an individual that has been given the responsibility to act on behalf of another party under some set of guideli
-- [beneficial owner](OwnershipAndControl/CorporateOwnership/BeneficialOwner.md) — party that enjoys the benefits of ownership (such as receipt of income) of something even though its ownership (title) m
-- [beneficial ownership](OwnershipAndControl/CorporateOwnership/BeneficialOwnership.md) — situation linking party that enjoys the benefits of ownership (such as receipt of income) of something even though its o
+- core · [beneficial owner](OwnershipAndControl/CorporateOwnership/BeneficialOwner.md) — party that enjoys the benefits of ownership (such as receipt of income) of something even though its ownership (title) m
+- core · [beneficial ownership](OwnershipAndControl/CorporateOwnership/BeneficialOwnership.md) — situation linking party that enjoys the benefits of ownership (such as receipt of income) of something even though its o
 - [benefit corporation](LegalEntities/CorporateBodies/BenefitCorporation.md) — not-for-profit corporation set up under specific state legislation, typically to provide some social benefit, without an
 - [board agreement](LegalEntities/CorporateBodies/BoardAgreement.md) — formal, legally binding agreement between members of the Board of Directors of the organization
 - [board capacity](OwnershipAndControl/Executives/BoardCapacity.md) — authority to act in a fiduciary capacity with respect to the organization, including but not limited to determining and 
-- [board composition control](OwnershipAndControl/Executives/BoardCompositionControl.md) — situation in which a voting shareholder, entity owner, or some other party in the case of a not-for-profit organization,
+- core · [board composition control](OwnershipAndControl/Executives/BoardCompositionControl.md) — situation in which a voting shareholder, entity owner, or some other party in the case of a not-for-profit organization,
 - [board member](OwnershipAndControl/Executives/BoardMember.md) — party that has fiduciary responsibility with respect to the organization, including but not limited to determining and e
 - [board membership](OwnershipAndControl/Executives/BoardMembership.md) — situation relating an individual member of the board of directors to the organization
 - [board of directors](OwnershipAndControl/Executives/BoardOfDirectors.md) — group of people comprising the governing body of an organization that has the authority to set organizational strategy a
@@ -24,40 +24,40 @@
 - [business entity](LegalEntities/LegalPersons/BusinessEntity.md) — entity that is formed and administered as per commercial law in order to engage in business activities
 - [business license](LegalEntities/LegalPersons/BusinessLicense.md) — license that allows the holder to conduct business or carry out a specific profession within some jurisdiction for some 
 - [bylaws](OwnershipAndControl/Executives/Bylaws.md) — written rules for conduct of a corporation, association, partnership or any organization
-- [chartered legal person](LegalEntities/LegalPersons/CharteredLegalPerson.md) — a legal person created by a royal charter or decree
+- core · [chartered legal person](LegalEntities/LegalPersons/CharteredLegalPerson.md) — a legal person created by a royal charter or decree
 - [chief executive officer](OwnershipAndControl/Executives/ChiefExecutiveOfficer.md) — top corporate officer responsible for an organization's overall operations and performance
 - [chief financial officer](OwnershipAndControl/Executives/ChiefFinancialOfficer.md) — senior-most corporate officer responsible for financial control and planning for an organization or project
 - [common interest development corporation](LegalEntities/CorporateBodies/CommonInterestDevelopmentCorporation.md) — not-for-profit corporation set up under specific state legislation as a business entity for homeowners' associations
 - [company law](OwnershipAndControl/Executives/CompanyLaw.md) — legislation under which the formation, registration or incorporation, governance, and dissolution of a firm is administe
 - [company secretary](OwnershipAndControl/Executives/CompanySecretary.md) — corporate officer appointed by the directors of an organization, responsible for ensuring compliance with legal obligati
 - [constitutional owner](OwnershipAndControl/OwnershipParties/ConstitutionalOwner.md) — entity owner that holds an equity stake in said entity, in the form of shareholders' equity
-- [contractual control](OwnershipAndControl/ControlParties/ContractualControl.md) — control established through the terms of some contract
+- core · [contractual control](OwnershipAndControl/ControlParties/ContractualControl.md) — control established through the terms of some contract
 - [contractually capable entity](LegalEntities/LEIEntities/ContractuallyCapableEntity.md) — a unique entity that is legally or financially responsible for the performance of financial transactions, or has the leg
 - [controlled affiliate](OwnershipAndControl/CorporateControl/ControlledAffiliate.md) — controlled party in an affiliation situation
-- [controlled party](OwnershipAndControl/ControlParties/ControlledParty.md) — person or organization over which some party exercises some form of authority or influence with respect to some situatio
+- core · [controlled party](OwnershipAndControl/ControlParties/ControlledParty.md) — person or organization over which some party exercises some form of authority or influence with respect to some situatio
 - [controlling affiliate](OwnershipAndControl/CorporateControl/ControllingAffiliate.md) — controlling party in an affiliation situation
 - [controlling alliance](OwnershipAndControl/ControlParties/ControllingAlliance.md) — group that has formed some alliance to jointly exercise control over some entity
-- [controlling equity](OwnershipAndControl/OwnershipParties/ControllingEquity.md) — shareholders's equity that formally confers control in the entity, either by law or as explicitly stated in a correspond
+- core · [controlling equity](OwnershipAndControl/OwnershipParties/ControllingEquity.md) — shareholders's equity that formally confers control in the entity, either by law or as explicitly stated in a correspond
 - [controlling nominee](OwnershipAndControl/Executives/ControllingNominee.md) — party that holds legal title to an asset (e
 - [cooperative society](FunctionalEntities/FunctionalEntities/CooperativeSociety.md) — organization owned by and operated for the benefit of those using its services
 - [corporate bylaws](OwnershipAndControl/Executives/CorporateBylaws.md) — written rules for conduct of a corporation, adopted by the board of directors
 - [corporate officer](OwnershipAndControl/Executives/CorporateOfficer.md) — high-level management executive of a corporation or other organization, hired by the board of directors or the business 
-- [corporation](LegalEntities/CorporateBodies/Corporation.md) — formal organization that is a legal entity (artificial person) distinct from its owners, created under the jurisdiction 
+- core · [corporation](LegalEntities/CorporateBodies/Corporation.md) — formal organization that is a legal entity (artificial person) distinct from its owners, created under the jurisdiction 
 - [court appointed control](OwnershipAndControl/ControlParties/CourtAppointedControl.md) — control conferred by the actions of some court, for example in the context of receivership
 - [crypto and digital-asset data provider](FunctionalEntities/Publishers/CryptoDigitalAssetDataProvider.md) — market data provider that supplies pricing, reference data, and analytics for digital tokens and crypto-assets
-- [de facto controlling interest party](OwnershipAndControl/ControlParties/DeFactoControllingInterestParty.md) — party that exercises some control over an entity other than via explicit, legal means
-- [de jure controlling interest party](OwnershipAndControl/ControlParties/DeJureControllingInterestParty.md) — party that has the legal authority to exercise control
+- core · [de facto controlling interest party](OwnershipAndControl/ControlParties/DeFactoControllingInterestParty.md) — party that exercises some control over an entity other than via explicit, legal means
+- core · [de jure controlling interest party](OwnershipAndControl/ControlParties/DeJureControllingInterestParty.md) — party that has the legal authority to exercise control
 - [derivatives and volatility data provider](FunctionalEntities/Publishers/DerivativesVolatilityDataProvider.md) — market data provider that supplies pricing, implied-volatility surfaces, and analytics for derivatives, including option
 - [devolved government](GovernmentEntities/GovernmentEntities/DevolvedGovernment.md) — government and the politicians that that run a subnational territory with powers that may be temporary and reversible, u
 - [direct consolidation](OwnershipAndControl/OwnershipParties/DirectConsolidation.md) — direct ownership of an entity recorded as accounting consolidation
 - [division](LegalEntities/FormalBusinessOrganizations/Division.md) — part of an organization, such as a line of business, that may have separate accounting and reporting requirements
 - [domestic ultimate parent](OwnershipAndControl/CorporateControl/DomesticUltimateParent.md) — party that is recognized as the ultimate parent of a given organization within the country or jurisdiction of incorporat
-- [entity controlling party](OwnershipAndControl/ControlParties/EntityControllingParty.md) — party that has the authority to control some legal entity
+- core · [entity controlling party](OwnershipAndControl/ControlParties/EntityControllingParty.md) — party that has the authority to control some legal entity
 - [entity legal form](LegalEntities/LEIEntities/EntityLegalForm.md) — a classifier for a legal entity that indicates the nature of that entity as defined from a legal or regulatory perspecti
-- [entity legal form identifier](LegalEntities/LEIEntities/EntityLegalFormIdentifier.md) — code that denotes an entity legal form as defined in ISO 20275
+- core · [entity legal form identifier](LegalEntities/LEIEntities/EntityLegalFormIdentifier.md) — code that denotes an entity legal form as defined in ISO 20275
 - [entity legal form scheme](LegalEntities/LEIEntities/EntityLegalFormScheme.md) — scheme that specifies the elements of the codes for entity legal forms, such as those that are sanctioned in a given jur
 - [entity owner](OwnershipAndControl/OwnershipParties/EntityOwner.md) — owner (person, group of people, or other business entity) that owns, or holds an ownership interest in, a formal busines
-- [entity ownership](OwnershipAndControl/OwnershipParties/EntityOwnership.md) — ownership by some party of an interest in some non-governmental formal organization
+- core · [entity ownership](OwnershipAndControl/OwnershipParties/EntityOwnership.md) — ownership by some party of an interest in some non-governmental formal organization
 - [exchange-sourced data provider](FunctionalEntities/Publishers/ExchangeSourcedDataProvider.md) — market data provider that distributes financial information originating directly from trading venues, including order-bo
 - [executive](OwnershipAndControl/Executives/Executive.md) — person appointed and given the responsibility to manage the affairs of an organization and the authority to make decisio
 - [executive board member](OwnershipAndControl/Executives/ExecutiveBoardMember.md) — member of a board of directors that is also an employee of the organization
@@ -67,12 +67,12 @@
 - [federal government](GovernmentEntities/GovernmentEntities/FederalGovernment.md) — union of states under a central government distinct from the individual governments of the separate states
 - [federated sovereignty](GovernmentEntities/GovernmentEntities/FederatedSovereignty.md) — polity characterized by a union of partially self-governing states or regions under a central (federal) government
 - [fixed income specialist provider](FunctionalEntities/Publishers/FixedIncomeSpecialistProvider.md) — market data provider that focuses on pricing, reference data, and analytics for fixed-income instruments such as bonds, 
-- [for profit corporation](LegalEntities/CorporateBodies/ForProfitCorporation.md) — corporation whose objective is to make money, i
+- core · [for profit corporation](LegalEntities/CorporateBodies/ForProfitCorporation.md) — corporation whose objective is to make money, i
 - [foreign branch ownership](OwnershipAndControl/OwnershipParties/ForeignBranchOwnership.md) — ownership by some party of some formal organization or organizational sub-unit that is a foreign affiliate and legally p
 - [functional business entity](FunctionalEntities/FunctionalEntities/FunctionalBusinessEntity.md) — functional entity defined in terms of the nature of the commercial activity it conducts
 - [functional entity](FunctionalEntities/FunctionalEntities/FunctionalEntity.md) — party defined in terms of a function they or it performs
 - [general partner](Partnerships/Partnerships/GeneralPartner.md) — partner and part-owner that is responsible for managing the day to day operations of the partnership and that may be joi
-- [general partnership](Partnerships/Partnerships/GeneralPartnership.md) — partnership that has at least two general partners that agree to share in all assets, profits, and financial and legal l
+- core · [general partnership](Partnerships/Partnerships/GeneralPartnership.md) — partnership that has at least two general partners that agree to share in all assets, profits, and financial and legal l
 - [global ultimate parent](OwnershipAndControl/CorporateControl/GlobalUltimateParent.md) — party that is recognized as the ultimate parent of a given organization world-wide
 - [government](GovernmentEntities/GovernmentEntities/Government.md) — system by which a state or community is controlled
 - [government agency](GovernmentEntities/GovernmentEntities/GovernmentAgency.md) — permanent or semi-permanent organization, often an appointed commission, in the machinery of government that is responsi
@@ -93,25 +93,25 @@
 - [investment-based de facto controlling interest party](OwnershipAndControl/ControlParties/InvestmentBasedDeFactoControllingInterestParty.md) — party that holds investment-based control over some other party
 - [investor](OwnershipAndControl/OwnershipParties/Investor.md) — party that owns some stake in some organization by way of investment
 - [investor contract](OwnershipAndControl/OwnershipParties/InvestorContract.md) — Contract setting out the terms under which some investor invests in the entity and setting out the rights which are conf
-- [irrevocable trust](Trusts/Trusts/IrrevocableTrust.md) — trust that cannot be modified, amended or terminated except under certain legal circumstances and typically not without 
+- core · [irrevocable trust](Trusts/Trusts/IrrevocableTrust.md) — trust that cannot be modified, amended or terminated except under certain legal circumstances and typically not without 
 - [joint controlling party](OwnershipAndControl/ControlParties/JointControllingParty.md) — party that collectively has the authority to control the affairs of some business organization
 - [joint stock company](LegalEntities/CorporateBodies/JointStockCompany.md) — for-profit, unincorporated business that has some characteristics of a corporation and some features of a partnership, w
 - [joint venture](LegalEntities/FormalBusinessOrganizations/JointVenture.md) — legal entity that is formed between parties that pool their resources for the purpose of accomplishing a specific task b
 - [joint venture partner](OwnershipAndControl/CorporateControl/JointVenturePartner.md) — party that shares capital, technology, human resources, risks, and benefits of an entity under shared control
 - [judiciary](GovernmentEntities/GovernmentEntities/Judiciary.md) — branch of government that comprises the system of courts that interprets and applies the law in the name of the supranat
-- [legal entity identifier](LegalEntities/LEIEntities/LegalEntityIdentifier.md) — an organization identifier that uniquely identifies a legal person as defined in ISO 17442
-- [legal entity identifier scheme](LegalEntities/LEIEntities/LegalEntityIdentifierScheme.md) — a scheme that specifies the elements of an unambiguous legal entity identifier (LEI) scheme to identify the legal entiti
-- [legally competent natural person](LegalEntities/LegalPersons/LegallyCompetentNaturalPerson.md) — person who is considered competent, under the circumstances, to enter into a contract, conduct business, or participate 
+- core · [legal entity identifier](LegalEntities/LEIEntities/LegalEntityIdentifier.md) — an organization identifier that uniquely identifies a legal person as defined in ISO 17442
+- core · [legal entity identifier scheme](LegalEntities/LEIEntities/LegalEntityIdentifierScheme.md) — a scheme that specifies the elements of an unambiguous legal entity identifier (LEI) scheme to identify the legal entiti
+- core · [legally competent natural person](LegalEntities/LegalPersons/LegallyCompetentNaturalPerson.md) — person who is considered competent, under the circumstances, to enter into a contract, conduct business, or participate 
 - [legislature](GovernmentEntities/GovernmentEntities/Legislature.md) — the law-making body of a political unit, usually a national government, that has power to enact, amend, and repeal publi
 - [limited liability company](PrivateLimitedCompanies/PrivateLimitedCompanies/LimitedLiabilityCompany.md) — private limited company that combines the pass through taxation of a sole proprietorship or partnership with the limited
 - [limited liability company member](PrivateLimitedCompanies/PrivateLimitedCompanies/LimitedLiabilityCompanyMember.md) — owner of an interest in a limited liability company
 - [limited liability company taxed as a corporation](PrivateLimitedCompanies/PrivateLimitedCompanies/LimitedLiabilityCompanyTaxedAsACorporation.md) — limited liability company that has elected to have corporate tax status
 - [limited liability limited partnership](Partnerships/Partnerships/LimitedLiabilityLimitedPartnership.md) — limited partnership that consists of one or more general partners who are liable for the obligations of the entity as we
-- [limited liability partnership](Partnerships/Partnerships/LimitedLiabilityPartnership.md) — partnership that has general partners but provides its individual partners some level of protection against personal lia
+- core · [limited liability partnership](Partnerships/Partnerships/LimitedLiabilityPartnership.md) — partnership that has general partners but provides its individual partners some level of protection against personal lia
 - [limited partner](Partnerships/Partnerships/LimitedPartner.md) — partner whose liabilities are limited to the extent of their investment or guarantees and that has no involvement in the
-- [limited partnership](Partnerships/Partnerships/LimitedPartnership.md) — partnership that has at least one general partner and at least one limited partner
-- [living trust](Trusts/Trusts/LivingTrust.md) — trust created during an individual's lifetime where a designated person, the trustee, is given responsibility for managi
-- [majority controlling party](OwnershipAndControl/ControlParties/MajorityControllingParty.md) — controlling party that possesses, either directly or indirectly, the power to direct or cause the direction of the manag
+- core · [limited partnership](Partnerships/Partnerships/LimitedPartnership.md) — partnership that has at least one general partner and at least one limited partner
+- core · [living trust](Trusts/Trusts/LivingTrust.md) — trust created during an individual's lifetime where a designated person, the trustee, is given responsibility for managi
+- core · [majority controlling party](OwnershipAndControl/ControlParties/MajorityControllingParty.md) — controlling party that possesses, either directly or indirectly, the power to direct or cause the direction of the manag
 - [manager-managed limited liability company](PrivateLimitedCompanies/PrivateLimitedCompanies/ManagerManagedLimitedLiabilityCompany.md) — limited liability company in which the members appoint one or more managers to handle the daily operations and administr
 - [managing member](PrivateLimitedCompanies/PrivateLimitedCompanies/ManagingMember.md) — owner of an interest in a limited liability company who also runs the day-to-day business operations
 - [market data provider](FunctionalEntities/Publishers/MarketDataProvider.md) — publisher that supplies financial information, reference data, analytics, or related datasets used in financial markets
@@ -123,13 +123,13 @@
 - [municipal government](GovernmentEntities/GovernmentEntities/MunicipalGovernment.md) — regional government of a city, township, or other administrative subdivision
 - [national government](GovernmentEntities/GovernmentEntities/NationalGovernment.md) — government and the politicians that that run a country as a whole (as opposed to local government)
 - [non-executive board member](OwnershipAndControl/Executives/NonExecutiveBoardMember.md) — member of the board of directors of an organization that has no executive responsibilities towards the running of that o
-- [non-governmental organization](LegalEntities/FormalBusinessOrganizations/NonGovernmentalOrganization.md) — not-for-profit organization that functions independently of government
+- core · [non-governmental organization](LegalEntities/FormalBusinessOrganizations/NonGovernmentalOrganization.md) — not-for-profit organization that functions independently of government
 - [not for profit objective](LegalEntities/LegalPersons/NotForProfitObjective.md) — objective that reflects the charitable, educational, religious, humanitarian, public services, or other not for profit g
-- [not for profit organization](LegalEntities/FormalBusinessOrganizations/NotForProfitOrganization.md) — organization that uses its surplus revenues to further achieve its purpose rather than distributing its surplus income t
-- [not-for-profit corporation](LegalEntities/CorporateBodies/NotForProfitCorporation.md) — corporation approved by its jurisdictional oversight and tax authorities as operating for educational, charitable, socia
+- core · [not for profit organization](LegalEntities/FormalBusinessOrganizations/NotForProfitOrganization.md) — organization that uses its surplus revenues to further achieve its purpose rather than distributing its surplus income t
+- core · [not-for-profit corporation](LegalEntities/CorporateBodies/NotForProfitCorporation.md) — corporation approved by its jurisdictional oversight and tax authorities as operating for educational, charitable, socia
 - [organization covering agreement](LegalEntities/FormalBusinessOrganizations/OrganizationCoveringAgreement.md) — contract between the principals in a formal organization that specifies the relationship between the principals, and bet
 - [partner](Partnerships/Partnerships/Partner.md) — co-owner, member, and agent of a partnership whose participation level, including proportional liabilities and share in 
-- [partnership](Partnerships/Partnerships/Partnership.md) — association of two or more legal persons to carry on as co-owners a business for profit
+- core · [partnership](Partnerships/Partnerships/Partnership.md) — association of two or more legal persons to carry on as co-owners a business for profit
 - [partnership agreement](Partnerships/Partnerships/PartnershipAgreement.md) — contract between partners in a partnership that establishes the terms and conditions of the relationship between the par
 - [polity](GovernmentEntities/GovernmentEntities/Polity.md) — legal person that is a supranational entity, crown, state, or subordinate civil authority, such as a province, prefectur
 - [power of attorney](LegalEntities/LegalPersons/PowerOfAttorney.md) — legal authorization given by one party (the principal) to another (the agent or attorney-in-fact) to perform certain act
@@ -178,7 +178,7 @@
 - [tribal area](GovernmentEntities/GovernmentEntities/TribalArea.md) — designation for geographic region administered by a group of indigenous people rather than by a sovereign state or regio
 - [tribal entity](GovernmentEntities/GovernmentEntities/TribalEntity.md) — legal entity that represents fundamental unit of sovereign tribal (indigenous) government
 - [tribal government](GovernmentEntities/GovernmentEntities/TribalGovernment.md) — government representing a group of indigenous people that has legal authority to govern those people, including authorit
-- [trust](Trusts/Trusts/Trust.md) — fiduciary relationship and legal entity in which one party, known as a trustor, gives another party, the trustee, the ri
+- core · [trust](Trusts/Trusts/Trust.md) — fiduciary relationship and legal entity in which one party, known as a trustor, gives another party, the trustee, the ri
 - [trust agreement](Trusts/Trusts/TrustAgreement.md) — formal agreement that establishes a trust, whereby the trustor(s) gives the trustee(s) the responsibility to hold and ma
 - [trust beneficiary](Trusts/Trusts/TrustBeneficiary.md) — party for whose interest (benefit) an annuity, assignment (such as a letter of credit), contract, insurance policy, judg
 - [trust fund manager](Trusts/Trusts/TrustFundManager.md) — party empowered to act on behalf of the trustee to manage the assets of the trust

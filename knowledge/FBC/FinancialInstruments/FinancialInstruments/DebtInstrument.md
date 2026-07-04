@@ -4,6 +4,7 @@ title: "debt instrument"
 description: "financial instrument and credit agreement evidencing monies owed by the issuer to the holder on terms as specified"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument
 tags: [FBC, Release]
+core: true
 examples:
   - "A 10-year US Treasury note paying semi-annual interest."
 examples_provenance: curated
