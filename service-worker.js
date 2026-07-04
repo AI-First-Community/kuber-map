@@ -1,7 +1,7 @@
 /* Bodhi Map for FIBO — service worker (offline + installable PWA).
    Precaches the app shell so the map works offline after install; runtime-caches
    everything else same-origin (cache-first). Bump CACHE to invalidate. */
-const CACHE = 'bodhi-fibo-v2.5.0';
+const CACHE = 'bodhi-fibo-v2.6.0';
 const PRECACHE = [
   './', './index.html', './app.html',
   './css/style.css',

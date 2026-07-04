@@ -307,6 +307,7 @@ button { font-family: inherit; }
 .panel p { margin: 0 0 6px; font-size: 14px; line-height: 1.62; color: var(--text-soft); }
 .panel .summary { font-size: 15.5px; color: var(--text); line-height: 1.6; font-weight: 500; padding-left: 14px; border-left: 3px solid var(--c, var(--accent2)); }
 .panel .when { color: var(--text); background: color-mix(in srgb, var(--good) 12%, transparent); padding: 10px 12px; border-radius: var(--radius-sm); }
+.panel .derived-note { font-size: 12px; color: var(--muted); font-style: italic; margin-top: 6px; padding-left: 14px; }
 .panel-action {
   display: inline-flex; align-items: center; gap: 8px; margin: 12px 0 2px;
   padding: 9px 14px; border-radius: var(--radius-sm); border: 1px solid var(--accent2);

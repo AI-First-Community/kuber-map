@@ -241,6 +241,26 @@
     return `<h4>Connections</h4><ul class="conn-list">${items.join('')}</ul>`;
   }
 
+  // Direct FIBO superclasses (is-a targets) of a concept — used to describe classes
+  // that FIBO defines structurally (via axioms) instead of with a text definition.
+  function superclassesOf(id) {
+    const out = [];
+    GRAPH.edges.forEach((e) => { if (e.s === id && e.r === 'is-a' && nodeById[e.t]) out.push(nodeById[e.t].label); });
+    return out;
+  }
+  // The definition to show. Prefer FIBO's own; otherwise derive a grounded summary
+  // from the concept's real superclasses (never invented) and flag it as derived.
+  function summaryFor(n) {
+    const s = (n.summary || '').trim();
+    if (s) return { html: escapeHtml(s), derived: false };
+    const dom = (CLUSTERS[n.cluster] && CLUSTERS[n.cluster].label) || n.domain;
+    const parents = superclassesOf(n.id).slice(0, 3).map(escapeHtml);
+    const html = parents.length
+      ? `A type of ${parents.join(', ')}. FIBO defines this ${escapeHtml(dom)} class through its superclass and axioms rather than a text definition.`
+      : `A ${escapeHtml(dom)} class that FIBO defines structurally, through axioms rather than a text definition.`;
+    return { html, derived: true };
+  }
+
   // which comparison set (if any) contains this concept
   function compareSetIndexFor(id) {
     const cs = GRAPH.comparisons || [];
@@ -258,7 +278,7 @@
       <button class="panel-close" id="panelClose">×</button>
       <div class="panel-tag" style="--c:${c.color}">${c.label} · Level ${n.level}, ${LEVELS[n.level]}${RELEASE_VERSION && n.added === RELEASE_VERSION ? ` <span class="new-badge">✦ New in ${RELEASE_VERSION}</span>` : ''}</div>
       <h2 style="--c:${c.color}">${n.label}</h2>
-      <p class="summary">${n.summary}</p>
+      ${(() => { const s = summaryFor(n); return `<p class="summary">${s.html}</p>${s.derived ? '<p class="derived-note">Summarised from this class’s place in the FIBO taxonomy — FIBO ships no text definition for it.</p>' : ''}`; })()}
       ${cmpIdxFor !== -1 ? `<button class="panel-action" data-compare="${cmpIdxFor}">${TABLE_IC} Compare ${GRAPH.comparisons[cmpIdxFor].title}</button>` : ''}
       ${n.detail ? `<h4>Detail${n.detailProvenance === 'curated' ? ' <span class="rel-tag">curated</span>' : ''}</h4><p>${escapeHtml(n.detail)}</p>` : ''}
       ${n.examples && n.examples.length ? `<h4>Examples${n.examplesProvenance === 'curated' ? ' <span class="rel-tag">illustrative</span>' : ''}</h4><ul class="conn-list">${n.examples.map((e) => `<li>${escapeHtml(e)}</li>`).join('')}</ul>` : ''}
