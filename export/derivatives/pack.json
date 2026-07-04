@@ -1,0 +1,1747 @@
+{
+  "use_case": "Derivatives Contracts & Trading (options, futures, swaps)",
+  "generated_from": {
+    "intermediate": "out/intermediate.json",
+    "core": "curation/derivatives.json",
+    "bridges": "curation/derivatives-bridges.json",
+    "definitions": "curation/definitions.json"
+  },
+  "counts": {
+    "concepts": 60,
+    "bridges": 4,
+    "curated_definitions": 0,
+    "concepts_without_definition": 0
+  },
+  "concepts": [
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwap",
+      "title": "credit default swap",
+      "facet": "Credit derivatives",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "bilateral contract in which one party (protection seller) agrees to provide payment to the other party (protection buyer) should a credit event occur against the underlying, which could be a specified debt (the reference obligation), a specific debt issuer (reference entity), a basket of reference entities and/or reference obligations, or a credit index (reference index)",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwap",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CreditDerivative",
+          "target_title": "credit derivative",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap",
+          "target_title": "swap",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-contract-price",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryPrice",
+          "target_title": "monetary price",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-contractual-element",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditProtectionTerms",
+          "target_title": "credit protection terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-occurrence",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/SettlementAuction",
+          "target_title": "settlement auction",
+          "provenance": "fibo"
+        },
+        {
+          "type": "specifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/TriggeringEvent",
+          "target_title": "triggering event",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwapIndex",
+      "title": "credit default swap index",
+      "facet": "Credit derivatives",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "index whose underlying reference obligations are credit default swap instruments",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwapIndex",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/IND/MarketIndices/BasketIndices/ReferenceIndex",
+          "target_title": "reference index",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-based-on",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/BasketOfCreditDefaultSwaps",
+          "target_title": "basket of credit default swaps",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditEventNotice",
+      "title": "credit event notice",
+      "facet": "Credit derivatives",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "irrevocable written or verbal notice that states that a triggering event has occurred",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditEventNotice",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Documents/Notice",
+          "target_title": "notice",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-about",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/TriggeringEvent",
+          "target_title": "triggering event",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-provided-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/NotifyingParty",
+          "target_title": "notifying party",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditProtectionTerms",
+      "title": "credit protection terms",
+      "facet": "Credit derivatives",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "legal terms that define triggering events and associated conditions related to settlement",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditProtectionTerms",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/DerivativeTerms",
+          "target_title": "derivative terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-buyer",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/DeliverableObligationBuyer",
+          "target_title": "deliverable obligation buyer",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-scheduled-termination-date",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate",
+          "target_title": "explicit date",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-seller",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/DeliverableObligationSeller",
+          "target_title": "deliverable obligation seller",
+          "provenance": "fibo"
+        },
+        {
+          "type": "specifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/DeliverableObligation",
+          "target_title": "deliverable asset",
+          "provenance": "fibo"
+        },
+        {
+          "type": "specifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/TriggeringEvent",
+          "target_title": "triggering event",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/DeliverableObligation",
+      "title": "deliverable asset",
+      "facet": "Credit derivatives",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "asset that must be delivered as a part of the process of settling a credit default swap",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/DeliverableObligation",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Asset",
+          "target_title": "asset",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/LoanCreditDefaultSwap",
+      "title": "loan credit default swap",
+      "facet": "Credit derivatives",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "credit default swap whose underlying reference obligation is limited strictly to syndicated secured loans, rather than any type of corporate debt",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/LoanCreditDefaultSwap",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwap",
+          "target_title": "credit default swap",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/TriggeringEvent",
+      "title": "triggering event",
+      "facet": "Credit derivatives",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "event that relates to or triggers some aspect of a credit default swap",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/TriggeringEvent",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/Occurrences/Occurrence",
+          "target_title": "occurrence",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CashflowFormula",
+      "title": "cashflow formula",
+      "facet": "Derivatives (roots & terms)",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "formula for determining cashflows for a derivative instrument",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CashflowFormula",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Formula",
+          "target_title": "formula",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-expression",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CashflowExpression",
+          "target_title": "cashflow expression",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CommoditiesContracts/CommodityDerivative",
+      "title": "commodity derivative",
+      "facet": "Derivatives (roots & terms)",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "derivative instrument whose primary underlying item is a physical commodity, or the price, or related index, or any other aspect related to a physical commodity",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CommoditiesContracts/CommodityDerivative",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/CommodityInstrument",
+          "target_title": "commodity instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+          "target_title": "derivative instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-underlier",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CommoditiesContracts/CommodityDerivativeUnderlier",
+          "target_title": "commodity derivative underlier",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CreditDerivative",
+      "title": "credit derivative",
+      "facet": "Derivatives (roots & terms)",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "derivative instrument that is a privately held, negotiable bilateral contract traded over-the-counter (OTC) between two parties in a creditor/debtor relationship, enabling the creditor to effectively transfer some or all of the risk of a debtor defaulting to a third party",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CreditDerivative",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+          "target_title": "derivative instrument",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyDerivative",
+      "title": "currency derivative",
+      "facet": "Derivatives (roots & terms)",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "agreement to deliver and settle a given amount of money in one currency, in exchange for a given amount in another currency at an agreed rate of exchange",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyDerivative",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/CurrencyInstrument",
+          "target_title": "currency instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+          "target_title": "derivative instrument",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+      "title": "derivative instrument",
+      "facet": "Derivatives (roots & terms)",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "financial instrument that confers on its holders certain rights or obligations, whose value is derived from one or more underlying assets",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/FinancialInstrument",
+          "target_title": "financial instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-expiration-date",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/Date",
+          "target_title": "date",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-initial-exchange-date",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate",
+          "target_title": "explicit date",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-quantity-value",
+          "target": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/ScalarQuantityValue",
+          "target_title": "scalar quantity value",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-settlement-terms",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/SettlementTerms",
+          "target_title": "settlement terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-underlier",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Underlier",
+          "target_title": "underlier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-valuation-terms",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ValuationTerms",
+          "target_title": "valuation terms",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/DerivativeTerms",
+      "title": "derivative terms",
+      "facet": "Derivatives (roots & terms)",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "contractual terms specific to derivative contracts, including terms related to payments and delivery between parties",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/DerivativeTerms",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractualCommitment",
+          "target_title": "contractual commitment",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/RateBasedDerivative",
+      "title": "rate-based derivative",
+      "facet": "Derivatives (roots & terms)",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "derivative instrument where the holder has the right but may not have the obligation, depending on the nature of the instrument, to enter into the underlying contract, or pay or receive payment related to the underlying financial rate (or rate contract) on a specified future date based on a specified future rate and term",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/RateBasedDerivative",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+          "target_title": "derivative instrument",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Underlier",
+      "title": "underlier",
+      "facet": "Derivatives (roots & terms)",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "something that can be assigned a value in the marketplace that forms the basis for a derivative or pool-backed instrument",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Underlier",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/Undergoer",
+          "target_title": "undergoer",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/AsianOption",
+      "title": "Asian option",
+      "facet": "Exotic options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "option whose exercise terms involve a payoff determined by the average underlying price (either the strike price or the settlement price) of the underlying asset over a predetermined period",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/AsianOption",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/ExoticOption",
+          "target_title": "exotic option",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-asian-tail-period",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/DatePeriod",
+          "target_title": "date period",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-exercise-date",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate",
+          "target_title": "explicit date",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/AsianOptionClassifier",
+          "target_title": "Asian option classifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/AveragingStrategy",
+          "target_title": "averaging strategy",
+          "provenance": "fibo"
+        },
+        {
+          "type": "uses-currency-in-averaging",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/Currency",
+          "target_title": "currency",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/BarrierOption",
+      "title": "barrier option",
+      "facet": "Exotic options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "option whose final exercise depends upon the path taken by the price of an underlying instrument, i.e., whose payoff depends on whether or not the underlying asset has reached or exceeded a predetermined price",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/BarrierOption",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/ExoticOption",
+          "target_title": "exotic option",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-monitoring-frequency",
+          "target": "http://www.w3.org/2001/XMLSchema#positiveInteger",
+          "target_title": "positiveInteger",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-monitoring-period",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/DatePeriod",
+          "target_title": "date period",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-above-strike-price",
+          "target": "http://www.w3.org/2001/XMLSchema#boolean",
+          "target_title": "boolean",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/CompoundOption",
+      "title": "compound option",
+      "facet": "Exotic options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "exotic option for which the underlying asset is another option",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/CompoundOption",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/ExoticOption",
+          "target_title": "exotic option",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Option",
+          "target_title": "option",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/DigitalOption",
+      "title": "digital option",
+      "facet": "Exotic options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "exotic option that has a pre-determined payout if the option is in-the-money and the payoff condition is satisfied",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/DigitalOption",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/BarrierOption",
+          "target_title": "barrier option",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/KnockInOption",
+      "title": "knock-in option",
+      "facet": "Exotic options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "barrier option that is not triggered until a certain price threshold is met",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/KnockInOption",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/BarrierOption",
+          "target_title": "barrier option",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-first-barrier-price",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryPrice",
+          "target_title": "monetary price",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-first-rebate-amount",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/PercentageMonetaryAmount",
+          "target_title": "percentage monetary amount",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/KnockOutOption",
+      "title": "knock-out option",
+      "facet": "Exotic options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "barrier option with a built-in mechanism to expire as worthless if a specified price level in the underlying asset is reached",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/KnockOutOption",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/BarrierOption",
+          "target_title": "barrier option",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-first-barrier-price",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryPrice",
+          "target_title": "monetary price",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-first-rebate-amount",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/PercentageMonetaryAmount",
+          "target_title": "percentage monetary amount",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/LookbackOption",
+      "title": "lookback option",
+      "facet": "Exotic options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "exotic option that minimizes the uncertainties related to the timing of market entry, providing the holder the advantage of knowing history when determining when to exercise their option",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/LookbackOption",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/ExoticOption",
+          "target_title": "exotic option",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-contractual-element",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/LookbackStrikeTerms",
+          "target_title": "lookback strike terms",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/Swaption",
+      "title": "swaption",
+      "facet": "Exotic options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "over-the-counter option that confers the right but not the obligation, to enter into a swap transaction at some time in the future",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/Swaption",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/ExoticOption",
+          "target_title": "exotic option",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/BondFuture",
+      "title": "bond future",
+      "facet": "Futures & forwards",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "futures contract whose underlying asset is at least one bond",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/BondFuture",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/DebtInstrumentFuture",
+          "target_title": "debt instrument future",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyForward",
+      "title": "currency forward",
+      "facet": "Futures & forwards",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "agreement to deliver and settle a given amount of money in one currency, in exchange for a given amount in another currency, at an agreed date in the future and at an agreed rate of exchange",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyForward",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyDerivative",
+          "target_title": "currency derivative",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/Forward",
+          "target_title": "forward",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-forward-exchange-rate",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/ExchangeRate",
+          "target_title": "exchange rate",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/CurrencyFuture",
+      "title": "currency future",
+      "facet": "Futures & forwards",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "futures contract whose underlying asset is an agreement to exchange a specified amount of one currency for another at some point in the future based on pricing stated in the contract",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/CurrencyFuture",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyDerivative",
+          "target_title": "currency derivative",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/FinancialFuture",
+          "target_title": "financial future",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/EquityForward",
+      "title": "equity forward",
+      "facet": "Futures & forwards",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "forward contract to buy or sell the underlying equity stock, equity index, basket of equity stock, equity futures contract, or equity option at a specified future date at the price specified at the outset of the contract",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/EquityForward",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/Forward",
+          "target_title": "forward",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-contractual-element",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/SettlementTerms",
+          "target_title": "settlement terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-dividend-adjustment-period",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/DividendAdjustmentPeriod",
+          "target_title": "dividend adjustment period",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-method-of-adjustment",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/ForwardContractAdjustmentMethod",
+          "target_title": "forward contract adjustment method",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/EquityFuture",
+      "title": "equity future",
+      "facet": "Futures & forwards",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "futures contract whose underlying asset is at least one equity security, specifically a publicly issued and traded share",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/EquityFuture",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/FinancialFuture",
+          "target_title": "financial future",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/SecurityBasedDerivatives/EquityDerivative",
+          "target_title": "equity derivative",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/Forward",
+      "title": "forward",
+      "facet": "Futures & forwards",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "derivative instrument that is privately negotiated between parties to buy the underlier at a specified future date at the price specified in the contract",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/Forward",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/OverTheCounterDerivativeInstrument",
+          "target_title": "over-the-counter derivative instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+          "target_title": "derivative instrument",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ForwardRateAgreement",
+      "title": "forward rate agreement",
+      "facet": "Futures & forwards",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "agreement to exchange an interest rate commitment on a notional amount at a future date",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ForwardRateAgreement",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/InterestRateDerivative",
+          "target_title": "interest rate derivative",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Future",
+      "title": "future",
+      "facet": "Futures & forwards",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "derivative instrument that obligates the buyer to receive and the seller to deliver the assets specified at an agreed price, at some later point in time",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Future",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+          "target_title": "derivative instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-lot-size",
+          "target": "http://www.w3.org/2001/XMLSchema#decimal",
+          "target_title": "decimal",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/IndexFuture",
+      "title": "index future",
+      "facet": "Futures & forwards",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "futures contract whose underlying asset is at least one reference index or economic indicator",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/IndexFuture",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/FinancialFuture",
+          "target_title": "financial future",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/BondOption",
+      "title": "bond option",
+      "facet": "Options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "option giving the buyer (holder) the right, but not the obligation, to buy or sell (depending on whether it is a call or a put) a bond at a certain price on or before a specified date",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/BondOption",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/FixedIncomeOption",
+          "target_title": "fixed income option",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/CallOption",
+      "title": "call option",
+      "facet": "Options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "option giving the buyer (holder) the right, but not the obligation, to buy the assets specified at a fixed price or formula, on or before a specified date",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/CallOption",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Option",
+          "target_title": "option",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/CoveredCall",
+      "title": "covered call",
+      "facet": "Options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "call option in which the seller (investor) owns an equivalent amount of the underlying security",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/CoveredCall",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/CallOption",
+          "target_title": "call option",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyOption",
+      "title": "currency option",
+      "facet": "Options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "option giving the buyer (holder) the right, but not the obligation, to buy or sell currency at a specified exchange rate during a specified period of time",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyOption",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyDerivative",
+          "target_title": "currency derivative",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/VanillaOption",
+          "target_title": "vanilla option",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-strike-rate",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/ExchangeRate",
+          "target_title": "exchange rate",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/EquityOption",
+      "title": "equity option",
+      "facet": "Options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "option giving the buyer (holder) the right, but not the obligation, to buy (via a call option) or sell (via a put option) the underlying equity assets specified at a pre-determined price (i.e., the strike price, fixed or calculated), on or before a specified date (the expiration date)",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/EquityOption",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/VanillaOption",
+          "target_title": "vanilla option",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/SecurityBasedDerivatives/EquityDerivative",
+          "target_title": "equity derivative",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-exercise-style",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/ExerciseConventions/AmericanExerciseConvention",
+          "target_title": "AmericanExerciseConvention",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/Moneyness",
+      "title": "moneyness",
+      "facet": "Options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "classifier for a derivative relating its strike price to the price of its underlying asset",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/Moneyness",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Classifiers/Classifier",
+          "target_title": "classifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "classifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Option",
+          "target_title": "option",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Option",
+      "title": "option",
+      "facet": "Options",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "derivative instrument that grants to the holder either the privilege to purchase or the privilege to sell the assets specified at a predetermined price or formula at or within a time period in the future",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Option",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+          "target_title": "derivative instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-calculated-market-value",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/OptionPremium",
+          "target_title": "option premium",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-exercise-price",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/StrikePrice",
+          "target_title": "strike price",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-exercise-schedule",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/Schedule",
+          "target_title": "schedule",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-exercise-style",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/ExerciseConventions/ExerciseConvention",
+          "target_title": "exercise convention",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-expiration-date",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/Date",
+          "target_title": "date",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-lot-size",
+          "target": "http://www.w3.org/2001/XMLSchema#decimal",
+          "target_title": "decimal",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-option-holder",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/OptionHolder",
+          "target_title": "option holder",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-option-writer",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/OptionIssuer",
+          "target_title": "option issuer",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/PutOption",
+      "title": "put option",
+      "facet": "Options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "option giving the buyer (holder) the right, but not the obligation, to sell the assets specified at a fixed price or formula, on or before a specified date",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/PutOption",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Option",
+          "target_title": "option",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/StrikePrice",
+      "title": "strike price",
+      "facet": "Options",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "price at which a lot of the underlying asset may be bought or sold when the contract is exercised",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/StrikePrice",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryPrice",
+          "target_title": "monetary price",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingHouse",
+      "title": "clearing house",
+      "facet": "Parties, agreements & structured",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "financial service provider that is exchange affiliated and provides clearing services, including the validation, delivery, and settlement of financial transactions, for financial intermediaries",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingHouse",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider",
+          "target_title": "financial service provider",
+          "provenance": "fibo"
+        },
+        {
+          "type": "provides",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingService",
+          "target_title": "clearing service",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/Counterparty",
+      "title": "counterparty",
+      "facet": "Parties, agreements & structured",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "party to a contract with whom one negotiates on a given agreement",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/Counterparty",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractParty",
+          "target_title": "contract party",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesMasterAgreements/DerivativeMasterAgreement",
+      "title": "derivative master agreement",
+      "facet": "Parties, agreements & structured",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "master agreement covering derivatives transactions to be carried out between the parties to this contract",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesMasterAgreements/DerivativeMasterAgreement",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreement",
+          "target_title": "credit agreement",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/MasterAgreement",
+          "target_title": "master agreement",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/MasterAgreement",
+      "title": "master agreement",
+      "facet": "Parties, agreements & structured",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "contract between named parties that outlines the terms and conditions designed to apply to a number of accounts, transactions, or other activities between the parties, and that consolidates and provides overarching terms for separate but related agreements",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/MasterAgreement",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/WrittenContract",
+          "target_title": "written contract",
+          "provenance": "fibo"
+        },
+        {
+          "type": "governs",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/Contract",
+          "target_title": "contract",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/PayingParty",
+      "title": "paying party",
+      "facet": "Parties, agreements & structured",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "party responsible for making payments in a transaction specified in a contract",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/PayingParty",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractParty",
+          "target_title": "contract party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/Payer",
+          "target_title": "payer",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Buyer",
+          "target_title": "buyer",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ReceivingParty",
+      "title": "receiving counterparty",
+      "facet": "Parties, agreements & structured",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "party that receives payments in a transaction specified in a contract",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ReceivingParty",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractParty",
+          "target_title": "contract party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/Payee",
+          "target_title": "payee",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Seller",
+          "target_title": "seller",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/StructuredInstruments/StructuredProduct",
+      "title": "structured product",
+      "facet": "Parties, agreements & structured",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "security whose cash flow characteristics depend upon one or more indices or that have embedded forwards or options or securities where an investor's investment return and the issuer's payment obligations are contingent on, or highly sensitive to, changes in the value of underlying assets, indices, interest rates or cash flows",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/StructuredInstruments/StructuredProduct",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+          "target_title": "derivative instrument",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapDealer",
+      "title": "swap dealer",
+      "facet": "Parties, agreements & structured",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "non-depository institution such as one that deals in swaps, makes a market in swaps, regularly enters into swaps with counterparties as an ordinary course of business for its own account, and engages in any activity causing the person to be commonly known in the trade as a dealer/market maker in swaps",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapDealer",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/NonDepositoryInstitution",
+          "target_title": "non-depository institution",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/Dealer",
+          "target_title": "dealer",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/BasisSwap",
+      "title": "basis swap",
+      "facet": "Swaps",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "swap in which payment streams are referenced to different bases",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/BasisSwap",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/RatesSwap",
+          "target_title": "rates swap",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CommoditiesContracts/CommoditySwap",
+      "title": "commodity swap",
+      "facet": "Swaps",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "commodity derivative that includes, without limitation, any swap for which the primary underlying notional item is a physical commodity, or the price, or behavior of the price, or the level of a commodity index, or other aspect related to a physical commodity",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CommoditiesContracts/CommoditySwap",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CommoditiesContracts/CommodityDerivative",
+          "target_title": "commodity derivative",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/ReturnSwap",
+          "target_title": "return swap",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-return-leg",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CommoditiesContracts/CommodityReturnLeg",
+          "target_title": "commodity return leg",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencySwap",
+      "title": "currency swap",
+      "facet": "Swaps",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "foreign exchange agreement between two parties to exchange a given amount of one currency for another currency for spot delivery or for forward delivery at an agreed rate after a specified period of time",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencySwap",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyDerivative",
+          "target_title": "currency derivative",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap",
+          "target_title": "swap",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-leg",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyForward",
+          "target_title": "currency forward",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/EquitySwaps/EquitySwap",
+      "title": "equity swap",
+      "facet": "Swaps",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "swap whose payments are linked to the change in value of underlying equities (e.g. shares, basket of equities or index) or their cashflow(s)",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/EquitySwaps/EquitySwap",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap",
+          "target_title": "swap",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/SecurityBasedDerivatives/EquityDerivative",
+          "target_title": "equity derivative",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/FixedLeg",
+      "title": "fixed leg",
+      "facet": "Swaps",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "swap leg whose paying party is obligated to make payments from time to time over the term of a swap calculated by reference to a fixed annual rate or consisting of at least one payment of a fixed amount",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/FixedLeg",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapLeg",
+          "target_title": "swap leg",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-payment-schedule",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/PaymentSchedule",
+          "target_title": "payment schedule",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/FloatingLeg",
+      "title": "floating leg",
+      "facet": "Swaps",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "swap leg whose paying party is obligated to make payments from time to time over the term of a swap calculated by reference to some variable rate, calculated based on the change in value of some underlying asset, or consisting of at least one payment of some floating amount",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/FloatingLeg",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapLeg",
+          "target_title": "swap leg",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-payment-schedule",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/PaymentSchedule",
+          "target_title": "payment schedule",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/InterestRateSwap",
+      "title": "interest rate swap",
+      "facet": "Swaps",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "swap in which the reference (underlier) for at least one leg is an interest rate",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/InterestRateSwap",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/InterestRateDerivative",
+          "target_title": "interest rate derivative",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/RatesSwap",
+          "target_title": "rates swap",
+          "provenance": "fibo"
+        },
+        {
+          "type": "exchanges",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/InterestRateSwapLeg",
+          "target_title": "interest rate swap leg",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/OvernightIndexSwap",
+      "title": "overnight index swap",
+      "facet": "Swaps",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "swap in which the periodic payments for one leg are based on an overnight interest rate index multiplied by the same notional amount upon which payments for the other leg of the swap are based",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/OvernightIndexSwap",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/InterestRateSwap",
+          "target_title": "interest rate swap",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-leg",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/OvernightRateIndexLeg",
+          "target_title": "overnight rate index leg",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap",
+      "title": "swap",
+      "facet": "Swaps",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "derivative instrument whereby counterparties agree to exchange periodic streams of cash flows or liabilities from two different financial instruments with each other",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+          "target_title": "derivative instrument",
+          "provenance": "fibo"
+        },
+        {
+          "type": "exchanges",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapLeg",
+          "target_title": "swap leg",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-contract-party",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapParty",
+          "target_title": "swap party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-contractual-element",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapTerms",
+          "target_title": "swap terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-identified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/UniqueSwapIdentifier",
+          "target_title": "unique swap identifier",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapLeg",
+      "title": "swap leg",
+      "facet": "Swaps",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "terms defining and the commitment to fulfill cashflow requirements (e.g., interest payments, coupon payments, etc.) for a component of a swap",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapLeg",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CashflowTerms",
+          "target_title": "cashflow terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapTerms",
+          "target_title": "swap terms",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-buyer",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapPayingParty",
+          "target_title": "swap paying party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-effective-date",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/Date",
+          "target_title": "date",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-seller",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapReceivingParty",
+          "target_title": "swap receiving party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-termination-date",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/Date",
+          "target_title": "date",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-denominated-in",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/Currency",
+          "target_title": "currency",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-leg-of",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap",
+          "target_title": "swap",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/TotalReturnSwap",
+      "title": "total return swap",
+      "facet": "Swaps",
+      "cluster": "DER",
+      "maturity": "Release",
+      "definition": "return swap where the seller agrees to pay the other party the difference in value of some underlying asset multiplied by an agreed-upon notional value should the asset value increase between specified periods of time",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/TotalReturnSwap",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CreditDerivative",
+          "target_title": "credit derivative",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/ReturnSwap",
+          "target_title": "return swap",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-return-leg",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/TotalReturnLeg",
+          "target_title": "total return leg",
+          "provenance": "fibo"
+        }
+      ]
+    }
+  ],
+  "bridges": [
+    {
+      "id": "credit-default-swap-references-bond",
+      "edge": "references",
+      "kind": "cross-domain (DER->SEC)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwap",
+      "source_title": "credit default swap",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond",
+      "target_title": "bond",
+      "provenance": "curated",
+      "rationale": "A credit default swap transfers the credit risk of a reference obligation, typically a bond of the reference entity. FIBO models the CDS (DER) and the bond (SEC) in separate domains but does not draw the edge from the swap to the debt security it references.",
+      "citation": "ISDA Credit Derivatives Definitions (reference obligation)"
+    },
+    {
+      "id": "swap-cleared-through-clearing-house",
+      "edge": "cleared-through",
+      "kind": "cross-domain (DER->FBC)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap",
+      "source_title": "swap",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingHouse",
+      "target_title": "clearing house",
+      "provenance": "curated",
+      "rationale": "Standardized OTC swaps are subject to mandatory central clearing through a clearing house acting as central counterparty. FIBO defines Swap (DER) and ClearingHouse (FBC) but leaves the cleared-through relationship implicit.",
+      "citation": "Dodd-Frank Act Title VII; EU EMIR (Regulation 648/2012) clearing obligation"
+    },
+    {
+      "id": "equity-option-underlier-share",
+      "edge": "has-underlier",
+      "kind": "cross-domain (DER->SEC)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/EquityOption",
+      "source_title": "equity option",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share",
+      "target_title": "share",
+      "provenance": "curated",
+      "rationale": "An equity option's underlier is the equity share it confers the right to buy or sell. FIBO models the equity option (DER) and the share (SEC) separately without connecting the option to the specific instrument it is written on.",
+      "citation": "Listed equity options contract specifications (e.g. OCC standardized options)"
+    },
+    {
+      "id": "total-return-swap-references-security",
+      "edge": "references",
+      "kind": "cross-domain (DER->FBC)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/TotalReturnSwap",
+      "source_title": "total return swap",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security",
+      "target_title": "security",
+      "provenance": "curated",
+      "rationale": "A total return swap pays the total economic return of a reference security in exchange for a financing rate. FIBO models the total return swap (DER) and Security (FBC) but does not link the swap to the security whose return it pays.",
+      "citation": "ISDA total return swap documentation; synthetic financing structures"
+    }
+  ]
+}

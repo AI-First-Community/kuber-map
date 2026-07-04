@@ -69,6 +69,9 @@
     'backed-by':        { label: 'backed by',        color: '#e11d48', style: 'dashed' },
     'submitted-to':     { label: 'submitted to',     color: '#e11d48', style: 'dashed' },
     'required-by':      { label: 'required by',      color: '#e11d48', style: 'dashed' },
+    'references':       { label: 'references',       color: '#e11d48', style: 'dashed' },
+    'cleared-through':  { label: 'cleared through',  color: '#e11d48', style: 'dashed' },
+    'has-underlier':    { label: 'has underlier',    color: '#e11d48', style: 'dashed' },
   };
 
   // Decision wizard: "Which FIBO concept models what I'm working with?" (rec = FIBO IRI).

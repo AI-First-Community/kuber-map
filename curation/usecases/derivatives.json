@@ -1,0 +1,40 @@
+{
+  "use_case": "Derivatives Contracts & Trading (options, futures, swaps)",
+  "_comment": "Facet spec for the derivatives use case. Each entry is [local-id, cluster], grounded in the extract (nominate_core.py verifies each). Instrument roots (DerivativeInstrument, Option, Future, Underlier, ClearingHouse) and counterparty/master-agreement live in FBC/FND; the derivative-specific taxonomy lives in DER.",
+  "facets": {
+    "Derivatives (roots & terms)": [
+      ["DerivativeInstrument", "FBC"], ["CreditDerivative", "DER"], ["RateBasedDerivative", "DER"],
+      ["CurrencyDerivative", "DER"], ["CommodityDerivative", "DER"], ["DerivativeTerms", "DER"],
+      ["Underlier", "FBC"], ["CashflowFormula", "DER"]
+    ],
+    "Options": [
+      ["Option", "FBC"], ["CallOption", "DER"], ["PutOption", "DER"], ["StrikePrice", "DER"],
+      ["Moneyness", "DER"], ["CoveredCall", "DER"], ["BondOption", "DER"], ["CurrencyOption", "DER"],
+      ["EquityOption", "DER"]
+    ],
+    "Exotic options": [
+      ["Swaption", "DER"], ["AsianOption", "DER"], ["BarrierOption", "DER"], ["KnockInOption", "DER"],
+      ["KnockOutOption", "DER"], ["DigitalOption", "DER"], ["LookbackOption", "DER"], ["CompoundOption", "DER"]
+    ],
+    "Futures & forwards": [
+      ["Future", "FBC"], ["Forward", "DER"], ["BondFuture", "DER"], ["IndexFuture", "DER"],
+      ["EquityFuture", "DER"], ["CurrencyFuture", "DER"], ["EquityForward", "DER"],
+      ["ForwardRateAgreement", "DER"], ["CurrencyForward", "DER"]
+    ],
+    "Swaps": [
+      ["Swap", "DER"], ["SwapLeg", "DER"], ["FixedLeg", "DER"], ["FloatingLeg", "DER"],
+      ["InterestRateSwap", "DER"], ["CurrencySwap", "DER"], ["BasisSwap", "DER"],
+      ["OvernightIndexSwap", "DER"], ["TotalReturnSwap", "DER"], ["EquitySwap", "DER"], ["CommoditySwap", "DER"]
+    ],
+    "Credit derivatives": [
+      ["CreditDefaultSwap", "DER"], ["TriggeringEvent", "DER"], ["CreditEventNotice", "DER"],
+      ["DeliverableObligation", "DER"], ["LoanCreditDefaultSwap", "DER"], ["CreditDefaultSwapIndex", "DER"],
+      ["CreditProtectionTerms", "DER"]
+    ],
+    "Parties, agreements & structured": [
+      ["Counterparty", "FND"], ["MasterAgreement", "FND"], ["DerivativeMasterAgreement", "DER"],
+      ["SwapDealer", "DER"], ["ClearingHouse", "FBC"], ["PayingParty", "DER"], ["ReceivingParty", "DER"],
+      ["StructuredProduct", "DER"]
+    ]
+  }
+}

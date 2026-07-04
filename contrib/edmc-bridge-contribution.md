@@ -1,6 +1,6 @@
 # Cross-domain bridges — FIBO contribution proposal
 
-**15 curated cross-domain relations** that FIBO does not currently draw, surfaced while building learner-first, agent-grounding maps of FIBO for four financial use cases. Each is offered back to the EDM Council for consideration.
+**19 curated cross-domain relations** that FIBO does not currently draw, surfaced while building learner-first, agent-grounding maps of FIBO for four financial use cases. Each is offered back to the EDM Council for consideration.
 
 *Author:* Sanjeev Azad <sanjeev.azad@gmail.com> · *License:* MIT · *Source project:* Kuber Map for FIBO.
 
@@ -20,9 +20,12 @@ Proposed relations are expressed in a neutral `kmb:` namespace in the accompanyi
 |---|---|
 | backed-by | `kmb:backedBy` |
 | beneficial-owner-of | `kmb:beneficialOwnerOf` |
+| cleared-through | `kmb:clearedThrough` |
 | filed-by | `kmb:filedBy` |
+| has-underlier | `kmb:hasUnderlier` |
 | identified-by | `kmb:identifiedBy` |
 | played-by | `kmb:playedBy` |
+| references | `kmb:references` |
 | reported-in | `kmb:reportedIn` |
 | required-by | `kmb:requiredBy` |
 | submitted-to | `kmb:submittedTo` |
@@ -56,6 +59,36 @@ Proposed relations are expressed in a neutral `kmb:` namespace in the accompanyi
 - **target:** `https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution`
 - **rationale:** Lender is modeled as a party role (is-a ContractParty/Creditor); FinancialInstitution is the legal-entity type that plays it. FIBO leaves the role-to-entity link implicit, blocking resolution of 'the lender' to a regulated institution.
 - **citation:** FIBO FBC party-role vs entity modeling
+
+## derivatives-bridges.json  (4)
+
+### credit default swap —[references]→ bond
+- **kind:** cross-domain (DER->SEC)
+- **source:** `https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwap`
+- **target:** `https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond`
+- **rationale:** A credit default swap transfers the credit risk of a reference obligation, typically a bond of the reference entity. FIBO models the CDS (DER) and the bond (SEC) in separate domains but does not draw the edge from the swap to the debt security it references.
+- **citation:** ISDA Credit Derivatives Definitions (reference obligation)
+
+### swap —[cleared-through]→ clearing house
+- **kind:** cross-domain (DER->FBC)
+- **source:** `https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap`
+- **target:** `https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingHouse`
+- **rationale:** Standardized OTC swaps are subject to mandatory central clearing through a clearing house acting as central counterparty. FIBO defines Swap (DER) and ClearingHouse (FBC) but leaves the cleared-through relationship implicit.
+- **citation:** Dodd-Frank Act Title VII; EU EMIR (Regulation 648/2012) clearing obligation
+
+### equity option —[has-underlier]→ share
+- **kind:** cross-domain (DER->SEC)
+- **source:** `https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/EquityOption`
+- **target:** `https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share`
+- **rationale:** An equity option's underlier is the equity share it confers the right to buy or sell. FIBO models the equity option (DER) and the share (SEC) separately without connecting the option to the specific instrument it is written on.
+- **citation:** Listed equity options contract specifications (e.g. OCC standardized options)
+
+### total return swap —[references]→ security
+- **kind:** cross-domain (DER->FBC)
+- **source:** `https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/TotalReturnSwap`
+- **target:** `https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security`
+- **rationale:** A total return swap pays the total economic return of a reference security in exchange for a financing rate. FIBO models the total return swap (DER) and Security (FBC) but does not link the swap to the security whose return it pays.
+- **citation:** ISDA total return swap documentation; synthetic financing structures
 
 ## KYC & beneficial ownership  (4)
 

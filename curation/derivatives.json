@@ -1,0 +1,545 @@
+{
+  "use_case": "Derivatives Contracts & Trading (options, futures, swaps)",
+  "core": [
+    {
+      "facet": "Derivatives (roots & terms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+      "id": "DerivativeInstrument",
+      "cluster": "FBC",
+      "title": "derivative instrument",
+      "description": "financial instrument that confers on its holders certain rights or obligations, whose value is derived from one or more underlying assets",
+      "core": true
+    },
+    {
+      "facet": "Derivatives (roots & terms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CreditDerivative",
+      "id": "CreditDerivative",
+      "cluster": "DER",
+      "title": "credit derivative",
+      "description": "derivative instrument that is a privately held, negotiable bilateral contract traded over-the-counter (OTC) between two parties in a creditor/debtor relationship, enabling the creditor to effectively transfer some or all of the risk of a debtor defaulting to a third party",
+      "core": true
+    },
+    {
+      "facet": "Derivatives (roots & terms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/RateBasedDerivative",
+      "id": "RateBasedDerivative",
+      "cluster": "DER",
+      "title": "rate-based derivative",
+      "description": "derivative instrument where the holder has the right but may not have the obligation, depending on the nature of the instrument, to enter into the underlying contract, or pay or receive payment related to the underlying financial rate (or rate contract) on a specified future date based on a specified future rate and term",
+      "core": true
+    },
+    {
+      "facet": "Derivatives (roots & terms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyDerivative",
+      "id": "CurrencyDerivative",
+      "cluster": "DER",
+      "title": "currency derivative",
+      "description": "agreement to deliver and settle a given amount of money in one currency, in exchange for a given amount in another currency at an agreed rate of exchange",
+      "core": true
+    },
+    {
+      "facet": "Derivatives (roots & terms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CommoditiesContracts/CommodityDerivative",
+      "id": "CommodityDerivative",
+      "cluster": "DER",
+      "title": "commodity derivative",
+      "description": "derivative instrument whose primary underlying item is a physical commodity, or the price, or related index, or any other aspect related to a physical commodity",
+      "core": true
+    },
+    {
+      "facet": "Derivatives (roots & terms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/DerivativeTerms",
+      "id": "DerivativeTerms",
+      "cluster": "DER",
+      "title": "derivative terms",
+      "description": "contractual terms specific to derivative contracts, including terms related to payments and delivery between parties",
+      "core": true
+    },
+    {
+      "facet": "Derivatives (roots & terms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Underlier",
+      "id": "Underlier",
+      "cluster": "FBC",
+      "title": "underlier",
+      "description": "something that can be assigned a value in the marketplace that forms the basis for a derivative or pool-backed instrument",
+      "core": true
+    },
+    {
+      "facet": "Derivatives (roots & terms)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CashflowFormula",
+      "id": "CashflowFormula",
+      "cluster": "DER",
+      "title": "cashflow formula",
+      "description": "formula for determining cashflows for a derivative instrument",
+      "core": true
+    },
+    {
+      "facet": "Options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Option",
+      "id": "Option",
+      "cluster": "FBC",
+      "title": "option",
+      "description": "derivative instrument that grants to the holder either the privilege to purchase or the privilege to sell the assets specified at a predetermined price or formula at or within a time period in the future",
+      "core": true
+    },
+    {
+      "facet": "Options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/CallOption",
+      "id": "CallOption",
+      "cluster": "DER",
+      "title": "call option",
+      "description": "option giving the buyer (holder) the right, but not the obligation, to buy the assets specified at a fixed price or formula, on or before a specified date",
+      "core": true
+    },
+    {
+      "facet": "Options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/PutOption",
+      "id": "PutOption",
+      "cluster": "DER",
+      "title": "put option",
+      "description": "option giving the buyer (holder) the right, but not the obligation, to sell the assets specified at a fixed price or formula, on or before a specified date",
+      "core": true
+    },
+    {
+      "facet": "Options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/StrikePrice",
+      "id": "StrikePrice",
+      "cluster": "DER",
+      "title": "strike price",
+      "description": "price at which a lot of the underlying asset may be bought or sold when the contract is exercised",
+      "core": true
+    },
+    {
+      "facet": "Options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/Moneyness",
+      "id": "Moneyness",
+      "cluster": "DER",
+      "title": "moneyness",
+      "description": "classifier for a derivative relating its strike price to the price of its underlying asset",
+      "core": true
+    },
+    {
+      "facet": "Options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/CoveredCall",
+      "id": "CoveredCall",
+      "cluster": "DER",
+      "title": "covered call",
+      "description": "call option in which the seller (investor) owns an equivalent amount of the underlying security",
+      "core": true
+    },
+    {
+      "facet": "Options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/BondOption",
+      "id": "BondOption",
+      "cluster": "DER",
+      "title": "bond option",
+      "description": "option giving the buyer (holder) the right, but not the obligation, to buy or sell (depending on whether it is a call or a put) a bond at a certain price on or before a specified date",
+      "core": true
+    },
+    {
+      "facet": "Options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyOption",
+      "id": "CurrencyOption",
+      "cluster": "DER",
+      "title": "currency option",
+      "description": "option giving the buyer (holder) the right, but not the obligation, to buy or sell currency at a specified exchange rate during a specified period of time",
+      "core": true
+    },
+    {
+      "facet": "Options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/EquityOption",
+      "id": "EquityOption",
+      "cluster": "DER",
+      "title": "equity option",
+      "description": "option giving the buyer (holder) the right, but not the obligation, to buy (via a call option) or sell (via a put option) the underlying equity assets specified at a pre-determined price (i.e., the strike price, fixed or calculated), on or before a specified date (the expiration date)",
+      "core": true
+    },
+    {
+      "facet": "Exotic options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/Swaption",
+      "id": "Swaption",
+      "cluster": "DER",
+      "title": "swaption",
+      "description": "over-the-counter option that confers the right but not the obligation, to enter into a swap transaction at some time in the future",
+      "core": true
+    },
+    {
+      "facet": "Exotic options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/AsianOption",
+      "id": "AsianOption",
+      "cluster": "DER",
+      "title": "Asian option",
+      "description": "option whose exercise terms involve a payoff determined by the average underlying price (either the strike price or the settlement price) of the underlying asset over a predetermined period",
+      "core": true
+    },
+    {
+      "facet": "Exotic options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/BarrierOption",
+      "id": "BarrierOption",
+      "cluster": "DER",
+      "title": "barrier option",
+      "description": "option whose final exercise depends upon the path taken by the price of an underlying instrument, i.e., whose payoff depends on whether or not the underlying asset has reached or exceeded a predetermined price",
+      "core": true
+    },
+    {
+      "facet": "Exotic options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/KnockInOption",
+      "id": "KnockInOption",
+      "cluster": "DER",
+      "title": "knock-in option",
+      "description": "barrier option that is not triggered until a certain price threshold is met",
+      "core": true
+    },
+    {
+      "facet": "Exotic options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/KnockOutOption",
+      "id": "KnockOutOption",
+      "cluster": "DER",
+      "title": "knock-out option",
+      "description": "barrier option with a built-in mechanism to expire as worthless if a specified price level in the underlying asset is reached",
+      "core": true
+    },
+    {
+      "facet": "Exotic options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/DigitalOption",
+      "id": "DigitalOption",
+      "cluster": "DER",
+      "title": "digital option",
+      "description": "exotic option that has a pre-determined payout if the option is in-the-money and the payoff condition is satisfied",
+      "core": true
+    },
+    {
+      "facet": "Exotic options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/LookbackOption",
+      "id": "LookbackOption",
+      "cluster": "DER",
+      "title": "lookback option",
+      "description": "exotic option that minimizes the uncertainties related to the timing of market entry, providing the holder the advantage of knowing history when determining when to exercise their option",
+      "core": true
+    },
+    {
+      "facet": "Exotic options",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/CompoundOption",
+      "id": "CompoundOption",
+      "cluster": "DER",
+      "title": "compound option",
+      "description": "exotic option for which the underlying asset is another option",
+      "core": true
+    },
+    {
+      "facet": "Futures & forwards",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Future",
+      "id": "Future",
+      "cluster": "FBC",
+      "title": "future",
+      "description": "derivative instrument that obligates the buyer to receive and the seller to deliver the assets specified at an agreed price, at some later point in time",
+      "core": true
+    },
+    {
+      "facet": "Futures & forwards",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/Forward",
+      "id": "Forward",
+      "cluster": "DER",
+      "title": "forward",
+      "description": "derivative instrument that is privately negotiated between parties to buy the underlier at a specified future date at the price specified in the contract",
+      "core": true
+    },
+    {
+      "facet": "Futures & forwards",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/BondFuture",
+      "id": "BondFuture",
+      "cluster": "DER",
+      "title": "bond future",
+      "description": "futures contract whose underlying asset is at least one bond",
+      "core": true
+    },
+    {
+      "facet": "Futures & forwards",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/IndexFuture",
+      "id": "IndexFuture",
+      "cluster": "DER",
+      "title": "index future",
+      "description": "futures contract whose underlying asset is at least one reference index or economic indicator",
+      "core": true
+    },
+    {
+      "facet": "Futures & forwards",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/EquityFuture",
+      "id": "EquityFuture",
+      "cluster": "DER",
+      "title": "equity future",
+      "description": "futures contract whose underlying asset is at least one equity security, specifically a publicly issued and traded share",
+      "core": true
+    },
+    {
+      "facet": "Futures & forwards",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/CurrencyFuture",
+      "id": "CurrencyFuture",
+      "cluster": "DER",
+      "title": "currency future",
+      "description": "futures contract whose underlying asset is an agreement to exchange a specified amount of one currency for another at some point in the future based on pricing stated in the contract",
+      "core": true
+    },
+    {
+      "facet": "Futures & forwards",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/EquityForward",
+      "id": "EquityForward",
+      "cluster": "DER",
+      "title": "equity forward",
+      "description": "forward contract to buy or sell the underlying equity stock, equity index, basket of equity stock, equity futures contract, or equity option at a specified future date at the price specified at the outset of the contract",
+      "core": true
+    },
+    {
+      "facet": "Futures & forwards",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ForwardRateAgreement",
+      "id": "ForwardRateAgreement",
+      "cluster": "DER",
+      "title": "forward rate agreement",
+      "description": "agreement to exchange an interest rate commitment on a notional amount at a future date",
+      "core": true
+    },
+    {
+      "facet": "Futures & forwards",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyForward",
+      "id": "CurrencyForward",
+      "cluster": "DER",
+      "title": "currency forward",
+      "description": "agreement to deliver and settle a given amount of money in one currency, in exchange for a given amount in another currency, at an agreed date in the future and at an agreed rate of exchange",
+      "core": true
+    },
+    {
+      "facet": "Swaps",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap",
+      "id": "Swap",
+      "cluster": "DER",
+      "title": "swap",
+      "description": "derivative instrument whereby counterparties agree to exchange periodic streams of cash flows or liabilities from two different financial instruments with each other",
+      "core": true
+    },
+    {
+      "facet": "Swaps",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapLeg",
+      "id": "SwapLeg",
+      "cluster": "DER",
+      "title": "swap leg",
+      "description": "terms defining and the commitment to fulfill cashflow requirements (e.g., interest payments, coupon payments, etc.) for a component of a swap",
+      "core": true
+    },
+    {
+      "facet": "Swaps",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/FixedLeg",
+      "id": "FixedLeg",
+      "cluster": "DER",
+      "title": "fixed leg",
+      "description": "swap leg whose paying party is obligated to make payments from time to time over the term of a swap calculated by reference to a fixed annual rate or consisting of at least one payment of a fixed amount",
+      "core": true
+    },
+    {
+      "facet": "Swaps",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/FloatingLeg",
+      "id": "FloatingLeg",
+      "cluster": "DER",
+      "title": "floating leg",
+      "description": "swap leg whose paying party is obligated to make payments from time to time over the term of a swap calculated by reference to some variable rate, calculated based on the change in value of some underlying asset, or consisting of at least one payment of some floating amount",
+      "core": true
+    },
+    {
+      "facet": "Swaps",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/InterestRateSwap",
+      "id": "InterestRateSwap",
+      "cluster": "DER",
+      "title": "interest rate swap",
+      "description": "swap in which the reference (underlier) for at least one leg is an interest rate",
+      "core": true
+    },
+    {
+      "facet": "Swaps",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencySwap",
+      "id": "CurrencySwap",
+      "cluster": "DER",
+      "title": "currency swap",
+      "description": "foreign exchange agreement between two parties to exchange a given amount of one currency for another currency for spot delivery or for forward delivery at an agreed rate after a specified period of time",
+      "core": true
+    },
+    {
+      "facet": "Swaps",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/BasisSwap",
+      "id": "BasisSwap",
+      "cluster": "DER",
+      "title": "basis swap",
+      "description": "swap in which payment streams are referenced to different bases",
+      "core": true
+    },
+    {
+      "facet": "Swaps",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/OvernightIndexSwap",
+      "id": "OvernightIndexSwap",
+      "cluster": "DER",
+      "title": "overnight index swap",
+      "description": "swap in which the periodic payments for one leg are based on an overnight interest rate index multiplied by the same notional amount upon which payments for the other leg of the swap are based",
+      "core": true
+    },
+    {
+      "facet": "Swaps",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/TotalReturnSwap",
+      "id": "TotalReturnSwap",
+      "cluster": "DER",
+      "title": "total return swap",
+      "description": "return swap where the seller agrees to pay the other party the difference in value of some underlying asset multiplied by an agreed-upon notional value should the asset value increase between specified periods of time",
+      "core": true
+    },
+    {
+      "facet": "Swaps",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/EquitySwaps/EquitySwap",
+      "id": "EquitySwap",
+      "cluster": "DER",
+      "title": "equity swap",
+      "description": "swap whose payments are linked to the change in value of underlying equities (e.g. shares, basket of equities or index) or their cashflow(s)",
+      "core": true
+    },
+    {
+      "facet": "Swaps",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CommoditiesContracts/CommoditySwap",
+      "id": "CommoditySwap",
+      "cluster": "DER",
+      "title": "commodity swap",
+      "description": "commodity derivative that includes, without limitation, any swap for which the primary underlying notional item is a physical commodity, or the price, or behavior of the price, or the level of a commodity index, or other aspect related to a physical commodity",
+      "core": true
+    },
+    {
+      "facet": "Credit derivatives",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwap",
+      "id": "CreditDefaultSwap",
+      "cluster": "DER",
+      "title": "credit default swap",
+      "description": "bilateral contract in which one party (protection seller) agrees to provide payment to the other party (protection buyer) should a credit event occur against the underlying, which could be a specified debt (the reference obligation), a specific debt issuer (reference entity), a basket of reference entities and/or reference obligations, or a credit index (reference index)",
+      "core": true
+    },
+    {
+      "facet": "Credit derivatives",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/TriggeringEvent",
+      "id": "TriggeringEvent",
+      "cluster": "DER",
+      "title": "triggering event",
+      "description": "event that relates to or triggers some aspect of a credit default swap",
+      "core": true
+    },
+    {
+      "facet": "Credit derivatives",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditEventNotice",
+      "id": "CreditEventNotice",
+      "cluster": "DER",
+      "title": "credit event notice",
+      "description": "irrevocable written or verbal notice that states that a triggering event has occurred",
+      "core": true
+    },
+    {
+      "facet": "Credit derivatives",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/DeliverableObligation",
+      "id": "DeliverableObligation",
+      "cluster": "DER",
+      "title": "deliverable asset",
+      "description": "asset that must be delivered as a part of the process of settling a credit default swap",
+      "core": true
+    },
+    {
+      "facet": "Credit derivatives",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/LoanCreditDefaultSwap",
+      "id": "LoanCreditDefaultSwap",
+      "cluster": "DER",
+      "title": "loan credit default swap",
+      "description": "credit default swap whose underlying reference obligation is limited strictly to syndicated secured loans, rather than any type of corporate debt",
+      "core": true
+    },
+    {
+      "facet": "Credit derivatives",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwapIndex",
+      "id": "CreditDefaultSwapIndex",
+      "cluster": "DER",
+      "title": "credit default swap index",
+      "description": "index whose underlying reference obligations are credit default swap instruments",
+      "core": true
+    },
+    {
+      "facet": "Credit derivatives",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditProtectionTerms",
+      "id": "CreditProtectionTerms",
+      "cluster": "DER",
+      "title": "credit protection terms",
+      "description": "legal terms that define triggering events and associated conditions related to settlement",
+      "core": true
+    },
+    {
+      "facet": "Parties, agreements & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/Counterparty",
+      "id": "Counterparty",
+      "cluster": "FND",
+      "title": "counterparty",
+      "description": "party to a contract with whom one negotiates on a given agreement",
+      "core": true
+    },
+    {
+      "facet": "Parties, agreements & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/MasterAgreement",
+      "id": "MasterAgreement",
+      "cluster": "FND",
+      "title": "master agreement",
+      "description": "contract between named parties that outlines the terms and conditions designed to apply to a number of accounts, transactions, or other activities between the parties, and that consolidates and provides overarching terms for separate but related agreements",
+      "core": true
+    },
+    {
+      "facet": "Parties, agreements & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesMasterAgreements/DerivativeMasterAgreement",
+      "id": "DerivativeMasterAgreement",
+      "cluster": "DER",
+      "title": "derivative master agreement",
+      "description": "master agreement covering derivatives transactions to be carried out between the parties to this contract",
+      "core": true
+    },
+    {
+      "facet": "Parties, agreements & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapDealer",
+      "id": "SwapDealer",
+      "cluster": "DER",
+      "title": "swap dealer",
+      "description": "non-depository institution such as one that deals in swaps, makes a market in swaps, regularly enters into swaps with counterparties as an ordinary course of business for its own account, and engages in any activity causing the person to be commonly known in the trade as a dealer/market maker in swaps",
+      "core": true
+    },
+    {
+      "facet": "Parties, agreements & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingHouse",
+      "id": "ClearingHouse",
+      "cluster": "FBC",
+      "title": "clearing house",
+      "description": "financial service provider that is exchange affiliated and provides clearing services, including the validation, delivery, and settlement of financial transactions, for financial intermediaries",
+      "core": true
+    },
+    {
+      "facet": "Parties, agreements & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/PayingParty",
+      "id": "PayingParty",
+      "cluster": "DER",
+      "title": "paying party",
+      "description": "party responsible for making payments in a transaction specified in a contract",
+      "core": true
+    },
+    {
+      "facet": "Parties, agreements & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ReceivingParty",
+      "id": "ReceivingParty",
+      "cluster": "DER",
+      "title": "receiving counterparty",
+      "description": "party that receives payments in a transaction specified in a contract",
+      "core": true
+    },
+    {
+      "facet": "Parties, agreements & structured",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/StructuredInstruments/StructuredProduct",
+      "id": "StructuredProduct",
+      "cluster": "DER",
+      "title": "structured product",
+      "description": "security whose cash flow characteristics depend upon one or more indices or that have embedded forwards or options or securities where an investor's investment return and the issuer's payment obligations are contingent on, or highly sensitive to, changes in the value of underlying assets, indices, interest rates or cash flows",
+      "core": true
+    }
+  ]
+}

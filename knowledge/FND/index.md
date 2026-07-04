@@ -98,7 +98,7 @@
 - core · [controlling party](OwnershipAndControl/Control/ControllingParty.md) — actor that exercises some form of control in the context of some situation
 - [convention](DatesAndTimes/BusinessDates/Convention.md) — widely accepted or established way of doing 'something' within some community of practice
 - [conventional street address](Places/Addresses/ConventionalStreetAddress.md) — physical address that identifies a location on a street to which communications may be delivered
-- [counterparty](Agreements/Contracts/Counterparty.md) — party to a contract with whom one negotiates on a given agreement
+- core · [counterparty](Agreements/Contracts/Counterparty.md) — party to a contract with whom one negotiates on a given agreement
 - [court of law](Law/LegalCore/CourtOfLaw.md) — person or body of persons having judicial authority to hear and resolve disputes on the basis of statutes or the common 
 - [covered transaction](TransactionsExt/REATransactions/CoveredTransaction.md) — A transaction covered by some Master Agreement
 - [currency](Accounting/CurrencyAmount/Currency.md) — medium of exchange value, defined by reference to the geographical location of the monetary authorities responsible for 
@@ -210,7 +210,7 @@
 - [market transaction invoicing terms](TransactionsExt/MarketTransactions/MarketTransactionInvoicingTerms.md) — 
 - [market transaction payment terms](TransactionsExt/MarketTransactions/MarketTransactionPaymentTerms.md) — 
 - [market value](Arrangements/Assessments/MarketValue.md) — price an asset would sell for in the market
-- [master agreement](Agreements/Contracts/MasterAgreement.md) — contract between named parties that outlines the terms and conditions designed to apply to a number of accounts, transac
+- core · [master agreement](Agreements/Contracts/MasterAgreement.md) — contract between named parties that outlines the terms and conditions designed to apply to a number of accounts, transac
 - [maturity level](Utilities/AnnotationVocabulary/MaturityLevel.md) — classifier used to indicate the state of an artifact with respect to its development lifecycle
 - [mean](Utilities/Analytics/Mean.md) — most common measure of central tendency; the average of a set of numbers
 - [median](Utilities/Analytics/Median.md) — value of the variate dividing the total frequency of a data sample, population, or probability distribution, into two ha

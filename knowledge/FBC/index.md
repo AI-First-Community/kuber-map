@@ -101,7 +101,7 @@
 - [clean price](FinancialInstruments/InstrumentPricing/CleanPrice.md) — debt instrument price that does not include accrued interest
 - [clearing bank](FunctionalEntities/FinancialServicesEntities/ClearingBank.md) — commercial bank that facilitates payment and settlement of financial transactions, such as check clearing or facilitatin
 - [clearing corporation](FunctionalEntities/FinancialServicesEntities/ClearingCorporation.md) — clearing house that is organized as a corporation
-- [clearing house](FunctionalEntities/FinancialServicesEntities/ClearingHouse.md) — financial service provider that is exchange affiliated and provides clearing services, including the validation, deliver
+- core · [clearing house](FunctionalEntities/FinancialServicesEntities/ClearingHouse.md) — financial service provider that is exchange affiliated and provides clearing services, including the validation, deliver
 - [clearing service](FunctionalEntities/FinancialServicesEntities/ClearingService.md) — service provided on behalf of an institutional market participant by a clearing services provider following a trade that
 - [close date](ProductsAndServices/ClientsAndAccounts/CloseDate.md) — date on which something was closed
 - [closing price](FinancialInstruments/InstrumentPricing/ClosingPrice.md) — cash value of the last transacted price before the market closes
@@ -177,7 +177,7 @@
 - [demand deposit account](ProductsAndServices/ClientsAndAccounts/DemandDepositAccount.md) — non-interest-bearing deposit account in which deposits are payable immediately on demand, or that are issued with an ori
 - [deposit account](ProductsAndServices/ClientsAndAccounts/DepositAccount.md) — account that provides a record of money placed with a depository institution for safekeeping and management
 - [depository institution](FunctionalEntities/FinancialServicesEntities/DepositoryInstitution.md) — any financial institution engaged in the business of receiving demand deposits from the public or other institutions
-- [derivative instrument](FinancialInstruments/FinancialInstruments/DerivativeInstrument.md) — financial instrument that confers on its holders certain rights or obligations, whose value is derived from one or more 
+- core · [derivative instrument](FinancialInstruments/FinancialInstruments/DerivativeInstrument.md) — financial instrument that confers on its holders certain rights or obligations, whose value is derived from one or more 
 - [derived price](FinancialInstruments/InstrumentPricing/DerivedPrice.md) — price that stems from another source or calculation rather than being quoted or based on actual trading data
 - [designated contract market](FunctionalEntities/Markets/DesignatedContractMarket.md) — exchange, trading system, or platform that enables listing for trading futures or option contracts based on any underlyi
 - [development bank](FunctionalEntities/FinancialServicesEntities/DevelopmentBank.md) — national or regional financial institution designed to provide medium- and long-term capital for productive investment, 
@@ -247,7 +247,7 @@
 - [foreign branch of foreign bank managed by US office](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/ForeignBranchOfForeignBankManagedByUSOffice.md) — branch that resides outside of the United States whose parent is located outside of the United States that is managed by
 - [foreign entity other](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/ForeignEntityOther.md) — foreign institution that engages in banking activities usually in connection with the business of banking in the countri
 - [full amortization](DebtAndEquities/Debt/FullAmortization.md) — amortization in which the very last payment (which, if the schedule was calculated correctly, should be equal to all oth
-- [future](FinancialInstruments/FinancialInstruments/Future.md) — derivative instrument that obligates the buyer to receive and the seller to deliver the assets specified at an agreed pr
+- core · [future](FinancialInstruments/FinancialInstruments/Future.md) — derivative instrument that obligates the buyer to receive and the seller to deliver the assets specified at an agreed pr
 - [futures commission merchant](FunctionalEntities/FinancialServicesEntities/FuturesCommissionMerchant.md) — party that does both of the following: (1) solicits or accepts orders to buy or sell futures contracts, options on futur
 - [general ledger](ProductsAndServices/ClientsAndAccounts/GeneralLedger.md) — organized collection of ledger accounts used to record and summarize changes in position as transactions are posted duri
 - [government guaranty](DebtAndEquities/Guaranty/GovernmentGuaranty.md) — guaranty provided by a government entity, such as for a government-backed security
@@ -362,7 +362,7 @@
 - [opening price](FinancialInstruments/InstrumentPricing/OpeningPrice.md) — price at which something first trades at the start of a trading day
 - [operating-level market](FunctionalEntities/Markets/OperatingLevelMarket.md) — exchange/market/trade reporting facility in a specific market/country
 - [operating-level market identifier](FunctionalEntities/Markets/OperatingLevelMarketIdentifier.md) — market identifier that identifies an exchange/market/trade reporting facility in a specific market/country
-- [option](FinancialInstruments/FinancialInstruments/Option.md) — derivative instrument that grants to the holder either the privilege to purchase or the privilege to sell the assets spe
+- core · [option](FinancialInstruments/FinancialInstruments/Option.md) — derivative instrument that grants to the holder either the privilege to purchase or the privilege to sell the assets spe
 - [organization credit rating](DebtAndEquities/CreditRatings/OrganizationCreditRating.md) — credit rating that provides an opinion of creditworthiness of an organization
 - [organized trading facility](FunctionalEntities/Markets/OrganizedTradingFacility.md) — multi-lateral system which is not an RM or an MTF and in which multiple third-party buying and selling interests in bond
 - [packaged financial product](FinancialInstruments/FinancialInstruments/PackagedFinancialProduct.md) — financial product that acts as a container for at least one financial instrument, including other financial products, an
@@ -483,7 +483,7 @@
 - [trust company](FunctionalEntities/FinancialServicesEntities/TrustCompany.md) — financial institution that acts as a fiduciary, trustee or agent of trusts and agencies
 - [uncommitted credit facility](DebtAndEquities/Debt/UncommittedCreditFacility.md) — credit facility that has yet to be confirmed as a source of financing for the borrower
 - [uncommitted sub-facility](DebtAndEquities/Debt/UncommittedSubFacility.md) — sub-facility that has yet to be confirmed as a source of financing for the borrower
-- [underlier](FinancialInstruments/FinancialInstruments/Underlier.md) — something that can be assigned a value in the marketplace that forms the basis for a derivative or pool-backed instrumen
+- core · [underlier](FinancialInstruments/FinancialInstruments/Underlier.md) — something that can be assigned a value in the marketplace that forms the basis for a derivative or pool-backed instrumen
 - core · [underwriter](FunctionalEntities/FinancialServicesEntities/Underwriter.md) — financial service provider that evaluates and assumes another party's risk for a fee, such as a commission, premium, spr
 - [underwriting arrangement](FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement.md) — written contract between parties that commits the underwriter to assuming risk
 - [uninsured federal agency of foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/UninsuredFederalAgencyOfForeignBankingOrganization.md) — agency of a foreign bank established and operating under section 3102 of CFR Title 12, Chapter 32 and section 4 of the I

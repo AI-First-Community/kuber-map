@@ -1,0 +1,425 @@
+{
+  "_comment": "Curated illustrative examples for the derivatives use-case core concepts. Real-world derivatives instances (general domain knowledge), not FIBO axioms. Applied by to_okf when FIBO supplies none; provenance curated.",
+  "examples": [
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+      "title": "derivative instrument",
+      "examples": [
+        "An interest-rate swap or an equity call option \u2014 a contract whose value derives from an underlying."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CreditDerivative",
+      "title": "credit derivative",
+      "examples": [
+        "A credit default swap that transfers the credit risk of a bond issuer."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/RateBasedDerivative",
+      "title": "rate-based derivative",
+      "examples": [
+        "An interest-rate swap referencing SOFR."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyDerivative",
+      "title": "currency derivative",
+      "examples": [
+        "A EUR/USD forward that locks in an exchange rate."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CommoditiesContracts/CommodityDerivative",
+      "title": "commodity derivative",
+      "examples": [
+        "A crude-oil futures contract on WTI."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/DerivativeTerms",
+      "title": "derivative terms",
+      "examples": [
+        "The strike, expiry, and notional recorded in an option's contract terms."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Underlier",
+      "title": "underlier",
+      "examples": [
+        "The S&P 500 index underlying an index option."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CashflowFormula",
+      "title": "cashflow formula",
+      "examples": [
+        "The formula 'notional x (SOFR + 0.5%)' for a swap's floating leg."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Option",
+      "title": "option",
+      "examples": [
+        "A contract giving the right to buy 100 Apple shares at $200 by December."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/CallOption",
+      "title": "call option",
+      "examples": [
+        "The right to buy 100 Apple shares at a $200 strike by expiry."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/PutOption",
+      "title": "put option",
+      "examples": [
+        "The right to sell 100 Apple shares at a $180 strike by expiry."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/StrikePrice",
+      "title": "strike price",
+      "examples": [
+        "The $200 strike at which an Apple call may be exercised."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/Moneyness",
+      "title": "moneyness",
+      "examples": [
+        "An in-the-money call whose $180 strike is below the $200 spot price."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/CoveredCall",
+      "title": "covered call",
+      "examples": [
+        "Selling a call on shares you already own to earn the premium."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/BondOption",
+      "title": "bond option",
+      "examples": [
+        "An option to buy a 10-year Treasury note at a set price."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyOption",
+      "title": "currency option",
+      "examples": [
+        "An option to buy EUR against USD at 1.10."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/EquityOption",
+      "title": "equity option",
+      "examples": [
+        "A listed call option on Tesla shares."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/Swaption",
+      "title": "swaption",
+      "examples": [
+        "An option to enter a 5-year interest-rate swap one year from now."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/AsianOption",
+      "title": "Asian option",
+      "examples": [
+        "An option whose payoff uses the average price of oil over the month."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/BarrierOption",
+      "title": "barrier option",
+      "examples": [
+        "A call that only activates if the underlying rises above $250."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/KnockInOption",
+      "title": "knock-in option",
+      "examples": [
+        "A barrier option that starts existing once the price touches $250."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/KnockOutOption",
+      "title": "knock-out option",
+      "examples": [
+        "A barrier option that expires worthless if the price hits $150."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/DigitalOption",
+      "title": "digital option",
+      "examples": [
+        "An option paying a fixed $100 if the stock ends above $200, else nothing."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/LookbackOption",
+      "title": "lookback option",
+      "examples": [
+        "An option whose payoff uses the most favourable price over its life."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/CompoundOption",
+      "title": "compound option",
+      "examples": [
+        "An option to buy another option (an 'option on an option')."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Future",
+      "title": "future",
+      "examples": [
+        "A standardized exchange-traded contract to buy oil at a set price next month."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/Forward",
+      "title": "forward",
+      "examples": [
+        "A privately negotiated contract to buy wheat at $6/bushel in three months."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/BondFuture",
+      "title": "bond future",
+      "examples": [
+        "A CME 10-year US Treasury note futures contract."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/IndexFuture",
+      "title": "index future",
+      "examples": [
+        "An E-mini S&P 500 futures contract."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/EquityFuture",
+      "title": "equity future",
+      "examples": [
+        "A single-stock future on a listed company's shares."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/CurrencyFuture",
+      "title": "currency future",
+      "examples": [
+        "A CME EUR/USD futures contract."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/EquityForward",
+      "title": "equity forward",
+      "examples": [
+        "A forward to buy 1,000 shares in six months at a set price."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ForwardRateAgreement",
+      "title": "forward rate agreement",
+      "examples": [
+        "An agreement to fix a 3-month interest rate starting in six months."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyForward",
+      "title": "currency forward",
+      "examples": [
+        "A 90-day forward to buy GBP1m for dollars at 1.27."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap",
+      "title": "swap",
+      "examples": [
+        "A contract in which two parties exchange fixed for floating interest payments."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapLeg",
+      "title": "swap leg",
+      "examples": [
+        "The fixed-rate side of an interest-rate swap."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/FixedLeg",
+      "title": "fixed leg",
+      "examples": [
+        "The leg paying a fixed 3% on the notional."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/FloatingLeg",
+      "title": "floating leg",
+      "examples": [
+        "The leg paying SOFR + 0.4% on the notional."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/InterestRateSwap",
+      "title": "interest rate swap",
+      "examples": [
+        "Exchanging fixed 3% for floating SOFR on a $10m notional."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencySwap",
+      "title": "currency swap",
+      "examples": [
+        "Exchanging USD principal and interest for EUR over five years."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/BasisSwap",
+      "title": "basis swap",
+      "examples": [
+        "A swap exchanging SOFR-linked for Fed-Funds-linked payments."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/OvernightIndexSwap",
+      "title": "overnight index swap",
+      "examples": [
+        "A swap whose floating leg compounds an overnight rate such as SOFR."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/TotalReturnSwap",
+      "title": "total return swap",
+      "examples": [
+        "A swap paying the total return of a bond in exchange for a financing rate."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/EquitySwaps/EquitySwap",
+      "title": "equity swap",
+      "examples": [
+        "A swap paying the return of the S&P 500 versus a floating rate."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CommoditiesContracts/CommoditySwap",
+      "title": "commodity swap",
+      "examples": [
+        "A swap exchanging a fixed price for the floating price of crude oil."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwap",
+      "title": "credit default swap",
+      "examples": [
+        "A CDS where the buyer pays a premium for protection against a bond issuer's default."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/TriggeringEvent",
+      "title": "triggering event",
+      "examples": [
+        "A bond issuer's bankruptcy that triggers a CDS payout."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditEventNotice",
+      "title": "credit event notice",
+      "examples": [
+        "The formal notice that a reference entity has defaulted."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/DeliverableObligation",
+      "title": "deliverable asset",
+      "examples": [
+        "A defaulted bond delivered to settle a physically-settled CDS."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/LoanCreditDefaultSwap",
+      "title": "loan credit default swap",
+      "examples": [
+        "A CDS whose reference obligation is a syndicated loan."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwapIndex",
+      "title": "credit default swap index",
+      "examples": [
+        "The CDX North America Investment Grade index of CDS."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditProtectionTerms",
+      "title": "credit protection terms",
+      "examples": [
+        "The terms defining which credit events trigger a CDS payout."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/Counterparty",
+      "title": "counterparty",
+      "examples": [
+        "The bank on the other side of your interest-rate swap."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/MasterAgreement",
+      "title": "master agreement",
+      "examples": [
+        "An ISDA Master Agreement governing all trades between two parties."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesMasterAgreements/DerivativeMasterAgreement",
+      "title": "derivative master agreement",
+      "examples": [
+        "The ISDA Master Agreement covering a pair's OTC derivatives."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapDealer",
+      "title": "swap dealer",
+      "examples": [
+        "A bank registered as a swap dealer that makes markets in swaps."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingHouse",
+      "title": "clearing house",
+      "examples": [
+        "A central counterparty such as LCH that clears interest-rate swaps."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/PayingParty",
+      "title": "paying party",
+      "examples": [
+        "The party obligated to make the fixed payments on a swap leg."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ReceivingParty",
+      "title": "receiving counterparty",
+      "examples": [
+        "The party that receives the floating payments on a swap leg."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/StructuredInstruments/StructuredProduct",
+      "title": "structured product",
+      "examples": [
+        "A capital-protected note whose return is linked to an equity index."
+      ]
+    }
+  ]
+}

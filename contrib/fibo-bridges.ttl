@@ -9,9 +9,12 @@
 
 kmb:backedBy a owl:ObjectProperty ; rdfs:label "backed by" .
 kmb:beneficialOwnerOf a owl:ObjectProperty ; rdfs:label "beneficial owner of" .
+kmb:clearedThrough a owl:ObjectProperty ; rdfs:label "cleared through" .
 kmb:filedBy a owl:ObjectProperty ; rdfs:label "filed by" .
+kmb:hasUnderlier a owl:ObjectProperty ; rdfs:label "has underlier" .
 kmb:identifiedBy a owl:ObjectProperty ; rdfs:label "identified by" .
 kmb:playedBy a owl:ObjectProperty ; rdfs:label "played by" .
+kmb:references a owl:ObjectProperty ; rdfs:label "references" .
 kmb:reportedIn a owl:ObjectProperty ; rdfs:label "reported in" .
 kmb:requiredBy a owl:ObjectProperty ; rdfs:label "required by" .
 kmb:submittedTo a owl:ObjectProperty ; rdfs:label "submitted to" .
@@ -59,6 +62,50 @@ kmb:submittedTo a owl:ObjectProperty ; rdfs:label "submitted to" .
    kmb:useCase "Loan origination & underwriting" ;
    rdfs:comment "Lender is modeled as a party role (is-a ContractParty/Creditor); FinancialInstitution is the legal-entity type that plays it. FIBO leaves the role-to-entity link implicit, blocking resolution of 'the lender' to a regulated institution." ;
    dct:source "FIBO FBC party-role vs entity modeling" .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwap> kmb:references <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwap> ;
+   owl:annotatedProperty kmb:references ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond> ;
+   rdfs:label "credit-default-swap-references-bond" ;
+   kmb:kind "cross-domain (DER->SEC)" ;
+   kmb:useCase "derivatives-bridges.json" ;
+   rdfs:comment "A credit default swap transfers the credit risk of a reference obligation, typically a bond of the reference entity. FIBO models the CDS (DER) and the bond (SEC) in separate domains but does not draw the edge from the swap to the debt security it references." ;
+   dct:source "ISDA Credit Derivatives Definitions (reference obligation)" .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap> kmb:clearedThrough <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingHouse> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap> ;
+   owl:annotatedProperty kmb:clearedThrough ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingHouse> ;
+   rdfs:label "swap-cleared-through-clearing-house" ;
+   kmb:kind "cross-domain (DER->FBC)" ;
+   kmb:useCase "derivatives-bridges.json" ;
+   rdfs:comment "Standardized OTC swaps are subject to mandatory central clearing through a clearing house acting as central counterparty. FIBO defines Swap (DER) and ClearingHouse (FBC) but leaves the cleared-through relationship implicit." ;
+   dct:source "Dodd-Frank Act Title VII; EU EMIR (Regulation 648/2012) clearing obligation" .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/EquityOption> kmb:hasUnderlier <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/EquityOption> ;
+   owl:annotatedProperty kmb:hasUnderlier ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share> ;
+   rdfs:label "equity-option-underlier-share" ;
+   kmb:kind "cross-domain (DER->SEC)" ;
+   kmb:useCase "derivatives-bridges.json" ;
+   rdfs:comment "An equity option's underlier is the equity share it confers the right to buy or sell. FIBO models the equity option (DER) and the share (SEC) separately without connecting the option to the specific instrument it is written on." ;
+   dct:source "Listed equity options contract specifications (e.g. OCC standardized options)" .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/TotalReturnSwap> kmb:references <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/TotalReturnSwap> ;
+   owl:annotatedProperty kmb:references ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security> ;
+   rdfs:label "total-return-swap-references-security" ;
+   kmb:kind "cross-domain (DER->FBC)" ;
+   kmb:useCase "derivatives-bridges.json" ;
+   rdfs:comment "A total return swap pays the total economic return of a reference security in exchange for a financing rate. FIBO models the total return swap (DER) and Security (FBC) but does not link the swap to the security whose return it pays." ;
+   dct:source "ISDA total return swap documentation; synthetic financing structures" .
 
 <https://www.omg.org/spec/Commons/Organizations/LegalEntity> kmb:identifiedBy <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier> .
 [] a owl:Axiom ;

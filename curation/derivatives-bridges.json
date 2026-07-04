@@ -1,0 +1,40 @@
+{
+  "bridges": [
+    {
+      "id": "credit-default-swap-references-bond",
+      "edge": "references",
+      "kind": "cross-domain (DER->SEC)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwap",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond",
+      "rationale": "A credit default swap transfers the credit risk of a reference obligation, typically a bond of the reference entity. FIBO models the CDS (DER) and the bond (SEC) in separate domains but does not draw the edge from the swap to the debt security it references.",
+      "citation": "ISDA Credit Derivatives Definitions (reference obligation)"
+    },
+    {
+      "id": "swap-cleared-through-clearing-house",
+      "edge": "cleared-through",
+      "kind": "cross-domain (DER->FBC)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingHouse",
+      "rationale": "Standardized OTC swaps are subject to mandatory central clearing through a clearing house acting as central counterparty. FIBO defines Swap (DER) and ClearingHouse (FBC) but leaves the cleared-through relationship implicit.",
+      "citation": "Dodd-Frank Act Title VII; EU EMIR (Regulation 648/2012) clearing obligation"
+    },
+    {
+      "id": "equity-option-underlier-share",
+      "edge": "has-underlier",
+      "kind": "cross-domain (DER->SEC)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/EquityOption",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share",
+      "rationale": "An equity option's underlier is the equity share it confers the right to buy or sell. FIBO models the equity option (DER) and the share (SEC) separately without connecting the option to the specific instrument it is written on.",
+      "citation": "Listed equity options contract specifications (e.g. OCC standardized options)"
+    },
+    {
+      "id": "total-return-swap-references-security",
+      "edge": "references",
+      "kind": "cross-domain (DER->FBC)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/TotalReturnSwap",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security",
+      "rationale": "A total return swap pays the total economic return of a reference security in exchange for a financing rate. FIBO models the total return swap (DER) and Security (FBC) but does not link the swap to the security whose return it pays.",
+      "citation": "ISDA total return swap documentation; synthetic financing structures"
+    }
+  ]
+}
