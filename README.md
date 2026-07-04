@@ -1,4 +1,4 @@
-# Kuber Map — the treasury of financial meaning
+# Kuber Map — the treasury of financial knowledge
 
 A curated, learner-first knowledge map of the **Financial Industry Business Ontology
 ([FIBO](https://github.com/edmcouncil/fibo))**, stored in Google's **Open Knowledge Format
