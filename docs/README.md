@@ -12,6 +12,11 @@ Financial Industry Business Ontology (FIBO).
 
 ## Also in the repo
 
+- **[SPIKE_RESULTS.md](../SPIKE_RESULTS.md)** — the grounded-vs-ungrounded value proof: +44.5pt
+  aggregate accuracy lift across four financial domains and two models, 96.2% auditable, 0%
+  grounded hallucination.
+- **[contrib/](../contrib/)** — the 19 curated cross-domain bridges packaged as an EDM Council
+  contribution proposal (methodology doc + RDF/Turtle).
 - **[PLAN.md](../PLAN.md)** — the full project plan and the value ranking that drives priorities.
 - **[BACKLOG.md](../BACKLOG.md)** — what's done and what's next.
 - **[CLAUDE.md](../CLAUDE.md)** — the working rules: ground every FIBO claim in source, never

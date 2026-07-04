@@ -61,14 +61,23 @@ can reference a concept that doesn't exist):
 
 | File | What it adds | Provenance |
 |---|---|---|
-| `loan-origination.json` | the 71 `core:` concepts for the use case | — |
-| `bridges.json` (+ `knowledge/bridges/`) | 4 cross-domain bridges FIBO doesn't draw natively | `curated` |
-| `definitions.json` | learner-friendly definitions for concepts FIBO leaves empty | `curated` |
-| `examples.json` | real-world examples where FIBO supplies none | `curated` |
-| `notes.json` | explanatory notes where FIBO has no `explanatoryNote` | `curated` |
+| `curation/usecases/<uc>.json` | the facet spec for a use case (a grounded `[id, cluster]` list) | input |
+| `curation/<uc>.json` | the resolved `core:` concepts for that use case (`nominate_core.py` output) | — |
+| `curation/usecases/<uc>-bridges.json` | that use case's cross-domain bridges FIBO doesn't draw natively | `curated` |
+| `<uc>-examples.json` / `-definitions.json` | worked examples + gap-filling definitions per use case | `curated` |
+| `definitions.json` / `examples.json` / `notes.json` | the original loan-origination overlays | `curated` |
+
+Five use cases are curated this way — **loan origination (71), KYC (58), securities (59),
+regulatory reporting (52), derivatives (60)**: 284 `core:` concepts and **19 validated cross-domain
+bridges** in total. Each concept records the use case(s) it belongs to (`use_cases:` frontmatter),
+which drives the map's use-case lens. A use case is added by dropping a spec under
+`curation/usecases/` — the tooling resolves and gates it, no code change.
 
 **Provenance is never blurred.** Every edge and every overlaid field is tagged `fibo` (from FIBO)
 or `curated` (authored here). Overlays only fill gaps; they never overwrite real FIBO text.
+`etl/export_bridges.py` (`make contrib`) packages the 19 bridges as an EDM Council proposal
+(`contrib/`): a methodology doc plus RDF/Turtle where each bridge is a proposed `kmb:` triple with
+rationale + citation — no unverified FIBO properties are asserted.
 
 ## The map (`scripts/okf.js` + `okf.config.js` + `js/`)
 
@@ -93,8 +102,11 @@ answer and a regulator can trace it.
 
 ## The eval (`eval/`)
 
-`eval/harness.py` runs a loan-underwriting agent over a 53-question benchmark **with** vs
-**without** the context pack, scoring accuracy, hallucination, and auditability deterministically
-(no LLM judge). The model is pluggable (`eval/adapters.py`): an offline oracle for gate tests, or
-any model via a user command (`EVAL_LLM_CMD`). Every benchmark question is grounded in a real pack
-IRI, enforced by a test.
+`eval/harness.py` runs a financial-semantics agent over a benchmark **with** vs **without** the
+context pack, scoring accuracy, hallucination, and auditability deterministically (no LLM judge).
+The model is pluggable (`eval/adapters.py`): an offline oracle for gate tests, or any model via a
+user command (`EVAL_LLM_CMD`). Every benchmark question is grounded in a real pack IRI, enforced by
+a test. Benchmarks ship for four use cases (loan, KYC, securities, regulatory reporting). The
+result, across **209 questions in four domains on gpt-4o-mini (corroborated on gpt-4o)**: a
+**+44.5-point aggregate accuracy lift, 96.2% auditable, 0% grounded hallucination** — the lift is
+domain- and model-robust (see [`SPIKE_RESULTS.md`](../SPIKE_RESULTS.md)).

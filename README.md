@@ -11,11 +11,15 @@ Named for **Kubera**, the treasurer and god of wealth. Inspired by the
 
 > **Status:** the FIBO→OKF pipeline runs on all ten FIBO domains (FND, LOAN, FBC, BE, SEC,
 > DER, IND, MD, BP, CAE) plus the Commons (CMNS) upper ontology — 3,104 concepts, 6,676 typed
-> relations, 68 sub-domain clusters. Two use cases are curated end to end (loan origination: 71
-> core concepts; KYC / beneficial ownership: 58) with 8 cross-domain bridges, context packs, and
-> an MCP retrieval endpoint. The interactive map ships and covers every domain. The live
-> grounded-vs-ungrounded eval is proven on loan origination (+39.6pt accuracy, 98.1% auditable).
-> See [`PLAN.md`](PLAN.md) and [`BACKLOG.md`](BACKLOG.md).
+> relations, 68 sub-domain clusters. **Five use cases** are curated end to end — loan origination,
+> KYC / beneficial ownership, securities, regulatory reporting, and derivatives (284 core concepts
+> in total, each with worked examples on the card) — wired by **19 validated cross-domain bridges**,
+> with per-use-case context packs and an MCP retrieval endpoint. The interactive map ships (with a
+> use-case lens) and covers every domain. The grounded-vs-ungrounded eval is proven across **four
+> domains and two models** (gpt-4o-mini and gpt-4o): **+44.5pt aggregate accuracy lift over 209
+> questions, 96.2% auditable, 0% grounded hallucination**. The 19 bridges are packaged as an EDM
+> Council contribution proposal (`contrib/`). See [`PLAN.md`](PLAN.md), [`BACKLOG.md`](BACKLOG.md),
+> and [`SPIKE_RESULTS.md`](SPIKE_RESULTS.md).
 
 ## Why
 
@@ -26,8 +30,9 @@ things it isn't today:
    other FIBO explorer renders the whole thing exhaustively for experts.
 2. **A cross-domain bridge layer.** Provenance-tagged links across FIBO's separately-governed
    domains, offered back to EDM Council.
-3. **Agent grounding.** Per-use-case context packs (e.g. loan origination) that give financial
-   AI agents accurate semantics with a FIBO provenance trail for audit.
+3. **Agent grounding.** Per-use-case context packs (loan origination, KYC, securities, regulatory
+   reporting, derivatives) that give financial AI agents accurate semantics with a FIBO provenance
+   trail for audit — the eval shows this lifts accuracy and takes auditability toward 100%.
 
 ## Two products in one repo
 

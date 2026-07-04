@@ -20,14 +20,16 @@ Last updated: 2026-07-04
 - ✅ **Definition-rewrite overlay** — `curation/definitions.json` supplies learner-friendly definitions for the 7 core concepts FIBO ships with no `skos:definition` (each grounded in its FIBO superclass/axioms); `to_okf.py` applies them as `definition_provenance: curated`, keeps FIBO's `resource:` IRI, and refuses to overwrite any real FIBO definition.
 - ✅ **Context-pack export** (the product, `etl/export_pack.py` + `make pack`) — `export/loan-origination/` with `pack.json` (structured RAG records), `context.md` (LLM-injectable grounding doc), and a self-contained `okf/` slice. 71 concepts + 4 bridges, each carrying its FIBO IRI as citation + `provenance` on every edge/definition.
 - ✅ **MCP retrieval endpoint** — `etl/mcp_server.py` (stdlib-only MCP stdio server) + `etl/retrieval.py` (weighted keyword search). Tools: `search_concepts`, `get_concept`, `list_bridges`; every hit carries citation IRI + provenance. Reusable by the eval runner.
-- ✅ **Eval harness + benchmark** — `eval/` with 53 gold questions (all `grounds` IRIs resolved from the pack), deterministic scoring (accuracy / hallucination / auditability), and a pluggable model adapter (`make eval` = offline mechanism check; `--adapter llm` = live via a user `EVAL_LLM_CMD`, no vendor SDK). **Live value-proof numbers still pending** (needs model choice + question review).
-- ✅ **Second use case (KYC / beneficial-ownership)** — 58 core + 4 bridges + pack, via spec-driven `nominate_core`/`bridges` (`curation/usecases/`).
-- ✅ **Third use case (Securities instruments & issuance)** — 59 curated core concepts (`curation/securities.json`) + **curated illustrative examples on the cards** (`curation/securities-examples.json`, 59 concepts) + 3 validated cross-domain bridges (`curation/securities-bridges.json`: MBS→mortgage, ABS→loan, issuer→LEI) + pack (`export/securities/`). Map now shows **11 curated bridges**.
+- ✅ **Eval harness + benchmark** — `eval/` with pluggable model adapter (`make eval` = offline mechanism check; `--adapter llm` = live via a user `EVAL_LLM_CMD`, no vendor SDK), deterministic scoring (accuracy / hallucination / auditability), every question grounded in a real pack IRI (test-enforced).
+- ✅ **Value proof, four domains + two models** — grounded-vs-ungrounded benchmarks for loan (53), KYC (50), securities (54), regulatory reporting (52). gpt-4o-mini: **+44.5pt aggregate accuracy lift over 209 questions, 96.2% auditable, 0% grounded hallucination**; corroborated on **gpt-4o** (lift is model-robust). See `SPIKE_RESULTS.md`.
+- ✅ **Five curated use cases** — loan origination (71), KYC / beneficial ownership (58), securities (59), regulatory reporting (52, most cross-domain — 8 clusters), derivatives (60). 284 `core:` concepts + **19 validated cross-domain bridges**, each use case with worked card examples + a context pack (`export/`), all spec-driven under `curation/usecases/`.
+- ✅ **Use-case lens + card badges** — the map default core spans all five use cases; a lens focuses one, cards show use-case membership. Fed by `use_cases:` frontmatter.
+- ✅ **EDM contribution package** — `etl/export_bridges.py` (`make contrib`) → `contrib/` (proposal MD + RDF/Turtle for the 19 bridges).
 - ✅ Published to GitHub (private): `AI-First-Community/Bodhi-Map-For-FinTech`, reproducible via `make fibo`.
 
 **Map UI (E2):** data layer + vendored frontend + FIBO `app.html`/`graph.js` shipped (core-default view, domain/maturity filters, provenance-styled bridges, IRI-citation panel, offline PWA). Needs browser visual verification.
 
-**Not started:** eval corroboration on a 2nd/3rd use case, per-domain lazy loading, further domains/use-cases, EDM contribution.
+**Not started:** eval on the derivatives use case (5th benchmark), per-domain lazy loading for the full-graph view, further use cases, and actually engaging EDM Council with the packaged contribution (user's call — it's outward-facing).
 
 **Fresh-checkout setup:** `make setup && make fibo && make commons && make all` then `make check`.
 

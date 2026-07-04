@@ -37,14 +37,21 @@ python3 -m http.server 8000  # serve the folder
 
 Serving over http (rather than `file://`) enables the offline/PWA service worker. `index.html`
 is the landing; **Enter the map** goes to `app.html`. The map lands on the curated **core** view
-(71 concepts); toggle **Core → full ontology** for all 1,440.
+(284 concepts across five use cases); use the **Use-case lens** to focus one (loan origination,
+KYC, securities, regulatory reporting, or derivatives), or toggle **Core → full ontology** for
+all 3,104.
 
-## Regenerate the curation + context pack
+## Regenerate the curation + context packs
 
 ```bash
-make curate     # re-run core nomination + bridges, then rebuild the bundle
-make pack       # export the loan-origination context pack -> export/loan-origination/
+make curate     # re-run core nomination + bridges (all use cases), then rebuild the bundle
+make pack       # export every use case's context pack -> export/<use-case>/
+make contrib    # package the cross-domain bridges as an EDM contribution -> contrib/
 ```
+
+A use case is a spec under `curation/usecases/` (a facet list + optional bridges); the tooling
+(`etl/nominate_core.py`, `etl/bridges.py`) resolves every id against the extract and refuses any
+concept or bridge endpoint that isn't a real FIBO class.
 
 The pack contains `pack.json` (structured records for RAG), `context.md` (drop into an LLM
 prompt), a self-contained `okf/` slice, and a README. Serve the pack to an agent over MCP:
@@ -69,16 +76,20 @@ the answer on stdout:
 EVAL_LLM_CMD='your-model-cli' python eval/harness.py --adapter llm
 ```
 
-With an OpenAI key, use the bundled stdlib bridge (no extra dependency):
+With an OpenAI key, use the bundled stdlib bridge (no extra dependency). Point `--benchmark`
+and `--pack` at any use case:
 
 ```bash
-export OPENAI_API_KEY=sk-...
-EVAL_LLM_CMD='python eval/openai_cli.py --model gpt-4o-mini' python eval/harness.py --adapter llm
+export OPENAI_API_KEY=sk-...   # or put it in .env (gitignored); openai_cli auto-loads it
+EVAL_LLM_CMD='python eval/openai_cli.py' python eval/harness.py --adapter llm --model gpt-4o-mini \
+  --benchmark eval/kyc-benchmark.json --pack export/kyc/pack.json
 ```
 
 It scores accuracy, hallucination, and the share of answers carrying a valid FIBO citation.
-Target: a meaningful accuracy lift with 100% auditable answers. Write results into
-[`SPIKE_RESULTS.md`](../SPIKE_RESULTS.md).
+Benchmarks ship for four use cases (`eval/benchmark.json` = loan, plus `kyc-`, `securities-`,
+`regulatory-reporting-benchmark.json`). Current result: **+44.5pt aggregate accuracy lift over 209
+questions (four domains), 96.2% auditable, 0% grounded hallucination**, corroborated on gpt-4o —
+see [`SPIKE_RESULTS.md`](../SPIKE_RESULTS.md).
 
 ## The quality gate
 
