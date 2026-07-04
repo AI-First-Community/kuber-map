@@ -22,7 +22,28 @@ import urllib.request
 ENDPOINT = "https://api.openai.com/v1/chat/completions"
 
 
+def load_dotenv():
+    """If OPENAI_API_KEY isn't already exported, load KEY=VALUE lines from a .env file
+    (repo root or cwd) so the key can just live in .env. Never overrides real env vars."""
+    if os.environ.get("OPENAI_API_KEY"):
+        return
+    here = os.path.dirname(os.path.abspath(__file__))
+    for path in (os.path.join(here, "..", ".env"), ".env"):
+        try:
+            with open(path) as fh:
+                for line in fh:
+                    line = line.strip()
+                    if not line or line.startswith("#") or "=" not in line:
+                        continue
+                    k, v = line.split("=", 1)
+                    os.environ.setdefault(k.replace("export ", "").strip(),
+                                          v.strip().strip('"').strip("'"))
+        except OSError:
+            continue
+
+
 def main():
+    load_dotenv()
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default=os.environ.get("EVAL_LLM_MODEL") or "gpt-4o-mini")
     ap.add_argument("--endpoint", default=os.environ.get("OPENAI_BASE_URL") or ENDPOINT,
