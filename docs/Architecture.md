@@ -1,14 +1,33 @@
 # Architecture
 
+> Visual, navigable version with more flows: the wiki
+> [Architecture](https://github.com/AI-First-Community/Bodhi-Map-For-FinTech/wiki/Architecture) page.
+
 ## The pipeline
 
-```
-fibo-source/  ┐
-commons-source/ ├─ extract.py ─► out/intermediate.json ─┬─ to_okf.py ─► knowledge/ (OKF bundle) ─┬─ okf.js ─► js/data.js ─► app.html (map)
-(pinned RDF)  ┘   (walks owl:Restriction  (flat records:  │  + curation/ overlays  (markdown+YAML)  │
-                   blank nodes; classifies  labels, defs,  │                                        └─ export_pack.py ─► export/ (pack.json,
-                   FND/LOAN/FBC/BE/CMNS)     relations,     │                                                            context.md, okf/, MCP)
-                                             annotations)   └─ nominate_core.py / bridges.py (curation inputs)
+```mermaid
+flowchart TB
+  subgraph SRC["Sources (pinned, MIT)"]
+    FIBO["FIBO OWL/RDF<br/>10 domains"]
+    CMNS["OMG Commons"]
+  end
+  subgraph PY["Python ETL"]
+    EX["extract.py<br/>walks owl:Restriction"]
+    IM[("intermediate.json")]
+    TO["to_okf.py<br/>+ curation overlays"]
+  end
+  CUR["nominate_core.py · bridges.py<br/>examples / definitions"]
+  BUNDLE[("knowledge/ OKF bundle<br/>3,104 concepts, 19 bridges")]
+  JS["scripts/okf.js"] --> DATA[("js/data.js")] --> MAP{{"Interactive map"}}
+  EP["export_pack.py"] --> PACK[("export/ packs")] --> AGENT(("AI agent"))
+  EB["export_bridges.py"] --> CONTRIB[("contrib/ EDM proposal")]
+  FIBO --> EX
+  CMNS --> EX
+  EX --> IM --> TO --> BUNDLE
+  CUR --> TO
+  BUNDLE --> JS
+  BUNDLE --> EP
+  BUNDLE --> EB
 ```
 
 Two toolchains, cleanly split (PLAN §5):
@@ -98,9 +117,29 @@ Takes a use case's grounding closure (its `core:` concepts + bridges) and emits 
 self-contained `okf/` slice, and a README. `etl/retrieval.py` provides weighted keyword search
 over the pack, exposed as an MCP retrieval endpoint by `etl/mcp_server.py`. Every result carries
 the FIBO `citation` IRI and provenance, so an agent can cite exactly which concept justified an
-answer and a regulator can trace it.
+answer and a regulator can trace it. At runtime:
+
+```mermaid
+sequenceDiagram
+  participant A as AI agent
+  participant R as Retrieval (pack.json / MCP)
+  participant M as LLM
+  A->>R: search the use-case context pack
+  R-->>A: top concepts + FIBO IRIs + provenance
+  A->>M: question + grounding context
+  M-->>A: answer + "Sources: <FIBO IRIs>"
+```
 
 ## The eval (`eval/`)
+
+```mermaid
+flowchart LR
+  Q["benchmark question<br/>(grounded in a real pack IRI)"] --> G["grounded run<br/>(pack injected)"]
+  Q --> N["ungrounded run<br/>(bare question)"]
+  G --> S["deterministic scorer"]
+  N --> S
+  S --> R["accuracy · auditability · hallucination"]
+```
 
 `eval/harness.py` runs a financial-semantics agent over a benchmark **with** vs **without** the
 context pack, scoring accuracy, hallucination, and auditability deterministically (no LLM judge).
