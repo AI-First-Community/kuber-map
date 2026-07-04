@@ -36,7 +36,7 @@ Last updated: 2026-07-04
 1. ✅ **Wire `core:` into the bundle** — done. `to_okf.py` reads `curation/loan-origination.json`, stamps `core: true` on all 71 concepts + marks them in each `index.md`; `make curate` runs nominate + bridges + rebuild.
 2. ✅ **Learner-friendly definition rewrites** — done. `curation/definitions.json` covers the 7 empty-definition core concepts (*mortgage product*, *loan phase*, *consumer credit protection law*, the lifecycle phases/status, *borrower disclosure requirement*); applied as `definition_provenance: curated`, grounded in each class's FIBO superclass. The other 6 thin-but-present defs were left as FIBO's (Rule 1 — don't replace real FIBO text).
 3. ✅ **Context-pack export** (the product) — done. `export_pack.py`/`make pack` emit OKF slice + flat JSON + `context.md`; `etl/mcp_server.py` + `etl/retrieval.py` provide the MCP retrieval endpoint.
-4. ✅ **Grounded-vs-ungrounded eval** (the value proof) — DONE. gpt-4o-mini: **+37.7pt accuracy lift**, auditability 0%→88.7% (SPIKE_RESULTS.md). Remaining polish: prompt tweak to push auditability toward 100% + re-run — pick the model, review the gold questions, run `--adapter llm` (EVAL_LLM_CMD), and write the accuracy/hallucination/auditability numbers into `SPIKE_RESULTS.md`. **Target: ≥15–20pt accuracy lift + 100% auditable.** ◀ **next (needs a user call: model + question review)**
+4. ✅ **Grounded-vs-ungrounded eval** (the value proof) — DONE. gpt-4o-mini: **+39.6pt accuracy lift**, auditability 0%→**98.1%**, hallucination 0% (SPIKE_RESULTS.md). Corroborate with gpt-4o + a 2nd use case (KYC) — pick the model, review the gold questions, run `--adapter llm` (EVAL_LLM_CMD), and write the accuracy/hallucination/auditability numbers into `SPIKE_RESULTS.md`. **Target: ≥15–20pt accuracy lift + 100% auditable.** ◀ **next (needs a user call: model + question review)**
 
 ---
 
@@ -49,8 +49,8 @@ Last updated: 2026-07-04
 - [x] `etl/export_pack.py` — grounds_in closure → OKF slice + JSON + `context.md`
 - [x] MCP retrieval endpoint (`etl/mcp_server.py` + `etl/retrieval.py`)
 - [x] `eval/` harness: benchmark (53 Q), grounded vs ungrounded runner, scorecard (offline; live adapter ready)
-- [x] **Ran the live eval** (gpt-4o-mini via OpenAI): **+37.7pt accuracy lift** (47.2% → 84.9%), auditability 0% → 88.7%. See `SPIKE_RESULTS.md`.
-- [x] Wrote up the MLV result in `SPIKE_RESULTS.md` (accuracy +37.7pt, auditability 88.7%, hallucination 3.8%)
+- [x] **Ran the live eval** (gpt-4o-mini via OpenAI): **+39.6pt accuracy lift** (45.3% → 84.9%), auditability 0% → **98.1%**, grounded hallucination **0%**. See `SPIKE_RESULTS.md`.
+- [x] Wrote up the MLV result in `SPIKE_RESULTS.md` (accuracy +39.6pt, auditability 98.1%, grounded hallucination 0%)
 
 ### E2 — The map UI (fork of Bodhi)
 - [x] **Data layer** — `scripts/okf.js build` (+ `make map`) + `okf.config.js` generate `js/data.js` from `knowledge/`: 1284 nodes (71 core), 2108 edges (4 curated bridges), every edge provenance-tagged; deterministic. Handles our module-nested paths + inline-object relations (Bodhi's parser could not).

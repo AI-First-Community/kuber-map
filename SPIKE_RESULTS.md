@@ -11,30 +11,32 @@ citations matched against the pack's real IRIs), no LLM judge.
 
 | Metric | Ungrounded | Grounded | Δ |
 |---|---|---|---|
-| **Accuracy** (correct ≥ 60% keyword coverage) | 47.2% | **84.9%** | **+37.7 pt** |
-| Mean keyword coverage | 53.1% | 88.2% | +35.1 |
-| **Auditable** (answer carries a valid FIBO IRI citation) | 0% | **88.7%** | +88.7 |
-| Cite on-target (cites the grounding concept) | 0% | 84.9% | +84.9 |
-| Hallucinated citation (cites an IRI not in the pack) | 0% | 3.8% | +3.8 |
+| **Accuracy** (correct ≥ 60% keyword coverage) | 45.3% | **84.9%** | **+39.6 pt** |
+| Mean keyword coverage | 50.8% | 87.9% | +37.1 |
+| **Auditable** (answer carries a valid FIBO IRI citation) | 0% | **98.1%** | +98.1 |
+| Cite on-target (cites the grounding concept) | 0% | 88.7% | +88.7 |
+| Hallucinated citation (cites an IRI not in the pack) | 5.7% | **0.0%** | −5.7 |
 
-**Headline (our own number, not borrowed): a +37.7-point accuracy lift**, past the ≥15–20pt target,
-with auditability going from **0% → 88.7%**.
+**Headline (our own number, not borrowed): a +39.6-point accuracy lift**, past the ≥15–20pt target,
+with auditability at **98.1%** (52 of 53 grounded answers cite a real FIBO IRI) and **zero** grounded
+citation hallucinations.
 
 **Reading the numbers honestly:**
-- The lift is real and large: grounding roughly halves the error rate (52.8% → 15.1% wrong).
-- **Auditability is 88.7%, not 100%.** ~6 grounded answers lacked a valid citation. This is a
-  *prompt-format* gap (the model didn't always echo the exact `resource` IRI), not a data gap;
-  requiring an explicit "Sources: <IRI>" line in the grounded prompt should push it toward 100%.
-- **Hallucination 3.8%** means grounded citations are ~96% precise (2 answers cited a slightly-off
-  IRI). Ungrounded reads 0% only because it never cites at all, and is therefore 0% auditable.
-- Single run, one model, deterministic keyword scoring — directional, not a benchmark. Re-run
-  across models/seeds before quoting it as a headline stat.
+- The lift is real and large: grounding more than halves the error rate (54.7% → 15.1% wrong).
+- **Auditability is 98.1%** after tightening the grounded prompt to require a verbatim
+  "Sources: <IRI>" line (`eval/adapters.py` `GROUNDED_INSTRUCTION`). A first run without that
+  instruction scored 88.7%; the remaining gap is one stray non-citing answer, not a data gap.
+- **Grounded hallucination 0%** — the model now copies the provided IRIs verbatim instead of
+  mangling them. Ungrounded's 5.7% is the opposite failure: with no context it invents IRIs, which,
+  being fake, never count as valid citations, so ungrounded auditability stays 0%.
+- Single run, one model (`gpt-4o-mini`), deterministic keyword scoring — directional, not a
+  benchmark. Re-run across models/seeds before quoting it as a headline stat.
 
 **Reproduce:** `EVAL_LLM_CMD='python eval/openai_cli.py --model gpt-4o-mini' python eval/harness.py --adapter llm`
 (benchmark `eval/benchmark.json`, harness `eval/harness.py`, 53 questions grounded in the pack).
 
-**Next:** tighten the grounded prompt to lift auditability toward 100% and re-run; corroborate with
-a stronger model (gpt-4o) and a second use case (KYC).
+**Next:** corroborate with a stronger model (gpt-4o) and a second use case (KYC); optionally surface
+the headline stat on the landing as a credibility signal.
 
 ---
 

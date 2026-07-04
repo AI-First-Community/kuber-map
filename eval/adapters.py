@@ -24,6 +24,13 @@ SYSTEM = ("You are a financial loan-underwriting assistant. Answer concisely. Wh
           "provided FIBO grounding context is relevant, cite the exact resource IRI(s) you "
           "relied on. Do not invent IRIs.")
 
+# Grounded runs only: force an explicit, verbatim citation line so every answer is auditable.
+GROUNDED_INSTRUCTION = (
+    "Base your answer on the FIBO grounding context above. Then, on a final separate line, write "
+    "exactly 'Sources:' followed by the `cite:` IRI(s) from the context that support your answer, "
+    "copied verbatim and space-separated. Always include the Sources line, and cite only IRIs that "
+    "appear in the context above.")
+
 
 def _grounding_block(pack, question):
     hits = pack.search(question, k=RETRIEVE_K)
@@ -62,7 +69,8 @@ def _run_cmd(cmd, model, prompt):
 def _llm_grounded(pack, model, cmd):
     def answer(q):
         block, _ = _grounding_block(pack, q["question"])
-        prompt = f"{SYSTEM}\n\nFIBO grounding context:\n{block}\n\nQuestion: {q['question']}"
+        prompt = (f"{SYSTEM}\n\nFIBO grounding context:\n{block}\n\nQuestion: {q['question']}"
+                  f"\n\n{GROUNDED_INSTRUCTION}")
         return _run_cmd(cmd, model, prompt)
     return answer
 
