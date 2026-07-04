@@ -38,12 +38,14 @@ triples — is handled in [`etl/extract.py`](etl/extract.py).
 
 ```bash
 make setup      # create venv, install deps
-make all        # extract FIBO (FND+LOAN) → build OKF bundle → validate
+make fibo       # fetch FIBO source (sparse clone pinned to fibo-source.pin) → fibo-source/
+make all        # extract (FND LOAN FBC BE) → build OKF bundle → validate
 make check      # quality gate: lint + tests + validation + attribution guard
 ```
 
-Requires Python 3.11+ and git. FIBO source is pinned by commit (see `fibo-source.pin`); to fetch
-it: `git submodule update --init` (or the sparse-clone recipe in `PLAN.md`).
+Requires Python 3.11+ and git. `fibo-source/` is gitignored; `make fibo` reconstitutes it at the
+pinned commit, so a fresh clone (e.g. on another machine) is `make setup && make fibo && make all`.
+The generated `knowledge/` bundle is committed, so the map is browsable without any of the above.
 
 ## Repository layout
 

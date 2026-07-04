@@ -2,12 +2,15 @@ PY := ./.venv/bin/python
 PIP := ./.venv/bin/pip
 DOMAINS ?= FND LOAN
 
-.PHONY: setup extract build validate test lint attribution check all clean
+.PHONY: setup fibo extract build validate test lint attribution check all clean
 
 setup:
 	python3 -m venv .venv
 	$(PIP) install -q --disable-pip-version-check -e ".[dev]"
 	@echo "setup complete"
+
+fibo:
+	./scripts/fetch_fibo.sh
 
 extract:
 	$(PY) etl/extract.py --domains $(DOMAINS) --out out/intermediate.json
