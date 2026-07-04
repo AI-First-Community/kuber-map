@@ -2,7 +2,7 @@ PY := ./.venv/bin/python
 PIP := ./.venv/bin/pip
 DOMAINS ?= FND LOAN FBC BE
 
-.PHONY: setup fibo extract build curate pack validate test lint attribution check all clean
+.PHONY: setup fibo extract build curate pack eval validate test lint attribution check all clean
 
 setup:
 	python3 -m venv .venv
@@ -28,6 +28,9 @@ curate:
 pack:
 	$(PY) etl/export_pack.py --use-case loan-origination
 
+eval:
+	$(PY) eval/harness.py --adapter offline
+
 validate:
 	$(PY) etl/validate.py --bundle knowledge
 
@@ -35,7 +38,7 @@ test:
 	$(PY) -m pytest
 
 lint:
-	$(PY) -m ruff check etl tests scripts
+	$(PY) -m ruff check etl eval tests scripts
 
 attribution:
 	$(PY) scripts/check_no_attribution.py

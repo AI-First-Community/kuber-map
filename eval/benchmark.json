@@ -1,0 +1,696 @@
+{
+  "use_case": "Loan Origination & Underwriting (residential mortgage)",
+  "questions": [
+    {
+      "id": "loan-def",
+      "category": "definition",
+      "question": "What is a loan in FIBO terms?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Loan"
+      ],
+      "expected_keywords": [
+        "debt instrument",
+        "money",
+        "credit",
+        "repaid",
+        "terms"
+      ]
+    },
+    {
+      "id": "secured-loan-def",
+      "category": "definition",
+      "question": "What makes a loan a secured loan?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/SecuredLoan"
+      ],
+      "expected_keywords": [
+        "borrower",
+        "pledges",
+        "asset",
+        "collateral"
+      ]
+    },
+    {
+      "id": "collateralized-loan-def",
+      "category": "definition",
+      "question": "What is a collateralized loan?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/CollateralizedLoan"
+      ],
+      "expected_keywords": [
+        "secured loan",
+        "collateral",
+        "real property"
+      ]
+    },
+    {
+      "id": "mortgage-def",
+      "category": "definition",
+      "question": "What is a mortgage?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/Mortgage"
+      ],
+      "expected_keywords": [
+        "financial interest",
+        "real property",
+        "recorded"
+      ]
+    },
+    {
+      "id": "loan-secured-re-def",
+      "category": "definition",
+      "question": "What is a loan secured by real estate?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/LoanSecuredByRealEstate"
+      ],
+      "expected_keywords": [
+        "lien",
+        "real property",
+        "credit"
+      ]
+    },
+    {
+      "id": "closed-end-def",
+      "category": "definition",
+      "question": "What is a closed-end mortgage loan?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/ClosedEndMortgageLoan"
+      ],
+      "expected_keywords": [
+        "secured by real estate",
+        "additional funds"
+      ]
+    },
+    {
+      "id": "open-end-def",
+      "category": "definition",
+      "question": "What is an open-end mortgage loan?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/OpenEndMortgageLoan"
+      ],
+      "expected_keywords": [
+        "outstanding loan amount",
+        "increased",
+        "mutual agreement"
+      ]
+    },
+    {
+      "id": "reverse-mortgage-def",
+      "category": "definition",
+      "question": "What is a reverse mortgage loan?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/ReverseMortgageLoan"
+      ],
+      "expected_keywords": [
+        "pays money",
+        "borrower",
+        "equity"
+      ]
+    },
+    {
+      "id": "heloc-def",
+      "category": "definition",
+      "question": "What is a home equity line of credit?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/ConsumerLoans/HomeEquityLineOfCredit"
+      ],
+      "expected_keywords": [
+        "line of credit",
+        "equity",
+        "property"
+      ]
+    },
+    {
+      "id": "ltv-def",
+      "category": "definition",
+      "question": "What is a loan-to-value ratio and what does it relate?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LoanToValueRatio"
+      ],
+      "expected_keywords": [
+        "ratio",
+        "percentage",
+        "principal",
+        "appraised value"
+      ]
+    },
+    {
+      "id": "cltv-def",
+      "category": "definition",
+      "question": "What is a combined loan-to-value ratio?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/CombinedLoanToValueRatio"
+      ],
+      "expected_keywords": [
+        "total",
+        "debt",
+        "appraised value"
+      ]
+    },
+    {
+      "id": "tder-def",
+      "category": "definition",
+      "question": "What does the total debt expense ratio measure?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/TotalDebtExpenseRatio"
+      ],
+      "expected_keywords": [
+        "monthly debt payments",
+        "income",
+        "credit decision"
+      ]
+    },
+    {
+      "id": "collateral-def",
+      "category": "definition",
+      "question": "What is collateral?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Collateral"
+      ],
+      "expected_keywords": [
+        "pledged",
+        "security",
+        "obligation"
+      ]
+    },
+    {
+      "id": "appraisal-def",
+      "category": "definition",
+      "question": "What is an appraisal?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/Appraisal"
+      ],
+      "expected_keywords": [
+        "written estimate",
+        "market value",
+        "appraiser"
+      ]
+    },
+    {
+      "id": "appraised-value-def",
+      "category": "definition",
+      "question": "What is appraised value?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/AppraisedValue"
+      ],
+      "expected_keywords": [
+        "estimated value",
+        "asset"
+      ]
+    },
+    {
+      "id": "borrower-def",
+      "category": "definition",
+      "question": "What obligations define a borrower?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Borrower"
+      ],
+      "expected_keywords": [
+        "party",
+        "credit agreement",
+        "repay",
+        "principal",
+        "interest"
+      ]
+    },
+    {
+      "id": "lender-def",
+      "category": "definition",
+      "question": "What is a lender?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Lender"
+      ],
+      "expected_keywords": [
+        "party",
+        "extends credit",
+        "repaid",
+        "interest"
+      ]
+    },
+    {
+      "id": "creditor-def",
+      "category": "definition",
+      "question": "What is a creditor?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Creditor"
+      ],
+      "expected_keywords": [
+        "party",
+        "obligation"
+      ]
+    },
+    {
+      "id": "guarantor-def",
+      "category": "definition",
+      "question": "What does a guarantor do?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Guaranty/Guarantor"
+      ],
+      "expected_keywords": [
+        "guarantees",
+        "indemnity",
+        "obligation"
+      ]
+    },
+    {
+      "id": "servicer-def",
+      "category": "definition",
+      "question": "What is the role of a loan servicer?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Servicer"
+      ],
+      "expected_keywords": [
+        "collects",
+        "principal",
+        "interest",
+        "lender"
+      ]
+    },
+    {
+      "id": "comaker-def",
+      "category": "definition",
+      "question": "What is a co-maker on a loan?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Comaker"
+      ],
+      "expected_keywords": [
+        "signs",
+        "promissory note",
+        "security"
+      ]
+    },
+    {
+      "id": "credit-agreement-def",
+      "category": "definition",
+      "question": "What is a credit agreement?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreement"
+      ],
+      "expected_keywords": [
+        "debtor",
+        "repay",
+        "creditor",
+        "interest"
+      ]
+    },
+    {
+      "id": "principal-def",
+      "category": "definition",
+      "question": "What is the principal of a loan?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Principal"
+      ],
+      "expected_keywords": [
+        "obligation",
+        "repaid",
+        "maturity"
+      ]
+    },
+    {
+      "id": "uw-decision-def",
+      "category": "definition",
+      "question": "What is an underwriting decision?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/UnderwritingDecision"
+      ],
+      "expected_keywords": [
+        "loan approval",
+        "automated underwriting"
+      ]
+    },
+    {
+      "id": "credit-risk-def",
+      "category": "definition",
+      "question": "What does a credit risk assessment determine?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/CreditRiskAssessment"
+      ],
+      "expected_keywords": [
+        "likelihood",
+        "borrower",
+        "repaying"
+      ]
+    },
+    {
+      "id": "aus-def",
+      "category": "definition",
+      "question": "What is an automated underwriting system?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/AutomatedUnderwritingSystem"
+      ],
+      "expected_keywords": [
+        "software",
+        "loan application",
+        "lender"
+      ]
+    },
+    {
+      "id": "income-verify-def",
+      "category": "definition",
+      "question": "What is an income verification report?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IncomeVerificationReport"
+      ],
+      "expected_keywords": [
+        "verify",
+        "borrower",
+        "income"
+      ]
+    },
+    {
+      "id": "loan-application-def",
+      "category": "definition",
+      "question": "What is a loan application?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplication"
+      ],
+      "expected_keywords": [
+        "request",
+        "potential borrower",
+        "lender",
+        "borrow money"
+      ]
+    },
+    {
+      "id": "preapproval-contract-def",
+      "category": "definition",
+      "question": "What is a pre-approval contract?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/PreApprovalContract"
+      ],
+      "expected_keywords": [
+        "written commitment",
+        "lend",
+        "conditions"
+      ]
+    },
+    {
+      "id": "gfe-def",
+      "category": "definition",
+      "question": "What does a good faith estimate represent?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/GoodFaithEstimate"
+      ],
+      "expected_keywords": [
+        "lender",
+        "costs",
+        "settlement"
+      ]
+    },
+    {
+      "id": "payment-history-def",
+      "category": "definition",
+      "question": "What is a payment history?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/PaymentHistory"
+      ],
+      "expected_keywords": [
+        "record",
+        "payments",
+        "principal",
+        "interest",
+        "borrower"
+      ]
+    },
+    {
+      "id": "prepayment-def",
+      "category": "definition",
+      "question": "What are pre-payment terms?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/PrepaymentTerms"
+      ],
+      "expected_keywords": [
+        "principal",
+        "repayment",
+        "prior to maturity"
+      ]
+    },
+    {
+      "id": "real-property-def",
+      "category": "definition",
+      "question": "What is real property?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Places/RealProperty/RealProperty"
+      ],
+      "expected_keywords": [
+        "land",
+        "structures",
+        "permanently attached"
+      ]
+    },
+    {
+      "id": "legal-obligation-def",
+      "category": "definition",
+      "question": "What is a legal obligation?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation"
+      ],
+      "expected_keywords": [
+        "obligation",
+        "duty",
+        "enforceable",
+        "court"
+      ]
+    },
+    {
+      "id": "closed-vs-open",
+      "category": "distinction",
+      "question": "What distinguishes a closed-end from an open-end mortgage loan?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/ClosedEndMortgageLoan",
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/OpenEndMortgageLoan"
+      ],
+      "expected_keywords": [
+        "additional funds",
+        "increased",
+        "mutual agreement"
+      ]
+    },
+    {
+      "id": "appraisal-vs-value",
+      "category": "distinction",
+      "question": "How does an appraisal differ from an appraised value?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/Appraisal",
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/AppraisedValue"
+      ],
+      "expected_keywords": [
+        "written estimate",
+        "estimated value"
+      ]
+    },
+    {
+      "id": "borrower-vs-guarantor",
+      "category": "distinction",
+      "question": "How does a borrower differ from a guarantor on a loan?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Borrower",
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Guaranty/Guarantor"
+      ],
+      "expected_keywords": [
+        "repay",
+        "guarantees"
+      ]
+    },
+    {
+      "id": "lender-vs-servicer",
+      "category": "distinction",
+      "question": "How does a lender differ from a servicer?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Lender",
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Servicer"
+      ],
+      "expected_keywords": [
+        "extends credit",
+        "collects"
+      ]
+    },
+    {
+      "id": "secured-vs-collateralized",
+      "category": "distinction",
+      "question": "How does a secured loan relate to a collateralized loan?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/SecuredLoan",
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/CollateralizedLoan"
+      ],
+      "expected_keywords": [
+        "pledges",
+        "collateral"
+      ]
+    },
+    {
+      "id": "who-collects-payments",
+      "category": "relationship",
+      "question": "Which party collects principal and interest payments on behalf of the lender?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Servicer"
+      ],
+      "expected_keywords": [
+        "servicer",
+        "collects",
+        "behalf"
+      ]
+    },
+    {
+      "id": "who-mig",
+      "category": "relationship",
+      "question": "Which party provides mortgage insurance as a mortgage indemnity guarantee?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/MortgageIndemnityGuarantor"
+      ],
+      "expected_keywords": [
+        "mortgage indemnity",
+        "guarantor",
+        "insurance"
+      ]
+    },
+    {
+      "id": "ratio-principal-collateral",
+      "category": "relationship",
+      "question": "Which ratio relates the loan principal to the appraised value of the collateral?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LoanToValueRatio"
+      ],
+      "expected_keywords": [
+        "loan-to-value",
+        "principal",
+        "appraised value"
+      ]
+    },
+    {
+      "id": "collateral-valuation",
+      "category": "relationship",
+      "question": "What activity produces the valuation of real property used as collateral?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/CollateralValuation"
+      ],
+      "expected_keywords": [
+        "assessment",
+        "valuation",
+        "real property",
+        "collateral"
+      ]
+    },
+    {
+      "id": "bridge-hmda-reported-in",
+      "category": "bridge",
+      "question": "A HMDA-covered loan contract must be reported in what?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract",
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report"
+      ],
+      "expected_keywords": [
+        "HMDA report",
+        "reporting"
+      ]
+    },
+    {
+      "id": "bridge-hmda-filed-by",
+      "category": "bridge",
+      "question": "Which kind of entity files a HMDA report?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report",
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution"
+      ],
+      "expected_keywords": [
+        "financial institution",
+        "financial service provider"
+      ]
+    },
+    {
+      "id": "bridge-fi-lei",
+      "category": "bridge",
+      "question": "How is a financial institution identified for KYC / entity resolution?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution",
+        "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier"
+      ],
+      "expected_keywords": [
+        "legal entity identifier"
+      ]
+    },
+    {
+      "id": "bridge-lender-fi",
+      "category": "bridge",
+      "question": "Which legal-entity type plays the lender role in a regulated loan?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Lender",
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution"
+      ],
+      "expected_keywords": [
+        "financial institution"
+      ]
+    },
+    {
+      "id": "regz-def",
+      "category": "regulatory",
+      "question": "What US regulation is Reg Z associated with?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegZ"
+      ],
+      "expected_keywords": [
+        "truth in lending"
+      ]
+    },
+    {
+      "id": "regb-def",
+      "category": "regulatory",
+      "question": "What US act does Reg B concern?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegB"
+      ],
+      "expected_keywords": [
+        "equal credit opportunity"
+      ]
+    },
+    {
+      "id": "hmda-report-def",
+      "category": "regulatory",
+      "question": "What is a HMDA report?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report"
+      ],
+      "expected_keywords": [
+        "HMDA",
+        "reporting requirements"
+      ]
+    },
+    {
+      "id": "ccpl-def",
+      "category": "regulatory",
+      "question": "What does a consumer credit protection law regulate?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw"
+      ],
+      "expected_keywords": [
+        "consumer",
+        "credit",
+        "disclosure"
+      ]
+    },
+    {
+      "id": "uli-def",
+      "category": "regulatory",
+      "question": "What is a universal loan identifier?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/UniversalLoanIdentifier"
+      ],
+      "expected_keywords": [
+        "unique identifier",
+        "loan secured by real estate"
+      ]
+    },
+    {
+      "id": "nmlsr-def",
+      "category": "regulatory",
+      "question": "What is an NMLSR identifier?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/NMLSR-ID"
+      ],
+      "expected_keywords": [
+        "Nationwide Mortgage Licensing",
+        "number"
+      ]
+    }
+  ]
+}
