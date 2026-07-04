@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kuber Map — the treasury of financial knowledge</title>
+  <title>Kuber Map · the treasury of financial knowledge</title>
   <!-- PWA -->
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#0e1a13" />
@@ -22,7 +22,7 @@
 <body>
   <!-- Top bar -->
   <header class="topbar">
-    <a class="brand" href="index.html" data-tip="Home — about Kuber Map" aria-label="Home — Kuber Map"><span class="om" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/><path d="M12 6.2V2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g stroke="#0a3f24" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round"><path d="M12 7.3V20"/><path d="M12 10.1 8.9 8.3"/><path d="M12 10.1 15.1 8.3"/><path d="M12 12.9 8.6 11.3"/><path d="M12 12.9 15.4 11.3"/><path d="M12 15.6 9.2 14.5"/><path d="M12 15.6 14.8 14.5"/></g></svg></span><span class="brand-text"><span class="brand-name">Kuber&nbsp;Map</span><span class="sub">the treasury of financial knowledge</span></span></a>
+    <a class="brand" href="index.html" data-tip="Home, about Kuber Map" aria-label="Home, Kuber Map"><span class="om" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/><path d="M12 6.2V2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g stroke="#0a3f24" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round"><path d="M12 7.3V20"/><path d="M12 10.1 8.9 8.3"/><path d="M12 10.1 15.1 8.3"/><path d="M12 12.9 8.6 11.3"/><path d="M12 12.9 15.4 11.3"/><path d="M12 15.6 9.2 14.5"/><path d="M12 15.6 14.8 14.5"/></g></svg></span><span class="brand-text"><span class="brand-name">Kuber&nbsp;Map</span><span class="sub">the treasury of financial knowledge</span></span></a>
 
     <div class="search-wrap">
       <input id="search" type="text" placeholder="Search concepts…  (f)" autocomplete="off" aria-label="Search concepts" />
@@ -31,23 +31,23 @@
 
     <div class="level-bar" role="group" aria-label="Filter concepts by FIBO maturity">
       <span class="level-caption">Maturity</span>
-      <button class="level-chip active" data-level="1" data-tip="FIBO Release — production maturity" aria-label="Toggle Release"><span class="num">Release</span></button>
-      <button class="level-chip active" data-level="2" data-tip="FIBO Provisional — under review" aria-label="Toggle Provisional"><span class="num">Provisional</span></button>
+      <button class="level-chip active" data-level="1" data-tip="FIBO Release, production maturity" aria-label="Toggle Release"><span class="num">Release</span></button>
+      <button class="level-chip active" data-level="2" data-tip="FIBO Provisional, under review" aria-label="Toggle Provisional"><span class="num">Provisional</span></button>
       <button class="level-chip active" data-level="3" data-tip="FIBO Informative / unspecified" aria-label="Toggle Informative"><span class="num">Informative</span></button>
       <button class="new-chip active" id="newChip" data-tip="Toggle between the curated core (71) and the full ontology (1,440)" aria-label="Toggle core / full ontology"><span class="spark" aria-hidden="true">★</span><span class="lbl">Core</span><span class="new-count">0</span></button>
     </div>
 
     <div class="toolbar">
       <div class="tool-group">
-        <button class="btn primary" id="startDecision" data-tip="Guide — which FIBO concept models what you need?" aria-label="Concept guide">
+        <button class="btn primary" id="startDecision" data-tip="Guide, which FIBO concept models what you need?" aria-label="Concept guide">
           <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
           <span class="label">Which concept?</span>
         </button>
-        <button class="btn" id="startPath" data-tip="Guided tour — walk the loan-origination underwriting arc" aria-label="Guided Path">
+        <button class="btn" id="startPath" data-tip="Guided tour, walk the loan-origination underwriting arc" aria-label="Guided Path">
           <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>
           <span class="label">Guided Path</span>
         </button>
-        <button class="btn" id="mapBtn" data-tip="Build your own view — pick FIBO domains" aria-label="Build your view">
+        <button class="btn" id="mapBtn" data-tip="Build your own view, pick FIBO domains" aria-label="Build your view">
           <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 14.09 8.26 20.9 8.26 15.41 12.14 17.5 18.4 12 14.52 6.5 18.4 8.59 12.14 3.1 8.26 9.91 8.26"/></svg>
           <span class="label">My view</span>
         </button>
@@ -87,7 +87,7 @@
   <div id="cy"></div>
 
   <!-- Minimap (orientation) -->
-  <div id="minimap" class="minimap" data-tip="Minimap — click/drag to pan · m to hide" aria-hidden="true">
+  <div id="minimap" class="minimap" data-tip="Minimap, click/drag to pan · m to hide" aria-hidden="true">
     <canvas id="minimapCanvas"></canvas>
   </div>
 
@@ -138,10 +138,10 @@
   <!-- Toast -->
   <div id="toast" class="toast"></div>
 
-  <div class="hint">Curated core is the default — toggle Core for all 1,440 · click a node for its FIBO IRI · drag to pan · scroll to zoom · <kbd>f</kbd> search <kbd>↑</kbd><kbd>↓</kbd><kbd>↵</kbd> · <kbd>t</kbd> theme · <kbd>m</kbd> map · <kbd>?</kbd> help · <kbd>Esc</kbd> close · shareable</div>
+  <div class="hint">Curated core is the default, toggle Core for all 1,440 · click a node for its FIBO IRI · drag to pan · scroll to zoom · <kbd>f</kbd> search <kbd>↑</kbd><kbd>↓</kbd><kbd>↵</kbd> · <kbd>t</kbd> theme · <kbd>m</kbd> map · <kbd>?</kbd> help · <kbd>Esc</kbd> close · shareable</div>
 
   <script src="js/cytoscape.min.js"></script>
-  <!-- fcose layout extension (offline) — load order: layout-base → cose-base → fcose -->
+  <!-- fcose layout extension (offline), load order: layout-base → cose-base → fcose -->
   <script src="js/layout-base.js"></script>
   <script src="js/cose-base.js"></script>
   <script src="js/cytoscape-fcose.js"></script>

@@ -1,5 +1,5 @@
 /* ============================================================================
-   LLM BODHI — Graph rendering & interaction (Cytoscape.js)
+   LLM BODHI, Graph rendering & interaction (Cytoscape.js)
    ============================================================================ */
 
 (function () {
@@ -87,7 +87,7 @@
           'transition-duration': '0.2s',
         },
       },
-      // "New this release" — green ring + soft glow so additions stand out
+      // "New this release", green ring + soft glow so additions stand out
       { selector: 'node[?isNew]', style: {
           'border-width': 3.5, 'border-color': '#4fe08a',
           'overlay-color': '#4fe08a', 'overlay-opacity': 0.1, 'overlay-padding': 5 } },
@@ -129,7 +129,7 @@
         },
       },
       { selector: 'edge[?isPath]', style: { 'width': 3, 'opacity': 0.9, 'line-color': '#fbbf24', 'target-arrow-color': '#fbbf24' } },
-      // states — faint dimmed context + strong glowing spotlight on the selection
+      // states, faint dimmed context + strong glowing spotlight on the selection
       { selector: '.faded', style: { 'opacity': 0.2, 'z-index': 1 } },
       { selector: '.faded-edge', style: { 'opacity': 0.1, 'z-index': 1 } },
       { selector: 'node.highlight', style: {
@@ -212,7 +212,7 @@
     const cmpIdxFor = compareSetIndexFor(id);
     panel.innerHTML = `
       <button class="panel-close" id="panelClose">×</button>
-      <div class="panel-tag" style="--c:${c.color}">${c.label} · Level ${n.level} — ${LEVELS[n.level]}${RELEASE_VERSION && n.added === RELEASE_VERSION ? ` <span class="new-badge">✦ New in ${RELEASE_VERSION}</span>` : ''}</div>
+      <div class="panel-tag" style="--c:${c.color}">${c.label} · Level ${n.level}, ${LEVELS[n.level]}${RELEASE_VERSION && n.added === RELEASE_VERSION ? ` <span class="new-badge">✦ New in ${RELEASE_VERSION}</span>` : ''}</div>
       <h2 style="--c:${c.color}">${n.label}</h2>
       <p class="summary">${n.summary}</p>
       ${cmpIdxFor !== -1 ? `<button class="panel-action" data-compare="${cmpIdxFor}">${TABLE_IC} Compare ${GRAPH.comparisons[cmpIdxFor].title}</button>` : ''}
@@ -389,7 +389,7 @@
   });
 
   // Core / full-ontology toggle (reuses Bodhi's "new chip" slot). Core = the 71 curated
-  // loan-origination concepts — the clean, learner-first landing view; toggle for all 1,284.
+  // loan-origination concepts, the clean, learner-first landing view; toggle for all 1,284.
   const coreChip = document.getElementById('newChip');
   if (coreChip) {
     const coreCount = cy.nodes('[?isCore]').length;
@@ -600,7 +600,7 @@
   const SUN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
   const MOON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
 
-  // darken a #rrggbb colour toward black by factor f (0..1) — for readable labels on light bg
+  // darken a #rrggbb colour toward black by factor f (0..1), for readable labels on light bg
   function darken(hex, f) {
     const m = /^#?([0-9a-f]{6})$/i.exec(hex || '');
     if (!m) return hex;
@@ -609,7 +609,7 @@
     return '#' + ((1 << 24) | (r << 16) | (g << 8) | b).toString(16).slice(1);
   }
 
-  // Cytoscape canvas can't read CSS vars — restyle theme-sensitive graph elements here.
+  // Cytoscape canvas can't read CSS vars, restyle theme-sensitive graph elements here.
   function applyGraphTheme(t) {
     const light = t === 'light';
     cy.batch(() => {
@@ -663,7 +663,7 @@
     const rel = (r) => (RELATIONS[r] || {}).label || r;
 
     const out = [];
-    out.push('# Kuber Map — FIBO Knowledge Bundle (Open Knowledge Format, single-file export)');
+    out.push('# Kuber Map, FIBO Knowledge Bundle (Open Knowledge Format, single-file export)');
     out.push('');
     out.push(`> Curated map of the Financial Industry Business Ontology (FIBO). ${nodes.length} concepts, ` +
              `${GRAPH.edges.filter((e) => e.r !== 'path').length} typed, provenance-tagged relations. Each concept ` +
@@ -672,7 +672,7 @@
     out.push('');
     out.push('## Index');
     out.push('');
-    nodes.forEach((n) => out.push(`- **${n.label}** (\`${n.id}\`) — ${CLUSTERS[n.cluster].label} · L${n.level} — ${n.summary}`));
+    nodes.forEach((n) => out.push(`- **${n.label}** (\`${n.id}\`), ${CLUSTERS[n.cluster].label} · L${n.level}, ${n.summary}`));
     out.push('');
 
     nodes.forEach((n) => {
@@ -701,7 +701,7 @@
       }
       if (n.refs && n.refs.length) {
         out.push('**References:**');
-        n.refs.forEach((r) => out.push(`- ${r.t} — ${r.u}`));
+        n.refs.forEach((r) => out.push(`- ${r.t}, ${r.u}`));
         out.push('');
       }
     });
@@ -791,11 +791,11 @@
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>',
       t: 'Guided tour', d: 'Walk the underwriting arc: application → borrower → collateral → LTV → decision → HMDA report.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h7"/><path d="M17 14l4 3-4 3" stroke-dasharray="3 2"/></svg>',
-      t: 'Curated bridges', d: 'Dashed red edges are cross-domain links FIBO doesn\'t draw natively — the project\'s contribution.' },
+      t: 'Curated bridges', d: 'Dashed red edges are cross-domain links FIBO doesn\'t draw natively, the project\'s contribution.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg>',
       t: 'Search <kbd>f</kbd>', d: 'Fuzzy search; navigate results with <kbd>↑</kbd><kbd>↓</kbd><kbd>↵</kbd>.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18"/></svg>',
-      t: 'Click any node', d: 'A detail panel with the definition, examples, provenance, and the concept\'s FIBO IRI — the audit citation.' },
+      t: 'Click any node', d: 'A detail panel with the definition, examples, provenance, and the concept\'s FIBO IRI, the audit citation.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
       t: 'Light / dark <kbd>t</kbd>', d: 'Toggle theme (top-right). Links are shareable via the URL.' },
   ];
@@ -805,7 +805,7 @@
         <div class="welcome-head"><span class="om" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/><path d="M12 6.2V2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g stroke="#0a3f24" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round"><path d="M12 7.3V20"/><path d="M12 10.1 8.9 8.3"/><path d="M12 10.1 15.1 8.3"/><path d="M12 12.9 8.6 11.3"/><path d="M12 12.9 15.4 11.3"/><path d="M12 15.6 9.2 14.5"/><path d="M12 15.6 14.8 14.5"/></g></svg></span><h2>Welcome to Kuber Map</h2><span class="wbadge">the treasury of financial knowledge</span></div>
         <button class="fb-close" id="welClose" aria-label="Close">×</button>
       </div>
-      <p class="welcome-sub">A curated, learner-first map of the <b>Financial Industry Business Ontology</b> — the knowledge base and taxonomy for building AI and agentic AI in finance. You start on <b>71 loan-origination concepts</b> (of ${GRAPH.nodes.length}), grounded and audit-ready; every concept carries its FIBO IRI. Here's how to explore:</p>
+      <p class="welcome-sub">A curated, learner-first map of the <b>Financial Industry Business Ontology</b>, the knowledge base and taxonomy for building AI and agentic AI in finance. You start on <b>71 loan-origination concepts</b> (of ${GRAPH.nodes.length}), grounded and audit-ready; every concept carries its FIBO IRI. Here's how to explore:</p>
       <div class="welcome-features">
         ${WELCOME_FEATURES.map((f) => `<div class="welcome-feature"><span class="wf-ic">${f.ic}</span><div><b>${f.t}</b><span>${f.d}</span></div></div>`).join('')}
       </div>
@@ -901,7 +901,7 @@
     mapCard.innerHTML =
       '<button class="mm-close" id="mmClose" aria-label="Close">×</button>' +
       '<h2 class="mm-title">★ Build your learning map</h2>' +
-      '<p class="mm-sub">Pick the topics you want to focus on — the graph filters to just your selection. Your map is saved on this device and shareable as a link.</p>' +
+      '<p class="mm-sub">Pick the topics you want to focus on, the graph filters to just your selection. Your map is saved on this device and shareable as a link.</p>' +
       '<div class="mm-list">' + rows + '</div>' +
       '<div class="mm-actions"><button class="btn ghost" id="mmClear" type="button">Clear</button><button class="btn ghost" id="mmShare" type="button">🔗 Share</button><button class="btn primary" id="mmSave" type="button">Save &amp; view</button></div>';
     mapModal.classList.add('open');
