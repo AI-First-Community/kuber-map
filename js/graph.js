@@ -186,14 +186,32 @@
   // Run physics only when a now-visible node has never been positioned; otherwise
   // just reframe. Keeps cluster reveals and core toggles instant once warmed up.
   function ensureLayout() {
-    let need = false;
-    cy.nodes('[!isCluster]').forEach((n) => { if (n.visible() && !laidOut.has(n.id())) need = true; });
-    if (need) { layoutVisible(true); return; }
+    let need = false, visN = 0;
+    cy.nodes('[!isCluster]').forEach((n) => { if (n.visible()) { visN++; if (!laidOut.has(n.id())) need = true; } });
+    if (need) { runBusy('Arranging ' + visN + ' concepts…', () => layoutVisible(true)); return; }
     const vis = cy.elements(':visible');
     if (vis.nodes().length) cy.animate({ fit: { eles: vis, padding: 60 } }, { duration: 300 });
   }
   // "Recompute layout" button: force a fresh physics pass over the visible graph.
   function runLayout() { layoutVisible(true); }
+
+  // ---- Busy overlay: physics/spotlight work blocks the main thread, so show a
+  // spinner, let the browser paint it (double rAF), THEN run the blocking work. ----
+  function showBusy(label) {
+    const b = document.getElementById('busy'); if (!b) return;
+    const l = document.getElementById('busyLabel'); if (l) l.textContent = label || 'Loading…';
+    b.classList.add('show'); b.setAttribute('aria-hidden', 'false');
+  }
+  function hideBusy() {
+    const b = document.getElementById('busy'); if (!b) return;
+    b.classList.remove('show'); b.setAttribute('aria-hidden', 'true');
+  }
+  function runBusy(label, work) {
+    showBusy(label);
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      try { work(); } finally { hideBusy(); }
+    }));
+  }
 
   // ---- Detail panel ----------------------------------------------------------
   const panel = document.getElementById('panel');
@@ -470,12 +488,22 @@
     }
     const nodes = cy.nodes(`[cluster = "${cid}"]`).filter((n) => n.visible());
     if (!nodes.length) return;
-    cy.elements().removeClass('faded faded-edge highlight path-active');
-    const hood = nodes.closedNeighborhood();
-    cy.elements().not(hood).addClass('faded');
-    cy.edges().not(hood.edges()).addClass('faded-edge');
-    nodes.addClass('highlight');
-    cy.animate({ fit: { eles: nodes, padding: 80 } }, { duration: 400 });
+    // Spotlight the cluster over a dimmed rest. On the full graph the class churn
+    // over thousands of elements blocks briefly, so gate it behind the busy overlay.
+    const spotlight = () => {
+      cy.elements().removeClass('faded faded-edge highlight path-active');
+      const hood = nodes.closedNeighborhood();
+      cy.elements().not(hood).addClass('faded');
+      cy.edges().not(hood.edges()).addClass('faded-edge');
+      nodes.addClass('highlight');
+      cy.animate({ fit: { eles: nodes, padding: 80 } }, { duration: 400 });
+    };
+    if (cy.elements().length > 800) {
+      const c = CLUSTERS[cid];
+      runBusy('Focusing ' + (c ? c.label : cid) + '…', spotlight);
+    } else {
+      spotlight();
+    }
   }
   legend.querySelectorAll('.legend-item').forEach((item) => {
     item.onclick = () => focusCluster(item.getAttribute('data-cluster'));
@@ -960,7 +988,7 @@
 
   // ---- Toolbar buttons -------------------------------------------------------
   document.getElementById('fitBtn').onclick = () => cy.animate({ fit: { padding: 60 } }, { duration: 350 });
-  document.getElementById('relayoutBtn').onclick = () => { runLayout(); toast('Layout recomputed'); };
+  document.getElementById('relayoutBtn').onclick = () => { runBusy('Recomputing layout…', () => { runLayout(); toast('Layout recomputed'); }); };
 
   // ---- Minimap (custom canvas overview) --------------------------------------
   const mini = document.getElementById('minimap');

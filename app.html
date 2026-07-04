@@ -86,6 +86,11 @@
   <!-- Graph -->
   <div id="cy"></div>
 
+  <!-- Busy overlay: shown while a layout / focus is computing -->
+  <div id="busy" class="busy" aria-hidden="true" role="status">
+    <div class="busy-card"><span class="spinner"></span><span id="busyLabel" class="busy-label">Loading…</span></div>
+  </div>
+
   <!-- Minimap (orientation) -->
   <div id="minimap" class="minimap" data-tip="Minimap, click/drag to pan · m to hide" aria-hidden="true">
     <canvas id="minimapCanvas"></canvas>
