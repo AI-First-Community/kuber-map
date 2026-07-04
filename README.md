@@ -23,6 +23,9 @@ Named for **Kubera**, the treasurer and god of wealth. Inspired by the
 
 ## Why
 
+**The full thesis** — the FinTech AI-adoption challenge, why grounding beats a bigger model, and
+how this concept works — is in **[docs/Vision.md](docs/Vision.md)**.
+
 FIBO is a formal, exhaustive ontology built for modelers. Kuber Map reshapes it into three
 things it isn't today:
 

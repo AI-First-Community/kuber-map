@@ -1,6 +1,7 @@
 ### Kuber Map for FIBO
 
 - [Home](Home)
+- [Vision & Philosophy](Vision)
 - [Getting Started](Getting-Started)
 - [Architecture](Architecture)
 - [Use Cases](Use-Cases)

@@ -13,6 +13,9 @@ it isn't today:
 3. **Agent grounding** — per-use-case context packs that give financial AI agents accurate
    semantics with a FIBO provenance trail for audit.
 
+**New here? Start with [Vision & Philosophy](Vision)** — the challenge FinTech faces adopting AI,
+why grounding (not a bigger model) is the answer, and how this concept works.
+
 ## Two products in one repo
 
 - **The map** (`index.html` landing + `app.html` graph): an interactive Cytoscape view of the

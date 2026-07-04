@@ -5,6 +5,8 @@ Financial Industry Business Ontology (FIBO).
 
 ## Contents
 
+- **[Vision & Philosophy](Vision.md)** — the "why": the FinTech AI-adoption challenge, why
+  grounding (not a bigger model) is the answer, the concept, and the value it brings.
 - **[Getting Started](Getting-Started.md)** — install, build the bundle, open the map, generate
   a context pack, run the eval.
 - **[Architecture](Architecture.md)** — how the pipeline turns FIBO's OWL into the OKF bundle,
