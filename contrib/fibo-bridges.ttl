@@ -1,0 +1,182 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix kmb: <https://ai-first-community.github.io/kuber-map/bridges/> .
+
+# Proposed cross-domain relations between FIBO classes (curated, grounded, gated).
+# Properties live in the kmb: namespace — these are PROPOSALS, not asserted FIBO axioms.
+
+kmb:backedBy a owl:ObjectProperty ; rdfs:label "backed by" .
+kmb:beneficialOwnerOf a owl:ObjectProperty ; rdfs:label "beneficial owner of" .
+kmb:filedBy a owl:ObjectProperty ; rdfs:label "filed by" .
+kmb:identifiedBy a owl:ObjectProperty ; rdfs:label "identified by" .
+kmb:playedBy a owl:ObjectProperty ; rdfs:label "played by" .
+kmb:reportedIn a owl:ObjectProperty ; rdfs:label "reported in" .
+kmb:requiredBy a owl:ObjectProperty ; rdfs:label "required by" .
+kmb:submittedTo a owl:ObjectProperty ; rdfs:label "submitted to" .
+
+<https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract> kmb:reportedIn <https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract> ;
+   owl:annotatedProperty kmb:reportedIn ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report> ;
+   rdfs:label "hmda-covered-loan-reported-in-hmda-report" ;
+   kmb:kind "intra-domain gap" ;
+   kmb:useCase "Loan origination & underwriting" ;
+   rdfs:comment "HMDA requires every covered loan/application to be recorded on the institution's Loan/Application Register that constitutes the HMDA report. FIBO models both HMDA-CoveredLoanContract and HMDA-Report but does not connect the reported loan to the report that reports it." ;
+   dct:source "12 CFR 1003.4 (Regulation C — compilation of reportable data)" .
+
+<https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report> kmb:filedBy <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report> ;
+   owl:annotatedProperty kmb:filedBy ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution> ;
+   rdfs:label "hmda-report-filed-by-financial-institution" ;
+   kmb:kind "cross-domain (LOAN->FBC)" ;
+   kmb:useCase "Loan origination & underwriting" ;
+   rdfs:comment "A HMDA report is filed by a covered financial institution. FIBO links HMDA-Report to the RegulatoryAgency it is submitted-to, but not to the filing institution — leaving the filer unresolved." ;
+   dct:source "12 CFR 1003.2 (covered institution); 12 CFR 1003.5 (reporting)" .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution> kmb:identifiedBy <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution> ;
+   owl:annotatedProperty kmb:identifiedBy ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier> ;
+   rdfs:label "financial-institution-identified-by-lei" ;
+   kmb:kind "cross-domain (FBC->BE)" ;
+   kmb:useCase "Loan origination & underwriting" ;
+   rdfs:comment "For KYC / entity resolution a financial institution is identified by its Legal Entity Identifier. FIBO defines LegalEntityIdentifier in BE but does not connect FinancialInstitution to it." ;
+   dct:source "ISO 17442 (LEI); FIBO BE LegalEntityIdentifier" .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Lender> kmb:playedBy <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Lender> ;
+   owl:annotatedProperty kmb:playedBy ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution> ;
+   rdfs:label "lender-played-by-financial-institution" ;
+   kmb:kind "role->entity gap (FBC)" ;
+   kmb:useCase "Loan origination & underwriting" ;
+   rdfs:comment "Lender is modeled as a party role (is-a ContractParty/Creditor); FinancialInstitution is the legal-entity type that plays it. FIBO leaves the role-to-entity link implicit, blocking resolution of 'the lender' to a regulated institution." ;
+   dct:source "FIBO FBC party-role vs entity modeling" .
+
+<https://www.omg.org/spec/Commons/Organizations/LegalEntity> kmb:identifiedBy <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://www.omg.org/spec/Commons/Organizations/LegalEntity> ;
+   owl:annotatedProperty kmb:identifiedBy ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier> ;
+   rdfs:label "legal-entity-identified-by-lei" ;
+   kmb:kind "cross-domain (CMNS->BE)" ;
+   kmb:useCase "KYC & beneficial ownership" ;
+   rdfs:comment "For KYC and entity resolution a legal entity is identified by its Legal Entity Identifier (ISO 17442). FIBO defines LegalEntityIdentifier and applies it to LEI-registered entities, but does not link the base LegalEntity class to it, leaving generic entity-to-LEI resolution implicit." ;
+   dct:source "ISO 17442 (LEI); FATF Recommendation 24" .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwner> kmb:beneficialOwnerOf <https://www.omg.org/spec/Commons/Organizations/LegalEntity> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwner> ;
+   owl:annotatedProperty kmb:beneficialOwnerOf ;
+   owl:annotatedTarget <https://www.omg.org/spec/Commons/Organizations/LegalEntity> ;
+   rdfs:label "beneficial-owner-of-legal-entity" ;
+   kmb:kind "cross-domain (BE->CMNS)" ;
+   kmb:useCase "KYC & beneficial ownership" ;
+   rdfs:comment "A beneficial owner is the party that ultimately owns or controls a legal entity. FIBO models BeneficialOwnership as a situation but draws no direct edge from the BeneficialOwner role to the legal entity owned, which KYC / ultimate-beneficial-owner resolution needs." ;
+   dct:source "FATF Recommendations 24 & 25; US CDD rule 31 CFR 1010.230" .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Customer> kmb:playedBy <https://www.omg.org/spec/Commons/Organizations/LegalPerson> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Customer> ;
+   owl:annotatedProperty kmb:playedBy ;
+   owl:annotatedTarget <https://www.omg.org/spec/Commons/Organizations/LegalPerson> ;
+   rdfs:label "customer-played-by-legal-person" ;
+   kmb:kind "role->entity gap (FND->CMNS)" ;
+   kmb:useCase "KYC & beneficial ownership" ;
+   rdfs:comment "A customer is a party role played by a legal person (or a natural person). Resolving 'the customer' to the underlying legal entity is core to KYC onboarding, but FIBO leaves the role-to-entity link implicit." ;
+   dct:source "FIBO FND party-role vs entity modeling; KYC customer onboarding" .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountHolder> kmb:identifiedBy <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountHolder> ;
+   owl:annotatedProperty kmb:identifiedBy ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier> ;
+   rdfs:label "account-holder-identified-by-lei" ;
+   kmb:kind "cross-domain (FBC->BE)" ;
+   kmb:useCase "KYC & beneficial ownership" ;
+   rdfs:comment "An institutional account holder is identified for KYC by its Legal Entity Identifier. FIBO models accounts and their holders but does not connect an account holder to its LEI." ;
+   dct:source "ISO 17442 (LEI); KYC / CDD account onboarding" .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/ReportingParty> kmb:identifiedBy <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/ReportingParty> ;
+   owl:annotatedProperty kmb:identifiedBy ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier> ;
+   rdfs:label "reporting-party-identified-by-lei" ;
+   kmb:kind "cross-domain (FND->BE)" ;
+   kmb:useCase "Regulatory reporting & compliance" ;
+   rdfs:comment "In supervisory and transaction reporting the party that submits a report is identified by its Legal Entity Identifier. FIBO defines the ReportingParty role (FND) and the LegalEntityIdentifier (BE) but does not connect a reporting party to its LEI." ;
+   dct:source "ISO 17442 (LEI); MiFID II / ESMA transaction reporting; CFTC swap reporting" .
+
+<https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport> kmb:submittedTo <https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport> ;
+   owl:annotatedProperty kmb:submittedTo ;
+   owl:annotatedTarget <https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency> ;
+   rdfs:label "regulatory-report-submitted-to-agency" ;
+   kmb:kind "intra-domain gap (CMNS)" ;
+   kmb:useCase "Regulatory reporting & compliance" ;
+   rdfs:comment "A regulatory report is submitted to the regulatory agency that requires it. FIBO defines both RegulatoryReport and RegulatoryAgency in Commons but does not draw the edge from a report to the agency it is filed with." ;
+   dct:source "General supervisory-reporting practice; e.g. HMDA filing to the CFPB, MiFID II reporting to national competent authorities" .
+
+<https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport> kmb:requiredBy <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Regulation> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport> ;
+   owl:annotatedProperty kmb:requiredBy ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Regulation> ;
+   rdfs:label "regulatory-report-required-by-regulation" ;
+   kmb:kind "cross-domain (CMNS->FND)" ;
+   kmb:useCase "Regulatory reporting & compliance" ;
+   rdfs:comment "A regulatory report exists because a regulation mandates it. FIBO models RegulatoryReport (CMNS) and Regulation (FND) separately but leaves the report-to-mandating-regulation link implicit." ;
+   dct:source "Reporting obligations arise from regulations, e.g. HMDA report required by Regulation C" .
+
+<https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradesReporting> kmb:submittedTo <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/TradeReportingFacility> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradesReporting> ;
+   owl:annotatedProperty kmb:submittedTo ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/TradeReportingFacility> ;
+   rdfs:label "securities-trades-reporting-to-trade-reporting-facility" ;
+   kmb:kind "cross-domain (BP->FBC)" ;
+   kmb:useCase "Regulatory reporting & compliance" ;
+   rdfs:comment "Executed off-exchange securities trades are reported to a trade reporting facility. FIBO models the securities-trades-reporting process (BP) and the TradeReportingFacility (FBC) but does not connect the reporting activity to the facility it reports to." ;
+   dct:source "FINRA Trade Reporting Facility rules; MiFID II APA reporting" .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MortgageBackedSecurity> kmb:backedBy <https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/Mortgage> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MortgageBackedSecurity> ;
+   owl:annotatedProperty kmb:backedBy ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/Mortgage> ;
+   rdfs:label "mbs-backed-by-mortgage" ;
+   kmb:kind "cross-domain (SEC->LOAN)" ;
+   kmb:useCase "Securities instruments & issuance" ;
+   rdfs:comment "A mortgage-backed security represents claims on the cash flows from an underlying pool of mortgage loans. FIBO models the security (SEC) and the mortgage instrument (LOAN) in separate domains but does not draw the edge from the MBS to the mortgage loans that back it, which securitization and loan-level disclosure analysis need." ;
+   dct:source "SEC Regulation AB, 17 CFR 229.1100 (asset-backed securities, loan-level data)" .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/AssetBackedSecurity> kmb:backedBy <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Loan> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/AssetBackedSecurity> ;
+   owl:annotatedProperty kmb:backedBy ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Loan> ;
+   rdfs:label "abs-backed-by-loan" ;
+   kmb:kind "cross-domain (SEC->LOAN)" ;
+   kmb:useCase "Securities instruments & issuance" ;
+   rdfs:comment "An asset-backed security is collateralized by a pool of receivables such as auto or consumer loans. FIBO defines the ABS in SEC and the loan in LOAN but leaves the backing relationship between the security and its underlying loans implicit." ;
+   dct:source "SEC Regulation AB, 17 CFR 229.1100; securitization structuring" .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Issuer> kmb:identifiedBy <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier> .
+[] a owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Issuer> ;
+   owl:annotatedProperty kmb:identifiedBy ;
+   owl:annotatedTarget <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier> ;
+   rdfs:label "issuer-identified-by-lei" ;
+   kmb:kind "cross-domain (FBC->BE)" ;
+   kmb:useCase "Securities instruments & issuance" ;
+   rdfs:comment "For securities issuance and regulatory reporting a securities issuer is identified by its Legal Entity Identifier. FIBO defines the Issuer role (FBC) and the LegalEntityIdentifier (BE) but does not connect an issuer to its LEI." ;
+   dct:source "ISO 17442 (LEI); MiFID II / ESMA and SEC issuer identification" .

@@ -78,8 +78,8 @@ Last updated: 2026-07-04
 - [ ] Per-domain `core:` sets + lateral bridges + `index.md`
 
 ### E5 — EDM Council contribution
-- [ ] Export curated bridges (`provenance: curated`) with rationale + citation as a proposal artifact
-- [ ] Re-model accepted bridges as formal `owl:Restriction` axioms in FIBO style
+- [x] **Export curated bridges as a proposal artifact** — `etl/export_bridges.py` (+ `make contrib`) packages all 15 gated cross-domain bridges into `contrib/edmc-bridge-contribution.md` (methodology + per-use-case tables) and `contrib/fibo-bridges.ttl` (RDF/Turtle; each bridge a proposed `kmb:` triple + an `owl:Axiom` annotation carrying rationale + citation + provenance; parses in rdflib, 166 triples). Proposals stay in a neutral `kmb:` namespace — no unverified FIBO properties asserted (Rule 1).
+- [ ] Re-model accepted bridges as formal `owl:Restriction` axioms in FIBO style (once reviewers map each edge to a FIBO/Commons property)
 - [ ] Engage EDM Council OKG Innovation Lab / FIBO CoP (DCO-signed PR) — *timing is user's call*
 
 ### E6 — Tech-debt / cleanups

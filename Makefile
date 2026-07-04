@@ -3,7 +3,7 @@ PIP := ./.venv/bin/pip
 DOMAINS ?= FND LOAN FBC BE SEC DER IND MD BP CAE
 CLUSTERS ?= $(DOMAINS) CMNS   # domains emitted in the bundle (+ Commons upper ontology)
 
-.PHONY: setup fibo commons extract build curate pack eval map validate test lint attribution check all clean
+.PHONY: setup fibo commons extract build curate pack contrib eval map validate test lint attribution check all clean
 
 setup:
 	python3 -m venv .venv
@@ -41,6 +41,10 @@ pack:
 	$(PY) etl/export_pack.py --use-case kyc --core curation/kyc.json --bridges curation/kyc-bridges.json --out export/kyc
 	$(PY) etl/export_pack.py --use-case securities --core curation/securities.json --bridges curation/securities-bridges.json --out export/securities
 	$(PY) etl/export_pack.py --use-case regulatory-reporting --core curation/regulatory-reporting.json --bridges curation/regulatory-reporting-bridges.json --defs curation/regulatory-reporting-definitions.json --out export/regulatory-reporting
+
+# Package the 15 curated cross-domain bridges as an EDM Council contribution proposal.
+contrib:
+	$(PY) etl/export_bridges.py
 
 eval:
 	$(PY) eval/harness.py --adapter offline
