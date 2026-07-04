@@ -1,0 +1,40 @@
+{
+  "bridges": [
+    {
+      "id": "hmda-covered-loan-reported-in-hmda-report",
+      "edge": "reported-in",
+      "kind": "intra-domain gap",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report",
+      "rationale": "HMDA requires every covered loan/application to be recorded on the institution's Loan/Application Register that constitutes the HMDA report. FIBO models both HMDA-CoveredLoanContract and HMDA-Report but does not connect the reported loan to the report that reports it.",
+      "citation": "12 CFR 1003.4 (Regulation C \u2014 compilation of reportable data)"
+    },
+    {
+      "id": "hmda-report-filed-by-financial-institution",
+      "edge": "filed-by",
+      "kind": "cross-domain (LOAN->FBC)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution",
+      "rationale": "A HMDA report is filed by a covered financial institution. FIBO links HMDA-Report to the RegulatoryAgency it is submitted-to, but not to the filing institution \u2014 leaving the filer unresolved.",
+      "citation": "12 CFR 1003.2 (covered institution); 12 CFR 1003.5 (reporting)"
+    },
+    {
+      "id": "financial-institution-identified-by-lei",
+      "edge": "identified-by",
+      "kind": "cross-domain (FBC->BE)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "rationale": "For KYC / entity resolution a financial institution is identified by its Legal Entity Identifier. FIBO defines LegalEntityIdentifier in BE but does not connect FinancialInstitution to it.",
+      "citation": "ISO 17442 (LEI); FIBO BE LegalEntityIdentifier"
+    },
+    {
+      "id": "lender-played-by-financial-institution",
+      "edge": "played-by",
+      "kind": "role->entity gap (FBC)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Lender",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution",
+      "rationale": "Lender is modeled as a party role (is-a ContractParty/Creditor); FinancialInstitution is the legal-entity type that plays it. FIBO leaves the role-to-entity link implicit, blocking resolution of 'the lender' to a regulated institution.",
+      "citation": "FIBO FBC party-role vs entity modeling"
+    }
+  ]
+}

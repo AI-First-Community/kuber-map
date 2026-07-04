@@ -1,0 +1,644 @@
+{
+  "use_case": "Loan Origination & Underwriting (residential mortgage)",
+  "core": [
+    {
+      "facet": "Instrument",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Loan",
+      "id": "Loan",
+      "cluster": "LOAN",
+      "title": "loan",
+      "description": "debt instrument whereby one party extends money or credit to another party (or parties) with the understanding that the borrowed money will be repaid according to the terms of the contract",
+      "core": true
+    },
+    {
+      "facet": "Instrument",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/SecuredLoan",
+      "id": "SecuredLoan",
+      "cluster": "LOAN",
+      "title": "secured loan",
+      "description": "loan in which the borrower pledges some asset via a security agreement as collateral for the loan, or that is secured via third-party guarantee",
+      "core": true
+    },
+    {
+      "facet": "Instrument",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/CollateralizedLoan",
+      "id": "CollateralizedLoan",
+      "cluster": "LOAN",
+      "title": "collateralized loan",
+      "description": "secured loan that is secured with cash or other acceptable collateral (real property, securities or other assets) provided by the borrower as specified in the collateral agreement",
+      "core": true
+    },
+    {
+      "facet": "Instrument",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/LoanSecuredByRealEstate",
+      "id": "LoanSecuredByRealEstate",
+      "cluster": "LOAN",
+      "title": "loan secured by real estate",
+      "description": "loan that, at origination, is secured wholly or substantially by a lien or liens on real property for which the lien or liens are central to the extension of the credit - that is, the borrower would not have been extended credit in the same amount or on terms as favorable without the lien or liens on real property",
+      "core": true
+    },
+    {
+      "facet": "Instrument",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/Mortgage",
+      "id": "Mortgage",
+      "cluster": "LOAN",
+      "title": "mortgage",
+      "description": "grant of financial interest in real property to a party that is not an owner of that real property and is recorded by a registration authority",
+      "core": true
+    },
+    {
+      "facet": "Instrument",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/ClosedEndMortgageLoan",
+      "id": "ClosedEndMortgageLoan",
+      "cluster": "LOAN",
+      "title": "closed-end mortgage loan",
+      "description": "loan secured by real estate with no ability for the borrower to receive additional funds under the loan at a later date",
+      "core": true
+    },
+    {
+      "facet": "Instrument",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/OpenEndMortgageLoan",
+      "id": "OpenEndMortgageLoan",
+      "cluster": "LOAN",
+      "title": "open-end mortgage loan",
+      "description": "loan secured by real estate with a provision that the outstanding loan amount may be increased upon mutual agreement of the lender and the borrower",
+      "core": true
+    },
+    {
+      "facet": "Instrument",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/ReverseMortgageLoan",
+      "id": "ReverseMortgageLoan",
+      "cluster": "LOAN",
+      "title": "reverse mortgage loan",
+      "description": "loan secured by real estate that pays money to the borrower against a set principal limit based on the value of existing equity in the underlying collateral",
+      "core": true
+    },
+    {
+      "facet": "Instrument",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/ConsumerLoans/HomeEquityLineOfCredit",
+      "id": "HomeEquityLineOfCredit",
+      "cluster": "LOAN",
+      "title": "home equity line of credit",
+      "description": "line of credit granted to a homeowner secured by the equity value in a borrower's home or other property",
+      "core": true
+    },
+    {
+      "facet": "Instrument",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanProduct",
+      "id": "LoanProduct",
+      "cluster": "LOAN",
+      "title": "loan product",
+      "description": "financial product that is realized as a loan that a party may acquire from a lending institution with specific characteristics and terms",
+      "core": true
+    },
+    {
+      "facet": "Instrument",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/MortgageProduct",
+      "id": "MortgageProduct",
+      "cluster": "LOAN",
+      "title": "mortgage product",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Instrument",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanProductOffering",
+      "id": "LoanProductOffering",
+      "cluster": "LOAN",
+      "title": "loan offering",
+      "description": "offering related to a loan product that may be a tailored to particular circumstances, aimed at a group of borrowers or individual borrower",
+      "core": true
+    },
+    {
+      "facet": "Application & process",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplication",
+      "id": "LoanApplication",
+      "cluster": "LOAN",
+      "title": "loan application",
+      "description": "request by a potential borrower to a potential lender to borrow money containing information used to decide whether to grant the loan",
+      "core": true
+    },
+    {
+      "facet": "Application & process",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationStatus",
+      "id": "LoanApplicationStatus",
+      "cluster": "LOAN",
+      "title": "loan application status",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Application & process",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationPhase",
+      "id": "LoanApplicationPhase",
+      "cluster": "LOAN",
+      "title": "loan application phase",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Application & process",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/PreApprovalRequest",
+      "id": "PreApprovalRequest",
+      "cluster": "LOAN",
+      "title": "pre-approval request",
+      "description": "request from a potential borrower that a lender commit to pre-approving the borrower for a loan of up to a specified amount of money",
+      "core": true
+    },
+    {
+      "facet": "Application & process",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/PreApprovalContract",
+      "id": "PreApprovalContract",
+      "cluster": "LOAN",
+      "title": "pre-approval contract",
+      "description": "written commitment to lend when specified conditions are met, such as finding suitable property, and unchanged creditworthiness",
+      "core": true
+    },
+    {
+      "facet": "Application & process",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/LoanPhase",
+      "id": "LoanPhase",
+      "cluster": "LOAN",
+      "title": "loan phase",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Application & process",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/RepaymentPhase",
+      "id": "RepaymentPhase",
+      "cluster": "LOAN",
+      "title": "repayment phase",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Underwriting & assessment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/UnderwritingDecision",
+      "id": "UnderwritingDecision",
+      "cluster": "LOAN",
+      "title": "underwriting decision",
+      "description": "classifier providing a loan approval recommendation determined either manually or by an automated underwriting system",
+      "core": true
+    },
+    {
+      "facet": "Underwriting & assessment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/AutomatedUnderwritingSystem",
+      "id": "AutomatedUnderwritingSystem",
+      "cluster": "LOAN",
+      "title": "automated underwriting system",
+      "description": "software system that collects the information necessary to approve a loan application and supports a mortgage lender's analysis of a new loan application",
+      "core": true
+    },
+    {
+      "facet": "Underwriting & assessment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/CreditRiskAssessment",
+      "id": "CreditRiskAssessment",
+      "cluster": "LOAN",
+      "title": "credit risk assessment",
+      "description": "risk assessment that focuses on determining the likelihood of a potential borrower repaying a loan",
+      "core": true
+    },
+    {
+      "facet": "Underwriting & assessment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/BorrowerAssessment",
+      "id": "BorrowerAssessment",
+      "cluster": "LOAN",
+      "title": "borrower assessment",
+      "description": "assessment report detailing information about the borrower and their credit history that may be relevant to the loan application",
+      "core": true
+    },
+    {
+      "facet": "Underwriting & assessment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/CollateralValuation",
+      "id": "CollateralValuation",
+      "cluster": "LOAN",
+      "title": "collateral valuation",
+      "description": "assessment activity resulting in the valuation of real property as collateral",
+      "core": true
+    },
+    {
+      "facet": "Underwriting & assessment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IncomeVerificationReport",
+      "id": "IncomeVerificationReport",
+      "cluster": "LOAN",
+      "title": "income verification report",
+      "description": "report providing the methodology and supporting documentation used to verify the borrower's income",
+      "core": true
+    },
+    {
+      "facet": "Underwriting & assessment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IndividualPersonCreditRating",
+      "id": "IndividualPersonCreditRating",
+      "cluster": "LOAN",
+      "title": "individual person credit rating",
+      "description": "credit rating that provides an opinion of the creditworthiness of a person",
+      "core": true
+    },
+    {
+      "facet": "Underwriting & assessment",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/PaymentHistory",
+      "id": "PaymentHistory",
+      "cluster": "LOAN",
+      "title": "payment history",
+      "description": "record of actual payments of principal, interest, and other related amounts made by a borrower to a lender or servicer in order to fulfill their re-payment obligation",
+      "core": true
+    },
+    {
+      "facet": "Amounts, ratios & terms",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LoanToValueRatio",
+      "id": "LoanToValueRatio",
+      "cluster": "LOAN",
+      "title": "loan-to-value ratio",
+      "description": "ratio, expressed as a percentage, between the principal amount of the loan and the appraised value of the asset securing the financing",
+      "core": true
+    },
+    {
+      "facet": "Amounts, ratios & terms",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/CombinedLoanToValueRatio",
+      "id": "CombinedLoanToValueRatio",
+      "cluster": "LOAN",
+      "title": "combined loan-to-value ratio",
+      "description": "ratio of the total amount of debt that is secured by the asset(s) and the appraised value of the asset(s) securing the financing",
+      "core": true
+    },
+    {
+      "facet": "Amounts, ratios & terms",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/TotalDebtExpenseRatio",
+      "id": "TotalDebtExpenseRatio",
+      "cluster": "LOAN",
+      "title": "total debt expense ratio",
+      "description": "ratio of all monthly debt payments of all borrowers, including proposed expenses, with respect to the income of the borrowers as relied upon to make a credit decision",
+      "core": true
+    },
+    {
+      "facet": "Amounts, ratios & terms",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/TotalOutstandingPrincipal",
+      "id": "TotalOutstandingPrincipal",
+      "cluster": "LOAN",
+      "title": "total outstanding principal",
+      "description": "the principal balance of all loans secured by the property",
+      "core": true
+    },
+    {
+      "facet": "Amounts, ratios & terms",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/BorrowerMonthlyIncome",
+      "id": "BorrowerMonthlyIncome",
+      "cluster": "LOAN",
+      "title": "borrower monthly income",
+      "description": "total monthly qualifying income of a potential borrower",
+      "core": true
+    },
+    {
+      "facet": "Amounts, ratios & terms",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/AmortizationType",
+      "id": "AmortizationType",
+      "cluster": "LOAN",
+      "title": "amortization type",
+      "description": "classifier of amortization algorithms",
+      "core": true
+    },
+    {
+      "facet": "Amounts, ratios & terms",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LoanPaymentSchedule",
+      "id": "LoanPaymentSchedule",
+      "cluster": "LOAN",
+      "title": "loan payment schedule",
+      "description": "regular or explicit (ad hoc) payment schedule associated with a given loan-specific account",
+      "core": true
+    },
+    {
+      "facet": "Amounts, ratios & terms",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/PrepaymentTerms",
+      "id": "PrepaymentTerms",
+      "cluster": "LOAN",
+      "title": "pre-payment terms",
+      "description": "principal repayment terms related to payment of the loan prior to maturity",
+      "core": true
+    },
+    {
+      "facet": "Amounts, ratios & terms",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/GoodFaithEstimate",
+      "id": "GoodFaithEstimate",
+      "cluster": "LOAN",
+      "title": "good faith estimate",
+      "description": "GFE - representation by the lender on the costs and implications of settlement (early termination) of the loan.",
+      "core": true
+    },
+    {
+      "facet": "Amounts, ratios & terms",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount",
+      "id": "MonetaryAmount",
+      "cluster": "FND",
+      "title": "monetary amount",
+      "description": "measure that is an amount of money specified in monetary units",
+      "core": true
+    },
+    {
+      "facet": "Amounts, ratios & terms",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/Income",
+      "id": "Income",
+      "cluster": "FND",
+      "title": "income",
+      "description": "revenue received during a period of time",
+      "core": true
+    },
+    {
+      "facet": "Parties & roles",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Borrower",
+      "id": "Borrower",
+      "cluster": "FBC",
+      "title": "borrower",
+      "description": "party to a credit agreement that is obligated to repay the amount borrowed (principal) with interest and other fees according to the terms of the instrument",
+      "core": true
+    },
+    {
+      "facet": "Parties & roles",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Lender",
+      "id": "Lender",
+      "cluster": "FBC",
+      "title": "lender",
+      "description": "a party that extends credit or money to a borrower with the expectation of being repaid, usually with interest",
+      "core": true
+    },
+    {
+      "facet": "Parties & roles",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Creditor",
+      "id": "Creditor",
+      "cluster": "FBC",
+      "title": "creditor",
+      "description": "a party to whom an obligation, such as an amount of money, or good, or performance of some service exists",
+      "core": true
+    },
+    {
+      "facet": "Parties & roles",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution",
+      "id": "FinancialInstitution",
+      "cluster": "FBC",
+      "title": "financial institution",
+      "description": "financial service provider identified as either a government agency or privately owned entity that collects funds from the public and from other institutions, and invests those funds in financial assets, such as loans, securities, bank deposits, and income-generating property",
+      "core": true
+    },
+    {
+      "facet": "Parties & roles",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Guaranty/Guarantor",
+      "id": "Guarantor",
+      "cluster": "FBC",
+      "title": "guarantor",
+      "description": "party that guarantees, endorses, or provides indemnity for some obligation on behalf of some other party",
+      "core": true
+    },
+    {
+      "facet": "Parties & roles",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Servicer",
+      "id": "Servicer",
+      "cluster": "LOAN",
+      "title": "servicer",
+      "description": "party that collects principal and interest payments on behalf of the lender",
+      "core": true
+    },
+    {
+      "facet": "Parties & roles",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/MortgageIndemnityGuarantor",
+      "id": "MortgageIndemnityGuarantor",
+      "cluster": "LOAN",
+      "title": "mortgage indemnity guarantor",
+      "description": "guarantor and insurer that provides mortgage insurance in the form of a mortgage indemnity guarantee (MIG)",
+      "core": true
+    },
+    {
+      "facet": "Parties & roles",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Comaker",
+      "id": "Comaker",
+      "cluster": "LOAN",
+      "title": "co-maker",
+      "description": "party that signs a borrower's promissory note, providing additional security and potentially improving the quality of the debt",
+      "core": true
+    },
+    {
+      "facet": "Collateral & property",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Collateral",
+      "id": "Collateral",
+      "cluster": "FBC",
+      "title": "collateral",
+      "description": "something pledged as security to ensure fulfillment of an obligation to another party, to lend money, extend credit, or provision securities",
+      "core": true
+    },
+    {
+      "facet": "Collateral & property",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/RealProperty/RealProperty",
+      "id": "RealProperty",
+      "cluster": "FND",
+      "title": "real property",
+      "description": "physical asset defined as land together with any structures that are permanently attached to that land, such as houses, trees, fences and improvements",
+      "core": true
+    },
+    {
+      "facet": "Collateral & property",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/Appraisal",
+      "id": "Appraisal",
+      "cluster": "FND",
+      "title": "appraisal",
+      "description": "written estimate of the market value of something as of some point in time, typically provided by a qualified appraiser",
+      "core": true
+    },
+    {
+      "facet": "Collateral & property",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/AppraisedValue",
+      "id": "AppraisedValue",
+      "cluster": "FND",
+      "title": "appraised value",
+      "description": "estimated value of some asset as of a given point in time",
+      "core": true
+    },
+    {
+      "facet": "Collateral & property",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LenderLienPosition",
+      "id": "LenderLienPosition",
+      "cluster": "LOAN",
+      "title": "lender lien position",
+      "description": "classifier indicating whether the lender has the primary lien position with respect to an asset used as collateral for the loan",
+      "core": true
+    },
+    {
+      "facet": "Collateral & property",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/OwnershipInterest",
+      "id": "OwnershipInterest",
+      "cluster": "LOAN",
+      "title": "ownership interest",
+      "description": "classifier indicating the nature of the applicant's or borrower's ownership or leasehold interest in an asset used as collateral for the loan",
+      "core": true
+    },
+    {
+      "facet": "Collateral & property",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/PropertyUsage",
+      "id": "PropertyUsage",
+      "cluster": "LOAN",
+      "title": "property usage",
+      "description": "a category indicating the manner in which the borrower intends to utilize the property",
+      "core": true
+    },
+    {
+      "facet": "Contract & obligations",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreement",
+      "id": "CreditAgreement",
+      "cluster": "FBC",
+      "title": "credit agreement",
+      "description": "contractual agreement in which a debtor receives something of value and typically agrees to repay the creditor by some date in the future, in some form (e.g., cash, securities, etc.), generally with interest",
+      "core": true
+    },
+    {
+      "facet": "Contract & obligations",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Principal",
+      "id": "Principal",
+      "cluster": "FBC",
+      "title": "principal",
+      "description": "with respect to a debt: the value of an obligation, such as a bond or loan, raised and that must be repaid at maturity; for investments: the original amount of money invested, separate from any associated interest, dividends or capital gains",
+      "core": true
+    },
+    {
+      "facet": "Contract & obligations",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/LoanOrCreditAccount",
+      "id": "LoanOrCreditAccount",
+      "cluster": "FBC",
+      "title": "loan or credit account",
+      "description": "account associated with a service in which the account holder receives funds from the account provider under certain terms and conditions for repayment",
+      "core": true
+    },
+    {
+      "facet": "Contract & obligations",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation",
+      "id": "LegalObligation",
+      "cluster": "FND",
+      "title": "legal obligation",
+      "description": "an obligation or duty that is enforceable by a court",
+      "core": true
+    },
+    {
+      "facet": "Contract & obligations",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/DisclosureProvision",
+      "id": "DisclosureProvision",
+      "cluster": "FND",
+      "title": "disclosure provision",
+      "description": "contractual provision that outlines the requirements and responsibilities of one or both parties to reveal certain information to each other",
+      "core": true
+    },
+    {
+      "facet": "Contract & obligations",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/UseOfProceedsProvision",
+      "id": "UseOfProceedsProvision",
+      "cluster": "FND",
+      "title": "use of proceeds provision",
+      "description": "contract provision specifying how funds obtained through financing, such as through a credit agreement, offering, warrant, or other instrument are intended to be used",
+      "core": true
+    },
+    {
+      "facet": "Contract & obligations",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/Payment",
+      "id": "Payment",
+      "cluster": "FND",
+      "title": "payment",
+      "description": "delivery of money in fulfillment of an obligation, such as to satisfy a claim or debt",
+      "core": true
+    },
+    {
+      "facet": "Purpose",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanPurpose",
+      "id": "LoanPurpose",
+      "cluster": "LOAN",
+      "title": "loan purpose",
+      "description": "A selection of different types of loan purpose, being the purpose for which and manner in which loan (credit) draw-down amounts are to be used. This shows the purpose for which credit is to be used, and implies certain kinds of fact that relate to that specific type of loan e.g. mortgages. These are also identified as tranche types in tranches of a credit facility.",
+      "core": true
+    },
+    {
+      "facet": "Purpose",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/MortgageLoanPurpose",
+      "id": "MortgageLoanPurpose",
+      "cluster": "LOAN",
+      "title": "mortgage loan purpose",
+      "description": "the purpose for which mortgage loan proceeds will be used, such as real property purchase, dwelling construction, or loan refinancing",
+      "core": true
+    },
+    {
+      "facet": "Regulatory & disclosure (US)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract",
+      "id": "HMDA-CoveredLoanContract",
+      "cluster": "LOAN",
+      "title": "HMDA covered loan contract",
+      "description": "a closed-end mortgage loan or open-end line of credit that is not an excluded transaction for HMDA reporting under US section 1003.3(c) of the Revised Home Mortgage Disclosure Act of 2015",
+      "core": true
+    },
+    {
+      "facet": "Regulatory & disclosure (US)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report",
+      "id": "HMDA-Report",
+      "cluster": "LOAN",
+      "title": "HMDA report",
+      "description": "a report prepared to satisfy HMDA regulatory reporting requirements as described US section 1003.3(c) of the Revised Home Mortgage Disclosure Act of 2015",
+      "core": true
+    },
+    {
+      "facet": "Regulatory & disclosure (US)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegB",
+      "id": "RegB",
+      "cluster": "LOAN",
+      "title": "reg b",
+      "description": "US regulation concerning \"Equal credit opportunity act\" Electronic delivery of disclosures",
+      "core": true
+    },
+    {
+      "facet": "Regulatory & disclosure (US)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegZ",
+      "id": "RegZ",
+      "cluster": "LOAN",
+      "title": "reg z",
+      "description": "US Fed regulation \"Truth in Lending Act\" uniform standards for electronic delivery of disclosures",
+      "core": true
+    },
+    {
+      "facet": "Regulatory & disclosure (US)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw",
+      "id": "ConsumerCreditProtectionLaw",
+      "cluster": "LOAN",
+      "title": "consumer credit protection law",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Regulatory & disclosure (US)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/LoanRegulatoryRequirement",
+      "id": "LoanRegulatoryRequirement",
+      "cluster": "LOAN",
+      "title": "loan regulatory requirement",
+      "description": "A regulatory requirement defined in regulations by a comsumer credit act or other legislation.",
+      "core": true
+    },
+    {
+      "facet": "Regulatory & disclosure (US)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement",
+      "id": "BorrowerDisclosureRequirement",
+      "cluster": "LOAN",
+      "title": "borrower disclosure requirement",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Regulatory & disclosure (US)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/UniversalLoanIdentifier",
+      "id": "UniversalLoanIdentifier",
+      "cluster": "LOAN",
+      "title": "universal loan identifier",
+      "description": "unique identifier given to unequivocally identify a specific loan secured by real estate",
+      "core": true
+    },
+    {
+      "facet": "Regulatory & disclosure (US)",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/NMLSR-ID",
+      "id": "NMLSR-ID",
+      "cluster": "LOAN",
+      "title": "Nationwide Mortgage Licensing System and Registry Identifier",
+      "description": "the number permanently assigned by the Nationwide Mortgage Licensing System and Registry (NMLS) for each company, branch, and individual that maintains a single account on NMLS.",
+      "core": true
+    }
+  ]
+}
