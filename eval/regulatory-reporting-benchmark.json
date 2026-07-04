@@ -1,0 +1,668 @@
+{
+  "use_case": "Regulatory Reporting & Compliance",
+  "questions": [
+    {
+      "id": "reg-01",
+      "category": "authority",
+      "question": "What is a regulatory agency in FIBO?",
+      "grounds": [
+        "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency"
+      ],
+      "expected_keywords": [
+        "public authority",
+        "government agency",
+        "supervisory"
+      ]
+    },
+    {
+      "id": "reg-02",
+      "category": "authority",
+      "question": "What is a primary federal regulator?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/PrimaryFederalRegulator"
+      ],
+      "expected_keywords": [
+        "federal",
+        "regulatory agency",
+        "oversight"
+      ]
+    },
+    {
+      "id": "reg-03",
+      "category": "authority",
+      "question": "What is a self-regulating organization?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/SelfRegulatingOrganization"
+      ],
+      "expected_keywords": [
+        "non-governmental organization",
+        "regulatory authority",
+        "industry"
+      ]
+    },
+    {
+      "id": "reg-04",
+      "category": "authority",
+      "question": "What is a regulated exchange?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/RegulatedExchange"
+      ],
+      "expected_keywords": [
+        "regulated market",
+        "market operator"
+      ]
+    },
+    {
+      "id": "reg-05",
+      "category": "authority",
+      "question": "What is regulatory capacity?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulatoryCapacity"
+      ],
+      "expected_keywords": [
+        "capacity",
+        "regulate",
+        "certification"
+      ]
+    },
+    {
+      "id": "reg-06",
+      "category": "authority",
+      "question": "What is a regulatory service?",
+      "grounds": [
+        "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryService"
+      ],
+      "expected_keywords": [
+        "service",
+        "regulatory agency",
+        "supervision"
+      ]
+    },
+    {
+      "id": "reg-07",
+      "category": "authority",
+      "question": "What is a government agency in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentAgency"
+      ],
+      "expected_keywords": [
+        "organization",
+        "government",
+        "responsible"
+      ]
+    },
+    {
+      "id": "reg-08",
+      "category": "authority",
+      "question": "What is a government body?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentBody"
+      ],
+      "expected_keywords": [
+        "formal organization",
+        "agency",
+        "government"
+      ]
+    },
+    {
+      "id": "reg-09",
+      "category": "authority",
+      "question": "What is a fund supervisory authority?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundSupervisoryAuthority"
+      ],
+      "expected_keywords": [
+        "party",
+        "supervises",
+        "fund"
+      ]
+    },
+    {
+      "id": "reg-10",
+      "category": "authority",
+      "question": "What is a business registration authority?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority"
+      ],
+      "expected_keywords": [
+        "registration authority",
+        "registry",
+        "business entities"
+      ]
+    },
+    {
+      "id": "reg-11",
+      "category": "rule",
+      "question": "What is a regulation in FIBO terms?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Regulation"
+      ],
+      "expected_keywords": [
+        "rule",
+        "law"
+      ]
+    },
+    {
+      "id": "reg-12",
+      "category": "rule",
+      "question": "What is a regulation identifier?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulationIdentifier"
+      ],
+      "expected_keywords": [
+        "identifier",
+        "regulation"
+      ]
+    },
+    {
+      "id": "reg-13",
+      "category": "rule",
+      "question": "What is a regulation identification scheme?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulationIdentificationScheme"
+      ],
+      "expected_keywords": [
+        "scheme",
+        "identifiers",
+        "regulations"
+      ]
+    },
+    {
+      "id": "reg-14",
+      "category": "rule",
+      "question": "What is financial markets regulation?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/FinancialMarketsRegulation"
+      ],
+      "expected_keywords": [
+        "rules",
+        "regulators",
+        "financial markets"
+      ]
+    },
+    {
+      "id": "reg-15",
+      "category": "rule",
+      "question": "What is a consumer credit protection law?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw"
+      ],
+      "expected_keywords": [
+        "consumer protection law",
+        "consumer credit",
+        "disclosure"
+      ]
+    },
+    {
+      "id": "reg-16",
+      "category": "rule",
+      "question": "What is Regulation B?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegB"
+      ],
+      "expected_keywords": [
+        "equal credit opportunity"
+      ]
+    },
+    {
+      "id": "reg-17",
+      "category": "rule",
+      "question": "What is Regulation Z?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegZ"
+      ],
+      "expected_keywords": [
+        "truth in lending"
+      ]
+    },
+    {
+      "id": "reg-18",
+      "category": "rule",
+      "question": "What is a legal obligation in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation"
+      ],
+      "expected_keywords": [
+        "obligation",
+        "enforceable",
+        "court"
+      ]
+    },
+    {
+      "id": "reg-19",
+      "category": "report",
+      "question": "What is a report in FIBO terms?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/Report"
+      ],
+      "expected_keywords": [
+        "document",
+        "structured description"
+      ]
+    },
+    {
+      "id": "reg-20",
+      "category": "report",
+      "question": "What is a regulatory report?",
+      "grounds": [
+        "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport"
+      ],
+      "expected_keywords": [
+        "document",
+        "transparency",
+        "compliance"
+      ]
+    },
+    {
+      "id": "reg-21",
+      "category": "report",
+      "question": "What is a rating report?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingReport"
+      ],
+      "expected_keywords": [
+        "report",
+        "ratings"
+      ]
+    },
+    {
+      "id": "reg-22",
+      "category": "report",
+      "question": "What is a credit report?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditReport"
+      ],
+      "expected_keywords": [
+        "report",
+        "creditworthiness",
+        "borrower"
+      ]
+    },
+    {
+      "id": "reg-23",
+      "category": "report",
+      "question": "What is a credit report product?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditReportProduct"
+      ],
+      "expected_keywords": [
+        "credit report",
+        "marketplace"
+      ]
+    },
+    {
+      "id": "reg-24",
+      "category": "report",
+      "question": "What is a remittance report?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/PrivateLabelMBSIssuance/RemittanceReport"
+      ],
+      "expected_keywords": [
+        "report",
+        "information"
+      ]
+    },
+    {
+      "id": "reg-25",
+      "category": "report",
+      "question": "What is a HMDA report?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report"
+      ],
+      "expected_keywords": [
+        "report",
+        "HMDA",
+        "regulatory reporting"
+      ]
+    },
+    {
+      "id": "reg-26",
+      "category": "report",
+      "question": "What is an income verification report?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IncomeVerificationReport"
+      ],
+      "expected_keywords": [
+        "report",
+        "verify",
+        "income"
+      ]
+    },
+    {
+      "id": "reg-27",
+      "category": "report",
+      "question": "What is a disclosure provision?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/DisclosureProvision"
+      ],
+      "expected_keywords": [
+        "contractual provision",
+        "reveal",
+        "information"
+      ]
+    },
+    {
+      "id": "reg-28",
+      "category": "requirement",
+      "question": "What is a disclosure requirement?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/DisclosureRequirement"
+      ],
+      "expected_keywords": [
+        "requirement",
+        "disclosure",
+        "borrowers"
+      ]
+    },
+    {
+      "id": "reg-29",
+      "category": "requirement",
+      "question": "What is a borrower disclosure requirement?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement"
+      ],
+      "expected_keywords": [
+        "disclosure requirement",
+        "lender",
+        "loan product"
+      ]
+    },
+    {
+      "id": "reg-30",
+      "category": "requirement",
+      "question": "What is a product disclosure requirement?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ProductDisclosureRequirement"
+      ],
+      "expected_keywords": [
+        "requirement",
+        "representations",
+        "product"
+      ]
+    },
+    {
+      "id": "reg-31",
+      "category": "requirement",
+      "question": "What is a loan regulatory requirement?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/LoanRegulatoryRequirement"
+      ],
+      "expected_keywords": [
+        "regulatory requirement",
+        "regulations",
+        "consumer credit"
+      ]
+    },
+    {
+      "id": "reg-32",
+      "category": "requirement",
+      "question": "What is a consumer credit requirement?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditRequirement"
+      ],
+      "expected_keywords": [
+        "requirement",
+        "lender",
+        "loan"
+      ]
+    },
+    {
+      "id": "reg-33",
+      "category": "requirement",
+      "question": "What is a data protection requirement?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/DataProtectionRequirement"
+      ],
+      "expected_keywords": [
+        "requirements",
+        "data",
+        "individuals"
+      ]
+    },
+    {
+      "id": "reg-34",
+      "category": "mechanism",
+      "question": "What is a reporting party in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/ReportingParty"
+      ],
+      "expected_keywords": [
+        "party",
+        "report",
+        "regulatory"
+      ]
+    },
+    {
+      "id": "reg-35",
+      "category": "mechanism",
+      "question": "What is a trade reporting facility?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/TradeReportingFacility"
+      ],
+      "expected_keywords": [
+        "facility",
+        "reporting",
+        "transactions"
+      ]
+    },
+    {
+      "id": "reg-36",
+      "category": "mechanism",
+      "question": "What is an approved reporting mechanism?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/ApprovedReportingMechanism"
+      ],
+      "expected_keywords": [
+        "data reporting services provider",
+        "reporting",
+        "transactions"
+      ]
+    },
+    {
+      "id": "reg-37",
+      "category": "mechanism",
+      "question": "What is a data reporting services provider?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/DataReportingServicesProvider"
+      ],
+      "expected_keywords": [
+        "market data provider",
+        "reporting party",
+        "securities transactions"
+      ]
+    },
+    {
+      "id": "reg-38",
+      "category": "mechanism",
+      "question": "What is a reporting accountant?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/ReportingAccountant"
+      ],
+      "expected_keywords": [
+        "accountant",
+        "financial information",
+        "regulatory report"
+      ]
+    },
+    {
+      "id": "reg-39",
+      "category": "mechanism",
+      "question": "What is securities trades reporting?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradesReporting"
+      ],
+      "expected_keywords": [
+        "post-trade",
+        "reporting",
+        "securities trades"
+      ]
+    },
+    {
+      "id": "reg-40",
+      "category": "mechanism",
+      "question": "What is securities trade date position reporting?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradeDatePositionReporting"
+      ],
+      "expected_keywords": [
+        "reporting",
+        "securities positions",
+        "trade date"
+      ]
+    },
+    {
+      "id": "reg-41",
+      "category": "filing",
+      "question": "What does 'register with regulatory authority' mean?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/RegisterWithRegulatoryAuthority"
+      ],
+      "expected_keywords": [
+        "process step",
+        "issuer",
+        "regulatory authority"
+      ]
+    },
+    {
+      "id": "reg-42",
+      "category": "filing",
+      "question": "What are filing details?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/FilingDetails"
+      ],
+      "expected_keywords": [
+        "document",
+        "regulatory filing",
+        "authority"
+      ]
+    },
+    {
+      "id": "reg-43",
+      "category": "filing",
+      "question": "What is a Legal Entity Identifier (LEI)?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier"
+      ],
+      "expected_keywords": [
+        "organization identifier",
+        "legal person",
+        "ISO 17442"
+      ]
+    },
+    {
+      "id": "reg-44",
+      "category": "filing",
+      "question": "What is a legal entity identifier registry?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry"
+      ],
+      "expected_keywords": [
+        "registry",
+        "business entities",
+        "jurisdiction"
+      ]
+    },
+    {
+      "id": "reg-45",
+      "category": "filing",
+      "question": "What is a business register identifier?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegisterIdentifier"
+      ],
+      "expected_keywords": [
+        "identifier",
+        "business register"
+      ]
+    },
+    {
+      "id": "reg-46",
+      "category": "filing",
+      "question": "What is a universal loan identifier?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/UniversalLoanIdentifier"
+      ],
+      "expected_keywords": [
+        "unique identifier",
+        "loan",
+        "real estate"
+      ]
+    },
+    {
+      "id": "reg-47",
+      "category": "filing",
+      "question": "What is the NMLSR identifier?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/NMLSR-ID"
+      ],
+      "expected_keywords": [
+        "number",
+        "Nationwide Mortgage Licensing",
+        "company"
+      ]
+    },
+    {
+      "id": "reg-48",
+      "category": "action",
+      "question": "What is a regulatory action?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActions/RegulatoryAction"
+      ],
+      "expected_keywords": [
+        "action",
+        "regulatory agency",
+        "legal entity"
+      ]
+    },
+    {
+      "id": "reg-49",
+      "category": "action",
+      "question": "What is a disclosure action?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActions/DisclosureAction"
+      ],
+      "expected_keywords": [
+        "corporate action",
+        "disclose",
+        "holdings"
+      ]
+    },
+    {
+      "id": "reg-50",
+      "category": "action",
+      "question": "What is a credit rating agency?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditRatingAgency"
+      ],
+      "expected_keywords": [
+        "rating agency",
+        "creditworthiness",
+        "borrower"
+      ]
+    },
+    {
+      "id": "reg-51",
+      "category": "action",
+      "question": "What is a rating agency?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingAgency"
+      ],
+      "expected_keywords": [
+        "rating issuer",
+        "rating scale"
+      ]
+    },
+    {
+      "id": "reg-52",
+      "category": "action",
+      "question": "What is a HMDA covered loan contract?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract"
+      ],
+      "expected_keywords": [
+        "mortgage loan",
+        "line of credit",
+        "HMDA"
+      ]
+    }
+  ]
+}
