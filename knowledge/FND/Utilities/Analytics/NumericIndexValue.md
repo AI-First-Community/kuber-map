@@ -5,12 +5,12 @@ description: "numeric value of some aggregate relative to the value of that aggr
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/NumericIndexValue
 tags: [FND, Release]
 relations:
-  - {type: is-value-of, target: "/FND/Utilities/Analytics/QualifiedMeasure.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/QuantitiesAndUnits/ScalarQuantityValue.md", provenance: fibo}
+  - {type: is-value-of, target: "/FND/Utilities/Analytics/QualifiedMeasure.md", provenance: fibo}
 ---
 
 numeric value of some aggregate relative to the value of that aggregate as of some date
 
 ### Relationships
-- is-value-of: [QualifiedMeasure](/FND/Utilities/Analytics/QualifiedMeasure.md)
 - is-a: [ScalarQuantityValue](/CMNS/QuantitiesAndUnits/ScalarQuantityValue.md)
+- is-value-of: [QualifiedMeasure](/FND/Utilities/Analytics/QualifiedMeasure.md)

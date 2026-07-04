@@ -5,12 +5,12 @@ description: "party responsible for managing one or more rating schemes and pote
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingScalePublisher
 tags: [FND, Release]
 relations:
-  - {type: manages, target: "/FND/Arrangements/Ratings/RatingScale.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/PartiesAndSituations/PartyRole.md", provenance: fibo}
+  - {type: manages, target: "/FND/Arrangements/Ratings/RatingScale.md", provenance: fibo}
 ---
 
 party responsible for managing one or more rating schemes and potentially publishing ratings based on those schemes
 
 ### Relationships
-- manages: [RatingScale](/FND/Arrangements/Ratings/RatingScale.md)
 - is-a: [PartyRole](/CMNS/PartiesAndSituations/PartyRole.md)
+- manages: [RatingScale](/FND/Arrangements/Ratings/RatingScale.md)

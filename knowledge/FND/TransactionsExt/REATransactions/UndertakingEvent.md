@@ -6,13 +6,13 @@ resource: https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/REATrans
 tags: [FND, Informative]
 relations:
   - {type: is-a, target: "/FND/TransactionsExt/REATransactions/TransactionBusinessEvent.md", provenance: fibo}
-  - {type: triggers, target: "/FND/TransactionsExt/REATransactions/LedgerEntry.md", provenance: fibo}
   - {type: is-a, target: "/FND/TransactionsExt/REATransactions/Undertaking.md", provenance: fibo}
+  - {type: triggers, target: "/FND/TransactionsExt/REATransactions/LedgerEntry.md", provenance: fibo}
 ---
 
 Something which occurs at a point in time, at which a party makes some commitment to some other party.
 
 ### Relationships
 - is-a: [TransactionBusinessEvent](/FND/TransactionsExt/REATransactions/TransactionBusinessEvent.md)
-- triggers: [LedgerEntry](/FND/TransactionsExt/REATransactions/LedgerEntry.md)
 - is-a: [Undertaking](/FND/TransactionsExt/REATransactions/Undertaking.md)
+- triggers: [LedgerEntry](/FND/TransactionsExt/REATransactions/LedgerEntry.md)

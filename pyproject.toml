@@ -11,6 +11,13 @@ dependencies = ["rdflib>=7.0"]
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "ruff>=0.6"]
 
+# The etl/ scripts are executed directly (python etl/extract.py), not imported as an
+# installed package. `-e .` exists only to pull in the dependencies above, so disable
+# setuptools' flat-layout package auto-discovery (it errors on multiple top-level dirs
+# under newer setuptools: etl/, curation/, knowledge/).
+[tool.setuptools]
+py-modules = []
+
 [tool.ruff]
 line-length = 100
 target-version = "py311"

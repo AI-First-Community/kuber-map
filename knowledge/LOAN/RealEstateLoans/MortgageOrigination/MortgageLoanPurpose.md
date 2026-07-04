@@ -5,12 +5,12 @@ description: "the purpose for which mortgage loan proceeds will be used, such as
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/MortgageLoanPurpose
 tags: [LOAN, Provisional]
 relations:
-  - {type: is-a, target: "/CMNS/Classifiers/Classifier.md", provenance: fibo}
   - {type: is-a, target: "/LOAN/LoansSpecific/LoanProducts/LoanPurpose.md", provenance: fibo}
+  - {type: is-a, target: "/CMNS/Classifiers/Classifier.md", provenance: fibo}
 ---
 
 the purpose for which mortgage loan proceeds will be used, such as real property purchase, dwelling construction, or loan refinancing
 
 ### Relationships
-- is-a: [Classifier](/CMNS/Classifiers/Classifier.md)
 - is-a: [LoanPurpose](/LOAN/LoansSpecific/LoanProducts/LoanPurpose.md)
+- is-a: [Classifier](/CMNS/Classifiers/Classifier.md)

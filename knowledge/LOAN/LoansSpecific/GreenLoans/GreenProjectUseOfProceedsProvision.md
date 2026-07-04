@@ -5,12 +5,12 @@ description: "use of proceeds provision specifying that funds obtained through f
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/GreenLoans/GreenProjectUseOfProceedsProvision
 tags: [LOAN, Release]
 relations:
-  - {type: governs, target: "/LOAN/LoansSpecific/GreenLoans/GreenProject.md", provenance: fibo}
   - {type: is-a, target: "/FND/Agreements/Contracts/UseOfProceedsProvision.md", provenance: fibo}
+  - {type: governs, target: "/LOAN/LoansSpecific/GreenLoans/GreenProject.md", provenance: fibo}
 ---
 
 use of proceeds provision specifying that funds obtained through financing, such as through a credit agreement, offering, warrant, or other instrument are intended to be used for Green Projects (including other related and supporting expenditures, including research and development)
 
 ### Relationships
-- governs: [GreenProject](/LOAN/LoansSpecific/GreenLoans/GreenProject.md)
 - is-a: [UseOfProceedsProvision](/FND/Agreements/Contracts/UseOfProceedsProvision.md)
+- governs: [GreenProject](/LOAN/LoansSpecific/GreenLoans/GreenProject.md)

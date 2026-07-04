@@ -6,13 +6,13 @@ resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplic
 tags: [LOAN, Provisional]
 relations:
   - {type: is-a, target: "/FND/Accounting/AccountingEquity/Income.md", provenance: fibo}
-  - {type: has-party-role, target: "/FBC/DebtAndEquities/Debt/Borrower.md", provenance: fibo}
   - {type: is-a, target: "/FND/Accounting/CurrencyAmount/MonetaryAmount.md", provenance: fibo}
+  - {type: has-party-role, target: "/FBC/DebtAndEquities/Debt/Borrower.md", provenance: fibo}
 ---
 
 total monthly qualifying income of a potential borrower
 
 ### Relationships
 - is-a: [Income](/FND/Accounting/AccountingEquity/Income.md)
-- has-party-role: [Borrower](/FBC/DebtAndEquities/Debt/Borrower.md)
 - is-a: [MonetaryAmount](/FND/Accounting/CurrencyAmount/MonetaryAmount.md)
+- has-party-role: [Borrower](/FBC/DebtAndEquities/Debt/Borrower.md)

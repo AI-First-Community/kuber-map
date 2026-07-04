@@ -3,3 +3,4 @@ fibo-source/
 __pycache__/
 *.pyc
 out/
+*.egg-info/

@@ -17,7 +17,7 @@ import sys
 from collections import Counter
 
 from fibo_ns import cluster_of, local_name, normalize_edge_type
-from rdflib import OWL, RDF, RDFS, BNode, Graph, URIRef
+from rdflib import OWL, RDF, RDFS, BNode, Graph, Literal, URIRef
 from rdflib.namespace import SKOS
 
 FILLER_PREDS = [OWL.someValuesFrom, OWL.allValuesFrom, OWL.onClass, OWL.hasValue]
@@ -64,6 +64,33 @@ def one(g, s, p):
     return None
 
 
+def _lang_rank(lang):
+    lang = (lang or "").lower()
+    if lang == "en-us":
+        return 0
+    if lang == "en":
+        return 1
+    if lang.startswith("en"):
+        return 2
+    if lang == "":
+        return 3
+    return 4
+
+
+def best_literal(g, s, p):
+    """Deterministically pick ONE literal among possibly several for (s, p).
+
+    FIBO ships multiple values for the same annotation (e.g. rdfs:label en-US 'program
+    identifier' vs en-GB 'programme identifier', or two skos:definitions after ontology
+    merge). rdflib yields them in unstable order, so `one()` produced non-reproducible
+    bundles. Prefer en-US, then en, then other en-*, then untagged, then any; break ties
+    on the string so the choice is fully deterministic."""
+    objs = [o for o in g.objects(s, p) if isinstance(o, Literal)]
+    if not objs:
+        return None
+    return min(objs, key=lambda o: (_lang_rank(getattr(o, "language", None)), str(o)))
+
+
 def restriction_relation(g, restr):
     prop = one(g, restr, OWL.onProperty)
     if prop is None or not isinstance(prop, URIRef):
@@ -80,7 +107,7 @@ def extract(g, class_source):
 
     def edge_type(p):
         if p not in prop_label:
-            lbl = one(g, p, RDFS.label)
+            lbl = best_literal(g, p, RDFS.label)
             prop_label[p] = normalize_edge_type(str(lbl) if lbl else local_name(p))
         return prop_label[p]
 
@@ -88,8 +115,8 @@ def extract(g, class_source):
     for c_uri in sorted(class_source):
         c = URIRef(c_uri)
         src = class_source[c_uri]
-        label = one(g, c, RDFS.label)
-        definition = one(g, c, SKOS.definition)
+        label = best_literal(g, c, RDFS.label)
+        definition = best_literal(g, c, SKOS.definition)
         seen = set()
         relations = []
         for sup in g.objects(c, RDFS.subClassOf):
@@ -113,6 +140,8 @@ def extract(g, class_source):
                 relations.append({"type": et, "edge": local_name(prop), "quantifier": quant,
                                   "target": str(filler), "target_cluster": cluster_of(str(filler)),
                                   "provenance": "fibo"})
+        # Stable, reproducible order: is-a first, then typed edges by (type, target).
+        relations.sort(key=lambda r: (r["type"] != "is-a", r["type"], r["target"]))
         records.append({"iri": c_uri, "id": local_name(c),
                         "title": str(label) if label else local_name(c),
                         "description": str(definition) if definition else None,
