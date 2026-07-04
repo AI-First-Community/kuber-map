@@ -35,8 +35,38 @@ citation hallucinations.
 **Reproduce:** `EVAL_LLM_CMD='python eval/openai_cli.py --model gpt-4o-mini' python eval/harness.py --adapter llm`
 (benchmark `eval/benchmark.json`, harness `eval/harness.py`, 53 questions grounded in the pack).
 
-**Next:** corroborate with a stronger model (gpt-4o) and a second use case (KYC); optionally surface
-the headline stat on the landing as a credibility signal.
+### Corroboration — second use case (KYC / beneficial ownership)
+
+Date: 2026-07-04 · Model: `gpt-4o-mini` · n = 50 KYC questions · Verdict: **✅ The lift generalizes — it is not a loan-domain artifact.**
+
+The same experiment on an independent use case (50 questions on entity resolution, beneficial
+ownership, control, and identifiers, grounded in `export/kyc/pack.json`), with a domain-neutral
+system prompt. If grounding only helped because the loan questions were tuned to the loan pack, a
+different domain would wash the lift out. It did not — the lift is **larger**.
+
+| Metric | Ungrounded | Grounded | Δ |
+|---|---|---|---|
+| **Accuracy** (correct ≥ 60% keyword coverage) | 44.0% | **92.0%** | **+48.0 pt** |
+| **Auditable** (answer carries a valid FIBO IRI citation) | 0% | **92.0%** | +92.0 |
+| Cite on-target (cites the grounding concept) | 0% | 84.0% | +84.0 |
+| **Hallucinated citation** (cites an IRI not in the pack) | **90.0%** | **0.0%** | −90.0 |
+
+**Reading the numbers honestly:**
+- **+48-point accuracy lift** — even larger than loan's +39.6, on FIBO-specific control/ownership
+  concepts (de facto vs de jure control, entity controlling party, ownership control situation)
+  where an ungrounded model answers loosely.
+- **Ungrounded hallucinated a FIBO-looking IRI 90% of the time** here (vs 5.7% on loan) — with no
+  context and questions that beg for a citation, the bare model confidently fabricates IRIs. Grounded
+  hallucination is **0%**. This is the audit-safety case in one number.
+- Grounded auditability is **92%** (46 of 50 cite a real pack IRI); the 4 misses are retrieval gaps
+  where the top-k context did not surface the exact grounding concept, not fabrications.
+- Same caveats as above: single run, one model, deterministic keyword scoring — directional.
+
+**Reproduce:** `EVAL_LLM_CMD='./.venv/bin/python eval/openai_cli.py' ./.venv/bin/python eval/harness.py --benchmark eval/kyc-benchmark.json --pack export/kyc/pack.json --adapter llm --model gpt-4o-mini`
+
+**Two use cases, same conclusion:** grounding lifts accuracy **+39.6 / +48.0 pt** and takes auditability
+from **0% → 98.1% / 92.0%** while eliminating grounded IRI hallucination. **Next:** corroborate with a
+stronger model (gpt-4o), and/or a third (securities) benchmark.
 
 ---
 

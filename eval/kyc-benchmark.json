@@ -1,0 +1,656 @@
+{
+  "use_case": "KYC & Beneficial Ownership",
+  "questions": [
+    {
+      "id": "kyc-01",
+      "category": "identifier",
+      "question": "What is a Legal Entity Identifier (LEI) in FIBO, and what does it identify?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier"
+      ],
+      "expected_keywords": [
+        "organization identifier",
+        "legal person",
+        "ISO 17442"
+      ]
+    },
+    {
+      "id": "kyc-02",
+      "category": "identifier",
+      "question": "What is a Business Identifier Code (BIC) used for?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCode"
+      ],
+      "expected_keywords": [
+        "international identifier",
+        "institutions",
+        "automated processing"
+      ]
+    },
+    {
+      "id": "kyc-03",
+      "category": "identifier",
+      "question": "What does an entity legal form identifier denote?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/EntityLegalFormIdentifier"
+      ],
+      "expected_keywords": [
+        "code",
+        "entity legal form",
+        "ISO 20275"
+      ]
+    },
+    {
+      "id": "kyc-04",
+      "category": "identifier",
+      "question": "What is a legal entity identifier scheme?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifierScheme"
+      ],
+      "expected_keywords": [
+        "scheme",
+        "legal entity identifier",
+        "identify"
+      ]
+    },
+    {
+      "id": "kyc-05",
+      "category": "identifier",
+      "question": "What is a client identifier?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/ClientIdentifier"
+      ],
+      "expected_keywords": [
+        "sequence of characters",
+        "client",
+        "organization"
+      ]
+    },
+    {
+      "id": "kyc-06",
+      "category": "identifier",
+      "question": "What is a customer identifier?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/CustomerIdentifier"
+      ],
+      "expected_keywords": [
+        "sequence of characters",
+        "customer",
+        "organization"
+      ]
+    },
+    {
+      "id": "kyc-07",
+      "category": "identifier",
+      "question": "What is an identity document used for in onboarding?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/IdentityDocument"
+      ],
+      "expected_keywords": [
+        "legal document",
+        "verify",
+        "identity"
+      ]
+    },
+    {
+      "id": "kyc-08",
+      "category": "identifier",
+      "question": "What is a driver's license identifier?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DriversLicenseIdentifier"
+      ],
+      "expected_keywords": [
+        "identifier",
+        "license",
+        "identification"
+      ]
+    },
+    {
+      "id": "kyc-09",
+      "category": "ownership",
+      "question": "Who is a beneficial owner in FIBO terms?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwner"
+      ],
+      "expected_keywords": [
+        "benefits of ownership",
+        "income",
+        "title"
+      ]
+    },
+    {
+      "id": "kyc-10",
+      "category": "ownership",
+      "question": "What does FIBO model as beneficial ownership?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwnership"
+      ],
+      "expected_keywords": [
+        "situation",
+        "benefits of ownership",
+        "income"
+      ]
+    },
+    {
+      "id": "kyc-11",
+      "category": "ownership",
+      "question": "What is ownership in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Ownership"
+      ],
+      "expected_keywords": [
+        "legal title",
+        "right",
+        "transfer"
+      ]
+    },
+    {
+      "id": "kyc-12",
+      "category": "ownership",
+      "question": "What is entity ownership?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/OwnershipParties/EntityOwnership"
+      ],
+      "expected_keywords": [
+        "ownership",
+        "interest",
+        "formal organization"
+      ]
+    },
+    {
+      "id": "kyc-13",
+      "category": "ownership",
+      "question": "What is an ownership control situation?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/OwnershipAndControl/OwnershipControlSituation"
+      ],
+      "expected_keywords": [
+        "situation",
+        "owns",
+        "controls"
+      ]
+    },
+    {
+      "id": "kyc-14",
+      "category": "ownership",
+      "question": "What is controlling equity?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/OwnershipParties/ControllingEquity"
+      ],
+      "expected_keywords": [
+        "shareholders",
+        "equity",
+        "control"
+      ]
+    },
+    {
+      "id": "kyc-15",
+      "category": "control",
+      "question": "What is control in FIBO terms?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/Control"
+      ],
+      "expected_keywords": [
+        "power",
+        "direct",
+        "management",
+        "policies"
+      ]
+    },
+    {
+      "id": "kyc-16",
+      "category": "control",
+      "question": "What is de facto control?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeFactoControl"
+      ],
+      "expected_keywords": [
+        "informally",
+        "accepted",
+        "not formally recognized"
+      ]
+    },
+    {
+      "id": "kyc-17",
+      "category": "control",
+      "question": "What is de jure control?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeJureControl"
+      ],
+      "expected_keywords": [
+        "matter of law",
+        "legal",
+        "control"
+      ]
+    },
+    {
+      "id": "kyc-18",
+      "category": "control",
+      "question": "What is a controlling party?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ControllingParty"
+      ],
+      "expected_keywords": [
+        "actor",
+        "control",
+        "situation"
+      ]
+    },
+    {
+      "id": "kyc-19",
+      "category": "control",
+      "question": "What is a majority controlling party?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/MajorityControllingParty"
+      ],
+      "expected_keywords": [
+        "direct",
+        "management",
+        "power"
+      ]
+    },
+    {
+      "id": "kyc-20",
+      "category": "control",
+      "question": "What is an entity controlling party?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/EntityControllingParty"
+      ],
+      "expected_keywords": [
+        "authority",
+        "control",
+        "legal entity"
+      ]
+    },
+    {
+      "id": "kyc-21",
+      "category": "control",
+      "question": "What is a controlled party?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/ControlledParty"
+      ],
+      "expected_keywords": [
+        "authority",
+        "influence",
+        "situation"
+      ]
+    },
+    {
+      "id": "kyc-22",
+      "category": "control",
+      "question": "What is a de facto controlling interest party?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/DeFactoControllingInterestParty"
+      ],
+      "expected_keywords": [
+        "control",
+        "entity",
+        "legal means"
+      ]
+    },
+    {
+      "id": "kyc-23",
+      "category": "control",
+      "question": "What is a de jure controlling interest party?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/DeJureControllingInterestParty"
+      ],
+      "expected_keywords": [
+        "legal authority",
+        "control"
+      ]
+    },
+    {
+      "id": "kyc-24",
+      "category": "control",
+      "question": "What is board composition control?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/BoardCompositionControl"
+      ],
+      "expected_keywords": [
+        "shareholder",
+        "board",
+        "control"
+      ]
+    },
+    {
+      "id": "kyc-25",
+      "category": "control",
+      "question": "How is contractual control established?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/ContractualControl"
+      ],
+      "expected_keywords": [
+        "control",
+        "contract",
+        "terms"
+      ]
+    },
+    {
+      "id": "kyc-26",
+      "category": "entity",
+      "question": "What is a legal person in FIBO?",
+      "grounds": [
+        "https://www.omg.org/spec/Commons/Organizations/LegalPerson"
+      ],
+      "expected_keywords": [
+        "rights",
+        "obligations",
+        "law"
+      ]
+    },
+    {
+      "id": "kyc-27",
+      "category": "entity",
+      "question": "What is a legal entity?",
+      "grounds": [
+        "https://www.omg.org/spec/Commons/Organizations/LegalEntity"
+      ],
+      "expected_keywords": [
+        "legal person",
+        "corporation",
+        "contracts"
+      ]
+    },
+    {
+      "id": "kyc-28",
+      "category": "entity",
+      "question": "What is a corporation in FIBO terms?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation"
+      ],
+      "expected_keywords": [
+        "formal organization",
+        "legal entity",
+        "artificial person",
+        "owners"
+      ]
+    },
+    {
+      "id": "kyc-29",
+      "category": "entity",
+      "question": "What distinguishes a for-profit corporation?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/ForProfitCorporation"
+      ],
+      "expected_keywords": [
+        "corporation",
+        "money",
+        "financial benefit"
+      ]
+    },
+    {
+      "id": "kyc-30",
+      "category": "entity",
+      "question": "What is a not-for-profit corporation?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/NotForProfitCorporation"
+      ],
+      "expected_keywords": [
+        "corporation",
+        "charitable",
+        "educational"
+      ]
+    },
+    {
+      "id": "kyc-31",
+      "category": "entity",
+      "question": "What is a formal organization?",
+      "grounds": [
+        "https://www.omg.org/spec/Commons/Organizations/FormalOrganization"
+      ],
+      "expected_keywords": [
+        "organization",
+        "legal jurisdiction",
+        "rights",
+        "responsibilities"
+      ]
+    },
+    {
+      "id": "kyc-32",
+      "category": "entity",
+      "question": "What is a non-governmental organization?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NonGovernmentalOrganization"
+      ],
+      "expected_keywords": [
+        "not-for-profit",
+        "independently",
+        "government"
+      ]
+    },
+    {
+      "id": "kyc-33",
+      "category": "entity",
+      "question": "What is an organization in FIBO?",
+      "grounds": [
+        "https://www.omg.org/spec/Commons/Organizations/Organization"
+      ],
+      "expected_keywords": [
+        "framework",
+        "authority",
+        "act"
+      ]
+    },
+    {
+      "id": "kyc-34",
+      "category": "entity",
+      "question": "What is a partnership in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/Partnership"
+      ],
+      "expected_keywords": [
+        "association",
+        "legal persons",
+        "co-owners",
+        "business"
+      ]
+    },
+    {
+      "id": "kyc-35",
+      "category": "entity",
+      "question": "What is a general partnership?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/GeneralPartnership"
+      ],
+      "expected_keywords": [
+        "general partners",
+        "assets",
+        "profits",
+        "liabilities"
+      ]
+    },
+    {
+      "id": "kyc-36",
+      "category": "entity",
+      "question": "What is a limited partnership?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/LimitedPartnership"
+      ],
+      "expected_keywords": [
+        "general partner",
+        "limited partner"
+      ]
+    },
+    {
+      "id": "kyc-37",
+      "category": "entity",
+      "question": "What is a limited liability partnership?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/LimitedLiabilityPartnership"
+      ],
+      "expected_keywords": [
+        "general partners",
+        "protection",
+        "liability"
+      ]
+    },
+    {
+      "id": "kyc-38",
+      "category": "entity",
+      "question": "What is a trust in FIBO terms?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/Trust"
+      ],
+      "expected_keywords": [
+        "fiduciary",
+        "trustor",
+        "trustee"
+      ]
+    },
+    {
+      "id": "kyc-39",
+      "category": "entity",
+      "question": "What is a living trust?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/LivingTrust"
+      ],
+      "expected_keywords": [
+        "trustee",
+        "manage",
+        "responsibility"
+      ]
+    },
+    {
+      "id": "kyc-40",
+      "category": "entity",
+      "question": "What is an irrevocable trust?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/IrrevocableTrust"
+      ],
+      "expected_keywords": [
+        "trust",
+        "modified",
+        "terminated"
+      ]
+    },
+    {
+      "id": "kyc-41",
+      "category": "party",
+      "question": "What is a party in FIBO?",
+      "grounds": [
+        "https://www.omg.org/spec/Commons/PartiesAndSituations/Party"
+      ],
+      "expected_keywords": [
+        "person",
+        "organization"
+      ]
+    },
+    {
+      "id": "kyc-42",
+      "category": "party",
+      "question": "What is a customer in FIBO terms?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Customer"
+      ],
+      "expected_keywords": [
+        "party",
+        "products",
+        "choose"
+      ]
+    },
+    {
+      "id": "kyc-43",
+      "category": "party",
+      "question": "What is a client?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Client"
+      ],
+      "expected_keywords": [
+        "party",
+        "professional services",
+        "relationship"
+      ]
+    },
+    {
+      "id": "kyc-44",
+      "category": "party",
+      "question": "What is an account holder?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountHolder"
+      ],
+      "expected_keywords": [
+        "party",
+        "owns",
+        "account"
+      ]
+    },
+    {
+      "id": "kyc-45",
+      "category": "party",
+      "question": "What is a customer account holder?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccountHolder"
+      ],
+      "expected_keywords": [
+        "party",
+        "owns",
+        "customer account"
+      ]
+    },
+    {
+      "id": "kyc-46",
+      "category": "party",
+      "question": "What is a legally competent natural person?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/LegallyCompetentNaturalPerson"
+      ],
+      "expected_keywords": [
+        "person",
+        "competent",
+        "contract"
+      ]
+    },
+    {
+      "id": "kyc-47",
+      "category": "party",
+      "question": "What is a contract party?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractParty"
+      ],
+      "expected_keywords": [
+        "legally competent",
+        "binding agreement",
+        "obligations"
+      ]
+    },
+    {
+      "id": "kyc-48",
+      "category": "registry",
+      "question": "What is a legal entity identifier registry?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry"
+      ],
+      "expected_keywords": [
+        "registry",
+        "business entities",
+        "jurisdiction"
+      ]
+    },
+    {
+      "id": "kyc-49",
+      "category": "registry",
+      "question": "What is a business registration authority?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority"
+      ],
+      "expected_keywords": [
+        "registration authority",
+        "registry",
+        "business entities"
+      ]
+    },
+    {
+      "id": "kyc-50",
+      "category": "registry",
+      "question": "What is a business register identifier?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegisterIdentifier"
+      ],
+      "expected_keywords": [
+        "identifier",
+        "business register"
+      ]
+    }
+  ]
+}

@@ -7,3 +7,4 @@ out/
 commons-source/
 .env
 eval/result.json
+eval/kyc-result.json

@@ -20,9 +20,9 @@ import subprocess
 
 RETRIEVE_K = 4
 
-SYSTEM = ("You are a financial loan-underwriting assistant. Answer concisely. When the "
-          "provided FIBO grounding context is relevant, cite the exact resource IRI(s) you "
-          "relied on. Do not invent IRIs.")
+SYSTEM = ("You are a financial-semantics assistant with expertise in the FIBO ontology. "
+          "Answer concisely. When the provided FIBO grounding context is relevant, cite the "
+          "exact resource IRI(s) you relied on. Do not invent IRIs.")
 
 # Grounded runs only: force an explicit, verbatim citation line so every answer is auditable.
 GROUNDED_INSTRUCTION = (
