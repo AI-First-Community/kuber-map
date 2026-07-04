@@ -170,29 +170,62 @@
   <footer>Open&nbsp;source · MIT · Curated FIBO for financial AI &nbsp;·&nbsp; <a href="https://github.com/AI-First-Community/Bodhi" target="_blank" rel="noopener">inspired by <b>Bodhi&nbsp;Map</b></a></footer>
 
   <script>
+    // FinTech ambient background: money symbols + coins gently "flowing" upward, with a
+    // few sparkle dots. Subtle (low alpha) so it never competes with the emblem or text.
     (function () {
       var c = document.getElementById('spark'), x = c.getContext('2d');
       var DPR = Math.min(window.devicePixelRatio || 1, 2), W, H, parts;
       var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var SYMS = ['₹', '$', '€', '£', '¥', '₿', '%'];   // ₹ $ € £ ¥ ₿ %
       function rnd(a, b){ return a + Math.random() * (b - a); }
       function size(){ W = c.width = innerWidth * DPR; H = c.height = innerHeight * DPR; }
-      function make(){ return { x: rnd(0, W), y: rnd(0, H), r: rnd(.5, 1.8) * DPR, vy: -rnd(.04, .26) * DPR,
-        vx: rnd(-.08, .08) * DPR, ph: rnd(0, 6.28), tw: rnd(.6, 1.7), gold: Math.random() < 0.42 }; }
-      function init(){ size(); var n = Math.max(30, Math.min(80, Math.floor(innerWidth / 18))); parts = []; for (var i=0;i<n;i++) parts.push(make()); }
+      function make(reset){
+        var roll = Math.random();
+        var kind = roll < 0.5 ? 'sym' : (roll < 0.72 ? 'coin' : 'dot');
+        return {
+          kind: kind,
+          x: rnd(0, W), y: reset ? H + rnd(10, 60) * DPR : rnd(0, H),
+          sz: (kind === 'dot' ? rnd(0.6, 1.9) : rnd(11, 26)) * DPR,
+          vy: -rnd(0.06, 0.34) * DPR,            // rising = money flowing up
+          vx: rnd(-0.07, 0.07) * DPR,
+          ph: rnd(0, 6.28), tw: rnd(0.5, 1.5),
+          glyph: SYMS[(Math.random() * SYMS.length) | 0],
+          gold: Math.random() < 0.62,
+          rot: rnd(-0.35, 0.35)
+        };
+      }
+      function init(){ size(); var n = Math.max(26, Math.min(70, Math.floor(innerWidth / 22))); parts = []; for (var i = 0; i < n; i++) parts.push(make(false)); }
+      function drawOne(p, t){
+        var col = p.gold ? '#f3c969' : '#7df0aa';
+        if (p.kind === 'dot'){
+          x.globalAlpha = 0.22 + 0.4 * (0.5 + 0.5 * Math.sin(t * p.tw + p.ph));
+          x.fillStyle = col; x.beginPath(); x.arc(p.x, p.y, p.sz, 0, 6.2832); x.fill();
+        } else if (p.kind === 'coin'){
+          x.globalAlpha = 0.10 + 0.10 * (0.5 + 0.5 * Math.sin(t * p.tw + p.ph));
+          x.strokeStyle = col; x.lineWidth = 1.4 * DPR;
+          x.beginPath(); x.arc(p.x, p.y, p.sz * 0.5, 0, 6.2832); x.stroke();
+          x.beginPath(); x.arc(p.x, p.y, p.sz * 0.28, 0, 6.2832); x.stroke();
+        } else {
+          x.globalAlpha = 0.09 + 0.11 * (0.5 + 0.5 * Math.sin(t * p.tw + p.ph));
+          x.fillStyle = col;
+          x.font = '700 ' + p.sz.toFixed(0) + "px Manrope,-apple-system,system-ui,sans-serif";
+          x.textAlign = 'center'; x.textBaseline = 'middle';
+          x.save(); x.translate(p.x, p.y); x.rotate(p.rot); x.fillText(p.glyph, 0, 0); x.restore();
+        }
+      }
       var t = 0;
       function frame(){
-        x.clearRect(0,0,W,H); t += 0.016;
-        for (var i=0;i<parts.length;i++){
+        x.clearRect(0, 0, W, H); t += 0.016;
+        for (var i = 0; i < parts.length; i++){
           var p = parts[i]; p.y += p.vy; p.x += p.vx;
-          if (p.y < -8) { parts[i] = make(); parts[i].y = H + 8; }
-          x.globalAlpha = 0.25 + 0.4 * (0.5 + 0.5 * Math.sin(t * p.tw + p.ph));
-          x.fillStyle = p.gold ? '#f3c969' : '#7df0aa';
-          x.beginPath(); x.arc(p.x, p.y, p.r, 0, 6.2832); x.fill();
+          if (p.y < -30 * DPR) parts[i] = make(true);
+          drawOne(parts[i], t);
         }
+        x.globalAlpha = 1;
         requestAnimationFrame(frame);
       }
       init();
-      if (reduce){ x.globalAlpha=.5; for (var i=0;i<parts.length;i++){ x.fillStyle=parts[i].gold?'#f3c969':'#7df0aa'; x.beginPath(); x.arc(parts[i].x,parts[i].y,parts[i].r,0,6.2832); x.fill(); } }
+      if (reduce){ for (var i = 0; i < parts.length; i++) drawOne(parts[i], 0); x.globalAlpha = 1; }
       else frame();
       window.addEventListener('resize', init);
     })();
