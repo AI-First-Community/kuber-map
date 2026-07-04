@@ -4,6 +4,8 @@ title: "transaction category"
 description: "high-level classifier for an individual transaction"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/TransactionCategory
 tags: [FBC, Release]
+examples:
+  - "credit, debit, fee"
 relations:
   - {type: is-a, target: "/CMNS/Classifiers/Classifier.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/CodesAndCodeSets/CodeElement.md", provenance: fibo}

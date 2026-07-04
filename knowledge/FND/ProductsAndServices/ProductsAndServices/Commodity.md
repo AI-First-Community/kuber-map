@@ -4,6 +4,7 @@ title: "commodity"
 description: "material resource used in commerce that is interchangeable with other commodities of the same type"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Commodity
 tags: [FND, Release]
+detail: "Commodities are most often used as inputs in the production of other goods or services. The quality of a given commodity may differ slightly, but it is essentially uniform across producers."
 relations:
   - {type: is-a, target: "/FND/ProductsAndServices/ProductsAndServices/Good.md", provenance: fibo}
 ---

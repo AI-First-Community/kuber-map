@@ -4,6 +4,8 @@ title: "person"
 description: "individual human being, with consciousness of self"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/Person
 tags: [FND, Release]
+synonyms:
+  - "natural person"
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/Party.md", provenance: fibo}
   - {type: has-age, target: "/FND/DatesAndTimes/FinancialDates/Age.md", provenance: fibo}

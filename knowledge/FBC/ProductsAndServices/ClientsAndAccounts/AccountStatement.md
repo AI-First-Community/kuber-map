@@ -4,6 +4,7 @@ title: "account statement"
 description: "periodic summary of account activity for a given period of time"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountStatement
 tags: [FBC, Release]
+detail: "Common kinds of account statements include checking account statements, usually provided monthly, and brokerage account statements, which are provided monthly or quarterly, depending on the terms of the account agreement. Monthly credit card bills are also considered account statements."
 relations:
   - {type: is-a, target: "/CMNS/Documents/LegalDocument.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/Documents/Record.md", provenance: fibo}

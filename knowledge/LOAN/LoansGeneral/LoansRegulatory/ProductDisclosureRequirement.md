@@ -4,6 +4,7 @@ title: "product disclosure requirement"
 description: "A requirement governing what representations can be made about a product, as it affects the consumer."
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ProductDisclosureRequirement
 tags: [LOAN, Provisional]
+detail: "There are also rules which encompass limitations on how you might attach loans and liens to principle dwellings, e.g. when or whether you can foreclose on someone's principal dwelling with impunity; what rights the consumer has - this last will be a separate kind of regulation."
 relations:
   - {type: is-a, target: "/LOAN/LoansGeneral/LoansRegulatory/DisclosureRequirement.md", provenance: fibo}
   - {type: governs, target: "/LOAN/LoansGeneral/LoansRegulatory/GoodFaithEstimate.md", provenance: fibo}

@@ -5,6 +5,9 @@ description: "a closed-end mortgage loan or open-end line of credit that is not 
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "A closed-end home-purchase mortgage originated by a covered bank."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/LOAN/RealEstateLoans/Mortgages/LoanSecuredByRealEstate.md", provenance: fibo}
   - {type: is-classified-by, target: "/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HowSubmitted.md", provenance: fibo}

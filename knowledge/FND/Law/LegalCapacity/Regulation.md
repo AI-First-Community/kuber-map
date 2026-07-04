@@ -4,6 +4,7 @@ title: "regulation"
 description: "a rule used to carry out a law"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Regulation
 tags: [FND, Release]
+detail: "Many government agencies issue regulations to administer laws."
 relations:
   - {type: is-a, target: "/FND/Law/LegalCapacity/LegalConstruct.md", provenance: fibo}
   - {type: is-applicable-in, target: "/CMNS/RegulatoryAgencies/Jurisdiction.md", provenance: fibo}

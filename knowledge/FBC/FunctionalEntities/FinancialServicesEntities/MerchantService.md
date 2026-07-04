@@ -4,6 +4,8 @@ title: "merchant service"
 description: "financial service provided by a financial institution to a merchant or other business, including but not limited to managing financial transactions via a secure channel"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/MerchantService
 tags: [FBC, Release]
+examples:
+  - "Example merchant services include credit and debit card processing, check guarantee and conversion services, point of sale (PoS) systems, gift card and loyalty programs, online transaction processing, etc."
 relations:
   - {type: is-a, target: "/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialService.md", provenance: fibo}
 ---

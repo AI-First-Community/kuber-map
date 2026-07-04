@@ -5,6 +5,9 @@ description: "an obligation or duty that is enforceable by a court"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation
 tags: [FND, Release]
 core: true
+examples:
+  - "The borrower's court-enforceable duty to repay the mortgage."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Law/LegalCapacity/Duty.md", provenance: fibo}
   - {type: is-applicable-in, target: "/CMNS/RegulatoryAgencies/Jurisdiction.md", provenance: fibo}

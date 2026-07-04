@@ -4,6 +4,7 @@ title: "consumer credit requirement"
 description: "Requirement set out on the lender about how they must treat the appliction to a loan"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditRequirement
 tags: [LOAN, Provisional]
+detail: "e..g being able to see and challenge information about them held by the credit agency or lender. e.g. can't publish opinions only facts, etc."
 relations:
   - {type: is-a, target: "/FND/Law/LegalCapacity/LegalObligation.md", provenance: fibo}
   - {type: confers, target: "/LOAN/LoansGeneral/LoansRegulatory/ConsumerRight.md", provenance: fibo}

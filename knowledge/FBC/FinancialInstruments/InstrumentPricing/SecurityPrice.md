@@ -4,6 +4,7 @@ title: "security price"
 description: "monetary price for a financial instrument at some point in time"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/SecurityPrice
 tags: [FBC, Release]
+detail: "A security price may be the price that some party is willing to pay, has recently paid, or would like to be paid, depending on the circumstances."
 relations:
   - {type: is-a, target: "/FND/Accounting/CurrencyAmount/MonetaryPrice.md", provenance: fibo}
   - {type: is-price-for, target: "/FBC/FinancialInstruments/FinancialInstruments/Security.md", provenance: fibo}

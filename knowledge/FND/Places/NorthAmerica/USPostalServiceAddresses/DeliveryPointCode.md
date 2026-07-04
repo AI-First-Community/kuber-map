@@ -4,6 +4,7 @@ title: "delivery point code"
 description: "specific set of digits between 00 and 99 assigned to a delivery point"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddresses/DeliveryPointCode
 tags: [FND, Release]
+detail: "When combined with the ZIP + 4 code, the delivery point code provides a unique identifier for every deliverable address served by the USPS. The delivery point digits are almost never printed on mail in human-readable form; instead they are encoded in the POSTNET delivery point barcode (DPBC) or as part of the newer Intelligent Mail Barcode (IMB)."
 relations:
   - {type: is-a, target: "/CMNS/CodesAndCodeSets/CodeElement.md", provenance: fibo}
   - {type: is-member-of, target: "/FND/Places/NorthAmerica/USPostalServiceAddresses/DeliveryPointCodeSet.md", provenance: fibo}

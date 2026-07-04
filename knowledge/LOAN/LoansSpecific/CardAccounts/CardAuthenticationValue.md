@@ -4,6 +4,8 @@ title: "card authentication value"
 description: "card verification value specifically for JCB payment cards"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/CardAccounts/CardAuthenticationValue
 tags: [LOAN, Release]
+synonyms:
+  - "CAV"
 relations:
   - {type: is-a, target: "/LOAN/LoansSpecific/CardAccounts/MagneticStripeVerificationCodeValue.md", provenance: fibo}
 ---

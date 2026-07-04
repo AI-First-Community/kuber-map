@@ -4,6 +4,8 @@ title: "date of death"
 description: "explicit date, i.e., the day, month and year, on which an individual died"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DateOfDeath
 tags: [FND, Release]
+synonyms:
+  - "death date"
 relations:
   - {type: is-a, target: "/CMNS/DatesAndTimes/ExplicitDate.md", provenance: fibo}
 ---

@@ -4,6 +4,7 @@ title: "project"
 description: "state of affairs and unique and temporary organization, designed to deliver a tangible output"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/Project
 tags: [FND, Release]
+detail: "A project has a fixed - generally fairly short - timeframe, and a project manager is responsible for delivering the output on time and on budget."
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/Situation.md", provenance: fibo}
   - {type: has-goal, target: "/FND/GoalsAndObjectives/Objectives/Goal.md", provenance: fibo}

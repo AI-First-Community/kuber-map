@@ -4,6 +4,7 @@ title: "interest payment terms"
 description: "contract terms for payment of interest on a debt"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/InterestPaymentTerms
 tags: [FBC, Release]
+detail: "Interest is usually payable on any outstanding principal amount, therefore interest relates to the amount of debt outstanding at any given point of time, not to the principal amount advanced at the time that the loan was advanced or the debt security issued (aside from the initial payment). Note that in most cases, the dates and payment frequencies for interest will coincide with the dates and payment frequencies related to the principal."
 relations:
   - {type: is-a, target: "/FBC/DebtAndEquities/Debt/DebtTerms.md", provenance: fibo}
   - {type: governs-payment-of, target: "/FBC/DebtAndEquities/Debt/Interest.md", provenance: fibo}

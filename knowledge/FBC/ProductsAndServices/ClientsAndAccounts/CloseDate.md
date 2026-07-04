@@ -4,6 +4,8 @@ title: "close date"
 description: "date on which something was closed"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CloseDate
 tags: [FBC, Release]
+examples:
+  - "account close date, transaction record close date, and so forth"
 relations:
   - {type: is-a, target: "/CMNS/DatesAndTimes/ExplicitDate.md", provenance: fibo}
 ---

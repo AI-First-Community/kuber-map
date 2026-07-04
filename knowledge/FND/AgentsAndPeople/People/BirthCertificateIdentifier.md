@@ -4,6 +4,8 @@ title: "birth certificate identifier"
 description: "identifier associated with a vital record documenting the birth of a child"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/BirthCertificateIdentifier
 tags: [FND, Release]
+synonyms:
+  - "birth certificate number"
 relations:
   - {type: is-a, target: "/CMNS/Identifiers/Identifier.md", provenance: fibo}
   - {type: identifies, target: "/FND/AgentsAndPeople/People/BirthCertificate.md", provenance: fibo}

@@ -6,6 +6,12 @@ definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationPhase
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "Pre-qualification"
+  - "Application intake"
+  - "Underwriting"
+  - "Decisioning"
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Arrangements/Lifecycles/LifecycleStage.md", provenance: fibo}
 ---

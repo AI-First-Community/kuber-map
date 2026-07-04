@@ -4,6 +4,7 @@ title: "calculated date"
 description: "date that is or will be determined based on some formula"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/CalculatedDate
 tags: [FND, Release]
+detail: "The hasDateValue property of a CalculatedDate is not set until the Date is calculated. Since the calculation may depend upon future events that may or may not ever happen, the hasDateValue property may never be set."
 relations:
   - {type: is-a, target: "/CMNS/DatesAndTimes/Date.md", provenance: fibo}
   - {type: has-business-day-convention, target: "/FND/DatesAndTimes/BusinessDates/BusinessDayConvention.md", provenance: fibo}

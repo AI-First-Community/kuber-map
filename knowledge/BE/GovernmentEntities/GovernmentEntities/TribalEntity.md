@@ -4,6 +4,7 @@ title: "tribal entity"
 description: "legal entity that represents fundamental unit of sovereign tribal (indigenous) government"
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/TribalEntity
 tags: [BE, Release]
+detail: "Any indigenous group or community which is recognized as having rights and obligations independent of the central government."
 relations:
   - {type: is-a, target: "/BE/GovernmentEntities/GovernmentEntities/Polity.md", provenance: fibo}
   - {type: has-shared-sovereignty-over, target: "/BE/GovernmentEntities/GovernmentEntities/TribalArea.md", provenance: fibo}

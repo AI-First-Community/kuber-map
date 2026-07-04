@@ -6,6 +6,9 @@ definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "The TILA-RESPA (TRID) Loan Estimate a lender must give within 3 business days."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/LOAN/LoansGeneral/LoansRegulatory/DisclosureRequirement.md", provenance: fibo}
   - {type: confers, target: "/LOAN/LoansGeneral/LoansRegulatory/ProductDisclosureRight.md", provenance: fibo}

@@ -4,6 +4,7 @@ title: "driver's license identification scheme"
 description: "system for allocating identifiers to driver's, operating, or non-driver identification documents"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DriversLicenseIdentificationScheme
 tags: [FND, Release]
+detail: "Schemes for driver's license identification are typically regionally defined, and there may be jurisdiction-specific scope required as an additional restriction on a specific scheme."
 relations:
   - {type: is-a, target: "/CMNS/Identifiers/IdentificationScheme.md", provenance: fibo}
   - {type: defines, target: "/FND/AgentsAndPeople/People/DriversLicenseIdentifier.md", provenance: fibo}

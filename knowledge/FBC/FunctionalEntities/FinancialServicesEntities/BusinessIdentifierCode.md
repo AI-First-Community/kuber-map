@@ -4,6 +4,14 @@ title: "business identifier code"
 description: "international identifier for financial and non-financial institutions used to facilitate automated processing of information for financial services"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCode
 tags: [FBC, Release]
+detail: "The BIC is used for addressing messages, routing business transactions and identifying business parties. Note that the use of OrganizationSubUnitIdentifier in FIBO corresponds to the Branch Code in the SWIFT scheme."
+synonyms:
+  - "BIC"
+  - "SWIFT ID"
+  - "SWIFT code"
+  - "SWIFT-BIC"
+  - "bank identifier code"
+  - "business entity identifier"
 relations:
   - {type: is-a, target: "/CMNS/CodesAndCodeSets/CodeElement.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/ContextualIdentifiers/StructuredIdentifier.md", provenance: fibo}

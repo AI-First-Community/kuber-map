@@ -5,6 +5,11 @@ description: "the number permanently assigned by the Nationwide Mortgage Licensi
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/NMLSR-ID
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "NMLS #1234567 assigned to a licensed mortgage loan originator."
+examples_provenance: curated
+synonyms:
+  - "NMLSR ID"
 relations:
   - {type: is-a, target: "/FND/Law/LegalCapacity/LicenseIdentifier.md", provenance: fibo}
 ---

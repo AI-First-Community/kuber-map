@@ -4,6 +4,7 @@ title: "control"
 description: "situation in which some party has the power to direct or strongly influence the direction of the management and policies related to something"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/Control
 tags: [FND, Release]
+detail: "Control may be direct (explicit) or indirect (implicit), derived through ownership of voting shares, beneficial ownership, other ownership relations, through provisions of a contract, or otherwise."
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/Situation.md", provenance: fibo}
   - {type: has-party-in-control, target: "/FND/OwnershipAndControl/Control/ControllingParty.md", provenance: fibo}

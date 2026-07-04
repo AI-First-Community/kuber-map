@@ -5,6 +5,10 @@ description: "financial product that is realized as a loan that a party may acqu
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanProduct
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "A 30-year fixed conventional mortgage"
+  - "A 5/1 ARM"
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FBC/DebtAndEquities/Debt/CreditFacility.md", provenance: fibo}
   - {type: is-a, target: "/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialProduct.md", provenance: fibo}

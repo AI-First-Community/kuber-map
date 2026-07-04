@@ -4,6 +4,9 @@ title: "birth certificate"
 description: "an original document certifying the circumstances of the birth, or a certified copy of or representation of the ensuing registration of that birth"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/BirthCertificate
 tags: [FND, Release]
+detail: "A birth certificate is a vital record that documents the birth of a child. Depending on the jurisdiction, a record of birth might or might not contain verification of the event by such as a midwife or doctor."
+synonyms:
+  - "certificate of live birth"
 relations:
   - {type: is-a, target: "/FND/AgentsAndPeople/People/IdentityDocument.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/Documents/Certificate.md", provenance: fibo}

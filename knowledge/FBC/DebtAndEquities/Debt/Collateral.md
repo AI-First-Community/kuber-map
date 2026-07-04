@@ -5,6 +5,10 @@ description: "something pledged as security to ensure fulfillment of an obligati
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Collateral
 tags: [FBC, Release]
 core: true
+examples:
+  - "The house securing a mortgage"
+  - "Securities pledged for a margin loan"
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/Undergoer.md", provenance: fibo}
   - {type: is-collateralization-of, target: "/FND/OwnershipAndControl/Ownership/Asset.md", provenance: fibo}

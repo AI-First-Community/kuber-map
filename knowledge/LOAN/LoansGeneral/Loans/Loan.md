@@ -5,6 +5,10 @@ description: "debt instrument whereby one party extends money or credit to anoth
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Loan
 tags: [LOAN, Release]
 core: true
+examples:
+  - "A $300,000 30-year home mortgage"
+  - "A $25,000 auto loan"
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FBC/DebtAndEquities/Debt/CreditAgreementRepaidPeriodically.md", provenance: fibo}
   - {type: is-a, target: "/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument.md", provenance: fibo}

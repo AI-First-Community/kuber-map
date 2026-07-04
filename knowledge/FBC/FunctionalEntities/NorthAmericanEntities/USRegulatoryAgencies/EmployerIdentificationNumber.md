@@ -4,6 +4,12 @@ title: "employer identification number"
 description: "unique nine-digit number assigned by the Internal Revenue Service (IRS) to business entities operating in the United States for the purposes of identification"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/EmployerIdentificationNumber
 tags: [FBC, Release]
+detail: "Note that despite the name, the business may not necessarily employ anyone."
+synonyms:
+  - "EIN"
+  - "FEIN"
+  - "Federal Employer Identification Number"
+  - "Federal Tax Identification Number"
 relations:
   - {type: is-a, target: "/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/TaxpayerIdentificationNumber.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/Organizations/OrganizationIdentifier.md", provenance: fibo}

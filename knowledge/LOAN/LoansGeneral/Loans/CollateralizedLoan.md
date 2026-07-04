@@ -5,6 +5,10 @@ description: "secured loan that is secured with cash or other acceptable collate
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/CollateralizedLoan
 tags: [LOAN, Release]
 core: true
+examples:
+  - "A mortgage secured by real estate"
+  - "A securities-backed line of credit"
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/LOAN/LoansGeneral/Loans/SecuredLoan.md", provenance: fibo}
   - {type: is-collateralized-by, target: "/FBC/DebtAndEquities/Debt/Collateral.md", provenance: fibo}

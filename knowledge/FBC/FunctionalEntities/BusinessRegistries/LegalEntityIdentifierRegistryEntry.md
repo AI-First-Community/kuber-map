@@ -4,6 +4,8 @@ title: "legal entity identifier registry entry"
 description: "entry in a legal entity identifier registry that conforms to ISO 17442 and the Global Legal Entity Identifier Foundation (GLEIF) Common Data Format (CDF)"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry
 tags: [FBC, Release]
+synonyms:
+  - "LEI registry entry"
 relations:
   - {type: is-a, target: "/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistryEntry.md", provenance: fibo}
   - {type: comprises, target: "/BE/LegalEntities/LEIEntities/LegalEntityIdentifier.md", provenance: fibo}

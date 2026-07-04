@@ -4,6 +4,9 @@ title: "financial instrument"
 description: "written contract that gives rise to both a financial asset of one entity and a financial liability of another entity"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/FinancialInstrument
 tags: [FBC, Release]
+detail: "A financial instrument can be thought of as a template that defines an arrangement structure that remains to be fleshed out with terms and parameters in order to establish a specific instance of the contract."
+examples:
+  - "Examples of financial instruments include: cash, evidence of an ownership interest in an entity, or a contractual right to receive (or deliver) cash, or another financial instrument."
 relations:
   - {type: is-a, target: "/FND/Agreements/Contracts/WrittenContract.md", provenance: fibo}
   - {type: has-nominal-value, target: "/FND/Accounting/CurrencyAmount/MonetaryAmount.md", provenance: fibo}

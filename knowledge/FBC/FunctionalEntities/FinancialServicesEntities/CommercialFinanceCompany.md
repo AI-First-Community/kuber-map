@@ -4,6 +4,8 @@ title: "commercial finance company"
 description: "finance company that makes loans to manufacturers and wholesalers, secured by accounts receivable, inventories, and equipment"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/CommercialFinanceCompany
 tags: [FBC, Release]
+synonyms:
+  - "commercial credit company"
 relations:
   - {type: is-a, target: "/FBC/FunctionalEntities/FinancialServicesEntities/FinanceCompany.md", provenance: fibo}
 ---

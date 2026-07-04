@@ -4,6 +4,10 @@ title: "trade reporting facility"
 description: "facility that provides a mechanism for the reporting of transactions effected otherwise than on an exchange"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/TradeReportingFacility
 tags: [FBC, Release]
+examples:
+  - "In the United States, for example, trades by FINRA members in Nasdaq-listed and other exchange-listed securities, as approved by the Securities and Exchange Commission (SEC), executed otherwise than on an exchange may be reported to a FINRA TRF. While each FINRA TRF is affiliated with a registered national securities exchange, each FINRA TRF is a FINRA facility and is subject to FINRA's registration as a national securities association."
+synonyms:
+  - "TRF"
 relations:
   - {type: is-a, target: "/CMNS/SitesAndFacilities/Facility.md", provenance: fibo}
   - {type: is-classified-by, target: "/FBC/FunctionalEntities/Markets/MarketCategoryClassifier-TRFS.md", provenance: fibo}

@@ -4,6 +4,8 @@ title: "death certificate identifier"
 description: "identifier associated with a vital record documenting the death of an individual"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DeathCertificateIdentifier
 tags: [FND, Release]
+synonyms:
+  - "death certificate number"
 relations:
   - {type: is-a, target: "/CMNS/Identifiers/Identifier.md", provenance: fibo}
   - {type: identifies, target: "/FND/AgentsAndPeople/People/DeathCertificate.md", provenance: fibo}

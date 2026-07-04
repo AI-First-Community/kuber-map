@@ -5,6 +5,12 @@ description: "A selection of different types of loan purpose, being the purpose 
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanPurpose
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "Home purchase"
+  - "Rate-and-term refinance"
+  - "Cash-out refinance"
+  - "Home improvement"
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/GoalsAndObjectives/Objectives/Objective.md", provenance: fibo}
 ---

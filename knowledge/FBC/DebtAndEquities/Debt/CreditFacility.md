@@ -4,6 +4,9 @@ title: "credit facility"
 description: "credit agreement that allows the borrower to periodically take out money over an extended period of time rather than reapplying for a loan every time they need funds"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditFacility
 tags: [FBC, Release]
+detail: "Credit facilities include revolving loans/lines of credit, committed facilities, letters of credit, and most retail credit accounts. They may define sub-facilities to which the lender is prepared to commit for specific purposes."
+synonyms:
+  - "master commitment"
 relations:
   - {type: is-a, target: "/FBC/DebtAndEquities/Debt/CreditAgreementRepaidPeriodically.md", provenance: fibo}
   - {type: has-contractual-element, target: "/FND/Agreements/Contracts/ConditionPrecedent.md", provenance: fibo}

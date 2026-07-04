@@ -5,6 +5,11 @@ description: "ratio of all monthly debt payments of all borrowers, including pro
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/TotalDebtExpenseRatio
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "All monthly debt ÷ income = 43% DTI used in the credit decision."
+examples_provenance: curated
+synonyms:
+  - "back end ratio"
 relations:
   - {type: is-a, target: "/FND/Accounting/CurrencyAmount/PercentageMonetaryAmount.md", provenance: fibo}
 ---

@@ -5,6 +5,9 @@ description: "with respect to a debt: the value of an obligation, such as a bond
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Principal
 tags: [FBC, Release]
 core: true
+examples:
+  - "The $300,000 original balance of a mortgage, excluding interest."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/Classifiers/Aspect.md", provenance: fibo}
   - {type: is-principal-of, target: "/FBC/DebtAndEquities/Debt/Debt.md", provenance: fibo}

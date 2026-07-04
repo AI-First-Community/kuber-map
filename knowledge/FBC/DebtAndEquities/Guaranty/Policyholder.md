@@ -4,6 +4,8 @@ title: "policyholder"
 description: "counterparty to and typically owner of an insurance policy"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Guaranty/Policyholder
 tags: [FBC, Release]
+synonyms:
+  - "insured party"
 relations:
   - {type: is-a, target: "/FND/Agreements/Contracts/Counterparty.md", provenance: fibo}
 ---

@@ -4,6 +4,7 @@ title: "post office box"
 description: "post office box associated with an address"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/PostOfficeBox
 tags: [FND, Release]
+detail: "Post office box identifiers are only unique to a given jurisdiction, which may be a post office, town, or other region."
 relations:
   - {type: is-a, target: "/FND/Places/Addresses/SupplementalAddressComponent.md", provenance: fibo}
   - {type: comprises, target: "/FND/Places/Addresses/PostOfficeBoxDesignator.md", provenance: fibo}

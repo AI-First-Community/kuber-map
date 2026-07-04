@@ -4,6 +4,8 @@ title: "standard industrial classification code"
 description: "the SIC code representing an industry"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/StandardIndustrialClassificationCode
 tags: [FBC, Release]
+synonyms:
+  - "SIC code"
 relations:
   - {type: is-a, target: "/FND/Arrangements/ClassificationSchemes/IndustrySectorClassifier.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/CodesAndCodeSets/CodeElement.md", provenance: fibo}

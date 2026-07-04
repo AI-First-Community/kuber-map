@@ -39,6 +39,9 @@
     <rdfs:label xml:lang="en-GB">colourful thing</rdfs:label>
     <rdfs:label xml:lang="en-US">colorful thing</rdfs:label>
     <skos:definition>a regional thing</skos:definition>
+    <skos:example>a colorful example</skos:example>
+    <av:explanatoryNote>an explanatory note about regional things</av:explanatoryNote>
+    <av:synonym>colourful item</av:synonym>
   </owl:Class>
 
   <!-- MultiFillerThing: one restriction with a NAMED someValuesFrom (Party) AND an anonymous

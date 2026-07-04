@@ -4,6 +4,8 @@ title: "physical collateral"
 description: "asset pledged as collateral that has a material form, i.e., is a physical asset of the obligor"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/PhysicalCollateral
 tags: [FBC, Release]
+examples:
+  - "Examples of physical collateral include, but are not limited to, real estate, equipment, vehicles, spare parts, inventory, goods, supplies, fixtures, and leasehold improvements."
 relations:
   - {type: is-a, target: "/FBC/DebtAndEquities/Debt/Collateral.md", provenance: fibo}
   - {type: is-collateralization-of, target: "/FND/Accounting/AccountingEquity/PhysicalAsset.md", provenance: fibo}

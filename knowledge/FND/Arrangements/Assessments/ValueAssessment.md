@@ -4,6 +4,7 @@ title: "value assessment"
 description: "assessment event to estimate the value of something"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/ValueAssessment
 tags: [FND, Release]
+detail: "Note that an appraiser in this context may be a licensed appraiser, such as a real estate appraiser or auction house, or a calculation agent, depending on the circumstances."
 relations:
   - {type: is-a, target: "/FND/Arrangements/Assessments/AssessmentEvent.md", provenance: fibo}
   - {type: applies-methodology, target: "/FND/Arrangements/Assessments/ValuationMethod.md", provenance: fibo}

@@ -4,6 +4,10 @@ title: "business number"
 description: "unique, 9-digit number that is the standard identifier for legal entities in Canada which are typically a business"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/BusinessNumber
 tags: [FBC, Release]
+examples:
+  - "000000000"
+synonyms:
+  - "BN"
 relations:
   - {type: is-a, target: "/FND/Parties/Parties/TaxIdentifier.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/Organizations/OrganizationIdentifier.md", provenance: fibo}

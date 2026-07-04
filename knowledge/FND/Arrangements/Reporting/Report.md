@@ -4,6 +4,7 @@ title: "report"
 description: "document that provides a structured description of something, prepared on ad hoc, periodic, recurring, regular, or as required basis"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/Report
 tags: [FND, Release]
+detail: "Reports may refer to specific periods, events, occurrences, or subjects, and may be communicated or presented in oral, electronic, or written form."
 relations:
   - {type: is-a, target: "/CMNS/Documents/Document.md", provenance: fibo}
   - {type: has-report-date, target: "/CMNS/DatesAndTimes/ExplicitDate.md", provenance: fibo}

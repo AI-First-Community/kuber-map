@@ -4,6 +4,7 @@ title: "real property appraisal"
 description: "value assessment that estimates the amount of money some real property is worth"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Places/RealProperty/RealPropertyAppraisal
 tags: [FND, Release]
+detail: "The valuation uses one or more methodologies and is conducted by an appraiser or technology with a logical model that performs the same function."
 relations:
   - {type: is-a, target: "/FND/Arrangements/Assessments/Appraisal.md", provenance: fibo}
   - {type: evaluates, target: "/FND/Places/RealProperty/RealProperty.md", provenance: fibo}

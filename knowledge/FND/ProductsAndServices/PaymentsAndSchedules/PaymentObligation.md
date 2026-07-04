@@ -4,6 +4,8 @@ title: "payment obligation"
 description: "legally enforceable duty to pay a sum of money according to the terms stated in a contract"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/PaymentObligation
 tags: [FND, Release]
+examples:
+  - "the duty of a borrower to repay a loan, related to the legal right of a lender to enforce payment"
 relations:
   - {type: is-a, target: "/FND/Agreements/Agreements/Commitment.md", provenance: fibo}
   - {type: is-a, target: "/FND/Law/LegalCapacity/Duty.md", provenance: fibo}

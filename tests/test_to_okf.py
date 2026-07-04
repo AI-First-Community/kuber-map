@@ -41,6 +41,23 @@ def test_load_definitions_collects_overrides(tmp_path):
     assert to_okf.load_definitions([str(f)]) == {"https://ex/A": "our text"}
 
 
+def test_load_examples_collects_overlay(tmp_path):
+    f = tmp_path / "examples.json"
+    f.write_text(json.dumps({"examples": [
+        {"iri": "https://ex/A", "examples": ["ex one", "ex two"]},
+        {"iri": "https://ex/B", "examples": []},   # empty -> excluded
+    ]}))
+    assert to_okf.load_examples([str(f)]) == {"https://ex/A": ["ex one", "ex two"]}
+
+
+def test_emit_writes_examples_and_marks_curated():
+    rec = {"iri": "https://ex/A", "title": "a", "description": "d", "cluster": "LOAN",
+           "maturity": "Release", "relations": [], "examples": ["worked example"]}
+    out = to_okf.emit(rec, curated_examples=True)
+    assert "examples:" in out and "worked example" in out
+    assert "examples_provenance: curated" in out
+
+
 def test_emit_marks_curated_definition_provenance():
     rec = {"iri": "https://ex/A", "title": "a", "description": "our learner def",
            "cluster": "LOAN", "maturity": "Release", "relations": []}

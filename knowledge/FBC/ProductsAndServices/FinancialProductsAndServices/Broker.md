@@ -4,6 +4,7 @@ title: "broker"
 description: "any party that acts as an intermediary between a buyer and a seller, usually charging a commission"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/Broker
 tags: [FBC, Release]
+detail: "A broker that specializes in stocks, bonds, commodities, or certain derivatives must be registered with the exchange in which the securities are traded."
 relations:
   - {type: is-a, target: "/FND/Agreements/Contracts/ContractThirdParty.md", provenance: fibo}
 ---

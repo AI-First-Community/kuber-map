@@ -4,6 +4,9 @@ title: "basic bank account identifier"
 description: "identifier that uniquely identifies an individual account at a specific financial institution in a particular country and which includes a bank identifier of the financial institution servicing that account"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/BasicBankAccountIdentifier
 tags: [FBC, Release]
+synonyms:
+  - "BBAN"
+  - "basic bank account number"
 relations:
   - {type: is-a, target: "/FBC/ProductsAndServices/ClientsAndAccounts/BankAccountIdentifier.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/ContextualIdentifiers/StructuredIdentifier.md", provenance: fibo}

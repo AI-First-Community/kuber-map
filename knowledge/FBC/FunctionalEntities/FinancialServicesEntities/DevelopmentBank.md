@@ -4,6 +4,9 @@ title: "development bank"
 description: "national or regional financial institution designed to provide medium- and long-term capital for productive investment, often accompanied by technical assistance, in poor countries"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/DevelopmentBank
 tags: [FBC, Release]
+synonyms:
+  - "development finance company (DFC)"
+  - "development financial institution (DFI)"
 relations:
   - {type: is-a, target: "/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution.md", provenance: fibo}
 ---

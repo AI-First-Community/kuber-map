@@ -4,6 +4,7 @@ title: "credit report"
 description: "report describing the creditworthiness and related credit attributes of a borrower"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditReport
 tags: [FBC, Provisional]
+detail: "This is typically provided by a credit rating agency but could be produced by an internal proprietary model as well."
 relations:
   - {type: is-a, target: "/FND/Arrangements/Ratings/RatingReport.md", provenance: fibo}
   - {type: comprises, target: "/FBC/DebtAndEquities/CreditRatings/CreditInquiry.md", provenance: fibo}

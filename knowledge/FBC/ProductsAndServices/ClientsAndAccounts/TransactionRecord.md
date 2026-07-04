@@ -4,6 +4,7 @@ title: "transaction record"
 description: "record of transactions associated with an account"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/TransactionRecord
 tags: [FBC, Release]
+detail: "The date a particular transaction record is closed typically corresponds to (and may precede) the date the account is closed, though in the case of certain accounts, such as a credit card account, if a customer is issued a new account or card number due to loss, fraud, or for some other reason, it is possible that multiple transaction records would be associated with the account. In that case, the close date might correspond to the date that a hold was placed on the original account."
 relations:
   - {type: is-a, target: "/FND/DatesAndTimes/FinancialDates/DatedStructuredCollection.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/Documents/Record.md", provenance: fibo}

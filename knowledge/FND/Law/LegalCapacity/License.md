@@ -4,6 +4,7 @@ title: "license"
 description: "grant of permission needed to do something"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/License
 tags: [FND, Release]
+detail: "Note that in some cases, a license may also be considered an agreement or contract, depending on the specifics of the license and jurisdiction."
 relations:
   - {type: is-a, target: "/CMNS/Documents/LegalDocument.md", provenance: fibo}
   - {type: confers, target: "/FND/Law/LegalCapacity/LegalCapacity.md", provenance: fibo}

@@ -97,15 +97,21 @@ function parseFrontmatter(text) {
   const fmText = text.slice(3, end).replace(/^\n/, '');
   const body = text.slice(end + 4).replace(/^\n+/, '');
   const fm = { relations: [] };
-  let inRelations = false;
+  let listKey = null;                    // current `key:` whose indented `- …` items follow
   for (const line of fmText.split('\n')) {
-    const rel = line.match(/^\s+-\s*\{(.*)\}\s*$/);
-    if (inRelations && rel) { const r = parseRelationObj(rel[1]); if (r) fm.relations.push(r); continue; }
+    const item = line.match(/^\s+-\s*(.*)$/);
+    if (listKey && item) {
+      const raw = item[1].trim();
+      if (listKey === 'relations') {
+        const o = raw.match(/^\{(.*)\}$/); const r = o && parseRelationObj(o[1]); if (r) fm.relations.push(r);
+      } else { (fm[listKey] = fm[listKey] || []).push(stripQuotes(raw)); }
+      continue;
+    }
     const m = line.match(/^([A-Za-z0-9_]+):\s*(.*)$/);
     if (!m) continue;
     const key = m[1]; const val = m[2].trim();
-    if (key === 'relations') { inRelations = true; continue; }
-    inRelations = false;
+    if (val === '') { listKey = key; if (key !== 'relations') fm[key] = []; continue; }   // list block follows
+    listKey = null;
     if (val.startsWith('[')) fm[key] = parseInlineList(val);
     else if (val === 'true' || val === 'false') fm[key] = (val === 'true');
     else fm[key] = stripQuotes(val);
@@ -176,7 +182,9 @@ function build() {
     nodes.push({
       id, label: fm.title || id, type: fm.type, cluster, domain,
       level: CONFIG.MATURITY_LEVEL[maturity] || 3, maturity: maturity || 'n/a',
-      core: fm.core === true, summary: fm.description || '', detail: '',
+      core: fm.core === true, summary: fm.description || '',
+      detail: fm.detail || '', examples: fm.examples || [], synonyms: fm.synonyms || [],
+      examplesProvenance: fm.examples_provenance || 'fibo',
       definitionProvenance: fm.definition_provenance || 'fibo',
       // The FIBO IRI is the audit citation — surfaced in the panel's References section.
       refs: fm.resource ? [{ t: 'FIBO ontology — ' + String(fm.resource).split('/').pop(), u: fm.resource }] : [],

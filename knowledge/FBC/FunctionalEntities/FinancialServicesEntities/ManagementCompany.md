@@ -4,6 +4,7 @@ title: "management company"
 description: "investment company that sells and manages a portfolio of securities other than a face-amount certificate company or unit investment fund"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ManagementCompany
 tags: [FBC, Release]
+detail: "Management companies allow investors to pool their capital with that of other investors in order to purchase professionally-managed groups of diversified securities."
 relations:
   - {type: is-a, target: "/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentCompany.md", provenance: fibo}
 ---

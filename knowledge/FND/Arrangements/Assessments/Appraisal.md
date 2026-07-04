@@ -5,6 +5,9 @@ description: "written estimate of the market value of something as of some point
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/Appraisal
 tags: [FND, Release]
 core: true
+examples:
+  - "A licensed appraiser's report valuing a home at $450,000."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Arrangements/Assessments/AssessmentReport.md", provenance: fibo}
   - {type: estimates-value-at, target: "/FND/Arrangements/Assessments/AppraisedValue.md", provenance: fibo}

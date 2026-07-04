@@ -5,6 +5,9 @@ description: "offering related to a loan product that may be a tailored to parti
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanProductOffering
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "A lender's advertised 6.5% 30-year fixed mortgage for first-time buyers."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FBC/ProductsAndServices/FinancialProductsAndServices/Offering.md", provenance: fibo}
   - {type: applies-to, target: "/LOAN/LoansSpecific/LoanProducts/LoanProduct.md", provenance: fibo}

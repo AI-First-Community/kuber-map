@@ -4,6 +4,7 @@ title: "physical address"
 description: "physical address where communications can be addressed, papers served or representatives located for any kind of organization or person"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/PhysicalAddress
 tags: [FND, Release]
+detail: "Typically, addresses will have only one postcode expressed either as a string value or individual, and only a municipality (individual) or city (string value)."
 relations:
   - {type: is-a, target: "/FND/Places/Addresses/Address.md", provenance: fibo}
   - {type: has-country, target: "/CMNS/Locations/Country.md", provenance: fibo}

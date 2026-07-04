@@ -4,6 +4,8 @@ title: "financial exposure"
 description: "the extent to which an individual or organization is open to risk of suffering a loss in a transaction, or with respect to some investment or set of investments, e.g., some holding; the amount one stands to lose in that transaction or investment"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialExposure
 tags: [FBC, Release]
+examples:
+  - "Examples in banking include the total amount of unsecured loans, the amount of loans advanced to a single borrower, group, industry, or country, and the probability of loss from devaluation, revaluation, or foreign exchange fluctuations."
 relations:
   - {type: is-a, target: "/FBC/ProductsAndServices/FinancialProductsAndServices/Exposure.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/QuantitiesAndUnits/Expression.md", provenance: fibo}

@@ -4,6 +4,8 @@ title: "contract lifecycle event"
 description: "kind of event that occurs during one or more stages of the lifecycle of an agreement"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/ContractLifecycleEvent
 tags: [FBC, Release]
+examples:
+  - "a call notification or coupon payment as a part of a bond lifecycle"
 relations:
   - {type: is-a, target: "/FND/Arrangements/Lifecycles/LifecycleEvent.md", provenance: fibo}
   - {type: applies-to, target: "/FBC/ProductsAndServices/FinancialProductsAndServices/ContractLifecycleStage.md", provenance: fibo}

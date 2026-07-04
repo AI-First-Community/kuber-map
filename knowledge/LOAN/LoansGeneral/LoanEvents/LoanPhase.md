@@ -6,6 +6,12 @@ definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/LoanPhase
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "Origination"
+  - "Disbursement"
+  - "Repayment"
+  - "Payoff / closure"
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Arrangements/Lifecycles/LifecycleStage.md", provenance: fibo}
 ---

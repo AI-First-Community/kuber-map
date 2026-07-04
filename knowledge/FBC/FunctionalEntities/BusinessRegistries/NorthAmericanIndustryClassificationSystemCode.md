@@ -4,6 +4,8 @@ title: "North American Industry Classification System code"
 description: "the North American Industry Classification System (NAICS) code representing an industry"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/NorthAmericanIndustryClassificationSystemCode
 tags: [FBC, Release]
+synonyms:
+  - "NAICS code"
 relations:
   - {type: is-a, target: "/FND/Arrangements/ClassificationSchemes/IndustrySectorClassifier.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/CodesAndCodeSets/CodeElement.md", provenance: fibo}

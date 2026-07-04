@@ -4,6 +4,7 @@ title: "transition strategy"
 description: "strategy for achieving specific business objectives related to sustainability in the context of long-term decarbonization or sustainability transitions"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/GreenLoans/TransitionStrategy
 tags: [LOAN, Release]
+detail: "Note that although there are similarities with sustainability business strategies, they are not the same. KPIs and SPTs may, however, be defined similarly for a given project."
 relations:
   - {type: is-a, target: "/FND/GoalsAndObjectives/Objectives/BusinessStrategy.md", provenance: fibo}
   - {type: has-objective, target: "/LOAN/LoansSpecific/GreenLoans/SustainabilityBusinessObjective.md", provenance: fibo}

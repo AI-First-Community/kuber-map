@@ -6,6 +6,9 @@ definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/RepaymentPhase
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "The period after disbursement during which the borrower makes scheduled payments."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/LOAN/LoansGeneral/LoanEvents/LoanPhase.md", provenance: fibo}
 ---

@@ -4,6 +4,7 @@ title: "passport number identification scheme"
 description: "system for allocating identifiers to passports"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/PassportNumberIdentificationScheme
 tags: [FND, Release]
+detail: "Schemes for passport identification are jurisdiction-specific by country."
 relations:
   - {type: is-a, target: "/CMNS/Identifiers/IdentificationScheme.md", provenance: fibo}
   - {type: has-member, target: "/FND/AgentsAndPeople/People/PassportNumber.md", provenance: fibo}

@@ -5,6 +5,9 @@ description: "record of actual payments of principal, interest, and other relate
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/PaymentHistory
 tags: [LOAN, Release]
 core: true
+examples:
+  - "24 months of on-time mortgage payments with one 30-day late."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FBC/ProductsAndServices/ClientsAndAccounts/TransactionRecord.md", provenance: fibo}
   - {type: applies-to-account, target: "/LOAN/LoansGeneral/Loans/LoanSpecificCustomerAccount.md", provenance: fibo}

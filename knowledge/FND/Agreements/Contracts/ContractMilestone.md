@@ -4,6 +4,7 @@ title: "contract milestone"
 description: "classifier for an event (milestone), or set of events related to the status or level of completion of a designated activity, task, or segment of work required for contract fulfillment"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractMilestone
 tags: [FND, Release]
+detail: "Milestones are checkpoints that are predefined in the contract, used to measure progress. They specify tasks, deliverables, or objectives that must be achieved to meet each milestone and may trigger partial payment."
 relations:
   - {type: is-a, target: "/FND/Agreements/Contracts/ConditionPrecedent.md", provenance: fibo}
   - {type: is-a, target: "/FND/DatesAndTimes/Occurrences/OccurrenceKind.md", provenance: fibo}

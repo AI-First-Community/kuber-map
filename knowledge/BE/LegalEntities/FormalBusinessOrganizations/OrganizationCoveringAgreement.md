@@ -4,6 +4,7 @@ title: "organization covering agreement"
 description: "contract between the principals in a formal organization that specifies the relationship between the principals, and between the principals and the entity"
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/OrganizationCoveringAgreement
 tags: [BE, Release]
+detail: "Also covers the aims and purposes of the Entity."
 relations:
   - {type: is-a, target: "/FND/Agreements/Contracts/WrittenContract.md", provenance: fibo}
 ---

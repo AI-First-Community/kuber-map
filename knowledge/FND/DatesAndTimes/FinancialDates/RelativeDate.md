@@ -4,6 +4,9 @@ title: "relative date"
 description: "calculated date that is some duration before or after another date"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/RelativeDate
 tags: [FND, Release]
+detail: "When the 'hasRelativeDuration' property is negative, the RelativeDate is before the 'isRelativeTo' Date; otherwise the RelativeDate is after the 'isRelativeTo' Date."
+examples:
+  - "A settlement date, defined as T+3: three days after the trade date. The 'hasRelativeDuration' property is set to '3D'."
 relations:
   - {type: is-a, target: "/FND/DatesAndTimes/FinancialDates/CalculatedDate.md", provenance: fibo}
   - {type: is-relative-to, target: "/CMNS/DatesAndTimes/Date.md", provenance: fibo}

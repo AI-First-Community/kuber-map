@@ -5,6 +5,9 @@ description: "a report prepared to satisfy HMDA regulatory reporting requirement
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "A bank's annual Loan/Application Register (LAR) filed with the CFPB."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Arrangements/Reporting/Report.md", provenance: fibo}
   - {type: is-submitted-to, target: "/CMNS/RegulatoryAgencies/RegulatoryAgency.md", provenance: fibo}

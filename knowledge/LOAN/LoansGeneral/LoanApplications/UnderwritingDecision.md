@@ -5,6 +5,12 @@ description: "classifier providing a loan approval recommendation determined eit
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/UnderwritingDecision
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "Approve"
+  - "Approve with conditions"
+  - "Suspend"
+  - "Deny"
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/Classifiers/Classifier.md", provenance: fibo}
 ---

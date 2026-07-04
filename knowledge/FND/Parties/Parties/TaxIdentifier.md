@@ -4,6 +4,7 @@ title: "tax identifier"
 description: "identifier assigned to a taxpayer that enables compulsory financial charges and other levies to be imposed on the taxpayer by a governmental organization in order to fund government spending and various public expenditures"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/TaxIdentifier
 tags: [FND, Release]
+detail: "Tax identifiers are used for various tax-related purposes in the United States and in other countries under the Common Reporting Standard (CRS)."
 relations:
   - {type: is-a, target: "/CMNS/Identifiers/Identifier.md", provenance: fibo}
   - {type: identifies, target: "/CMNS/PartiesAndSituations/Party.md", provenance: fibo}

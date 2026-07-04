@@ -5,6 +5,9 @@ description: "request by a potential borrower to a potential lender to borrow mo
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplication
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "A completed Uniform Residential Loan Application (Form 1003)."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/Documents/Document.md", provenance: fibo}
   - {type: comprises, target: "/LOAN/LoansGeneral/LoanApplications/AllBorrowersMonthlyIncome.md", provenance: fibo}

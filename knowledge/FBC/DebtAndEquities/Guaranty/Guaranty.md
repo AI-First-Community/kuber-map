@@ -4,6 +4,7 @@ title: "guaranty"
 description: "commitment whereby something is formally assured if a party with primary liability fails to perform"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Guaranty/Guaranty
 tags: [FBC, Release]
+detail: "The commitment may cover a debt, cash flows on a debt instrument (such as interest payments), or performance of some obligation."
 relations:
   - {type: is-a, target: "/FND/Agreements/Agreements/Commitment.md", provenance: fibo}
   - {type: has-expiration-date, target: "/CMNS/DatesAndTimes/Date.md", provenance: fibo}

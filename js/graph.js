@@ -216,9 +216,9 @@
       <h2 style="--c:${c.color}">${n.label}</h2>
       <p class="summary">${n.summary}</p>
       ${cmpIdxFor !== -1 ? `<button class="panel-action" data-compare="${cmpIdxFor}">${TABLE_IC} Compare ${GRAPH.comparisons[cmpIdxFor].title}</button>` : ''}
-      ${n.detail ? `<h4>Detail</h4><p>${n.detail}</p>` : ''}
-      ${n.whenToUse ? `<h4>When to use</h4><p class="when">${n.whenToUse}</p>` : ''}
-      ${n.code ? `<h4>Example</h4><pre><code>${escapeHtml(n.code)}</code></pre>` : ''}
+      ${n.detail ? `<h4>Detail</h4><p>${escapeHtml(n.detail)}</p>` : ''}
+      ${n.examples && n.examples.length ? `<h4>Examples${n.examplesProvenance === 'curated' ? ' <span class="rel-tag">illustrative</span>' : ''}</h4><ul class="conn-list">${n.examples.map((e) => `<li>${escapeHtml(e)}</li>`).join('')}</ul>` : ''}
+      ${n.synonyms && n.synonyms.length ? `<h4>Also known as</h4><p class="when">${n.synonyms.map((s) => escapeHtml(s)).join(' · ')}</p>` : ''}
       ${neighborsHtml(id)}
       ${n.refs && n.refs.length ? `<h4>References</h4><ul class="refs">${n.refs.map((r) => `<li><a href="${r.u}" target="_blank" rel="noopener">${r.t} ↗</a></li>`).join('')}</ul>` : ''}
     `;

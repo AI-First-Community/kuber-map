@@ -4,6 +4,8 @@ title: "lifecycle stage"
 description: "phase in a lifecycle"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Lifecycles/LifecycleStage
 tags: [FND, Release]
+examples:
+  - "a research and development phase of a product lifecycle, the introduction phase in a marketing lifecycle, a growth stage in an economic lifecycle, or the origination phase in the lifecycle of a loan"
 relations:
   - {type: is-a, target: "/CMNS/Classifiers/Classifier.md", provenance: fibo}
   - {type: comprises, target: "/FND/Arrangements/Lifecycles/LifecycleEvent.md", provenance: fibo}

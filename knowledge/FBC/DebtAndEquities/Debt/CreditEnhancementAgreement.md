@@ -4,6 +4,12 @@ title: "credit enhancement agreement"
 description: "collateral agreement that governs the exchange of collateral between parties to mitigate counterparty credit risk"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditEnhancementAgreement
 tags: [FBC, Release]
+detail: "A credit enhancement agreement ensures that collateral or a guarantee is established to secure obligations under the agreement. Features may include specification of the kinds of collateral or guarantee that may be used together with the relevant valuation methods, thresholds for the value of the collateral and haircuts applied based on mitigating market risk, margin requirements, dispute resolution with respect to collateral valuation and margin calls, and other operational details related to the transfer, substitution, and return of the collateral if established or posted."
+synonyms:
+  - "collateralization"
+  - "credit support agreement"
+  - "financial collateral arrangement"
+  - "margin arrangement"
 relations:
   - {type: is-a, target: "/FND/Agreements/Contracts/CollateralAgreement.md", provenance: fibo}
   - {type: has-beneficiary, target: "/FBC/DebtAndEquities/Debt/CreditEnhancementBeneficiary.md", provenance: fibo}

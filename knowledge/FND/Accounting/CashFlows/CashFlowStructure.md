@@ -4,6 +4,7 @@ title: "cash flow structure"
 description: "the structure related to one or more cash flows"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/CashFlowStructure
 tags: [FND, Provisional]
+detail: "Cash flow structures may involve not only cash flows, but the kind of schedule, historic payments, projected payments, a link or links to the relevant contract(s) or account(s), and possibly some triggering event."
 relations:
   - {type: is-a, target: "/FND/DatesAndTimes/FinancialDates/DatedStructuredCollection.md", provenance: fibo}
   - {type: has-member, target: "/FND/Accounting/CashFlows/CashFlow.md", provenance: fibo}

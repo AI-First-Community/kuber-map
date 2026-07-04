@@ -4,6 +4,8 @@ title: "market identifier code registry entry"
 description: "entry in a market identifier code registry that conforms to ISO 10383"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/InternationalRegistriesAndAuthorities/MarketIdentifierCodeRegistryEntry
 tags: [FBC, Release]
+synonyms:
+  - "MIC registry entry"
 relations:
   - {type: is-a, target: "/CMNS/RegistrationAuthorities/RegistryEntry.md", provenance: fibo}
   - {type: comprises, target: "/FBC/FunctionalEntities/Markets/MarketIdentifier.md", provenance: fibo}

@@ -4,6 +4,7 @@ title: "account"
 description: "container for records associated with a business arrangement for regular transactions and services"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/Account
 tags: [FBC, Release]
+detail: "In general, an account is associated with a contractual relationship between a buyer and seller under which payment may be made at a later time. General ledger accounts are an exception to this, however, and typically do not have account holders, including internal account holders. They may, on the other hand, have responsible parties."
 relations:
   - {type: has-balance, target: "/FBC/ProductsAndServices/ClientsAndAccounts/Balance.md", provenance: fibo}
   - {type: has-close-date, target: "/FBC/ProductsAndServices/ClientsAndAccounts/CloseDate.md", provenance: fibo}

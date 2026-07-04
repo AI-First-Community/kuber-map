@@ -4,6 +4,8 @@ title: "unilateral commitment"
 description: "commitment (promise or obligation) made by one party without requiring a reciprocal promise from another party"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Agreements/UnilateralCommitment
 tags: [FND, Release]
+examples:
+  - "Unilateral commitments include some promotional offers, contests, and rewards, where the offering party sets conditions without requiring upfront agreement from others."
 relations:
   - {type: is-a, target: "/FND/Agreements/Agreements/Commitment.md", provenance: fibo}
 ---

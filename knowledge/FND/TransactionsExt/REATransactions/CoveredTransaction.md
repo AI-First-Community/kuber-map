@@ -4,6 +4,7 @@ title: "covered transaction"
 description: "A transaction covered by some Master Agreement."
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/REATransactions/CoveredTransaction
 tags: [FND, Informative]
+detail: "The Master Agreement sets out the terms and conditions under which these transactions are to take place between the parties. These are Over the Counter transactions, including OTC Derivatives."
 relations:
   - {type: is-a, target: "/FND/TransactionsExt/REATransactions/ContractualTransaction.md", provenance: fibo}
   - {type: is-governed-by, target: "/FND/Agreements/Contracts/MasterAgreement.md", provenance: fibo}

@@ -4,6 +4,10 @@ title: "sole proprietor"
 description: "party that owns a business, has the rights to all profits from that business and is considered a single entity (unincorporated) together with that business for tax and liability purposes"
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/SoleProprietorships/SoleProprietorships/SoleProprietor
 tags: [BE, Release]
+detail: "A sole proprietor has unlimited liability with respect to any business debts."
+synonyms:
+  - "sole owner"
+  - "sole trader"
 relations:
   - {type: is-a, target: "/BE/OwnershipAndControl/OwnershipParties/EntityOwner.md", provenance: fibo}
   - {type: has-investment-entity, target: "/BE/SoleProprietorships/SoleProprietorships/SoleProprietorship.md", provenance: fibo}

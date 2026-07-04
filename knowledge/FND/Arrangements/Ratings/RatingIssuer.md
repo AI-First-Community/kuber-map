@@ -4,6 +4,7 @@ title: "rating issuer"
 description: "party that is responsible for issuing ratings"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingIssuer
 tags: [FND, Release]
+detail: "A rating issuer is frequently, but not always the rating scale publisher. A rating issuer may delegate responsibility for producing a rating to a rating party."
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/PartyRole.md", provenance: fibo}
   - {type: issues, target: "/FND/Arrangements/Ratings/Rating.md", provenance: fibo}

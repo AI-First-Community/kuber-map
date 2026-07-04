@@ -4,6 +4,7 @@ title: "all borrowers' monthly income"
 description: "total monthly qualifying income for all borrowers on the loan"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/AllBorrowersMonthlyIncome
 tags: [LOAN, Provisional]
+detail: "This should be computed from the income of the individual borrowers."
 relations:
   - {type: is-a, target: "/FND/Accounting/AccountingEquity/Income.md", provenance: fibo}
   - {type: is-a, target: "/FND/Accounting/CurrencyAmount/MonetaryAmount.md", provenance: fibo}

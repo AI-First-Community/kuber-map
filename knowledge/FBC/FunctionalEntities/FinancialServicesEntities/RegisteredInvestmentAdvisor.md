@@ -4,6 +4,8 @@ title: "registered investment advisor"
 description: "registered agent and financial service provider that advises high net worth individuals on investments and manages their portfolios"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/RegisteredInvestmentAdvisor
 tags: [FBC, Release]
+synonyms:
+  - "RIA"
 relations:
   - {type: is-a, target: "/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider.md", provenance: fibo}
   - {type: is-a, target: "/FBC/ProductsAndServices/FinancialProductsAndServices/RegisteredAgent.md", provenance: fibo}

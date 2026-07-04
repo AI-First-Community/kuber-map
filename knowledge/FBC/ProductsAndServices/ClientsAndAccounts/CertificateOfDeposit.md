@@ -4,6 +4,9 @@ title: "certificate of deposit"
 description: "cash instrument associated with a time deposit account that cannot be withdrawn for a certain period of time (term)"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CertificateOfDeposit
 tags: [FBC, Release]
+detail: "When the term is over it can be withdrawn or it can be held for another term. The longer the term the better the yield on the money."
+synonyms:
+  - "CD"
 relations:
   - {type: is-a, target: "/FBC/FinancialInstruments/FinancialInstruments/CashInstrument.md", provenance: fibo}
   - {type: has-contract-duration, target: "/CMNS/DatesAndTimes/Duration.md", provenance: fibo}

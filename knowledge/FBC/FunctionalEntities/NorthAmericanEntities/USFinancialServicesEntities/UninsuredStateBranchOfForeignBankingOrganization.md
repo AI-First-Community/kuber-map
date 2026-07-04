@@ -4,6 +4,7 @@ title: "uninsured state branch of foreign banking organization"
 description: "any office or any place of business of a foreign bank located in any State of the United States at which deposits are received, established and operating under the laws of that State that is not insured or regulated by the Federal Deposit Insurance Corporation (FDIC)"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/UninsuredStateBranchOfForeignBankingOrganization
 tags: [FBC, Release]
+detail: "An uninsured branch does not accept retail deposits and need not apply for federal deposit insurance."
 relations:
   - {type: is-a, target: "/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/StateBranchOfForeignBankingOrganization.md", provenance: fibo}
   - {type: is-classified-by, target: "/FBC/FunctionalEntities/NorthAmericanEntities/USNationalInformationCenterControlledVocabularies/NICEntityTypeClassifier-USB.md", provenance: fibo}

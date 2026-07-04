@@ -4,6 +4,8 @@ title: "risk pooling institution"
 description: "financial institution that provides some financial service while spreading the financial risk inherent in that service to lower the probability of a catastrophic financial event by aggregating customers across diverse dimensions as a risk management practice"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/RiskPoolingInstitution
 tags: [FBC, Release]
+examples:
+  - "Insurance companies are the most common form of risk pooling institution."
 relations:
   - {type: is-a, target: "/FBC/FunctionalEntities/FinancialServicesEntities/NonDepositoryInstitution.md", provenance: fibo}
 ---

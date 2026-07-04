@@ -4,6 +4,9 @@ title: "local operating unit"
 description: "registrar that is authorized by the Global LEI Foundation to issue legal entity identifiers"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LocalOperatingUnit
 tags: [FBC, Release]
+detail: "LOUs supply registration, renewal and other services, and act as the primary interface for legal entities wishing to obtain an LEI."
+synonyms:
+  - "LOU"
 relations:
   - {type: is-a, target: "/CMNS/RegistrationAuthorities/Registrar.md", provenance: fibo}
   - {type: issues, target: "/BE/LegalEntities/LEIEntities/LegalEntityIdentifier.md", provenance: fibo}

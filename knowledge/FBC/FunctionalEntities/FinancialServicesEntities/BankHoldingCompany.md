@@ -4,6 +4,7 @@ title: "bank holding company"
 description: "any company that owns and/or has direct or indirect control of one or more banks; BHCs may also own nonbanking subsidiaries such as broker-dealers and asset managers"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/BankHoldingCompany
 tags: [FBC, Release]
+detail: "A bank holding company may also own another bank holding company, which in turn owns or controls a bank; the company at the top of the ownership chain is called the top holder."
 relations:
   - {type: is-a, target: "/FBC/FunctionalEntities/FinancialServicesEntities/HoldingCompany.md", provenance: fibo}
   - {type: is-a, target: "/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider.md", provenance: fibo}

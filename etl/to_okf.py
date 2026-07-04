@@ -56,7 +56,22 @@ def load_definitions(paths):
     return defs
 
 
-def emit(rec, is_core=False, curated_def=False):
+def load_examples(paths):
+    """Curated real-world examples per concept: iri -> [example, ...]. Illustrative instances
+    (general domain knowledge), applied when FIBO supplies none; marked provenance curated."""
+    out = {}
+    for path in paths:
+        try:
+            data = json.load(open(path))
+        except (OSError, json.JSONDecodeError):
+            continue
+        for e in data.get("examples", []):
+            if e.get("iri") and e.get("examples"):
+                out[e["iri"]] = e["examples"]
+    return out
+
+
+def emit(rec, is_core=False, curated_def=False, curated_examples=False):
     tags = [rec["cluster"]] + ([rec["maturity"]] if rec["maturity"] else [])
     out = ["---", "type: FIBO Class", f'title: "{yaml_1line(rec["title"])}"']
     if rec["description"]:
@@ -66,6 +81,16 @@ def emit(rec, is_core=False, curated_def=False):
     out += [f'resource: {rec["iri"]}', f'tags: [{", ".join(tags)}]']
     if is_core:
         out.append("core: true")
+    # Richer FIBO annotations for the detail card: explanatory/usage notes, examples, synonyms.
+    if rec.get("explanatory"):
+        out.append(f'detail: "{yaml_1line(" ".join(rec["explanatory"]))}"')
+    for key in ("examples", "synonyms"):
+        vals = rec.get(key) or []
+        if vals:
+            out.append(f"{key}:")
+            out += [f'  - "{yaml_1line(v)}"' for v in vals]
+            if key == "examples" and curated_examples:
+                out.append("examples_provenance: curated")
     rels = [e for e in rec["relations"] if iri_to_path(e["target"])]
     if rels:
         out.append("relations:")
@@ -87,13 +112,15 @@ def main():
     ap.add_argument("--bundle", default="knowledge")
     ap.add_argument("--clusters", nargs="+", default=["FND", "LOAN"])
     ap.add_argument("--curation", nargs="+",
-                    default=["curation/loan-origination.json", "curation/definitions.json"],
-                    help="curation JSON: `core:` entries stamp core: true; `definitions:` override empty defs")
+                    default=["curation/loan-origination.json", "curation/definitions.json",
+                             "curation/examples.json"],
+                    help="curation JSON: `core:` stamps core; `definitions:`/`examples:` overlay content")
     args = ap.parse_args()
     keep = set(args.clusters)
     curation_paths = [p for pat in args.curation for p in glob.glob(pat)] or args.curation
     core_iris = load_core_iris(curation_paths)
     definitions = load_definitions(curation_paths)
+    examples = load_examples(curation_paths)
 
     records = [r for r in json.load(open(args.inp)) if r["cluster"] in keep]
     seen_paths = {}
@@ -114,13 +141,20 @@ def main():
                 r = {**r, "description": override}  # local copy; also flows to the index
                 curated_def = True
                 curated_defs += 1
+        # Curated examples fill in where FIBO supplies none (provenance kept distinct).
+        curated_examples = False
+        ex_override = examples.get(r["iri"])
+        if ex_override and not (r.get("examples") or []):
+            r = {**r, "examples": ex_override}
+            curated_examples = True
         rel = iri_to_path(r["iri"])            # single source of truth for placement
         path = os.path.join(args.bundle, rel.lstrip("/"))
         if path in seen_paths and seen_paths[path] != r["iri"]:
             print(f"  ! id collision: {path} ({seen_paths[path]} vs {r['iri']})")
         seen_paths[path] = r["iri"]
         os.makedirs(os.path.dirname(path), exist_ok=True)
-        open(path, "w").write(emit(r, is_core=is_core, curated_def=curated_def))
+        open(path, "w").write(emit(r, is_core=is_core, curated_def=curated_def,
+                                   curated_examples=curated_examples))
         by_cluster.setdefault(cl, []).append(r)
 
     for cl, recs in by_cluster.items():

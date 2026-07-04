@@ -4,6 +4,8 @@ title: "government minister"
 description: "government official that is an executive, who is either appointed or elected to a high office in the government"
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentMinister
 tags: [BE, Release]
+examples:
+  - "Minister of Finance, Secretary of State, Attorney General of California"
 relations:
   - {type: is-a, target: "/BE/GovernmentEntities/GovernmentEntities/GovernmentOfficial.md", provenance: fibo}
   - {type: is-a, target: "/BE/OwnershipAndControl/Executives/Executive.md", provenance: fibo}

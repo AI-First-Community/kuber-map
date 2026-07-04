@@ -4,6 +4,9 @@ title: "Research, Statistics, Supervision and Regulation, and Discount and Credi
 description: "unique identifier assigned by the Federal Reserve to financial institutions for regulatory and oversight purposes"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/ResearchStatisticsSupervisionDiscountIdentifier
 tags: [FBC, Release]
+synonyms:
+  - "ID_RSSD"
+  - "RSSD ID"
 relations:
   - {type: is-a, target: "/FBC/FunctionalEntities/FinancialServicesEntities/FinancialServiceProviderIdentifier.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/RegistrationAuthorities/RegisteredIdentifier.md", provenance: fibo}

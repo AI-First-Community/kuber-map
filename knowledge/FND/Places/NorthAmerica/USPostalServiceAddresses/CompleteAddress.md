@@ -4,6 +4,7 @@ title: "complete address"
 description: "delivery address that has all the address elements necessary to allow an exact match with the current Postal Service ZIP+4 and City State files to obtain the finest level of ZIP+4 and delivery point codes for the delivery address"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddresses/CompleteAddress
 tags: [FND, Release]
+detail: "A complete address may be required on mail at some automation rates."
 relations:
   - {type: is-a, target: "/FND/Places/NorthAmerica/USPostalServiceAddresses/StandardizedAddress.md", provenance: fibo}
 ---

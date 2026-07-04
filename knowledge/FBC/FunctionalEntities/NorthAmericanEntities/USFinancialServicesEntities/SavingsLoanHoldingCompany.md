@@ -4,6 +4,8 @@ title: "savings loan holding company"
 description: "company that directly or indirectly controls a savings association or related holding company, and explicitly excludes any company that is also a bank holding company"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/SavingsLoanHoldingCompany
 tags: [FBC, Release]
+synonyms:
+  - "savings and loan holding company"
 relations:
   - {type: is-a, target: "/FBC/FunctionalEntities/FinancialServicesEntities/HoldingCompany.md", provenance: fibo}
   - {type: is-a, target: "/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider.md", provenance: fibo}

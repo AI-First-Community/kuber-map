@@ -4,6 +4,8 @@ title: "formula"
 description: "rule expressed in letters and symbols that consists of at least one expression"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Formula
 tags: [FND, Release]
+synonyms:
+  - "complex expression"
 relations:
   - {type: is-a, target: "/CMNS/Documents/Specification.md", provenance: fibo}
   - {type: has-expression, target: "/CMNS/QuantitiesAndUnits/Expression.md", provenance: fibo}

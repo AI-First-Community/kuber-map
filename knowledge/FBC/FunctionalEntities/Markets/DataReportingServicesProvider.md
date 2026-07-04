@@ -4,6 +4,8 @@ title: "data reporting services provider"
 description: "market data provider and reporting party that reports and/or publishes data on securities transactions, including required regulatory reporting for such transactions, and as such is subject to regulatory supervision"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/DataReportingServicesProvider
 tags: [FBC, Release]
+synonyms:
+  - "DRSP"
 relations:
   - {type: is-a, target: "/BE/FunctionalEntities/Publishers/MarketDataProvider.md", provenance: fibo}
   - {type: is-a, target: "/FND/Arrangements/Reporting/ReportingParty.md", provenance: fibo}

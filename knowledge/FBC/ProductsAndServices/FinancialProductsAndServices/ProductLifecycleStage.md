@@ -4,6 +4,8 @@ title: "product lifecycle stage"
 description: "phase in a product lifecycle"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/ProductLifecycleStage
 tags: [FBC, Release]
+examples:
+  - "research and development phase of a product lifecycle or the introduction phase in a marketing lifecycle, growth stage in an economic lifecycle for a product"
 relations:
   - {type: is-a, target: "/FND/Arrangements/Lifecycles/LifecycleStage.md", provenance: fibo}
   - {type: classifies, target: "/FND/ProductsAndServices/ProductsAndServices/Product.md", provenance: fibo}

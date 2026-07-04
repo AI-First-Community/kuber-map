@@ -4,6 +4,7 @@ title: "debt"
 description: "obligation to pay something, such as an amount of money, good, service, or instrument"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Debt
 tags: [FBC, Release]
+detail: "In cases where the debtor and payer are the same legal person, then a debt is equivalent to a payment obligation."
 relations:
   - {type: is-a, target: "/FND/Agreements/Agreements/Commitment.md", provenance: fibo}
   - {type: is-owed-by, target: "/FBC/DebtAndEquities/Debt/Debtor.md", provenance: fibo}

@@ -4,6 +4,7 @@ title: "national bank"
 description: "commercial bank whose charter is approved by the Office of the Comptroller of the Currency (OCC) rather than by a state banking agency"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/NationalBank
 tags: [FBC, Release]
+detail: "National Banks are required to be members of the Federal Reserve System and belong to the Federal Deposit Insurance Corporation."
 relations:
   - {type: is-a, target: "/FBC/FunctionalEntities/FinancialServicesEntities/CommercialBank.md", provenance: fibo}
   - {type: is-a, target: "/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/USBank.md", provenance: fibo}

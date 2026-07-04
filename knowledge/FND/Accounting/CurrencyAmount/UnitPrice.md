@@ -4,6 +4,8 @@ title: "unit price"
 description: "monetary price expressed in relation to a well-known measurable unit by which the goods or services are allocated"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/UnitPrice
 tags: [FND, Release]
+examples:
+  - "For example, gold is commonly measured in troy ounces, grams, etc., and oil is measured in terms of barrels."
 relations:
   - {type: is-a, target: "/FND/Accounting/CurrencyAmount/MonetaryPrice.md", provenance: fibo}
 ---

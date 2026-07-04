@@ -1,0 +1,546 @@
+{
+  "_comment": "Curated real-world examples for loan-origination core concepts. Illustrative instances (general lending knowledge), not FIBO axioms. Applied by etl/to_okf.py when FIBO supplies none; provenance is curated.",
+  "examples": [
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract",
+      "title": "HMDA-CoveredLoanContract",
+      "examples": [
+        "A closed-end home-purchase mortgage originated by a covered bank."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report",
+      "title": "HMDA-Report",
+      "examples": [
+        "A bank's annual Loan/Application Register (LAR) filed with the CFPB."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/NMLSR-ID",
+      "title": "NMLSR-ID",
+      "examples": [
+        "NMLS #1234567 assigned to a licensed mortgage loan originator."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/AmortizationType",
+      "title": "AmortizationType",
+      "examples": [
+        "Fully amortizing",
+        "Interest-only",
+        "Negative amortization"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/Appraisal",
+      "title": "Appraisal",
+      "examples": [
+        "A licensed appraiser's report valuing a home at $450,000."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/AppraisedValue",
+      "title": "AppraisedValue",
+      "examples": [
+        "$450,000 \u2014 the appraiser's estimate of a property's market value."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/AutomatedUnderwritingSystem",
+      "title": "AutomatedUnderwritingSystem",
+      "examples": [
+        "Fannie Mae Desktop Underwriter (DU)",
+        "Freddie Mac Loan Product Advisor (LPA)"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Borrower",
+      "title": "Borrower",
+      "examples": [
+        "A married couple applying for a mortgage to buy their first home."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/BorrowerAssessment",
+      "title": "BorrowerAssessment",
+      "examples": [
+        "A summary of the applicant's income, employment, and credit history."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement",
+      "title": "BorrowerDisclosureRequirement",
+      "examples": [
+        "The TILA-RESPA (TRID) Loan Estimate a lender must give within 3 business days."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/BorrowerMonthlyIncome",
+      "title": "BorrowerMonthlyIncome",
+      "examples": [
+        "$8,000/month gross qualifying income from salary plus bonus."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/ClosedEndMortgageLoan",
+      "title": "ClosedEndMortgageLoan",
+      "examples": [
+        "A 30-year fixed-rate purchase mortgage with no further draws."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Comaker",
+      "title": "Comaker",
+      "examples": [
+        "A parent who co-signs a child's mortgage note."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Collateral",
+      "title": "Collateral",
+      "examples": [
+        "The house securing a mortgage",
+        "Securities pledged for a margin loan"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/CollateralValuation",
+      "title": "CollateralValuation",
+      "examples": [
+        "An appraisal or automated valuation model (AVM) of the pledged property."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/CollateralizedLoan",
+      "title": "CollateralizedLoan",
+      "examples": [
+        "A mortgage secured by real estate",
+        "A securities-backed line of credit"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/CombinedLoanToValueRatio",
+      "title": "CombinedLoanToValueRatio",
+      "examples": [
+        "A $240k first mortgage + a $30k HELOC on a $300k home = 90% CLTV."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw",
+      "title": "ConsumerCreditProtectionLaw",
+      "examples": [
+        "The US Consumer Credit Protection Act",
+        "The Truth in Lending Act (Reg Z)"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreement",
+      "title": "CreditAgreement",
+      "examples": [
+        "The signed mortgage note and loan agreement between borrower and lender."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/CreditRiskAssessment",
+      "title": "CreditRiskAssessment",
+      "examples": [
+        "Scoring an applicant's probability of default from credit and income data."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Creditor",
+      "title": "Creditor",
+      "examples": [
+        "The bank owed repayment under a mortgage note."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/DisclosureProvision",
+      "title": "DisclosureProvision",
+      "examples": [
+        "A contract clause requiring the lender to disclose the APR and finance charges."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution",
+      "title": "FinancialInstitution",
+      "examples": [
+        "JPMorgan Chase",
+        "A state-chartered credit union"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/GoodFaithEstimate",
+      "title": "GoodFaithEstimate",
+      "examples": [
+        "The lender's itemized estimate of closing costs (the Loan Estimate under TRID)."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Guaranty/Guarantor",
+      "title": "Guarantor",
+      "examples": [
+        "A private mortgage insurer backing a loan",
+        "A parent guaranteeing repayment"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/ConsumerLoans/HomeEquityLineOfCredit",
+      "title": "HomeEquityLineOfCredit",
+      "examples": [
+        "A $50,000 revolving HELOC secured by a homeowner's equity."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/Income",
+      "title": "Income",
+      "examples": [
+        "Wages",
+        "Self-employment income",
+        "Rental income used to qualify a borrower"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IncomeVerificationReport",
+      "title": "IncomeVerificationReport",
+      "examples": [
+        "A verification of employment (VOE) with pay stubs and W-2s."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IndividualPersonCreditRating",
+      "title": "IndividualPersonCreditRating",
+      "examples": [
+        "A FICO score of 720",
+        "A VantageScore"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation",
+      "title": "LegalObligation",
+      "examples": [
+        "The borrower's court-enforceable duty to repay the mortgage."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Lender",
+      "title": "Lender",
+      "examples": [
+        "A mortgage bank or credit union extending a home loan."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LenderLienPosition",
+      "title": "LenderLienPosition",
+      "examples": [
+        "First lien (the primary mortgage)",
+        "Second lien (a HELOC)"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Loan",
+      "title": "Loan",
+      "examples": [
+        "A $300,000 30-year home mortgage",
+        "A $25,000 auto loan"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplication",
+      "title": "LoanApplication",
+      "examples": [
+        "A completed Uniform Residential Loan Application (Form 1003)."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationPhase",
+      "title": "LoanApplicationPhase",
+      "examples": [
+        "Pre-qualification",
+        "Application intake",
+        "Underwriting",
+        "Decisioning"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationStatus",
+      "title": "LoanApplicationStatus",
+      "examples": [
+        "Submitted",
+        "Under review",
+        "Approved",
+        "Declined",
+        "Withdrawn"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanProductOffering",
+      "title": "LoanProductOffering",
+      "examples": [
+        "A lender's advertised 6.5% 30-year fixed mortgage for first-time buyers."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/LoanOrCreditAccount",
+      "title": "LoanOrCreditAccount",
+      "examples": [
+        "The servicing account tracking a mortgage's balance and payments."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LoanPaymentSchedule",
+      "title": "LoanPaymentSchedule",
+      "examples": [
+        "A monthly amortization schedule of principal and interest over 360 months."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/LoanPhase",
+      "title": "LoanPhase",
+      "examples": [
+        "Origination",
+        "Disbursement",
+        "Repayment",
+        "Payoff / closure"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanProduct",
+      "title": "LoanProduct",
+      "examples": [
+        "A 30-year fixed conventional mortgage",
+        "A 5/1 ARM"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanPurpose",
+      "title": "LoanPurpose",
+      "examples": [
+        "Home purchase",
+        "Rate-and-term refinance",
+        "Cash-out refinance",
+        "Home improvement"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/LoanRegulatoryRequirement",
+      "title": "LoanRegulatoryRequirement",
+      "examples": [
+        "Ability-to-Repay / Qualified Mortgage rules",
+        "HMDA data collection"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/LoanSecuredByRealEstate",
+      "title": "LoanSecuredByRealEstate",
+      "examples": [
+        "A mortgage where the home is the primary collateral."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LoanToValueRatio",
+      "title": "LoanToValueRatio",
+      "examples": [
+        "A $240,000 loan on a $300,000 appraised home = 80% LTV."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount",
+      "title": "MonetaryAmount",
+      "examples": [
+        "$300,000.00 USD",
+        "\u20ac1,500.00"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/Mortgage",
+      "title": "Mortgage",
+      "examples": [
+        "A 30-year fixed-rate home loan",
+        "An FHA-insured mortgage"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/MortgageIndemnityGuarantor",
+      "title": "MortgageIndemnityGuarantor",
+      "examples": [
+        "A private mortgage insurer providing PMI / MIG cover."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/MortgageLoanPurpose",
+      "title": "MortgageLoanPurpose",
+      "examples": [
+        "Purchase",
+        "Rate-and-term refinance",
+        "Construction",
+        "Cash-out"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/MortgageProduct",
+      "title": "MortgageProduct",
+      "examples": [
+        "A jumbo 30-year fixed",
+        "A 7/1 ARM",
+        "An FHA 203(k) rehab loan"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/OpenEndMortgageLoan",
+      "title": "OpenEndMortgageLoan",
+      "examples": [
+        "A mortgage allowing future advances up to a limit."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/OwnershipInterest",
+      "title": "OwnershipInterest",
+      "examples": [
+        "Fee simple ownership",
+        "Leasehold",
+        "Joint tenancy"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/Payment",
+      "title": "Payment",
+      "examples": [
+        "A $1,800 monthly mortgage payment of principal and interest."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/PaymentHistory",
+      "title": "PaymentHistory",
+      "examples": [
+        "24 months of on-time mortgage payments with one 30-day late."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/PreApprovalContract",
+      "title": "PreApprovalContract",
+      "examples": [
+        "A lender's written commitment to lend up to $400k subject to conditions."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/PreApprovalRequest",
+      "title": "PreApprovalRequest",
+      "examples": [
+        "A buyer asking a lender to pre-approve them for a $400k mortgage."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/PrepaymentTerms",
+      "title": "PrepaymentTerms",
+      "examples": [
+        "A 2% prepayment penalty if repaid within 3 years",
+        "Penalty-free prepayment"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Principal",
+      "title": "Principal",
+      "examples": [
+        "The $300,000 original balance of a mortgage, excluding interest."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/PropertyUsage",
+      "title": "PropertyUsage",
+      "examples": [
+        "Primary residence",
+        "Second home",
+        "Investment / rental property"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/RealProperty/RealProperty",
+      "title": "RealProperty",
+      "examples": [
+        "A single-family house and the land it sits on."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegB",
+      "title": "RegB",
+      "examples": [
+        "Regulation B implementing the Equal Credit Opportunity Act."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegZ",
+      "title": "RegZ",
+      "examples": [
+        "Regulation Z implementing the Truth in Lending Act."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/RepaymentPhase",
+      "title": "RepaymentPhase",
+      "examples": [
+        "The period after disbursement during which the borrower makes scheduled payments."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/ReverseMortgageLoan",
+      "title": "ReverseMortgageLoan",
+      "examples": [
+        "A HECM paying a 70-year-old homeowner monthly against home equity."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/SecuredLoan",
+      "title": "SecuredLoan",
+      "examples": [
+        "A mortgage (secured by a home)",
+        "A pawn loan (secured by an item)"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Servicer",
+      "title": "Servicer",
+      "examples": [
+        "The company collecting monthly payments and managing escrow after closing."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/TotalDebtExpenseRatio",
+      "title": "TotalDebtExpenseRatio",
+      "examples": [
+        "All monthly debt \u00f7 income = 43% DTI used in the credit decision."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/TotalOutstandingPrincipal",
+      "title": "TotalOutstandingPrincipal",
+      "examples": [
+        "The combined unpaid principal of a first mortgage and a HELOC on the property."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/UnderwritingDecision",
+      "title": "UnderwritingDecision",
+      "examples": [
+        "Approve",
+        "Approve with conditions",
+        "Suspend",
+        "Deny"
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/UniversalLoanIdentifier",
+      "title": "UniversalLoanIdentifier",
+      "examples": [
+        "The 23\u201345 character ULI assigned to a HMDA-reportable loan."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/UseOfProceedsProvision",
+      "title": "UseOfProceedsProvision",
+      "examples": [
+        "A clause requiring loan funds be used only to purchase the specified home."
+      ]
+    }
+  ]
+}

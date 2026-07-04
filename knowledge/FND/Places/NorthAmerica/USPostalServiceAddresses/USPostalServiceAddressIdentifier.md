@@ -4,6 +4,7 @@ title: "U.S. Postal Service address identifier"
 description: "combined with the ZIP + 4 code, the delivery point code provides a unique identifier for every deliverable address served by the USPS"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddresses/USPostalServiceAddressIdentifier
 tags: [FND, Release]
+detail: "The delivery point digits are almost never printed on mail in human-readable form; instead they are encoded in the POSTNET delivery point barcode (DPBC) or as part of the newer Intelligent Mail Barcode (IMB)."
 relations:
   - {type: is-a, target: "/FND/Places/Addresses/PhysicalAddressIdentifier.md", provenance: fibo}
   - {type: comprises, target: "/FND/Places/NorthAmerica/USPostalServiceAddresses/DeliveryPointCode.md", provenance: fibo}

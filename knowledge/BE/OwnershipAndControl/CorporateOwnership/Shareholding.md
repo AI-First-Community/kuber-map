@@ -4,6 +4,7 @@ title: "shareholding"
 description: "ownership interest in the equity of a company, represented by shares that confer financial rights and governance privileges"
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/Shareholding
 tags: [BE, Release]
+detail: "Shareholding refers to the total ownership a party has in some organization, and determines voting power, dividend entitlement, and exposure to risk."
 relations:
   - {type: is-a, target: "/FND/Accounting/AccountingEquity/FinancialAsset.md", provenance: fibo}
 ---

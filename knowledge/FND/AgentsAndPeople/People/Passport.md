@@ -4,6 +4,7 @@ title: "passport"
 description: "formal identity document, issued by a national government, which certifies the identity and nationality of its holder for the purpose of international travel"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/Passport
 tags: [FND, Release]
+detail: "The elements of identity contained in all standardized passports include information about the holder, including name, date of birth, gender and place of birth."
 relations:
   - {type: is-a, target: "/FND/AgentsAndPeople/People/IdentityDocument.md", provenance: fibo}
   - {type: comprises, target: "/FND/AgentsAndPeople/People/PassportNumber.md", provenance: fibo}

@@ -4,6 +4,8 @@ title: "card verification value"
 description: "card verification value specifically for Visa and Discover payment cards"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/CardAccounts/CardVerificationValue
 tags: [LOAN, Release]
+synonyms:
+  - "CVV"
 relations:
   - {type: is-a, target: "/LOAN/LoansSpecific/CardAccounts/MagneticStripeVerificationCodeValue.md", provenance: fibo}
 ---

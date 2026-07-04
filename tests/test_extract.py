@@ -68,6 +68,15 @@ def test_relations_sorted_is_a_first():
     assert types == sorted(types, key=lambda t: (t != "is-a", t))
 
 
+def test_annotations_extracted():
+    """explanatoryNote/example/synonym annotations feed the detail card."""
+    recs = _records()
+    r = recs["RegionalThing"]
+    assert r["examples"] == ["a colorful example"]
+    assert r["explanatory"] == ["an explanatory note about regional things"]
+    assert r["synonyms"] == ["colourful item"]
+
+
 def test_multi_filler_restriction_keeps_named_target():
     """A restriction with both a named someValuesFrom and an anonymous union must still
     yield the NAMED target — never dropped because the store yielded the BNode first."""

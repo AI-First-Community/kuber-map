@@ -5,6 +5,10 @@ description: "credit rating that provides an opinion of the creditworthiness of 
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IndividualPersonCreditRating
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "A FICO score of 720"
+  - "A VantageScore"
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FBC/DebtAndEquities/CreditRatings/CreditRating.md", provenance: fibo}
 ---

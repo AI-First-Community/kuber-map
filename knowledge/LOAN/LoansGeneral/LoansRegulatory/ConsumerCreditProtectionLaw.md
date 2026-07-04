@@ -6,6 +6,10 @@ definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "The US Consumer Credit Protection Act"
+  - "The Truth in Lending Act (Reg Z)"
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/LOAN/LoansGeneral/LoansRegulatory/ConsumerProtectionLaw.md", provenance: fibo}
 ---

@@ -5,6 +5,9 @@ description: "loan secured by real estate with a provision that the outstanding 
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/OpenEndMortgageLoan
 tags: [LOAN, Release]
 core: true
+examples:
+  - "A mortgage allowing future advances up to a limit."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/LOAN/LoansGeneral/Loans/OpenEndCredit.md", provenance: fibo}
   - {type: is-a, target: "/LOAN/RealEstateLoans/Mortgages/LoanSecuredByRealEstate.md", provenance: fibo}

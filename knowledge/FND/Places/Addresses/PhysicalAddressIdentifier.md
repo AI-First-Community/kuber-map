@@ -4,6 +4,8 @@ title: "physical address identifier"
 description: "unique identifier for a physical address"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/PhysicalAddressIdentifier
 tags: [FND, Release]
+examples:
+  - "Physical address identifiers may include bar codes, QCR codes, and +codes in a number of countries."
 relations:
   - {type: is-a, target: "/CMNS/CodesAndCodeSets/CodeElement.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/Identifiers/Identifier.md", provenance: fibo}

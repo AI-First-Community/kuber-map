@@ -21,7 +21,18 @@ from rdflib import OWL, RDF, RDFS, BNode, Graph, Literal, URIRef
 from rdflib.namespace import SKOS
 
 FILLER_PREDS = [OWL.someValuesFrom, OWL.allValuesFrom, OWL.onClass, OWL.hasValue]
-MATURITY_PRED = URIRef("https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/hasMaturityLevel")
+
+# FIBO annotation vocabularies (Commons AV + the older FIBO FND AV). We surface the richer
+# per-class annotations — explanatory/usage notes (the "detail"), examples, and synonyms — so
+# the map's detail card carries real FIBO content, not just the one-line definition.
+_CMNS_AV = "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+_FIBO_AV = "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/"
+MATURITY_PRED = URIRef(_FIBO_AV + "hasMaturityLevel")
+EXPLANATORY_PREDS = [URIRef(_CMNS_AV + "explanatoryNote"), URIRef(_FIBO_AV + "explanatoryNote"),
+                     URIRef(_CMNS_AV + "usageNote"), URIRef(_FIBO_AV + "usageNote")]
+EXAMPLE_PREDS = [SKOS.example]
+SYNONYM_PREDS = [URIRef(_CMNS_AV + "synonym"), URIRef(_FIBO_AV + "synonym"),
+                 URIRef(_CMNS_AV + "abbreviation"), URIRef(_FIBO_AV + "abbreviation"), SKOS.altLabel]
 
 
 def _merge_unique_bnodes(g, fg):
@@ -107,6 +118,19 @@ def _lang_rank(lang):
     return 4
 
 
+def all_literals(g, s, preds):
+    """All distinct literal values across the given predicates, deterministically ordered.
+    Used for list-valued annotations (examples, synonyms, explanatory notes)."""
+    seen = []
+    for p in preds:
+        for o in g.objects(s, p):
+            if isinstance(o, Literal):
+                v = str(o).strip()
+                if v and v not in seen:
+                    seen.append(v)
+    return sorted(seen)
+
+
 def best_literal(g, s, p):
     """Deterministically pick ONE literal among possibly several for (s, p).
 
@@ -179,6 +203,9 @@ def extract(g, class_source):
         records.append({"iri": c_uri, "id": local_name(c),
                         "title": str(label) if label else local_name(c),
                         "description": str(definition) if definition else None,
+                        "explanatory": all_literals(g, c, EXPLANATORY_PREDS),
+                        "examples": all_literals(g, c, EXAMPLE_PREDS),
+                        "synonyms": all_literals(g, c, SYNONYM_PREDS),
                         "cluster": src["cluster"], "maturity": src["maturity"],
                         "source_file": src["file"], "relations": relations})
     return records

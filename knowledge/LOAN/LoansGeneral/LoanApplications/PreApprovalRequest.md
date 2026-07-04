@@ -5,6 +5,10 @@ description: "request from a potential borrower that a lender commit to pre-appr
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/PreApprovalRequest
 tags: [LOAN, Provisional]
 core: true
+detail: "This may also include limits on the region where to purchase."
+examples:
+  - "A buyer asking a lender to pre-approve them for a $400k mortgage."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Arrangements/Reporting/RequestActivity.md", provenance: fibo}
   - {type: has-borrower, target: "/FBC/DebtAndEquities/Debt/Borrower.md", provenance: fibo}

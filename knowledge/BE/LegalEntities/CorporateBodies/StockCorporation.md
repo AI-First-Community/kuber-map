@@ -4,6 +4,7 @@ title: "stock corporation"
 description: "corporation that has shareholders, each of whom receives a portion of the ownership of the corporation through shares of stock"
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/StockCorporation
 tags: [BE, Release]
+detail: "The shares in a stock corporation may receive a return on their investment in the form of dividends. Shares are used for voting on matters of corporate policy or to elect directors, at the corporation's annual meeting and at other meetings of the corporation."
 relations:
   - {type: is-a, target: "/BE/LegalEntities/CorporateBodies/Corporation.md", provenance: fibo}
   - {type: has-date-of-incorporation, target: "/CMNS/DatesAndTimes/ExplicitDate.md", provenance: fibo}

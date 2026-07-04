@@ -5,6 +5,11 @@ description: "a category indicating the manner in which the borrower intends to 
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/PropertyUsage
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "Primary residence"
+  - "Second home"
+  - "Investment / rental property"
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/Classifiers/Classifier.md", provenance: fibo}
 ---

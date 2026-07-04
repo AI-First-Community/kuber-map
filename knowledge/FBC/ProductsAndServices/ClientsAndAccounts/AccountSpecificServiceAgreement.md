@@ -4,6 +4,7 @@ title: "account-specific service agreement"
 description: "service-agreement that is account-specific, applicable in cases where a client might hold multiple accounts with differing terms and conditions"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountSpecificServiceAgreement
 tags: [FBC, Release]
+detail: "Customers of financial service providers frequently hold multiple accounts - brokerage accounts, checking and savings accounts, trust accounts, and so forth - which may have specific terms and conditions associated with them."
 relations:
   - {type: is-a, target: "/FND/ProductsAndServices/ProductsAndServices/ServiceAgreement.md", provenance: fibo}
   - {type: applies-to, target: "/FBC/ProductsAndServices/ClientsAndAccounts/Account.md", provenance: fibo}

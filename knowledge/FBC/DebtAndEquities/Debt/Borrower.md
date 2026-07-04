@@ -5,6 +5,9 @@ description: "party to a credit agreement that is obligated to repay the amount 
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Borrower
 tags: [FBC, Release]
 core: true
+examples:
+  - "A married couple applying for a mortgage to buy their first home."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FBC/DebtAndEquities/Debt/Debtor.md", provenance: fibo}
   - {type: is-a, target: "/FND/Agreements/Contracts/ContractParty.md", provenance: fibo}

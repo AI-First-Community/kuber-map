@@ -4,6 +4,8 @@ title: "postcode"
 description: "sequence of characters used to assist in the sorting of mail"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Postcode
 tags: [FND, Release]
+synonyms:
+  - "postal code"
 relations:
   - {type: is-a, target: "/CMNS/CodesAndCodeSets/CodeElement.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/Locations/GeographicRegionIdentifier.md", provenance: fibo}

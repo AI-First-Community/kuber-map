@@ -4,6 +4,8 @@ title: "customer account"
 description: "account that represents an identified, named collection of balances and cumulative totals used to summarize customer transaction-related activity over a designated period of time"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccount
 tags: [FBC, Release]
+synonyms:
+  - "financial service account"
 relations:
   - {type: is-a, target: "/FBC/ProductsAndServices/ClientsAndAccounts/Account.md", provenance: fibo}
   - {type: is-defined-in, target: "/FND/ProductsAndServices/ProductsAndServices/ServiceAgreement.md", provenance: fibo}

@@ -5,6 +5,10 @@ description: "classifier indicating whether the lender has the primary lien posi
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LenderLienPosition
 tags: [LOAN, Release]
 core: true
+examples:
+  - "First lien (the primary mortgage)"
+  - "Second lien (a HELOC)"
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/Classifiers/Classifier.md", provenance: fibo}
 ---

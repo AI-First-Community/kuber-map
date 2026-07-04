@@ -5,6 +5,9 @@ description: "report providing the methodology and supporting documentation used
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IncomeVerificationReport
 tags: [LOAN, Provisional]
 core: true
+examples:
+  - "A verification of employment (VOE) with pay stubs and W-2s."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Arrangements/Assessments/AssessmentReport.md", provenance: fibo}
 ---

@@ -4,6 +4,7 @@ title: "undertaking"
 description: "Some undertaking to act."
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/REATransactions/Undertaking
 tags: [FND, Informative]
+detail: "This could be an undertaking to deliver something, to do something and so on. These correspond to negative and positive pledges in the contract."
 relations:
   - {type: bestows, target: "/FND/Law/LegalCapacity/ContingentRight.md", provenance: fibo}
   - {type: gives-rise-to, target: "/FND/Agreements/Agreements/Commitment.md", provenance: fibo}
