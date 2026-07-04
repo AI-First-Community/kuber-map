@@ -155,4 +155,4 @@ or `curated` (authored here). Overlays only fill gaps; they never overwrite real
 what makes an answer auditable and what keeps the EDM Council contribution honest.
 
 The fuller repo-side version is in
-[docs/Architecture.md](https://github.com/AI-First-Community/Bodhi-Map-For-FinTech/blob/main/docs/Architecture.md).
+[docs/Architecture.md](https://github.com/AI-First-Community/kuber-map/blob/main/docs/Architecture.md).

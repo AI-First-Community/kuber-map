@@ -44,5 +44,5 @@ EVAL_LLM_CMD='python eval/openai_cli.py' python eval/harness.py --adapter llm --
 ```
 
 See **[Value Proof](Value-Proof)** for the current numbers, and the in-repo
-[docs/Getting-Started.md](https://github.com/AI-First-Community/Bodhi-Map-For-FinTech/blob/main/docs/Getting-Started.md)
+[docs/Getting-Started.md](https://github.com/AI-First-Community/kuber-map/blob/main/docs/Getting-Started.md)
 for the fuller version.

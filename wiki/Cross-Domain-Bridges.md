@@ -32,7 +32,7 @@ relations. There are **19** across the five use cases.
 | credit-default-swap **references** bond | DER → SEC | ISDA Credit Derivatives Definitions |
 | swap **cleared-through** clearing-house | DER → FBC | Dodd-Frank Title VII; EU EMIR |
 
-(Full list of 19 in [contrib/edmc-bridge-contribution.md](https://github.com/AI-First-Community/Bodhi-Map-For-FinTech/blob/main/contrib/edmc-bridge-contribution.md).)
+(Full list of 19 in [contrib/edmc-bridge-contribution.md](https://github.com/AI-First-Community/kuber-map/blob/main/contrib/edmc-bridge-contribution.md).)
 
 ## The contribution package
 

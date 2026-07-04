@@ -1,4 +1,4 @@
-# Backlog — Bodhi Map for FIBO
+# Backlog — Kuber Map for FIBO
 
 Living execution tracker. `PLAN.md` = design/source-of-truth; this file = what's done and what's next.
 Pick the top unchecked item under **Immediate next** to continue. Every change must pass `make check`.
@@ -25,7 +25,7 @@ Last updated: 2026-07-04
 - ✅ **Five curated use cases** — loan origination (71), KYC / beneficial ownership (58), securities (59), regulatory reporting (52, most cross-domain — 8 clusters), derivatives (60). 284 `core:` concepts + **19 validated cross-domain bridges**, each use case with worked card examples + a context pack (`export/`), all spec-driven under `curation/usecases/`.
 - ✅ **Use-case lens + card badges** — the map default core spans all five use cases; a lens focuses one, cards show use-case membership. Fed by `use_cases:` frontmatter.
 - ✅ **EDM contribution package** — `etl/export_bridges.py` (`make contrib`) → `contrib/` (proposal MD + RDF/Turtle for the 19 bridges).
-- ✅ Published to GitHub (private): `AI-First-Community/Bodhi-Map-For-FinTech`, reproducible via `make fibo`.
+- ✅ Published to GitHub (private): `AI-First-Community/kuber-map`, reproducible via `make fibo`.
 
 **Map UI (E2):** data layer + vendored frontend + FIBO `app.html`/`graph.js` shipped (core-default view, domain/maturity filters, provenance-styled bridges, IRI-citation panel, offline PWA). Needs browser visual verification.
 

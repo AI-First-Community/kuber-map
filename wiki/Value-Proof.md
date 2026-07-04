@@ -45,4 +45,4 @@ EVAL_LLM_CMD='python eval/openai_cli.py' python eval/harness.py --adapter llm --
 
 No vendor SDK is a dependency — the harness pipes a prompt to any model command on stdin. Full
 write-up and per-question detail in
-[SPIKE_RESULTS.md](https://github.com/AI-First-Community/Bodhi-Map-For-FinTech/blob/main/SPIKE_RESULTS.md).
+[SPIKE_RESULTS.md](https://github.com/AI-First-Community/kuber-map/blob/main/SPIKE_RESULTS.md).

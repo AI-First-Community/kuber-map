@@ -6,7 +6,7 @@ must pass. Read `PLAN.md` (the design source of truth) and `SPIKE_RESULTS.md` (c
 alongside this file.
 
 ## What this project is
-**Bodhi Map for FIBO** — a curated, learner-first knowledge map of the Financial Industry
+**Kuber Map for FIBO** — a curated, learner-first knowledge map of the Financial Industry
 Business Ontology (FIBO), stored in Google's Open Knowledge Format (OKF), that doubles as
 **audit-ready grounding context for financial AI agents**. Value ranking (drives priorities):
 agent-grounding (product) > cross-domain bridges (moat) > the map UI (demo/curation surface).

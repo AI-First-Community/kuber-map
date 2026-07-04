@@ -1,7 +1,7 @@
 # Architecture
 
 > Visual, navigable version with more flows: the wiki
-> [Architecture](https://github.com/AI-First-Community/Bodhi-Map-For-FinTech/wiki/Architecture) page.
+> [Architecture](https://github.com/AI-First-Community/kuber-map/wiki/Architecture) page.
 
 ## The pipeline
 

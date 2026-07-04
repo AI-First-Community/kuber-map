@@ -11,7 +11,7 @@
 - [Cross-Domain Bridges](Cross-Domain-Bridges)
 
 ---
-- [Repo](https://github.com/AI-First-Community/Bodhi-Map-For-FinTech)
-- [Live app](https://ai-first-community.github.io/Bodhi-Map-For-FinTech/)
-- [PLAN.md](https://github.com/AI-First-Community/Bodhi-Map-For-FinTech/blob/main/PLAN.md)
-- [SPIKE_RESULTS.md](https://github.com/AI-First-Community/Bodhi-Map-For-FinTech/blob/main/SPIKE_RESULTS.md)
+- [Repo](https://github.com/AI-First-Community/kuber-map)
+- [Live app](https://ai-first-community.github.io/kuber-map/)
+- [PLAN.md](https://github.com/AI-First-Community/kuber-map/blob/main/PLAN.md)
+- [SPIKE_RESULTS.md](https://github.com/AI-First-Community/kuber-map/blob/main/SPIKE_RESULTS.md)

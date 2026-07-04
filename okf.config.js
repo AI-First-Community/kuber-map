@@ -1,5 +1,5 @@
 /* ============================================================================
-   Bodhi Map for FIBO — Controlled vocabulary + presentation flows (Node + browser).
+   Kuber Map for FIBO — Controlled vocabulary + presentation flows (Node + browser).
    Single source of truth for everything that is NOT a concept ("knowledge"). The OKF
    bundle under knowledge/ holds the concepts (nodes) + their typed, provenance-tagged
    relations (edges); this file holds the clusters (FIBO domains), relation styling,
