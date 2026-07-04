@@ -5,6 +5,8 @@ description: "an unsecured short-term debt instrument typically issued by a bank
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/TradedShortTermDebt/CommercialPaper
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 detail: "Commercial paper has a very-short to short maturity period (usually, 2 to 30 days, and rarely more than 270 days)."
 examples:
   - "90-day unsecured commercial paper issued by a large corporation to fund working capital."

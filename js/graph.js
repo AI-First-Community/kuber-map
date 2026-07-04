@@ -31,6 +31,7 @@
         level: n.level,
         color: CLUSTERS[n.cluster].color,
         isCore: !!n.core,
+        useCases: n.useCases || [],
         isNew: !!(RELEASE_VERSION && n.added === RELEASE_VERSION),
       },
     });
@@ -278,6 +279,7 @@
       <button class="panel-close" id="panelClose">×</button>
       <div class="panel-tag" style="--c:${c.color}">${c.label} · Level ${n.level}, ${LEVELS[n.level]}${RELEASE_VERSION && n.added === RELEASE_VERSION ? ` <span class="new-badge">✦ New in ${RELEASE_VERSION}</span>` : ''}</div>
       <h2 style="--c:${c.color}">${n.label}</h2>
+      ${(n.useCases && n.useCases.length) ? `<div class="uc-badges">${n.useCases.map((u) => `<button class="uc-badge" data-lens="${escapeHtml(u)}" title="Focus the ${escapeHtml(ucShort(u))} use case">${escapeHtml(ucShort(u))}</button>`).join('')}</div>` : ''}
       ${(() => { const s = summaryFor(n); return `<p class="summary">${s.html}</p>${s.derived ? '<p class="derived-note">Summarised from this class’s place in the FIBO taxonomy — FIBO ships no text definition for it.</p>' : ''}`; })()}
       ${cmpIdxFor !== -1 ? `<button class="panel-action" data-compare="${cmpIdxFor}">${TABLE_IC} Compare ${GRAPH.comparisons[cmpIdxFor].title}</button>` : ''}
       ${n.detail ? `<h4>Detail${n.detailProvenance === 'curated' ? ' <span class="rel-tag">curated</span>' : ''}</h4><p>${escapeHtml(n.detail)}</p>` : ''}
@@ -291,6 +293,13 @@
     document.getElementById('panelClose').onclick = closePanel;
     panel.querySelectorAll('[data-goto]').forEach((a) => {
       a.onclick = (ev) => { ev.preventDefault(); focusNode(a.getAttribute('data-goto')); };
+    });
+    panel.querySelectorAll('[data-lens]').forEach((b) => {
+      b.onclick = () => {
+        const u = b.getAttribute('data-lens');
+        const sel = document.getElementById('lens');
+        if (sel) { sel.value = u; sel.dispatchEvent(new Event('change')); }
+      };
     });
     const cmpA = panel.querySelector('[data-compare]');
     if (cmpA) cmpA.onclick = () => openCompare(parseInt(cmpA.getAttribute('data-compare'), 10));
@@ -412,6 +421,7 @@
   const revealedClusters = new Set();             // non-core clusters explicitly shown over the core view
   let newOnly = false;
   let coreOnly = true;                            // curated core is the default landing view (PLAN §9)
+  let activeUseCase = '';                          // use-case lens: '' = all; else show only that use case
 
   // "New" focus set = the new concepts + their direct neighbours, so additions
   // are shown wired into the existing graph rather than as floating islands.
@@ -422,8 +432,14 @@
 
   function nodeVisible(n) {
     if (newOnly) return newFocusIds.has(n.id());
-    // core view hides non-core concepts, unless the user explicitly revealed that cluster
-    if (coreOnly && !n.data('isCore') && !revealedClusters.has(n.data('cluster'))) return false;
+    // use-case lens: show only concepts curated into the selected use case
+    if (activeUseCase) {
+      const ucs = n.data('useCases') || [];
+      if (!ucs.includes(activeUseCase)) return false;
+    } else if (coreOnly && !n.data('isCore') && !revealedClusters.has(n.data('cluster'))) {
+      // core view hides non-core concepts, unless the user explicitly revealed that cluster
+      return false;
+    }
     if (!activeLevels.has(n.data('level'))) return false;
     if (!activeClusters.has(n.data('cluster'))) return false;
     return true;
@@ -470,6 +486,32 @@
       ensureLayout();   // first expansion to the full graph pays one layout, then it's cached
     });
   }
+  // ---- Use-case lens: focus one use case's curated subgraph ------------------
+  // A concept's use_cases come from the curation specs (curation/usecases/*.json).
+  function ucShort(u) {
+    if (/^Loan/i.test(u)) return 'Loan origination';
+    if (/^KYC/i.test(u)) return 'KYC';
+    if (/^Securities/i.test(u)) return 'Securities';
+    return u.split(' (')[0];
+  }
+  const lensSel = document.getElementById('lens');
+  if (lensSel) {
+    const counts = {};
+    GRAPH.nodes.forEach((n) => (n.useCases || []).forEach((u) => { counts[u] = (counts[u] || 0) + 1; }));
+    Object.keys(counts).sort((a, b) => counts[b] - counts[a]).forEach((u) => {
+      const o = document.createElement('option');
+      o.value = u; o.textContent = `${ucShort(u)} (${counts[u]})`;
+      lensSel.appendChild(o);
+    });
+    lensSel.addEventListener('change', () => {
+      activeUseCase = lensSel.value;
+      if (activeUseCase) { coreOnly = true; revealedClusters.clear(); if (coreChip) coreChip.classList.add('active'); }
+      applyFilters();
+      const vis = cy.elements(':visible');
+      if (vis.nodes().length) cy.animate({ fit: { eles: vis, padding: 60 } }, { duration: 350 });
+    });
+  }
+
   applyFilters();                                  // land on the curated core view
   layoutVisible(true);                             // lay out just the visible core — fast first paint
 
@@ -889,7 +931,7 @@
   const CORE_N = GRAPH.nodes.filter((n) => n.core).length;
   const WELCOME_FEATURES = [
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.8 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg>',
-      t: 'Curated core view', d: `You start on ${CORE_N} curated concepts spanning loan origination, KYC and securities. Toggle Core → full ontology to reveal all ${GRAPH.nodes.length}.` },
+      t: 'Curated core & lens', d: `You start on ${CORE_N} curated concepts spanning loan origination, KYC and securities. Use the Use-case lens to focus one; toggle Core → full ontology for all ${GRAPH.nodes.length}.` },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>',
       t: 'Guided tour', d: 'Walk the underwriting arc: application → borrower → collateral → LTV → decision → HMDA report.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h7"/><path d="M17 14l4 3-4 3" stroke-dasharray="3 2"/></svg>',

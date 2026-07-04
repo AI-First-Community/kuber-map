@@ -5,6 +5,8 @@ description: "corporation whose objective is to make money, i.e., to ensure real
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/ForProfitCorporation
 tags: [BE, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/BE/LegalEntities/CorporateBodies/Corporation.md", provenance: fibo}
   - {type: has-objective, target: "/BE/LegalEntities/LegalPersons/ProfitObjective.md", provenance: fibo}

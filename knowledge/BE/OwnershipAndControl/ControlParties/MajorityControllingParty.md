@@ -5,6 +5,8 @@ description: "controlling party that possesses, either directly or indirectly, t
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/MajorityControllingParty
 tags: [BE, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/BE/OwnershipAndControl/ControlParties/EntityControllingParty.md", provenance: fibo}
 ---

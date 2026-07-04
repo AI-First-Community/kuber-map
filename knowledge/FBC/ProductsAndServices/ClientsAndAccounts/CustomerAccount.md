@@ -5,6 +5,8 @@ description: "account that represents an identified, named collection of balance
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccount
 tags: [FBC, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 synonyms:
   - "financial service account"
 relations:

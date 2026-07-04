@@ -5,6 +5,8 @@ description: "debt obligations that represent claims to the cash flows from pool
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MortgageBackedSecurity
 tags: [SEC, Provisional]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 detail: "Mortgage loans are purchased from banks, mortgage companies and other originators, and then assembled into pools by a governmental, quasigovernmental or private entity. The entity then issues securities that represent claims on the principal and interest payments made by borrowers on the loans in the pool, a process known as securitization."
 examples:
   - "A Ginnie Mae pass-through backed by a pool of residential mortgages."

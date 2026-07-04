@@ -5,6 +5,8 @@ description: "GFE - representation by the lender on the costs and implications o
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/GoodFaithEstimate
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "Provided in a timely way. Also associated with cooling off periods"
 examples:
   - "The lender's itemized estimate of closing costs (the Loan Estimate under TRID)."

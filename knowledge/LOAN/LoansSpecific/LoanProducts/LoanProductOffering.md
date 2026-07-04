@@ -5,6 +5,8 @@ description: "offering related to a loan product that may be a tailored to parti
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanProductOffering
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "A specific packaging of a loan product — its rate, term, and eligibility — marketed to a borrower segment or tailored to an individual applicant."
 detail_provenance: curated
 examples:

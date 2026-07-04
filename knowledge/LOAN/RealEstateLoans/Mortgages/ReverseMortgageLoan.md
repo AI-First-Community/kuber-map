@@ -5,6 +5,8 @@ description: "loan secured by real estate that pays money to the borrower agains
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/ReverseMortgageLoan
 tags: [LOAN, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "The interest accrued is added to the principal balance."
 examples:
   - "A HECM paying a 70-year-old homeowner monthly against home equity."

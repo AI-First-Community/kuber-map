@@ -5,6 +5,8 @@ description: "situation in which some party owns and controls something"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/OwnershipAndControl/OwnershipControlSituation
 tags: [FND, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/Situation.md", provenance: fibo}
 ---

@@ -5,6 +5,8 @@ description: "security identifier that is defined as specified in ISO 6166, Secu
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 detail: "ISINs consist of two alphabetic characters, which are the ISO 3166-1 alpha-2 code for the issuing country, nine alpha-numeric characters (the National Securities Identifying Number, or NSIN, which identifies the security, padded as necessary with leading zeros), and one numerical check digit. The ISIN is specified as a class of identifiers because although there is a scheme associated with the structure of an ISIN, there are many country-specific variations issued by national numbering agencies."
 examples:
   - "US0378331005, the ISIN for Apple Inc. common stock."

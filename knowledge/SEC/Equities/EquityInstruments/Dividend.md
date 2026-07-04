@@ -5,6 +5,8 @@ description: "announced commitment to make a specific distribution of a portion 
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Dividend
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 detail: "The amount and timing of payment is set by the board of directors, typically quarterly. Dividends may be paid in the form of money, shares, scrip, or on rare occasion, property."
 examples:
   - "A quarterly cash dividend of US$0.24 per share declared by a company's board."

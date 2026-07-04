@@ -5,6 +5,8 @@ description: "identifier that uniquely identifies a business registry, and is as
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/RegistrationAuthorityCode
 tags: [FBC, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/CMNS/CodesAndCodeSets/CodeElement.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/RegistrationAuthorities/RegisteredIdentifier.md", provenance: fibo}

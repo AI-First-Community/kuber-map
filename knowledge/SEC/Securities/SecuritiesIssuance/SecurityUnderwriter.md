@@ -5,6 +5,8 @@ description: "party that has purchased from an issuer with a view to, or sells f
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityUnderwriter
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "An investment bank that buys a new bond issue from the issuer to resell to investors."
 examples_provenance: curated

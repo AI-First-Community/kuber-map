@@ -5,6 +5,8 @@ description: "catalog entry for a securities offering managed by an exchange tha
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "Apple Inc.'s listing on the Nasdaq Stock Market under ticker AAPL."
 examples_provenance: curated

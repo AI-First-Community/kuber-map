@@ -5,6 +5,8 @@ description: "interest rate on a debt security that the issuer promises to pay t
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/BondCoupon
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "The semi-annual 2% interest payment on a bond with a 4% annual coupon."
 examples_provenance: curated

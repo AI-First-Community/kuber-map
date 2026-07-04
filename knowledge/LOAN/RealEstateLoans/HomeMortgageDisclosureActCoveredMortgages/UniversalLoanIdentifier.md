@@ -5,6 +5,8 @@ description: "unique identifier given to unequivocally identify a specific loan 
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/UniversalLoanIdentifier
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "In the US, the structure of this identifier is defined in the 2015 revision to the Home Mortgage Disclosure Act."
 examples:
   - "The 23–45 character ULI assigned to a HMDA-reportable loan."

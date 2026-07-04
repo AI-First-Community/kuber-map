@@ -5,6 +5,8 @@ description: "party that is recognized as having rights and obligations under th
 resource: https://www.omg.org/spec/Commons/Organizations/LegalPerson
 tags: [CMNS]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 detail: "To have legal personality means to be capable of having legal rights and duties within a certain legal system, such as to enter into contracts, sue, and be sued. Legal personality is a prerequisite to legal capacity, the ability of any legal person to amend (enter into, transfer, etc.) rights and obligations."
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/Party.md", provenance: fibo}

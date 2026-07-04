@@ -5,6 +5,8 @@ description: "classifier providing a loan approval recommendation determined eit
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/UnderwritingDecision
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "The outcome of assessing credit, capacity, and collateral — approve, approve with conditions, suspend, or deny."
 detail_provenance: curated
 examples:

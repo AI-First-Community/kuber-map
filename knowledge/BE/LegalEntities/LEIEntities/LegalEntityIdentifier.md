@@ -5,6 +5,8 @@ description: "an organization identifier that uniquely identifies a legal person
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier
 tags: [BE, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/CMNS/Organizations/OrganizationIdentifier.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/RegistrationAuthorities/RegisteredIdentifier.md", provenance: fibo}

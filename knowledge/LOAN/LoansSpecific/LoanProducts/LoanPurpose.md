@@ -5,6 +5,8 @@ description: "A selection of different types of loan purpose, being the purpose 
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanPurpose
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "Why the credit is drawn (purchase, refinance, cash-out, or improvement); it affects eligibility, pricing, and the disclosures required."
 detail_provenance: curated
 examples:

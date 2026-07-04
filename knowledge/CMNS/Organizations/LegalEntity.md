@@ -5,6 +5,8 @@ description: "legal person that is a partnership, corporation, or other organiza
 resource: https://www.omg.org/spec/Commons/Organizations/LegalEntity
 tags: [CMNS]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 examples:
   - "Examples of eligible legal entities include, without limitation: - all financial intermediaries; - banks and finance companies; - all entities that issue equity, debt or other securities for other capital structures; - all entities listed on an exchange; - all entities that trade stock or debt, investment vehicles, including mutual funds, pension funds and alternative investment vehicles constituted as corporate entities or collective investment agreements (including umbrella funds as well as funds under an umbrella structure, hedge funds, private equity funds, etc.); - all entities under the purview of a financial regulator and their affiliates, subsidiaries and holding companies; - counterparties to financial transactions."
 synonyms:

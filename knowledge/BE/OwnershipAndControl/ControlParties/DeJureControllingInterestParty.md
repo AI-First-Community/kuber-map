@@ -5,6 +5,8 @@ description: "party that has the legal authority to exercise control"
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/DeJureControllingInterestParty
 tags: [BE, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/FND/OwnershipAndControl/Control/ControllingParty.md", provenance: fibo}
   - {type: is-controlling-party-in, target: "/FND/OwnershipAndControl/Control/DeJureControl.md", provenance: fibo}

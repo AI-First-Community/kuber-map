@@ -38,6 +38,25 @@ def load_core_iris(paths):
     return core
 
 
+def load_use_cases(paths):
+    """Map each core IRI -> the use case(s) that nominate it. A use-case curation file
+    (curation/<uc>.json) has a `use_case` name and a `core` list; a concept can belong to
+    several. Powers the map's use-case lens and the card's use-case badges."""
+    out = {}
+    for path in paths:
+        try:
+            data = json.load(open(path))
+        except (OSError, json.JSONDecodeError):
+            continue
+        uc = data.get("use_case")
+        if not uc:
+            continue
+        for entry in data.get("core", []):
+            if entry.get("iri"):
+                out.setdefault(entry["iri"], set()).add(uc)
+    return {k: sorted(v) for k, v in out.items()}
+
+
 def load_definitions(paths):
     """Collect learner-friendly definition overrides: iri -> definition text.
 
@@ -86,7 +105,8 @@ def load_notes(paths):
     return out
 
 
-def emit(rec, is_core=False, curated_def=False, curated_examples=False, curated_detail=None):
+def emit(rec, is_core=False, curated_def=False, curated_examples=False, curated_detail=None,
+         use_cases=None):
     tags = [rec["cluster"]] + ([rec["maturity"]] if rec["maturity"] else [])
     out = ["---", "type: FIBO Class", f'title: "{yaml_1line(rec["title"])}"']
     if rec["description"]:
@@ -96,6 +116,9 @@ def emit(rec, is_core=False, curated_def=False, curated_examples=False, curated_
     out += [f'resource: {rec["iri"]}', f'tags: [{", ".join(tags)}]']
     if is_core:
         out.append("core: true")
+    if use_cases:
+        out.append("use_cases:")
+        out += [f'  - "{yaml_1line(u)}"' for u in use_cases]
     # Richer content for the detail card: FIBO explanatory notes where present, else a curated
     # note; plus examples and synonyms.
     if rec.get("explanatory"):
@@ -140,6 +163,7 @@ def main():
     keep = set(args.clusters)
     curation_paths = [p for pat in args.curation for p in glob.glob(pat)] or args.curation
     core_iris = load_core_iris(curation_paths)
+    use_case_map = load_use_cases(curation_paths)
     definitions = load_definitions(curation_paths)
     examples = load_examples(curation_paths)
     notes = load_notes(curation_paths)
@@ -179,7 +203,8 @@ def main():
         seen_paths[path] = r["iri"]
         os.makedirs(os.path.dirname(path), exist_ok=True)
         open(path, "w").write(emit(r, is_core=is_core, curated_def=curated_def,
-                                   curated_examples=curated_examples, curated_detail=curated_detail))
+                                   curated_examples=curated_examples, curated_detail=curated_detail,
+                                   use_cases=use_case_map.get(r["iri"])))
         by_cluster.setdefault(cl, []).append(r)
 
     for cl, recs in by_cluster.items():

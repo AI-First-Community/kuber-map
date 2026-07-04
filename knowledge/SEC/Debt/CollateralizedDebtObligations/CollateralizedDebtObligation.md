@@ -5,6 +5,8 @@ description: "structured finance constructed from a portfolio of fixed income as
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/CollateralizedDebtObligations/CollateralizedDebtObligation
 tags: [SEC, Provisional]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "A CDO whose tranches are backed by a portfolio of corporate bonds and loans."
 examples_provenance: curated

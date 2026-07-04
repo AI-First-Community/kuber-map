@@ -5,6 +5,8 @@ description: "a prescriptive event involving the return of an investor's princip
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RedemptionEvent
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "A bond reaching maturity and repaying principal to its holders."
 examples_provenance: curated

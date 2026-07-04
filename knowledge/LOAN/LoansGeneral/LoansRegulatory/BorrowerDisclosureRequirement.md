@@ -6,6 +6,8 @@ definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "In the US these are implemented through the TILA-RESPA Integrated Disclosure (TRID) rule, giving borrowers standardized Loan Estimate and Closing Disclosure documents."
 detail_provenance: curated
 examples:

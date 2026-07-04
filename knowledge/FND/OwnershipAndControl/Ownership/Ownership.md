@@ -5,6 +5,8 @@ description: "situation in which some party holds the legal title to something (
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Ownership
 tags: [FND, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 detail: "Ownership is the right to possess, use, sell, donate or give as a gift any asset or property belonging to a person known as the 'owner'. An owner can be either a beneficial owner or a legal owner."
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/Situation.md", provenance: fibo}

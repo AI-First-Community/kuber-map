@@ -5,6 +5,8 @@ description: "contractual agreement in which a debtor receives something of valu
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreement
 tags: [FBC, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "The binding contract — note plus loan and security agreement — setting the amount, rate, repayment schedule, and the lender's remedies on default."
 detail_provenance: curated
 examples:

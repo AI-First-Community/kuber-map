@@ -5,6 +5,8 @@ description: "with respect to a debt: the value of an obligation, such as a bond
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Principal
 tags: [FBC, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "The amount borrowed that must be repaid, separate from interest; the outstanding principal drives interest accrual and the payoff amount."
 detail_provenance: curated
 examples:

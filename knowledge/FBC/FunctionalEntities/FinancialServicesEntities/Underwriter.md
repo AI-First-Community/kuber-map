@@ -5,6 +5,8 @@ description: "financial service provider that evaluates and assumes another part
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/Underwriter
 tags: [FBC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "The lead investment bank in an IPO syndicate."
 examples_provenance: curated

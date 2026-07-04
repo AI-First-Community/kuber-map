@@ -5,6 +5,8 @@ description: "party that has the authority to control some legal entity"
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/EntityControllingParty
 tags: [BE, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/FND/OwnershipAndControl/Control/ControllingParty.md", provenance: fibo}
   - {type: is-controlling-party-of, target: "/CMNS/Organizations/LegalEntity.md", provenance: fibo}

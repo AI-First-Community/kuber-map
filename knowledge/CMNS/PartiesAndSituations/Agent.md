@@ -5,6 +5,8 @@ description: "something autonomous that can adapt to and interact with its envir
 resource: https://www.omg.org/spec/Commons/PartiesAndSituations/Agent
 tags: [CMNS]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: has-name, target: "/CMNS/ContextualDesignators/ContextualName.md", provenance: fibo}
 ---

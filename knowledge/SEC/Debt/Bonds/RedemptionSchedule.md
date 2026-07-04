@@ -5,6 +5,8 @@ description: "repayment schedule whereby a given percentage of a bond issue is r
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/RedemptionSchedule
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "A sinking-fund schedule that redeems 10% of a bond issue each year."
 examples_provenance: curated

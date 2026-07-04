@@ -5,6 +5,8 @@ description: "individual human being, with consciousness of self"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/Person
 tags: [FND, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 synonyms:
   - "natural person"
 relations:

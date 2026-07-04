@@ -5,6 +5,8 @@ description: "person or organization over which some party exercises some form o
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/ControlledParty
 tags: [BE, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/FND/OwnershipAndControl/Control/ControlledThing.md", provenance: fibo}
   - {type: is-played-by, target: "/CMNS/PartiesAndSituations/Party.md", provenance: fibo}

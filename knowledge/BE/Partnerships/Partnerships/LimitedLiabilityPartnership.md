@@ -5,6 +5,8 @@ description: "partnership that has general partners but provides its individual 
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/LimitedLiabilityPartnership
 tags: [BE, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 detail: "LLPs are a flexible legal and tax entity that allows partners to benefit from economies of scale by working together while also reducing their liability for the actions of other partners."
 examples:
   - "Law firms, accountancies, wealth managers, professional medical groups, and other professional consultancies often take the form of a limited liability partnership."

@@ -5,6 +5,8 @@ description: "assessment activity resulting in the valuation of real property as
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/CollateralValuation
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "Typically an appraisal or automated valuation model (AVM); its result feeds the loan-to-value ratio and lien decisions."
 detail_provenance: curated
 examples:

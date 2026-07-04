@@ -6,6 +6,8 @@ definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationStatus
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "A point-in-time state (submitted, in review, approved, declined, withdrawn) used for pipeline reporting and borrower communication."
 detail_provenance: curated
 examples:

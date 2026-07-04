@@ -5,6 +5,8 @@ description: "registry for registering and maintaining information about busines
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry
 tags: [FBC, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 synonyms:
   - "LEI registry"
 relations:

@@ -5,6 +5,8 @@ description: "identifier associated with a drivers' or operating license for ope
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DriversLicenseIdentifier
 tags: [FND, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 synonyms:
   - "driver's license number"
 relations:

@@ -5,6 +5,8 @@ description: "bond that includes a stipulation allowing the issuer the right to 
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/CallableBond
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "A corporate bond the issuer may redeem after five years if interest rates fall."
 examples_provenance: curated

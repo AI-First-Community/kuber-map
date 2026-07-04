@@ -5,6 +5,8 @@ description: "party that purchases professional services from, or has a formal r
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Client
 tags: [FND, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/PartyRole.md", provenance: fibo}
 ---

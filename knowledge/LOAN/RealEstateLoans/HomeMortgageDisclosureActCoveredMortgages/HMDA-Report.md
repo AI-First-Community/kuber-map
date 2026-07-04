@@ -5,6 +5,8 @@ description: "a report prepared to satisfy HMDA regulatory reporting requirement
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "The Loan/Application Register (LAR) a covered institution files annually with the CFPB; regulators use it to detect discriminatory or risky lending patterns."
 detail_provenance: curated
 examples:

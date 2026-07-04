@@ -5,6 +5,8 @@ description: "debt instrument whereby one party extends money or credit to anoth
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Loan
 tags: [LOAN, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "The foundational debt instrument the other concepts specialize — money advanced now against a promise to repay according to agreed terms."
 detail_provenance: curated
 examples:

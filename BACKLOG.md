@@ -63,7 +63,7 @@ Last updated: 2026-07-04
 - [x] Offline/PWA: **network-first** service worker (fresh when online, cache offline fallback — avoids stale-cache during dev), no CDN (all libs/fonts vendored).
 - [ ] Optional: 2-level nesting (domain super-hull around module hulls) if desired
 - [ ] Per-domain lazy loading for the full-ontology view (currently one `data.js`; fine at 1.3k, revisit at 5–10k scale)
-- [ ] Use-case lens (highlight a use-case subgraph) + reverse lookup (concept → use cases)
+- [x] **Use-case lens** — toolbar selector focuses one use case's curated subgraph (Loan origination / KYC / Securities); each detail card shows use-case badges (reverse lookup: concept → use cases), clickable to activate the lens. Membership flows from `curation/usecases/*.json` via `use_cases:` frontmatter.
 
 ### E3 — Bridges & second use case
 - [ ] Decide fate of intra-domain bridges (e.g. `lender played-by financial-institution`) vs cross-domain-only for EDM

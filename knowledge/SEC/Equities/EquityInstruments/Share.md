@@ -5,6 +5,8 @@ description: "financial instrument that signifies a unit of equity ownership in 
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "One share of Tesla, Inc. common stock."
 examples_provenance: curated

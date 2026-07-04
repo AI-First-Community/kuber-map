@@ -5,6 +5,8 @@ description: "A fund which invests in at least 85% shares."
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/EquityFund
 tags: [SEC, Provisional]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "A large-cap equity fund that invests primarily in common shares."
 examples_provenance: curated

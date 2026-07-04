@@ -5,6 +5,8 @@ description: "financial instrument and credit agreement evidencing monies owed b
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument
 tags: [FBC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "A 10-year US Treasury note paying semi-annual interest."
 examples_provenance: curated

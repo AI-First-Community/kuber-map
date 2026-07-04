@@ -5,6 +5,8 @@ description: "situation in which a voting shareholder, entity owner, or some oth
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/BoardCompositionControl
 tags: [BE, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/FND/OwnershipAndControl/Control/Control.md", provenance: fibo}
   - {type: involves-controlled-thing, target: "/BE/OwnershipAndControl/Executives/BoardMember.md", provenance: fibo}

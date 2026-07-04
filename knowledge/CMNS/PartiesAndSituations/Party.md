@@ -5,6 +5,8 @@ description: "person or organization"
 resource: https://www.omg.org/spec/Commons/PartiesAndSituations/Party
 tags: [CMNS]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 synonyms:
   - "independent party"
 relations:

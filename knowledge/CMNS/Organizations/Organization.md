@@ -5,6 +5,8 @@ description: "framework of authority within which a person, persons, or groups o
 resource: https://www.omg.org/spec/Commons/Organizations/Organization
 tags: [CMNS]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 examples:
   - "This may be a business entity, government, international organization, not-for-profit, academic institution, or other unincorporated and/or informal social organization."
 relations:

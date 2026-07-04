@@ -5,6 +5,8 @@ description: "legally competent party that has entered into a binding agreement,
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractParty
 tags: [FND, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/PartyRole.md", provenance: fibo}
   - {type: is-played-by, target: "/CMNS/Organizations/LegalPerson.md", provenance: fibo}

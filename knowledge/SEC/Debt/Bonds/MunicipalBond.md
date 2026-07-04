@@ -5,6 +5,8 @@ description: "government bond that may be issued by a regional, rather than nati
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/MunicipalBond
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 detail: "Municipal bonds may be issued by states, cities, counties, special tax districts or special agencies or authorities of state or local governments."
 examples:
   - "A general-obligation bond issued by the State of California to fund infrastructure."

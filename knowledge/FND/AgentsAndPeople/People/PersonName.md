@@ -5,6 +5,8 @@ description: "designation by which someone is known in some context"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/PersonName
 tags: [FND, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/CMNS/ContextualDesignators/ContextualName.md", provenance: fibo}
   - {type: is-name-of, target: "/FND/AgentsAndPeople/People/Person.md", provenance: fibo}

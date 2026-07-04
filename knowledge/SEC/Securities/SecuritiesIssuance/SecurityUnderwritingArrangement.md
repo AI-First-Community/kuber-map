@@ -5,6 +5,8 @@ description: "underwriting agreement between an organization (typically an inves
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityUnderwritingArrangement
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 detail: "Sales may be made either directly or through third-party dealers."
 examples:
   - "A firm-commitment underwriting agreement for an initial public offering."

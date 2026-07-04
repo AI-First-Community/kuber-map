@@ -5,6 +5,8 @@ description: "bond with a variable interest rate based on a published reference 
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FloatingRateNote
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 detail: "The adjustments to the interest rate (coupon) are made periodically, usually on a quarterly or monthly basis, and are tied to a certain money-market index. Also known as a 'floater'. For example six months USD LIBOR + 0.20%."
 examples:
   - "A 3-year note paying SOFR + 0.50%, resetting quarterly."

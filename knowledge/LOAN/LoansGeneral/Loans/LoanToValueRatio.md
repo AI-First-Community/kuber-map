@@ -5,6 +5,8 @@ description: "ratio, expressed as a percentage, between the principal amount of 
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LoanToValueRatio
 tags: [LOAN, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "A primary risk measure: a higher LTV means less borrower equity and greater loss on default, and above roughly 80% it commonly triggers mortgage insurance."
 detail_provenance: curated
 examples:

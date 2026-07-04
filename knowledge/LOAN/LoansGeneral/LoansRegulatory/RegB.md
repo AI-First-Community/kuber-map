@@ -5,6 +5,8 @@ description: "US regulation concerning 'Equal credit opportunity act' Electronic
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegB
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "Timing and delivery of electronic disclosures. Applications must have equal opportunity to follow. All applications for credit to be evaluated equally and not discriminiated against. This is disclosures about the Borrower."
 examples:
   - "Regulation B implementing the Equal Credit Opportunity Act."

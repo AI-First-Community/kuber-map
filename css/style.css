@@ -200,6 +200,31 @@ button { font-family: inherit; }
 .new-chip:hover { border-color: #4fe08a; color: var(--text); }
 .new-chip.active { background: color-mix(in srgb, #4fe08a 16%, transparent); border-color: #4fe08a; color: var(--text); box-shadow: 0 0 0 3px color-mix(in srgb, #4fe08a 18%, transparent); }
 
+/* Use-case lens selector */
+.lens-wrap { display: inline-flex; align-items: center; gap: 5px; margin-left: 6px; }
+.lens-select {
+  height: 30px; padding: 0 26px 0 10px; border-radius: 999px;
+  border: 1px solid var(--border); background: transparent; color: var(--text-soft);
+  font-family: inherit; font-size: 12px; font-weight: 700; cursor: pointer; appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 9px center;
+  transition: border-color 0.15s, color 0.15s, box-shadow 0.15s;
+}
+.lens-select:hover { border-color: var(--border-strong); color: var(--text); }
+.lens-select:focus-visible { outline: none; border-color: var(--accent2); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent2) 20%, transparent); }
+.lens-select:not([value=""]):valid { color: var(--text); }
+.lens-select option { background: var(--surface); color: var(--text); }
+
+/* Use-case membership badges on the detail card */
+.panel .uc-badges { display: flex; flex-wrap: wrap; gap: 6px; margin: -2px 0 2px; }
+.panel .uc-badge {
+  font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; cursor: pointer;
+  border: 1px solid color-mix(in srgb, var(--accent2) 45%, var(--border));
+  background: color-mix(in srgb, var(--accent2) 12%, transparent); color: var(--text);
+  transition: background 0.15s, border-color 0.15s;
+}
+.panel .uc-badge:hover { background: color-mix(in srgb, var(--accent2) 22%, transparent); border-color: var(--accent2); }
+
 /* "New in vX" badge inside the detail panel tag */
 .new-badge { font-size: 9px; font-weight: 800; letter-spacing: 0.4px; color: #06250f; background: #4fe08a; border-radius: 999px; padding: 2px 7px; text-transform: none; }
 

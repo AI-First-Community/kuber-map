@@ -5,6 +5,8 @@ description: "party that receives or consumes products (goods or services) and h
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Customer
 tags: [FND, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/FND/ProductsAndServices/ProductsAndServices/Buyer.md", provenance: fibo}
   - {type: buys-from, target: "/FND/ProductsAndServices/ProductsAndServices/Supplier.md", provenance: fibo}

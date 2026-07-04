@@ -5,6 +5,8 @@ description: "registry used to manage security identifiers and related informati
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/SecurityRegistry
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 detail: "Securities registries may be managed by an exchange, clearing house, custodian, bank, or other financial services provider."
 examples:
   - "A registrar maintaining the register of a company's shareholders."

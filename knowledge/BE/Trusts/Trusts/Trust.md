@@ -5,6 +5,8 @@ description: "fiduciary relationship and legal entity in which one party, known 
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/Trust
 tags: [BE, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/BE/LegalEntities/LegalPersons/BusinessEntity.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/Organizations/LegalEntity.md", provenance: fibo}

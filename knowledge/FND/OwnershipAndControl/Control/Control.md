@@ -5,6 +5,8 @@ description: "situation in which some party has the power to direct or strongly 
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/Control
 tags: [FND, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 detail: "Control may be direct (explicit) or indirect (implicit), derived through ownership of voting shares, beneficial ownership, other ownership relations, through provisions of a contract, or otherwise."
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/Situation.md", provenance: fibo}

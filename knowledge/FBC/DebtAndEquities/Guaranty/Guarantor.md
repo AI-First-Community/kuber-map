@@ -5,6 +5,8 @@ description: "party that guarantees, endorses, or provides indemnity for some ob
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Guaranty/Guarantor
 tags: [FBC, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "In some cases, the party acting as guarantor may also be a party to the contract, such as in the case of Fannie Mae or Freddie Mac. In such cases, the same individual would be modeled as having both roles."
 examples:
   - "A private mortgage insurer backing a loan"

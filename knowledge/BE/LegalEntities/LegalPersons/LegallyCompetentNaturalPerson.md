@@ -5,6 +5,8 @@ description: "person who is considered competent, under the circumstances, to en
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/LegallyCompetentNaturalPerson
 tags: [BE, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 detail: "The definition of mental competence, and potentially of the age of majority, is a function of the situation and law in a given jurisdiction."
 relations:
   - {type: is-a, target: "/FND/AgentsAndPeople/People/Person.md", provenance: fibo}

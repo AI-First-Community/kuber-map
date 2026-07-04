@@ -5,6 +5,8 @@ description: "partnership that has at least two general partners that agree to s
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/GeneralPartnership
 tags: [BE, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 detail: "General partnerships are the most basic and common form of partnership world-wide."
 synonyms:
   - "GP"

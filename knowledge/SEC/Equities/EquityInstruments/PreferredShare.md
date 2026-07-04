@@ -5,6 +5,8 @@ description: "share that pays dividends at a specified rate and has preference o
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PreferredShare
 tags: [SEC, Release]
 core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "A 5% preferred share paying a fixed dividend ahead of common shareholders."
 examples_provenance: curated

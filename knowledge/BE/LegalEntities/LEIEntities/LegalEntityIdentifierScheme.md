@@ -5,6 +5,8 @@ description: "a scheme that specifies the elements of an unambiguous legal entit
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifierScheme
 tags: [BE, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/CMNS/Organizations/OrganizationIdentificationScheme.md", provenance: fibo}
   - {type: defines, target: "/BE/LegalEntities/LEIEntities/LegalEntityIdentifier.md", provenance: fibo}

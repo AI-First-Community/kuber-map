@@ -182,7 +182,7 @@ function build() {
     nodes.push({
       id, label: fm.title || id, type: fm.type, cluster, domain,
       level: CONFIG.MATURITY_LEVEL[maturity] || 3, maturity: maturity || 'n/a',
-      core: fm.core === true, summary: fm.description || '',
+      core: fm.core === true, useCases: fm.use_cases || [], summary: fm.description || '',
       detail: fm.detail || '', examples: fm.examples || [], synonyms: fm.synonyms || [],
       detailProvenance: fm.detail_provenance || 'fibo',
       examplesProvenance: fm.examples_provenance || 'fibo',

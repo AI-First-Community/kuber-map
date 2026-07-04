@@ -5,6 +5,8 @@ description: "sequence of characters uniquely identifying a client within the co
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/ClientIdentifier
 tags: [FND, Release]
 core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 relations:
   - {type: is-a, target: "/FND/Parties/Parties/PartyRoleIdentifier.md", provenance: fibo}
   - {type: identifies, target: "/FND/ProductsAndServices/ProductsAndServices/Client.md", provenance: fibo}
