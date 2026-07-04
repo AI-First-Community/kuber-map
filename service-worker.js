@@ -42,7 +42,9 @@ self.addEventListener('fetch', (event) => {
       }
       return res;
     } catch (err) {
-      if (req.mode === 'navigate') return (await caches.match('./app.html'));
+      if (req.mode === 'navigate') {
+        return (await caches.match('./app.html'));
+      }
       throw err;
     }
   })());

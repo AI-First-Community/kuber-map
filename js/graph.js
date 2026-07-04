@@ -36,8 +36,7 @@
     });
   });
 
-  // Edges. Curated cross-domain bridges (provenance: curated) are drawn distinctly.
-  const CURATED = (typeof PROVENANCE !== 'undefined' && PROVENANCE.curated) ? PROVENANCE.curated : { color: '#e11d48', style: 'dashed' };
+  // Edges
   GRAPH.edges.forEach((e, i) => {
     const rel = RELATIONS[e.r] || RELATIONS['is-a'];
     elements.push({
@@ -47,10 +46,9 @@
         target: e.t,
         rel: e.r,
         relLabel: rel.label,
-        color: e.bridge ? CURATED.color : rel.color,
-        lineStyle: e.bridge ? CURATED.style : rel.style,
+        color: rel.color,
+        lineStyle: rel.style,
         isPath: e.r === 'path',
-        isBridge: !!e.bridge,
       },
     });
   });
@@ -131,8 +129,6 @@
         },
       },
       { selector: 'edge[?isPath]', style: { 'width': 3, 'opacity': 0.9, 'line-color': '#fbbf24', 'target-arrow-color': '#fbbf24' } },
-      // Curated cross-domain bridges — the moat, drawn boldest
-      { selector: 'edge[?isBridge]', style: { 'width': 3, 'opacity': 0.95, 'line-style': 'dashed', 'z-index': 12 } },
       // states — faint dimmed context + strong glowing spotlight on the selection
       { selector: '.faded', style: { 'opacity': 0.2, 'z-index': 1 } },
       { selector: '.faded-edge', style: { 'opacity': 0.1, 'z-index': 1 } },
@@ -216,9 +212,9 @@
     const cmpIdxFor = compareSetIndexFor(id);
     panel.innerHTML = `
       <button class="panel-close" id="panelClose">×</button>
-      <div class="panel-tag" style="--c:${c.color}">${c.label} · ${n.maturity || 'n/a'}${n.core ? ' <span class="new-badge">★ core</span>' : ''}</div>
+      <div class="panel-tag" style="--c:${c.color}">${c.label} · Level ${n.level} — ${LEVELS[n.level]}${RELEASE_VERSION && n.added === RELEASE_VERSION ? ` <span class="new-badge">✦ New in ${RELEASE_VERSION}</span>` : ''}</div>
       <h2 style="--c:${c.color}">${n.label}</h2>
-      <p class="summary">${n.summary || '<i>No FIBO definition.</i>'}${n.definitionProvenance === 'curated' ? ' <span class="rel-tag" style="background:rgba(225,29,72,.16);color:#fb7185">curated definition</span>' : ''}</p>
+      <p class="summary">${n.summary}</p>
       ${cmpIdxFor !== -1 ? `<button class="panel-action" data-compare="${cmpIdxFor}">${TABLE_IC} Compare ${GRAPH.comparisons[cmpIdxFor].title}</button>` : ''}
       ${n.detail ? `<h4>Detail</h4><p>${n.detail}</p>` : ''}
       ${n.whenToUse ? `<h4>When to use</h4><p class="when">${n.whenToUse}</p>` : ''}
@@ -346,11 +342,11 @@
     if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) searchResults.classList.remove('open');
   });
 
-  // ---- Filters: maturity level + cluster + core-only (one combined predicate) --------
-  const activeLevels = new Set([1, 2, 3]);       // Release / Provisional / Informative
+  // ---- Filters: level + cluster + "new only" (one combined predicate) --------
+  const activeLevels = new Set([1, 2, 3]);        // FIBO maturity: Release / Provisional / Informative
   const activeClusters = new Set(Object.keys(CLUSTERS));
   let newOnly = false;
-  let coreOnly = true;                            // curated core is the default view (PLAN §9)
+  let coreOnly = true;                            // curated core is the default landing view (PLAN §9)
 
   // "New" focus set = the new concepts + their direct neighbours, so additions
   // are shown wired into the existing graph rather than as floating islands.
@@ -389,42 +385,29 @@
     });
   });
 
-  // Core-only <-> full-ontology toggle. Core (71 curated concepts) is the landing view;
-  // "Show full ontology" reveals all 1,284. Relayout + refit when the node set changes.
-  const coreToggleBtn = document.getElementById('coreToggle');
-  function syncCoreBtn() { if (coreToggleBtn) coreToggleBtn.textContent = coreOnly ? 'Show full ontology' : 'Show core only'; }
-  if (coreToggleBtn) coreToggleBtn.onclick = () => {
-    coreOnly = !coreOnly; syncCoreBtn(); applyFilters();
-    runLayout();
-  };
-  syncCoreBtn();
-  applyFilters();                                 // land on the curated core view
-  runLayout();
-
-  // "New this release" chip — toggles showing only newly-added concepts
-  const newChip = document.getElementById('newChip');
-  if (newChip) {
-    const newCount = cy.nodes('[?isNew]').length;
-    if (!newCount) { newChip.style.display = 'none'; }
-    else {
-      newChip.querySelector('.new-count').textContent = newCount;
-      newChip.addEventListener('click', () => {
-        newOnly = !newOnly;
-        newChip.classList.toggle('active', newOnly);
-        applyFilters();
-        if (newOnly) { const ns = cy.nodes('[!isCluster]').filter((el) => newFocusIds.has(el.id())); if (ns.length) cy.animate({ fit: { eles: ns, padding: 70 } }, { duration: 420 }); }
-        else cy.animate({ fit: { eles: cy.elements(':visible'), padding: 40 } }, { duration: 420 });
-      });
-    }
+  // Core / full-ontology toggle (reuses Bodhi's "new chip" slot). Core = the 71 curated
+  // loan-origination concepts — the clean, learner-first landing view; toggle for all 1,284.
+  const coreChip = document.getElementById('newChip');
+  if (coreChip) {
+    const coreCount = cy.nodes('[?isCore]').length;
+    const cnt = coreChip.querySelector('.new-count'); if (cnt) cnt.textContent = coreCount;
+    coreChip.classList.toggle('active', coreOnly);
+    coreChip.addEventListener('click', () => {
+      coreOnly = !coreOnly;
+      coreChip.classList.toggle('active', coreOnly);
+      applyFilters();
+      runLayout();
+    });
   }
+  applyFilters();                                  // land on the curated core view
+  runLayout();
 
   // ---- Cluster legend: grouped by learning phase, collapsible, with counts ---
   // The 9 clusters map onto the three phases of the learning arc.
   const CLUSTER_GROUPS = [
-    { title: 'Core lending domains', clusters: ['LOAN', 'FBC'] },
-    { title: 'Supporting domains',   clusters: ['FND', 'BE'] },
-  ].map((g) => ({ title: g.title, clusters: g.clusters.filter((c) => CLUSTERS[c]) }))
-   .filter((g) => g.clusters.length);
+    { title: 'Lending & commerce', clusters: ['LOAN', 'FBC'] },
+    { title: 'Foundations & entities', clusters: ['FND', 'BE'] },
+  ].map((g) => ({ title: g.title, clusters: g.clusters.filter((c) => CLUSTERS[c]) })).filter((g) => g.clusters.length);
   const clusterCount = {};
   GRAPH.nodes.forEach((n) => { clusterCount[n.cluster] = (clusterCount[n.cluster] || 0) + 1; });
   const CHEV = '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>';
@@ -679,12 +662,12 @@
     const rel = (r) => (RELATIONS[r] || {}).label || r;
 
     const out = [];
-    out.push('# Bodhi Map for FIBO — Knowledge Bundle (Open Knowledge Format, single-file export)');
+    out.push('# LLM Bodhi — Knowledge Bundle (Open Knowledge Format, single-file export)');
     out.push('');
-    out.push(`> Curated map of the Financial Industry Business Ontology (FIBO). ${nodes.length} concepts, ` +
-             `${GRAPH.edges.filter((e) => e.r !== 'path').length} typed, provenance-tagged relations. Each concept ` +
-             'carries its FIBO `resource` IRI as an audit citation; curated cross-domain bridges are marked.');
-    out.push('> Use this as audit-ready grounding context for a financial AI agent. Concept IDs are stable anchors.');
+    out.push(`> Curated knowledge graph of LLM & fine-tuning concepts. ${nodes.length} concepts, ` +
+             `${GRAPH.edges.filter((e) => e.r !== 'path').length} typed relations. Conforms to the spirit of ` +
+             'Google Open Knowledge Format v0.1 — each concept has a `type`; relations are typed links.');
+    out.push('> Use this as grounding context for an LLM/agent. Concept IDs are stable anchors.');
     out.push('');
     out.push('## Index');
     out.push('');
@@ -735,8 +718,8 @@
 
   document.getElementById('exportBtn').onclick = () => {
     const md = buildAgentBundle();
-    downloadText('bodhi-fibo-knowledge.md', md);
-    toast(`Exported ${GRAPH.nodes.length} concepts → bodhi-fibo-knowledge.md`);
+    downloadText('llm-bodhi-knowledge.md', md);
+    toast(`Exported ${GRAPH.nodes.length} concepts → llm-bodhi-knowledge.md`);
   };
 
   // ---- Compare modal: techniques side-by-side across dimensions --------------
@@ -802,26 +785,26 @@
   const welcomeModal = document.getElementById('welcomeModal');
   const welcomeCard = document.getElementById('welcomeCard');
   const WELCOME_FEATURES = [
-    { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.8 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg>',
-      t: 'Curated core view', d: 'You start on the 71 hand-picked loan-origination concepts. “Show full ontology” reveals all 1,284.' },
+    { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>',
+      t: 'Which technique?', d: 'A wizard that recommends the right adaptation method for your case.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>',
-      t: 'Guided tour', d: 'Walk the underwriting arc: application → borrower → collateral → LTV → decision → HMDA report.' },
-    { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h7"/><path d="M17 14l4 3-4 3" stroke-dasharray="3 2"/></svg>',
-      t: 'Curated bridges', d: 'Dashed red edges are cross-domain links FIBO doesn’t draw natively — the project’s contribution.' },
+      t: 'Guided Path', d: 'Walk a real workflow: base model → SFT → LoRA → DPO → eval → quantize.' },
+    { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>',
+      t: 'Compare', d: 'Side-by-side tables: PEFT, preference optimization, attention, architectures…' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg>',
       t: 'Search <kbd>f</kbd>', d: 'Fuzzy search; navigate results with <kbd>↑</kbd><kbd>↓</kbd><kbd>↵</kbd>.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18"/></svg>',
-      t: 'Click any node', d: 'A detail panel with the definition, provenance, and the concept’s FIBO IRI — the audit citation.' },
+      t: 'Click any node', d: 'Open a detail panel: explanation, when-to-use, code, links, references.' },
     { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
       t: 'Light / dark <kbd>t</kbd>', d: 'Toggle theme (top-right). Links are shareable via the URL.' },
   ];
   function renderWelcome() {
     welcomeCard.innerHTML = `
       <div class="modal-head" style="margin-bottom:2px">
-        <div class="welcome-head"><span class="om" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/><path d="M12 6.2V2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g stroke="#0a3f24" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round"><path d="M12 7.3V20"/><path d="M12 10.1 8.9 8.3"/><path d="M12 10.1 15.1 8.3"/><path d="M12 12.9 8.6 11.3"/><path d="M12 12.9 15.4 11.3"/><path d="M12 15.6 9.2 14.5"/><path d="M12 15.6 14.8 14.5"/></g></svg></span><h2>Bodhi Map for FIBO</h2><span class="wbadge">audit-ready grounding</span></div>
+        <div class="welcome-head"><span class="om" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/><path d="M12 6.2V2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g stroke="#0a3f24" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round"><path d="M12 7.3V20"/><path d="M12 10.1 8.9 8.3"/><path d="M12 10.1 15.1 8.3"/><path d="M12 12.9 8.6 11.3"/><path d="M12 12.9 15.4 11.3"/><path d="M12 15.6 9.2 14.5"/><path d="M12 15.6 14.8 14.5"/></g></svg></span><h2>Welcome to Bodhi Map</h2><span class="wbadge">Innovate with Sanjeev</span></div>
         <button class="fb-close" id="welClose" aria-label="Close">×</button>
       </div>
-      <p class="welcome-sub">A curated, learner-first map of the <b>Financial Industry Business Ontology</b> — grounding for financial AI agents. You land on <b>71 curated loan-origination concepts</b> (of ${GRAPH.nodes.length}); domains are colour-coded and every concept carries its FIBO IRI for citation. Here's how to explore:</p>
+      <p class="welcome-sub">An interactive map of <b>${GRAPH.nodes.length} concepts</b> from LLM basics to advanced fine-tuning, reasoning, and agents — clusters are colour-coded, and edges show how techniques relate. Here's how to explore:</p>
       <div class="welcome-features">
         ${WELCOME_FEATURES.map((f) => `<div class="welcome-feature"><span class="wf-ic">${f.ic}</span><div><b>${f.t}</b><span>${f.d}</span></div></div>`).join('')}
       </div>
