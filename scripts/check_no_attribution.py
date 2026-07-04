@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-"""Repo-hygiene gate: fail if any tracked/staged file leaks AI attribution.
+"""Repo-hygiene gate: fail if any tracked/staged file leaks AI attribution or employer identity.
 
-This is a FOSS project authored by Sanjeev Azad. Code, comments, docs, and commit messages
-must not advertise an AI author. We ban the bare vendor words plus the classic attribution
-phrases. CLAUDE.md and .claude/ are allowlisted (they legitimately name the tool for local
-tooling and are not published as project authorship).
+This is a personal FOSS project authored by Sanjeev Azad. Code, comments, docs, and commit
+messages must not (a) advertise an AI author, or (b) reference the author's employer. We ban the
+AI vendor words + classic attribution phrases, and the employer names/email. CLAUDE.md and
+.claude/ are allowlisted (they legitimately name the local tool and are not published authorship).
+
+Note on "GL": the standalone two-letter token is NOT blanket-banned because "GL" = General Ledger
+is a legitimate financial-ontology term (FIBO uses it). We ban the unambiguous employer forms
+(GlobalLogic / Global Logic / @globallogic) instead.
 
 Usage:
     python scripts/check_no_attribution.py [files...]   # defaults to `git ls-files`
@@ -25,7 +29,10 @@ BANNED = re.compile(
     r"(?i)\b(claude|anthropic)\b"
     r"|co-authored-by:\s*(claude|anthropic)"
     r"|generated with\s+claude"
-    r"|\U0001F916\s*generated",  # 🤖 generated
+    r"|\U0001F916\s*generated"          # 🤖 generated
+    r"|\bglobal\s?logic\b"              # employer: GlobalLogic / Global Logic
+    r"|@globallogic"                    # work email domain
+    r"|\bhitachi\b",                    # parent company
 )
 
 # Binary/irrelevant extensions to skip.
