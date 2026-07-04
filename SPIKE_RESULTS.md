@@ -1,4 +1,44 @@
-# Phase 0.5 Spike Results — FIBO Restriction Extraction
+# Kuber Map — spike & milestone results
+
+## Phase 1 MLV — value proof: grounded vs ungrounded eval
+
+Date: 2026-07-04 · Model: `gpt-4o-mini` · n = 53 loan-underwriting questions · Verdict: **✅ Grounding works — the thesis holds.**
+
+The Phase-1 question ("is this just fancy tech?") now has a real, first-party financial-semantics
+number. A loan-underwriting agent answered the same 53 questions **with** the curated FIBO context
+pack injected vs **without** it. Scoring is deterministic (gold-keyword coverage for accuracy;
+citations matched against the pack's real IRIs), no LLM judge.
+
+| Metric | Ungrounded | Grounded | Δ |
+|---|---|---|---|
+| **Accuracy** (correct ≥ 60% keyword coverage) | 47.2% | **84.9%** | **+37.7 pt** |
+| Mean keyword coverage | 53.1% | 88.2% | +35.1 |
+| **Auditable** (answer carries a valid FIBO IRI citation) | 0% | **88.7%** | +88.7 |
+| Cite on-target (cites the grounding concept) | 0% | 84.9% | +84.9 |
+| Hallucinated citation (cites an IRI not in the pack) | 0% | 3.8% | +3.8 |
+
+**Headline (our own number, not borrowed): a +37.7-point accuracy lift**, past the ≥15–20pt target,
+with auditability going from **0% → 88.7%**.
+
+**Reading the numbers honestly:**
+- The lift is real and large: grounding roughly halves the error rate (52.8% → 15.1% wrong).
+- **Auditability is 88.7%, not 100%.** ~6 grounded answers lacked a valid citation. This is a
+  *prompt-format* gap (the model didn't always echo the exact `resource` IRI), not a data gap;
+  requiring an explicit "Sources: <IRI>" line in the grounded prompt should push it toward 100%.
+- **Hallucination 3.8%** means grounded citations are ~96% precise (2 answers cited a slightly-off
+  IRI). Ungrounded reads 0% only because it never cites at all, and is therefore 0% auditable.
+- Single run, one model, deterministic keyword scoring — directional, not a benchmark. Re-run
+  across models/seeds before quoting it as a headline stat.
+
+**Reproduce:** `EVAL_LLM_CMD='python eval/openai_cli.py --model gpt-4o-mini' python eval/harness.py --adapter llm`
+(benchmark `eval/benchmark.json`, harness `eval/harness.py`, 53 questions grounded in the pack).
+
+**Next:** tighten the grounded prompt to lift auditability toward 100% and re-run; corroborate with
+a stronger model (gpt-4o) and a second use case (KYC).
+
+---
+
+## Phase 0.5 Spike Results — FIBO Restriction Extraction
 
 Date: 2026-07-04 · Scope: FND + LOAN (sparse checkout) · Verdict: **✅ De-risked — proceed to Phase 1**
 
