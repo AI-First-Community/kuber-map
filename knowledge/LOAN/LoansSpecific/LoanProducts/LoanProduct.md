@@ -4,6 +4,7 @@ title: "loan product"
 description: "financial product that is realized as a loan that a party may acquire from a lending institution with specific characteristics and terms"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanProduct
 tags: [LOAN, Provisional]
+core: true
 relations:
   - {type: is-a, target: "/FBC/DebtAndEquities/Debt/CreditFacility.md", provenance: fibo}
   - {type: is-a, target: "/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialProduct.md", provenance: fibo}

@@ -13,6 +13,7 @@ relations:
   - {type: is-evidence-for, target: "/FND/AgentsAndPeople/People/PlaceOfBirth.md", provenance: fibo}
   - {type: is-evidence-for, target: "/FND/Places/Addresses/PhysicalAddress.md", provenance: fibo}
   - {type: is-identified-by, target: "/CMNS/Identifiers/Identifier.md", provenance: fibo}
+  - {type: is-issued-by, target: "/BE/GovernmentEntities/GovernmentEntities/Government.md", provenance: fibo}
 ---
 
 any legal document which may be used to verify aspects of a person's identity
@@ -26,3 +27,4 @@ any legal document which may be used to verify aspects of a person's identity
 - is-evidence-for: [PlaceOfBirth](/FND/AgentsAndPeople/People/PlaceOfBirth.md)
 - is-evidence-for: [PhysicalAddress](/FND/Places/Addresses/PhysicalAddress.md)
 - is-identified-by: [Identifier](/CMNS/Identifiers/Identifier.md)
+- is-issued-by: [Government](/BE/GovernmentEntities/GovernmentEntities/Government.md)

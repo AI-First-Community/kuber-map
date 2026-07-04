@@ -33,4 +33,12 @@
     <skos:definition>a special thing</skos:definition>
   </owl:Class>
 
+  <!-- RegionalThing carries en-US and en-GB labels (like FIBO's program/programme).
+       The extractor must deterministically prefer en-US so bundles are reproducible. -->
+  <owl:Class rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Mini/Mini/RegionalThing">
+    <rdfs:label xml:lang="en-GB">colourful thing</rdfs:label>
+    <rdfs:label xml:lang="en-US">colorful thing</rdfs:label>
+    <skos:definition>a regional thing</skos:definition>
+  </owl:Class>
+
 </rdf:RDF>

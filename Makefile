@@ -1,8 +1,8 @@
 PY := ./.venv/bin/python
 PIP := ./.venv/bin/pip
-DOMAINS ?= FND LOAN
+DOMAINS ?= FND LOAN FBC BE
 
-.PHONY: setup fibo extract build validate test lint attribution check all clean
+.PHONY: setup fibo extract build curate validate test lint attribution check all clean
 
 setup:
 	python3 -m venv .venv
@@ -17,6 +17,13 @@ extract:
 
 build:
 	$(PY) etl/to_okf.py --in out/intermediate.json --clusters $(DOMAINS) --bundle knowledge
+
+# Regenerate the curated layer (grounded in out/intermediate.json), then rebuild the bundle
+# so core: flags and bridges land in the OKF files. Run `make extract` (or `make all`) first.
+curate:
+	$(PY) etl/nominate_core.py --in out/intermediate.json --out curation/loan-origination.json
+	$(PY) etl/bridges.py --in out/intermediate.json --bundle knowledge
+	$(MAKE) build
 
 validate:
 	$(PY) etl/validate.py --bundle knowledge
@@ -36,4 +43,4 @@ check: lint test validate attribution
 all: extract build validate
 
 clean:
-	rm -rf out knowledge/FND knowledge/LOAN knowledge/CMNS knowledge/LCC __pycache__ etl/__pycache__
+	rm -rf out knowledge/FND knowledge/LOAN knowledge/FBC knowledge/BE knowledge/CMNS knowledge/LCC __pycache__ etl/__pycache__

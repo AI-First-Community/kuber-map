@@ -4,6 +4,7 @@ title: "loan offering"
 description: "offering related to a loan product that may be a tailored to particular circumstances, aimed at a group of borrowers or individual borrower"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanProductOffering
 tags: [LOAN, Provisional]
+core: true
 relations:
   - {type: is-a, target: "/FBC/ProductsAndServices/FinancialProductsAndServices/Offering.md", provenance: fibo}
   - {type: applies-to, target: "/LOAN/LoansSpecific/LoanProducts/LoanProduct.md", provenance: fibo}

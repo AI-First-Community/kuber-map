@@ -8,6 +8,7 @@ relations:
   - {type: is-a, target: "/FND/Law/LegalCapacity/LegalConstruct.md", provenance: fibo}
   - {type: is-applicable-in, target: "/CMNS/RegulatoryAgencies/Jurisdiction.md", provenance: fibo}
   - {type: is-conferred-by, target: "/FND/Law/LegalCore/Law.md", provenance: fibo}
+  - {type: is-issued-by, target: "/CMNS/RegulatoryAgencies/RegulatoryAgency.md", provenance: fibo}
 ---
 
 a rule used to carry out a law
@@ -16,3 +17,4 @@ a rule used to carry out a law
 - is-a: [LegalConstruct](/FND/Law/LegalCapacity/LegalConstruct.md)
 - is-applicable-in: [Jurisdiction](/CMNS/RegulatoryAgencies/Jurisdiction.md)
 - is-conferred-by: [Law](/FND/Law/LegalCore/Law.md)
+- is-issued-by: [RegulatoryAgency](/CMNS/RegulatoryAgencies/RegulatoryAgency.md)

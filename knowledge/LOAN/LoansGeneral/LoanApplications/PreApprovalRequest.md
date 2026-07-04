@@ -4,6 +4,7 @@ title: "pre-approval request"
 description: "request from a potential borrower that a lender commit to pre-approving the borrower for a loan of up to a specified amount of money"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/PreApprovalRequest
 tags: [LOAN, Provisional]
+core: true
 relations:
   - {type: is-a, target: "/FND/Arrangements/Reporting/RequestActivity.md", provenance: fibo}
   - {type: has-borrower, target: "/FBC/DebtAndEquities/Debt/Borrower.md", provenance: fibo}

@@ -4,6 +4,7 @@ title: "payment history"
 description: "record of actual payments of principal, interest, and other related amounts made by a borrower to a lender or servicer in order to fulfill their re-payment obligation"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/PaymentHistory
 tags: [LOAN, Release]
+core: true
 relations:
   - {type: is-a, target: "/FBC/ProductsAndServices/ClientsAndAccounts/TransactionRecord.md", provenance: fibo}
   - {type: applies-to-account, target: "/LOAN/LoansGeneral/Loans/LoanSpecificCustomerAccount.md", provenance: fibo}

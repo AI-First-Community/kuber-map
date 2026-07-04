@@ -4,6 +4,7 @@ title: "open-end mortgage loan"
 description: "loan secured by real estate with a provision that the outstanding loan amount may be increased upon mutual agreement of the lender and the borrower"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/OpenEndMortgageLoan
 tags: [LOAN, Release]
+core: true
 relations:
   - {type: is-a, target: "/LOAN/LoansGeneral/Loans/OpenEndCredit.md", provenance: fibo}
   - {type: is-a, target: "/LOAN/RealEstateLoans/Mortgages/LoanSecuredByRealEstate.md", provenance: fibo}

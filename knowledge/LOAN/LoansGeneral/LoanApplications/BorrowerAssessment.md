@@ -4,6 +4,7 @@ title: "borrower assessment"
 description: "assessment report detailing information about the borrower and their credit history that may be relevant to the loan application"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/BorrowerAssessment
 tags: [LOAN, Provisional]
+core: true
 relations:
   - {type: is-a, target: "/FND/Arrangements/Assessments/AssessmentReport.md", provenance: fibo}
   - {type: comprises, target: "/LOAN/LoansGeneral/LoanApplications/IncomeVerificationReport.md", provenance: fibo}

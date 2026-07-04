@@ -3,6 +3,7 @@ type: FIBO Class
 title: "loan application phase"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationPhase
 tags: [LOAN, Provisional]
+core: true
 relations:
   - {type: is-a, target: "/FND/Arrangements/Lifecycles/LifecycleStage.md", provenance: fibo}
 ---

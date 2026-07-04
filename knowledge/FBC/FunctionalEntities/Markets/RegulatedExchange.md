@@ -1,0 +1,20 @@
+---
+type: FIBO Class
+title: "regulated exchange"
+description: "regulated market that is operated by and/or managed by a market operator that brings together or facilitates the bringing together of multiple third-party buying and selling interests in financial instruments"
+resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/RegulatedExchange
+tags: [FBC, Release]
+relations:
+  - {type: is-a, target: "/FBC/FunctionalEntities/Markets/Exchange.md", provenance: fibo}
+  - {type: is-classified-by, target: "/FBC/FunctionalEntities/Markets/MarketCategoryClassifier-RMKT.md", provenance: fibo}
+  - {type: is-governed-by, target: "/CMNS/RegulatoryAgencies/Jurisdiction.md", provenance: fibo}
+  - {type: is-regulated-by, target: "/CMNS/RegulatoryAgencies/RegulatoryAgency.md", provenance: fibo}
+---
+
+regulated market that is operated by and/or managed by a market operator that brings together or facilitates the bringing together of multiple third-party buying and selling interests in financial instruments
+
+### Relationships
+- is-a: [Exchange](/FBC/FunctionalEntities/Markets/Exchange.md)
+- is-classified-by: [MarketCategoryClassifier-RMKT](/FBC/FunctionalEntities/Markets/MarketCategoryClassifier-RMKT.md)
+- is-governed-by: [Jurisdiction](/CMNS/RegulatoryAgencies/Jurisdiction.md)
+- is-regulated-by: [RegulatoryAgency](/CMNS/RegulatoryAgencies/RegulatoryAgency.md)

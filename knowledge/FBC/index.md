@@ -1,0 +1,503 @@
+# FBC
+
+- [ABA IIN registry entry](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/ABAIINRegistryEntry.md) — an entry in the ABA IIN registry, a repository of financial institution characteristics collected by the ABA for those i
+- [ABA RTN registry entry](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/ABARTNRegistryEntry.md) — an entry in the ABA RTN registry, a repository of financial institution characteristics collected by the ABA Registrar o
+- [CRD credit institution](FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities/CRDCreditInstitution.md) — an undertaking whose business is to receive deposits or other repayable funds from the public and to grant credits for i
+- [Canadian credit union](FunctionalEntities/NorthAmericanEntities/CAFinancialServicesEntities/CanadianCreditUnion.md) — not-for-profit financial institution, typically formed by the employees of a company, labor union, or religious group, o
+- [Credit Institution Register entry](FunctionalEntities/EuropeanEntities/EURegulatoryAgencies/CreditInstitutionRegisterEntry.md) — entry in the Credit Institution Register, a repository of credit institutions collected by the European Banking Authorit
+- [European Economic Area branch](FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities/EuropeanEconomicAreaBranch.md) — a branch of a credit institution authorised in another European Economic Area (EEA) country that has the right to passpo
+- [FDIC Certificate Number](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/FDICCertificateNumber.md) — identifier issued to a depository institution by the FDIC on approval of that institution's application for insurance
+- [FDIC registry entry](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/FDICRegistryEntry.md) — an entry in the FDIC institution directory, a repository of financial institution characteristics collected by the FDIC 
+- [Federal Reserve System member](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/FederalReserveSystemMember.md) — financial institution that is a member of the Federal Reserve System (FRS)
+- [Federal Reserve System non-member institution](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/FederalReserveSystemNonMemberInstitution.md) — depository institution that is not member of the Federal Reserve System (FRS)
+- [Federal Reserve district](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/FederalReserveDistrict.md) — a region of the US identifying the jurisdiction of a Federal Reserve Bank, numbered and named for the city in which that
+- [Federal Reserve district bank](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/FederalReserveDistrictBank.md) — Federal Reserve district and member bank, with jurisdiction over a specific region of the US, named for the city in whic
+- [Federal Reserve district identifier](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/FederalReserveDistrictIdentifier.md) — identifier associated with a Federal Reserve district
+- [Goods and Services Tax / Harmonized Sales Tax registration number](FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/GoodsServicesTaxHarmonizedSalesTaxRegistrationNumber.md) — concatenation of an entity's business number, the 'RT' abbreviation and a 4-digit subaccount number used for reporting G
+- [National Information Center (NIC) controlled vocabulary](FunctionalEntities/NorthAmericanEntities/USNationalInformationCenterControlledVocabularies/NationalInformationCenterControlledVocabulary.md) — controlled vocabulary that characterizes some feature or aspect of content about a financial service provider managed in
+- [National Information Center (NIC) entity type classifier](FunctionalEntities/NorthAmericanEntities/USNationalInformationCenterControlledVocabularies/NICEntityTypeClassifier.md) — controlled vocabulary and codes for describing the nature of the functional entities managed by the National Information
+- [National Information Center (NIC) registry entry](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/NICRegistryEntry.md) — an entry in the the National Information Center (NIC) repository, a repository of financial data and institution charact
+- [New York Article XII investment company](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/NewYorkArticleXIIInvestmentCompany.md) — specialized non-depository lending institution that has broad borrowing and lending powers and may invest in stocks and 
+- [North American Industry Classification System code](FunctionalEntities/BusinessRegistries/NorthAmericanIndustryClassificationSystemCode.md) — the North American Industry Classification System (NAICS) code representing an industry
+- [North American Industry Classification System scheme](FunctionalEntities/BusinessRegistries/NorthAmericanIndustryClassificationSystemScheme.md) — the scheme defining the North American Industry Classification System (NAICS) Codes
+- [Research, Statistics, Supervision and Regulation, and Discount and Credit identifier](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/ResearchStatisticsSupervisionDiscountIdentifier.md) — unique identifier assigned by the Federal Reserve to financial institutions for regulatory and oversight purposes
+- [U.S. bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/USBank.md) — bank that is licensed to conduct business in the United States
+- [U.S. bank holding company](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/USBankHoldingCompany.md) — bank holding company that is licensed to conduct business in the United States and is regulated and supervised by the Fe
+- [U.S. credit union](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/USCreditUnion.md) — cooperative association organized for the purpose of promoting thrift among its members and creating a source of credit 
+- [account](ProductsAndServices/ClientsAndAccounts/Account.md) — container for records associated with a business arrangement for regular transactions and services
+- [account as an asset](ProductsAndServices/ClientsAndAccounts/AccountAsAnAsset.md) — financial asset in the form of an account
+- [account holder](ProductsAndServices/ClientsAndAccounts/AccountHolder.md) — party that owns an account
+- [account identifier](ProductsAndServices/ClientsAndAccounts/AccountIdentifier.md) — identifier that denotes an account
+- [account ownership](ProductsAndServices/ClientsAndAccounts/AccountOwnership.md) — holding of an account
+- [account provider](ProductsAndServices/ClientsAndAccounts/AccountProvider.md) — party that provides and services an account
+- [account statement](ProductsAndServices/ClientsAndAccounts/AccountStatement.md) — periodic summary of account activity for a given period of time
+- [account-specific service agreement](ProductsAndServices/ClientsAndAccounts/AccountSpecificServiceAgreement.md) — service-agreement that is account-specific, applicable in cases where a client might hold multiple accounts with differi
+- [accounting transaction](ProductsAndServices/ClientsAndAccounts/AccountingTransaction.md) — event recognized by an entry in the records of an account
+- [accrual](DebtAndEquities/Debt/Accrual.md) — the process of accumulating interest or other income that has been earned but not paid
+- [accrued interest](DebtAndEquities/Debt/AccruedInterest.md) — amount of interest that has been incurred, as of a specific date, on a loan or other financial obligation but has not ye
+- [adjusted closing price](FinancialInstruments/InstrumentPricing/AdjustedClosingPrice.md) — amended closing price to reflect a security's value after accounting for any corporate actions, such as stock splits, di
+- [agency agreement](ProductsAndServices/FinancialProductsAndServices/AgencyAgreement.md) — agreement that designates a party as a registered agent to represent and act on behalf of another party in some, typical
+- [agency of a foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/AgencyOfAForeignBankingOrganization.md) — place of business of a foreign bank, located in any state, at which credit balances are maintained, checks are paid, mon
+- [agent for service of process](ProductsAndServices/FinancialProductsAndServices/AgentForServiceOfProcess.md) — registered agent (person or organization) designated by a business entity, such as a corporation, to receive legal corre
+- [agreement corporation](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/AgreementCorporation.md) — corporation chartered by a state to engage in international banking, so named because the corporation enters into an 'ag
+- [agreement corporation - banking](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/AgreementCorporation-Banking.md) — agreement corporation whose charter allows the corporation to engage in international banking
+- [agreement corporation - investment](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/AgreementCorporation-Investment.md) — agreement corporation whose charter allows the corporation to engage in international investment banking
+- [alternative trading system](FunctionalEntities/Markets/AlternativeTradingSystem.md) — trading venue that is more loosely regulated than a regulated exchange
+- [amortization](DebtAndEquities/Debt/Amortization.md) — the process of reduction of debt or other costs through periodic charges to assets or liabilities, such as through princ
+- [amortization schedule](DebtAndEquities/Debt/AmortizationSchedule.md) — schedule of periodic payments (repayment installments) that specify changes in the balance of the debt over time
+- [approved publication arrangement](FunctionalEntities/Markets/ApprovedPublicationArrangement.md) — data reporting services provider that is authorized to provide the service of publishing certain trade reports on behalf
+- [approved reporting mechanism](FunctionalEntities/Markets/ApprovedReportingMechanism.md) — data reporting services provider that is authorized to provide the service of reporting details of transactions to compe
+- [auction market](FunctionalEntities/Markets/AuctionMarket.md) — exchange in which buyers and sellers submit competitive bids that do not involve direct negotiations between parties, as
+- [balance](ProductsAndServices/ClientsAndAccounts/Balance.md) — amount of money available or owed
+- [bank](FunctionalEntities/FinancialServicesEntities/Bank.md) — depository institution, usually a corporation, that accepts deposits, makes loans, pays checks, and performs related ser
+- [bank account identifier](ProductsAndServices/ClientsAndAccounts/BankAccountIdentifier.md) — identifier that identifies a demand deposit account provided by a bank
+- [bank holding company](FunctionalEntities/FinancialServicesEntities/BankHoldingCompany.md) — any company that owns and/or has direct or indirect control of one or more banks; BHCs may also own nonbanking subsidiar
+- [bank identifier](ProductsAndServices/ClientsAndAccounts/BankIdentifier.md) — identifier that uniquely identifies the financial institution and, when appropriate, the branch of that financial instit
+- [bankers' bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/BankersBank.md) — commercial bank owned exclusively (except to the extent directors' qualifying shares are required by law) by other depos
+- [bankers' bank subject to reserve requirements](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/BankersBankSubjectToReserveRequirements.md) — bankers' bank whose activities are limited by specific requirements of the Federal Reserve
+- [bankers' bank that is not subject to reserve requirements](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/BankersBankNotSubjectToReserveRequirements.md) — bankers' bank whose activities are not limited by specific requirements of the Federal Reserve
+- [banking product](FunctionalEntities/FinancialServicesEntities/BankingProduct.md) — product provided to consumers and businesses by a depository institution
+- [banking service](FunctionalEntities/FinancialServicesEntities/BankingService.md) — financial service offered by a depository institution
+- [bankruptcy](DebtAndEquities/CreditEvents/Bankruptcy.md) — credit event involving a change in state or condition in which a party becomes insolvent
+- [basic bank account identifier](ProductsAndServices/ClientsAndAccounts/BasicBankAccountIdentifier.md) — identifier that uniquely identifies an individual account at a specific financial institution in a particular country an
+- [basket](ProductsAndServices/FinancialProductsAndServices/Basket.md) — collection of goods, services, or other things (e
+- [basket constituent](ProductsAndServices/FinancialProductsAndServices/BasketConstituent.md) — component of a basket
+- [best bid](FinancialInstruments/InstrumentPricing/BestBid.md) — highest bid price a prospective buyer is willing to pay at a particular time for a given security
+- [best offer](FinancialInstruments/InstrumentPricing/BestOffer.md) — lowest price acceptable to a prospective seller for a given security at a particular point in time
+- [bid ask spread](FinancialInstruments/InstrumentPricing/BidAskSpread.md) — difference between an offer (ask) price and a bid price
+- [bid price](FinancialInstruments/InstrumentPricing/BidPrice.md) — price a prospective buyer is willing to pay
+- core · [borrower](DebtAndEquities/Debt/Borrower.md) — party to a credit agreement that is obligated to repay the amount borrowed (principal) with interest and other fees acco
+- [borrower identification scheme](DebtAndEquities/Debt/BorrowerIdentificationScheme.md) — system for allocating identifiers to borrowers
+- [borrower identifier](DebtAndEquities/Debt/BorrowerIdentifier.md) — sequence of characters, capable of uniquely identifying a borrower
+- [borrowing capacity](DebtAndEquities/Debt/BorrowingCapacity.md) — upper bound on the total amount of money that a lender believes a party has the ability to repay an obligation when due,
+- [branch of a depository institution](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/BranchOfADepositoryInstitution.md) — any office or any place of business located in any State of the United States at which deposits are received
+- [broker](ProductsAndServices/FinancialProductsAndServices/Broker.md) — any party that acts as an intermediary between a buyer and a seller, usually charging a commission
+- [broker-dealer](ProductsAndServices/FinancialProductsAndServices/BrokerDealer.md) — any party in the business of buying and selling securities, operating as both a broker and a dealer, depending on the tr
+- [brokerage account](ProductsAndServices/ClientsAndAccounts/BrokerageAccount.md) — account offered by a broker that allows the investor to deposit funds and place investment orders
+- [brokerage firm](FunctionalEntities/FinancialServicesEntities/BrokerageFirm.md) — firm in the business of buying and selling securities, operating as both a broker and a dealer, depending on the transac
+- [business center code](FunctionalEntities/BusinessCenters/BusinessCenterCode.md) — code used to denote a metropolitan area where business is conducted
+- [business center code set](FunctionalEntities/BusinessCenters/BusinessCenterCodeScheme.md) — coding scheme used to define a set of codes for municipalities or business centers
+- [business day adjustment code](FunctionalEntities/BusinessCenters/BusinessDayAdjustmentCode.md) — code used to denote a convention for specifying what happens when a date falls on a day that is weekend or holiday in so
+- [business identifier code](FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCode.md) — international identifier for financial and non-financial institutions used to facilitate automated processing of informa
+- [business identifier code data record](FunctionalEntities/InternationalRegistriesAndAuthorities/BusinessIdentifierCodeDataRecord.md) — entry in a registry that conforms to ISO 9362 for the management of BIC codes and related registration information
+- [business identifier code scheme](FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCodeScheme.md) — scheme that specifies the elements of a unique business identifier code (BIC) scheme to identify financial and non-finan
+- [business number](FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/BusinessNumber.md) — unique, 9-digit number that is the standard identifier for legal entities in Canada which are typically a business
+- [business party prefix](FunctionalEntities/FinancialServicesEntities/BusinessPartyPrefix.md) — four-character (4 alphanumeric) code associated with an organization for the purposes of banking telecommunications
+- [business party suffix](FunctionalEntities/FinancialServicesEntities/BusinessPartySuffix.md) — two-character (2 alphanumeric) code associated with the organization for the purposes of banking telecommunications
+- [business register identifier](FunctionalEntities/BusinessRegistries/BusinessRegisterIdentifier.md) — identifier that uniquely identifies a business register, such as a register identified by the Global Legal Entity Identi
+- [business registration authority](FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority.md) — registration authority that is responsible for maintaining a registry of business entities
+- [business registry](FunctionalEntities/BusinessRegistries/BusinessRegistry.md) — registry for registering and maintaining information about business entities
+- [business registry entry](FunctionalEntities/BusinessRegistries/BusinessRegistryEntry.md) — entry in a business registry
+- [calculation agent](FinancialInstruments/FinancialInstruments/CalculationAgent.md) — party that is responsible for determining the value of an instrument and in some cases, determines how much the parties 
+- [capital lease](DebtAndEquities/Debt/CapitalLease.md) — lease that must be reflected on an organization's balance sheet as an asset and as a corresponding liability
+- [cash instrument](FinancialInstruments/FinancialInstruments/CashInstrument.md) — financial instrument whose value is determined by the market and that is readily transferable (highly liquid)
+- [cash settlement terms](FinancialInstruments/Settlement/CashSettlementTerms.md) — contractual commitment to settle in cash
+- [catalog](ProductsAndServices/FinancialProductsAndServices/Catalog.md) — publication including a list of products available for sale with their descriptions and possibly prices
+- [central bank](FunctionalEntities/FinancialServicesEntities/CentralBank.md) — financial institution that is the monetary authority and major regulatory bank for a country (or group of countries)
+- [central counterparty clearing house](FunctionalEntities/FinancialServicesEntities/CentralCounterpartyClearingHouse.md) — clearing house that helps facilitate trading in derivatives and equities markets
+- [central securities depository](FunctionalEntities/FinancialServicesEntities/CentralSecuritiesDepository.md) — functional entity that provides a central point for depositing financial instruments ('securities'), for example, bonds 
+- [certificate of deposit](ProductsAndServices/ClientsAndAccounts/CertificateOfDeposit.md) — cash instrument associated with a time deposit account that cannot be withdrawn for a certain period of time (term)
+- [chart of accounts](ProductsAndServices/ClientsAndAccounts/ChartOfAccounts.md) — structured system of financial account codes used to classify, record, and organize an entity's financial transactions i
+- [clean price](FinancialInstruments/InstrumentPricing/CleanPrice.md) — debt instrument price that does not include accrued interest
+- [clearing bank](FunctionalEntities/FinancialServicesEntities/ClearingBank.md) — commercial bank that facilitates payment and settlement of financial transactions, such as check clearing or facilitatin
+- [clearing corporation](FunctionalEntities/FinancialServicesEntities/ClearingCorporation.md) — clearing house that is organized as a corporation
+- [clearing house](FunctionalEntities/FinancialServicesEntities/ClearingHouse.md) — financial service provider that is exchange affiliated and provides clearing services, including the validation, deliver
+- [clearing service](FunctionalEntities/FinancialServicesEntities/ClearingService.md) — service provided on behalf of an institutional market participant by a clearing services provider following a trade that
+- [close date](ProductsAndServices/ClientsAndAccounts/CloseDate.md) — date on which something was closed
+- [closing price](FinancialInstruments/InstrumentPricing/ClosingPrice.md) — cash value of the last transacted price before the market closes
+- [closing price determination method](FinancialInstruments/InstrumentPricing/ClosingPriceDeterminationMethod.md) — strategy for calculating or otherwise determining an official closing price
+- core · [collateral](DebtAndEquities/Debt/Collateral.md) — something pledged as security to ensure fulfillment of an obligation to another party, to lend money, extend credit, or 
+- [collateral value as of date](DebtAndEquities/Debt/CollateralValueAsOfDate.md) — appraised value of the collateral for an obligation as of a given date
+- [collateralized guaranty](DebtAndEquities/Guaranty/CollateralizedGuaranty.md) — guaranty that takes the form of some asset that is pledged by a borrower to a lender (usually in return for a loan)
+- [collection of security prices](FinancialInstruments/InstrumentPricing/CollectionOfSecurityPrices.md) — collection consisting of a series of prices, each of which has a specific date and time associated with it, for some sec
+- [commercial bank](FunctionalEntities/FinancialServicesEntities/CommercialBank.md) — depository institution that engages in various financial services, such as accepting deposits and making loans
+- [commercial finance company](FunctionalEntities/FinancialServicesEntities/CommercialFinanceCompany.md) — finance company that makes loans to manufacturers and wholesalers, secured by accounts receivable, inventories, and equi
+- [commercial lending company](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/CommercialLendingCompany.md) — any institution, other than a bank or an organization operating under section 25 of the Federal Reserve Act [12 U
+- [commercial lending service](ProductsAndServices/ClientsAndAccounts/CommercialLendingService.md) — service involving the extension of credit to support business activities
+- [committed credit facility](DebtAndEquities/Debt/CommittedCreditFacility.md) — credit facility that is a confirmed source of financing for the borrower, as long as the borrower meets the conditions o
+- [committed sub-facility](DebtAndEquities/Debt/CommittedSubFacility.md) — contractually committed portion of a credit facility that is available to the borrower and may be associated with some s
+- [commodity instrument](FinancialInstruments/FinancialInstruments/CommodityInstrument.md) — financial instrument representing an ownership interest in bulk goods, such as raw materials and primary agricultural pr
+- [commodity trading advisor](FunctionalEntities/FinancialServicesEntities/CommodityTradingAdvisor.md) — party that directly or indirectly advises others as to the value or advisability of buying or selling futures contracts 
+- [composite market](FinancialInstruments/InstrumentPricing/CompositeMarket.md) — group of exchanges and trading venues referenced for pricing purposes
+- [consolidated tape provider](FunctionalEntities/Markets/ConsolidatedTapeProvider.md) — data reporting services provider that is authorized to provide the service of collecting trade reports for financial ins
+- [consumer finance company](FunctionalEntities/FinancialServicesEntities/ConsumerFinanceCompany.md) — finance company that lends to individuals under the small loans laws of the jurisdiction in which they operate
+- [contract lifecycle](ProductsAndServices/FinancialProductsAndServices/ContractLifecycle.md) — lifecycle of an agreement, including, but not limited to a credit agreement, financial instrument, or other formal contr
+- [contract lifecycle event](ProductsAndServices/FinancialProductsAndServices/ContractLifecycleEvent.md) — kind of event that occurs during one or more stages of the lifecycle of an agreement
+- [contract lifecycle event occurrence](ProductsAndServices/FinancialProductsAndServices/ContractLifecycleEventOccurrence.md) — actual occurrence of an event during a specific stage of a specific contract lifecycle
+- [contract lifecycle occurrence](ProductsAndServices/FinancialProductsAndServices/ContractLifecycleOccurrence.md) — realization of the lifecycle of a specific contract
+- [contract lifecycle stage](ProductsAndServices/FinancialProductsAndServices/ContractLifecycleStage.md) — phase in the lifecycle of an agreement
+- [contract lifecycle stage occurrence](ProductsAndServices/FinancialProductsAndServices/ContractLifecycleStageOccurrence.md) — realization, from start to finish of a phase in an occurrence of a specific contract lifecycle
+- [contractual savings institution](FunctionalEntities/FinancialServicesEntities/ContractualSavingsInstitution.md) — financial institution that provides the opportunity for individuals to invest in collective investment vehicles in a fid
+- [cooperative bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/CooperativeBank.md) — state-chartered savings association that is organized and operates according to the laws of the state in which it is cha
+- [corporation income tax number](FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/CorporationIncomeTaxNumber.md) — concatenation of an entity's business number, the 'RC' abbreviation and a 4-digit subaccount number used for reporting c
+- core · [credit agreement](DebtAndEquities/Debt/CreditAgreement.md) — contractual agreement in which a debtor receives something of value and typically agrees to repay the creditor by some d
+- [credit agreement repaid at maturity](DebtAndEquities/Debt/CreditAgreementRepaidAtMaturity.md) — credit agreement in which accrued interest may be periodically repaid or paid at maturity, but principal is paid at matu
+- [credit agreement repaid periodically](DebtAndEquities/Debt/CreditAgreementRepaidPeriodically.md) — credit agreement in which the principal and accrued interest may be periodically repaid or exchanged
+- [credit enhancement agreement](DebtAndEquities/Debt/CreditEnhancementAgreement.md) — collateral agreement that governs the exchange of collateral between parties to mitigate counterparty credit risk
+- [credit enhancement beneficiary](DebtAndEquities/Debt/CreditEnhancementBeneficiary.md) — party that benefits from the collateral or guarantee established under the agreement, i
+- [credit event](DebtAndEquities/CreditEvents/CreditEvent.md) — event signifying a sudden change in credit standing, such as bankruptcy or a violation of a bond indenture or loan agree
+- [credit facility](DebtAndEquities/Debt/CreditFacility.md) — credit agreement that allows the borrower to periodically take out money over an extended period of time rather than rea
+- [credit inquiry](DebtAndEquities/CreditRatings/CreditInquiry.md) — request from a lender to a credit repository to obtain information regarding a prospective borrower's creditworthiness
+- [credit inquiry type](DebtAndEquities/CreditRatings/CreditInquiryType.md) — classifier indicating whether a credit inquiry is a result of a borrower's direct authorization or by some indirect mean
+- [credit institution](FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities/CreditInstitution.md) — an undertaking the business of which is to take deposits or other repayable funds from the public and to grant credits f
+- [credit institution / investment firm](FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities/CreditInstitutionInvestmentFirm.md) — classification specific to European financial institutions that designates them as credit institutions / investment firm
+- [credit message](DebtAndEquities/CreditRatings/CreditMessage.md) — notice on a credit report to alert a reviewer of special or exceptional information
+- [credit message type](DebtAndEquities/CreditRatings/CreditMessageType.md) — classifier that categorizes credit messages
+- [credit quality](DebtAndEquities/CreditRatings/CreditQuality.md) — classifier for borrowers, rates, or holdings in the lending market with respect to the quality of the credit
+- [credit rating](DebtAndEquities/CreditRatings/CreditRating.md) — assessment of creditworthiness of a borrower generally or with respect to a particular debt or financial obligation
+- [credit rating agency](DebtAndEquities/CreditRatings/CreditRatingAgency.md) — rating agency that publishes reports assessing the creditworthiness of a borrower or legal entity, either generally or w
+- [credit rating model](DebtAndEquities/CreditRatings/CreditRatingModel.md) — algorithm for computing a credit rating
+- [credit rating scale](DebtAndEquities/CreditRatings/CreditRatingScale.md) — rating scale for assigning a credit rating to individual, entity, or instrument, including defining a set of codes or nu
+- [credit report](DebtAndEquities/CreditRatings/CreditReport.md) — report describing the creditworthiness and related credit attributes of a borrower
+- [credit report category](DebtAndEquities/CreditRatings/CreditReportCategory.md) — classifier for credit reports, often available from multiple vendors
+- [credit report product](DebtAndEquities/CreditRatings/CreditReportProduct.md) — branded credit report offered in the marketplace
+- [credit score model type](DebtAndEquities/CreditRatings/CreditRatingModelType.md) — a type corresonding to a family of credit scoring algorithms sharing common characteristics
+- [credit tradeline](DebtAndEquities/CreditRatings/CreditTradeline.md) — report derived from the transaction history of a credit account
+- [credit union](FunctionalEntities/FinancialServicesEntities/CreditUnion.md) — not-for-profit depository institution that makes personal loans and offers other consumer banking services, organized fo
+- [credit watch direction](DebtAndEquities/CreditRatings/CreditWatchDirection.md) — 
+- [credit watch outlook](DebtAndEquities/CreditRatings/CreditWatchOutlook.md) — 
+- core · [creditor](DebtAndEquities/Debt/Creditor.md) — a party to whom an obligation, such as an amount of money, or good, or performance of some service exists
+- [cross default provision](DebtAndEquities/CreditEvents/CrossDefaultProvision.md) — contract provision that triggers a default under one contract if the borrower defaults on another related obligation
+- [crypto asset services provider](FunctionalEntities/Markets/CryptoAssetServicesProvider.md) — financial services provider that provides services for crypto assets that enable the control of crypto assets, and parti
+- [currency instrument](FinancialInstruments/FinancialInstruments/CurrencyInstrument.md) — financial instrument used for the purposes of currency trading
+- [customer account](ProductsAndServices/ClientsAndAccounts/CustomerAccount.md) — account that represents an identified, named collection of balances and cumulative totals used to summarize customer tra
+- [customer account holder](ProductsAndServices/ClientsAndAccounts/CustomerAccountHolder.md) — party that owns a customer account
+- [dark pool](FunctionalEntities/Markets/DarkPool.md) — privately organized alternative trading system, that allows institutional investors the ability to trade without exposur
+- [data processing service](FunctionalEntities/FinancialServicesEntities/DataProcessingService.md) — financial service offered by an entity primarily engaged in providing infrastructure for hosting or data processing serv
+- [data processing servicer](FunctionalEntities/FinancialServicesEntities/DataProcessingServicer.md) — finance services provider primarily engaged in providing infrastructure for hosting or data processing services
+- [data reporting services provider](FunctionalEntities/Markets/DataReportingServicesProvider.md) — market data provider and reporting party that reports and/or publishes data on securities transactions, including requir
+- [day-count convention](DebtAndEquities/Debt/DayCountConvention.md) — a business recurrence interval convention that is used to calculate the number of days in an interest payment, which app
+- [dealer](ProductsAndServices/FinancialProductsAndServices/Dealer.md) — any party that purchases goods or services for resale and acts on their own behalf in a transaction
+- [debt](DebtAndEquities/Debt/Debt.md) — obligation to pay something, such as an amount of money, good, service, or instrument
+- [debt instrument](FinancialInstruments/FinancialInstruments/DebtInstrument.md) — financial instrument and credit agreement evidencing monies owed by the issuer to the holder on terms as specified
+- [debt terms](DebtAndEquities/Debt/DebtTerms.md) — contract terms that specify the formal rights and obligations of borrower and lender under a contract in which funds are
+- [debtor](DebtAndEquities/Debt/Debtor.md) — a party that owes a debt or other obligation to another party
+- [default event](DebtAndEquities/CreditEvents/DefaultEvent.md) — credit event representing a failure to meet a contractual obligation, such as failure to repay a debt including interest
+- [delivery method](FinancialInstruments/Settlement/DeliveryMethod.md) — method and commitment to transfer a commodity, currency, security, cash or another instrument as defined in the settleme
+- [demand deposit account](ProductsAndServices/ClientsAndAccounts/DemandDepositAccount.md) — non-interest-bearing deposit account in which deposits are payable immediately on demand, or that are issued with an ori
+- [deposit account](ProductsAndServices/ClientsAndAccounts/DepositAccount.md) — account that provides a record of money placed with a depository institution for safekeeping and management
+- [depository institution](FunctionalEntities/FinancialServicesEntities/DepositoryInstitution.md) — any financial institution engaged in the business of receiving demand deposits from the public or other institutions
+- [derivative instrument](FinancialInstruments/FinancialInstruments/DerivativeInstrument.md) — financial instrument that confers on its holders certain rights or obligations, whose value is derived from one or more 
+- [derived price](FinancialInstruments/InstrumentPricing/DerivedPrice.md) — price that stems from another source or calculation rather than being quoted or based on actual trading data
+- [designated contract market](FunctionalEntities/Markets/DesignatedContractMarket.md) — exchange, trading system, or platform that enables listing for trading futures or option contracts based on any underlyi
+- [development bank](FunctionalEntities/FinancialServicesEntities/DevelopmentBank.md) — national or regional financial institution designed to provide medium- and long-term capital for productive investment, 
+- [dirty price](FinancialInstruments/InstrumentPricing/DirtyPrice.md) — debt instrument price that includes accrued interest
+- [distressed ratings downgrade](DebtAndEquities/CreditEvents/DistressedRatingsDowngrade.md) — credit event triggered when the credit rating of an obligation is downgraded to a distressed debt level
+- [domestic branch of a foreign bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/DomesticBranchOfAForeignBank.md) — place of business of a foreign bank, located in any state, at which deposits are received, and that is not an agency as 
+- [domestic branch of domestic bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/DomesticBranchOfDomesticBank.md) — branch that resides in the United States, and whose parent is also located in the United States
+- [domestic entity](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/DomesticEntity.md) — financial service provider that is incorporated and domiciled in the United States
+- [domestic entity other](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/DomesticEntityOther.md) — domestic institution that engages in banking activities usually in connection with the business of banking in the United
+- [domestic non-bank subsidiary of a domestic entity](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/DomesticNonBankSubsidiaryOfADomesticEntity.md) — non-bank financial service provider based in the United States of which 25 percent or more of whose voting shares are ow
+- [downgrade](DebtAndEquities/CreditEvents/Downgrade.md) — credit event triggered when the credit rating of a party or obligation is lowered
+- [edge corporation](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/EdgeCorporation.md) — corporation chartered by the Federal Reserve to engage in international banking and financial operations
+- [edge corporation - banking](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/EdgeCorporation-Banking.md) — edge corporation whose charter allows the corporation to engage in international banking
+- [edge corporation - domestic branch](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/EdgeCorporation-DomesticBranch.md) — branch of an edge corporation that is located in the United States
+- [edge corporation - investment](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/EdgeCorporation-Investment.md) — edge corporation whose charter allows the corporation to engage in international investment banking
+- [electronic communication network](FunctionalEntities/Markets/ElectronicCommunicationNetwork.md) — alternative trading system that automatically matches buy and sell orders for securities in the market
+- [electronic funds transfer service](FunctionalEntities/FinancialServicesEntities/ElectronicFundsTransferService.md) — service involving any transfer of funds other than a transaction involving a paper instrument, that is initiated through
+- [employer identification number](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/EmployerIdentificationNumber.md) — unique nine-digit number assigned by the Internal Revenue Service (IRS) to business entities operating in the United Sta
+- [employer identification numbering scheme](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/EmployerIdentificationNumberingScheme.md) — taxpayer identification numbering scheme used in the United States to identify business entities
+- [entitlement](FinancialInstruments/FinancialInstruments/Entitlement.md) — financial instrument that provides the holder an interest in, or the privilege to subscribe to, or to receive specific a
+- [entity expiration reason](FunctionalEntities/BusinessRegistries/EntityExpirationReason.md) — code for the reason that a legal entity ceased to exist and/or operate
+- [entity legal form registry](FunctionalEntities/BusinessRegistries/EntityLegalFormRegistry.md) — registry for registering and maintaining information about the legal forms that are valid for business entities for a pa
+- [entity legal form registry entry](FunctionalEntities/BusinessRegistries/EntityLegalFormRegistryEntry.md) — entry in an entity legal form registry that conforms to ISO 20275
+- [entity status](FunctionalEntities/BusinessRegistries/EntityStatus.md) — lifecycle stage indicating the operational and/or legal status of an entity
+- [entity validation level](FunctionalEntities/BusinessRegistries/EntityValidationLevel.md) — code for the level of validation performed by the GLEIF or LOU with respect to the reference data provided by the regist
+- [entity-specific credit event](DebtAndEquities/CreditEvents/EntitySpecificCreditEvent.md) — credit event that applies to a given legal person
+- [equity instrument](FinancialInstruments/FinancialInstruments/EquityInstrument.md) — financial instrument representing an ownership interest in an entity or pool of assets
+- [examiner](FunctionalEntities/RegulatoryAgencies/Examiner.md) — party empowered as an official representative by a regulatory agency to investigate and review specified documents for a
+- [exchange](FunctionalEntities/Markets/Exchange.md) — any organization, association, or group of persons, whether incorporated or unincorporated, which constitutes, maintains
+- [exchange participant](FunctionalEntities/Markets/ExchangeParticipant.md) — registered agent who, in accordance with the rules of an exchange, may trade on or through the exchange and whose name i
+- [exempt security](FinancialInstruments/FinancialInstruments/ExemptSecurity.md) — security that is exempt from certain regulatory rules
+- [explicit contract event schedule](DebtAndEquities/Debt/ExplicitContractEventSchedule.md) — schedule of events, including but not limited to payment events, rate reset events and others that will occur over the l
+- [exposure](ProductsAndServices/FinancialProductsAndServices/Exposure.md) — the extent to which an individual or organization is unprotected and open to damage, danger, risk of suffering a loss, o
+- [face amount certificate company](FunctionalEntities/FinancialServicesEntities/FaceAmountCertificateCompany.md) — investment company which is engaged or proposes to engage in the business of issuing face-amount certificates of the ins
+- [failure to pay](DebtAndEquities/CreditEvents/FailureToPay.md) — default event that is triggered following any applicable grace period in which a payment obligation is missed
+- [failure to pay interest](DebtAndEquities/CreditEvents/FailureToPayInterest.md) — default event that where either an expected interest payment is missed altogether or the amount paid is less than the re
+- [failure to pay principal](DebtAndEquities/CreditEvents/FailureToPayPrincipal.md) — default event that where either an expected principal payment is missed altogether or the amount paid is less than the r
+- [farm credit system institution](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/FarmCreditSystemInstitution.md) — federally-chartered financial institution that is supervised, examined, and regulated by the Farm Credit Administration 
+- [federal agency of foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/FederalAgencyOfForeignBankingOrganization.md) — agency of a foreign bank established and operating under section 3102 of CFR Title 12, Chapter 32 and section 4 of the I
+- [federal branch of foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/FederalBranchOfForeignBankingOrganization.md) — branch of a foreign bank established and operating under section 3102 of CFR Title 12, Chapter 32 and section 4 of the I
+- [federal credit union](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/FederalCreditUnion.md) — credit union that has a federal affiliation
+- [federal government entity](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/FederalGovernmentEntity.md) — formal organization that is an independent agency, instrumentality or other permanent or semi-permanent organization in 
+- [federal savings bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/FederalSavingsBank.md) — savings bank that has a federal affiliation
+- [fee](ProductsAndServices/ClientsAndAccounts/Fee.md) — charge for services performed
+- [filing for bankruptcy](DebtAndEquities/CreditEvents/FilingForBankruptcy.md) — credit event that involves a request to a court to be recognized as bankrupt
+- [finance company](FunctionalEntities/FinancialServicesEntities/FinanceCompany.md) — financial intermediary in the business of making loans that obtains its financing from banks, institutions, and other mo
+- [financial exposure](ProductsAndServices/FinancialProductsAndServices/FinancialExposure.md) — the extent to which an individual or organization is open to risk of suffering a loss in a transaction, or with respect 
+- [financial holding company](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/FinancialHoldingCompany.md) — financial entity engaged in a broad range of banking-related activities as permitted under the Gramm-Leach-Bliley Act of
+- core · [financial institution](FunctionalEntities/FinancialServicesEntities/FinancialInstitution.md) — financial service provider identified as either a government agency or privately owned entity that collects funds from t
+- [financial instrument](FinancialInstruments/FinancialInstruments/FinancialInstrument.md) — written contract that gives rise to both a financial asset of one entity and a financial liability of another entity
+- [financial instrument identifier](FinancialInstruments/FinancialInstruments/FinancialInstrumentIdentifier.md) — sequence of characters uniquely identifying a financial instrument for some purpose and within a specified context
+- [financial intermediation service](ProductsAndServices/FinancialProductsAndServices/FinancialIntermediationService.md) — any financial service in which a third party (the intermediary) matches lenders and investors with entrepreneurs and oth
+- [financial product](ProductsAndServices/FinancialProductsAndServices/FinancialProduct.md) — product provided to consumers and businesses by financial institutions such as banks, insurance companies, brokerage fir
+- [financial product catalog](ProductsAndServices/FinancialProductsAndServices/FinancialProductCatalog.md) — catalog of financial products and/or services available for sale with their description and other product details
+- [financial service](ProductsAndServices/FinancialProductsAndServices/FinancialService.md) — service provided to consumers and businesses by financial institutions such as banks, insurance companies, brokerage fir
+- [financial service provider](ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider.md) — functional entity either licensed to provide financial services to consumers and/or businesses or established by law to 
+- [financial service provider identifier](FunctionalEntities/FinancialServicesEntities/FinancialServiceProviderIdentifier.md) — identifier that is officially allocated to a financial service provider based on a function that they provide, typically
+- [financial service provider identifier scheme](FunctionalEntities/FinancialServicesEntities/FinancialServiceProviderIdentifierScheme.md) — scheme that defines the financial service provider identifier per the issuing registration authority or regulatory agenc
+- [fixed interest rate](DebtAndEquities/Debt/FixedInterestRate.md) — interest rate that does not fluctuate over the lifetime of a loan or other debt instrument
+- [floating interest rate](DebtAndEquities/Debt/FloatingInterestRate.md) — variable interest rate that is based on a specific index or benchmark rate
+- [foreign bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/ForeignBank.md) — financial institution organized under the laws of a foreign country, a territory of the United States, Puerto Rico, Guam
+- [foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/ForeignBankingOrganization.md) — financial service provider that is headquartered outside the United States and that can acquire or establish freestandin
+- [foreign banking organization as a bank holding company](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/ForeignBankingOrganizationAsABankHoldingCompany.md) — foreign banking organization that is a bank holding company in the United States
+- [foreign banking organization of a bank holding company](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/ForeignBankingOrganizationOfABankHoldingCompany.md) — foreign banking organization that is owned or controlled by a bank holding company
+- [foreign branch of US bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/ForeignBranchOfUSBank.md) — branch that resides outside of the United States, but has a parent that is located in the United States
+- [foreign branch of foreign bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/ForeignBranchOfForeignBank.md) — branch that resides outside of the United States whose parent is located outside of the United States
+- [foreign branch of foreign bank managed by US office](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/ForeignBranchOfForeignBankManagedByUSOffice.md) — branch that resides outside of the United States whose parent is located outside of the United States that is managed by
+- [foreign entity other](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/ForeignEntityOther.md) — foreign institution that engages in banking activities usually in connection with the business of banking in the countri
+- [full amortization](DebtAndEquities/Debt/FullAmortization.md) — amortization in which the very last payment (which, if the schedule was calculated correctly, should be equal to all oth
+- [future](FinancialInstruments/FinancialInstruments/Future.md) — derivative instrument that obligates the buyer to receive and the seller to deliver the assets specified at an agreed pr
+- [futures commission merchant](FunctionalEntities/FinancialServicesEntities/FuturesCommissionMerchant.md) — party that does both of the following: (1) solicits or accepts orders to buy or sell futures contracts, options on futur
+- [general ledger](ProductsAndServices/ClientsAndAccounts/GeneralLedger.md) — organized collection of ledger accounts used to record and summarize changes in position as transactions are posted duri
+- [government guaranty](DebtAndEquities/Guaranty/GovernmentGuaranty.md) — guaranty provided by a government entity, such as for a government-backed security
+- [government-issued license](FunctionalEntities/RegulatoryAgencies/GovernmentIssuedLicense.md) — grant of permission needed to legally perform some task, provide some service, exercise a certain privilege, or pursue s
+- core · [guarantor](DebtAndEquities/Guaranty/Guarantor.md) — party that guarantees, endorses, or provides indemnity for some obligation on behalf of some other party
+- [guaranty](DebtAndEquities/Guaranty/Guaranty.md) — commitment whereby something is formally assured if a party with primary liability fails to perform
+- [hard credit event](DebtAndEquities/CreditEvents/HardCreditEvent.md) — default event that is not repairable
+- [high price](FinancialInstruments/InstrumentPricing/HighPrice.md) — highest price for a given security over the period specified
+- [holding](ProductsAndServices/FinancialProductsAndServices/Holding.md) — real or personal property (assets), including but not limited to financial assets, to which one holds title and of which
+- [holding company](FunctionalEntities/FinancialServicesEntities/HoldingCompany.md) — business entity established to own stock in another company, typically to own enough voting shares to have some level of
+- [import export program number](FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/ImportExportProgramNumber.md) — concatenation of an entity's business number, the 'RM' abbreviation and a 4-digit subaccount number used for customs and
+- [individual transaction](ProductsAndServices/ClientsAndAccounts/IndividualTransaction.md) — event that has a monetary impact and is documented in the records associated with an account
+- [industrial bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/IndustrialBank.md) — limited service financial institution that raises funds by selling certificates called 'investment shares' and by accept
+- [information return program number](FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/InformationReturnsProgramNumber.md) — concatenation of an entity's business number, the 'RZ' abbreviation and a 4-digit subaccount number used for information
+- [installment default](DebtAndEquities/CreditEvents/InstallmentDefault.md) — default event involving non-payment of several installment payments as scheduled in the terms of the agreement, or non-p
+- [instrument credit rating](DebtAndEquities/CreditRatings/InstrumentCreditRating.md) — investment credit rating that provides an opinion of creditworthiness of an instrument, typically with some relationship
+- [insurance company](FunctionalEntities/FinancialServicesEntities/InsuranceCompany.md) — non-depository institution whose primary and predominant business activity is the writing of insurance or the reinsuring
+- [insurance policy](DebtAndEquities/Guaranty/InsurancePolicy.md) — contract that (1) puts an indemnity cover into effect, (2) serves as a legal evidence of the insurance agreement, (3) se
+- [insurance service](FunctionalEntities/FinancialServicesEntities/InsuranceService.md) — financial service in which the insurer promises to provide compensation for specific potential future losses in exchange
+- [insurance-backed guaranty](DebtAndEquities/Guaranty/InsuranceBackedGuaranty.md) — guaranty that is realized as an insurance policy
+- [insured federal branch of foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/InsuredFederalBranchOfForeignBankingOrganization.md) — any office or any place of business of a foreign bank located in any State of the United States at which deposits are re
+- [insured state branch of foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/InsuredStateBranchOfForeignBankingOrganization.md) — any office or any place of business of a foreign bank located in any State of the United States at which deposits are re
+- [insurer](DebtAndEquities/Guaranty/Insurer.md) — financial service provider that issues an insurance policy
+- [interdealer quotation system](FunctionalEntities/Markets/InterdealerQuotationSystem.md) — automated system for organizing and disseminating price quotes by brokers and dealer firms that facilitates electronic t
+- [interest](DebtAndEquities/Debt/Interest.md) — the cost of using credit, or another's money, expressed as a rate per period of time, payable by a debtor to a creditor 
+- [interest calculation](DebtAndEquities/Debt/InterestCalculation.md) — event reflecting the calculation of interest
+- [interest calculation schedule](DebtAndEquities/Debt/InterestCalculationSchedule.md) — regular, contract-specific schedule including the dates on which interest is calculated
+- [interest obligation in light of default](DebtAndEquities/CreditEvents/InterestObligationInLightOfDefault.md) — obligation in respect of default(s) in the performance of any payment obligation
+- [interest payment](DebtAndEquities/Debt/InterestPayment.md) — event reflecting the actual payment of interest
+- [interest payment schedule](DebtAndEquities/Debt/InterestPaymentSchedule.md) — regular, contract-specific schedule including the dates on which interest is due to be paid
+- [interest payment terms](DebtAndEquities/Debt/InterestPaymentTerms.md) — contract terms for payment of interest on a debt
+- [interest rate reset](DebtAndEquities/Debt/InterestRateReset.md) — event reflecting a potential adjustment to an interest rate, typically corresponding to a change in the underlying bench
+- [interest rate reset schedule](DebtAndEquities/Debt/InterestRateResetSchedule.md) — regular, contract-specific schedule including the dates on which a rate reset, and corresponding actual rate, is recalcu
+- [interest rate setting event](DebtAndEquities/Debt/InterestRateSettingEvent.md) — event on which an initial rate for a given contract is set, which may be relative the the occurrence of some other contr
+- [intermediate holding company](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/IntermediateHoldingCompany.md) — bank holding company established or designated by a foreign banking organization under subpart O of the Federal Reserve 
+- [internal rate of return](FinancialInstruments/InstrumentPricing/InternalRateOfReturn.md) — discount rate that results in a net present value (NPV) of zero for a series of future cash flows
+- [international bank account identifier](ProductsAndServices/ClientsAndAccounts/InternationalBankAccountIdentifier.md) — identifier for a bank account that is an expanded version of the basic bank account number (BBAN), intended for use inte
+- [international bank of US depositary, edge, trust company](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/InternationalBankOfUSDepositoryEdgeTrustCompany.md) — bank that is owned or controlled by a US depository institution, Edge Act corporation or trust company
+- [international non-bank subsidiary of a domestic entity](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/InternationalNonBankSubsidiaryOfADomesticEntity.md) — non-bank financial service provider based outside of the United States of which 25 percent or more of whose voting share
+- [intra day price](FinancialInstruments/InstrumentPricing/IntraDayPrice.md) — price for a given security at some point between the opening and official closing price on an exchange
+- [investment account](ProductsAndServices/ClientsAndAccounts/InvestmentAccount.md) — account that provides a record of deposits of funds and/or securities held at a financial institution
+- [investment bank](FunctionalEntities/FinancialServicesEntities/InvestmentBank.md) — financial service provider that acts as an underwriter or agent that serves as intermediary between the issuer of securi
+- [investment company](FunctionalEntities/FinancialServicesEntities/InvestmentCompany.md) — any issuer which: (a) is or holds itself out as being engaged primarily, or proposes to engage primarily, in the busines
+- [investment credit rating](DebtAndEquities/CreditRatings/InvestmentCreditRating.md) — credit rating that provides an opinion of creditworthiness of an investment, including but not limited to an instrument 
+- [investment firm](FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities/InvestmentFirm.md) — any legal person whose regular occupation or business is the provision of one or more investment services to third parti
+- [investment or deposit account](ProductsAndServices/ClientsAndAccounts/InvestmentOrDepositAccount.md) — account associated with a product or service that requires the account holder to provide funds for management by the acc
+- [investment service](FunctionalEntities/FinancialServicesEntities/InvestmentService.md) — financial service designed to assist investors in using capital to create more money, either through income-producing ve
+- [issuer](FinancialInstruments/FinancialInstruments/Issuer.md) — role of a party that issues (or proposes to issue in a formal filing) one or more financial instruments
+- [issuer identification number](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/IssuerIdentificationNumber.md) — a numbering system that allows a credit, debit, or other card to be identified as having been issued by a particular fin
+- [joint guaranty](DebtAndEquities/Guaranty/JointGuaranty.md) — guaranty provided by at least two parties, jointly and severally
+- [lease](DebtAndEquities/Debt/Lease.md) — credit agreement permitting the use of real estate, equipment or another asset, such as a vehicle, by the owner of that 
+- [ledger account](ProductsAndServices/ClientsAndAccounts/LedgerAccount.md) — individual record for one element or sub-element in a ledger that records and summarizes increases, decreases, and balan
+- [ledger account classifier](ProductsAndServices/ClientsAndAccounts/LedgerAccountClassifier.md) — classifier used to organize an entity's financial accounts in accordance with applicable legal, regulatory, and reportin
+- [legal agent](ProductsAndServices/FinancialProductsAndServices/LegalAgent.md) — any party that has been legally empowered to act on behalf of another party
+- [legal entity identifier registry](FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry.md) — registry for registering and maintaining information about business entities for a particular jurisdiction
+- [legal entity identifier registry entry](FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry.md) — entry in a legal entity identifier registry that conforms to ISO 17442 and the Global Legal Entity Identifier Foundation
+- core · [lender](DebtAndEquities/Debt/Lender.md) — a party that extends credit or money to a borrower with the expectation of being repaid, usually with interest
+- [lending officer](ProductsAndServices/ClientsAndAccounts/LendingOfficer.md) — corporate officer that has overarching responsibility for the relationship with a specific borrower or account
+- [letter of credit](DebtAndEquities/Guaranty/LetterOfCredit.md) — letter from a bank or other creditworthy institution guaranteeing that a buyer's payment to a seller will be received on
+- [letter of credit guaranty](DebtAndEquities/Guaranty/LetterOfCreditGuaranty.md) — guaranty that takes the form of a letter of credit, i
+- [licensed agent](ProductsAndServices/FinancialProductsAndServices/LicensedAgent.md) — any individual who is licensed to perform a legally binding function, and who has been legally empowered to act on behal
+- [limited branch of a foreign bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/LimitedBranchOfAForeignBank.md) — branch of a foreign bank that receives only such deposits as would be permitted for a corporation organized under sectio
+- core · [loan or credit account](ProductsAndServices/ClientsAndAccounts/LoanOrCreditAccount.md) — account associated with a service in which the account holder receives funds from the account provider under certain ter
+- [local firm](FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities/LocalFirm.md) — a firm dealing for its own account on markets in financial futures or options or other derivatives and on cash markets f
+- [local operating unit](FunctionalEntities/BusinessRegistries/LocalOperatingUnit.md) — registrar that is authorized by the Global LEI Foundation to issue legal entity identifiers
+- [low price](FinancialInstruments/InstrumentPricing/LowPrice.md) — lowest value for a given security over the period specified
+- [managed interest rate](DebtAndEquities/Debt/ManagedInterestRate.md) — variable interest rate charged by a financial institution for borrowing that is not prescribed as a margin over base rat
+- [management company](FunctionalEntities/FinancialServicesEntities/ManagementCompany.md) — investment company that sells and manages a portfolio of securities other than a face-amount certificate company or unit
+- [market category classifier](FunctionalEntities/Markets/MarketCategoryClassifier.md) — classifier representing the controlled vocabulary that delineates the nature of the exchange or data reporting services 
+- [market identifier](FunctionalEntities/Markets/MarketIdentifier.md) — identifier that specifies a universal method of identifying exchanges, trading platforms, regulated or non-regulated mar
+- [market identifier code registry entry](FunctionalEntities/InternationalRegistriesAndAuthorities/MarketIdentifierCodeRegistryEntry.md) — entry in a market identifier code registry that conforms to ISO 10383
+- [market indicator code status](FunctionalEntities/Markets/MarketIdentifierCodeStatus.md) — lifecycle stage indicating the status of the MIC code, as specified by the registration authority
+- [market level classifier](FunctionalEntities/Markets/MarketLevelClassifier.md) — classifier that indicates whether the exchange or data reporting services provider is an operating level or market segme
+- [market price](FinancialInstruments/InstrumentPricing/MarketPrice.md) — last reported price at which a security was sold
+- [market segment-level market](FunctionalEntities/Markets/MarketSegmentLevelMarket.md) — section of an exchange/market/trade reporting facility that specialises in one or more specific instruments or that is r
+- [market segment-level market identifier](FunctionalEntities/Markets/MarketSegmentLevelMarketIdentifier.md) — market identifier that identifies a section of an exchange/market/trade reporting facility that specialises in one or mo
+- [maturity extension](DebtAndEquities/CreditEvents/MaturityExtension.md) — credit event involving extension of payments beyond the original maturity date of the obligation
+- [merchant service](FunctionalEntities/FinancialServicesEntities/MerchantService.md) — financial service provided by a financial institution to a merchant or other business, including but not limited to mana
+- [mid price](FinancialInstruments/InstrumentPricing/MidPrice.md) — arithmetic mean between bid and offer prices
+- [monetary authority](FunctionalEntities/FinancialServicesEntities/MonetaryAuthority.md) — regulatory agency that controls the monetary policy, regulation and supply of money in some country or group of countrie
+- [money services business](FunctionalEntities/FinancialServicesEntities/MoneyServicesBusiness.md) — any person doing business, whether or not on a regular basis or as an organized business concern, in one of the followin
+- [moratorium](DebtAndEquities/CreditEvents/Moratorium.md) — entity-specific credit event involving a temporary suspension of payments until related issues are resolved
+- [mortgage company](FunctionalEntities/FinancialServicesEntities/MortgageCompany.md) — financial service provider that originates and/or funds mortgages for residential or commercial property
+- [motor vehicle lease](DebtAndEquities/Debt/MotorVehicleLease.md) — lease of a motor vehicle for a fixed period of time at an agreed amount of money
+- [multilateral trading facility](FunctionalEntities/Markets/MultilateralTradingFacility.md) — trading system that facilitates the exchange of financial instruments between multiple parties
+- [mutual savings bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/MutualSavingsBank.md) — financial institution that accepts deposits primarily from individuals and places a large portion of its funds into mort
+- [national bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/NationalBank.md) — commercial bank whose charter is approved by the Office of the Comptroller of the Currency (OCC) rather than by a state 
+- [negative amortization](DebtAndEquities/Debt/NegativeAmortization.md) — amortization in which the payments made do not cover the interest due
+- [negative pledge](DebtAndEquities/Guaranty/NegativePledge.md) — guaranty whereby the issuer will not pledge any assets if doing so would result in less security for lender(s) or invest
+- [negotiable security](FinancialInstruments/FinancialInstruments/NegotiableSecurity.md) — security that can be transferred to another party
+- [non European Economic Area branch](FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities/NonEuropeanEconomicAreaBranch.md) — a branch of a credit institution whose Head Office is in a third country
+- [non-bank subsidiary of a domestic entity](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/NonBankSubsidiaryOfADomesticEntity.md) — non-bank entity of which 25 percent or more of whose voting shares are owned or controlled by an entity that is based in
+- [non-depository institution](FunctionalEntities/FinancialServicesEntities/NonDepositoryInstitution.md) — financial institution that does not have a full banking license and typically is not supervised by a national or interna
+- [non-depository trust company](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/NonDepositoryTrustCompany.md) — trust company that accepts and executes trusts, but does not issue currency; non-depository trust companies can either b
+- [non-depository trust company - member institution](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/NonDepositoryTrustCompany-MemberInstitution.md) — non-depository trust company that is a member of the Federal Reserve system
+- [non-depository trust company - non-member institution](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/NonDepositoryTrustCompany-NonMemberInstitution.md) — non-depository trust company that is not a member of the Federal Reserve system
+- [non-negotiable security](FinancialInstruments/FinancialInstruments/NonNegotiableSecurity.md) — security that is not transferable to another party
+- [non-physical collateral](DebtAndEquities/Debt/NonPhysicalCollateral.md) — asset pledged as collateral that is a financial asset, rather than physical asset
+- [non-transaction deposit account](ProductsAndServices/ClientsAndAccounts/NonTransactionDepositAccount.md) — any deposit account that is not explicitly considered a transaction account
+- [obligation acceleration](DebtAndEquities/CreditEvents/ObligationAcceleration.md) — credit event triggered when one or more reference obligations become immediately due and payable as a result of a defaul
+- [obligation default](DebtAndEquities/CreditEvents/ObligationDefault.md) — credit event triggered as a result of an obligation-specific default
+- [obligation restructuring](DebtAndEquities/CreditEvents/ObligationRestructuring.md) — credit event that materially impacts an obligation, such as an interest rate reduction, principal reduction, deferral of
+- [obligation-specific credit event](DebtAndEquities/CreditEvents/ObligationSpecificCreditEvent.md) — credit event that relates to an individual credit agreement or debt instrument (reference obligation)
+- [off-market facility](FunctionalEntities/Markets/OffMarketFacility.md) — facility used for reporting over-the-counter (OTC) and other direct trades that are not executed by the exchange but are
+- [offer price](FinancialInstruments/InstrumentPricing/OfferPrice.md) — price suggested by a prospective seller at a particular time for a given security
+- [offeree](ProductsAndServices/FinancialProductsAndServices/Offeree.md) — party that receives an offer from something from someone (i
+- [offering](ProductsAndServices/FinancialProductsAndServices/Offering.md) — expression of interest in providing something to someone that is contingent upon acceptance, forbearance, or some other 
+- [offeror](ProductsAndServices/FinancialProductsAndServices/Offeror.md) — party that proposes to make something available to someone (i
+- [office of a foreign bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/OfficeOfAForeignBank.md) — facility that is any branch, agency, representative office, or commercial lending company subsidiary of a foreign bank i
+- [official closing price](FinancialInstruments/InstrumentPricing/OfficialClosingPrice.md) — price of the final trade of a security at the end of a trading day on a given exchange
+- [open date](ProductsAndServices/ClientsAndAccounts/OpenDate.md) — date on which something was created
+- [opening price](FinancialInstruments/InstrumentPricing/OpeningPrice.md) — price at which something first trades at the start of a trading day
+- [operating-level market](FunctionalEntities/Markets/OperatingLevelMarket.md) — exchange/market/trade reporting facility in a specific market/country
+- [operating-level market identifier](FunctionalEntities/Markets/OperatingLevelMarketIdentifier.md) — market identifier that identifies an exchange/market/trade reporting facility in a specific market/country
+- [option](FinancialInstruments/FinancialInstruments/Option.md) — derivative instrument that grants to the holder either the privilege to purchase or the privilege to sell the assets spe
+- [organization credit rating](DebtAndEquities/CreditRatings/OrganizationCreditRating.md) — credit rating that provides an opinion of creditworthiness of an organization
+- [organized trading facility](FunctionalEntities/Markets/OrganizedTradingFacility.md) — multi-lateral system which is not an RM or an MTF and in which multiple third-party buying and selling interests in bond
+- [packaged financial product](FinancialInstruments/FinancialInstruments/PackagedFinancialProduct.md) — financial product that acts as a container for at least one financial instrument, including other financial products, an
+- [partial amortization](DebtAndEquities/Debt/PartialAmortization.md) — amortization in which the very last payment the last payment due may be a large balloon payment of all remaining princip
+- [payment due date](ProductsAndServices/ClientsAndAccounts/PaymentDueDate.md) — date by which payment of the current outstanding balance, part thereof, or a minimum amount due must be made to the cred
+- [payment institution](FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities/PaymentInstitution.md) — a legal person that has been granted authorisation in accordance with Article 10 to provide and execute payment services
+- [payment service](FunctionalEntities/FinancialServicesEntities/PaymentService.md) — financial service that involves acceptance of electronic payments by a variety of payment methods including credit card,
+- [payroll deductions program number](FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/PayrollDeductionsProgramNumber.md) — concatenation of an entity's business number, the 'RP' abbreviation and a 4-digit subaccount number used for reporting p
+- [payroll service](FunctionalEntities/FinancialServicesEntities/PayrollService.md) — financial service, typically provided to small businesses that are not large enough to have an internal finance organiza
+- [physical collateral](DebtAndEquities/Debt/PhysicalCollateral.md) — asset pledged as collateral that has a material form, i
+- [physical settlement terms](FinancialInstruments/Settlement/PhysicalSettlementTerms.md) — commitment to deliver the actual underlying asset on the specified delivery date, rather than cash
+- [policyholder](DebtAndEquities/Guaranty/Policyholder.md) — counterparty to and typically owner of an insurance policy
+- [position](ProductsAndServices/FinancialProductsAndServices/Position.md) — investor's stake, i
+- [posting date](ProductsAndServices/ClientsAndAccounts/PostingDate.md) — date that determines in which posting period a document or journal entry is added to an account record
+- [price analytic](FinancialInstruments/InstrumentPricing/PriceAnalytic.md) — statistical measure involving security prices
+- [price determination method](FinancialInstruments/InstrumentPricing/PriceDeterminationMethod.md) — strategy for calculating or otherwise establishing a price for something
+- [price spread](FinancialInstruments/InstrumentPricing/PriceSpread.md) — difference between two prices
+- [pricing model](FinancialInstruments/InstrumentPricing/PricingModel.md) — expression used to determine a value for an instrument at a given point in time
+- [primary federal regulator](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/PrimaryFederalRegulator.md) — federal regulatory agency that is designated as the main agency responsible for oversight of a given institution for an 
+- core · [principal](DebtAndEquities/Debt/Principal.md) — with respect to a debt: the value of an obligation, such as a bond or loan, raised and that must be repaid at maturity; 
+- [principal payment](DebtAndEquities/Debt/PrincipalPayment.md) — event reflecting the actual payment of some amount of the principal of a debt
+- [principal payment schedule](DebtAndEquities/Debt/PrincipalPaymentSchedule.md) — regular, contract-specific schedule including the dates on which some percentage or all of the principal is due to be (r
+- [principal repayment terms](DebtAndEquities/Debt/PrincipalRepaymentTerms.md) — contract terms that specify requirements for repayment of the principal
+- [principal underwriter](FunctionalEntities/FinancialServicesEntities/PrincipalUnderwriter.md) — underwriter who, as principal, purchases from an investment company, or pursuant to some contract has the right to purch
+- [priority level](DebtAndEquities/Guaranty/PriorityLevel.md) — relative ranking that a guaranty has in the context of a contract, for example for a credit enhancement priority
+- [product lifecycle](ProductsAndServices/FinancialProductsAndServices/ProductLifecycle.md) — lifecycle specific to a product or product family
+- [product lifecycle event](ProductsAndServices/FinancialProductsAndServices/ProductLifecycleEvent.md) — kind of event that occurs during one or more stages of a product lifecycle
+- [product lifecycle event occurrence](ProductsAndServices/FinancialProductsAndServices/ProductLifecycleEventOccurrence.md) — actual occurrence of an event that happens during a specific stage of a specific product lifecycle
+- [product lifecycle occurrence](ProductsAndServices/FinancialProductsAndServices/ProductLifecycleOccurrence.md) — realization of the lifecycle of a specific product
+- [product lifecycle stage](ProductsAndServices/FinancialProductsAndServices/ProductLifecycleStage.md) — phase in a product lifecycle
+- [product lifecycle stage occurrence](ProductsAndServices/FinancialProductsAndServices/ProductLifecycleStageOccurrence.md) — realization of a specific stage in the lifecycle of a given product
+- [projected contract event schedule](DebtAndEquities/Debt/ProjectedContractEventSchedule.md) — schedule of events, including but not limited to anticipated payment events, rate reset events and others that are expec
+- [promissory note](FinancialInstruments/FinancialInstruments/PromissoryNote.md) — debt instrument that is a written promise by one party to another that commits that party to pay a specified sum on dema
+- [quote-driven market](FunctionalEntities/Markets/QuoteDrivenMarket.md) — exchange in which prices are determined from bid and ask quotations made by market makers, dealers, or specialists
+- [rate of return](FinancialInstruments/InstrumentPricing/RateOfReturn.md) — net gain or loss on an investment over a specified time period, expressed as a percentage of the investment's initial co
+- [rate reset time of day](DebtAndEquities/Debt/RateResetTimeOfDay.md) — time of day that an interest rate is reset, as indicated by some interest rate authority or market data provider
+- [recognized market operator](FunctionalEntities/Markets/RecognizedMarketOperator.md) — exchange that is operated or maintained by an operator registered under certain securities regulations that brings toget
+- [redemption provision](FinancialInstruments/FinancialInstruments/RedemptionProvision.md) — contract provision enabling the issuer (writer) to regain possession through repayment of some stipulated price
+- [regional administrative office of a foreign bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/RegionalAdministrativeOfficeOfAForeignBank.md) — representative office that 
+(1) Is established by a foreign bank that operates two or more branches, agencies, commercia
+- [registered agent](ProductsAndServices/FinancialProductsAndServices/RegisteredAgent.md) — legal agent designated by some party to represent them and act on their behalf under a formal agency agreement
+- [registered charity program number](FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/RegisteredCharityProgramNumber.md) — concatenation of an entity's business number, the 'RR' abbreviation and a 4-digit subaccount number used for registered 
+- [registered investment advisor](FunctionalEntities/FinancialServicesEntities/RegisteredInvestmentAdvisor.md) — registered agent and financial service provider that advises high net worth individuals on investments and manages their
+- [registered multilateral trading facility](FunctionalEntities/Markets/RegisteredMultilateralTradingFacility.md) — multilateral system operated by an investment firm or market operator, which brings together multiple third-party buying
+- [registration authority code](FunctionalEntities/BusinessRegistries/RegistrationAuthorityCode.md) — identifier that uniquely identifies a business registry, and is associated with a registration authority and jurisdictio
+- [registration status](FunctionalEntities/BusinessRegistries/RegistrationStatus.md) — lifecycle stage indicating the status of a given registration of something, such as a business or legal entity, as speci
+- [regulated commodity](ProductsAndServices/FinancialProductsAndServices/RegulatedCommodity.md) — commodity under the jurisdiction of the regulatory agency, such as the Commodities Futures Trading Commission (CFTF) in 
+- [regulated exchange](FunctionalEntities/Markets/RegulatedExchange.md) — regulated market that is operated by and/or managed by a market operator that brings together or facilitates the bringin
+- [regulation identification scheme](FunctionalEntities/RegulatoryAgencies/RegulationIdentificationScheme.md) — a scheme for organizing information and allocating identifiers to regulations
+- [regulation identifier](FunctionalEntities/RegulatoryAgencies/RegulationIdentifier.md) — an identifier associated with a regulation
+- [regulatory capacity](FunctionalEntities/RegulatoryAgencies/RegulatoryCapacity.md) — the capacity of some natural person to regulate some industry, organization, or product by virtue of some certification 
+- [relationship manager](ProductsAndServices/ClientsAndAccounts/RelationshipManager.md) — responsible party who manages a client's account and oversees their relationship with the service provider
+- [representative office of a foreign bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/RepresentativeOfficeOfAForeignBank.md) — office of a foreign bank which is located in any state and is not a federal branch, federal agency, state branch, state 
+- [repudiation](DebtAndEquities/CreditEvents/Repudiation.md) — credit event involving the refusal to honor the terms of a contract
+- [retail credit facility](DebtAndEquities/Debt/RetailCreditFacility.md) — credit facility that is a loan or line of credit used by retailers and real estate companies
+- [revolving line of credit](DebtAndEquities/Debt/RevolvingLineOfCredit.md) — credit facility that enables the borrower to withdraw funds, repay, and withdraw again
+- [risk pooling institution](FunctionalEntities/FinancialServicesEntities/RiskPoolingInstitution.md) — financial institution that provides some financial service while spreading the financial risk inherent in that service t
+- [routing transit number](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/RoutingTransitNumber.md) — unique nine digit identifier, used primarily in the United States, to identify a banking or other financial institution 
+- [sales finance company](FunctionalEntities/FinancialServicesEntities/SalesFinanceCompany.md) — finance company that purchases retail and wholesale paper from automobile and other consumer and commercial goods dealer
+- [savings association](FunctionalEntities/FinancialServicesEntities/SavingsAssociation.md) — depository institution that is (a) any federal savings bank or association chartered under section 1464 of the Federal D
+- [savings bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/SavingsBank.md) — banking institution organized to accept savings deposits and pay interest on those savings deposits
+- [savings loan association](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/SavingsLoanAssociation.md) — financial institution that accepts deposits primarily from individuals and channels its funds primarily into residential
+- [savings loan holding company](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/SavingsLoanHoldingCompany.md) — company that directly or indirectly controls a savings association or related holding company, and explicitly excludes a
+- [securities transaction](FinancialInstruments/FinancialInstruments/SecuritiesTransaction.md) — transaction between two or more parties involving the exchange of commonly defined financial products
+- [security](FinancialInstruments/FinancialInstruments/Security.md) — financial instrument that can be bought or sold
+- [security agreement](DebtAndEquities/Debt/SecurityAgreement.md) — collateral agreement that grants a financial interest in some collateral to a party that is not an owner of that collate
+- [security price](FinancialInstruments/InstrumentPricing/SecurityPrice.md) — monetary price for a financial instrument at some point in time
+- [self-regulating organization](FunctionalEntities/FinancialServicesEntities/SelfRegulatingOrganization.md) — non-governmental organization that has the power to create and exercise some degree of regulatory authority over an indu
+- [settlement](FinancialInstruments/Settlement/Settlement.md) — act of finalizing a transaction, including but not limited to finalizing accounting, exchanging consideration, and/or le
+- [settlement convention](FinancialInstruments/Settlement/SettlementConvention.md) — convention employed to determine the closing date (from the stated settlement date) in the process of settling a transac
+- [settlement event](FinancialInstruments/Settlement/SettlementEvent.md) — specific event involving the finalization a transaction or portion thereof, including but not limited to finalizing acco
+- [settlement terms](ProductsAndServices/FinancialProductsAndServices/SettlementTerms.md) — contract terms that define the commitment to and mechanism for settling one or more sides of a transaction
+- [short term credit rating](DebtAndEquities/CreditRatings/ShortTermCreditRating.md) — credit rating that provides an opinion of the probability of an individual or organization going into default within a y
+- [soft credit event](DebtAndEquities/CreditEvents/SoftCreditEvent.md) — default event that is repairable
+- [spot contract](FinancialInstruments/FinancialInstruments/SpotContract.md) — financial instrument that settles for immediate delivery on a specified date
+- [standard industrial classification code](FunctionalEntities/BusinessRegistries/StandardIndustrialClassificationCode.md) — the SIC code representing an industry
+- [standard industrial classification scheme](FunctionalEntities/BusinessRegistries/StandardIndustrialClassificationScheme.md) — the scheme defining the Standard Industrial Classification (SIC) Code List
+- [standardized terms](FinancialInstruments/FinancialInstruments/StandardizedTerms.md) — contract terms that, grouped together, that are generally and consistently reused across many contracts, published by so
+- [state agency of foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/StateAgencyOfForeignBankingOrganization.md) — agency of a foreign bank established and operating under the laws of any state, where state means any State of the Unite
+- [state branch of foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/StateBranchOfForeignBankingOrganization.md) — branch of a foreign bank located in any State of the United States at which deposits are received, established and opera
+- [state credit union](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/StateCreditUnion.md) — credit union that has a state affiliation
+- [state government entity or agency](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/StateGovernmentEntity.md) — formal organization that is an independent agency, instrumentality or other permanent or semi-permanent organization in 
+- [state member bank](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/StateMemberBank.md) — state-chartered bank that is a member of the Federal Reserve System (FRS)
+- [state savings bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/StateSavingsBank.md) — savings bank that has a state affiliation
+- [state-chartered bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/StateCharteredBank.md) — commercial bank whose charter is approved by a state banking regulator
+- [sub-facility](DebtAndEquities/Debt/SubFacility.md) — portion of a credit facility extended to the borrower for some purpose, possibly per some schedule specified in the faci
+- [subsidiary of a domestic entity](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/SubsidiaryOfADomesticEntity.md) — entity of which 25 percent or more of whose voting shares are owned or controlled by an entity that is based in the Unit
+- [swap execution facility](FunctionalEntities/Markets/SwapExecutionFacility.md) — exchange that enables participants to execute and trade swaps
+- [systematic internalizer](FunctionalEntities/Markets/SystematicInternaliser.md) — investment firm that, on an organised, frequent, systematic and substantial basis, deals on its own account by executing
+- [tax authority](FunctionalEntities/RegulatoryAgencies/TaxAuthority.md) — regulatory agency that has jurisdiction over the assessment, determination, collection, imposition and other aspects of 
+- [taxpayer identification number](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/TaxpayerIdentificationNumber.md) — identification number used by the Internal Revenue Service (IRS) in the administration of tax laws in the United States
+- [taxpayer identification numbering scheme](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/TaxpayerIdentificationNumberingScheme.md) — tax identification scheme used in the United States
+- [third-party agent](ProductsAndServices/FinancialProductsAndServices/ThirdPartyAgent.md) — any service provider that is licensed to perform a legally binding function and has been legally empowered to act on beh
+- [thrift institution](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/ThriftInstitution.md) — savings association that primarily accepts savings account deposits and invests most of the proceeds in mortgages
+- [time certificate of deposit account](ProductsAndServices/ClientsAndAccounts/TimeCertificateOfDepositAccount.md) — time deposit account that allows deposits evidenced by a negotiable or nonnegotiable instrument, or a deposit in book en
+- [time deposit account](ProductsAndServices/ClientsAndAccounts/TimeDepositAccount.md) — deposit account that the depositor does not have a right, and is not permitted, to make withdrawals from within six days
+- [time deposit open account](ProductsAndServices/ClientsAndAccounts/TimeDepositOpenAccount.md) — time deposit account that allows deposits (other than time certificates of deposit) for which there is in force a writte
+- [trade](ProductsAndServices/FinancialProductsAndServices/Trade.md) — situation that realizes an agreement between parties participating in a voluntary action of buying and selling goods and
+- [trade identifier](ProductsAndServices/FinancialProductsAndServices/TradeIdentifier.md) — sequence of characters identifying a trade within some context
+- [trade lifecycle](ProductsAndServices/FinancialProductsAndServices/TradeLifecycle.md) — lifecycle that defines the evolution of a trade, from initiation through settlement
+- [trade lifecycle event](ProductsAndServices/FinancialProductsAndServices/TradeLifecycleEvent.md) — kind of event that occurs during one or more stages of the lifecycle of a trade
+- [trade lifecycle event occurrence](ProductsAndServices/FinancialProductsAndServices/TradeLifecycleEventOccurrence.md) — realization of an event that happens during a specific stage of a specific trade lifecycle
+- [trade lifecycle occurrence](ProductsAndServices/FinancialProductsAndServices/TradeLifecycleOccurrence.md) — realization of the lifecycle for a specific trade
+- [trade lifecycle stage](ProductsAndServices/FinancialProductsAndServices/TradeLifecycleStage.md) — phase in the lifecycle of a trade
+- [trade lifecycle stage occurrence](ProductsAndServices/FinancialProductsAndServices/TradeLifecycleStageOccurrence.md) — realization of a phase in the lifecycle of a specific trade
+- [trade reporting facility](FunctionalEntities/Markets/TradeReportingFacility.md) — facility that provides a mechanism for the reporting of transactions effected otherwise than on an exchange
+- [trader](ProductsAndServices/FinancialProductsAndServices/Trader.md) — party that engages in the transfer of financial assets in any financial market on behalf of a client or the financial se
+- [trading day](FinancialInstruments/InstrumentPricing/TradingDay.md) — time span that a particular trading venue is open
+- [trading session](FinancialInstruments/InstrumentPricing/TradingSession.md) — window of time within a trading day in which orders may be placed and filled
+- [trading strategy](ProductsAndServices/FinancialProductsAndServices/TradingStrategy.md) — approach used for buying and selling in the securities markets
+- [transaction category](ProductsAndServices/ClientsAndAccounts/TransactionCategory.md) — high-level classifier for an individual transaction
+- [transaction date](ProductsAndServices/ClientsAndAccounts/TransactionDate.md) — date on which a specific transaction was initiated
+- [transaction deposit account](ProductsAndServices/ClientsAndAccounts/TransactionDepositAccount.md) — deposit account from which the depositor / account holder is permitted to make transfers or withdrawals by negotiable / 
+- [transaction identifier](ProductsAndServices/ClientsAndAccounts/TransactionIdentifier.md) — identifier for an individual transaction associated with an account
+- [transaction record](ProductsAndServices/ClientsAndAccounts/TransactionRecord.md) — record of transactions associated with an account
+- [transaction record identifier](ProductsAndServices/ClientsAndAccounts/TransactionRecordIdentifier.md) — unique identifier for record of transactions
+- [transaction subcategory](ProductsAndServices/ClientsAndAccounts/TransactionSubcategory.md) — second-level classifier for a transaction, e
+- [trust company](FunctionalEntities/FinancialServicesEntities/TrustCompany.md) — financial institution that acts as a fiduciary, trustee or agent of trusts and agencies
+- [uncommitted credit facility](DebtAndEquities/Debt/UncommittedCreditFacility.md) — credit facility that has yet to be confirmed as a source of financing for the borrower
+- [uncommitted sub-facility](DebtAndEquities/Debt/UncommittedSubFacility.md) — sub-facility that has yet to be confirmed as a source of financing for the borrower
+- [underlier](FinancialInstruments/FinancialInstruments/Underlier.md) — something that can be assigned a value in the marketplace that forms the basis for a derivative or pool-backed instrumen
+- [underwriter](FunctionalEntities/FinancialServicesEntities/Underwriter.md) — financial service provider that evaluates and assumes another party's risk for a fee, such as a commission, premium, spr
+- [underwriting arrangement](FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement.md) — written contract between parties that commits the underwriter to assuming risk
+- [uninsured federal agency of foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/UninsuredFederalAgencyOfForeignBankingOrganization.md) — agency of a foreign bank established and operating under section 3102 of CFR Title 12, Chapter 32 and section 4 of the I
+- [uninsured federal branch of foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/UninsuredFederalBranchOfForeignBankingOrganization.md) — any office or any place of business of a foreign bank located in any State of the United States at which deposits are re
+- [uninsured state agency of foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/UninsuredStateAgencyOfForeignBankingOrganization.md) — agency of a foreign bank established and operating under the laws of any state that is not insured or regulated by the F
+- [uninsured state branch of foreign banking organization](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/UninsuredStateBranchOfForeignBankingOrganization.md) — any office or any place of business of a foreign bank located in any State of the United States at which deposits are re
+- [unique transaction identifier](ProductsAndServices/FinancialProductsAndServices/UniqueTransactionIdentifier.md) — sequence of characters identifying a financial transaction uniquely whenever useful and agreed by the parties or communi
+- [unit investment trust](FunctionalEntities/FinancialServicesEntities/UnitInvestmentTrust.md) — investment company which (a) is organized under a trust indenture, contract of custodianship or agency, or similar instr
+- [variable interest rate](DebtAndEquities/Debt/VariableInterestRate.md) — an interest rate that is allowed to vary over the maturity of a loan or other debt instrument
+- [volume-weighted average price](FinancialInstruments/InstrumentPricing/VolumeWeightedAveragePrice.md) — average price at which a given security has traded throughout a trading day, determined by multiplying each trade by its
+- [volume-weighted open price](FinancialInstruments/InstrumentPricing/VolumeWeightedOpenPrice.md) — price determined by multiplying each trade by its volume, adding the results, then dividing by the volume over a certain
+- [wealth management service](FunctionalEntities/FinancialServicesEntities/WealthManagementService.md) — financial service that combines financial and investment advice, accounting and tax services, retirement planning and le
+- [weighted basket](ProductsAndServices/FinancialProductsAndServices/WeightedBasket.md) — basket whose constituents have some relative importance with respect to one another
+- [weighted basket constituent](ProductsAndServices/FinancialProductsAndServices/WeightedBasketConstituent.md) — component of a basket whose relative importance with respect to other basket constituents is known
+- [write-down](DebtAndEquities/CreditEvents/WriteDown.md) — obligation-specific credit event whereby the book value of the obligation, such as the outstanding principal amount, is 
+- [yield](FinancialInstruments/InstrumentPricing/Yield.md) — return on the investor's capital investment
+- [yield spread](FinancialInstruments/InstrumentPricing/YieldSpread.md) — the spread between the yields of two items

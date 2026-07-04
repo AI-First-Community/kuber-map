@@ -4,6 +4,7 @@ title: "real property"
 description: "physical asset defined as land together with any structures that are permanently attached to that land, such as houses, trees, fences and improvements"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Places/RealProperty/RealProperty
 tags: [FND, Release]
+core: true
 relations:
   - {type: is-a, target: "/FND/Accounting/AccountingEquity/PhysicalAsset.md", provenance: fibo}
   - {type: is-a, target: "/FND/Places/RealProperty/RealEstate.md", provenance: fibo}

@@ -4,6 +4,7 @@ title: "combined loan-to-value ratio"
 description: "ratio of the total amount of debt that is secured by the asset(s) and the appraised value of the asset(s) securing the financing"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/CombinedLoanToValueRatio
 tags: [LOAN, Release]
+core: true
 relations:
   - {type: is-a, target: "/FND/Accounting/CurrencyAmount/PercentageMonetaryAmount.md", provenance: fibo}
   - {type: applies-to, target: "/FND/OwnershipAndControl/Ownership/Asset.md", provenance: fibo}

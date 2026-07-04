@@ -3,6 +3,7 @@ type: FIBO Class
 title: "loan application status"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationStatus
 tags: [LOAN, Provisional]
+core: true
 relations:
   - {type: is-a, target: "/FND/Arrangements/Lifecycles/LifecycleStatus.md", provenance: fibo}
 ---

@@ -4,6 +4,7 @@ title: "use of proceeds provision"
 description: "contract provision specifying how funds obtained through financing, such as through a credit agreement, offering, warrant, or other instrument are intended to be used"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/UseOfProceedsProvision
 tags: [FND, Release]
+core: true
 relations:
   - {type: is-a, target: "/FND/Agreements/Contracts/ContractualCommitment.md", provenance: fibo}
 ---

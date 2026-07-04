@@ -4,6 +4,7 @@ title: "collateral valuation"
 description: "assessment activity resulting in the valuation of real property as collateral"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/CollateralValuation
 tags: [LOAN, Provisional]
+core: true
 relations:
   - {type: is-a, target: "/FND/Arrangements/Assessments/AssessmentActivity.md", provenance: fibo}
   - {type: evaluates, target: "/FBC/DebtAndEquities/Debt/Collateral.md", provenance: fibo}

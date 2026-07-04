@@ -4,6 +4,7 @@ title: "loan-to-value ratio"
 description: "ratio, expressed as a percentage, between the principal amount of the loan and the appraised value of the asset securing the financing"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LoanToValueRatio
 tags: [LOAN, Release]
+core: true
 relations:
   - {type: is-a, target: "/FND/Accounting/CurrencyAmount/PercentageMonetaryAmount.md", provenance: fibo}
   - {type: applies-to, target: "/FND/OwnershipAndControl/Ownership/Asset.md", provenance: fibo}

@@ -4,6 +4,7 @@ title: "loan regulatory requirement"
 description: "A regulatory requirement defined in regulations by a comsumer credit act or other legislation."
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/LoanRegulatoryRequirement
 tags: [LOAN, Provisional]
+core: true
 relations:
   - {type: is-a, target: "/FND/Law/LegalCapacity/LegalObligation.md", provenance: fibo}
   - {type: administered-by, target: "/CMNS/RegulatoryAgencies/RegulatoryAgency.md", provenance: fibo}

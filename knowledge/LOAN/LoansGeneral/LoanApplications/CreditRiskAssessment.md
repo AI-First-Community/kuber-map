@@ -4,6 +4,7 @@ title: "credit risk assessment"
 description: "risk assessment that focuses on determining the likelihood of a potential borrower repaying a loan"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/CreditRiskAssessment
 tags: [LOAN, Provisional]
+core: true
 relations:
   - {type: is-a, target: "/FND/Arrangements/Assessments/AssessmentActivity.md", provenance: fibo}
   - {type: applies-to, target: "/LOAN/LoansGeneral/Loans/Loan.md", provenance: fibo}

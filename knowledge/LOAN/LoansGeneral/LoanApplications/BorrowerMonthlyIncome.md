@@ -4,6 +4,7 @@ title: "borrower monthly income"
 description: "total monthly qualifying income of a potential borrower"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/BorrowerMonthlyIncome
 tags: [LOAN, Provisional]
+core: true
 relations:
   - {type: is-a, target: "/FND/Accounting/AccountingEquity/Income.md", provenance: fibo}
   - {type: is-a, target: "/FND/Accounting/CurrencyAmount/MonetaryAmount.md", provenance: fibo}

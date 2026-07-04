@@ -4,6 +4,7 @@ title: "pre-approval contract"
 description: "written commitment to lend when specified conditions are met, such as finding suitable property, and unchanged creditworthiness"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/PreApprovalContract
 tags: [LOAN, Provisional]
+core: true
 relations:
   - {type: is-a, target: "/FND/Agreements/Contracts/WrittenContract.md", provenance: fibo}
   - {type: has-approved-amount, target: "/FND/Accounting/CurrencyAmount/MonetaryAmount.md", provenance: fibo}

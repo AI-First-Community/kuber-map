@@ -4,6 +4,7 @@ title: "HMDA covered loan contract"
 description: "a closed-end mortgage loan or open-end line of credit that is not an excluded transaction for HMDA reporting under US section 1003.3(c) of the Revised Home Mortgage Disclosure Act of 2015"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract
 tags: [LOAN, Provisional]
+core: true
 relations:
   - {type: is-a, target: "/LOAN/RealEstateLoans/Mortgages/LoanSecuredByRealEstate.md", provenance: fibo}
   - {type: is-classified-by, target: "/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HowSubmitted.md", provenance: fibo}

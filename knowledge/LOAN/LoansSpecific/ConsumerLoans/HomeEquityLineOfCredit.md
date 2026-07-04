@@ -4,6 +4,7 @@ title: "home equity line of credit"
 description: "line of credit granted to a homeowner secured by the equity value in a borrower's home or other property"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/ConsumerLoans/HomeEquityLineOfCredit
 tags: [LOAN, Release]
+core: true
 relations:
   - {type: is-a, target: "/FBC/DebtAndEquities/Debt/RevolvingLineOfCredit.md", provenance: fibo}
   - {type: is-a, target: "/LOAN/LoansSpecific/ConsumerLoans/SecuredConsumerLoan.md", provenance: fibo}

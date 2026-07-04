@@ -19,8 +19,8 @@
 - [amount of money](Accounting/CurrencyAmount/AmountOfMoney.md) — amount of readily available cash in banknotes and coins
 - [anchor date](DatesAndTimes/FinancialDates/AnchorDate.md) — fixed reference point within a series or timeline
 - [annualized standard deviation](Utilities/Analytics/AnnualizedStandardDeviation.md) — standard deviation for some measure over a specific reference period
-- [appraisal](Arrangements/Assessments/Appraisal.md) — written estimate of the market value of something as of some point in time, typically provided by a qualified appraiser
-- [appraised value](Arrangements/Assessments/AppraisedValue.md) — estimated value of some asset as of a given point in time
+- core · [appraisal](Arrangements/Assessments/Appraisal.md) — written estimate of the market value of something as of some point in time, typically provided by a qualified appraiser
+- core · [appraised value](Arrangements/Assessments/AppraisedValue.md) — estimated value of some asset as of a given point in time
 - [appraiser](Arrangements/Assessments/Appraiser.md) — party that evaluates or estimates the nature, quality, ability, or value of someone or something
 - [approach](GoalsAndObjectives/Objectives/Approach.md) — way of addressing an aim or problem characterized by high-level planning and systematic execution, without presupposing 
 - [arithmetic mean](Utilities/Analytics/ArithmeticMean.md) — sum of a collection of numbers divided by the number of numbers in the collection
@@ -125,7 +125,7 @@
 - [delivery point code set](Places/NorthAmerica/USPostalServiceAddresses/DeliveryPointCodeSet.md) — system of numeric codes that substitute for specified delivery point details according to the U
 - [difference](Utilities/Analytics/Difference.md) — quantity by which amounts differ; the remainder left after subtraction of one value from another
 - [discharging event](TransactionsExt/REATransactions/DischargingEvent.md) — 
-- [disclosure provision](Agreements/Contracts/DisclosureProvision.md) — contractual provision that outlines the requirements and responsibilities of one or both parties to reveal certain infor
+- core · [disclosure provision](Agreements/Contracts/DisclosureProvision.md) — contractual provision that outlines the requirements and responsibilities of one or both parties to reveal certain infor
 - [dispersion](Utilities/Analytics/Dispersion.md) — degree of scatter or variability shown by observations
 - [distribution strategy](GoalsAndObjectives/Objectives/DistributionStrategy.md) — strategy for making a product or service available, or for distributing funds, such as in the form of a dividend or coup
 - [driver's license](AgentsAndPeople/People/DriversLicense.md) — an official document which states that a person may operate a motorized vehicle, such as a motorcycle, car, truck or a b
@@ -171,7 +171,7 @@
 - [highway contract route address](Places/NorthAmerica/USPostalServiceAddresses/RuralRoute.md) — mail route outside the city or township limits in a rural area associated with an address
 - [identity document](AgentsAndPeople/People/IdentityDocument.md) — any legal document which may be used to verify aspects of a person's identity
 - [incapacitated adult](AgentsAndPeople/People/IncapacitatedAdult.md) — an adult who is legally identified as not having legal capacity, typically as a result of some inherent physical or ment
-- [income](Accounting/AccountingEquity/Income.md) — revenue received during a period of time
+- core · [income](Accounting/AccountingEquity/Income.md) — revenue received during a period of time
 - [index](Arrangements/IdentifiersAndIndices/Index.md) — indirect shortcut derived from and pointing into, a greater volume of values, data, information or knowledge
 - [indexing scheme](Arrangements/IdentifiersAndIndices/IndexingScheme.md) — system for indexing values, data, information, or knowledge
 - [industry sector classification scheme](Arrangements/ClassificationSchemes/IndustrySectorClassificationScheme.md) — system for allocating classifiers to organizations by industry sector
@@ -186,7 +186,7 @@
 - [legal age](AgentsAndPeople/People/LegalAge.md) — age at which someone acquires the capacity to do something that they were prohibited from doing before under the law in 
 - [legal capacity](Law/LegalCapacity/LegalCapacity.md) — the capability to carry out certain actions or to have certain rights together with the resources to do so
 - [legal construct](Law/LegalCapacity/LegalConstruct.md) — something which is conferred by way of law or contract, such as a right
-- [legal obligation](Law/LegalCapacity/LegalObligation.md) — an obligation or duty that is enforceable by a court
+- core · [legal obligation](Law/LegalCapacity/LegalObligation.md) — an obligation or duty that is enforceable by a court
 - [legal right](Law/LegalCapacity/LegalRight.md) — personal right, privilege, or benefit that a government, contract, or law provides or protects, making an individual or 
 - [legal working age](AgentsAndPeople/People/LegalWorkingAge.md) — age at which someone acquires the capacity to work legally in some jurisdiction
 - [legal working age person](AgentsAndPeople/People/LegalWorkingAgePerson.md) — person whose age is greater than the minimum legal working age specified in a jurisdiction in which they work
@@ -220,7 +220,7 @@
 - [milestone schedule](Agreements/Contracts/MilestoneSchedule.md) — schedule of milestone events, observations, or other occurrences and the associated dates and/or times when they will be
 - [minor](AgentsAndPeople/People/Minor.md) — a person under a certain age, usually the age of majority in a given jurisdiction, which legally demarcates childhood fr
 - [module](Utilities/AnnotationVocabulary/Module.md) — classifier used to indicate a category used to modularize something based on principles of the model driven architecture
-- [monetary amount](Accounting/CurrencyAmount/MonetaryAmount.md) — measure that is an amount of money specified in monetary units
+- core · [monetary amount](Accounting/CurrencyAmount/MonetaryAmount.md) — measure that is an amount of money specified in monetary units
 - [monetary price](Accounting/CurrencyAmount/MonetaryPrice.md) — price that that is expressed as a monetary amount
 - [multilateral agreement](Agreements/Agreements/MultilateralAgreement.md) — agreements that involve or include multiple parties
 - [multilateral contract](Agreements/Contracts/MultilateralContract.md) — contract where multiple parties (i
@@ -260,7 +260,7 @@
 - [passport number identification scheme](AgentsAndPeople/People/PassportNumberIdentificationScheme.md) — system for allocating identifiers to passports
 - [payee](ProductsAndServices/PaymentsAndSchedules/Payee.md) — a party to whom a debt should be paid, or to whose order a bill of exchange, note, or check is made payable, or who rece
 - [payer](ProductsAndServices/PaymentsAndSchedules/Payer.md) — a party who pays a bill or fees, or who makes payments to a payee in partial or complete fulfillment of an obligation
-- [payment](ProductsAndServices/PaymentsAndSchedules/Payment.md) — delivery of money in fulfillment of an obligation, such as to satisfy a claim or debt
+- core · [payment](ProductsAndServices/PaymentsAndSchedules/Payment.md) — delivery of money in fulfillment of an obligation, such as to satisfy a claim or debt
 - [payment event](ProductsAndServices/PaymentsAndSchedules/PaymentEvent.md) — an event that involves delivery of money in fulfillment of an obligation
 - [payment netting provision](Agreements/Contracts/PaymentNettingProvision.md) — netting provision that specifies the way in which all payments in a single currency owed between parties will be aggrega
 - [payment obligation](ProductsAndServices/PaymentsAndSchedules/PaymentObligation.md) — legally enforceable duty to pay a sum of money according to the terms stated in a contract
@@ -316,7 +316,7 @@
 - [rating scale publisher](Arrangements/Ratings/RatingScalePublisher.md) — party responsible for managing one or more rating schemes and potentially publishing ratings based on those schemes
 - [rating score](Arrangements/Ratings/RatingScore.md) — grade, classification, or ranking of for something in accordance with some rating scale
 - [real estate](Places/RealProperty/RealEstate.md) — real property, interests in mortgages on real property (including interests in mortgages on leaseholds of land or improv
-- [real property](Places/RealProperty/RealProperty.md) — physical asset defined as land together with any structures that are permanently attached to that land, such as houses, 
+- core · [real property](Places/RealProperty/RealProperty.md) — physical asset defined as land together with any structures that are permanently attached to that land, such as houses, 
 - [real property appraisal](Places/RealProperty/RealPropertyAppraisal.md) — value assessment that estimates the amount of money some real property is worth
 - [real property identifier](Places/RealProperty/RealPropertyIdentifier.md) — unique identifier given to identify a specific real property in some jurisidiction
 - [reassignable identifier](Arrangements/IdentifiersAndIndices/ReassignableIdentifier.md) — identifier that uniquely identifies something for a given time period, and that may be reused to identify something else
@@ -405,7 +405,7 @@
 - [unit of account identifier](Accounting/CurrencyAmount/UnitOfAccountIdentifier.md) — sequence of characters that can be used to uniquely identify a nominal monetary unit
 - [unit price](Accounting/CurrencyAmount/UnitPrice.md) — monetary price expressed in relation to a well-known measurable unit by which the goods or services are allocated
 - [urbanization](Places/NorthAmerica/USPostalServiceAddresses/Urbanization.md) — an area, sector, or development within a larger geographic area
-- [use of proceeds provision](Agreements/Contracts/UseOfProceedsProvision.md) — contract provision specifying how funds obtained through financing, such as through a credit agreement, offering, warran
+- core · [use of proceeds provision](Agreements/Contracts/UseOfProceedsProvision.md) — contract provision specifying how funds obtained through financing, such as through a credit agreement, offering, warran
 - [valuation method](Arrangements/Assessments/ValuationMethod.md) — method used to determine the present or expected worth of an asset
 - [value](Arrangements/Assessments/Value.md) — perceived worth of something, such as a product, service, or asset to a company, customer, or stakeholder
 - [value assessment](Arrangements/Assessments/ValueAssessment.md) — assessment event to estimate the value of something

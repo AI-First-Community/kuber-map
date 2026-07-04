@@ -3,6 +3,7 @@ type: FIBO Class
 title: "borrower disclosure requirement"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement
 tags: [LOAN, Provisional]
+core: true
 relations:
   - {type: is-a, target: "/LOAN/LoansGeneral/LoansRegulatory/DisclosureRequirement.md", provenance: fibo}
   - {type: confers, target: "/LOAN/LoansGeneral/LoansRegulatory/ProductDisclosureRight.md", provenance: fibo}

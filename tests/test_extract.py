@@ -36,3 +36,25 @@ def test_no_self_loops_and_provenance_is_fibo():
         for e in r["relations"]:
             assert e["target"] != r["iri"], "self-loop leaked"
             assert e["provenance"] == "fibo"
+
+
+def test_multilingual_label_prefers_en_us():
+    """A class with en-US and en-GB labels must resolve to the en-US spelling, so the
+    generated bundle is stable regardless of rdflib's iteration order."""
+    recs = _records()
+    assert recs["RegionalThing"]["title"] == "colorful thing"
+
+
+def test_extraction_is_deterministic():
+    """Running extraction twice must yield identical records (relation order and
+    label/definition choice are all deterministic)."""
+    g1, cs1, _ = extract.load_domains(FIXTURES, ["FND"])
+    g2, cs2, _ = extract.load_domains(FIXTURES, ["FND"])
+    assert extract.extract(g1, cs1) == extract.extract(g2, cs2)
+
+
+def test_relations_sorted_is_a_first():
+    """is-a edges precede typed edges; within a group, order is stable by (type, target)."""
+    recs = _records()
+    types = [e["type"] for e in recs["SpecialThing"]["relations"]]
+    assert types == sorted(types, key=lambda t: (t != "is-a", t))
