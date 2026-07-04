@@ -87,6 +87,17 @@
     .enter .arrow{ transition:transform .2s; font-weight:800; }
     .enter:hover .arrow{ transform:translateX(4px); }
 
+    /* value-proof stats (static; the eval numbers, baked in — no runtime dependency) */
+    .proof{ display:flex; gap:26px; flex-wrap:wrap; margin:26px 0 0 var(--bi); animation-delay:.31s; }
+    .stat{ display:flex; flex-direction:column; }
+    .stat b{ font-size:clamp(22px,3vw,30px); font-weight:800; color:var(--gold); line-height:1;
+      filter:drop-shadow(0 2px 14px rgba(243,201,105,.35)); }
+    .stat b span{ font-size:.55em; font-weight:700; opacity:.85; margin-left:1px; }
+    .stat > span{ font-size:11.5px; color:var(--muted); margin-top:7px; }
+    .proofnote{ font-size:11.5px; line-height:1.6; color:rgba(159,188,171,.75); margin:12px 0 0 var(--bi); max-width:450px; animation-delay:.33s; }
+    .proofnote a{ color:var(--green); text-decoration:none; }
+    .proofnote a:hover{ text-decoration:underline; }
+
     .social{ position:fixed; top:18px; right:64px; z-index:5; display:flex; gap:9px; margin:0; animation:rise 1.2s both .55s; }
     .social a{ width:34px; height:34px; display:inline-flex; align-items:center; justify-content:center;
       border:1px solid rgba(159,188,171,.24); border-radius:10px; color:var(--ink);
@@ -113,7 +124,8 @@
       .content{ align-items:center; text-align:center; width:100%; }
       .credit{ align-self:center; }
       .brandrow h1{ white-space:normal; }
-      .lead,.sub2{ margin-left:auto; margin-right:auto; } .enter{ align-self:center; margin-left:0; }
+      .lead,.sub2,.proofnote{ margin-left:auto; margin-right:auto; } .enter{ align-self:center; margin-left:0; }
+      .proof{ justify-content:center; margin-left:auto; margin-right:auto; }
       .social{ top:14px; right:14px; gap:7px; }
       footer{ left:0; right:0; text-align:center; }
     }
@@ -138,6 +150,12 @@
       </div>
       <p class="lead">Your AI is fluent in language, but not yet in the language of <b>your business</b>. Give it the vocabulary of finance, and your agents reason on what things <b>actually mean</b>, not on a plausible guess.</p>
       <p class="sub2">A curated, living map of the <b>Financial Industry Business Ontology (FIBO)</b>, every concept a node, every relationship an edge. The knowledge base and taxonomy for building AI and agentic AI in finance: grounded, provenance-tagged, and audit-ready. 1,440 concepts across loans, business &amp; commerce, foundations, and entities; you land on a curated core of 71, wired by cross-domain bridges.</p>
+      <div class="proof" aria-label="Value proof, grounded vs ungrounded">
+        <div class="stat"><b>+39.6<span>pt</span></b><span>accuracy lift</span></div>
+        <div class="stat"><b>98.1<span>%</span></b><span>answers auditable</span></div>
+        <div class="stat"><b>0<span>%</span></b><span>hallucinated citations</span></div>
+      </div>
+      <p class="proofnote">Measured grounded vs ungrounded on a 53-question loan-underwriting benchmark (gpt-4o-mini). <a href="https://github.com/AI-First-Community/Bodhi-Map-For-FinTech/blob/main/SPIKE_RESULTS.md" target="_blank" rel="noopener">See the results →</a></p>
       <a class="enter" href="app.html">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/></svg>
         Enter the map <span class="arrow">→</span>
