@@ -382,6 +382,9 @@
       if (activeLevels.has(lvl)) { activeLevels.delete(lvl); chip.classList.remove('active'); }
       else { activeLevels.add(lvl); chip.classList.add('active'); }
       applyFilters();
+      // reframe to whatever is now visible, so a filtered graph doesn't sit off-screen
+      const vis = cy.nodes('[!isCluster]').filter((n) => n.style('display') !== 'none');
+      if (vis.length) cy.animate({ fit: { eles: vis, padding: 50 } }, { duration: 300 });
     });
   });
 
