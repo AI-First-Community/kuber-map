@@ -11,7 +11,7 @@ Three things the product claims to move:
 - **Auditability** — does the answer carry a valid FIBO IRI citation a regulator can trace?
 - **Hallucination** — does the model fabricate FIBO-looking IRIs that don't exist?
 
-## Result: four domains, gpt-4o-mini
+## Result: five domains, gpt-4o-mini
 
 | Use case | n | Accuracy (ungrounded → grounded) | Lift | Auditability | Ungrounded hallucination |
 |---|---|---|---|---|---|
@@ -19,9 +19,10 @@ Three things the product claims to move:
 | KYC / beneficial ownership | 50 | 44.0% → 92.0% | **+48.0 pt** | 92.0% | 90.0% → 0% |
 | Securities | 54 | 40.7% → 94.4% | **+53.7 pt** | 100.0% | 85.2% → 0% |
 | Regulatory reporting | 52 | 59.6% → 96.2% | **+36.5 pt** | 94.2% | 69.2% → 0% |
-| **Aggregate** | **209** | **47.4% → 91.9%** | **+44.5 pt** | **96.2%** | 51.7% → 0% |
+| Derivatives | 54 | 48.1% → 96.3% | **+48.1 pt** | 100.0% | 72.2% → 0% |
+| **Aggregate** | **263** | **47.5% → 92.8%** | **+45.3 pt** | **97.0%** | 55.1% → 0% |
 
-Across **209 questions in four independent financial domains**, grounding lifts accuracy **+36.5 to
+Across **263 questions in five independent financial domains**, grounding lifts accuracy **+36.5 to
 +53.7 points**, takes auditability from **0% to 92–100%**, and drives grounded IRI hallucination to
 **0%** every time. The effect is not a loan-domain artifact — it is the product thesis.
 

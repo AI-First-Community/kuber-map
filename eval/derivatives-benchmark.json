@@ -1,0 +1,693 @@
+{
+  "use_case": "Derivatives Contracts & Trading",
+  "questions": [
+    {
+      "id": "der-01",
+      "category": "root",
+      "question": "What is a derivative instrument in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument"
+      ],
+      "expected_keywords": [
+        "financial instrument",
+        "rights",
+        "value is derived"
+      ]
+    },
+    {
+      "id": "der-02",
+      "category": "root",
+      "question": "What is an underlier?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Underlier"
+      ],
+      "expected_keywords": [
+        "value",
+        "marketplace",
+        "derivative"
+      ]
+    },
+    {
+      "id": "der-03",
+      "category": "root",
+      "question": "What is a credit derivative?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CreditDerivative"
+      ],
+      "expected_keywords": [
+        "derivative",
+        "bilateral contract",
+        "over-the-counter"
+      ]
+    },
+    {
+      "id": "der-04",
+      "category": "root",
+      "question": "What is a commodity derivative?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CommoditiesContracts/CommodityDerivative"
+      ],
+      "expected_keywords": [
+        "derivative",
+        "physical commodity"
+      ]
+    },
+    {
+      "id": "der-05",
+      "category": "root",
+      "question": "What is a currency derivative?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyDerivative"
+      ],
+      "expected_keywords": [
+        "deliver",
+        "settle",
+        "currency"
+      ]
+    },
+    {
+      "id": "der-06",
+      "category": "option",
+      "question": "What is an option in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Option"
+      ],
+      "expected_keywords": [
+        "derivative",
+        "privilege",
+        "purchase"
+      ]
+    },
+    {
+      "id": "der-07",
+      "category": "option",
+      "question": "What is a call option?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/CallOption"
+      ],
+      "expected_keywords": [
+        "right",
+        "obligation",
+        "buy"
+      ]
+    },
+    {
+      "id": "der-08",
+      "category": "option",
+      "question": "What is a put option?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/PutOption"
+      ],
+      "expected_keywords": [
+        "right",
+        "obligation",
+        "sell"
+      ]
+    },
+    {
+      "id": "der-09",
+      "category": "option",
+      "question": "What is a strike price?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/StrikePrice"
+      ],
+      "expected_keywords": [
+        "price",
+        "underlying asset",
+        "exercised"
+      ]
+    },
+    {
+      "id": "der-10",
+      "category": "option",
+      "question": "What is moneyness?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/Moneyness"
+      ],
+      "expected_keywords": [
+        "classifier",
+        "strike price"
+      ]
+    },
+    {
+      "id": "der-11",
+      "category": "option",
+      "question": "What is a covered call?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/CoveredCall"
+      ],
+      "expected_keywords": [
+        "call option",
+        "owns",
+        "underlying"
+      ]
+    },
+    {
+      "id": "der-12",
+      "category": "option",
+      "question": "What is a bond option?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/BondOption"
+      ],
+      "expected_keywords": [
+        "option",
+        "buy",
+        "sell"
+      ]
+    },
+    {
+      "id": "der-13",
+      "category": "option",
+      "question": "What is a currency option?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyOption"
+      ],
+      "expected_keywords": [
+        "option",
+        "currency"
+      ]
+    },
+    {
+      "id": "der-14",
+      "category": "option",
+      "question": "What is an equity option?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/EquityOption"
+      ],
+      "expected_keywords": [
+        "option",
+        "buy",
+        "sell"
+      ]
+    },
+    {
+      "id": "der-15",
+      "category": "exotic",
+      "question": "What is a swaption?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/Swaption"
+      ],
+      "expected_keywords": [
+        "over-the-counter",
+        "option",
+        "swap"
+      ]
+    },
+    {
+      "id": "der-16",
+      "category": "exotic",
+      "question": "What is an Asian option?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/AsianOption"
+      ],
+      "expected_keywords": [
+        "option",
+        "average",
+        "underlying price"
+      ]
+    },
+    {
+      "id": "der-17",
+      "category": "exotic",
+      "question": "What is a barrier option?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/BarrierOption"
+      ],
+      "expected_keywords": [
+        "option",
+        "path",
+        "price"
+      ]
+    },
+    {
+      "id": "der-18",
+      "category": "exotic",
+      "question": "What is a knock-in option?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/KnockInOption"
+      ],
+      "expected_keywords": [
+        "barrier option",
+        "price threshold"
+      ]
+    },
+    {
+      "id": "der-19",
+      "category": "exotic",
+      "question": "What is a knock-out option?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/KnockOutOption"
+      ],
+      "expected_keywords": [
+        "barrier option",
+        "worthless",
+        "price level"
+      ]
+    },
+    {
+      "id": "der-20",
+      "category": "exotic",
+      "question": "What is a digital option?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/DigitalOption"
+      ],
+      "expected_keywords": [
+        "exotic option",
+        "payout",
+        "in-the-money"
+      ]
+    },
+    {
+      "id": "der-21",
+      "category": "exotic",
+      "question": "What is a lookback option?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/LookbackOption"
+      ],
+      "expected_keywords": [
+        "exotic option",
+        "timing",
+        "holder"
+      ]
+    },
+    {
+      "id": "der-22",
+      "category": "exotic",
+      "question": "What is a compound option?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/CompoundOption"
+      ],
+      "expected_keywords": [
+        "exotic option",
+        "underlying asset",
+        "another option"
+      ]
+    },
+    {
+      "id": "der-23",
+      "category": "futures",
+      "question": "What is a future in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Future"
+      ],
+      "expected_keywords": [
+        "derivative",
+        "buyer",
+        "seller",
+        "deliver"
+      ]
+    },
+    {
+      "id": "der-24",
+      "category": "futures",
+      "question": "What is a forward in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/Forward"
+      ],
+      "expected_keywords": [
+        "derivative",
+        "privately negotiated",
+        "underlier"
+      ]
+    },
+    {
+      "id": "der-25",
+      "category": "futures",
+      "question": "What is a bond future?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/BondFuture"
+      ],
+      "expected_keywords": [
+        "futures contract",
+        "underlying",
+        "bond"
+      ]
+    },
+    {
+      "id": "der-26",
+      "category": "futures",
+      "question": "What is an index future?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/IndexFuture"
+      ],
+      "expected_keywords": [
+        "futures contract",
+        "reference index"
+      ]
+    },
+    {
+      "id": "der-27",
+      "category": "futures",
+      "question": "What is an equity future?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/EquityFuture"
+      ],
+      "expected_keywords": [
+        "futures contract",
+        "equity security"
+      ]
+    },
+    {
+      "id": "der-28",
+      "category": "futures",
+      "question": "What is a currency future?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/CurrencyFuture"
+      ],
+      "expected_keywords": [
+        "futures contract",
+        "currency"
+      ]
+    },
+    {
+      "id": "der-29",
+      "category": "futures",
+      "question": "What is an equity forward?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/EquityForward"
+      ],
+      "expected_keywords": [
+        "forward contract",
+        "equity"
+      ]
+    },
+    {
+      "id": "der-30",
+      "category": "futures",
+      "question": "What is a currency forward?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyForward"
+      ],
+      "expected_keywords": [
+        "deliver",
+        "settle",
+        "currency"
+      ]
+    },
+    {
+      "id": "der-31",
+      "category": "futures",
+      "question": "What is a forward rate agreement?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ForwardRateAgreement"
+      ],
+      "expected_keywords": [
+        "agreement",
+        "interest rate",
+        "notional"
+      ]
+    },
+    {
+      "id": "der-32",
+      "category": "swaps",
+      "question": "What is a swap in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap"
+      ],
+      "expected_keywords": [
+        "derivative",
+        "counterparties",
+        "exchange"
+      ]
+    },
+    {
+      "id": "der-33",
+      "category": "swaps",
+      "question": "What is a swap leg?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapLeg"
+      ],
+      "expected_keywords": [
+        "terms",
+        "cashflow"
+      ]
+    },
+    {
+      "id": "der-34",
+      "category": "swaps",
+      "question": "What is a fixed leg?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/FixedLeg"
+      ],
+      "expected_keywords": [
+        "swap leg",
+        "paying party",
+        "payments"
+      ]
+    },
+    {
+      "id": "der-35",
+      "category": "swaps",
+      "question": "What is a floating leg?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/FloatingLeg"
+      ],
+      "expected_keywords": [
+        "swap leg",
+        "paying party",
+        "payments"
+      ]
+    },
+    {
+      "id": "der-36",
+      "category": "swaps",
+      "question": "What is an interest rate swap?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/InterestRateSwap"
+      ],
+      "expected_keywords": [
+        "swap",
+        "reference",
+        "interest rate"
+      ]
+    },
+    {
+      "id": "der-37",
+      "category": "swaps",
+      "question": "What is a currency swap?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencySwap"
+      ],
+      "expected_keywords": [
+        "foreign exchange",
+        "exchange",
+        "currency"
+      ]
+    },
+    {
+      "id": "der-38",
+      "category": "swaps",
+      "question": "What is a basis swap?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/BasisSwap"
+      ],
+      "expected_keywords": [
+        "swap",
+        "payment streams",
+        "different bases"
+      ]
+    },
+    {
+      "id": "der-39",
+      "category": "swaps",
+      "question": "What is an overnight index swap?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/OvernightIndexSwap"
+      ],
+      "expected_keywords": [
+        "swap",
+        "overnight interest rate"
+      ]
+    },
+    {
+      "id": "der-40",
+      "category": "swaps",
+      "question": "What is an equity swap?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/EquitySwaps/EquitySwap"
+      ],
+      "expected_keywords": [
+        "swap",
+        "value",
+        "equities"
+      ]
+    },
+    {
+      "id": "der-41",
+      "category": "swaps",
+      "question": "What is a commodity swap?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CommoditiesContracts/CommoditySwap"
+      ],
+      "expected_keywords": [
+        "commodity derivative",
+        "swap"
+      ]
+    },
+    {
+      "id": "der-42",
+      "category": "swaps",
+      "question": "What is a total return swap?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/TotalReturnSwap"
+      ],
+      "expected_keywords": [
+        "return swap",
+        "difference in value",
+        "underlying"
+      ]
+    },
+    {
+      "id": "der-43",
+      "category": "credit",
+      "question": "What is a credit default swap?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwap"
+      ],
+      "expected_keywords": [
+        "bilateral contract",
+        "protection seller",
+        "payment"
+      ]
+    },
+    {
+      "id": "der-44",
+      "category": "credit",
+      "question": "What is a credit event notice?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditEventNotice"
+      ],
+      "expected_keywords": [
+        "notice",
+        "triggering event"
+      ]
+    },
+    {
+      "id": "der-45",
+      "category": "credit",
+      "question": "What is a triggering event?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/TriggeringEvent"
+      ],
+      "expected_keywords": [
+        "event",
+        "credit default swap"
+      ]
+    },
+    {
+      "id": "der-46",
+      "category": "credit",
+      "question": "What is a deliverable asset in a CDS?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/DeliverableObligation"
+      ],
+      "expected_keywords": [
+        "asset",
+        "delivered",
+        "settling"
+      ]
+    },
+    {
+      "id": "der-47",
+      "category": "credit",
+      "question": "What is a loan credit default swap?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/LoanCreditDefaultSwap"
+      ],
+      "expected_keywords": [
+        "credit default swap",
+        "syndicated",
+        "loans"
+      ]
+    },
+    {
+      "id": "der-48",
+      "category": "credit",
+      "question": "What is a credit default swap index?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwapIndex"
+      ],
+      "expected_keywords": [
+        "index",
+        "reference obligations"
+      ]
+    },
+    {
+      "id": "der-49",
+      "category": "parties",
+      "question": "What is a counterparty in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/Counterparty"
+      ],
+      "expected_keywords": [
+        "party",
+        "contract",
+        "negotiates"
+      ]
+    },
+    {
+      "id": "der-50",
+      "category": "parties",
+      "question": "What is a master agreement?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/MasterAgreement"
+      ],
+      "expected_keywords": [
+        "contract",
+        "parties",
+        "terms"
+      ]
+    },
+    {
+      "id": "der-51",
+      "category": "parties",
+      "question": "What is a derivative master agreement?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesMasterAgreements/DerivativeMasterAgreement"
+      ],
+      "expected_keywords": [
+        "master agreement",
+        "derivatives transactions"
+      ]
+    },
+    {
+      "id": "der-52",
+      "category": "parties",
+      "question": "What is a clearing house?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingHouse"
+      ],
+      "expected_keywords": [
+        "financial service provider",
+        "exchange",
+        "clearing"
+      ]
+    },
+    {
+      "id": "der-53",
+      "category": "parties",
+      "question": "What is a swap dealer?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapDealer"
+      ],
+      "expected_keywords": [
+        "non-depository",
+        "swaps",
+        "market"
+      ]
+    },
+    {
+      "id": "der-54",
+      "category": "parties",
+      "question": "What is a structured product?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/StructuredInstruments/StructuredProduct"
+      ],
+      "expected_keywords": [
+        "security",
+        "cash flow",
+        "indices"
+      ]
+    }
+  ]
+}

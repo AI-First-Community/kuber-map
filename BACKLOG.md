@@ -29,7 +29,7 @@ Last updated: 2026-07-04
 
 **Map UI (E2):** data layer + vendored frontend + FIBO `app.html`/`graph.js` shipped (core-default view, domain/maturity filters, provenance-styled bridges, IRI-citation panel, offline PWA). Needs browser visual verification.
 
-**Not started:** eval on the derivatives use case (5th benchmark), per-domain lazy loading for the full-graph view, further use cases, and actually engaging EDM Council with the packaged contribution (user's call — it's outward-facing).
+**Not started:** per-domain lazy loading for the full-graph view, further use cases, and actually engaging EDM Council with the packaged contribution (user's call — it's outward-facing).
 
 **Fresh-checkout setup:** `make setup && make fibo && make commons && make all` then `make check`.
 
