@@ -27,7 +27,7 @@ Last updated: 2026-07-04
 
 **Map UI (E2):** data layer + vendored frontend + FIBO `app.html`/`graph.js` shipped (core-default view, domain/maturity filters, provenance-styled bridges, IRI-citation panel, offline PWA). Needs browser visual verification.
 
-**Not started:** the live eval run, per-domain lazy loading + use-case lens, additional domains/use-cases, EDM contribution.
+**Not started:** eval corroboration on a 2nd/3rd use case, per-domain lazy loading, further domains/use-cases, EDM contribution.
 
 **Fresh-checkout setup:** `make setup && make fibo && make commons && make all` then `make check`.
 
