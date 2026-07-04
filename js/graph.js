@@ -404,10 +404,8 @@
 
   // ---- Cluster legend: grouped by learning phase, collapsible, with counts ---
   // The 9 clusters map onto the three phases of the learning arc.
-  const CLUSTER_GROUPS = [
-    { title: 'Lending & commerce', clusters: ['LOAN', 'FBC'] },
-    { title: 'Foundations & entities', clusters: ['FND', 'BE'] },
-  ].map((g) => ({ title: g.title, clusters: g.clusters.filter((c) => CLUSTERS[c]) })).filter((g) => g.clusters.length);
+  // CLUSTER_GROUPS is generated per FIBO domain in js/data.js (domain -> its module
+  // sub-clusters), so the legend groups sub-domains under each domain heading.
   const clusterCount = {};
   GRAPH.nodes.forEach((n) => { clusterCount[n.cluster] = (clusterCount[n.cluster] || 0) + 1; });
   const CHEV = '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>';

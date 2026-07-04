@@ -26,6 +26,61 @@ const CONFIG = require(path.join(ROOT, 'okf.config.js'));
 function pathToId(relPath) { return relPath.replace(/\.md$/, '').split('/').join('__'); }
 function targetToId(target) { return pathToId(String(target).replace(/^\//, '')); }
 
+// FIBO module name -> human label: "FunctionalEntities" -> "Functional Entities",
+// "DebtAndEquities" -> "Debt & Equities", "RealEstateLoans" -> "Real Estate Loans".
+function humanize(s) {
+  return s.replace(/([a-z0-9])([A-Z])/g, '$1 $2').replace(/\bAnd\b/g, '&').replace(/\s+/g, ' ').trim();
+}
+
+// --- colour: shade a domain's base hue across its sub-clusters (same family, distinct) ---
+function hexToHsl(hex) {
+  const m = /^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex) || ['', '80', '80', '80'];
+  let r = parseInt(m[1], 16) / 255, g = parseInt(m[2], 16) / 255, b = parseInt(m[3], 16) / 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b); let h = 0, s = 0; const l = (max + min) / 2;
+  if (max !== min) {
+    const d = max - min; s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    if (max === r) h = (g - b) / d + (g < b ? 6 : 0); else if (max === g) h = (b - r) / d + 2; else h = (r - g) / d + 4;
+    h /= 6;
+  }
+  return [h * 360, s * 100, l * 100];
+}
+function hslToHex(h, s, l) {
+  h /= 360; s /= 100; l /= 100; let r, g, b;
+  if (s === 0) { r = g = b = l; } else {
+    const f = (p, q, t) => { if (t < 0) t += 1; if (t > 1) t -= 1; if (t < 1 / 6) return p + (q - p) * 6 * t;
+      if (t < 1 / 2) return q; if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6; return p; };
+    const q = l < 0.5 ? l * (1 + s) : l + s - l * s, p = 2 * l - q;
+    r = f(p, q, h + 1 / 3); g = f(p, q, h); b = f(p, q, h - 1 / 3);
+  }
+  const to = (x) => ('0' + Math.round(x * 255).toString(16)).slice(-2);
+  return '#' + to(r) + to(g) + to(b);
+}
+function shade(base, i, n) {
+  const [h, s] = hexToHsl(base);
+  const t = n <= 1 ? 0.5 : i / (n - 1);
+  const L = 44 + t * 26;                 // 44%..70% lightness spread
+  const H = (h + (t - 0.5) * 26 + 360) % 360;   // +/-13deg hue rotation, stays in family
+  return hslToHex(H, Math.max(50, Math.min(85, s)), L);
+}
+
+// Expand domains -> module sub-clusters (shaded) + legend groups (grouped by domain).
+function buildClusters(domMods) {
+  const CLUSTERS = {}; const CLUSTER_GROUPS = [];
+  const domains = Object.keys(CONFIG.DOMAINS).sort((a, b) => CONFIG.DOMAINS[a].order - CONFIG.DOMAINS[b].order);
+  domains.forEach((dom) => {
+    const mods = [...(domMods[dom] || [])].sort();
+    if (!mods.length) return;
+    const clusterIds = [];
+    mods.forEach((m, i) => {
+      const id = dom + '__' + m;
+      CLUSTERS[id] = { label: humanize(m), color: shade(CONFIG.DOMAINS[dom].color, i, mods.length), domain: dom };
+      clusterIds.push(id);
+    });
+    CLUSTER_GROUPS.push({ title: CONFIG.DOMAINS[dom].label, clusters: clusterIds });
+  });
+  return { CLUSTERS, CLUSTER_GROUPS };
+}
+
 // ---- frontmatter parsing (scalars, inline [lists], `relations:` block of inline objects) --
 function stripQuotes(s) { s = s.trim(); return (s.startsWith('"') && s.endsWith('"')) ? s.slice(1, -1) : s; }
 function parseInlineList(s) { return s.replace(/^\[|\]$/g, '').split(',').map((x) => x.trim()).filter(Boolean); }
@@ -101,6 +156,7 @@ function build() {
   const edges = [];
   const bridgeFiles = [];
   const idByIri = {};
+  const domMods = {};                                      // domain -> Set(module) present in data
 
   files.forEach((file) => {
     const rel = path.relative(BUNDLE, file);
@@ -108,13 +164,17 @@ function build() {
     if (!fm.type) return;
     if (fm.type === 'Cross-Domain Relation') { bridgeFiles.push(fm); return; }
 
-    const cluster = rel.split(path.sep)[0];
-    if (!CONFIG.CLUSTERS[cluster]) return;                 // only emit clusters we render
+    const seg = rel.split(path.sep);
+    const domain = seg[0];
+    if (!CONFIG.DOMAINS[domain]) return;                   // only emit domains we render
+    const module = seg[1] || domain;                       // FIBO module = the sub-cluster
+    const cluster = domain + '__' + module;
+    (domMods[domain] = domMods[domain] || new Set()).add(module);
     const maturity = (fm.tags || []).find((t) => CONFIG.MATURITY_LEVEL[t]) || null;
     const id = pathToId(rel);
     if (fm.resource) idByIri[fm.resource] = id;
     nodes.push({
-      id, label: fm.title || id, type: fm.type, cluster,
+      id, label: fm.title || id, type: fm.type, cluster, domain,
       level: CONFIG.MATURITY_LEVEL[maturity] || 3, maturity: maturity || 'n/a',
       core: fm.core === true, summary: fm.description || '', detail: '',
       definitionProvenance: fm.definition_provenance || 'fibo',
@@ -143,7 +203,8 @@ function build() {
   const resolved = edges.filter((e) => ids.has(e.s) && ids.has(e.t));
   const pending = edges.length - resolved.length;
 
-  const cOrder = Object.keys(CONFIG.CLUSTERS);
+  const { CLUSTERS, CLUSTER_GROUPS } = buildClusters(domMods);
+  const cOrder = Object.keys(CLUSTERS);
   nodes.sort((a, b) => (cOrder.indexOf(a.cluster) - cOrder.indexOf(b.cluster)) || a.id.localeCompare(b.id));
   resolved.sort((a, b) => (a.r === 'path' ? 1 : 0) - (b.r === 'path' ? 1 : 0)
     || a.s.localeCompare(b.s) || a.r.localeCompare(b.r) || a.t.localeCompare(b.t));
@@ -156,7 +217,8 @@ function build() {
    Source of truth: the OKF bundle in knowledge/ (+ okf.config.js for vocab/flows).
    Regenerate with:  node scripts/okf.js build   (or: make map)
    ============================================================================ */
-const CLUSTERS = ${JSON.stringify(CONFIG.CLUSTERS, null, 2)};
+const CLUSTERS = ${JSON.stringify(CLUSTERS, null, 2)};
+const CLUSTER_GROUPS = ${JSON.stringify(CLUSTER_GROUPS, null, 2)};
 const LEVELS = ${JSON.stringify(CONFIG.LEVELS, null, 2)};
 const RELATIONS = ${JSON.stringify(CONFIG.RELATIONS, null, 2)};
 const RELEASE = ${JSON.stringify(CONFIG.RELEASE, null, 2)};
@@ -167,7 +229,8 @@ const GRAPH = ${JSON.stringify(GRAPH, null, 2)};
   const core = nodes.filter((n) => n.core).length;
   const bridges = resolved.filter((e) => e.bridge).length;
   console.log(`build ✓  ${nodes.length} nodes (${core} core), ${resolved.length} edges `
-    + `(${bridges} curated bridges) · tour ${flows.guidedPath.steps.length} steps · `
+    + `(${bridges} curated bridges) · ${Object.keys(CLUSTERS).length} sub-clusters in `
+    + `${CLUSTER_GROUPS.length} domains · tour ${flows.guidedPath.steps.length} · `
     + `${flows.comparisons.length} comparisons -> ${path.relative(ROOT, DATA_JS)}`);
   if (pending) console.log(`  ${pending} edges dropped (targets not emitted — CMNS/LCC/other domains)`);
 }

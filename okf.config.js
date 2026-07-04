@@ -21,12 +21,15 @@
 
   const RELEASE = { version: '0.1.0', label: 'v0.1.0' };
 
-  // Clusters = the FIBO domains emitted in the bundle. Keys MUST match the node `cluster`.
-  const CLUSTERS = {
-    LOAN: { label: 'Loans',              color: '#10b981' },
-    FBC:  { label: 'Business & Commerce', color: '#f59e0b' },
-    FND:  { label: 'Foundations',        color: '#3b82f6' },
-    BE:   { label: 'Business Entities',  color: '#8b5cf6' },
+  // FIBO domains + base hue. The build (scripts/okf.js) SPLITS each domain into its FIBO
+  // modules (2nd IRI segment, e.g. FBC/FunctionalEntities) as sub-clusters — coloured with
+  // shades of the domain hue — so the canvas shows per-sub-domain hulls and the left legend
+  // groups them under the domain. `order` fixes the legend group order.
+  const DOMAINS = {
+    LOAN: { label: 'Loans',               color: '#10b981', order: 1 },
+    FBC:  { label: 'Business & Commerce', color: '#f59e0b', order: 2 },
+    FND:  { label: 'Foundations',         color: '#3b82f6', order: 3 },
+    BE:   { label: 'Business Entities',   color: '#8b5cf6', order: 4 },
   };
 
   const CLUSTER_TYPE = { LOAN: 'FIBO Class', FBC: 'FIBO Class', FND: 'FIBO Class', BE: 'FIBO Class' };
@@ -146,5 +149,5 @@
     },
   ];
 
-  return { CLUSTERS, CLUSTER_TYPE, LEVELS, MATURITY_LEVEL, RELATIONS, RELEASE, DECISION_TREE, GUIDED_PATH, COMPARISONS };
+  return { DOMAINS, CLUSTER_TYPE, LEVELS, MATURITY_LEVEL, RELATIONS, RELEASE, DECISION_TREE, GUIDED_PATH, COMPARISONS };
 });
