@@ -55,10 +55,13 @@ Last updated: 2026-07-04
 ### E2 — The map UI (fork of Bodhi)
 - [x] **Data layer** — `scripts/okf.js build` (+ `make map`) + `okf.config.js` generate `js/data.js` from `knowledge/`: 1284 nodes (71 core), 2108 edges (4 curated bridges), every edge provenance-tagged; deterministic. Handles our module-nested paths + inline-object relations (Bodhi's parser could not).
 - [x] Vendored Bodhi frontend (Cytoscape.js + fcose libs, `css/style.css`, Manrope fonts, PWA icons/SW/manifest).
-- [x] FIBO `app.html` + `js/graph.js` — **ported from Bodhi's actual UI** (cluster-hull compound nodes, fcose layout, minimap, collapsible legend dock, fuzzy search, welcome, theme, deep-linking) and adapted to FIBO: domain-coloured nodes; **curated bridges styled distinctly (dashed/red by `provenance`)**; **core-default view + "show full ontology" toggle** (the LOD default — 71 nodes, not 1284); domain + maturity filters; detail panel with the concept's **FIBO IRI citation + provenance**; a guided **loan-origination tour**; "for agents" OKF export. Syntax-checked + headless-smoke-tested against real data; **needs browser visual verification** (open `app.html`).
+- [x] **Faithful Bodhi UI** — `app.html`/`js/graph.js`/`css/style.css` taken from the Bodhi source; FIBO is driven the way Bodhi is designed for, through `okf.config.js` (taxonomy/vocab/flows) + generated `data.js`. **CSS byte-identical**; `graph.js` differs by only ~6 tiny contained edits (core flag, maturity levels, core-default filter, "new"→Core toggle, generated cluster groups). All Bodhi chrome retained: cluster-hull compound nodes, fcose layout, minimap, legend dock, fuzzy search, welcome, theme, deep-linking.
+- [x] FIBO adaptations via config: 4 domain clusters; **curated bridges dashed/red by provenance**; **core-default view + Core/full toggle**; maturity filter; detail panel shows FIBO IRI citation + provenance; real flows — a loan-origination decision guide, the underwriting **guided tour**, and mortgage-type / party-role **comparison tables** (all referenced by FIBO IRI, resolved to node ids at build); "for agents" OKF export.
+- [x] **Sub-domain clustering** — each domain split one level into its FIBO **modules** as sub-clusters (30 total: FBC→4, FND→15, BE→8, LOAN→3), shaded within the domain hue; canvas shows a hull per sub-domain, legend groups them under the domain (collapsible, counts). Generated in `data.js` (`CLUSTERS` + `CLUSTER_GROUPS`).
+- [x] Offline/PWA: **network-first** service worker (fresh when online, cache offline fallback — avoids stale-cache during dev), no CDN (all libs/fonts vendored).
+- [ ] Optional: 2-level nesting (domain super-hull around module hulls) if desired
 - [ ] Per-domain lazy loading for the full-ontology view (currently one `data.js`; fine at 1.3k, revisit at 5–10k scale)
 - [ ] Use-case lens (highlight a use-case subgraph) + reverse lookup (concept → use cases)
-- [x] Offline/PWA: service worker precaches the shell, no CDN (all libs/fonts vendored).
 
 ### E3 — Bridges & second use case
 - [ ] Decide fate of intra-domain bridges (e.g. `lender played-by financial-institution`) vs cross-domain-only for EDM
