@@ -24,6 +24,14 @@ def test_maturity_propagated_from_ontology_header():
     assert recs["Thing"]["maturity"] == "Release"
 
 
+def test_maturity_taken_from_label_bearing_home_not_referencing_file():
+    """Thing is defined (with a label) in the Release mini.rdf and merely referenced by the
+    Provisional aref_provisional.rdf. Its maturity must be Release — the home file wins even
+    though the Provisional file is processed first."""
+    recs = _records()
+    assert recs["Thing"]["maturity"] == "Release"
+
+
 def test_labels_and_definitions_extracted():
     recs = _records()
     assert recs["Thing"]["title"] == "thing"
@@ -58,3 +66,11 @@ def test_relations_sorted_is_a_first():
     recs = _records()
     types = [e["type"] for e in recs["SpecialThing"]["relations"]]
     assert types == sorted(types, key=lambda t: (t != "is-a", t))
+
+
+def test_multi_filler_restriction_keeps_named_target():
+    """A restriction with both a named someValuesFrom and an anonymous union must still
+    yield the NAMED target — never dropped because the store yielded the BNode first."""
+    recs = _records()
+    edges = {(e["type"], e["target_cluster"]) for e in recs["MultiFillerThing"]["relations"]}
+    assert ("relates-to", "CMNS") in edges     # named Party filler, deterministically chosen

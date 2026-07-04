@@ -1178,7 +1178,7 @@
       "title": "loan secured by real estate",
       "facet": "Instrument",
       "cluster": "LOAN",
-      "maturity": "Provisional",
+      "maturity": "Release",
       "definition": "loan that, at origination, is secured wholly or substantially by a lien or liens on real property for which the lien or liens are central to the extension of the credit - that is, the borrower would not have been extended credit in the same amount or on terms as favorable without the lien or liens on real property",
       "definition_provenance": "fibo",
       "core": true,

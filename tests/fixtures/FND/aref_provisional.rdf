@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:av="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/">
+
+  <!-- This file sorts BEFORE mini.rdf, is Provisional, and only REFERENCES Thing (adds a
+       subClassOf axiom, no rdfs:label). Thing's real home is mini.rdf (Release, with label).
+       Maturity must come from the label-bearing home, so Thing stays Release despite this
+       lower-maturity file being processed first. -->
+  <owl:Ontology rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Aref/Aref/">
+    <av:hasMaturityLevel rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Provisional"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Mini/Mini/Thing">
+    <rdfs:subClassOf rdf:resource="https://www.omg.org/spec/Commons/PartiesAndSituations/Party"/>
+  </owl:Class>
+
+</rdf:RDF>

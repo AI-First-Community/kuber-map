@@ -3,7 +3,7 @@ type: FIBO Class
 title: "loan secured by real estate"
 description: "loan that, at origination, is secured wholly or substantially by a lien or liens on real property for which the lien or liens are central to the extension of the credit - that is, the borrower would not have been extended credit in the same amount or on terms as favorable without the lien or liens on real property"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/LoanSecuredByRealEstate
-tags: [LOAN, Provisional]
+tags: [LOAN, Release]
 core: true
 relations:
   - {type: is-a, target: "/LOAN/LoansGeneral/Loans/CollateralizedLoan.md", provenance: fibo}

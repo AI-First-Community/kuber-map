@@ -24,6 +24,29 @@ FILLER_PREDS = [OWL.someValuesFrom, OWL.allValuesFrom, OWL.onClass, OWL.hasValue
 MATURITY_PRED = URIRef("https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/hasMaturityLevel")
 
 
+def _merge_unique_bnodes(g, fg):
+    """Add fg's triples to g, giving fg's blank nodes fresh ids.
+
+    Anonymous owl:Restriction nodes are blank nodes scoped to their file. A plain `g += fg`
+    keeps fg's bnode ids, so restrictions from different files that happen to share an
+    auto-generated id conflate — then one() reads a mixed onProperty/filler in whatever
+    order rdflib's (hash-seeded) store yields, dropping or swapping a relation between runs.
+    Remapping each file's bnodes to fresh ids keeps every restriction self-contained, so
+    extraction is deterministic. Bnode ids never reach the output (fillers are URIRefs)."""
+    remap = {}
+
+    def m(t):
+        if isinstance(t, BNode):
+            r = remap.get(t)
+            if r is None:
+                r = remap[t] = BNode()
+            return r
+        return t
+
+    for s, p, o in fg:
+        g.add((m(s), p, m(o)))
+
+
 def load_domains(fibo_root, domains):
     """Parse every .rdf under the given domains. Returns (graph, class_source, files).
     class_source: class-URI -> {file, cluster, maturity} for classes DEFINED in a loaded file."""
@@ -33,13 +56,13 @@ def load_domains(fibo_root, domains):
     for d in domains:
         files += glob.glob(os.path.join(fibo_root, d, "**", "*.rdf"), recursive=True)
 
-    for f in files:
+    for f in sorted(files):
         try:
             fg = Graph().parse(f, format="xml")
         except Exception as e:
             print(f"  ! parse failed {f}: {e}", file=sys.stderr)
             continue
-        g += fg
+        _merge_unique_bnodes(g, fg)
         maturity = None
         for ont in fg.subjects(RDF.type, OWL.Ontology):
             for lvl in fg.objects(ont, MATURITY_PRED):
@@ -47,14 +70,21 @@ def load_domains(fibo_root, domains):
         for c in set(fg.subjects(RDF.type, OWL.Class)):
             if isinstance(c, BNode):
                 continue
-            defined = (c, RDFS.label, None) in fg or (c, RDFS.subClassOf, None) in fg \
-                      or (c, SKOS.definition, None) in fg
+            has_label = (c, RDFS.label, None) in fg
+            defined = has_label or (c, RDFS.subClassOf, None) in fg \
+                or (c, SKOS.definition, None) in fg
             if not defined:
                 continue
             key = str(c)
-            if key not in class_source or (maturity and not class_source[key].get("maturity")):
+            # A class may appear in several files: its definitional home (which carries the
+            # rdfs:label) and files that merely add a subClassOf restriction. Take maturity
+            # from the strongest source — prefer the label-bearing file, then one that has a
+            # maturity — so a referencing file can't override the home file's maturity level.
+            rank = (has_label, maturity is not None)
+            cur = class_source.get(key)
+            if cur is None or rank > cur["rank"]:
                 class_source[key] = {"file": os.path.relpath(f), "cluster": cluster_of(key),
-                                     "maturity": maturity}
+                                     "maturity": maturity, "rank": rank}
     return g, class_source, files
 
 
@@ -95,10 +125,14 @@ def restriction_relation(g, restr):
     prop = one(g, restr, OWL.onProperty)
     if prop is None or not isinstance(prop, URIRef):
         return None
+    # A restriction can carry several fillers for one predicate (e.g. FIBO writes both a
+    # named someValuesFrom AND an anonymous unionOf class). one() would pick whichever the
+    # (hash-seeded) store yields first — sometimes the BNode union, silently dropping the
+    # relation. Take the first predicate that has a NAMED filler, smallest IRI for stability.
     for fp in FILLER_PREDS:
-        filler = one(g, restr, fp)
-        if isinstance(filler, URIRef):
-            return prop, filler, local_name(fp)
+        named = sorted(str(o) for o in g.objects(restr, fp) if isinstance(o, URIRef))
+        if named:
+            return prop, URIRef(named[0]), local_name(fp)
     return None
 
 

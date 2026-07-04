@@ -204,7 +204,7 @@ Curated FIBO concepts and cross-domain bridges that ground this agent. Cite the
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanProduct
 - **relations:** is-a → credit facility; is-a → financial product; has-preconditions → condition precedent; is-exemplified-by → loan; refers-to → collateral
 
-### loan secured by real estate  [LOAN/Provisional]
+### loan secured by real estate  [LOAN/Release]
 - **definition:** loan that, at origination, is secured wholly or substantially by a lien or liens on real property for which the lien or liens are central to the extension of the credit - that is, the borrower would not have been extended credit in the same amount or on terms as favorable without the lien or liens on real property
 - **cite:** https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/LoanSecuredByRealEstate
 - **relations:** is-a → collateralized loan; has-contractual-element → disclosure provision; has-contractual-element → use of proceeds provision; has-guarantor → mortgage indemnity guarantor; has-initial-funding-date → transaction date; is-collateralized-by → real property; is-performed-by → servicer; refers-to → security agreement

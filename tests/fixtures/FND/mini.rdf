@@ -41,4 +41,24 @@
     <skos:definition>a regional thing</skos:definition>
   </owl:Class>
 
+  <!-- MultiFillerThing: one restriction with a NAMED someValuesFrom (Party) AND an anonymous
+       unionOf class. The extractor must deterministically pick the named filler, never drop
+       the relation because the store yielded the blank node first (hash-order bug). -->
+  <owl:Class rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Mini/Mini/MultiFillerThing">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Mini/Mini/relatesTo"/>
+        <owl:someValuesFrom rdf:resource="https://www.omg.org/spec/Commons/PartiesAndSituations/Party"/>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <rdf:Description rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Mini/Mini/Thing"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>multi filler thing</rdfs:label>
+  </owl:Class>
+
 </rdf:RDF>

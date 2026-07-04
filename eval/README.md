@@ -20,15 +20,17 @@ actually moves the needle, on three axes the product claims:
 ## Two ways to run
 
 ```
-make eval                                  # offline: MECHANISM CHECK ONLY
-python eval/harness.py --adapter anthropic --model claude-opus-4-8   # REAL numbers (needs API key)
+make eval                                              # offline: MECHANISM CHECK ONLY
+EVAL_LLM_CMD='my-model-cli' python eval/harness.py --adapter llm   # REAL numbers
 ```
 
-- **offline** — deterministic, no key/cost. The grounded oracle restates pack-retrieved
+- **offline** — deterministic, no command/cost. The grounded oracle restates pack-retrieved
   definitions and cites their IRIs; the ungrounded stub is a floor. This verifies the harness
   and scoring work; **its numbers are not the product's value proof** and must not be quoted as such.
-- **anthropic** — a live Claude agent. Grounded injects pack-retrieved concepts and asks it to
-  cite FIBO IRIs; ungrounded asks the bare question. This produces the real grounded-vs-ungrounded
-  numbers. Activates only when `ANTHROPIC_API_KEY` is set and the `anthropic` SDK is installed.
+- **llm** — a live model, invoked provider-agnostically. Set `EVAL_LLM_CMD` to any command that
+  reads a prompt on stdin and writes the answer on stdout (the model id is exported as
+  `EVAL_LLM_MODEL` via `--model`). Grounded injects pack-retrieved concepts and asks the model
+  to cite FIBO IRIs; ungrounded asks the bare question. Produces the real grounded-vs-ungrounded
+  numbers. No vendor SDK is a dependency.
 
 Write the real result into `SPIKE_RESULTS.md` once the live run is reviewed.

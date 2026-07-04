@@ -12,11 +12,11 @@ product claims to move:
 
 Scoring is deterministic (no LLM judge): accuracy is gold-keyword coverage; citations are
 matched against the pack's real IRIs. The model itself is pluggable (see eval/adapters.py):
-an offline oracle/stub for gate tests, or a live Anthropic adapter when a key is set.
+an offline oracle/stub for gate tests, or a live LLM run via a user command (EVAL_LLM_CMD).
 
 Usage:
     python eval/harness.py --benchmark eval/benchmark.json --pack export/loan-origination/pack.json
-    python eval/harness.py --adapter anthropic --model claude-opus-4-8   # live (needs API key)
+    EVAL_LLM_CMD='my-model-cli' python eval/harness.py --adapter llm   # live value proof
 """
 import argparse
 import json
@@ -104,8 +104,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--benchmark", default="eval/benchmark.json")
     ap.add_argument("--pack", default="export/loan-origination/pack.json")
-    ap.add_argument("--adapter", choices=["offline", "anthropic"], default="offline")
-    ap.add_argument("--model", default="claude-opus-4-8")
+    ap.add_argument("--adapter", choices=["offline", "llm"], default="offline")
+    ap.add_argument("--model", default="", help="model id, exported as EVAL_LLM_MODEL to the command")
     ap.add_argument("--out", default=None, help="write the scorecard JSON here")
     args = ap.parse_args()
 
@@ -125,8 +125,8 @@ def main():
     if args.adapter == "offline":
         print("NOTE: offline adapter = MECHANISM CHECK ONLY. The grounded oracle restates\n"
               "retrieved definitions and the ungrounded stub is a deliberate floor, so these\n"
-              "numbers are NOT the product's value proof. Run --adapter anthropic for real\n"
-              "grounded-vs-ungrounded numbers (needs ANTHROPIC_API_KEY).\n")
+              "numbers are NOT the product's value proof. Run --adapter llm (EVAL_LLM_CMD set)\n"
+              "for real grounded-vs-ungrounded numbers.\n")
         card["note"] = "offline mechanism check — not the real value proof"
     if args.out:
         json.dump(card, open(args.out, "w"), indent=2)
