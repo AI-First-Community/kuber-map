@@ -23,7 +23,9 @@ Last updated: 2026-07-04
 - ✅ **Eval harness + benchmark** — `eval/` with 53 gold questions (all `grounds` IRIs resolved from the pack), deterministic scoring (accuracy / hallucination / auditability), and a pluggable model adapter (`make eval` = offline mechanism check; `--adapter llm` = live via a user `EVAL_LLM_CMD`, no vendor SDK). **Live value-proof numbers still pending** (needs model choice + question review).
 - ✅ Published to GitHub (private): `AI-First-Community/Bodhi-Map-For-FinTech`, reproducible via `make fibo`.
 
-**Not started:** the live eval run, the map UI, additional domains/use-cases, EDM contribution.
+**Map UI (E2):** data layer + vendored frontend + FIBO `app.html`/`graph.js` shipped (core-default view, domain/maturity filters, provenance-styled bridges, IRI-citation panel, offline PWA). Needs browser visual verification.
+
+**Not started:** the live eval run, per-domain lazy loading + use-case lens, additional domains/use-cases, EDM contribution.
 
 **Fresh-checkout setup:** `make setup && make fibo && make all` then `make check`.
 
@@ -52,12 +54,11 @@ Last updated: 2026-07-04
 
 ### E2 — The map UI (fork of Bodhi)
 - [x] **Data layer** — `scripts/okf.js build` (+ `make map`) + `okf.config.js` generate `js/data.js` from `knowledge/`: 1284 nodes (71 core), 2108 edges (4 curated bridges), every edge provenance-tagged; deterministic. Handles our module-nested paths + inline-object relations (Bodhi's parser could not).
-- [ ] Vendor Bodhi frontend (`app.html`, `js/graph.js`, Cytoscape.js + fcose, css, fonts) into repo — **next**
-- [ ] Adapt `graph.js` for FIBO: cluster colors per domain; edge styling by type; **bridges styled distinctly by `provenance: curated`** (config ready)
-- [ ] Domain selector; maturity (Release/Provisional/Informative) filter; **core-view default + "show full ontology" toggle**
-- [ ] Level-of-detail / lazy per-domain loading (required — 5–10k elements at full scale)
+- [x] Vendored Bodhi frontend (Cytoscape.js + fcose libs, `css/style.css`, Manrope fonts, PWA icons/SW/manifest).
+- [x] FIBO `app.html` + `js/graph.js` — domain-coloured nodes; **curated bridges styled distinctly (dashed/red by `provenance`)**; **core-default view + "show full ontology" toggle** (the LOD default — 71 nodes, not 1284); domain filter + maturity filter; search; detail panel with the concept's **FIBO IRI citation + provenance**. Syntax-checked, headless-smoke-tested; **needs browser visual verification** (open `app.html`).
+- [ ] Per-domain lazy loading for the full-ontology view (currently one `data.js`; fine at 1.3k, revisit at 5–10k scale)
 - [ ] Use-case lens (highlight a use-case subgraph) + reverse lookup (concept → use cases)
-- [ ] Offline/PWA parity with Bodhi; no CDN
+- [x] Offline/PWA: service worker precaches the shell, no CDN (all libs/fonts vendored).
 
 ### E3 — Bridges & second use case
 - [ ] Decide fate of intra-domain bridges (e.g. `lender played-by financial-institution`) vs cross-domain-only for EDM

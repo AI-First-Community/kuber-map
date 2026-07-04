@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bodhi Map for FIBO — Curated Financial Ontology Graph</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0e1a13" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    (function () { try { var t = localStorage.getItem('bodhi-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {} })();
+  </script>
+  <style>
+    /* FIBO-specific supplements on top of the vendored Bodhi stylesheet. */
+    #cy { position: fixed; inset: 56px 0 0 0; }
+    .fibo-caption { font: 600 11px/1 Manrope, system-ui, sans-serif; opacity: .6; margin-right: 6px; }
+    #stat { font: 500 12px/1 Manrope, system-ui, sans-serif; opacity: .7; margin-left: auto; padding-right: 10px; }
+    .level-chip { cursor: pointer; }
+    #coreToggle { cursor: pointer; }
+    /* detail panel */
+    .panel { position: fixed; top: 68px; right: 12px; width: min(380px, 92vw); max-height: calc(100vh - 88px);
+      overflow: auto; background: var(--panel-bg, #0f1c16); color: var(--panel-fg, #eaf3ee);
+      border: 1px solid rgba(120,140,130,.28); border-radius: 14px; padding: 16px 18px;
+      box-shadow: 0 18px 44px rgba(0,0,0,.45); transform: translateX(115%); transition: transform .28s ease; z-index: 60; }
+    .panel.open { transform: none; }
+    .panel-close { position: absolute; top: 10px; right: 12px; background: none; border: 0; color: inherit; font-size: 16px; cursor: pointer; opacity: .6; }
+    .panel h2 { margin: 6px 0 8px; font-size: 19px; }
+    .panel h3 { margin: 16px 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; opacity: .7; }
+    .panel-tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 999px;
+      background: color-mix(in srgb, var(--c) 22%, transparent); color: var(--c); border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); }
+    .panel-def { font-size: 13.5px; line-height: 1.5; margin: 6px 0; }
+    .panel-cite { font-size: 11px; word-break: break-all; opacity: .85; }
+    .panel-cite span { opacity: .6; }
+    .panel-cite a { color: #6ee7b7; }
+    .rel-list { list-style: none; padding: 0; margin: 0; font-size: 12.5px; }
+    .rel-list li { padding: 3px 0; border-bottom: 1px solid rgba(120,140,130,.12); }
+    .muted { opacity: .55; font-size: 12px; }
+    .prov { font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 999px; }
+    .prov-curated { background: rgba(225,29,72,.16); color: #fb7185; border: 1px solid rgba(225,29,72,.5); }
+    /* legend dock items */
+    #legend { display: flex; flex-direction: column; gap: 4px; }
+    .leg-item { display: flex; align-items: center; gap: 8px; background: none; border: 0; color: inherit;
+      font: 500 12.5px/1 Manrope, system-ui, sans-serif; cursor: pointer; padding: 4px 2px; text-align: left; opacity: .55; }
+    .leg-item.active { opacity: 1; }
+    .leg-item .dot { width: 11px; height: 11px; border-radius: 50%; flex: 0 0 auto; }
+    .leg-row { display: flex; align-items: center; gap: 8px; font-size: 12px; padding: 3px 0; }
+    .leg-row .line { width: 22px; height: 0; border-top: 2px solid; flex: 0 0 auto; }
+    .leg-row .line.dashed { border-top-style: dashed; }
+    .search-results { display: none; }
+    .search-results.open { display: block; }
+    .sr { display: flex; justify-content: space-between; gap: 10px; padding: 7px 10px; cursor: pointer; }
+    .sr:hover { background: rgba(120,140,130,.12); }
+    .sr span { opacity: .55; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="https://github.com/AI-First-Community/Bodhi-Map-For-FinTech" aria-label="Bodhi Map for FIBO">
+      <span class="brand-text"><span class="brand-name">Bodhi&nbsp;Map for FIBO</span><span class="sub">audit-ready financial ontology</span></span>
+    </a>
+
+    <div class="search-wrap">
+      <input id="search" type="text" placeholder="Search concepts…  (f)" autocomplete="off" aria-label="Search concepts" />
+      <div id="searchResults" class="search-results" role="listbox"></div>
+    </div>
+
+    <div class="level-bar" role="group" aria-label="Filter by FIBO maturity">
+      <span class="fibo-caption">Maturity</span>
+      <button class="level-chip active" data-level="1" aria-label="Toggle Release"><span class="lbl">Release</span></button>
+      <button class="level-chip active" data-level="2" aria-label="Toggle Provisional"><span class="lbl">Provisional</span></button>
+      <button class="level-chip active" data-level="3" aria-label="Toggle Informative"><span class="lbl">Informative</span></button>
+    </div>
+
+    <div class="toolbar">
+      <button class="btn primary" id="coreToggle">Show full ontology</button>
+      <button class="btn ghost" id="fitBtn">Fit</button>
+      <button class="btn ghost" id="relayoutBtn">Re-layout</button>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+    </div>
+    <span id="stat"></span>
+  </header>
+
+  <div id="cy"></div>
+
+  <aside class="dock" id="dock">
+    <div class="legend-section">
+      <h3>FIBO domains <span class="h3-hint">click to filter</span></h3>
+      <div id="legend"></div>
+    </div>
+    <div class="legend-section">
+      <h3>Relationships</h3>
+      <div id="relLegend"></div>
+    </div>
+  </aside>
+
+  <aside id="panel" class="panel" aria-live="polite"></aside>
+
+  <div class="hint">Curated <b>core</b> view is the default · toggle “Show full ontology” for all 1,284 concepts · click a node for its FIBO IRI citation · <kbd>f</kbd> search · <kbd>Esc</kbd> close</div>
+
+  <script src="js/cytoscape.min.js"></script>
+  <script src="js/layout-base.js"></script>
+  <script src="js/cose-base.js"></script>
+  <script src="js/cytoscape-fcose.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/graph.js"></script>
+  <script src="js/sw-register.js"></script>
+</body>
+</html>
