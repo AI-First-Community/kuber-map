@@ -64,9 +64,38 @@ different domain would wash the lift out. It did not — the lift is **larger**.
 
 **Reproduce:** `EVAL_LLM_CMD='./.venv/bin/python eval/openai_cli.py' ./.venv/bin/python eval/harness.py --benchmark eval/kyc-benchmark.json --pack export/kyc/pack.json --adapter llm --model gpt-4o-mini`
 
-**Two use cases, same conclusion:** grounding lifts accuracy **+39.6 / +48.0 pt** and takes auditability
-from **0% → 98.1% / 92.0%** while eliminating grounded IRI hallucination. **Next:** corroborate with a
-stronger model (gpt-4o), and/or a third (securities) benchmark.
+### Corroboration — third use case (Securities instruments & issuance)
+
+Date: 2026-07-04 · Model: `gpt-4o-mini` · n = 54 securities questions · Verdict: **✅ Target fully met — +53.7 pt lift, 100% auditable.**
+
+Third independent use case (54 questions on bonds, equity, funds, securitization, issuance and
+identification, grounded in `export/securities/pack.json`), same method and domain-neutral prompt.
+
+| Metric | Ungrounded | Grounded | Δ |
+|---|---|---|---|
+| **Accuracy** (correct ≥ 60% keyword coverage) | 40.7% | **94.4%** | **+53.7 pt** |
+| **Auditable** (answer carries a valid FIBO IRI citation) | 0% | **100.0%** | +100.0 |
+| Cite on-target (cites the grounding concept) | 0% | 94.4% | +94.4 |
+| **Hallucinated citation** (cites an IRI not in the pack) | **85.2%** | **0.0%** | −85.2 |
+
+This run **fully meets the bar** (≥15–20 pt lift **and** 100% auditability): every grounded answer
+cited a real pack IRI, none fabricated. The accuracy lift is the largest of the three.
+
+**Reproduce:** `EVAL_LLM_CMD='./.venv/bin/python eval/openai_cli.py' ./.venv/bin/python eval/harness.py --benchmark eval/securities-benchmark.json --pack export/securities/pack.json --adapter llm --model gpt-4o-mini`
+
+### Value proof — three use cases, one conclusion
+
+| Use case | n | Accuracy (ungrounded → grounded) | Lift | Auditability | Ungrounded hallucination |
+|---|---|---|---|---|---|
+| Loan origination | 53 | 45.3% → 84.9% | **+39.6 pt** | 98.1% | 5.7% → 0% |
+| KYC / beneficial ownership | 50 | 44.0% → 92.0% | **+48.0 pt** | 92.0% | 90.0% → 0% |
+| Securities instruments & issuance | 54 | 40.7% → 94.4% | **+53.7 pt** | 100.0% | 85.2% → 0% |
+
+Across **157 questions in three independent financial domains**, grounding in the curated FIBO
+context pack lifts accuracy **+39.6 to +53.7 points**, takes auditability from **0% to 92–100%**, and
+drives grounded IRI hallucination to **0%** every time (from 5.7–90% ungrounded). The effect is not a
+loan-domain artifact; it is the product thesis. **Next (optional):** corroborate on a stronger model
+(gpt-4o); surface the headline on the landing.
 
 ---
 

@@ -1,0 +1,697 @@
+{
+  "use_case": "Securities Instruments & Issuance",
+  "questions": [
+    {
+      "id": "sec-01",
+      "category": "instrument",
+      "question": "What is a bond in FIBO terms?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond"
+      ],
+      "expected_keywords": [
+        "tradable debt instrument",
+        "issuer",
+        "debt"
+      ]
+    },
+    {
+      "id": "sec-02",
+      "category": "instrument",
+      "question": "What is a bond coupon?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/BondCoupon"
+      ],
+      "expected_keywords": [
+        "interest rate",
+        "issuer",
+        "maturity"
+      ]
+    },
+    {
+      "id": "sec-03",
+      "category": "instrument",
+      "question": "What is a callable bond?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/CallableBond"
+      ],
+      "expected_keywords": [
+        "issuer",
+        "repurchase",
+        "call price"
+      ]
+    },
+    {
+      "id": "sec-04",
+      "category": "instrument",
+      "question": "What is commercial paper?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/TradedShortTermDebt/CommercialPaper"
+      ],
+      "expected_keywords": [
+        "unsecured",
+        "short-term",
+        "debt instrument"
+      ]
+    },
+    {
+      "id": "sec-05",
+      "category": "instrument",
+      "question": "What is a convertible bond?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ConvertibleBond"
+      ],
+      "expected_keywords": [
+        "convert",
+        "shares",
+        "conversion ratio"
+      ]
+    },
+    {
+      "id": "sec-06",
+      "category": "instrument",
+      "question": "What is a corporate bond?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/CorporateBond"
+      ],
+      "expected_keywords": [
+        "bond",
+        "company",
+        "financing"
+      ]
+    },
+    {
+      "id": "sec-07",
+      "category": "instrument",
+      "question": "What is a fixed coupon bond?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FixedCouponBond"
+      ],
+      "expected_keywords": [
+        "coupon rate",
+        "principal",
+        "fixed"
+      ]
+    },
+    {
+      "id": "sec-08",
+      "category": "instrument",
+      "question": "What is a floating rate note?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FloatingRateNote"
+      ],
+      "expected_keywords": [
+        "variable interest rate",
+        "reference"
+      ]
+    },
+    {
+      "id": "sec-09",
+      "category": "instrument",
+      "question": "What is a government bond?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/GovernmentBond"
+      ],
+      "expected_keywords": [
+        "debt security",
+        "government",
+        "spending"
+      ]
+    },
+    {
+      "id": "sec-10",
+      "category": "instrument",
+      "question": "What is a municipal bond?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/MunicipalBond"
+      ],
+      "expected_keywords": [
+        "government bond",
+        "regional",
+        "authority"
+      ]
+    },
+    {
+      "id": "sec-11",
+      "category": "instrument",
+      "question": "What is a sovereign debt instrument?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/SovereignDebtInstrument"
+      ],
+      "expected_keywords": [
+        "debt security",
+        "government",
+        "country"
+      ]
+    },
+    {
+      "id": "sec-12",
+      "category": "instrument",
+      "question": "What is a treasury bill?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/TreasuryBill"
+      ],
+      "expected_keywords": [
+        "short-term",
+        "zero coupon",
+        "maturity"
+      ]
+    },
+    {
+      "id": "sec-13",
+      "category": "instrument",
+      "question": "What is a zero coupon bond?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ZeroCouponBond"
+      ],
+      "expected_keywords": [
+        "coupon rate of zero",
+        "discount",
+        "face value"
+      ]
+    },
+    {
+      "id": "sec-14",
+      "category": "equity",
+      "question": "What is an American depositary receipt (ADR)?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/AmericanDepositaryReceipt"
+      ],
+      "expected_keywords": [
+        "depositary receipt",
+        "foreign company",
+        "trade"
+      ]
+    },
+    {
+      "id": "sec-15",
+      "category": "equity",
+      "question": "What is a common share?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/CommonShare"
+      ],
+      "expected_keywords": [
+        "unit of ownership",
+        "corporation",
+        "claim"
+      ]
+    },
+    {
+      "id": "sec-16",
+      "category": "equity",
+      "question": "What is a depositary receipt?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/DepositaryReceipt"
+      ],
+      "expected_keywords": [
+        "negotiable",
+        "deposit",
+        "bank"
+      ]
+    },
+    {
+      "id": "sec-17",
+      "category": "equity",
+      "question": "What is a dividend in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Dividend"
+      ],
+      "expected_keywords": [
+        "distribution",
+        "earnings",
+        "shareholders"
+      ]
+    },
+    {
+      "id": "sec-18",
+      "category": "equity",
+      "question": "What is a fixed rate dividend?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/FixedRateDividend"
+      ],
+      "expected_keywords": [
+        "dividend",
+        "annual return",
+        "nominal value"
+      ]
+    },
+    {
+      "id": "sec-19",
+      "category": "equity",
+      "question": "What is a global depositary receipt (GDR)?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/GlobalDepositaryReceipt"
+      ],
+      "expected_keywords": [
+        "depositary receipt",
+        "depositary bank",
+        "foreign companies"
+      ]
+    },
+    {
+      "id": "sec-20",
+      "category": "equity",
+      "question": "What is a non-voting share?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/NonVotingShare"
+      ],
+      "expected_keywords": [
+        "share",
+        "voting"
+      ]
+    },
+    {
+      "id": "sec-21",
+      "category": "equity",
+      "question": "What is a partially paid share?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PartiallyPaidShare"
+      ],
+      "expected_keywords": [
+        "share",
+        "portion",
+        "market value"
+      ]
+    },
+    {
+      "id": "sec-22",
+      "category": "equity",
+      "question": "What is a preferred share?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PreferredShare"
+      ],
+      "expected_keywords": [
+        "share",
+        "dividends",
+        "preference"
+      ]
+    },
+    {
+      "id": "sec-23",
+      "category": "equity",
+      "question": "What is share yield?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareYield"
+      ],
+      "expected_keywords": [
+        "ratio",
+        "dividend",
+        "price"
+      ]
+    },
+    {
+      "id": "sec-24",
+      "category": "fund",
+      "question": "What is a collective investment vehicle?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/CollectiveInvestmentVehicle"
+      ],
+      "expected_keywords": [
+        "assets",
+        "pooled",
+        "investors"
+      ]
+    },
+    {
+      "id": "sec-25",
+      "category": "fund",
+      "question": "What is an equity fund?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/EquityFund"
+      ],
+      "expected_keywords": [
+        "fund",
+        "shares"
+      ]
+    },
+    {
+      "id": "sec-26",
+      "category": "fund",
+      "question": "What is an exchange-traded fund (ETF)?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/ExchangeTradedFund"
+      ],
+      "expected_keywords": [
+        "investment fund",
+        "units",
+        "exchange"
+      ]
+    },
+    {
+      "id": "sec-27",
+      "category": "fund",
+      "question": "What is a fund unit?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/FundUnit"
+      ],
+      "expected_keywords": [
+        "share",
+        "pooled fund",
+        "claim"
+      ]
+    },
+    {
+      "id": "sec-28",
+      "category": "fund",
+      "question": "What is a hedge fund?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/HedgeFund"
+      ],
+      "expected_keywords": [
+        "investment fund",
+        "total return",
+        "qualified investors"
+      ]
+    },
+    {
+      "id": "sec-29",
+      "category": "fund",
+      "question": "What is a mutual fund?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/MutualFund"
+      ],
+      "expected_keywords": [
+        "open-end",
+        "managed",
+        "investment fund"
+      ]
+    },
+    {
+      "id": "sec-30",
+      "category": "identification",
+      "question": "What is a basket of securities?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Baskets/BasketOfSecurities"
+      ],
+      "expected_keywords": [
+        "basket",
+        "securities",
+        "asset class"
+      ]
+    },
+    {
+      "id": "sec-31",
+      "category": "identification",
+      "question": "What is an ISIN?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber"
+      ],
+      "expected_keywords": [
+        "security identifier",
+        "ISO 6166"
+      ]
+    },
+    {
+      "id": "sec-32",
+      "category": "identification",
+      "question": "What is a listing in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing"
+      ],
+      "expected_keywords": [
+        "catalog entry",
+        "exchange",
+        "security"
+      ]
+    },
+    {
+      "id": "sec-33",
+      "category": "identification",
+      "question": "What is a portfolio?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecurityAssets/Portfolio"
+      ],
+      "expected_keywords": [
+        "collection",
+        "investments",
+        "stocks",
+        "bonds"
+      ]
+    },
+    {
+      "id": "sec-34",
+      "category": "identification",
+      "question": "What is a redemption event?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RedemptionEvent"
+      ],
+      "expected_keywords": [
+        "return",
+        "principal",
+        "fixed-income"
+      ]
+    },
+    {
+      "id": "sec-35",
+      "category": "identification",
+      "question": "What is a redemption schedule?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/RedemptionSchedule"
+      ],
+      "expected_keywords": [
+        "repayment schedule",
+        "redeemed"
+      ]
+    },
+    {
+      "id": "sec-36",
+      "category": "identification",
+      "question": "What is a security registry?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/SecurityRegistry"
+      ],
+      "expected_keywords": [
+        "registry",
+        "security identifiers"
+      ]
+    },
+    {
+      "id": "sec-37",
+      "category": "identification",
+      "question": "What is weighted average maturity?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/WeightedAverageMaturity"
+      ],
+      "expected_keywords": [
+        "weighted average",
+        "maturities",
+        "mortgage-backed"
+      ]
+    },
+    {
+      "id": "sec-38",
+      "category": "identification",
+      "question": "What is yield in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/Yield"
+      ],
+      "expected_keywords": [
+        "return",
+        "capital investment"
+      ]
+    },
+    {
+      "id": "sec-39",
+      "category": "issuance",
+      "question": "What is an issuer in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Issuer"
+      ],
+      "expected_keywords": [
+        "role",
+        "party",
+        "financial instruments"
+      ]
+    },
+    {
+      "id": "sec-40",
+      "category": "issuance",
+      "question": "What is a prospectus?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/Prospectus"
+      ],
+      "expected_keywords": [
+        "offering document",
+        "securities",
+        "investor"
+      ]
+    },
+    {
+      "id": "sec-41",
+      "category": "issuance",
+      "question": "What is a security underwriter?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityUnderwriter"
+      ],
+      "expected_keywords": [
+        "purchased",
+        "issuer",
+        "distribution"
+      ]
+    },
+    {
+      "id": "sec-42",
+      "category": "issuance",
+      "question": "What is a security underwriting arrangement?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecurityUnderwritingArrangement"
+      ],
+      "expected_keywords": [
+        "underwriting agreement",
+        "investment bank",
+        "issuer"
+      ]
+    },
+    {
+      "id": "sec-43",
+      "category": "issuance",
+      "question": "What is a share issuer?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareIssuer"
+      ],
+      "expected_keywords": [
+        "issuer",
+        "ownership interest"
+      ]
+    },
+    {
+      "id": "sec-44",
+      "category": "issuance",
+      "question": "What is an underwriter?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/Underwriter"
+      ],
+      "expected_keywords": [
+        "financial service provider",
+        "risk",
+        "fee"
+      ]
+    },
+    {
+      "id": "sec-45",
+      "category": "instrument",
+      "question": "What is a debt instrument?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument"
+      ],
+      "expected_keywords": [
+        "financial instrument",
+        "credit agreement",
+        "issuer"
+      ]
+    },
+    {
+      "id": "sec-46",
+      "category": "instrument",
+      "question": "What is an equity instrument?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/EquityInstrument"
+      ],
+      "expected_keywords": [
+        "financial instrument",
+        "ownership interest"
+      ]
+    },
+    {
+      "id": "sec-47",
+      "category": "instrument",
+      "question": "What is a listed security?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/ListedSecurity"
+      ],
+      "expected_keywords": [
+        "registered security",
+        "exchange"
+      ]
+    },
+    {
+      "id": "sec-48",
+      "category": "instrument",
+      "question": "What is a security in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security"
+      ],
+      "expected_keywords": [
+        "financial instrument",
+        "bought",
+        "sold"
+      ]
+    },
+    {
+      "id": "sec-49",
+      "category": "equity",
+      "question": "What is a share in FIBO?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share"
+      ],
+      "expected_keywords": [
+        "financial instrument",
+        "equity ownership",
+        "corporation"
+      ]
+    },
+    {
+      "id": "sec-50",
+      "category": "instrument",
+      "question": "What is a tradable debt instrument?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument"
+      ],
+      "expected_keywords": [
+        "debt instrument",
+        "security",
+        "sold"
+      ]
+    },
+    {
+      "id": "sec-51",
+      "category": "structured",
+      "question": "What is an asset-backed security?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/AssetBackedSecurity"
+      ],
+      "expected_keywords": [
+        "debt instrument",
+        "receivables",
+        "real estate"
+      ]
+    },
+    {
+      "id": "sec-52",
+      "category": "structured",
+      "question": "What is a collateralized debt obligation (CDO)?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/CollateralizedDebtObligations/CollateralizedDebtObligation"
+      ],
+      "expected_keywords": [
+        "structured finance",
+        "portfolio",
+        "fixed income"
+      ]
+    },
+    {
+      "id": "sec-53",
+      "category": "structured",
+      "question": "What is a mortgage-backed security?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/MortgageBackedSecurity"
+      ],
+      "expected_keywords": [
+        "cash flows",
+        "mortgage loans"
+      ]
+    },
+    {
+      "id": "sec-54",
+      "category": "structured",
+      "question": "What is a tranche?",
+      "grounds": [
+        "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/Tranche"
+      ],
+      "expected_keywords": [
+        "segment",
+        "pool",
+        "debt instruments"
+      ]
+    }
+  ]
+}
