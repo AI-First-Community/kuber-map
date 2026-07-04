@@ -69,6 +69,13 @@ the answer on stdout:
 EVAL_LLM_CMD='your-model-cli' python eval/harness.py --adapter llm
 ```
 
+With an OpenAI key, use the bundled stdlib bridge (no extra dependency):
+
+```bash
+export OPENAI_API_KEY=sk-...
+EVAL_LLM_CMD='python eval/openai_cli.py --model gpt-4o-mini' python eval/harness.py --adapter llm
+```
+
 It scores accuracy, hallucination, and the share of answers carrying a valid FIBO citation.
 Target: a meaningful accuracy lift with 100% auditable answers. Write results into
 [`SPIKE_RESULTS.md`](../SPIKE_RESULTS.md).

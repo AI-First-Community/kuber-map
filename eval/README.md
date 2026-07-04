@@ -21,7 +21,9 @@ actually moves the needle, on three axes the product claims:
 
 ```
 make eval                                              # offline: MECHANISM CHECK ONLY
-EVAL_LLM_CMD='my-model-cli' python eval/harness.py --adapter llm   # REAL numbers
+# REAL numbers (OpenAI, via the bundled stdlib bridge):
+export OPENAI_API_KEY=sk-...
+EVAL_LLM_CMD='python eval/openai_cli.py --model gpt-4o-mini' python eval/harness.py --adapter llm
 ```
 
 - **offline** — deterministic, no command/cost. The grounded oracle restates pack-retrieved
