@@ -7,6 +7,9 @@ tags: [CMNS]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A party that can act, such as a company acting through its officers to sign a contract."
+examples_provenance: curated
 relations:
   - {type: has-name, target: "/CMNS/ContextualDesignators/ContextualName.md", provenance: fibo}
 ---

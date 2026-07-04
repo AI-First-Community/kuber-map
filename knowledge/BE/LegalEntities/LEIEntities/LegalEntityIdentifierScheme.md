@@ -7,6 +7,9 @@ tags: [BE, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "The Global LEI System, operated under GLEIF."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/Organizations/OrganizationIdentificationScheme.md", provenance: fibo}
   - {type: defines, target: "/BE/LegalEntities/LEIEntities/LegalEntityIdentifier.md", provenance: fibo}

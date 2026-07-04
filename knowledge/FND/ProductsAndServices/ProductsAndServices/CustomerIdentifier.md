@@ -7,6 +7,9 @@ tags: [FND, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "The unique customer number a bank assigns at onboarding."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Parties/Parties/PartyRoleIdentifier.md", provenance: fibo}
   - {type: identifies, target: "/FND/ProductsAndServices/ProductsAndServices/Customer.md", provenance: fibo}

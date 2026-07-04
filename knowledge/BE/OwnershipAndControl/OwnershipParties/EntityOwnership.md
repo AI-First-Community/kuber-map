@@ -7,6 +7,9 @@ tags: [BE, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A parent company's ownership of a wholly owned subsidiary."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/OwnershipAndControl/Ownership/Ownership.md", provenance: fibo}
   - {type: has-owning-entity, target: "/CMNS/Organizations/LegalPerson.md", provenance: fibo}

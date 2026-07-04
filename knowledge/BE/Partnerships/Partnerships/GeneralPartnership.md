@@ -8,6 +8,9 @@ core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
 detail: "General partnerships are the most basic and common form of partnership world-wide."
+examples:
+  - "A partnership in which all partners share unlimited liability for the firm's debts."
+examples_provenance: curated
 synonyms:
   - "GP"
 relations:

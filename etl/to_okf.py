@@ -157,7 +157,7 @@ def main():
                     default=["curation/loan-origination.json", "curation/kyc.json",
                              "curation/securities.json", "curation/definitions.json",
                              "curation/examples.json", "curation/notes.json",
-                             "curation/securities-examples.json"],
+                             "curation/securities-examples.json", "curation/kyc-examples.json"],
                     help="curation JSON: `core:` stamps core; `definitions:`/`examples:`/`notes:` overlay content")
     args = ap.parse_args()
     keep = set(args.clusters)

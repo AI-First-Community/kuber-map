@@ -7,6 +7,9 @@ tags: [BE, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "An ELF code, such as one identifying the 'private limited company' legal form."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/CodesAndCodeSets/CodeElement.md", provenance: fibo}
   - {type: denotes, target: "/BE/LegalEntities/LEIEntities/EntityLegalForm.md", provenance: fibo}

@@ -8,6 +8,9 @@ core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
 detail: "A business registry may include any government-managed registry for registering a business, such as a state department of corporations in the US, as well as other registries such as a local operating unit (LOU) for registration of legal entity identifiers (LEIs). Any sanctioned registration authority as defined by the Registration Authorities List, published by GLEIF, is a business registration authority in this sense."
+examples:
+  - "A companies registry such as the UK Companies House."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/RegistrationAuthorities/Registrar.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/RegistrationAuthorities/RegistrationAuthority.md", provenance: fibo}

@@ -7,6 +7,9 @@ tags: [FND, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A company that engages an investment adviser to manage its portfolio."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/PartyRole.md", provenance: fibo}
 ---

@@ -7,6 +7,9 @@ tags: [BE, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "Control through the right to appoint a majority of the board of directors."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/OwnershipAndControl/Control/Control.md", provenance: fibo}
   - {type: involves-controlled-thing, target: "/BE/OwnershipAndControl/Executives/BoardMember.md", provenance: fibo}

@@ -8,6 +8,9 @@ core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
 detail: "The definition of mental competence, and potentially of the age of majority, is a function of the situation and law in a given jurisdiction."
+examples:
+  - "An adult of sound mind able to enter a contract, e.g. an 18-year-old account applicant."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/AgentsAndPeople/People/Person.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/Organizations/LegalPerson.md", provenance: fibo}

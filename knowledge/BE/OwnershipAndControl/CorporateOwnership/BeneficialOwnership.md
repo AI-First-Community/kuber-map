@@ -8,6 +8,9 @@ core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
 detail: "Beneficial ownership may be shared among a group of individuals. If a beneficial owner acquires a position of more than 5 percent in the United States, it must file Schedule 13D or 13G under Section 12 of the Securities Exchange Act of 1934."
+examples:
+  - "Ultimate ownership of a company traced through two intermediate holding companies to a person."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/OwnershipAndControl/Ownership/Ownership.md", provenance: fibo}
   - {type: has-owned-asset, target: "/FND/OwnershipAndControl/Ownership/Asset.md", provenance: fibo}

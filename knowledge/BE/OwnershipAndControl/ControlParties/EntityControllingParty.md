@@ -7,6 +7,9 @@ tags: [BE, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A holding company that controls its operating subsidiary."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/OwnershipAndControl/Control/ControllingParty.md", provenance: fibo}
   - {type: is-controlling-party-of, target: "/CMNS/Organizations/LegalEntity.md", provenance: fibo}

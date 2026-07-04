@@ -7,6 +7,9 @@ tags: [FBC, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A retail checking account held by an individual at a bank."
+examples_provenance: curated
 synonyms:
   - "financial service account"
 relations:

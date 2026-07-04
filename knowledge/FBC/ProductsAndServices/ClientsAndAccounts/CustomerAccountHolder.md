@@ -7,6 +7,9 @@ tags: [FBC, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "The customer named as the holder of a deposit account."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FBC/ProductsAndServices/ClientsAndAccounts/AccountHolder.md", provenance: fibo}
   - {type: holds, target: "/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccount.md", provenance: fibo}

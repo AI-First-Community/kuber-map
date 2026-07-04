@@ -7,6 +7,9 @@ tags: [FND, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "The license number on a state-issued driver's license used as identification."
+examples_provenance: curated
 synonyms:
   - "driver's license number"
 relations:

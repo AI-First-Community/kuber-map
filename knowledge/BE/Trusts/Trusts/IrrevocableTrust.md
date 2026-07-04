@@ -8,6 +8,9 @@ core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
 detail: "Irrevocable trusts also offer asset protection from future creditors and lawsuits."
+examples:
+  - "An irrevocable trust whose terms the settlor cannot change once it is established."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/BE/Trusts/Trusts/Trust.md", provenance: fibo}
 ---

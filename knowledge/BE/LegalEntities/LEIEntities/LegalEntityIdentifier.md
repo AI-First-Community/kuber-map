@@ -7,6 +7,9 @@ tags: [BE, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "5493001KJTIIGC8Y1R12, the 20-character LEI of a specific legal entity (ISO 17442)."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/Organizations/OrganizationIdentifier.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/RegistrationAuthorities/RegisteredIdentifier.md", provenance: fibo}

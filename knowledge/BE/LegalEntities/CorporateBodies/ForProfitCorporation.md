@@ -7,6 +7,9 @@ tags: [BE, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A privately held manufacturing company organized to earn profit for its shareholders."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/BE/LegalEntities/CorporateBodies/Corporation.md", provenance: fibo}
   - {type: has-objective, target: "/BE/LegalEntities/LegalPersons/ProfitObjective.md", provenance: fibo}

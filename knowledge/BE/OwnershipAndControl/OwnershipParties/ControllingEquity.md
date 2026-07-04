@@ -7,6 +7,9 @@ tags: [BE, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A 60% equity stake that confers voting control."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Accounting/AccountingEquity/ShareholdersEquity.md", provenance: fibo}
   - {type: confers, target: "/FND/OwnershipAndControl/Control/DeJureControl.md", provenance: fibo}

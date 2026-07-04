@@ -7,6 +7,9 @@ tags: [BE, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "Control established by a shareholders' agreement rather than by share ownership."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/OwnershipAndControl/Control/DeJureControl.md", provenance: fibo}
   - {type: is-conferred-by, target: "/FND/Agreements/Contracts/Contract.md", provenance: fibo}

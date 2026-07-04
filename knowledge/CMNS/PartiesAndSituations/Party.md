@@ -7,6 +7,9 @@ tags: [CMNS]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A person or organization that is party to a contract, such as the customer opening an account."
+examples_provenance: curated
 synonyms:
   - "independent party"
 relations:

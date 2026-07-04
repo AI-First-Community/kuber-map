@@ -1,0 +1,362 @@
+{
+  "_comment": "Curated illustrative examples for the KYC / beneficial-ownership use-case core concepts. Real-world entity-resolution instances (general domain knowledge), not FIBO axioms. Applied by etl/to_okf.py when FIBO supplies none; provenance curated.",
+  "examples": [
+    {
+      "iri": "https://www.omg.org/spec/Commons/PartiesAndSituations/Party",
+      "title": "party",
+      "examples": [
+        "A person or organization that is party to a contract, such as the customer opening an account."
+      ]
+    },
+    {
+      "iri": "https://www.omg.org/spec/Commons/PartiesAndSituations/Agent",
+      "title": "agent",
+      "examples": [
+        "A party that can act, such as a company acting through its officers to sign a contract."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/Person",
+      "title": "person",
+      "examples": [
+        "An individual human being, e.g. Jane Doe, born 12 March 1985."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/LegallyCompetentNaturalPerson",
+      "title": "legally competent natural person",
+      "examples": [
+        "An adult of sound mind able to enter a contract, e.g. an 18-year-old account applicant."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Customer",
+      "title": "customer",
+      "examples": [
+        "An individual or company that holds an account with, or buys services from, a bank."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Client",
+      "title": "client",
+      "examples": [
+        "A company that engages an investment adviser to manage its portfolio."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractParty",
+      "title": "contract party",
+      "examples": [
+        "The borrower and the lender named on a loan agreement."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/PersonName",
+      "title": "person name",
+      "examples": [
+        "'Jane Elizabeth Doe', the legal name recorded on a customer's identity document."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountHolder",
+      "title": "account holder",
+      "examples": [
+        "The named owner of a checking account, e.g. Jane Doe on account 000123456."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccount",
+      "title": "customer account",
+      "examples": [
+        "A retail checking account held by an individual at a bank."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccountHolder",
+      "title": "customer account holder",
+      "examples": [
+        "The customer named as the holder of a deposit account."
+      ]
+    },
+    {
+      "iri": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
+      "title": "legal person",
+      "examples": [
+        "Acme Corporation, an entity that can own assets and enter contracts in its own name."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation",
+      "title": "corporation",
+      "examples": [
+        "Apple Inc., a corporation registered in California."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/ForProfitCorporation",
+      "title": "for profit corporation",
+      "examples": [
+        "A privately held manufacturing company organized to earn profit for its shareholders."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/NotForProfitCorporation",
+      "title": "not-for-profit corporation",
+      "examples": [
+        "A charitable hospital incorporated as a non-profit."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LEIRegisteredEntity",
+      "title": "LEI registered entity",
+      "examples": [
+        "A fund that has obtained a Legal Entity Identifier in order to trade derivatives."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NonGovernmentalOrganization",
+      "title": "non-governmental organization",
+      "examples": [
+        "The International Committee of the Red Cross."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NotForProfitOrganization",
+      "title": "not for profit organization",
+      "examples": [
+        "A community foundation that reinvests any surplus in its mission."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/Partnership",
+      "title": "partnership",
+      "examples": [
+        "A two-partner law firm, Smith & Jones LLP."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/GeneralPartnership",
+      "title": "general partnership",
+      "examples": [
+        "A partnership in which all partners share unlimited liability for the firm's debts."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/Trust",
+      "title": "trust",
+      "examples": [
+        "A family trust holding property for the benefit of the settlor's children."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/LivingTrust",
+      "title": "living trust",
+      "examples": [
+        "A revocable living trust created to hold a person's assets during their lifetime."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/IrrevocableTrust",
+      "title": "irrevocable trust",
+      "examples": [
+        "An irrevocable trust whose terms the settlor cannot change once it is established."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Ownership",
+      "title": "ownership",
+      "examples": [
+        "A shareholder's ownership of 100 shares in a company."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/OwnershipParties/EntityOwnership",
+      "title": "entity ownership",
+      "examples": [
+        "A parent company's ownership of a wholly owned subsidiary."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/OwnershipAndControl/OwnershipControlSituation",
+      "title": "ownership control situation",
+      "examples": [
+        "An individual owning 40% of a company's shares and also holding board control."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwner",
+      "title": "beneficial owner",
+      "examples": [
+        "The individual who ultimately owns 30% of a company through a chain of holding companies."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwnership",
+      "title": "beneficial ownership",
+      "examples": [
+        "Ultimate ownership of a company traced through two intermediate holding companies to a person."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/Control",
+      "title": "control",
+      "examples": [
+        "A shareholder's ability to direct the decisions of a company."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeFactoControl",
+      "title": "de facto control",
+      "examples": [
+        "Control exercised in practice, e.g. directing a company despite holding under 50% of its shares."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeJureControl",
+      "title": "de jure control",
+      "examples": [
+        "Control by legal right, e.g. holding more than 50% of the voting shares."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ControllingParty",
+      "title": "controlling party",
+      "examples": [
+        "The majority shareholder that directs a subsidiary's board."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/EntityControllingParty",
+      "title": "entity controlling party",
+      "examples": [
+        "A holding company that controls its operating subsidiary."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/ControlledParty",
+      "title": "controlled party",
+      "examples": [
+        "A subsidiary controlled by its parent company."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/MajorityControllingParty",
+      "title": "majority controlling party",
+      "examples": [
+        "A shareholder holding 55% of the voting rights."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/OwnershipParties/ControllingEquity",
+      "title": "controlling equity",
+      "examples": [
+        "A 60% equity stake that confers voting control."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/BoardCompositionControl",
+      "title": "board composition control",
+      "examples": [
+        "Control through the right to appoint a majority of the board of directors."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/DeJureControllingInterestParty",
+      "title": "de jure controlling interest party",
+      "examples": [
+        "A shareholder with a legal majority of the voting rights."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/ContractualControl",
+      "title": "contractual control",
+      "examples": [
+        "Control established by a shareholders' agreement rather than by share ownership."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "title": "legal entity identifier",
+      "examples": [
+        "5493001KJTIIGC8Y1R12, the 20-character LEI of a specific legal entity (ISO 17442)."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifierScheme",
+      "title": "legal entity identifier scheme",
+      "examples": [
+        "The Global LEI System, operated under GLEIF."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/EntityLegalFormIdentifier",
+      "title": "entity legal form identifier",
+      "examples": [
+        "An ELF code, such as one identifying the 'private limited company' legal form."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCode",
+      "title": "business identifier code",
+      "examples": [
+        "BOFAUS3N, the SWIFT BIC for Bank of America."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/IdentityDocument",
+      "title": "identity document",
+      "examples": [
+        "A passport or national ID card presented at account onboarding."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DriversLicenseIdentifier",
+      "title": "driver's license identifier",
+      "examples": [
+        "The license number on a state-issued driver's license used as identification."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/CustomerIdentifier",
+      "title": "customer identifier",
+      "examples": [
+        "The unique customer number a bank assigns at onboarding."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/ClientIdentifier",
+      "title": "client identifier",
+      "examples": [
+        "A reference code identifying a client in an adviser's records."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority",
+      "title": "business registration authority",
+      "examples": [
+        "A companies registry such as the UK Companies House."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry",
+      "title": "legal entity identifier registry",
+      "examples": [
+        "A GLEIF-accredited Local Operating Unit that issues LEIs."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegisterIdentifier",
+      "title": "business register identifier",
+      "examples": [
+        "A company registration number issued by a national business registry."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/RegistrationAuthorityCode",
+      "title": "registration authority code",
+      "examples": [
+        "An RA code drawn from the ISO 20275 registration-authorities list."
+      ]
+    }
+  ]
+}

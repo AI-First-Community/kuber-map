@@ -7,6 +7,9 @@ tags: [FND, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "An individual human being, e.g. Jane Doe, born 12 March 1985."
+examples_provenance: curated
 synonyms:
   - "natural person"
 relations:

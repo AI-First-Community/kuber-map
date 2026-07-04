@@ -8,6 +8,9 @@ core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
 detail: "To have legal personality means to be capable of having legal rights and duties within a certain legal system, such as to enter into contracts, sue, and be sued. Legal personality is a prerequisite to legal capacity, the ability of any legal person to amend (enter into, transfer, etc.) rights and obligations."
+examples:
+  - "Acme Corporation, an entity that can own assets and enter contracts in its own name."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/Party.md", provenance: fibo}
   - {type: is-identified-by, target: "/BE/LegalEntities/LEIEntities/LegalEntityIdentifier.md", provenance: fibo}

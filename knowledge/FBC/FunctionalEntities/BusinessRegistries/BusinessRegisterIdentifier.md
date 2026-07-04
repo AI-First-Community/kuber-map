@@ -7,6 +7,9 @@ tags: [FBC, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A company registration number issued by a national business registry."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/Identifiers/Identifier.md", provenance: fibo}
   - {type: identifies, target: "/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistry.md", provenance: fibo}

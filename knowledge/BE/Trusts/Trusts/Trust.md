@@ -7,6 +7,9 @@ tags: [BE, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A family trust holding property for the benefit of the settlor's children."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/BE/LegalEntities/LegalPersons/BusinessEntity.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/Organizations/LegalEntity.md", provenance: fibo}

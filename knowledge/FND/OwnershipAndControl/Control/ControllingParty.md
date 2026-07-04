@@ -7,6 +7,9 @@ tags: [FND, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "The majority shareholder that directs a subsidiary's board."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/PartiesAndSituations/Actor.md", provenance: fibo}
   - {type: is-controlling-party-in, target: "/FND/OwnershipAndControl/Control/Control.md", provenance: fibo}

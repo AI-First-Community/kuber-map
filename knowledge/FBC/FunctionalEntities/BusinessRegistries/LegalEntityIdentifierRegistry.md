@@ -7,6 +7,9 @@ tags: [FBC, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A GLEIF-accredited Local Operating Unit that issues LEIs."
+examples_provenance: curated
 synonyms:
   - "LEI registry"
 relations:

@@ -7,6 +7,9 @@ tags: [BE, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A shareholder holding 55% of the voting rights."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/BE/OwnershipAndControl/ControlParties/EntityControllingParty.md", provenance: fibo}
 ---

@@ -7,6 +7,9 @@ tags: [BE, Release]
 core: true
 use_cases:
   - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A subsidiary controlled by its parent company."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/OwnershipAndControl/Control/ControlledThing.md", provenance: fibo}
   - {type: is-played-by, target: "/CMNS/PartiesAndSituations/Party.md", provenance: fibo}
