@@ -4,102 +4,137 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bodhi Map for FIBO — Curated Financial Ontology Graph</title>
+  <!-- PWA -->
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#0e1a13" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Bodhi FIBO" />
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
   <link rel="stylesheet" href="css/style.css" />
+  <!-- set theme before paint to avoid flash -->
   <script>
-    (function () { try { var t = localStorage.getItem('bodhi-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {} })();
+    (function () {
+      try { var t = localStorage.getItem('bodhi-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+    })();
   </script>
-  <style>
-    /* FIBO-specific supplements on top of the vendored Bodhi stylesheet. */
-    #cy { position: fixed; inset: 56px 0 0 0; }
-    .fibo-caption { font: 600 11px/1 Manrope, system-ui, sans-serif; opacity: .6; margin-right: 6px; }
-    #stat { font: 500 12px/1 Manrope, system-ui, sans-serif; opacity: .7; margin-left: auto; padding-right: 10px; }
-    .level-chip { cursor: pointer; }
-    #coreToggle { cursor: pointer; }
-    /* detail panel */
-    .panel { position: fixed; top: 68px; right: 12px; width: min(380px, 92vw); max-height: calc(100vh - 88px);
-      overflow: auto; background: var(--panel-bg, #0f1c16); color: var(--panel-fg, #eaf3ee);
-      border: 1px solid rgba(120,140,130,.28); border-radius: 14px; padding: 16px 18px;
-      box-shadow: 0 18px 44px rgba(0,0,0,.45); transform: translateX(115%); transition: transform .28s ease; z-index: 60; }
-    .panel.open { transform: none; }
-    .panel-close { position: absolute; top: 10px; right: 12px; background: none; border: 0; color: inherit; font-size: 16px; cursor: pointer; opacity: .6; }
-    .panel h2 { margin: 6px 0 8px; font-size: 19px; }
-    .panel h3 { margin: 16px 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; opacity: .7; }
-    .panel-tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 999px;
-      background: color-mix(in srgb, var(--c) 22%, transparent); color: var(--c); border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); }
-    .panel-def { font-size: 13.5px; line-height: 1.5; margin: 6px 0; }
-    .panel-cite { font-size: 11px; word-break: break-all; opacity: .85; }
-    .panel-cite span { opacity: .6; }
-    .panel-cite a { color: #6ee7b7; }
-    .rel-list { list-style: none; padding: 0; margin: 0; font-size: 12.5px; }
-    .rel-list li { padding: 3px 0; border-bottom: 1px solid rgba(120,140,130,.12); }
-    .muted { opacity: .55; font-size: 12px; }
-    .prov { font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 999px; }
-    .prov-curated { background: rgba(225,29,72,.16); color: #fb7185; border: 1px solid rgba(225,29,72,.5); }
-    /* legend dock items */
-    #legend { display: flex; flex-direction: column; gap: 4px; }
-    .leg-item { display: flex; align-items: center; gap: 8px; background: none; border: 0; color: inherit;
-      font: 500 12.5px/1 Manrope, system-ui, sans-serif; cursor: pointer; padding: 4px 2px; text-align: left; opacity: .55; }
-    .leg-item.active { opacity: 1; }
-    .leg-item .dot { width: 11px; height: 11px; border-radius: 50%; flex: 0 0 auto; }
-    .leg-row { display: flex; align-items: center; gap: 8px; font-size: 12px; padding: 3px 0; }
-    .leg-row .line { width: 22px; height: 0; border-top: 2px solid; flex: 0 0 auto; }
-    .leg-row .line.dashed { border-top-style: dashed; }
-    .search-results { display: none; }
-    .search-results.open { display: block; }
-    .sr { display: flex; justify-content: space-between; gap: 10px; padding: 7px 10px; cursor: pointer; }
-    .sr:hover { background: rgba(120,140,130,.12); }
-    .sr span { opacity: .55; font-size: 11px; }
-  </style>
 </head>
 <body>
+  <!-- Top bar -->
   <header class="topbar">
-    <a class="brand" href="https://github.com/AI-First-Community/Bodhi-Map-For-FinTech" aria-label="Bodhi Map for FIBO">
-      <span class="brand-text"><span class="brand-name">Bodhi&nbsp;Map for FIBO</span><span class="sub">audit-ready financial ontology</span></span>
-    </a>
+    <a class="brand" href="https://github.com/AI-First-Community/Bodhi-Map-For-FinTech" data-tip="Bodhi Map for FIBO — project home" aria-label="Bodhi Map for FIBO — project home"><span class="om" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/><path d="M12 6.2V2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g stroke="#0a3f24" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round"><path d="M12 7.3V20"/><path d="M12 10.1 8.9 8.3"/><path d="M12 10.1 15.1 8.3"/><path d="M12 12.9 8.6 11.3"/><path d="M12 12.9 15.4 11.3"/><path d="M12 15.6 9.2 14.5"/><path d="M12 15.6 14.8 14.5"/></g></svg></span><span class="brand-text"><span class="brand-name">Bodhi&nbsp;Map for FIBO</span><span class="sub">audit-ready financial ontology</span></span></a>
 
     <div class="search-wrap">
       <input id="search" type="text" placeholder="Search concepts…  (f)" autocomplete="off" aria-label="Search concepts" />
       <div id="searchResults" class="search-results" role="listbox"></div>
     </div>
 
-    <div class="level-bar" role="group" aria-label="Filter by FIBO maturity">
-      <span class="fibo-caption">Maturity</span>
-      <button class="level-chip active" data-level="1" aria-label="Toggle Release"><span class="lbl">Release</span></button>
-      <button class="level-chip active" data-level="2" aria-label="Toggle Provisional"><span class="lbl">Provisional</span></button>
-      <button class="level-chip active" data-level="3" aria-label="Toggle Informative"><span class="lbl">Informative</span></button>
+    <div class="level-bar" role="group" aria-label="Filter concepts by FIBO maturity">
+      <span class="level-caption">Maturity</span>
+      <button class="level-chip active" data-level="1" data-tip="FIBO Release — production maturity" aria-label="Toggle Release"><span class="lbl">Release</span></button>
+      <button class="level-chip active" data-level="2" data-tip="FIBO Provisional — under review" aria-label="Toggle Provisional"><span class="lbl">Provisional</span></button>
+      <button class="level-chip active" data-level="3" data-tip="FIBO Informative / unspecified" aria-label="Toggle Informative"><span class="lbl">Informative</span></button>
+      <button class="new-chip" id="newChip" style="display:none" aria-label="unused"><span class="lbl">New</span><span class="new-count">0</span></button>
     </div>
 
     <div class="toolbar">
-      <button class="btn primary" id="coreToggle">Show full ontology</button>
-      <button class="btn ghost" id="fitBtn">Fit</button>
-      <button class="btn ghost" id="relayoutBtn">Re-layout</button>
-      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+      <div class="tool-group">
+        <button class="btn primary" id="coreToggle" data-tip="Toggle between the curated core (71) and the full ontology (1,284)" aria-label="Toggle core / full ontology">Show full ontology</button>
+        <button class="btn" id="startPath" data-tip="Guided tour — walk the loan-origination underwriting arc" aria-label="Guided tour">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>
+          <span class="label">Guided tour</span>
+        </button>
+        <!-- kept in the DOM (graph.js wires them) but not applicable to FIBO -->
+        <button class="btn" id="startDecision" style="display:none" aria-hidden="true"></button>
+        <button class="btn" id="mapBtn" style="display:none" aria-hidden="true"></button>
+      </div>
+
+      <span class="tool-divider" aria-hidden="true"></span>
+
+      <div class="tool-group">
+        <button class="btn ghost icon-only" id="fitBtn" data-tip="Fit graph to screen" aria-label="Fit graph to screen">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+          <span class="label">Fit</span>
+        </button>
+        <button class="btn ghost icon-only" id="relayoutBtn" data-tip="Recompute layout" aria-label="Re-layout graph">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg>
+          <span class="label">Re-layout</span>
+        </button>
+        <button class="btn ghost icon-only" id="exportBtn" data-tip="Export the map as one agent-ready grounding file (OKF, with FIBO IRI citations)" aria-label="Export grounding bundle for agents">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span class="label">For agents</span>
+        </button>
+        <button class="btn ghost icon-only" id="compareBtn" style="display:none" aria-hidden="true"></button>
+      </div>
+
+      <span class="tool-divider" aria-hidden="true"></span>
+
+      <button class="icon-btn" id="helpBtn" data-tip="Help & welcome" aria-label="Help and welcome">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </button>
+      <button class="icon-btn" id="themeToggle" data-tip="Toggle light / dark theme" aria-label="Toggle theme"></button>
     </div>
-    <span id="stat"></span>
   </header>
 
+  <!-- Graph -->
   <div id="cy"></div>
 
+  <!-- Minimap (orientation) -->
+  <div id="minimap" class="minimap" data-tip="Minimap — click/drag to pan · m to hide" aria-hidden="true">
+    <canvas id="minimapCanvas"></canvas>
+  </div>
+
+  <!-- Legend dock (collapsible) -->
+  <button class="icon-btn dock-toggle" id="dockToggle" data-tip="Show legend & filters" aria-label="Show legend">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+  </button>
   <aside class="dock" id="dock">
+    <div class="dock-head">
+      <span class="dock-title">Legend &amp; filters</span>
+      <button class="dock-collapse" id="dockCollapse" data-tip="Collapse" aria-label="Collapse legend">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+    </div>
     <div class="legend-section">
-      <h3>FIBO domains <span class="h3-hint">click to filter</span></h3>
+      <h3>FIBO domains <span class="h3-hint">tap ● to hide · name to zoom</span></h3>
       <div id="legend"></div>
     </div>
     <div class="legend-section">
-      <h3>Relationships</h3>
+      <h3>Relationships <span class="h3-hint">dashed = curated bridge</span></h3>
       <div id="relLegend"></div>
     </div>
   </aside>
 
+  <!-- Detail panel -->
   <aside id="panel" class="panel" aria-live="polite"></aside>
 
-  <div class="hint">Curated <b>core</b> view is the default · toggle “Show full ontology” for all 1,284 concepts · click a node for its FIBO IRI citation · <kbd>f</kbd> search · <kbd>Esc</kbd> close</div>
+  <!-- Guided path -->
+  <div id="guidedBox" class="float-box"></div>
+  <!-- Decision wizard -->
+  <div id="decisionBox" class="float-box"></div>
+
+  <!-- Welcome / onboarding modal -->
+  <div id="welcomeModal" class="modal" role="dialog" aria-modal="true" aria-label="Welcome to Bodhi Map for FIBO">
+    <div class="modal-card welcome-card" id="welcomeCard"></div>
+  </div>
+
+  <!-- Compare modal -->
+  <div id="compareModal" class="modal" role="dialog" aria-modal="true" aria-label="Compare techniques">
+    <div class="modal-card" id="compareCard"></div>
+  </div>
+
+  <!-- My Map (build your own learning map) -->
+  <div id="mapModal" class="modal" role="dialog" aria-modal="true" aria-label="Build your learning map">
+    <div class="modal-card" id="mapCard"></div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <div class="hint">Curated <b>core</b> is the default — “Show full ontology” for all 1,284 · click a node for its FIBO IRI citation · <kbd>f</kbd> search · <kbd>t</kbd> theme · <kbd>m</kbd> minimap · <kbd>?</kbd> help · <kbd>Esc</kbd> close</div>
 
   <script src="js/cytoscape.min.js"></script>
+  <!-- fcose layout extension (offline) — load order: layout-base → cose-base → fcose -->
   <script src="js/layout-base.js"></script>
   <script src="js/cose-base.js"></script>
   <script src="js/cytoscape-fcose.js"></script>
