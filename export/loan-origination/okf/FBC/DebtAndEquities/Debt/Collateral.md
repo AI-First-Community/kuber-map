@@ -1,0 +1,17 @@
+---
+type: FIBO Class
+title: "collateral"
+description: "something pledged as security to ensure fulfillment of an obligation to another party, to lend money, extend credit, or provision securities"
+resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Collateral
+tags: [FBC, Release]
+core: true
+relations:
+  - {type: is-a, target: "/CMNS/PartiesAndSituations/Undergoer.md", provenance: fibo}
+  - {type: is-collateralization-of, target: "/FND/OwnershipAndControl/Ownership/Asset.md", provenance: fibo}
+---
+
+something pledged as security to ensure fulfillment of an obligation to another party, to lend money, extend credit, or provision securities
+
+### Relationships
+- is-a: [Undergoer](/CMNS/PartiesAndSituations/Undergoer.md)
+- is-collateralization-of: [Asset](/FND/OwnershipAndControl/Ownership/Asset.md)

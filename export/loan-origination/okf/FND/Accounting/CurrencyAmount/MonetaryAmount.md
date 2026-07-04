@@ -1,0 +1,17 @@
+---
+type: FIBO Class
+title: "monetary amount"
+description: "measure that is an amount of money specified in monetary units"
+resource: https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount
+tags: [FND, Release]
+core: true
+relations:
+  - {type: is-a, target: "/CMNS/QuantitiesAndUnits/ScalarQuantityValue.md", provenance: fibo}
+  - {type: has-currency, target: "/FND/Accounting/CurrencyAmount/Currency.md", provenance: fibo}
+---
+
+measure that is an amount of money specified in monetary units
+
+### Relationships
+- is-a: [ScalarQuantityValue](/CMNS/QuantitiesAndUnits/ScalarQuantityValue.md)
+- has-currency: [Currency](/FND/Accounting/CurrencyAmount/Currency.md)

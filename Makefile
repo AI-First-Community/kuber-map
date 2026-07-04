@@ -2,7 +2,7 @@ PY := ./.venv/bin/python
 PIP := ./.venv/bin/pip
 DOMAINS ?= FND LOAN FBC BE
 
-.PHONY: setup fibo extract build curate validate test lint attribution check all clean
+.PHONY: setup fibo extract build curate pack validate test lint attribution check all clean
 
 setup:
 	python3 -m venv .venv
@@ -24,6 +24,9 @@ curate:
 	$(PY) etl/nominate_core.py --in out/intermediate.json --out curation/loan-origination.json
 	$(PY) etl/bridges.py --in out/intermediate.json --bundle knowledge
 	$(MAKE) build
+
+pack:
+	$(PY) etl/export_pack.py --use-case loan-origination
 
 validate:
 	$(PY) etl/validate.py --bundle knowledge
