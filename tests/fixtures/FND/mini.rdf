@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:av="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/">
+
+  <owl:Ontology rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Mini/Mini/">
+    <av:hasMaturityLevel rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Release"/>
+  </owl:Ontology>
+
+  <owl:ObjectProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Mini/Mini/relatesTo">
+    <rdfs:label>relates to</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Mini/Mini/Thing">
+    <rdfs:label>thing</rdfs:label>
+    <skos:definition>a thing</skos:definition>
+  </owl:Class>
+
+  <!-- SpecialThing: named superclass (is-a) + a typed relation hidden in an owl:Restriction
+       whose filler is a cross-cluster Commons (CMNS) class. This is the crux the extractor must crack. -->
+  <owl:Class rdf:about="https://spec.edmcouncil.org/fibo/ontology/FND/Mini/Mini/SpecialThing">
+    <rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Mini/Mini/Thing"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Mini/Mini/relatesTo"/>
+        <owl:someValuesFrom rdf:resource="https://www.omg.org/spec/Commons/PartiesAndSituations/Party"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>special thing</rdfs:label>
+    <skos:definition>a special thing</skos:definition>
+  </owl:Class>
+
+</rdf:RDF>

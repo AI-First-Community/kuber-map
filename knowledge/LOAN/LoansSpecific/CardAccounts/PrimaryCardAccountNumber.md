@@ -1,0 +1,16 @@
+---
+type: FIBO Class
+title: "primary card account number"
+description: "composite identifier of 14 or 16 digits embossed on a bank or payment card and encoded in the card's magnetic strip"
+resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/CardAccounts/PrimaryCardAccountNumber
+tags: [LOAN, Release]
+relations:
+  - {type: identifies, target: "/LOAN/LoansSpecific/CardAccounts/CardAccount.md", provenance: fibo}
+  - {type: is-a, target: "/FBC/ProductsAndServices/ClientsAndAccounts/AccountIdentifier.md", provenance: fibo}
+---
+
+composite identifier of 14 or 16 digits embossed on a bank or payment card and encoded in the card's magnetic strip
+
+### Relationships
+- identifies: [CardAccount](/LOAN/LoansSpecific/CardAccounts/CardAccount.md)
+- is-a: [AccountIdentifier](/FBC/ProductsAndServices/ClientsAndAccounts/AccountIdentifier.md)

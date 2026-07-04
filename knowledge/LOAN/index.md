@@ -1,0 +1,181 @@
+# LOAN
+
+- [HMDA covered loan contract](RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract.md) — a closed-end mortgage loan or open-end line of credit that is not an excluded transaction for HMDA reporting under US se
+- [HMDA disposition](RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Disposition.md) — a type of action taken regarding an application for a HMDA covered loan
+- [HMDA pre-approval request](RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-PreApprovalRequest.md) — a request for pre-approval of a home purchase loan up to a certain amount, and subject to certain non-credit related con
+- [HMDA report](RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report.md) — a report prepared to satisfy HMDA regulatory reporting requirements as described US section 1003
+- [Nationwide Mortgage Licensing System and Registry Identifier](RealEstateLoans/MortgageOrigination/NMLSR-ID.md) — the number permanently assigned by the Nationwide Mortgage Licensing System and Registry (NMLS) for each company, branch
+- [all borrowers' monthly income](LoansGeneral/LoanApplications/AllBorrowersMonthlyIncome.md) — total monthly qualifying income for all borrowers on the loan
+- [amortization type](RealEstateLoans/MortgageOrigination/AmortizationType.md) — classifier of amortization algorithms
+- [assessment boundary](LoansSpecific/GreenLoans/AssessmentBoundary.md) — defined scope, limits, and criteria used to determine what is included or excluded in an evaluation, analysis, or measur
+- [auto loan purpose](LoansSpecific/LoanProducts/AutoLoanPurpose.md) — 
+- [automated underwriting system](RealEstateLoans/MortgageOrigination/AutomatedUnderwritingSystem.md) — software system that collects the information necessary to approve a loan application and supports a mortgage lender's a
+- [borrower assessment](LoansGeneral/LoanApplications/BorrowerAssessment.md) — assessment report detailing information about the borrower and their credit history that may be relevant to the loan app
+- [borrower data protection requirement](LoansGeneral/LoansRegulatory/BorrowerDataProtectionRequirement.md) — 
+- [borrower disclosure requirement](LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement.md) — 
+- [borrower monthly income](LoansGeneral/LoanApplications/BorrowerMonthlyIncome.md) — total monthly qualifying income of a potential borrower
+- [borrower right](LoansGeneral/LoansRegulatory/BorrowerRight.md) — 
+- [bridging loan purpose](LoansSpecific/LoanProducts/BridgingLoanPurpose.md) — 
+- [card account](LoansSpecific/CardAccounts/CardAccount.md) — account whose terms and conditions are defined in a card agreement that is represented by a payment card
+- [card authentication value](LoansSpecific/CardAccounts/CardAuthenticationValue.md) — card verification value specifically for JCB payment cards
+- [card authentication value 2](LoansSpecific/CardAccounts/CardAuthenticationValue2.md) — card verification value specifically for JCB payment cards
+- [card expiration date](LoansSpecific/CardAccounts/CardExpirationDate.md) — date on which a given payment card expires
+- [card identification number](LoansSpecific/CardAccounts/CardIdentificationNumber.md) — card verification value specifically for American Express and Discover payment cards
+- [card product](LoansSpecific/CardAccounts/CardProduct.md) — financial product involving the issuance of credit, debit, or other payment cards
+- [card security code](LoansSpecific/CardAccounts/CardSecurityCode.md) — card verification value specifically for American Express payment cards
+- [card validation code](LoansSpecific/CardAccounts/CardValidationCode.md) — card verification code specifically for Mastercard payment cards
+- [card validation code 2](LoansSpecific/CardAccounts/CardValidationCode2.md) — card verification value specifically for Mastercard payment cards
+- [card verification code or value](LoansSpecific/CardAccounts/CardVerificationCodeValue.md) — code that specifies either (1) magnetic-stripe data, or (2) printed security features that are used to protect data inte
+- [card verification value](LoansSpecific/CardAccounts/CardVerificationValue.md) — card verification value specifically for Visa and Discover payment cards
+- [card verification value 2](LoansSpecific/CardAccounts/CardVerificationValue2.md) — card verification value specifically for Visa payment cards
+- [cardholder](LoansSpecific/CardAccounts/Cardholder.md) — account holder to whom a payment card is issued
+- [cash-out status](RealEstateLoans/MortgageOrigination/CashOutStatus.md) — classifier indicating the extent to which funds are released to the borrower on a new loan origination that refinances a
+- [charge category](RealEstateLoans/MortgageOrigination/ChargeCategory.md) — Examples include closing costs, interest, taxes, and other service-related fees
+- [closed-end credit](LoansGeneral/Loans/ClosedEndCredit.md) — credit agreement in which the loan principal cannot be increased after funds are dispersed in full when the loan closes
+- [closed-end mortgage loan](RealEstateLoans/Mortgages/ClosedEndMortgageLoan.md) — loan secured by real estate with no ability for the borrower to receive additional funds under the loan at a later date
+- [closed-end reverse mortgage](RealEstateLoans/Mortgages/ClosedEndReverseMortgage.md) — reverse mortgage that provides a lump sum payment to the borrower at closing, with no ability for the borrower to receiv
+- [co-maker](LoansGeneral/Loans/Comaker.md) — party that signs a borrower's promissory note, providing additional security and potentially improving the quality of th
+- [collateral valuation](LoansGeneral/LoanEvents/CollateralValuation.md) — assessment activity resulting in the valuation of real property as collateral
+- [collateralized loan](LoansGeneral/Loans/CollateralizedLoan.md) — secured loan that is secured with cash or other acceptable collateral (real property, securities or other assets) provid
+- [combined loan-to-value ratio](LoansGeneral/Loans/CombinedLoanToValueRatio.md) — ratio of the total amount of debt that is secured by the asset(s) and the appraised value of the asset(s) securing the f
+- [commercial credit card agreement](LoansSpecific/CardAccounts/CommercialCreditCardAgreement.md) — credit card agreement for a card issued to, or in conjunction with, a formal organization, such as a small business, mid
+- [commercial loan](LoansSpecific/CommercialLoans/CommercialLoan.md) — loan extended to a corporation, commercial enterprise, joint venture, or other organization as opposed to a consumer
+- [construction loan](RealEstateLoans/ConstructionLoans/ConstructionLoan.md) — loan covering construction and development costs, secured by a mortgage on the property financed
+- [construction loan purpose](LoansSpecific/LoanProducts/ConstructionLoanPurpose.md) — 
+- [construction type](RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/ConstructionType.md) — particular kind of construction
+- [consumer credit card agreement](LoansSpecific/CardAccounts/ConsumerCreditCardAgreement.md) — credit card agreement for a card issued for household, family, or other personal expenditures that is accessed by a borr
+- [consumer credit equal treatment requirement](LoansGeneral/LoansRegulatory/ConsumerCreditEqualTreatmentRequirement.md) — 
+- [consumer credit protection law](LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw.md) — 
+- [consumer credit reference agency](LoansGeneral/LoansRegulatory/ConsumerCreditReferenceAgency.md) — Applicable regulations: vary by jurisdiciton
+- [consumer credit requirement](LoansGeneral/LoansRegulatory/ConsumerCreditRequirement.md) — Requirement set out on the lender about how they must treat the appliction to a loan
+- [consumer loan](LoansSpecific/ConsumerLoans/ConsumerLoan.md) — loan to one or more individuals for household, family, or other personal expenditures, excluding mortgages and student l
+- [consumer protection agency](LoansGeneral/LoansRegulatory/ConsumerProtectionAgency.md) — Some agency tasked with regulating consumer protection in some jurisdiction
+- [consumer protection law](LoansGeneral/LoansRegulatory/ConsumerProtectionLaw.md) — 
+- [consumer right](LoansGeneral/LoansRegulatory/ConsumerRight.md) — 
+- [court judgment](LoansGeneral/LoanEvents/CourtJudgment.md) — decision by a court or other tribunal that resolves a controversy and determines the rights and obligations of the parti
+- [credit card](LoansSpecific/CardAccounts/CreditCard.md) — card issued by a financial service provider that enables the cardholder to borrow funds
+- [credit card account](LoansSpecific/CardAccounts/CreditCardAccount.md) — card account whose terms and conditions are defined in a credit card agreement that is represented by a credit card
+- [credit card agreement](LoansSpecific/CardAccounts/CreditCardAgreement.md) — account-specific credit facility that specifies the terms and conditions under which the credit card is offered to the c
+- [credit card network](LoansSpecific/CardAccounts/CreditCardNetwork.md) — classifier for the network that authorizes, processes, and sets the terms of credit card transactions, as well as transf
+- [credit card product](LoansSpecific/CardAccounts/CreditCardProduct.md) — card product allowing the holder to purchase goods or services on credit
+- [credit card receivable purpose](LoansSpecific/LoanProducts/CreditCardReceivablePurpose.md) — 
+- [credit reference agency requirements](LoansGeneral/LoansRegulatory/CreditReferenceAgencyRequirements.md) — REquirements other than data protection, governing what a credit reference agency can or cannot do
+- [credit risk assessment](LoansGeneral/LoanApplications/CreditRiskAssessment.md) — risk assessment that focuses on determining the likelihood of a potential borrower repaying a loan
+- [data protection requirement](LoansGeneral/LoansRegulatory/DataProtectionRequirement.md) — Requirements defining how data about individuals is held
+- [debit card](LoansSpecific/CardAccounts/DebitCard.md) — payment card issued by a financial service provider that enables the cardholder to access funds in a demand deposit acco
+- [debit card account](LoansSpecific/CardAccounts/DebitCardAccount.md) — card account that is represented by a one or more debit cards
+- [debit card product](LoansSpecific/CardAccounts/DebitCardProduct.md) — card product card typically provided by a depository institution allowing the holder to transfer money electronically to
+- [disclosure requirement](LoansGeneral/LoansRegulatory/DisclosureRequirement.md) — Requirement for disclosure to borrowers or potential borrowers
+- [dwelling capacity](RealEstateLoans/MortgageOrigination/DwellingCapacity.md) — classifier indicating how many dwellings some property has
+- [environmental program](LoansSpecific/GreenLoans/EnvironmentalProgram.md) — broad scale initiative, activity, or investment aimed at improving environmental sustainability, reducing ecological har
+- [environmental project](LoansSpecific/GreenLoans/EnvironmentalProject.md) — specific initiative, activity, or investment aimed at improving environmental sustainability, reducing ecological harm, 
+- [equal treatment right](LoansGeneral/LoansRegulatory/EqualTreatmentRight.md) — The right to equal treatment under the law
+- [ethnicity](RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/Ethnicity.md) — category based on a cultural factors, including nationality, regional culture, ancestry, and language
+- [good faith estimate](LoansGeneral/LoansRegulatory/GoodFaithEstimate.md) — GFE - representation by the lender on the costs and implications of settlement (early termination) of the loan
+- [government-sponsored loan](RealEstateLoans/MortgageOrigination/GovernmentSponsoredLoan.md) — 
+- [green loan](LoansSpecific/GreenLoans/GreenLoan.md) — credit agreement and/or contingent facility (such as a bonding line, guarantee line or letter of credit) made available 
+- [green project](LoansSpecific/GreenLoans/GreenProject.md) — project that contributes to environmental sustainability by addressing climate change, conserving natural resources, red
+- [green project use of proceeds provision](LoansSpecific/GreenLoans/GreenProjectUseOfProceedsProvision.md) — use of proceeds provision specifying that funds obtained through financing, such as through a credit agreement, offering
+- [guaranteed loan](LoansGeneral/Loans/GuaranteedLoan.md) — loan that is secured with respect to repayment of principal and interest by guaranty
+- [home equity line of credit](LoansSpecific/ConsumerLoans/HomeEquityLineOfCredit.md) — line of credit granted to a homeowner secured by the equity value in a borrower's home or other property
+- [home equity loan purpose](LoansSpecific/LoanProducts/HomeEquityLoanPurpose.md) — 
+- [how submitted](RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HowSubmitted.md) — category indicating whether the applicant or borrower submitted the application for the covered loan directly to the rep
+- [income verification report](LoansGeneral/LoanApplications/IncomeVerificationReport.md) — report providing the methodology and supporting documentation used to verify the borrower's income
+- [individual payment transaction](LoansGeneral/Loans/IndividualPaymentTransaction.md) — actual payment of principal, interest, fees, or other related amounts towards fulfillment of a debt obligation
+- [individual person credit rating](LoansGeneral/LoanApplications/IndividualPersonCreditRating.md) — credit rating that provides an opinion of the creditworthiness of a person
+- [information right](LoansGeneral/LoansRegulatory/InformationRight.md) — The right to some information in some context, for example when purchasing some product
+- [issuing financial institution](LoansSpecific/CardAccounts/IssuingFinancialInstitution.md) — issuer and financial services provider that issues payment cards or performs, facilitates, or supports issuing services 
+- [legal proceeding](LoansGeneral/LoanEvents/LegalProceeding.md) — legal step or action taken at the direction of, or by the authority of, a court or agency
+- [lender lien position](LoansGeneral/Loans/LenderLienPosition.md) — classifier indicating whether the lender has the primary lien position with respect to an asset used as collateral for t
+- [lender right](LoansGeneral/LoansRegulatory/LenderRight.md) — Rights on the lender to protect them against loss
+- [line item](LoansSpecific/LoanProducts/LineItem.md) — description of a product or service including its unit cost, number of units and total cost
+- [loan](LoansGeneral/Loans/Loan.md) — debt instrument whereby one party extends money or credit to another party (or parties) with the understanding that the 
+- [loan application](LoansGeneral/LoanApplications/LoanApplication.md) — request by a potential borrower to a potential lender to borrow money containing information used to decide whether to g
+- [loan application at agreement stage](LoansGeneral/LoanApplications/LoanApplicationAtAgreementStage.md) — 
+- [loan application at disbursement stage](LoansGeneral/LoanApplications/LoanApplicationAtDisbursementStage.md) — 
+- [loan application phase](LoansGeneral/LoanApplications/LoanApplicationPhase.md) — 
+- [loan application status](LoansGeneral/LoanApplications/LoanApplicationStatus.md) — 
+- [loan at application stage](LoansGeneral/LoanApplications/LoanAtApplicationStage.md) — 
+- [loan default proceeding](LoansGeneral/LoanEvents/LoanDefaultProceeding.md) — [no definition] Further Review This is typically part of mortgagte servicing
+- [loan market category](LoansSpecific/LoanProducts/LoanMarketCategory.md) — category indicating the market domain in which the loan product is offered
+- [loan offering](LoansSpecific/LoanProducts/LoanProductOffering.md) — offering related to a loan product that may be a tailored to particular circumstances, aimed at a group of borrowers or 
+- [loan paid in full](LoansGeneral/LoanEvents/LoanPaidInFull.md) — 
+- [loan payment schedule](LoansGeneral/Loans/LoanPaymentSchedule.md) — regular or explicit (ad hoc) payment schedule associated with a given loan-specific account
+- [loan phase](LoansGeneral/LoanEvents/LoanPhase.md) — 
+- [loan product](LoansSpecific/LoanProducts/LoanProduct.md) — financial product that is realized as a loan that a party may acquire from a lending institution with specific character
+- [loan product disclosure right](LoansSpecific/LoanProducts/LoanProductDisclosureRight.md) — Right to fair representation of the facts about Loan products before entrering into agreements for same
+- [loan product representations](LoansGeneral/LoansRegulatory/LoanProductRepresentations.md) — Representations about the loan product and the appropriateness of this for the borrower
+- [loan purpose](LoansSpecific/LoanProducts/LoanPurpose.md) — A selection of different types of loan purpose, being the purpose for which and manner in which loan (credit) draw-down 
+- [loan regulatory requirement](LoansGeneral/LoansRegulatory/LoanRegulatoryRequirement.md) — A regulatory requirement defined in regulations by a comsumer credit act or other legislation
+- [loan secured by real estate](RealEstateLoans/Mortgages/LoanSecuredByRealEstate.md) — loan that, at origination, is secured wholly or substantially by a lien or liens on real property for which the lien or 
+- [loan-specific customer account](LoansGeneral/Loans/LoanSpecificCustomerAccount.md) — account held by the borrower associated with a specific loan
+- [loan-to-value ratio](LoansGeneral/Loans/LoanToValueRatio.md) — ratio, expressed as a percentage, between the principal amount of the loan and the appraised value of the asset securing
+- [magnetic stripe verification code or value](LoansSpecific/CardAccounts/MagneticStripeVerificationCodeValue.md) — card verification code on a card's magnetic stripe that uses secure cryptographic processes to protect data integrity on
+- [manufactured home legal classification](RealEstateLoans/MortgageOrigination/ManufacturedHomeLegalClassification.md) — category indicating whether the covered loan is secured by a manufactured home only or with land as well
+- [marine finance](LoansSpecific/MarineFinance/MarineFinancing.md) — A loan for the purchase of a boat or other vessel
+- [mortgage](RealEstateLoans/Mortgages/Mortgage.md) — grant of financial interest in real property to a party that is not an owner of that real property and is recorded by a 
+- [mortgage indemnity guarantee](RealEstateLoans/MortgageOrigination/MortgageIndemnityGuarantee.md) — insurance-backed guarantee that protects lenders if the mortgage repayments cease for some reason, perhaps due to death 
+- [mortgage indemnity guarantor](RealEstateLoans/MortgageOrigination/MortgageIndemnityGuarantor.md) — guarantor and insurer that provides mortgage insurance in the form of a mortgage indemnity guarantee (MIG)
+- [mortgage indemnity insurance policy](RealEstateLoans/MortgageOrigination/MortgageIndemnityInsurancePolicy.md) — insurance policy providing the mortgage indemnity guarantee
+- [mortgage loan purpose](RealEstateLoans/MortgageOrigination/MortgageLoanPurpose.md) — the purpose for which mortgage loan proceeds will be used, such as real property purchase, dwelling construction, or loa
+- [mortgage product](LoansSpecific/LoanProducts/MortgageProduct.md) — 
+- [motor vehicle loan](LoansSpecific/ConsumerLoans/MotorVehicleLoan.md) — collateralized, simple-interest loan that is repaid in monthly installments over a period of typically three to five yea
+- [motorhome loan purpose](LoansSpecific/LoanProducts/MotorhomeLoanPurpose.md) — 
+- [observed indicator value](LoansSpecific/GreenLoans/ObservedIndicatorValue.md) — observation (measurement) of a key performance indicator measured at specific date and time
+- [observed indicator value structure](LoansSpecific/GreenLoans/ObservedIndicatorValueStructure.md) — collection of observations for some key performance indicator measured over a specified window of time
+- [open-end credit](LoansGeneral/Loans/OpenEndCredit.md) — credit agreement that may be extended up to an agreed credit limit and paid down at any time within the period of the li
+- [open-end mortgage loan](RealEstateLoans/Mortgages/OpenEndMortgageLoan.md) — loan secured by real estate with a provision that the outstanding loan amount may be increased upon mutual agreement of 
+- [open-end reverse mortgage](RealEstateLoans/Mortgages/OpenEndReverseMortgage.md) — reverse mortgage structured like a home equity line of credit in that it provides the borrower with additional funds aft
+- [ordinary loan purpose](LoansSpecific/LoanProducts/OrdinaryLoanPurpose.md) — 
+- [overdraft facility purpose](LoansSpecific/LoanProducts/OverdraftFacilityPurpose.md) — 
+- [ownership interest](LoansGeneral/Loans/OwnershipInterest.md) — classifier indicating the nature of the applicant's or borrower's ownership or leasehold interest in an asset used as co
+- [payment card](LoansSpecific/CardAccounts/PaymentCard.md) — legal document issued by a financial services provider that enables the cardholder to access the funds in the customer's
+- [payment card agreement](LoansSpecific/CardAccounts/PaymentCardAgreement.md) — account-specific credit agreement that specifies the terms and conditions under which the payment card is offered to the
+- [payment history](LoansGeneral/Loans/PaymentHistory.md) — record of actual payments of principal, interest, and other related amounts made by a borrower to a lender or servicer i
+- [pre-approval contract](LoansGeneral/LoanApplications/PreApprovalContract.md) — written commitment to lend when specified conditions are met, such as finding suitable property, and unchanged creditwor
+- [pre-approval request](LoansGeneral/LoanApplications/PreApprovalRequest.md) — request from a potential borrower that a lender commit to pre-approving the borrower for a loan of up to a specified amo
+- [pre-payment terms](LoansGeneral/Loans/PrepaymentTerms.md) — principal repayment terms related to payment of the loan prior to maturity
+- [prepayment](LoansGeneral/LoanEvents/Prepayment.md) — 
+- [primary card account number](LoansSpecific/CardAccounts/PrimaryCardAccountNumber.md) — composite identifier of 14 or 16 digits embossed on a bank or payment card and encoded in the card's magnetic strip
+- [private student loan](LoansSpecific/StudentLoans/PrivateStudentLoan.md) — student loan that is not considered a government-backed / regulated loan
+- [product disclosure requirement](LoansGeneral/LoansRegulatory/ProductDisclosureRequirement.md) — A requirement governing what representations can be made about a product, as it affects the consumer
+- [product disclosure right](LoansGeneral/LoansRegulatory/ProductDisclosureRight.md) — The right to information about products at the point of purchasing these
+- [property usage](RealEstateLoans/MortgageOrigination/PropertyUsage.md) — a category indicating the manner in which the borrower intends to utilize the property
+- [public record](LoansGeneral/LoanApplications/PublicRecord.md) — record about an action involving a party that is publicly available from a court or other government agency
+- [public record category](LoansGeneral/LoanApplications/PublicRecordCategory.md) — classifier of public records relevant to a loan application, e
+- [race](RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/Race.md) — a category based on a person's physical characteristics, such as bone structure and skin, hair, or eye color
+- [reg b](LoansGeneral/LoansRegulatory/RegB.md) — US regulation concerning "Equal credit opportunity act" Electronic delivery of disclosures
+- [reg z](LoansGeneral/LoansRegulatory/RegZ.md) — US Fed regulation "Truth in Lending Act" uniform standards for electronic delivery of disclosures
+- [regulated student loan](LoansSpecific/StudentLoans/RegulatedStudentLoan.md) — student loan (1) whose lender is a government agency or instrumentality, and/or (2) that is treated uniquely due to tax 
+- [repayment phase](LoansGeneral/LoanEvents/RepaymentPhase.md) — 
+- [residential houseboat loan purpose](LoansSpecific/LoanProducts/ResidentialHouseboatLoanPurpose.md) — 
+- [reverse mortgage loan](RealEstateLoans/Mortgages/ReverseMortgageLoan.md) — loan secured by real estate that pays money to the borrower against a set principal limit based on the value of existing
+- [right of credit record correction](LoansGeneral/LoansRegulatory/RightOfCreditRecordCorrection.md) — The right to have a credit record corrected
+- [secured consumer loan](LoansSpecific/ConsumerLoans/SecuredConsumerLoan.md) — loan to one or more individuals for household, family, or other personal expenditures in which the borrower pledges some
+- [secured loan](LoansGeneral/Loans/SecuredLoan.md) — loan in which the borrower pledges some asset via a security agreement as collateral for the loan, or that is secured vi
+- [servicer](LoansGeneral/Loans/Servicer.md) — party that collects principal and interest payments on behalf of the lender
+- [smart card](LoansSpecific/CardAccounts/SmartCard.md) — payment card that has integrated circuits embedded within it
+- [student loan](LoansSpecific/StudentLoans/StudentLoan.md) — loan provided for the purposes of education, allowing students and parents/guardians to borrow money for college
+- [student loan purpose](LoansSpecific/LoanProducts/StudentLoanPurpose.md) — 
+- [sustainability business objective](LoansSpecific/GreenLoans/SustainabilityBusinessObjective.md) — objective related to improving the sustainability profile of the business
+- [sustainability business strategy](LoansSpecific/GreenLoans/SustainabilityBusinessStrategy.md) — strategy for achieving specific business objectives related to sustainability (from an environmental and/or social and/o
+- [sustainability key performance indicator](LoansSpecific/GreenLoans/SustainabilityKeyPerformanceIndicator.md) — measurable performance indicator that is sustainability specific
+- [sustainability key performance indicator identifier](LoansSpecific/GreenLoans/SustainabilityKeyPerformanceIndicatorIdentifier.md) — sequence of characters uniquely identifying a specific sustainability-related key performance indicator
+- [sustainability performance target](LoansSpecific/GreenLoans/SustainabilityPerformanceTarget.md) — collection of quantitative target values used to calibrate the level of achievement a borrower makes with respect to a k
+- [sustainability performance target identifier](LoansSpecific/GreenLoans/SustainabilityPerformanceTargetIdentifier.md) — sequence of characters uniquely identifying a specific sustainability-related performance target
+- [sustainability structuring agent](LoansSpecific/GreenLoans/SustainabilityStructuringAgent.md) — financial institution appointed to help design, implement, and monitor the sustainability aspects of a syndicated green 
+- [sustainability-linked loan](LoansSpecific/GreenLoans/SustainabilityLinkedLoan.md) — credit agreement and/or contingent facility (such as a bonding line, guarantee line or letter of credit) for which the e
+- [target indicator value](LoansSpecific/GreenLoans/TargetIndicatorValue.md) — target value for a key performance indicator as of a specific date and time
+- [three-digit verification code or value](LoansSpecific/CardAccounts/ThreeDigitVerificationCodeValue.md) — card verification code that is the rightmost three-digit value printed in the signature panel area on the back of the ca
+- [total debt expense ratio](LoansGeneral/LoanApplications/TotalDebtExpenseRatio.md) — ratio of all monthly debt payments of all borrowers, including proposed expenses, with respect to the income of the borr
+- [total outstanding principal](LoansGeneral/Loans/TotalOutstandingPrincipal.md) — the principal balance of all loans secured by the property
+- [transition loan](LoansSpecific/GreenLoans/TransitionLoan.md) — credit agreement and/or contingent facility (such as a bonding line, guarantee line or letter of credit) designed to hel
+- [transition project](LoansSpecific/GreenLoans/TransitionProject.md) — project that supports broad, sector-specific efforts to reduce environmental impact
+- [transition strategy](LoansSpecific/GreenLoans/TransitionStrategy.md) — strategy for achieving specific business objectives related to sustainability in the context of long-term decarbonizatio
+- [transition use of proceeds provision](LoansSpecific/GreenLoans/TransitionUseOfProceedsProvision.md) — use of proceeds provision specifying that funds obtained through financing, such as through a credit agreement, offering
+- [underwriting automation](LoansGeneral/LoanApplications/UnderwritingAutomation.md) — classifier indicating whether a loan was underwritten manually or using an automated underwriting system
+- [underwriting decision](LoansGeneral/LoanApplications/UnderwritingDecision.md) — classifier providing a loan approval recommendation determined either manually or by an automated underwriting system
+- [universal loan identifier](RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/UniversalLoanIdentifier.md) — unique identifier given to unequivocally identify a specific loan secured by real estate
+- [unsecured consumer loan](LoansSpecific/ConsumerLoans/UnsecuredConsumerLoan.md) — loan to one or more individuals for household, family, or other personal expenditures granted based on the strength of t
+- [unsecured loan](LoansGeneral/Loans/UnsecuredLoan.md) — loan granted based on the strength of the borrower's credit history or reputation in the community
+- [working capital purpose](LoansSpecific/LoanProducts/WorkingCapitalPurpose.md) — 

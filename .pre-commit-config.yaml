@@ -1,0 +1,31 @@
+# Gated checks that run before each commit. Install once with:  pre-commit install
+# (pip install pre-commit). These mirror `make check`.
+repos:
+  - repo: local
+    hooks:
+      - id: no-ai-attribution
+        name: no AI attribution in tracked files
+        entry: ./.venv/bin/python scripts/check_no_attribution.py
+        language: system
+        pass_filenames: true
+
+      - id: ruff
+        name: ruff lint
+        entry: ./.venv/bin/python -m ruff check
+        language: system
+        types: [python]
+        exclude: '^(fibo-source|knowledge|out)/'
+
+      - id: pytest
+        name: pytest
+        entry: ./.venv/bin/python -m pytest
+        language: system
+        pass_filenames: false
+        always_run: true
+
+      - id: okf-validate
+        name: OKF bundle validation
+        entry: ./.venv/bin/python etl/validate.py --bundle knowledge
+        language: system
+        pass_filenames: false
+        always_run: true

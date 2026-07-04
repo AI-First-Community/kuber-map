@@ -1,0 +1,5 @@
+.venv/
+fibo-source/
+__pycache__/
+*.pyc
+out/

@@ -1,0 +1,25 @@
+[project]
+name = "bodhi-fibo"
+version = "0.1.0"
+description = "Curated, learner-first knowledge map of FIBO in OKF format, for humans and AI agents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Sanjeev Azad", email = "sanjeev.azad@gmail.com" }]
+dependencies = ["rdflib>=7.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["fibo-source", "knowledge", ".venv", "out"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]  # long strings in RDF/definitions are fine
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

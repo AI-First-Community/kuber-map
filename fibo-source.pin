@@ -1,0 +1,5 @@
+FIBO source pin
+repo: https://github.com/edmcouncil/fibo
+branch: master (FIBO publishes releases via OMG/spec.edmcouncil.org, not git tags — only 2018Q3 tag exists on GitHub)
+commit: ae12db3112ba27eb290e71cc458271e279b97461
+date_pinned: 2026-07-04

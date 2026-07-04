@@ -1,0 +1,419 @@
+# FND
+
+- [Department of State address](Places/NorthAmerica/USPostalServiceAddresses/DepartmentOfStateAddress.md) — delivery address whose delivery address line uses 'UNIT' followed by the unit identifier, followed by 'BOX' followed by 
+- [Department of State unit component](Places/NorthAmerica/USPostalServiceAddresses/DepartmentOfStateUnitComponent.md) — component of a Department of State address that includes 'UNIT' followed by the unit identifier
+- [Puerto Rico address](Places/NorthAmerica/USPostalServiceAddresses/PuertoRicoAddress.md) — delivery address for a delivery point in Puerto Rico that may include a supplementary address line containing the abbrev
+- [U.S. Postal Service address identifier](Places/NorthAmerica/USPostalServiceAddresses/USPostalServiceAddressIdentifier.md) — combined with the ZIP + 4 code, the delivery point code provides a unique identifier for every deliverable address serve
+- [ZIP+4 Code](Places/NorthAmerica/USPostalServiceAddresses/ZIPPlus4Code.md) — nine-digit number consisting of five digits, a hyphen, and four digits, which the USPS describes by its trademark ZIP+4
+- [Zip Code](Places/NorthAmerica/USPostalServiceAddresses/ZIPCode.md) — five-digit code code assigned to a delivery address indicating the state and post office or postal zone
+- [ad hoc schedule](DatesAndTimes/FinancialDates/AdHocSchedule.md) — schedule consisting of some number of individual events that are not necessarily recurring
+- [ad hoc schedule entry](DatesAndTimes/FinancialDates/AdHocScheduleEntry.md) — entry, including a date or date and time, among multiple non-regularly-recurring entries in a schedule
+- [address](Places/Addresses/Address.md) — index to a location to which communications may be delivered
+- [address component](Places/Addresses/AddressComponent.md) — aspect of an address
+- [addressing scheme](Places/Addresses/AddressingScheme.md) — system for allocating addresses to objects
+- [adult](AgentsAndPeople/People/Adult.md) — person who has attained the age of majority as defined in some jurisdiction
+- [age](DatesAndTimes/FinancialDates/Age.md) — length of time that something or someone has been alive or existed
+- [age of majority](AgentsAndPeople/People/AgeOfMajority.md) — age at which someone acquires the rights and responsibilities of an adult in some jurisdiction
+- [agreement](Agreements/Agreements/Agreement.md) — negotiated understanding between two or more parties, reflecting the offer and acceptance of commitments on the part of 
+- [aim](GoalsAndObjectives/Objectives/Aim.md) — intention specifying a desired direction, condition, or situation toward which an agent's actions are directed, without 
+- [amount of money](Accounting/CurrencyAmount/AmountOfMoney.md) — amount of readily available cash in banknotes and coins
+- [anchor date](DatesAndTimes/FinancialDates/AnchorDate.md) — fixed reference point within a series or timeline
+- [annualized standard deviation](Utilities/Analytics/AnnualizedStandardDeviation.md) — standard deviation for some measure over a specific reference period
+- [appraisal](Arrangements/Assessments/Appraisal.md) — written estimate of the market value of something as of some point in time, typically provided by a qualified appraiser
+- [appraised value](Arrangements/Assessments/AppraisedValue.md) — estimated value of some asset as of a given point in time
+- [appraiser](Arrangements/Assessments/Appraiser.md) — party that evaluates or estimates the nature, quality, ability, or value of someone or something
+- [approach](GoalsAndObjectives/Objectives/Approach.md) — way of addressing an aim or problem characterized by high-level planning and systematic execution, without presupposing 
+- [arithmetic mean](Utilities/Analytics/ArithmeticMean.md) — sum of a collection of numbers divided by the number of numbers in the collection
+- [assessment activity](Arrangements/Assessments/AssessmentActivity.md) — activity involving the evaluation or estimation of the nature, quality, ability, or value of someone or something
+- [assessment event](Arrangements/Assessments/AssessmentEvent.md) — event involving the evaluation or estimation of the nature, quality, or ability of someone or something
+- [assessment report](Arrangements/Assessments/AssessmentReport.md) — report that includes an opinion, judgement, appraisal, or view about something and typically the methodology and raw inp
+- [asset](OwnershipAndControl/Ownership/Asset.md) — something of monetary value that is owned or provides benefit to some party
+- [assignable contract](Agreements/Contracts/AssignableContract.md) — contract in which contract holder (assignor) may transfer some or all of their rights and obligations to another party (
+- [automated system](AgentsAndPeople/Agents/AutomatedSystem.md) — system that reduces or eliminates the need for human involvement in order to complete a task
+- [average absolute deviation](Utilities/Analytics/AverageAbsoluteDeviation.md) — average of the absolute deviations from a central point
+- [beneficiary](Agreements/Agreements/Beneficiary.md) — party that receives some benefit or advantage or profits from something
+- [bilateral agreement](Agreements/Agreements/BilateralAgreement.md) — agreement where two parties commit to perform specific actions or obligations towards each other
+- [bilateral contract](Agreements/Contracts/BilateralContract.md) — contract where two parties commit to perform specific actions or obligations towards each other
+- [bilateral netting provision](Agreements/Contracts/BilateralNettingProvision.md) — netting provision that occurs between two parties, in which mutual obligations are offset to determine a single net paym
+- [birth certificate](AgentsAndPeople/People/BirthCertificate.md) — an original document certifying the circumstances of the birth, or a certified copy of or representation of the ensuing 
+- [birth certificate identification scheme](AgentsAndPeople/People/BirthCertificateIdentificationScheme.md) — system for allocating identifiers to birth certificates
+- [birth certificate identifier](AgentsAndPeople/People/BirthCertificateIdentifier.md) — identifier associated with a vital record documenting the birth of a child
+- [breach of contract](Agreements/Contracts/BreachOfContract.md) — classifier of events representing a violation of an express, or implied, condition of a contract to do or not to do some
+- [breach of covenant](Agreements/Contracts/BreachOfCovenant.md) — classifier of events representing breaking a promise specified in a contract to do or not to do something, without a leg
+- [business calendar](DatesAndTimes/FinancialDates/BusinessCalendar.md) — schedule and communications tool used to manage meetings, plan events, and coordinate activities within and/or across or
+- [business day convention](DatesAndTimes/BusinessDates/BusinessDayConvention.md) — convention that enumerates the possible ways to handle a date that falls on a weekend or holiday
+- [business objective](GoalsAndObjectives/Objectives/BusinessObjective.md) — objective that reflects the strategic goals and direction of a business within a time frame and available resources
+- [business recurrence interval](DatesAndTimes/BusinessDates/BusinessRecurrenceInterval.md) — recurrence interval that is defined per a specific convention that determines how recurring days should be handled
+- [business recurrence interval convention](DatesAndTimes/BusinessDates/BusinessRecurrenceIntervalConvention.md) — convention that specifies how recurring days should be handled, such as the end of the month, a particular day of the mo
+- [business strategy](GoalsAndObjectives/Objectives/BusinessStrategy.md) — strategy for achieving a specific business goal, objective, solution or outcome
+- [buyer](ProductsAndServices/ProductsAndServices/Buyer.md) — party that purchases something in exchange for money or other consideration under a contract of sale
+- [calculated date](DatesAndTimes/FinancialDates/CalculatedDate.md) — date that is or will be determined based on some formula
+- [calculated price](Accounting/CurrencyAmount/CalculatedPrice.md) — monetary price determined by a formula
+- [calculation](DatesAndTimes/Occurrences/Calculation.md) — actual execution of some computation, computational process, or operation that was scheduled or triggered by something
+- [calculation event](DatesAndTimes/Occurrences/CalculationEvent.md) — kind of event that is either scheduled or triggered by something, such as a related financial event, that causes a calcu
+- [calculation period](DatesAndTimes/FinancialDates/CalculationPeriod.md) — explicit period from the start to the end of a specific interval or range within which a computational process or operat
+- [calculation period length](DatesAndTimes/FinancialDates/CalculationPeriodLength.md) — explicit number of days from the adjusted effective or start date to the adjusted termination or end date calculated in 
+- [calendar period](DatesAndTimes/FinancialDates/CalendarPeriod.md) — time interval that occurs within a system that fixes the beginning and length of a segment of the year with respect to t
+- [calendar-specified interval](DatesAndTimes/FinancialDates/CalendarSpecifiedInterval.md) — recurrence interval that is defined as the nth day of some calendar period (such as a calendar month), and a time direct
+- [capital surplus](Accounting/AccountingEquity/CapitalSurplus.md) — capital contributed in excess of the par value (stated value) of the ownership interest issued
+- [cash flow](Accounting/CashFlows/CashFlow.md) — the movement of money from some source to some sink
+- [cash flow structure](Accounting/CashFlows/CashFlowStructure.md) — the structure related to one or more cash flows
+- [claim](Law/LegalCapacity/Claim.md) — demand or assertion made by one party on another, based on facts that, taken together, give rise to a legally enforceabl
+- [client](ProductsAndServices/ProductsAndServices/Client.md) — party that purchases professional services from, or has a formal relationship to purchase services from another party
+- [client identifier](ProductsAndServices/ProductsAndServices/ClientIdentifier.md) — sequence of characters uniquely identifying a client within the context of some organization
+- [close-out netting provision](Agreements/Contracts/CloseOutNettingProvision.md) — netting provision that may be triggered when a counterparty defaults, leading to the termination of all outstanding tran
+- [collateral agreement](Agreements/Contracts/CollateralAgreement.md) — written contract related to another contract designed to provide clarity and additional protection for all parties invol
+- [commitment](Agreements/Agreements/Commitment.md) — promise made by some party to act or refrain from acting in some manner
+- [commitment at large](Agreements/Agreements/CommitmentAtLarge.md) — commitment made by some party without direct involvement from the potential beneficiaries of that commitment
+- [commodity](ProductsAndServices/ProductsAndServices/Commodity.md) — material resource used in commerce that is interchangeable with other commodities of the same type
+- [complete address](Places/NorthAmerica/USPostalServiceAddresses/CompleteAddress.md) — delivery address that has all the address elements necessary to allow an exact match with the current Postal Service ZIP
+- [condition precedent](Agreements/Contracts/ConditionPrecedent.md) — stipulation that specifies conditions that must be met before some aspect of a contract takes effect
+- [constitution](Law/LegalCore/Constitution.md) — set of basic principles by which an organization is governed, especially in relation to the rights of the people it gove
+- [consumer](ProductsAndServices/ProductsAndServices/Consumer.md) — party that utilizes economic goods or services, typically for personal, family, or household purposes
+- [contact](AgentsAndPeople/People/Contact.md) — role or associated with a party serving as a designated point of communication, typically within a system or process
+- [contact record](AgentsAndPeople/People/ContactRecord.md) — record about a party in a specific communicative or liaison role
+- [contingent obligation](Law/LegalCapacity/ContingentObligation.md) — obligation that depends on a future event or the performance of an action
+- [contingent right](Law/LegalCapacity/ContingentRight.md) — right that depends on a future event or the performance of an action
+- [contract](Agreements/Contracts/Contract.md) — voluntary, deliberate agreement between competent parties to which the parties agree to be legally bound, and for which 
+- [contract document](Agreements/Contracts/ContractDocument.md) — legal document that records the formal terms and conditions of some contract
+- [contract milestone](Agreements/Contracts/ContractMilestone.md) — classifier for an event (milestone), or set of events related to the status or level of completion of a designated activ
+- [contract party](Agreements/Contracts/ContractParty.md) — legally competent party that has entered into a binding agreement, accepting and conceding obligations, responsibilities
+- [contract principal](Agreements/Contracts/ContractPrincipal.md) — party that originates a contract and is identified as the first party to that contract, in the event that the contract d
+- [contract third party](Agreements/Contracts/ContractThirdParty.md) — party that is indirectly involved in, but not a counterparty to, an agreement
+- [contractual capability](Law/LegalCapacity/ContractualCapability.md) — the capacity to enter into legally binding contracts
+- [contractual commitment](Agreements/Contracts/ContractualCommitment.md) — provision specifying something that the contracting parties agree to, i
+- [contractual definition](Agreements/Contracts/ContractualDefinition.md) — contractual element that specifies the meaning of a term in a legal document, whose definition is substitutable for the 
+- [contractual economic agreement](TransactionsExt/REATransactions/ContractualEconomicAgreement.md) — An economic agreement forming part of a transaction, which has contractual standing as evidenced by a contract between t
+- [contractual element](Agreements/Contracts/ContractualElement.md) — element, such as an arrangement, provision, requirement, rule, specification, and standard that forms an integral part o
+- [contractual interest](Law/LegalCapacity/ContractualInterest.md) — legally enforceable benefit or entitlement arising from a contract, agreement, or instrument, in which an entity holds s
+- [contractual obligation](Law/LegalCapacity/ContractualObligation.md) — legally binding obligation that arises from the terms of a contract
+- [contractual option](Law/LegalCapacity/ContractualOption.md) — contractual right that may be exercised at some point in the future, such as an option to extend a contract, or other av
+- [contractual product](ProductsAndServices/ProductsAndServices/ContractualProduct.md) — product that takes the form of an agreement
+- [contractual right](Law/LegalCapacity/ContractualRight.md) — legally enforceable benefit or entitlement granted to a party within a binding agreement
+- [contractual template product](ProductsAndServices/ProductsAndServices/ContractualTemplateProduct.md) — contractual product that is finalized through specification of values for parameters defined in a template
+- [contractual transaction](TransactionsExt/REATransactions/ContractualTransaction.md) — An economic transaction which has some contractual basis
+- [contractual transaction party](TransactionsExt/REATransactions/ContractualTransactionParty.md) — That which is party to a transaction which has contractual standing
+- [control](OwnershipAndControl/Control/Control.md) — situation in which some party has the power to direct or strongly influence the direction of the management and policies
+- [controlled thing](OwnershipAndControl/Control/ControlledThing.md) — something over which some party exercises some form of control with respect to some situation
+- [controlling party](OwnershipAndControl/Control/ControllingParty.md) — actor that exercises some form of control in the context of some situation
+- [convention](DatesAndTimes/BusinessDates/Convention.md) — widely accepted or established way of doing 'something' within some community of practice
+- [conventional street address](Places/Addresses/ConventionalStreetAddress.md) — physical address that identifies a location on a street to which communications may be delivered
+- [counterparty](Agreements/Contracts/Counterparty.md) — party to a contract with whom one negotiates on a given agreement
+- [court of law](Law/LegalCore/CourtOfLaw.md) — person or body of persons having judicial authority to hear and resolve disputes on the basis of statutes or the common 
+- [covered transaction](TransactionsExt/REATransactions/CoveredTransaction.md) — A transaction covered by some Master Agreement
+- [currency](Accounting/CurrencyAmount/Currency.md) — medium of exchange value, defined by reference to the geographical location of the monetary authorities responsible for 
+- [currency basket](Accounting/CurrencyAmount/CurrencyBasket.md) — selected group of currencies, in which the weighted average is used as a measure of the value or the amount of an obliga
+- [currency identifier](Accounting/CurrencyAmount/CurrencyIdentifier.md) — sequence of characters representing some currency
+- [custom product](ProductsAndServices/ProductsAndServices/CustomProduct.md) — product that is made to order, commissioned based on a customer's specifications
+- [customer](ProductsAndServices/ProductsAndServices/Customer.md) — party that receives or consumes products (goods or services) and has the ability to choose between different products an
+- [customer identifier](ProductsAndServices/ProductsAndServices/CustomerIdentifier.md) — sequence of characters uniquely identifying a customer within the context of some organization
+- [date of birth](AgentsAndPeople/People/DateOfBirth.md) — explicit date, i
+- [date of death](AgentsAndPeople/People/DateOfDeath.md) — explicit date, i
+- [dated collection constituent](DatesAndTimes/FinancialDates/DatedCollectionConstituent.md) — element of a collection that is associated with a date and time
+- [dated structured collection](DatesAndTimes/FinancialDates/DatedStructuredCollection.md) — structured collection whose elements are required to have a date and time
+- [day of month](DatesAndTimes/BusinessDates/DayOfMonth.md) — specific, recurring day of the month
+- [day of the week](DatesAndTimes/BusinessDates/DayOfWeek.md) — specific, recurring day of the week
+- [de facto control](OwnershipAndControl/Control/DeFactoControl.md) — control that exists informally and is accepted, although not formally recognized
+- [de jure control](OwnershipAndControl/Control/DeJureControl.md) — control that exists as a matter of law, i
+- [death certificate](AgentsAndPeople/People/DeathCertificate.md) — original document certifying the circumstances of the death (such as how and when it occurred), or a certified copy of o
+- [death certificate identification scheme](AgentsAndPeople/People/DeathCertificateIdentificationScheme.md) — system for allocating identifiers to death certificates
+- [death certificate identifier](AgentsAndPeople/People/DeathCertificateIdentifier.md) — identifier associated with a vital record documenting the death of an individual
+- [delegated legal authority](Law/LegalCapacity/DelegatedLegalAuthority.md) — institutionalized and legal power inherent in a particular job, function, or position that is meant to enable its holder
+- [delivery address code set](Places/NorthAmerica/USPostalServiceAddresses/DeliveryAddressCodeSet.md) — system of numeric codes that substitute for specified delivery point details according to the U
+- [delivery obligation](Law/LegalCapacity/DeliveryObligation.md) — obligation to deliver something in order to satisfy a claim or debt
+- [delivery point code](Places/NorthAmerica/USPostalServiceAddresses/DeliveryPointCode.md) — specific set of digits between 00 and 99 assigned to a delivery point
+- [delivery point code set](Places/NorthAmerica/USPostalServiceAddresses/DeliveryPointCodeSet.md) — system of numeric codes that substitute for specified delivery point details according to the U
+- [difference](Utilities/Analytics/Difference.md) — quantity by which amounts differ; the remainder left after subtraction of one value from another
+- [discharging event](TransactionsExt/REATransactions/DischargingEvent.md) — 
+- [disclosure provision](Agreements/Contracts/DisclosureProvision.md) — contractual provision that outlines the requirements and responsibilities of one or both parties to reveal certain infor
+- [dispersion](Utilities/Analytics/Dispersion.md) — degree of scatter or variability shown by observations
+- [distribution strategy](GoalsAndObjectives/Objectives/DistributionStrategy.md) — strategy for making a product or service available, or for distributing funds, such as in the form of a dividend or coup
+- [driver's license](AgentsAndPeople/People/DriversLicense.md) — an official document which states that a person may operate a motorized vehicle, such as a motorcycle, car, truck or a b
+- [driver's license identification scheme](AgentsAndPeople/People/DriversLicenseIdentificationScheme.md) — system for allocating identifiers to driver's, operating, or non-driver identification documents
+- [driver's license identifier](AgentsAndPeople/People/DriversLicenseIdentifier.md) — identifier associated with a drivers' or operating license for operating a motor vehicle or non-driver identification ca
+- [duty](Law/LegalCapacity/Duty.md) — some obligation which exists and is imposed on some individual
+- [early termination provision](Agreements/Contracts/EarlyTerminationProvision.md) — termination of an agreement for any reason prior to its expiration date
+- [earnings before interest, taxes, depreciation and amortization](Accounting/AccountingEquity/EarningsBeforeInterestTaxesDepreciationAmortization.md) — measure of potential cash flow that excludes the effects of capital structure, taxes and non-cash expenses
+- [economic agreement](TransactionsExt/REATransactions/EconomicAgreement.md) — 
+- [economic commitment](TransactionsExt/REATransactions/EconomicCommitment.md) — Some Commitment which forms part of the subject of some Transaction, being an undertaking by one or other of the parties
+- [economic contract](TransactionsExt/REATransactions/EconomicContract.md) — A contract relating to and governing an economic transaction between two parties
+- [economic contract commitment](TransactionsExt/REATransactions/EconomicContractTermsSet.md) — Terms underlying the contract for a transaction
+- [economic resource](TransactionsExt/REATransactions/EconomicResource.md) — Anything that can bought sold or exchanged
+- [economic transaction](TransactionsExt/REATransactions/EconomicTransaction.md) — Some exchange of some items of economic value between two parties (economic agents)
+- [electronic mail address](Places/VirtualPlaces/ElectronicMailAddress.md) — virtual address that defines an electronic messaging endpoint to which email messages can be delivered, typically via an
+- [emancipated minor](AgentsAndPeople/People/EmancipatedMinor.md) — a minor who is allowed to conduct a business or any other occupation on his or her own behalf or for their own account o
+- [employee](Organizations/FormalOrganizations/Employee.md) — person in the service of another under any contract of hire, express or implied, oral or written, where the employer has
+- [employer](Organizations/FormalOrganizations/Employer.md) — party that provides compensation, including wages or a salary and potentially other benefits, in exchange for work perfo
+- [employment](Organizations/FormalOrganizations/Employment.md) — situation representing the state of being employed, i
+- [end of the month](DatesAndTimes/BusinessDates/EndOfMonth.md) — the last day of a calendar month, irrespective of the length of the calendar month
+- [exchange rate](Accounting/CurrencyAmount/ExchangeRate.md) — rate at which one currency can be exchanged for another
+- [expected value](Arrangements/Assessments/ExpectedValue.md) — theoretical value that is anticipated based on a model or hypothesis
+- [explicit recurrence interval](DatesAndTimes/FinancialDates/ExplicitRecurrenceInterval.md) — recurrence interval defined via an explicit duration
+- [extension provision](Agreements/Contracts/ExtensionProvision.md) — contract terms that specify the conditions under which a contract can be extended
+- [fair value](Arrangements/Assessments/FairValue.md) — price that would be received to sell an asset, or paid to transfer a liability, in an orderly transaction between market
+- [financial asset](Accounting/AccountingEquity/FinancialAsset.md) — non-physical, tangible asset whose value is derived from a contractual claim, such as bank deposits, bonds, stocks, righ
+- [financial objective](GoalsAndObjectives/Objectives/FinancialObjective.md) — objective that reflects the strategic financial goals and direction of a party within a time frame and available resourc
+- [financial primary market transaction](TransactionsExt/SecuritiesTransactions/FinancialPrimaryMarketTransaction.md) — 
+- [financial record](Arrangements/Documents/FinancialRecord.md) — record of financial information
+- [financial securities secondary market transaction](TransactionsExt/SecuritiesTransactions/FinancialSecuritiesSecondaryMarketTransaction.md) — A Transaction in which some negotiable security is provided in exchange for some Consideration
+- [finite population](Utilities/Analytics/FinitePopulation.md) — population for which it is possible to count its units
+- [formula](Utilities/Analytics/Formula.md) — rule expressed in letters and symbols that consists of at least one expression
+- [funds](Accounting/CurrencyAmount/Funds.md) — artificial currency used as calculation basis for another currency(s) and accounting purposes
+- [funds identifier](Accounting/CurrencyAmount/FundsIdentifier.md) — sequence of characters that can be used to uniquely identify funds
+- [general delivery address](Places/NorthAmerica/USPostalServiceAddresses/GeneralDeliveryAddress.md) — delivery address that uses the words 'GENERAL DELIVERY', uppercase preferred, spelled out (no abbreviation), in place of
+- [geographic directional symbol](Places/Addresses/GeographicDirectionalSymbol.md) — code element that gives directional information for postal delivery
+- [geometric mean](Utilities/Analytics/GeometricMean.md) — mean that indicates the central tendency or typical value of a set of numbers by using the product of their values (as o
+- [goal](GoalsAndObjectives/Objectives/Goal.md) — aim distinguished by broad scope and aspirational character, often qualitative and long-term, in order to achieve a desi
+- [good](ProductsAndServices/ProductsAndServices/Good.md) — physical, produced item over which ownership rights can be established, whose ownership can be passed from one party to 
+- [group](Organizations/FormalOrganizations/Group.md) — collection of agents (people, organizations, software agents, etc
+- [highway contract address](Places/NorthAmerica/USPostalServiceAddresses/HighwayContractRouteAddress.md) — delivery address whose delivery address line uses the abbreviation 'HC', followed by the route identifier, followed by '
+- [highway contract route](Places/NorthAmerica/USPostalServiceAddresses/HighwayContractRoute.md) — highway contract route associated with an address
+- [highway contract route address](Places/NorthAmerica/USPostalServiceAddresses/RuralRoute.md) — mail route outside the city or township limits in a rural area associated with an address
+- [identity document](AgentsAndPeople/People/IdentityDocument.md) — any legal document which may be used to verify aspects of a person's identity
+- [incapacitated adult](AgentsAndPeople/People/IncapacitatedAdult.md) — an adult who is legally identified as not having legal capacity, typically as a result of some inherent physical or ment
+- [income](Accounting/AccountingEquity/Income.md) — revenue received during a period of time
+- [index](Arrangements/IdentifiersAndIndices/Index.md) — indirect shortcut derived from and pointing into, a greater volume of values, data, information or knowledge
+- [indexing scheme](Arrangements/IdentifiersAndIndices/IndexingScheme.md) — system for indexing values, data, information, or knowledge
+- [industry sector classification scheme](Arrangements/ClassificationSchemes/IndustrySectorClassificationScheme.md) — system for allocating classifiers to organizations by industry sector
+- [industry sector classifier](Arrangements/ClassificationSchemes/IndustrySectorClassifier.md) — standardized classification or delineation for an organization, or possibly for a security representing an interest in a
+- [intangible asset](OwnershipAndControl/Ownership/IntangibleAsset.md) — identifiable, non-monetary asset that lacks physical substance
+- [interest rate](Accounting/CurrencyAmount/InterestRate.md) — amount charged, expressed as a percentage of principal, in exchange for the use of assets
+- [international address](Places/NorthAmerica/USPostalServiceAddresses/InternationalAddress.md) — physical address that explicitly includes a country
+- [investment objective](GoalsAndObjectives/Objectives/InvestmentObjective.md) — financial objective used by an investor to determine whether or not a given potential investment is appropriate for them
+- [key performance indicator](Utilities/Analytics/KeyPerformanceIndicator.md) — measurable target that indicates how an individual or business is performing in terms of meeting its goals
+- [law](Law/LegalCore/Law.md) — rule recognized by some community as regulating the behavior of its members and that it may enforce through the impositi
+- [ledger entry](TransactionsExt/REATransactions/LedgerEntry.md) — 
+- [legal age](AgentsAndPeople/People/LegalAge.md) — age at which someone acquires the capacity to do something that they were prohibited from doing before under the law in 
+- [legal capacity](Law/LegalCapacity/LegalCapacity.md) — the capability to carry out certain actions or to have certain rights together with the resources to do so
+- [legal construct](Law/LegalCapacity/LegalConstruct.md) — something which is conferred by way of law or contract, such as a right
+- [legal obligation](Law/LegalCapacity/LegalObligation.md) — an obligation or duty that is enforceable by a court
+- [legal right](Law/LegalCapacity/LegalRight.md) — personal right, privilege, or benefit that a government, contract, or law provides or protects, making an individual or 
+- [legal working age](AgentsAndPeople/People/LegalWorkingAge.md) — age at which someone acquires the capacity to work legally in some jurisdiction
+- [legal working age person](AgentsAndPeople/People/LegalWorkingAgePerson.md) — person whose age is greater than the minimum legal working age specified in a jurisdiction in which they work
+- [legally capable adult](AgentsAndPeople/People/LegallyCapableAdult.md) — person who has attained the age of majority as defined in some jurisdiction and who is allowed to conduct a business or 
+- [liability capacity](Law/LegalCapacity/LiabilityCapacity.md) — the ability to be sued at law
+- [license](Law/LegalCapacity/License.md) — grant of permission needed to do something
+- [license identifier](Law/LegalCapacity/LicenseIdentifier.md) — an identifier associated with a license
+- [licensee](Law/LegalCapacity/Licensee.md) — a party to whom a license has been granted
+- [licensor](Law/LegalCapacity/Licensor.md) — a party who grants a license
+- [lifecycle](Arrangements/Lifecycles/Lifecycle.md) — arrangement that compares the cyclical nature of families, organizations, processes, products, marketing, and order mana
+- [lifecycle event](Arrangements/Lifecycles/LifecycleEvent.md) — kind of event that occurs during one or more stages of a lifecycle
+- [lifecycle event occurrence](Arrangements/Lifecycles/LifecycleEventOccurrence.md) — realization of an event in a stage of a lifecycle
+- [lifecycle occurrence](Arrangements/Lifecycles/LifecycleOccurrence.md) — realization of a lifecycle
+- [lifecycle stage](Arrangements/Lifecycles/LifecycleStage.md) — phase in a lifecycle
+- [lifecycle stage occurrence](Arrangements/Lifecycles/LifecycleStageOccurrence.md) — realization of a phase in a given lifecycle
+- [lifecycle status](Arrangements/Lifecycles/LifecycleStatus.md) — classifier indicating the position or state of something at a particular point in its life-cycle
+- [litigation capacity](Law/LegalCapacity/LitigationCapacity.md) — the legal capacity to pursue a litigation action in law
+- [local investment objective](GoalsAndObjectives/Objectives/LocalInvestmentObjective.md) — financial objective that aims to support geographically centralized, community development needs
+- [mailbox](Places/NorthAmerica/USPostalServiceAddresses/Mailbox.md) — mailbox, other than a U
+- [market transaction](TransactionsExt/MarketTransactions/MarketTransaction.md) — Any transaction which defines a supply of some negotiable item in return for some Consideration
+- [market transaction invoicing terms](TransactionsExt/MarketTransactions/MarketTransactionInvoicingTerms.md) — 
+- [market transaction payment terms](TransactionsExt/MarketTransactions/MarketTransactionPaymentTerms.md) — 
+- [market value](Arrangements/Assessments/MarketValue.md) — price an asset would sell for in the market
+- [master agreement](Agreements/Contracts/MasterAgreement.md) — contract between named parties that outlines the terms and conditions designed to apply to a number of accounts, transac
+- [maturity level](Utilities/AnnotationVocabulary/MaturityLevel.md) — classifier used to indicate the state of an artifact with respect to its development lifecycle
+- [mean](Utilities/Analytics/Mean.md) — most common measure of central tendency; the average of a set of numbers
+- [median](Utilities/Analytics/Median.md) — value of the variate dividing the total frequency of a data sample, population, or probability distribution, into two ha
+- [median absolute deviation](Utilities/Analytics/MedianAbsoluteDeviation.md) — median of the absolute deviations of observations from the average which may be the arithmetic mean, the median or the m
+- [method](GoalsAndObjectives/Objectives/Method.md) — approach distinguished by systematic, repeatable procedures and operational specificity for doing or calculating somethi
+- [milestone event](Agreements/Contracts/MilestoneEvent.md) — event related to the status or level of completion of a designated activity, task, or segment of work required for contr
+- [milestone schedule](Agreements/Contracts/MilestoneSchedule.md) — schedule of milestone events, observations, or other occurrences and the associated dates and/or times when they will be
+- [minor](AgentsAndPeople/People/Minor.md) — a person under a certain age, usually the age of majority in a given jurisdiction, which legally demarcates childhood fr
+- [module](Utilities/AnnotationVocabulary/Module.md) — classifier used to indicate a category used to modularize something based on principles of the model driven architecture
+- [monetary amount](Accounting/CurrencyAmount/MonetaryAmount.md) — measure that is an amount of money specified in monetary units
+- [monetary price](Accounting/CurrencyAmount/MonetaryPrice.md) — price that that is expressed as a monetary amount
+- [multilateral agreement](Agreements/Agreements/MultilateralAgreement.md) — agreements that involve or include multiple parties
+- [multilateral contract](Agreements/Contracts/MultilateralContract.md) — contract where multiple parties (i
+- [multilateral netting provision](Agreements/Contracts/MultilateralNettingProvision.md) — netting provision that, when triggered, is facilitated by a central clearinghouse or financial institution
+- [national identification number](AgentsAndPeople/People/NationalIdentificationNumber.md) — number or text which appears on an identity document issued by a country or jurisdiction
+- [national identification number scheme](AgentsAndPeople/People/NationalIdentificationNumberScheme.md) — system for allocating identifiers to national identification numbers
+- [negotiable commodity](ProductsAndServices/ProductsAndServices/NegotiableCommodity.md) — commodity that can be bought or sold in some marketplace
+- [netting provision](Agreements/Contracts/NettingProvision.md) — contractual element that specifies the method of reducing credit, settlement and other risks by aggregating (combining) 
+- [network location](Places/VirtualPlaces/NetworkLocation.md) — a virtual location that may be identified by a network address (an identifier for a node or interface)
+- [non-binding term](Agreements/Contracts/NonBindingTerm.md) — contractual element that is not legally binding on any party to the agreement
+- [non-transferable contract](Agreements/Contracts/NonTransferableContract.md) — contract between whose individual rights and obligations are not transferable to another party without prior written per
+- [notification obligation](Law/LegalCapacity/NotificationObligation.md) — requirement for one party to formally inform another party (or parties) about specific events, actions, or changes as ou
+- [notification provision](Agreements/Contracts/NotificationProvision.md) — provision indicating that notification is required prior to the occurrence of a relevant event
+- [notional place](Places/VirtualPlaces/NotionalPlace.md) — an abstract place; one of many commonly understood concepts such as domestic, Eurozone etc
+- [novateable contract](Agreements/Contracts/NovateableContract.md) — contract that may be replaced by another contract, and in that event, extinguishes the rights and obligations in effect 
+- [novation netting provision](Agreements/Contracts/NovationNettingProvision.md) — contractual element that specifies what should be done with respect to netting when a given contract is replaced with an
+- [numeric index value](Utilities/Analytics/NumericIndexValue.md) — numeric value of some aggregate relative to the value of that aggregate as of some date
+- [objective](GoalsAndObjectives/Objectives/Objective.md) — aim distinguished by specific scope and measurable criteria, often quantitative and short-term that a party seeks to att
+- [obligee](Agreements/Agreements/Obligee.md) — party to whom some commitment or obligation is owed, either legally or per the terms of an agreement
+- [obligor](Agreements/Agreements/Obligor.md) — party that is bound legally or by agreement to repay a debt, make a payment, do something, or refrain from doing somethi
+- [observed value](Arrangements/Assessments/ObservedValue.md) — value that is an actual data point collected from an experiment, survey, or observation
+- [occurrence](DatesAndTimes/Occurrences/Occurrence.md) — happening of an OccurrenceKind, i
+- [occurrence kind](DatesAndTimes/Occurrences/OccurrenceKind.md) — classifier that specifies the general nature of an occurrence (event)
+- [occurrence-based date](DatesAndTimes/Occurrences/OccurrenceBasedDate.md) — calculated date that is defined with respect to the occurrence of some occurrence kind
+- [off-the-shelf product](ProductsAndServices/ProductsAndServices/OffTheShelfProduct.md) — product that is readily available from merchandise in stock, or can be quickly and easily configured to order, not speci
+- [opinion](Arrangements/Assessments/Opinion.md) — judgement, appraisal, or view about something
+- [overseas military address](Places/NorthAmerica/USPostalServiceAddresses/OverseasMilitaryAddress.md) — delivery address whose delivery address line uses an abbreviation for the unit or command such as 'CMR', 'PSC', or 'UNIT
+- [owner](OwnershipAndControl/Ownership/Owner.md) — party that is legally recognized as having the right to possess, the privilege to use, and ability to transfer any right
+- [owners' equity](Accounting/AccountingEquity/OwnersEquity.md) — owners' share in a business plus operating profit
+- [ownership](OwnershipAndControl/Ownership/Ownership.md) — situation in which some party holds the legal title to something (explicitly or implicitly) and has the right to transfe
+- [ownership control situation](OwnershipAndControl/OwnershipAndControl/OwnershipControlSituation.md) — situation in which some party owns and controls something
+- [paid-in capital](Accounting/AccountingEquity/PaidInCapital.md) — assets received from investors in exchange for an ownership interest
+- [party role identification scheme](Parties/Parties/PartyRoleIdentificationScheme.md) — system for allocating identifiers to roles that parties play
+- [party role identifier](Parties/Parties/PartyRoleIdentifier.md) — sequence of characters, capable of uniquely identifying a party based on a specific role that they play in some context
+- [passport](AgentsAndPeople/People/Passport.md) — formal identity document, issued by a national government, which certifies the identity and nationality of its holder fo
+- [passport number](AgentsAndPeople/People/PassportNumber.md) — national identification number associated with a passport
+- [passport number identification scheme](AgentsAndPeople/People/PassportNumberIdentificationScheme.md) — system for allocating identifiers to passports
+- [payee](ProductsAndServices/PaymentsAndSchedules/Payee.md) — a party to whom a debt should be paid, or to whose order a bill of exchange, note, or check is made payable, or who rece
+- [payer](ProductsAndServices/PaymentsAndSchedules/Payer.md) — a party who pays a bill or fees, or who makes payments to a payee in partial or complete fulfillment of an obligation
+- [payment](ProductsAndServices/PaymentsAndSchedules/Payment.md) — delivery of money in fulfillment of an obligation, such as to satisfy a claim or debt
+- [payment event](ProductsAndServices/PaymentsAndSchedules/PaymentEvent.md) — an event that involves delivery of money in fulfillment of an obligation
+- [payment netting provision](Agreements/Contracts/PaymentNettingProvision.md) — netting provision that specifies the way in which all payments in a single currency owed between parties will be aggrega
+- [payment obligation](ProductsAndServices/PaymentsAndSchedules/PaymentObligation.md) — legally enforceable duty to pay a sum of money according to the terms stated in a contract
+- [payment schedule](ProductsAndServices/PaymentsAndSchedules/PaymentSchedule.md) — schedule for delivery of money in fulfillment of an obligation
+- [percentage monetary amount](Accounting/CurrencyAmount/PercentageMonetaryAmount.md) — measure of some amount of money expressed as a percentage of some other amount, some notional amount or some concrete mo
+- [person](AgentsAndPeople/People/Person.md) — individual human being, with consciousness of self
+- [person name](AgentsAndPeople/People/PersonName.md) — designation by which someone is known in some context
+- [personal property](Places/RealProperty/PersonalProperty.md) — asset that is a movable item or possession not fixed to land
+- [physical address](Places/Addresses/PhysicalAddress.md) — physical address where communications can be addressed, papers served or representatives located for any kind of organiz
+- [physical address identifier](Places/Addresses/PhysicalAddressIdentifier.md) — unique identifier for a physical address
+- [physical addressing scheme](Places/Addresses/PhysicalAddressingScheme.md) — scheme for specifying physical addresses according to a country specific standard
+- [physical asset](Accounting/AccountingEquity/PhysicalAsset.md) — tangible asset that has a material form, such as property, equipment, and inventory
+- [place of birth](AgentsAndPeople/People/PlaceOfBirth.md) — physical location, including country, region, and municipality where an individual was born
+- [policy](Law/LegalCapacity/Policy.md) — system of principles, rules and guidelines, adopted by an organization to guide decision making with respect to particul
+- [post code area](Places/Addresses/PostCodeArea.md) — physical area uniquely identified by some postal code
+- [post office box](Places/Addresses/PostOfficeBox.md) — post office box associated with an address
+- [post office box address](Places/Addresses/PostOfficeBoxAddress.md) — physical address used to deliver communications to a designated container at a local post office or the local equivalent
+- [post office box designator](Places/Addresses/PostOfficeBoxDesignator.md) — designator used, together with an identifier, for a post office box
+- [postcode](Places/Addresses/Postcode.md) — sequence of characters used to assist in the sorting of mail
+- [postdirectional symbol](Places/Addresses/PostdirectionalSymbol.md) — geographic directional symbol that follows the street name and street suffix in a street address
+- [precious metal](Accounting/CurrencyAmount/PreciousMetal.md) — metal that is considered to be rare and/or have a high economic value
+- [precious metal identifier](Accounting/CurrencyAmount/PreciousMetalIdentifier.md) — sequence of characters uniquely identifying the precious metal in some context
+- [predirectional symbol](Places/Addresses/PredirectionalSymbol.md) — geographic directional symbol that occurs after the primary street number but before the street name in a street address
+- [present value](Arrangements/Assessments/PresentValue.md) — value of an asset today, which may be calculated from reference data and may based on its expected future value
+- [price](Accounting/CurrencyAmount/Price.md) — amount of money, goods, or services requested, expected, required, or given in exchange for something else
+- [primary address number](Places/Addresses/PrimaryAddressNumber.md) — address component that identifies a location with respect to a given street
+- [private mail box address](Places/NorthAmerica/USPostalServiceAddresses/PrivateMailBoxAddress.md) — delivery address provided by a commercial mail receiving company that includes a supplementary address line containing t
+- [producer](ProductsAndServices/ProductsAndServices/Producer.md) — grower, maker, fabricator, or manufacturer of some product or other good
+- [product](ProductsAndServices/ProductsAndServices/Product.md) — commercially distributed good that is (1) tangible property, (2) the output or result of a fabrication, manufacturing, o
+- [product identifier](ProductsAndServices/ProductsAndServices/ProductIdentifier.md) — sequence of characters uniquely identifying a product in some context
+- [program](GoalsAndObjectives/Objectives/Program.md) — state of affairs and coordinated set of activities designed to obtain benefits not available from managing them individu
+- [program identifier](GoalsAndObjectives/Objectives/ProgramIdentifier.md) — sequence of characters uniquely identifying a specific program within the context in which that program is administered
+- [program name](GoalsAndObjectives/Objectives/ProgramName.md) — contextual designation for a program within the context in which that program is administered
+- [project](GoalsAndObjectives/Objectives/Project.md) — state of affairs and unique and temporary organization, designed to deliver a tangible output
+- [project identifier](GoalsAndObjectives/Objectives/ProjectIdentifier.md) — sequence of characters uniquely identifying a specific project within the context in which that project or an overarchin
+- [project name](GoalsAndObjectives/Objectives/ProjectName.md) — contextual designation for a project
+- [property inspection](Places/RealProperty/PropertyInspection.md) — event that involves analyzing one or more aspects of a real property
+- [property inspection report](Places/RealProperty/PropertyInspectionReport.md) — report covering the findings of a property inspection
+- [qualified measure](Utilities/Analytics/QualifiedMeasure.md) — statistical measure that is constrained by features, quantity kinds or units that refine how it is calculated
+- [qualitative rating score](Arrangements/Ratings/QualitativeRatingScore.md) — rating score that is represented as a qualitative code with respect to some rating scale
+- [qualitative value](Arrangements/Assessments/QualitativeValue.md) — value that has less precision or accuracy than a value determined via quantitative methods and which is usually expresse
+- [quantitative rating score](Arrangements/Ratings/QuantitativeRatingScore.md) — rating score that is a simple numeric value on some scale, such as a credit rating for an individual
+- [quantitative value](Arrangements/Assessments/QuantitativeValue.md) — value determined via quantitative methods, expressed as a numerical value in appropriate units
+- [r e a claim](TransactionsExt/REATransactions/REAClaim.md) — Some imbalance, at a given point in time, between the respective rights and obligations of two parties with respect to o
+- [rating](Arrangements/Ratings/Rating.md) — standing of something at a particular time, indicated by at least one scores with respect to some scale, based on an ass
+- [rating agency](Arrangements/Ratings/RatingAgency.md) — rating issuer that is also a rating scale publisher, frequently but not always an independent rating service
+- [rating assessment activity](Arrangements/Ratings/RatingAssessmentActivity.md) — assessment activity resulting in a grade or score and potentially a report describing the score and the process used to 
+- [rating assessment event](Arrangements/Ratings/RatingAssessmentEvent.md) — individual assessment resulting in a grade or score and potentially a report describing the score
+- [rating issuer](Arrangements/Ratings/RatingIssuer.md) — party that is responsible for issuing ratings
+- [rating party](Arrangements/Ratings/RatingParty.md) — person, organization or group that analyzes some aspect of something and develops a rating
+- [rating report](Arrangements/Ratings/RatingReport.md) — report describing a set of ratings
+- [rating scale](Arrangements/Ratings/RatingScale.md) — system for assigning a value to something according to some scale with respect to quality, a standard, or ranking
+- [rating scale publisher](Arrangements/Ratings/RatingScalePublisher.md) — party responsible for managing one or more rating schemes and potentially publishing ratings based on those schemes
+- [rating score](Arrangements/Ratings/RatingScore.md) — grade, classification, or ranking of for something in accordance with some rating scale
+- [real estate](Places/RealProperty/RealEstate.md) — real property, interests in mortgages on real property (including interests in mortgages on leaseholds of land or improv
+- [real property](Places/RealProperty/RealProperty.md) — physical asset defined as land together with any structures that are permanently attached to that land, such as houses, 
+- [real property appraisal](Places/RealProperty/RealPropertyAppraisal.md) — value assessment that estimates the amount of money some real property is worth
+- [real property identifier](Places/RealProperty/RealPropertyIdentifier.md) — unique identifier given to identify a specific real property in some jurisidiction
+- [reassignable identifier](Arrangements/IdentifiersAndIndices/ReassignableIdentifier.md) — identifier that uniquely identifies something for a given time period, and that may be reused to identify something else
+- [recurrence interval](DatesAndTimes/FinancialDates/RecurrenceInterval.md) — time interval that is consistent between elements of a regular schedule
+- [reference value](Arrangements/Assessments/ReferenceValue.md) — value for something discernible for which evidence can be obtained
+- [referent](Relations/Relations/Referent.md) — something that another concept stands for, exemplifies, symbolizes, or otherwise mentions
+- [region-specific identifier](Places/Addresses/RegionSpecificIdentifier.md) — geographic region or subdivision identifier used internally by a country or other region
+- [regular schedule](DatesAndTimes/FinancialDates/RegularSchedule.md) — schedule whose time intervals recur regularly
+- [regulation](Law/LegalCapacity/Regulation.md) — a rule used to carry out a law
+- [relative date](DatesAndTimes/FinancialDates/RelativeDate.md) — calculated date that is some duration before or after another date
+- [report](Arrangements/Reporting/Report.md) — document that provides a structured description of something, prepared on ad hoc, periodic, recurring, regular, or as re
+- [reporting party](Arrangements/Reporting/ReportingParty.md) — party providing a report, typically in response to some contractual, legal, regulatory or other business requirement
+- [reporting policy](Law/LegalCapacity/ReportingPolicy.md) — policy specifying principles, rules and/or guidelines regarding some aspect of reporting
+- [representation](Agreements/Contracts/Representation.md) — contractual element that is a statement made by a party to the contract, before or at the time of making the contract, i
+- [request](Arrangements/Reporting/Request.md) — event in which some party asks another party for something at some point in time
+- [request activity](Arrangements/Reporting/RequestActivity.md) — activity in which some party asks another party for something or to do something
+- [requester](Arrangements/Reporting/Requester.md) — party that asks for something
+- [retained earnings](Accounting/AccountingEquity/RetainedEarnings.md) — net profits kept to accumulate in a business after dividends are paid
+- [revaluation](TransactionsExt/REATransactions/Revaluation.md) — 
+- [right](Law/LegalCapacity/Right.md) — entitlement to perform certain actions (or not), or to be in certain states (or not); or entitlement that requires other
+- [rural route address](Places/NorthAmerica/USPostalServiceAddresses/RuralRouteAddress.md) — delivery address whose delivery address line uses the abbreviation 'RR', followed by the route identifier, followed by '
+- [sale](ProductsAndServices/ProductsAndServices/Sale.md) — exchange of goods or services for money
+- [sales strategy](GoalsAndObjectives/Objectives/SalesStrategy.md) — strategy for selling something, including allocating resources to the sales process, reducing costs, and optimizing reve
+- [sampling variance](Utilities/Analytics/SamplingVariance.md) — measure of the extent to which the estimate of a characteristic from different possible samples of the same size and the
+- [schedule](DatesAndTimes/FinancialDates/Schedule.md) — collection of events, observations, or other occurrences and the associated dates and/or times when they will be done
+- [schedule stub](DatesAndTimes/FinancialDates/ScheduleStub.md) — date period before the start of the recurring part of a schedule or after the end of the recurring part, which may be as
+- [scheme](Arrangements/Arrangements/Scheme.md) — structure or means of organizing information such as a blueprint, schema, numbering system, organization structure, meas
+- [scoped measure](Utilities/Analytics/ScopedMeasure.md) — qualified measure that is constrained by filters on the statistical population to which it applies
+- [secondary unit](Places/Addresses/SecondaryUnit.md) — address component that identifies an individual unit within a larger structure, such as an apartment, office, hangar, sl
+- [secondary unit designator](Places/Addresses/SecondaryUnitDesignator.md) — classifier for a smaller structure or component within a larger facility, such as an apartment, office, mail stop, or ot
+- [secondary unit indicator](Places/Addresses/SecondaryUnitIndicator.md) — index to the specific unit within a secondary unit, such as a building or apartment, at a particular street address
+- [securities transaction contract](TransactionsExt/SecuritiesTransactions/SecuritiesTransactionContract.md) — The contract (written or implied) which governs the transaction of securities in the secondary Market
+- [securities transaction counterparty](TransactionsExt/SecuritiesTransactions/SecuritiesTransactionCounterparty.md) — 
+- [securities transaction principal](TransactionsExt/SecuritiesTransactions/SecuritiesTransactionPrincipal.md) — 
+- [seller](ProductsAndServices/ProductsAndServices/Seller.md) — party that makes, offers or contracts to make a sale to an actual or potential buyer
+- [service agreement](ProductsAndServices/ProductsAndServices/ServiceAgreement.md) — written contract between a client and service provider whereby the service provider supplies some service in the form of
+- [settlement netting provision](Agreements/Contracts/SettlementNettingProvision.md) — netting provision that specifies the way in which on a given payment date, each party will aggregate the amounts of a cu
+- [settlement process](TransactionsExt/SecuritiesTransactions/SettlementProcess.md) — 
+- [shareholders' equity](Accounting/AccountingEquity/ShareholdersEquity.md) — equity that is manifested in the form of shares in an entity, fund or structured product
+- [signatory capacity](Law/LegalCapacity/SignatoryCapacity.md) — the capacity of some natural person to sign agreements on the part of some organization or legal person
+- [specified date](DatesAndTimes/FinancialDates/SpecifiedDate.md) — calculated date that is defined by a rule that is captured as a string by the 'hasDateSpecification' property
+- [standard deviation](Utilities/Analytics/StandardDeviation.md) — square root of variance that measures the spread or dispersion around the mean of a data set
+- [standardized address](Places/NorthAmerica/USPostalServiceAddresses/StandardizedAddress.md) — delivery address that is fully spelled out, abbreviated by using the Postal Service standard abbreviations or as given i
+- [statistical area](Utilities/Analytics/StatisticalArea.md) — physical location that is defined per some program for designating geographic regions for the purposes of tabulating and
+- [statistical area identifier](Utilities/Analytics/StatisticalAreaIdentifier.md) — identifier for a physical location that is defined per a nationally consistent program for designating geographic region
+- [statistical measure](Utilities/Analytics/StatisticalMeasure.md) — summary (means, mode, total, index, etc
+- [statistical population](Utilities/Analytics/StatisticalPopulation.md) — statistical universe filtered by time and region
+- [statistical program](Utilities/Analytics/StatisticalProgram.md) — program that presents a detailed investigation and analysis of a subject or situation involving one or more studies or s
+- [statistical universe](Utilities/Analytics/StatisticalUniverse.md) — collection representing the total membership, or 'universe', of people, resources, products, services, events, or entiti
+- [statute law](Law/LegalCore/StatuteLaw.md) — law enacted by a legislature
+- [strategy](GoalsAndObjectives/Objectives/Strategy.md) — high-level approach that guides decision-making and the coordination of actions and plans in pursuit of some aim
+- [street address](Places/Addresses/StreetAddress.md) — index to a location that consists of a primary address number, predirectional, street name, suffix, postdirectional, and
+- [street name](Places/Addresses/StreetName.md) — identifier for a street in some context (e
+- [street suffix](Places/Addresses/StreetSuffix.md) — classifier for a street or other delivery location, such as a dwelling located along a waterway
+- [structure name](Places/Addresses/StructureName.md) — name for a building, house, office complex, shopping center, or other structure or group of structures
+- [study](GoalsAndObjectives/Objectives/Study.md) — analytical activity that investigates a specified area of interest, to determine its characteristics, relationships, con
+- [submitter](Arrangements/Reporting/Submitter.md) — party presenting something, such as a regulatory report
+- [supplemental address component](Places/Addresses/SupplementalAddressComponent.md) — address component that provides additional information that is important to ensuring proper delivery of communications
+- [supplemental address designator](Places/Addresses/SupplementalAddressDesignator.md) — classifier for supplemental address information, such as a highway contract route, rural route, building complex, shoppi
+- [supplemental address unit](Places/Addresses/SupplementalAddressUnit.md) — address component that includes a specific route, box, apartment, condominium or other indicator or unit associated with
+- [supplier](ProductsAndServices/ProductsAndServices/Supplier.md) — party that provides goods or services that some party wants or needs, especially over a long period of time
+- [tangible asset](OwnershipAndControl/Ownership/TangibleAsset.md) — asset that is a physical, measurable resource, i
+- [tax identification scheme](Parties/Parties/TaxIdentificationScheme.md) — identification scheme used to identify taxpayers in some jurisdiction
+- [tax identifier](Parties/Parties/TaxIdentifier.md) — identifier assigned to a taxpayer that enables compulsory financial charges and other levies to be imposed on the taxpay
+- [telephone number](Places/VirtualPlaces/TelephoneNumber.md) — virtual address that may be assigned to a fixed-line telephone subscriber station connected to a telephone line or to a 
+- [term sheet](Agreements/Contracts/TermSheet.md) — nonbinding agreement setting forth the basic terms and conditions under which a proposed business deal may be made
+- [termination provision](Agreements/Contracts/TerminationProvision.md) — contractual element that specifies the circumstances under which the parties can dissolve their legal relationship and d
+- [time direction](DatesAndTimes/FinancialDates/TimeDirection.md) — enumeration that indicates whether a calendar-specified date is figured from the start or the end of a calendar period
+- [transaction business event](TransactionsExt/REATransactions/TransactionBusinessEvent.md) — Occurrence in time that partners to a business transaction wish to monitor or control
+- [transaction confirmation](ProductsAndServices/ProductsAndServices/TransactionConfirmation.md) — written communication from a seller or service provider reciting the relevant details of a transaction
+- [transaction counterparty](TransactionsExt/MarketTransactions/TransactionCounterparty.md) — 
+- [transaction event](ProductsAndServices/ProductsAndServices/TransactionEvent.md) — any sale, assignment, lease, license, loan, advance, contribution, or other transfer of any interest in or right to use 
+- [transaction event](TransactionsExt/REATransactions/TransactionEvent.md) — The event component of a transaction
+- [transaction event aspect](TransactionsExt/REATransactions/TransactionEventAspect.md) — A transaction side as seen from the perspective of one of the parties to the transaction
+- [transaction party](TransactionsExt/REATransactions/TransactionParty.md) — Some entity which takes part in some transaction by receiving and/or parting with some item of economic value or some pa
+- [transaction principal](TransactionsExt/MarketTransactions/TransactionPrincipal.md) — 
+- [transaction undertaking](TransactionsExt/REATransactions/TransactionUndertaking.md) — A contractually defined and established commitment to deliver some goods, perform some service or make some payment in c
+- [transferable contract](Agreements/Contracts/TransferableContract.md) — contract in which the rights and obligations of one party may be transferred to another party
+- [triggering event](Accounting/CashFlows/TriggeringEvent.md) — event that relates to or triggers some aspect of a credit default swap
+- [triple bottom line objective](GoalsAndObjectives/Objectives/TripleBottomLineObjective.md) — financial objective that integrates economic performance, environmental stewardship, and social responsibility as co-equ
+- [undertaking](TransactionsExt/REATransactions/Undertaking.md) — Some undertaking to act
+- [undertaking event](TransactionsExt/REATransactions/UndertakingEvent.md) — Something which occurs at a point in time, at which a party makes some commitment to some other party
+- [unilateral commitment](Agreements/Agreements/UnilateralCommitment.md) — commitment (promise or obligation) made by one party without requiring a reciprocal promise from another party
+- [unilateral contract](Agreements/Contracts/UnilateralContract.md) — contract in which one party makes an offer that can only be accepted through performance rather than a return promise
+- [unit of account](Accounting/CurrencyAmount/UnitOfAccount.md) — nominal monetary unit of measure used to represent the real value (or cost) of any economic item; i
+- [unit of account identifier](Accounting/CurrencyAmount/UnitOfAccountIdentifier.md) — sequence of characters that can be used to uniquely identify a nominal monetary unit
+- [unit price](Accounting/CurrencyAmount/UnitPrice.md) — monetary price expressed in relation to a well-known measurable unit by which the goods or services are allocated
+- [urbanization](Places/NorthAmerica/USPostalServiceAddresses/Urbanization.md) — an area, sector, or development within a larger geographic area
+- [use of proceeds provision](Agreements/Contracts/UseOfProceedsProvision.md) — contract provision specifying how funds obtained through financing, such as through a credit agreement, offering, warran
+- [valuation method](Arrangements/Assessments/ValuationMethod.md) — method used to determine the present or expected worth of an asset
+- [value](Arrangements/Assessments/Value.md) — perceived worth of something, such as a product, service, or asset to a company, customer, or stakeholder
+- [value assessment](Arrangements/Assessments/ValueAssessment.md) — assessment event to estimate the value of something
+- [variance](Utilities/Analytics/Variance.md) — measure of spread, calculated as the average squared deviation of each number from the mean of a data set
+- [verbal contract](Agreements/Contracts/VerbalContract.md) — contract that exists as a result of some verbal exchange
+- [virtual address](Places/Addresses/VirtualAddress.md) — address identifying a virtual, i
+- [warranty](Agreements/Contracts/Warranty.md) — contractual element that is a statement of fact
+- [weighting function](Utilities/Analytics/WeightingFunction.md) — expression or function that determines the relative importance or influence of a given element of a set with respect to 
+- [when issued transaction](TransactionsExt/SecuritiesTransactions/WhenIssuedTransaction.md) — Trading in securities ahead of them being traded
+- [written contract](Agreements/Contracts/WrittenContract.md) — formal contract that is written and signed by the parties thereto
+- [zip code scheme](Places/NorthAmerica/USPostalServiceAddresses/ZipCodeScheme.md) — system used in the U
