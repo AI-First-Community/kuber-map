@@ -75,8 +75,14 @@ Full walkthroughs are in **[`docs/`](docs/)**:
 
 ## License
 
-MIT © 2026 Sanjeev Azad. Derives from FIBO (MIT, EDM Council) and the OMG Commons Ontology
-Library; attribution retained via each concept's `resource:` IRI. See [`LICENSE`](LICENSE).
+MIT © 2026 Sanjeev Azad — see [`LICENSE`](LICENSE).
+
+This project incorporates and redistributes content from **FIBO** (MIT, © EDM Council & OMG) and
+the **OMG Commons Ontology Library** (MIT, © EDM Council, OMG & Thematix Partners) — both permissive
+and MIT-compatible — plus vendored MIT/OFL front-end libraries. Their copyright and permission
+notices, and a trademark disclaimer, are in **[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)**.
+FIBO/EDM Council/OMG are trademarks of their owners; this is an independent project, not affiliated
+with or endorsed by them.
 
 ## Contributing
 
