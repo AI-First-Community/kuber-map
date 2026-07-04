@@ -2,7 +2,9 @@
 
 > A curated, **learner-first** knowledge map for the **Financial Industry Business Ontology (FIBO)** that doubles as **audit-ready grounding for financial AI agents** — with a provenance-tagged **cross-domain bridge layer** contributed back to EDM Council.
 
-Status: **Planning (v2 — re-pointed at value after multi-agent audit)** · Owner: Sanjeev Azad · Last updated: 2026-07-04
+Status: **Building — Loan-Origination MLV (Phase 1)** · Owner: Sanjeev Azad · Last updated: 2026-07-04
+
+> **Execution status lives in [`BACKLOG.md`](BACKLOG.md)** (what's done / what's next). Snapshot: pipeline + quality gates + FND/LOAN/FBC/BE extraction done; 71 core concepts + 4 cross-domain bridges curated; published private to `AI-First-Community/Bodhi-Map-For-FinTech`. Next: wire `core:` into the bundle → context-pack export → grounded-vs-ungrounded eval. Fresh checkout: `make setup && make fibo && make all`.
 
 > **v2 changelog.** This revision followed a three-lens adversarial audit (readiness, ROI, uniqueness). Major changes: (1) **re-sequenced roadmap** — agent-grounding is now Phase 1, not Phase 3; (2) **corrected two overstated claims** — FIBO cross-domain linking and OKF typed-frontmatter (§3, §6); (3) added an **OWL-restriction extraction spike** and **level-of-detail rendering** as hard Phase-1 requirements; (4) reframed the value prop and novelty around **pedagogical curation + intra-FIBO bridges**, treating OKF and agent-grounding as enablers, not the thesis. See §12 for the audit trail.
 
