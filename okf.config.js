@@ -30,9 +30,11 @@
     FBC:  { label: 'Business & Commerce', color: '#f59e0b', order: 2 },
     FND:  { label: 'Foundations',         color: '#3b82f6', order: 3 },
     BE:   { label: 'Business Entities',   color: '#8b5cf6', order: 4 },
+    CMNS: { label: 'Commons (shared)',    color: '#64748b', order: 5 },   // FIBO upper ontology
   };
 
-  const CLUSTER_TYPE = { LOAN: 'FIBO Class', FBC: 'FIBO Class', FND: 'FIBO Class', BE: 'FIBO Class' };
+  const CLUSTER_TYPE = { LOAN: 'FIBO Class', FBC: 'FIBO Class', FND: 'FIBO Class', BE: 'FIBO Class',
+                         CMNS: 'Commons Class' };
 
   // FIBO maturity, propagated per class — reused as Bodhi's "level" filter dimension.
   const LEVELS = { 1: 'Release', 2: 'Provisional', 3: 'Informative' };

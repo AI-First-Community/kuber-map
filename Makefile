@@ -1,8 +1,9 @@
 PY := ./.venv/bin/python
 PIP := ./.venv/bin/pip
 DOMAINS ?= FND LOAN FBC BE
+CLUSTERS ?= $(DOMAINS) CMNS   # domains emitted in the bundle (+ Commons upper ontology)
 
-.PHONY: setup fibo extract build curate pack eval map validate test lint attribution check all clean
+.PHONY: setup fibo commons extract build curate pack eval map validate test lint attribution check all clean
 
 setup:
 	python3 -m venv .venv
@@ -12,11 +13,14 @@ setup:
 fibo:
 	./scripts/fetch_fibo.sh
 
+commons:
+	./scripts/fetch_commons.sh
+
 extract:
 	$(PY) etl/extract.py --domains $(DOMAINS) --out out/intermediate.json
 
 build:
-	$(PY) etl/to_okf.py --in out/intermediate.json --clusters $(DOMAINS) --bundle knowledge
+	$(PY) etl/to_okf.py --in out/intermediate.json --clusters $(CLUSTERS) --bundle knowledge
 
 # Regenerate the curated layer (grounded in out/intermediate.json), then rebuild the bundle
 # so core: flags and bridges land in the OKF files. Run `make extract` (or `make all`) first.

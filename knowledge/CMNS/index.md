@@ -1,0 +1,158 @@
+# CMNS
+
+- [actor](PartiesAndSituations/Actor.md) — primary performer in a relationship between parties, i
+- [agent](PartiesAndSituations/Agent.md) — something autonomous that can adapt to and interact with its environment
+- [agent role](PartiesAndSituations/AgentRole.md) — role played by any agent
+- [arbitrary unit](QuantitiesAndUnits/ArbitraryUnit.md) — arbitrarily defined unit of measurement, where a relation of the unit to a physical unit of the SI does not exist or is 
+- [arrangement](Collections/Arrangement.md) — systematic plan, manner, or method for making, doing, achieving, or organizing something
+- [aspect](Classifiers/Aspect.md) — characteristic or feature that can be used to dimensionalize, filter, or subset a class, collection, or set of things
+- [authorization](BusinessAuthorizations/Authorization.md) — situation in which a party authorizes someone to act on their behalf or to have specific capabilities under certain cond
+- [authorized party](BusinessAuthorizations/AuthorizedParty.md) — party that has been given the ability to act on behalf of another party or to have specified capabilities under some set
+- [authorizing party](BusinessAuthorizations/AuthorizingParty.md) — party that delegates some role, authority, or control to another party
+- [base quantity kind](QuantitiesAndUnits/BaseQuantityKind.md) — quantity in a conventionally chosen subset of a given system of quantities, where no quantity in the subset can be expre
+- [base unit](QuantitiesAndUnits/BaseUnit.md) — measurement unit that is defined by a system of units to be the reference measurement unit for a base quantity
+- [business center](Locations/BusinessCenter.md) — municipality where business is conducted, especially one that is considered a financial center
+- [capability](Organizations/Capability.md) — ability to perform a specific function or achieve a particular outcome
+- [capacity](Organizations/Capacity.md) — maximum extent to which something or someone can perform a function or produce an output under specified conditions
+- [certificate](Documents/Certificate.md) — document attesting to the truth of some fact or set of facts
+- [classification scheme](Classifiers/ClassificationScheme.md) — system for allocating classifiers to things
+- [classifier](Classifiers/Classifier.md) — standardized classification or delineation for something, per some scheme for such delineation, within a specified conte
+- [code element](CodesAndCodeSets/CodeElement.md) — sequence of characters denoting something for some purpose, within a specified context, according to some rule set
+- [code set](CodesAndCodeSets/CodeSet.md) — system of alpha-numeric symbols, or combinations of symbols, that stand for specified values in some context
+- [coherent derived unit](QuantitiesAndUnits/CoherentDerivedUnit.md) — derived unit that, for a given system of quantities and for a chosen set of base units, is a product of powers of base u
+- [collection](Collections/Collection.md) — grouping of things (may be zero) that have some shared significance
+- [composition](RolesAndCompositions/Composition.md) — distinct thing resulting from bringing together other things, possibly in specific roles, for a particular purpose
+- [constant](QuantitiesAndUnits/Constant.md) — symbol that represents a value that does not change (i
+- [constituent](Collections/Constituent.md) — component of a collection or combination of things
+- [context](ContextualDesignators/Context.md) — situation or frame of reference in which something applies, exists, happens, or is used and that helps to illustrate or 
+- [contextual designation](ContextualDesignators/ContextualDesignation.md) — designation that applies to something in some context
+- [contextual identification scheme](ContextualIdentifiers/ContextualIdentificationScheme.md) — identification scheme that applies within one or more contexts
+- [contextual identifier](ContextualIdentifiers/ContextualIdentifier.md) — sequence of characters uniquely identifying that with which it is associated, within a specified context
+- [contextual name](ContextualDesignators/ContextualName.md) — designation by which someone, some place, or something is known in some context
+- [conversion factor between units](QuantitiesAndUnits/ConversionFactorBetweenUnits.md) — ratio of two measurement units for quantities of the same kind
+- [conversion-based unit](QuantitiesAndUnits/ConversionBasedUnit.md) — derived unit that is defined with respect to another reference unit through an explicit conversion relationship
+- [country](Locations/Country.md) — geopolitical entity representing a distinct territorial body or political entity or dependent territory
+- [country subdivision](Locations/CountrySubdivision.md) — geopolitical entity that is a legal division of a country, dependency, or other area of special geopolitical interest re
+- [county](Locations/County.md) — political and administrative division of a country, state or province, providing certain local governmental services
+- [cyclic ratio scale](QuantitiesAndUnits/CyclicRatioScale.md) — measurement scale that represents a ratio scale with a periodic cycle
+- [date](DatesAndTimes/Date.md) — calendar day on some calendar
+- [date period](DatesAndTimes/DatePeriod.md) — time span over one or more calendar days
+- [date time](DatesAndTimes/DateTime.md) — time point including a date and a time, optionally including a time zone offset
+- [date time stamp](DatesAndTimes/DateTimeStamp.md) — time point including a date and a time that requires a time zone offset
+- [derived quantity kind](QuantitiesAndUnits/DerivedQuantityKind.md) — quantity, in a system of quantities, defined in terms of the base quantities of that system
+- [derived unit](QuantitiesAndUnits/DerivedUnit.md) — measurement unit for a derived quantity, i
+- [designation](Designators/Designation.md) — representation for something, or for a conceptualization thereof, that denotes it in a domain or subject
+- [dimensionless quantity](QuantitiesAndUnits/DimensionlessQuantity.md) — quantity for which all the exponents of the factors corresponding to the base quantities in its quantity dimension are z
+- [document](Documents/Document.md) — unitary expression of some realization of an intellectual or artistic work
+- [document part](Documents/DocumentPart.md) — structurally distinct subdivision of a document
+- [duration](DatesAndTimes/Duration.md) — interval of time of some specific length
+- [explicit date](DatesAndTimes/ExplicitDate.md) — date in which the 'has date value' property is required
+- [explicit date period](DatesAndTimes/ExplicitDatePeriod.md) — date period for which the start date, end date, and/or duration are required
+- [explicit duration](DatesAndTimes/ExplicitDuration.md) — duration for which the 'has duration value' property must have a value
+- [explicit time period](DatesAndTimes/ExplicitTimePeriod.md) — time period for which the starting time, ending time, and/or duration are required
+- [expression](QuantitiesAndUnits/Expression.md) — finite combination of symbols that are well-formed according to applicable rules
+- [facility](SitesAndFacilities/Facility.md) — something established to serve a particular purpose, make some course of action or operation easier, or provide some cap
+- [factor](QuantitiesAndUnits/Factor.md) — number or quantity that when multiplied with another produces a given number or expression
+- [federal capital area](Locations/FederalCapitalArea.md) — country subdivision that is or includes the municipality or capital city that acts as the seat of the federal government
+- [federal state](Locations/FederalState.md) — self-governing geopolitical unit which forms part of a wider geopolitical unit that is recognized as a country
+- [formal organization](Organizations/FormalOrganization.md) — organization that is recognized in some legal jurisdiction, with associated rights and responsibilities
+- [functional role](RolesAndCompositions/FunctionalRole.md) — role representing an underlying functionality that something, such as a person, organization, process, or service, is ex
+- [geodetic coordinate system](Locations/GeodeticCoordinateSystem.md) — three-dimensional reference system that is a global frame of reference for precisely representing the position of locati
+- [geographic region](Locations/GeographicRegion.md) — area of land that has common features
+- [geographic region identification scheme](Locations/GeographicRegionIdentificationScheme.md) — identification scheme dedicated to the unique identification of geographic regions
+- [geographic region identifier](Locations/GeographicRegionIdentifier.md) — string of letters that indicates a code or other identifier for geographical region, assigned for the purpose of uniquel
+- [geographic region kind](Locations/GeographicRegionKind.md) — classifier for a geographic region, including but not limited to a subdivision of a geopolitical entity, (noting that th
+- [geopolitical entity](Locations/GeopoliticalEntity.md) — geographic area that represents a geophysical location associated with some form of political structure
+- [identification scheme](Identifiers/IdentificationScheme.md) — system for minting identifiers for things that specifies constraints on the structure of the identifier
+- [identifier](Identifiers/Identifier.md) — sequence of characters uniquely identifying that with which it is associated
+- [informal organization](Organizations/InformalOrganization.md) — group of individuals who come together for a common purpose without forming a legal entity
+- [interval scale](QuantitiesAndUnits/IntervalScale.md) — measurement scale that represents quantitative values and for which mode, median and mean can be calculated
+- [jurisdiction](RegulatoryAgencies/Jurisdiction.md) — power of a court or regulatory agency to adjudicate cases, issue orders, and interpret and apply the law with respect to
+- [legal document](Documents/LegalDocument.md) — document specifying the terms of, or provides evidence for, an agreement, attestation, certification, conditions, permis
+- [legal entity](Organizations/LegalEntity.md) — legal person that is a partnership, corporation, or other organization having the capacity to negotiate contracts, assum
+- [legal person](Organizations/LegalPerson.md) — party that is recognized as having rights and obligations under the law, including but not limited to the right to sue a
+- [legally delegated authority](BusinessAuthorizations/LegallyDelegatedAuthority.md) — authorized party empowered with some level of legal control and corresponding responsibility
+- [location](Locations/Location.md) — place or position in time and/or space, including a virtual place
+- [logarithmic scale](QuantitiesAndUnits/LogarithmicScale.md) — measurement scale on which the actual distance of a point from the scale's zero is proportional to the logarithm of the 
+- [material measure](QuantitiesAndUnits/MaterialMeasure.md) — something that reproduces or supplies one or more quantities, each with an assigned quantity value
+- [measure](QuantitiesAndUnits/Measure.md) — amount or degree of something; the dimensions, capacity, or amount of something ascertained by measuring
+- [measurement procedure](QuantitiesAndUnits/MeasurementProcedure.md) — procedure of a measurement according to one or more measurement principles (i
+- [measurement reference](QuantitiesAndUnits/MeasurementReference.md) — measurement unit, measurement procedure, reference material, or a combination of such
+- [measurement scale](QuantitiesAndUnits/MeasurementScale.md) — ordered set of quantity values of quantities of a given kind of quantity used in ranking, according to magnitude, quanti
+- [measurement unit](QuantitiesAndUnits/MeasurementUnit.md) — real scalar quantity, defined and adopted by convention, with which any other quantity of the same kind can be compared 
+- [member-bearing organization](Organizations/MemberBearingOrganization.md) — role of a group or organization that has members that are people or other organizations
+- [membership](Organizations/Membership.md) — situation, corresponding to an n-ary relation, in which some group or organization has at least one member (person or or
+- [municipality](Locations/Municipality.md) — urban administrative division having corporate status and usually powers of self-government or jurisdiction
+- [name](Designators/Name.md) — designation for something by a linguistic expression
+- [nominal scale](QuantitiesAndUnits/NominalScale.md) — measurement scale that represents objects as belonging to classes that have no particular order
+- [notice](Documents/Notice.md) — announcement, communication, intimation, or advance warning of something, usually, but not necessarily, to allow prepara
+- [ordinal scale](QuantitiesAndUnits/OrdinalScale.md) — quantity-value scale for ordinal quantities, i
+- [organization](Organizations/Organization.md) — framework of authority within which a person, persons, or groups of people act, or are designated to act, towards some p
+- [organization identification scheme](Organizations/OrganizationIdentificationScheme.md) — identification scheme dedicated to the unique identification of organizations
+- [organization identifier](Organizations/OrganizationIdentifier.md) — identifier assigned to an organization within an organization identification scheme, and unique within that scheme
+- [organization member](Organizations/OrganizationMember.md) — party (person or organization) that has a membership role with respect to some organization
+- [organization name](Organizations/OrganizationName.md) — designation by which some organization is known in some context
+- [organization sub-unit identifier](Organizations/OrganizationSubUnitIdentifier.md) — identifier allocated to a particular organizational sub-unit
+- [organizational sub-unit](Organizations/OrganizationalSubUnit.md) — any department or other entity within a larger organization that only has full recognition within the context of that or
+- [party](PartiesAndSituations/Party.md) — person or organization
+- [party role](PartiesAndSituations/PartyRole.md) — role played by an organization or individual that may be time bound
+- [percentage](QuantitiesAndUnits/Percentage.md) — ratio value expressed as a fraction of 100, i
+- [physical location](Locations/PhysicalLocation.md) — location in physical space
+- [physical unit](QuantitiesAndUnits/PhysicalUnit.md) — unit of measurement that is defined using a physical quantity
+- [prefix](QuantitiesAndUnits/Prefix.md) — named multiple or sub-multiple multiplication factor used in the specification of a derived unit
+- [prefixed unit](QuantitiesAndUnits/PrefixedUnit.md) — conversion-based unit that is defined with respect to another measurement reference unit through a linear conversion rel
+- [process role](RolesAndCompositions/ProcessRole.md) — role that associates resources and participants to a structured set of activities involving various enterprise entities,
+- [proper interval](DatesAndTimes/ProperInterval.md) — time interval with a non-zero extent or duration
+- [quantity dimension](QuantitiesAndUnits/QuantityDimension.md) — expression of the dependence of a quantity on the base quantities of a system of quantities as a product of powers of fa
+- [quantity kind](QuantitiesAndUnits/QuantityKind.md) — aspect common to mutually comparable quantities
+- [quantity kind power factor](QuantitiesAndUnits/QuantityKindPowerFactor.md) — factor in a product of powers that defines a derived quantity
+- [quantity name](QuantitiesAndUnits/QuantityName.md) — human-readable textual representation of the quantity
+- [ratio](QuantitiesAndUnits/Ratio.md) — proportional relationship between two different quantity values that gives rise to a datum of a specific quantity kind
+- [ratio scale](QuantitiesAndUnits/RatioScale.md) — measurement scale that represents quantitative values, allows comparison of differences in values, has a fixed zero valu
+- [ratio scale with additional limit values](QuantitiesAndUnits/RatioScaleWithAdditionalLimitValues.md) — measurement scale that that represents a ratio scale that has additional limit values
+- [record](Documents/Record.md) — memorialization and objective evidence of activities performed, events occurred, results achieved, or statements made, r
+- [reference](Documents/Reference.md) — source that may be used to ascertain, interpret, or understand something
+- [reference document](Documents/ReferenceDocument.md) — document that is used as a reference for something
+- [reference material](QuantitiesAndUnits/ReferenceMaterial.md) — material, sufficiently homogeneous and stable with reference to specified properties, which has been established to be f
+- [region](Locations/Region.md) — area that is a continuous part of a surface, space, or body
+- [registered identifier](RegistrationAuthorities/RegisteredIdentifier.md) — contextual identifier that is registered in a registry by, or on behalf of, a registration authority according to some r
+- [registrar](RegistrationAuthorities/Registrar.md) — role of a party that acts as a representative of a registration authority to provide registration services, including of
+- [registration authority](RegistrationAuthorities/RegistrationAuthority.md) — service provider that is officially responsible for maintaining a registry and providing registration services and/or fo
+- [registration scheme](RegistrationAuthorities/RegistrationScheme.md) — scheme for organizing information in a registry and allocating identifiers to registered items
+- [registration service](RegistrationAuthorities/RegistrationService.md) — service provided to individuals and/or organizations for the registration of items in a registry
+- [registry](RegistrationAuthorities/Registry.md) — authoritative record or collection of records relating to something
+- [registry entry](RegistrationAuthorities/RegistryEntry.md) — constituent of a registry that includes the details for something recorded in that registry
+- [regulatory agency](RegulatoryAgencies/RegulatoryAgency.md) — public authority or government agency responsible for exercising authority over something in a regulatory or supervisory
+- [regulatory report](RegulatoryAgencies/RegulatoryReport.md) — document required to support operational transparency that demonstrates compliance with some specification, law, policy,
+- [regulatory service](RegulatoryAgencies/RegulatoryService.md) — service provided by a regulatory agency, which may include, but not be limited to, examination, monitoring, supervision,
+- [responsible party](BusinessAuthorizations/ResponsibleParty.md) — legal person acting in a role that has some formal responsibility
+- [role](RolesAndCompositions/Role.md) — named specific behavior of something participating in a particular context
+- [scalar quantity](QuantitiesAndUnits/ScalarQuantity.md) — property of a phenomenon, body, or substance, where the property has a magnitude that can be expressed by means of a num
+- [scalar quantity value](QuantitiesAndUnits/ScalarQuantityValue.md) — number and reference together expressing the magnitude of a quantity
+- [scalar quantity value range](QuantitiesAndUnits/ScalarQuantityValueRange.md) — expression of the lowest possible value and/or highest possible value for some scalar quantity
+- [service](Organizations/Service.md) — intangible activity performed by some party for the benefit of another party
+- [service provider](Organizations/ServiceProvider.md) — role of an agent that provides some service, including but not limited to commercial or professional services
+- [site](SitesAndFacilities/Site.md) — place, setting, or context in which something, such as a facility, is situated
+- [situation](PartiesAndSituations/Situation.md) — setting, state of being, or relationship that is relatively stable for some period of time
+- [software agent](PartiesAndSituations/SoftwareAgent.md) — digital entity that perceives its environment and takes actions that maximize its chance of successfully achieving its g
+- [specification](Documents/Specification.md) — explicit requirement or set of requirements to be satisfied by something, such as a product, material, model, process or
+- [structural role](RolesAndCompositions/StructuralRole.md) — role specifying relations between entities in the sense of competence, often reflecting organizational or structural rel
+- [structured collection](Collections/StructuredCollection.md) — collection that has a clearly defined structure or organization
+- [structured identifier](ContextualIdentifiers/StructuredIdentifier.md) — sequence of characters uniquely identifying that with which it is associated, that includes other codes or identifiers, 
+- [system of quantities](QuantitiesAndUnits/SystemOfQuantities.md) — set of quantities together with a set of non-contradictory equations relating those quantities
+- [system of units](QuantitiesAndUnits/SystemOfUnits.md) — set of base units and derived units, together with their multiples and submultiples, defined in accordance with given ru
+- [technical specification document](Documents/TechnicalSpecificationDocument.md) — document that sets out detailed requirements to be satisfied by a product, material, process or system and the procedure
+- [temporal entity](DatesAndTimes/TemporalEntity.md) — time interval or instant
+- [territory](Locations/Territory.md) — geographic area, typically considered an area of special geopolitical interest, subject to the sovereignty, control, or 
+- [time instant](DatesAndTimes/TimeInstant.md) — temporal entity that is a member of a time scale, with no extent or duration
+- [time interval](DatesAndTimes/TimeInterval.md) — segment of the time axis, a location in time, with an extent or duration
+- [time of day](DatesAndTimes/TimeOfDay.md) — explicit time, according to a clock
+- [time period](DatesAndTimes/TimePeriod.md) — time span over some finite window
+- [total](QuantitiesAndUnits/Total.md) — sum of the values for some characteristic of all units
+- [tract identifier](SitesAndFacilities/TractIdentifier.md) — unique identifier for a parcel issued for use in some jurisdiction
+- [tract of land](SitesAndFacilities/TractOfLand.md) — geographic region that is a contiguous parcel or area of land within a larger region on the surface of the earth, typica
+- [undergoer](PartiesAndSituations/Undergoer.md) — something that plays the role of the object or recipient in a situation, i
+- [unit power factor](QuantitiesAndUnits/UnitPowerFactor.md) — factor in a product of powers that defines a derived unit
+- [variable](QuantitiesAndUnits/Variable.md) — symbol that represents a parameter in a formula or expression
+- [venue](SitesAndFacilities/Venue.md) — site where something happens, described in the context of an event, activity, or something else that occurs there
+- [virtual location](Locations/VirtualLocation.md) — place that does not exist in any single physical location

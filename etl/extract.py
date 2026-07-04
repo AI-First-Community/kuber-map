@@ -58,14 +58,18 @@ def _merge_unique_bnodes(g, fg):
         g.add((m(s), p, m(o)))
 
 
-def load_domains(fibo_root, domains):
-    """Parse every .rdf under the given domains. Returns (graph, class_source, files).
-    class_source: class-URI -> {file, cluster, maturity} for classes DEFINED in a loaded file."""
+def load_domains(fibo_root, domains, commons_root=None):
+    """Parse every .rdf under the given domains (+ the Commons upper-ontology modules, if
+    fetched). Returns (graph, class_source, files). class_source: class-URI ->
+    {file, cluster, maturity} for classes DEFINED in a loaded file. cluster_of classifies
+    Commons IRIs as CMNS, so those classes become CMNS records the map can render."""
     g = Graph()
     class_source = {}
     files = []
     for d in domains:
         files += glob.glob(os.path.join(fibo_root, d, "**", "*.rdf"), recursive=True)
+    if commons_root and os.path.isdir(commons_root):
+        files += glob.glob(os.path.join(commons_root, "**", "*.rdf"), recursive=True)
 
     for f in sorted(files):
         try:
@@ -242,12 +246,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--fibo", default="fibo-source")
     ap.add_argument("--domains", nargs="+", default=["FND", "LOAN"])
+    ap.add_argument("--commons", default="commons-source",
+                    help="Commons upper-ontology modules (fetch with scripts/fetch_commons.sh); "
+                         "loaded as CMNS if the dir exists")
     ap.add_argument("--out", default="out/intermediate.json")
     args = ap.parse_args()
     requested = set(args.domains)
+    if os.path.isdir(args.commons):
+        requested.add("CMNS")
 
-    print(f"Loading FIBO {args.domains} from {args.fibo} ...")
-    g, class_source, files = load_domains(args.fibo, args.domains)
+    print(f"Loading FIBO {args.domains} from {args.fibo} (+ Commons if present) ...")
+    g, class_source, files = load_domains(args.fibo, args.domains, args.commons)
     print(f"  merged: {len(g):,} triples, {len(files)} files, {len(class_source):,} defined classes")
 
     records = extract(g, class_source)

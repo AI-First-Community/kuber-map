@@ -27,7 +27,7 @@ Last updated: 2026-07-04
 
 **Not started:** the live eval run, per-domain lazy loading + use-case lens, additional domains/use-cases, EDM contribution.
 
-**Fresh-checkout setup:** `make setup && make fibo && make all` then `make check`.
+**Fresh-checkout setup:** `make setup && make fibo && make commons && make all` then `make check`.
 
 ---
 
@@ -71,7 +71,7 @@ Last updated: 2026-07-04
 
 ### E4 — Scale domains
 - [ ] Onboard SEC, DER, IND, MD, BP, CAE (per-domain recipe in PLAN §7)
-- [ ] Load Commons (CMNS) source so CMNS targets resolve to real nodes (currently pending links)
+- [x] **Loaded Commons (CMNS)** — `scripts/fetch_commons.sh` fetches the 19 OMG Commons modules FIBO imports (content-negotiated RDF); `extract.py` loads them as CMNS. Resolved ~580 edges: pending links 693 → 114; graph now 1,440 nodes / 3,001 edges. (Commons isn't SHA-pinnable via OMG deref — a reproducibility caveat vs. the fibo pin.)
 - [ ] Per-domain `core:` sets + lateral bridges + `index.md`
 
 ### E5 — EDM Council contribution

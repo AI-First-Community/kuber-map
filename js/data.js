@@ -153,6 +153,96 @@ const CLUSTERS = {
     "label": "Trusts",
     "color": "#b571f4",
     "domain": "BE"
+  },
+  "CMNS__BusinessAuthorizations": {
+    "label": "Business Authorizations",
+    "color": "#387ea8",
+    "domain": "CMNS"
+  },
+  "CMNS__Classifiers": {
+    "label": "Classifiers",
+    "color": "#3a80ae",
+    "domain": "CMNS"
+  },
+  "CMNS__CodesAndCodeSets": {
+    "label": "Codes & Code Sets",
+    "color": "#3c81b4",
+    "domain": "CMNS"
+  },
+  "CMNS__Collections": {
+    "label": "Collections",
+    "color": "#3e82ba",
+    "domain": "CMNS"
+  },
+  "CMNS__ContextualDesignators": {
+    "label": "Contextual Designators",
+    "color": "#4083bf",
+    "domain": "CMNS"
+  },
+  "CMNS__ContextualIdentifiers": {
+    "label": "Contextual Identifiers",
+    "color": "#4684c1",
+    "domain": "CMNS"
+  },
+  "CMNS__DatesAndTimes": {
+    "label": "Dates & Times",
+    "color": "#4c84c3",
+    "domain": "CMNS"
+  },
+  "CMNS__Designators": {
+    "label": "Designators",
+    "color": "#5286c5",
+    "domain": "CMNS"
+  },
+  "CMNS__Documents": {
+    "label": "Documents",
+    "color": "#5887c7",
+    "domain": "CMNS"
+  },
+  "CMNS__Identifiers": {
+    "label": "Identifiers",
+    "color": "#5d88c9",
+    "domain": "CMNS"
+  },
+  "CMNS__Locations": {
+    "label": "Locations",
+    "color": "#638acb",
+    "domain": "CMNS"
+  },
+  "CMNS__Organizations": {
+    "label": "Organizations",
+    "color": "#698ccd",
+    "domain": "CMNS"
+  },
+  "CMNS__PartiesAndSituations": {
+    "label": "Parties & Situations",
+    "color": "#6f8ecf",
+    "domain": "CMNS"
+  },
+  "CMNS__QuantitiesAndUnits": {
+    "label": "Quantities & Units",
+    "color": "#7590d1",
+    "domain": "CMNS"
+  },
+  "CMNS__RegistrationAuthorities": {
+    "label": "Registration Authorities",
+    "color": "#7b93d3",
+    "domain": "CMNS"
+  },
+  "CMNS__RegulatoryAgencies": {
+    "label": "Regulatory Agencies",
+    "color": "#8195d5",
+    "domain": "CMNS"
+  },
+  "CMNS__RolesAndCompositions": {
+    "label": "Roles & Compositions",
+    "color": "#8698d7",
+    "domain": "CMNS"
+  },
+  "CMNS__SitesAndFacilities": {
+    "label": "Sites & Facilities",
+    "color": "#8c9bd9",
+    "domain": "CMNS"
   }
 };
 const CLUSTER_GROUPS = [
@@ -204,6 +294,29 @@ const CLUSTER_GROUPS = [
       "BE__PrivateLimitedCompanies",
       "BE__SoleProprietorships",
       "BE__Trusts"
+    ]
+  },
+  {
+    "title": "Commons (shared)",
+    "clusters": [
+      "CMNS__BusinessAuthorizations",
+      "CMNS__Classifiers",
+      "CMNS__CodesAndCodeSets",
+      "CMNS__Collections",
+      "CMNS__ContextualDesignators",
+      "CMNS__ContextualIdentifiers",
+      "CMNS__DatesAndTimes",
+      "CMNS__Designators",
+      "CMNS__Documents",
+      "CMNS__Identifiers",
+      "CMNS__Locations",
+      "CMNS__Organizations",
+      "CMNS__PartiesAndSituations",
+      "CMNS__QuantitiesAndUnits",
+      "CMNS__RegistrationAuthorities",
+      "CMNS__RegulatoryAgencies",
+      "CMNS__RolesAndCompositions",
+      "CMNS__SitesAndFacilities"
     ]
   }
 ];
@@ -29376,6 +29489,3598 @@ const GRAPH = {
           "u": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/Trustor"
         }
       ]
+    },
+    {
+      "id": "CMNS__BusinessAuthorizations__Authorization",
+      "label": "authorization",
+      "type": "FIBO Class",
+      "cluster": "CMNS__BusinessAuthorizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "situation in which a party authorizes someone to act on their behalf or to have specific capabilities under certain conditions for some period of time",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Authorization",
+          "u": "https://www.omg.org/spec/Commons/BusinessAuthorizations/Authorization"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__BusinessAuthorizations__AuthorizedParty",
+      "label": "authorized party",
+      "type": "FIBO Class",
+      "cluster": "CMNS__BusinessAuthorizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "party that has been given the ability to act on behalf of another party or to have specified capabilities under some set of guidelines for some period of time",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — AuthorizedParty",
+          "u": "https://www.omg.org/spec/Commons/BusinessAuthorizations/AuthorizedParty"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__BusinessAuthorizations__AuthorizingParty",
+      "label": "authorizing party",
+      "type": "FIBO Class",
+      "cluster": "CMNS__BusinessAuthorizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "party that delegates some role, authority, or control to another party",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — AuthorizingParty",
+          "u": "https://www.omg.org/spec/Commons/BusinessAuthorizations/AuthorizingParty"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__BusinessAuthorizations__LegallyDelegatedAuthority",
+      "label": "legally delegated authority",
+      "type": "FIBO Class",
+      "cluster": "CMNS__BusinessAuthorizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "authorized party empowered with some level of legal control and corresponding responsibility",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — LegallyDelegatedAuthority",
+          "u": "https://www.omg.org/spec/Commons/BusinessAuthorizations/LegallyDelegatedAuthority"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__BusinessAuthorizations__ResponsibleParty",
+      "label": "responsible party",
+      "type": "FIBO Class",
+      "cluster": "CMNS__BusinessAuthorizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "legal person acting in a role that has some formal responsibility",
+      "detail": "",
+      "examples": [
+        "party with a fiduciary responsibility such as a signatory, an examiner, registrar, obligor, payee, etc."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ResponsibleParty",
+          "u": "https://www.omg.org/spec/Commons/BusinessAuthorizations/ResponsibleParty"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Classifiers__Aspect",
+      "label": "aspect",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Classifiers",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "characteristic or feature that can be used to dimensionalize, filter, or subset a class, collection, or set of things",
+      "detail": "",
+      "examples": [],
+      "synonyms": [
+        "characteristic"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Aspect",
+          "u": "https://www.omg.org/spec/Commons/Classifiers/Aspect"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Classifiers__ClassificationScheme",
+      "label": "classification scheme",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Classifiers",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "system for allocating classifiers to things",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ClassificationScheme",
+          "u": "https://www.omg.org/spec/Commons/Classifiers/ClassificationScheme"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Classifiers__Classifier",
+      "label": "classifier",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Classifiers",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "standardized classification or delineation for something, per some scheme for such delineation, within a specified context",
+      "detail": "",
+      "examples": [
+        "The classifier 'color' embraces characteristics being red, blue, green, etc. The classifier 'material' embraces characteristics made of wood, metal, etc."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Classifier",
+          "u": "https://www.omg.org/spec/Commons/Classifiers/Classifier"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__CodesAndCodeSets__CodeElement",
+      "label": "code element",
+      "type": "FIBO Class",
+      "cluster": "CMNS__CodesAndCodeSets",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "sequence of characters denoting something for some purpose, within a specified context, according to some rule set",
+      "detail": "",
+      "examples": [
+        "An example of a code set that has multiple versions are the International Statistical Classification of Diseases and Related Health Problems (ICD) codes such as ICD-9, ICD-10, and so forth, that specify the same codes across multiple versions."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — CodeElement",
+          "u": "https://www.omg.org/spec/Commons/CodesAndCodeSets/CodeElement"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__CodesAndCodeSets__CodeSet",
+      "label": "code set",
+      "type": "FIBO Class",
+      "cluster": "CMNS__CodesAndCodeSets",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "system of alpha-numeric symbols, or combinations of symbols, that stand for specified values in some context",
+      "detail": "",
+      "examples": [],
+      "synonyms": [
+        "coding scheme"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — CodeSet",
+          "u": "https://www.omg.org/spec/Commons/CodesAndCodeSets/CodeSet"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Collections__Arrangement",
+      "label": "arrangement",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Collections",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "systematic plan, manner, or method for making, doing, achieving, or organizing something",
+      "detail": "",
+      "examples": [
+        "Examples include designs, schema, models, methodologies, alphabetical or numeric ordering, and the like."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Arrangement",
+          "u": "https://www.omg.org/spec/Commons/Collections/Arrangement"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Collections__Collection",
+      "label": "collection",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Collections",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "grouping of things (may be zero) that have some shared significance",
+      "detail": "Users should use either comprises or hasPart, or one of their respective subproperties, to include things in a collection.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Collection",
+          "u": "https://www.omg.org/spec/Commons/Collections/Collection"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Collections__Constituent",
+      "label": "constituent",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Collections",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "component of a collection or combination of things",
+      "detail": "Users should use either isIncludedIn or isPartOf, or one of their respective subproperties, to include a constituent in a collection.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Constituent",
+          "u": "https://www.omg.org/spec/Commons/Collections/Constituent"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Collections__StructuredCollection",
+      "label": "structured collection",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Collections",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "collection that has a clearly defined structure or organization",
+      "detail": "Users should use the hasMethod property on arrangement to describe the methodology for structuring the collection.",
+      "examples": [
+        "Examples include collections organized thematically, alphabetically, by method used to develop them, according to time and/or version, or based on encoding schemes such as the Dewey Decimal System or Library of Congress Subject Headings."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — StructuredCollection",
+          "u": "https://www.omg.org/spec/Commons/Collections/StructuredCollection"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__ContextualDesignators__Context",
+      "label": "context",
+      "type": "FIBO Class",
+      "cluster": "CMNS__ContextualDesignators",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "situation or frame of reference in which something applies, exists, happens, or is used and that helps to illustrate or explain it",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Context",
+          "u": "https://www.omg.org/spec/Commons/ContextualDesignators/Context"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__ContextualDesignators__ContextualDesignation",
+      "label": "contextual designation",
+      "type": "FIBO Class",
+      "cluster": "CMNS__ContextualDesignators",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "designation that applies to something in some context",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ContextualDesignation",
+          "u": "https://www.omg.org/spec/Commons/ContextualDesignators/ContextualDesignation"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__ContextualDesignators__ContextualName",
+      "label": "contextual name",
+      "type": "FIBO Class",
+      "cluster": "CMNS__ContextualDesignators",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "designation by which someone, some place, or something is known in some context",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ContextualName",
+          "u": "https://www.omg.org/spec/Commons/ContextualDesignators/ContextualName"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__ContextualIdentifiers__ContextualIdentificationScheme",
+      "label": "contextual identification scheme",
+      "type": "FIBO Class",
+      "cluster": "CMNS__ContextualIdentifiers",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "identification scheme that applies within one or more contexts",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ContextualIdentificationScheme",
+          "u": "https://www.omg.org/spec/Commons/ContextualIdentifiers/ContextualIdentificationScheme"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__ContextualIdentifiers__ContextualIdentifier",
+      "label": "contextual identifier",
+      "type": "FIBO Class",
+      "cluster": "CMNS__ContextualIdentifiers",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "sequence of characters uniquely identifying that with which it is associated, within a specified context",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ContextualIdentifier",
+          "u": "https://www.omg.org/spec/Commons/ContextualIdentifiers/ContextualIdentifier"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__ContextualIdentifiers__StructuredIdentifier",
+      "label": "structured identifier",
+      "type": "FIBO Class",
+      "cluster": "CMNS__ContextualIdentifiers",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "sequence of characters uniquely identifying that with which it is associated, that includes other codes or identifiers, or that is constructed from other notions",
+      "detail": "",
+      "examples": [
+        "A vehicle identification number (VIN) includes a world-wide manufacturer identifier, a vehicle description (i.e., make, model), check digits, the year, plant and a specific vehicle number.",
+        "An international security identification number (ISIN) includes a country code and the national security identification number (NSIN), as defined in ISO 6166.",
+        "For a fictional business identifier, the rule used to parse a composite identifier might be fibo-fnd-arr-id:parseRegex 'RA([0-9]{6})-([0-9A-Z]*)', and fibo-fnd-arr-id:constructRegex '$1-$2', where RA represents a text value corresponding to the registration authority for the business identifier."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — StructuredIdentifier",
+          "u": "https://www.omg.org/spec/Commons/ContextualIdentifiers/StructuredIdentifier"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__Date",
+      "label": "date",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "calendar day on some calendar",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Date",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/Date"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__DatePeriod",
+      "label": "date period",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "time span over one or more calendar days",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — DatePeriod",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/DatePeriod"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__DateTime",
+      "label": "date time",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "time point including a date and a time, optionally including a time zone offset",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — DateTime",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/DateTime"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__DateTimeStamp",
+      "label": "date time stamp",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "time point including a date and a time that requires a time zone offset",
+      "detail": "",
+      "examples": [],
+      "synonyms": [
+        "time stamp"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — DateTimeStamp",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/DateTimeStamp"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__Duration",
+      "label": "duration",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "interval of time of some specific length",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Duration",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/Duration"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__ExplicitDate",
+      "label": "explicit date",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "date in which the 'has date value' property is required",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ExplicitDate",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__ExplicitDatePeriod",
+      "label": "explicit date period",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "date period for which the start date, end date, and/or duration are required",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ExplicitDatePeriod",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDatePeriod"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__ExplicitDuration",
+      "label": "explicit duration",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "duration for which the 'has duration value' property must have a value",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ExplicitDuration",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDuration"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__ExplicitTimePeriod",
+      "label": "explicit time period",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "time period for which the starting time, ending time, and/or duration are required",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ExplicitTimePeriod",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitTimePeriod"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__ProperInterval",
+      "label": "proper interval",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "time interval with a non-zero extent or duration",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ProperInterval",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/ProperInterval"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__TemporalEntity",
+      "label": "temporal entity",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "time interval or instant",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — TemporalEntity",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/TemporalEntity"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__TimeInstant",
+      "label": "time instant",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "temporal entity that is a member of a time scale, with no extent or duration",
+      "detail": "",
+      "examples": [
+        "The Battle of Hastings was on '14 October 1066'. (This gives the Julian date of the battle at a granularity of 'day'. If desired, the battle could be given more precisely as a time period within that calendar day.)"
+      ],
+      "synonyms": [
+        "instant in time",
+        "time point"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — TimeInstant",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/TimeInstant"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__TimeInterval",
+      "label": "time interval",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "segment of the time axis, a location in time, with an extent or duration",
+      "detail": "",
+      "examples": [
+        "the day whose Gregorian calendar date is September 11, 2001",
+        "the lifetime of Henry V"
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — TimeInterval",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/TimeInterval"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__TimeOfDay",
+      "label": "time of day",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "explicit time, according to a clock",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — TimeOfDay",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/TimeOfDay"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__DatesAndTimes__TimePeriod",
+      "label": "time period",
+      "type": "FIBO Class",
+      "cluster": "CMNS__DatesAndTimes",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "time span over some finite window",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — TimePeriod",
+          "u": "https://www.omg.org/spec/Commons/DatesAndTimes/TimePeriod"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Designators__Designation",
+      "label": "designation",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Designators",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "representation for something, or for a conceptualization thereof, that denotes it in a domain or subject",
+      "detail": "",
+      "examples": [],
+      "synonyms": [
+        "designator"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Designation",
+          "u": "https://www.omg.org/spec/Commons/Designators/Designation"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Designators__Name",
+      "label": "name",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Designators",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "designation for something by a linguistic expression",
+      "detail": "Note that unlike symbols and other designations, a name is explicitly not linguistically neutral.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Name",
+          "u": "https://www.omg.org/spec/Commons/Designators/Name"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Documents__Certificate",
+      "label": "certificate",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Documents",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "document attesting to the truth of some fact or set of facts",
+      "detail": "A certificate may or may not also be a legal document, depending on the issuing authority and how it can be used. Certificates, such as electronic certificates, including public keys, may be issued by some certificate authority.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Certificate",
+          "u": "https://www.omg.org/spec/Commons/Documents/Certificate"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Documents__Document",
+      "label": "document",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Documents",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "unitary expression of some realization of an intellectual or artistic work",
+      "detail": "A document, especially a legal document, may serve to establish one or several facts, and can be relied upon as a proof thereof. This definition of document corresponds to a subclass of expression in FRBR. The notion of being a unitary expression is the differentiator between an FRBR expression and document in this sense.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Document",
+          "u": "https://www.omg.org/spec/Commons/Documents/Document"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Documents__DocumentPart",
+      "label": "document part",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Documents",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "structurally distinct subdivision of a document",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — DocumentPart",
+          "u": "https://www.omg.org/spec/Commons/Documents/DocumentPart"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Documents__LegalDocument",
+      "label": "legal document",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Documents",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "document specifying the terms of, or provides evidence for, an agreement, attestation, certification, conditions, permissions, and/or decisions of legal persons, government entities, or courts of law, drawn up in accordance with certain rules that apply in the relevant jurisdiction(s)",
+      "detail": "",
+      "examples": [
+        "Examples include some certificates, deeds, bonds, business documents (such as articles of incorporation, bylaws, partnership agreements), contracts, certain identity documents, wills, trusts, legislative acts, notarial acts, court writs or processes (such as related complaints and pleadings in the context of litigation as well as other documents relevant to some legal issue), and any law passed by a competent legislative body in municipal (domestic) or international law."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — LegalDocument",
+          "u": "https://www.omg.org/spec/Commons/Documents/LegalDocument"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Documents__Notice",
+      "label": "notice",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Documents",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "announcement, communication, intimation, or advance warning of something, usually, but not necessarily, to allow preparations to be made",
+      "detail": "",
+      "examples": [
+        "registered trademark notice, disclaimer, copyright notice, overdue notice, recall notice"
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Notice",
+          "u": "https://www.omg.org/spec/Commons/Documents/Notice"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Documents__Record",
+      "label": "record",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Documents",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "memorialization and objective evidence of activities performed, events occurred, results achieved, or statements made, regardless of its characteristics, media, physical form, or the manner in which it is recorded or stored",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Record",
+          "u": "https://www.omg.org/spec/Commons/Documents/Record"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Documents__Reference",
+      "label": "reference",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Documents",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "source that may be used to ascertain, interpret, or understand something",
+      "detail": "In linguistics, a reference characterizes, provides context for, or specifies the relationship of one linguistic expression to another, i.e., provides the information necessary to interpret the dependent expression. References may be rendered in the form of a document, but may also take other forms, such as reference materials, scientific equations, and constants, including in some cases physical things, used as the basis for units of measure.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Reference",
+          "u": "https://www.omg.org/spec/Commons/Documents/Reference"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Documents__ReferenceDocument",
+      "label": "reference document",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Documents",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "document that is used as a reference for something",
+      "detail": "A reference document is typically one that provides pertinent details for consultation about a subject.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ReferenceDocument",
+          "u": "https://www.omg.org/spec/Commons/Documents/ReferenceDocument"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Documents__Specification",
+      "label": "specification",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Documents",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "explicit requirement or set of requirements to be satisfied by something, such as a product, material, model, process or system",
+      "detail": "",
+      "examples": [],
+      "synonyms": [
+        "spec"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Specification",
+          "u": "https://www.omg.org/spec/Commons/Documents/Specification"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Documents__TechnicalSpecificationDocument",
+      "label": "technical specification document",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Documents",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "document that sets out detailed requirements to be satisfied by a product, material, process or system and the procedures for checking conformity to these requirements",
+      "detail": "A technical specification is a specification expressing technical requirements, such as one for designing and developing a solution to be implemented.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — TechnicalSpecificationDocument",
+          "u": "https://www.omg.org/spec/Commons/Documents/TechnicalSpecificationDocument"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Identifiers__IdentificationScheme",
+      "label": "identification scheme",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Identifiers",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "system for minting identifiers for things that specifies constraints on the structure of the identifier",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — IdentificationScheme",
+          "u": "https://www.omg.org/spec/Commons/Identifiers/IdentificationScheme"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Identifiers__Identifier",
+      "label": "identifier",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Identifiers",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "sequence of characters uniquely identifying that with which it is associated",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Identifier",
+          "u": "https://www.omg.org/spec/Commons/Identifiers/Identifier"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__BusinessCenter",
+      "label": "business center",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "municipality where business is conducted, especially one that is considered a financial center",
+      "detail": "Note that business centers, as defined in FpML, are intended for use in specifying the business calendar used by that municipality, or by certain organizations located in that municipality.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — BusinessCenter",
+          "u": "https://www.omg.org/spec/Commons/Locations/BusinessCenter"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__Country",
+      "label": "country",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "geopolitical entity representing a distinct territorial body or political entity or dependent territory",
+      "detail": "It may be an independent sovereign state or part of a larger state, as a non-sovereign or formerly sovereign political division, a physical territory with a government, or a geographic region associated with sets of previously independent or differently associated peoples with distinct political characteristics.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Country",
+          "u": "https://www.omg.org/spec/Commons/Locations/Country"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__CountrySubdivision",
+      "label": "country subdivision",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "geopolitical entity that is a legal division of a country, dependency, or other area of special geopolitical interest related to a country or other geopolitical entity",
+      "detail": "In the US, the US Census Bureau and other federal agencies may group some number of other subdivisions for statistical analysis and reporting purposes, ranging from multiple states to minor civil divisions.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — CountrySubdivision",
+          "u": "https://www.omg.org/spec/Commons/Locations/CountrySubdivision"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__County",
+      "label": "county",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "political and administrative division of a country, state or province, providing certain local governmental services",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — County",
+          "u": "https://www.omg.org/spec/Commons/Locations/County"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__FederalCapitalArea",
+      "label": "federal capital area",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "country subdivision that is or includes the municipality or capital city that acts as the seat of the federal government",
+      "detail": "The capital administrative region of some federations includes those for which the capital is situated other than within one of the states or provinces which make up the country as a whole.",
+      "examples": [
+        "Examples include the District of Columbia in the US, and the Canberra area in Australia."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — FederalCapitalArea",
+          "u": "https://www.omg.org/spec/Commons/Locations/FederalCapitalArea"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__FederalState",
+      "label": "federal state",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "self-governing geopolitical unit which forms part of a wider geopolitical unit that is recognized as a country",
+      "detail": "This type of entity, variously referred to as a state, province or canton, has a level of self government including its own legal system and court jurisdiction, but cedes a level of autonomy to the federation of which it forms a part.",
+      "examples": [],
+      "synonyms": [
+        "canton",
+        "province",
+        "state"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — FederalState",
+          "u": "https://www.omg.org/spec/Commons/Locations/FederalState"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__GeodeticCoordinateSystem",
+      "label": "geodetic coordinate system",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "three-dimensional reference system that is a global frame of reference for precisely representing the position of locations on Earth or other planetary bodies by means of geodetic coordinates",
+      "detail": "Geodetic coordinates are crucial to any technology or technique based on spatial location, including geodesy, navigation, surveying, geographic information systems, remote sensing, and cartography.",
+      "examples": [
+        "The three most widely used systems for indicating point locations in the United States are (1) latitude and longitude [and optionally elevation], (2) Universal Transverse Mercator (UTM) system, and (3) State Plane Coordinate Systems (SPCS)."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — GeodeticCoordinateSystem",
+          "u": "https://www.omg.org/spec/Commons/Locations/GeodeticCoordinateSystem"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__GeographicRegion",
+      "label": "geographic region",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "area of land that has common features",
+      "detail": "A region may be defined by natural or artificial features, and may be described as part of a country or the world having definable characteristics but not always fixed boundaries. Many cases in which a geographic region, or subclass thereof, is mapped to certain applications or a relational store, or where codes are used to identify the region, require a class to represent the name of the region. In such situations, attributes of the name, such as the dates when a particular name was in use, or was valid under certain circumstances, may be important. For other applications, such as for addressing, a text value may be required. Thus, both options are provided here, with a preference for use of the full class option, depending on the use case.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — GeographicRegion",
+          "u": "https://www.omg.org/spec/Commons/Locations/GeographicRegion"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__GeographicRegionIdentificationScheme",
+      "label": "geographic region identification scheme",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "identification scheme dedicated to the unique identification of geographic regions",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — GeographicRegionIdentificationScheme",
+          "u": "https://www.omg.org/spec/Commons/Locations/GeographicRegionIdentificationScheme"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__GeographicRegionIdentifier",
+      "label": "geographic region identifier",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "string of letters that indicates a code or other identifier for geographical region, assigned for the purpose of uniquely identifying it within some context",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — GeographicRegionIdentifier",
+          "u": "https://www.omg.org/spec/Commons/Locations/GeographicRegionIdentifier"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__GeographicRegionKind",
+      "label": "geographic region kind",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "classifier for a geographic region, including but not limited to a subdivision of a geopolitical entity, (noting that there may be more than one kind for a given country or other entity)",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — GeographicRegionKind",
+          "u": "https://www.omg.org/spec/Commons/Locations/GeographicRegionKind"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__GeopoliticalEntity",
+      "label": "geopolitical entity",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "geographic area that represents a geophysical location associated with some form of political structure",
+      "detail": "",
+      "examples": [
+        "A geopolitical entity may be any country, federal province, city or other administrative unit that represents a geophysical location"
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — GeopoliticalEntity",
+          "u": "https://www.omg.org/spec/Commons/Locations/GeopoliticalEntity"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__Location",
+      "label": "location",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "place or position in time and/or space, including a virtual place",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Location",
+          "u": "https://www.omg.org/spec/Commons/Locations/Location"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__Municipality",
+      "label": "municipality",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "urban administrative division having corporate status and usually powers of self-government or jurisdiction",
+      "detail": "A municipality is a general-purpose administrative subdivision, as opposed to a special-purpose district.",
+      "examples": [
+        "A municipality can be any political jurisdiction from a sovereign state, such as the Principality of Monaco, or a small village, such as West Hampton Dunes, New York."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Municipality",
+          "u": "https://www.omg.org/spec/Commons/Locations/Municipality"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__PhysicalLocation",
+      "label": "physical location",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "location in physical space",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — PhysicalLocation",
+          "u": "https://www.omg.org/spec/Commons/Locations/PhysicalLocation"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__Region",
+      "label": "region",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "area that is a continuous part of a surface, space, or body",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Region",
+          "u": "https://www.omg.org/spec/Commons/Locations/Region"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__Territory",
+      "label": "territory",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "geographic area, typically considered an area of special geopolitical interest, subject to the sovereignty, control, or jurisdiction of a state or other entity",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Territory",
+          "u": "https://www.omg.org/spec/Commons/Locations/Territory"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Locations__VirtualLocation",
+      "label": "virtual location",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Locations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "place that does not exist in any single physical location",
+      "detail": "",
+      "examples": [
+        "a network-based location without geographic boundaries"
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — VirtualLocation",
+          "u": "https://www.omg.org/spec/Commons/Locations/VirtualLocation"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__Capability",
+      "label": "capability",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "ability to perform a specific function or achieve a particular outcome",
+      "detail": "Capabilities are described in terms of outcomes as well as the roles involved in achieving those outcomes. The ability for an organization to perform or provide some capability may involve people with particular skills and knowledge, intellectual property, defined practices, operating facilities, tools and equipment.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Capability",
+          "u": "https://www.omg.org/spec/Commons/Organizations/Capability"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__Capacity",
+      "label": "capacity",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "maximum extent to which something or someone can perform a function or produce an output under specified conditions",
+      "detail": "In contrast with capability, the concept of capacity is constrained by upper limits on resources including time and within some context, in addition to having the ability to do so if circumstances allow.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Capacity",
+          "u": "https://www.omg.org/spec/Commons/Organizations/Capacity"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__FormalOrganization",
+      "label": "formal organization",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "organization that is recognized in some legal jurisdiction, with associated rights and responsibilities",
+      "detail": "",
+      "examples": [
+        "Examples include a corporation, charity, government or church."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — FormalOrganization",
+          "u": "https://www.omg.org/spec/Commons/Organizations/FormalOrganization"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__InformalOrganization",
+      "label": "informal organization",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "group of individuals who come together for a common purpose without forming a legal entity",
+      "detail": "A bridge club with officers and a bank account can be classified as an informal organization, but it depends on how the club is structured and whether it has taken steps to formalize its existence. If the bridge club has officers and a bank account but has not incorporated or registered as a legal entity (like a nonprofit organization or a corporation), it would be considered an informal organization. The officers manage the club's affairs, and the bank account is likely opened under the names of the officers or with the designation 'on behalf of the bridge club'. There is usually no formal registration with governmental authorities, and the group operates based on mutual agreement among its members rather than a formal legal structure.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — InformalOrganization",
+          "u": "https://www.omg.org/spec/Commons/Organizations/InformalOrganization"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__LegalEntity",
+      "label": "legal entity",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "legal person that is a partnership, corporation, or other organization having the capacity to negotiate contracts, assume financial obligations, and pay off debts, organized under the laws of some jurisdiction",
+      "detail": "",
+      "examples": [
+        "Examples of eligible legal entities include, without limitation: - all financial intermediaries; - banks and finance companies; - all entities that issue equity, debt or other securities for other capital structures; - all entities listed on an exchange; - all entities that trade stock or debt, investment vehicles, including mutual funds, pension funds and alternative investment vehicles constituted as corporate entities or collective investment agreements (including umbrella funds as well as funds under an umbrella structure, hedge funds, private equity funds, etc.); - all entities under the purview of a financial regulator and their affiliates, subsidiaries and holding companies; - counterparties to financial transactions."
+      ],
+      "synonyms": [
+        "artificial person",
+        "juridical entity",
+        "juridical person",
+        "juristic person"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — LegalEntity",
+          "u": "https://www.omg.org/spec/Commons/Organizations/LegalEntity"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__LegalPerson",
+      "label": "legal person",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "party that is recognized as having rights and obligations under the law, including but not limited to the right to sue and be sued, enter into contracts, own property, and incur financial and other obligations",
+      "detail": "To have legal personality means to be capable of having legal rights and duties within a certain legal system, such as to enter into contracts, sue, and be sued. Legal personality is a prerequisite to legal capacity, the ability of any legal person to amend (enter into, transfer, etc.) rights and obligations.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — LegalPerson",
+          "u": "https://www.omg.org/spec/Commons/Organizations/LegalPerson"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__MemberBearingOrganization",
+      "label": "member-bearing organization",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "role of a group or organization that has members that are people or other organizations",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — MemberBearingOrganization",
+          "u": "https://www.omg.org/spec/Commons/Organizations/MemberBearingOrganization"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__Membership",
+      "label": "membership",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "situation, corresponding to an n-ary relation, in which some group or organization has at least one member (person or organization) for some period of time",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Membership",
+          "u": "https://www.omg.org/spec/Commons/Organizations/Membership"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__Organization",
+      "label": "organization",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "framework of authority within which a person, persons, or groups of people act, or are designated to act, towards some purpose, such as to meet a need or pursue collective goals",
+      "detail": "",
+      "examples": [
+        "This may be a business entity, government, international organization, not-for-profit, academic institution, or other unincorporated and/or informal social organization."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Organization",
+          "u": "https://www.omg.org/spec/Commons/Organizations/Organization"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__OrganizationalSubUnit",
+      "label": "organizational sub-unit",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "any department or other entity within a larger organization that only has full recognition within the context of that organization, but requires identification for some purpose",
+      "detail": "In other words, it is not a legal entity in its own right.",
+      "examples": [],
+      "synonyms": [
+        "organization part"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — OrganizationalSubUnit",
+          "u": "https://www.omg.org/spec/Commons/Organizations/OrganizationalSubUnit"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__OrganizationIdentificationScheme",
+      "label": "organization identification scheme",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "identification scheme dedicated to the unique identification of organizations",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — OrganizationIdentificationScheme",
+          "u": "https://www.omg.org/spec/Commons/Organizations/OrganizationIdentificationScheme"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__OrganizationIdentifier",
+      "label": "organization identifier",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "identifier assigned to an organization within an organization identification scheme, and unique within that scheme",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — OrganizationIdentifier",
+          "u": "https://www.omg.org/spec/Commons/Organizations/OrganizationIdentifier"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__OrganizationMember",
+      "label": "organization member",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "party (person or organization) that has a membership role with respect to some organization",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — OrganizationMember",
+          "u": "https://www.omg.org/spec/Commons/Organizations/OrganizationMember"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__OrganizationName",
+      "label": "organization name",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "designation by which some organization is known in some context",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — OrganizationName",
+          "u": "https://www.omg.org/spec/Commons/Organizations/OrganizationName"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__OrganizationSubUnitIdentifier",
+      "label": "organization sub-unit identifier",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "identifier allocated to a particular organizational sub-unit",
+      "detail": "",
+      "examples": [],
+      "synonyms": [
+        "OPI",
+        "organization part identifier"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — OrganizationSubUnitIdentifier",
+          "u": "https://www.omg.org/spec/Commons/Organizations/OrganizationSubUnitIdentifier"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__Service",
+      "label": "service",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "intangible activity performed by some party for the benefit of another party",
+      "detail": "Sometimes services are difficult to identify because they are closely associated with a good; such as the combination of a diagnosis with the administration of a medicine. No transfer of possession or ownership takes place when services are sold, and they (1) cannot be stored or transported, (2) are instantly perishable, and (3) come into existence at the time they are bought and consumed. The OECD defines services as outputs produced to order and which cannot be traded separately from their production; ownership rights cannot be established over services and by the time their production is completed they must have been provided to the consumers. As an exception to this rule there is a group of industries, generally classified as service industries, some of whose outputs have characteristics of goods, i.e. those concerned with the provision, storage, communication and dissemination of information, advice and entertainment in the broadest sense of those terms; the products of these industries, where ownership rights can be established, may be classified either as goods or services depending on the medium by which these outputs are supplied.",
+      "examples": [
+        "Services include intangible products, such as accounting, banking, cleaning, consultancy, education, insurance, expertise, medical treatment, or transportation services."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Service",
+          "u": "https://www.omg.org/spec/Commons/Organizations/Service"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__Organizations__ServiceProvider",
+      "label": "service provider",
+      "type": "FIBO Class",
+      "cluster": "CMNS__Organizations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "role of an agent that provides some service, including but not limited to commercial or professional services",
+      "detail": "",
+      "examples": [
+        "Example services may include consulting, financial, legal, real estate, education, communications, registration, regulatory, manufacturing, storage, processing, or other services."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ServiceProvider",
+          "u": "https://www.omg.org/spec/Commons/Organizations/ServiceProvider"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__PartiesAndSituations__Actor",
+      "label": "actor",
+      "type": "FIBO Class",
+      "cluster": "CMNS__PartiesAndSituations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "primary performer in a relationship between parties, i.e., the party that does something, causes something to happen, or otherwise plays an agentive role in the relationship",
+      "detail": "The concept of actor here is in a more linguistic sense, from core semantic theories reflecting actor/undergoer/null roles of an argument in an expression.",
+      "examples": [
+        "Examples include owner, controlling party, beneficiary, guarantor, partner in a partnership, shareholder, etc."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Actor",
+          "u": "https://www.omg.org/spec/Commons/PartiesAndSituations/Actor"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__PartiesAndSituations__Agent",
+      "label": "agent",
+      "type": "FIBO Class",
+      "cluster": "CMNS__PartiesAndSituations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "something autonomous that can adapt to and interact with its environment",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Agent",
+          "u": "https://www.omg.org/spec/Commons/PartiesAndSituations/Agent"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__PartiesAndSituations__AgentRole",
+      "label": "agent role",
+      "type": "FIBO Class",
+      "cluster": "CMNS__PartiesAndSituations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "role played by any agent",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — AgentRole",
+          "u": "https://www.omg.org/spec/Commons/PartiesAndSituations/AgentRole"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__PartiesAndSituations__Party",
+      "label": "party",
+      "type": "FIBO Class",
+      "cluster": "CMNS__PartiesAndSituations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "person or organization",
+      "detail": "",
+      "examples": [],
+      "synonyms": [
+        "independent party"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Party",
+          "u": "https://www.omg.org/spec/Commons/PartiesAndSituations/Party"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__PartiesAndSituations__PartyRole",
+      "label": "party role",
+      "type": "FIBO Class",
+      "cluster": "CMNS__PartiesAndSituations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "role played by an organization or individual that may be time bound",
+      "detail": "",
+      "examples": [
+        "Examples include organization member, employee, issuer, owner, partner in a partnership, shareholder, and so forth."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — PartyRole",
+          "u": "https://www.omg.org/spec/Commons/PartiesAndSituations/PartyRole"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__PartiesAndSituations__Situation",
+      "label": "situation",
+      "type": "FIBO Class",
+      "cluster": "CMNS__PartiesAndSituations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "setting, state of being, or relationship that is relatively stable for some period of time",
+      "detail": "",
+      "examples": [
+        "Examples include ownership, control, possession, affiliation, beneficial ownership, employment, and other similar situations."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Situation",
+          "u": "https://www.omg.org/spec/Commons/PartiesAndSituations/Situation"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__PartiesAndSituations__SoftwareAgent",
+      "label": "software agent",
+      "type": "FIBO Class",
+      "cluster": "CMNS__PartiesAndSituations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "digital entity that perceives its environment and takes actions that maximize its chance of successfully achieving its goals",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — SoftwareAgent",
+          "u": "https://www.omg.org/spec/Commons/PartiesAndSituations/SoftwareAgent"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__PartiesAndSituations__Undergoer",
+      "label": "undergoer",
+      "type": "FIBO Class",
+      "cluster": "CMNS__PartiesAndSituations",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "something that plays the role of the object or recipient in a situation, i.e., the thing (or party) that the situation impacts, affects, or that otherwise plays a passive recipient / patient or thematic role",
+      "detail": "",
+      "examples": [
+        "Examples include something that is owned or controlled."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Undergoer",
+          "u": "https://www.omg.org/spec/Commons/PartiesAndSituations/Undergoer"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__ArbitraryUnit",
+      "label": "arbitrary unit",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "arbitrarily defined unit of measurement, where a relation of the unit to a physical unit of the SI does not exist or is unknown",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ArbitraryUnit",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/ArbitraryUnit"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__BaseQuantityKind",
+      "label": "base quantity kind",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "quantity in a conventionally chosen subset of a given system of quantities, where no quantity in the subset can be expressed in terms of the other quantities within that subset",
+      "detail": "",
+      "examples": [
+        "The International System of Quantities (ISQ) comprises these base quantities (with their SI base measurement units): length (meter), mass (kilogram), duration (second), electric current (ampere), thermodynamic temperature (kelvin), amount of substance (mole), and luminous intensity (candela). These base quantities are not mutually comparable. All quantities of any one of these kinds are, however, mutually comparable."
+      ],
+      "synonyms": [
+        "base quantity",
+        "simple quantity kind"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — BaseQuantityKind",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/BaseQuantityKind"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__BaseUnit",
+      "label": "base unit",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "measurement unit that is defined by a system of units to be the reference measurement unit for a base quantity",
+      "detail": "",
+      "examples": [
+        "In the SI, the meter is the base unit of length. In the CGS systems, the centimeter is the base unit of length."
+      ],
+      "synonyms": [
+        "simple unit"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — BaseUnit",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/BaseUnit"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__CoherentDerivedUnit",
+      "label": "coherent derived unit",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "derived unit that, for a given system of quantities and for a chosen set of base units, is a product of powers of base units with no other proportionality factor than one",
+      "detail": "",
+      "examples": [
+        "If the meter, the second, and the mole are base units, the mole per cubic meter is the coherent derived unit of amount-of-substance concentration when amount-of-substance concentration is defined by the quantity equation c = n/V. The kilometer per hour and the knot, given as examples of derived units, are not coherent derived units in such a system of quantities."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — CoherentDerivedUnit",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/CoherentDerivedUnit"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__Constant",
+      "label": "constant",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "symbol that represents a value that does not change (i.e., is fixed) with respect to a formula or expression",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Constant",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/Constant"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__ConversionBasedUnit",
+      "label": "conversion-based unit",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "derived unit that is defined with respect to another reference unit through an explicit conversion relationship",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ConversionBasedUnit",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/ConversionBasedUnit"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__ConversionFactorBetweenUnits",
+      "label": "conversion factor between units",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "ratio of two measurement units for quantities of the same kind",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ConversionFactorBetweenUnits",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/ConversionFactorBetweenUnits"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__CyclicRatioScale",
+      "label": "cyclic ratio scale",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "measurement scale that represents a ratio scale with a periodic cycle",
+      "detail": "",
+      "examples": [
+        "'cyclic degree' (to express planar angular measures) with modulus = 360 and unit 'degree'",
+        "'hour of day' with modulus = 24 and unit 'hour'"
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — CyclicRatioScale",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/CyclicRatioScale"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__DerivedQuantityKind",
+      "label": "derived quantity kind",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "quantity, in a system of quantities, defined in terms of the base quantities of that system",
+      "detail": "",
+      "examples": [
+        "In a system of quantities having the base quantities length and mass, mass density is a derived quantity defined as the quotient of mass and volume (length to the power three)."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — DerivedQuantityKind",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/DerivedQuantityKind"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__DerivedUnit",
+      "label": "derived unit",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "measurement unit for a derived quantity, i.e., one that is defined with respect to one or more base units, such as as a product of powers of one or more other measurement units",
+      "detail": "",
+      "examples": [
+        "The meter per second, symbol m/s, and the centimeter per second, symbol cm/s, are derived units of speed in the SI. The kilometer per hour, symbol km/h, is a measurement unit of speed outside the SI but accepted for use with the SI. The knot, equal to one nautical mile per hour, is a measurement unit of speed outside the SI."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — DerivedUnit",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/DerivedUnit"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__DimensionlessQuantity",
+      "label": "dimensionless quantity",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "quantity for which all the exponents of the factors corresponding to the base quantities in its quantity dimension are zero",
+      "detail": "",
+      "examples": [
+        "Plane angle, solid angle, refractive index, relative permeability, mass fraction, friction factor, Mach number"
+      ],
+      "synonyms": [
+        "quantity of dimension one"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — DimensionlessQuantity",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/DimensionlessQuantity"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__Expression",
+      "label": "expression",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "finite combination of symbols that are well-formed according to applicable rules",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Expression",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/Expression"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__Factor",
+      "label": "factor",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "number or quantity that when multiplied with another produces a given number or expression",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Factor",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/Factor"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__IntervalScale",
+      "label": "interval scale",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "measurement scale that represents quantitative values and for which mode, median and mean can be calculated",
+      "detail": "",
+      "examples": [
+        "Celsius and Fahrenheit are examples of interval scales: they represent equality or inequality among intervals of temperature, but not ratios of temperature, because their zero points are arbitrary. Rating scales, where it is assumed that the distances between the single expressions of evaluation (score) are equal, are also interval scales with no natural zero point."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — IntervalScale",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/IntervalScale"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__LogarithmicScale",
+      "label": "logarithmic scale",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "measurement scale on which the actual distance of a point from the scale's zero is proportional to the logarithm of the corresponding scale number rather than to the number itself",
+      "detail": "",
+      "examples": [
+        "A logarithmic scale (or log scale) is a way of displaying numerical data over a very wide range of values in a compact way - typically the largest numbers in the data are hundreds or even thousands of times larger than the smallest numbers. Such a scale is nonlinear: the numbers 10 and 20, and 60 and 70, are not the same distance apart on a log scale. Rather, the numbers 10 and 100, and 60 and 600 are equally spaced. Thus moving a unit of distance along the scale means the number has been multiplied by 10 (or some other fixed factor)."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — LogarithmicScale",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/LogarithmicScale"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__MaterialMeasure",
+      "label": "material measure",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "something that reproduces or supplies one or more quantities, each with an assigned quantity value",
+      "detail": "",
+      "examples": [
+        "Ruler, standard weight, volume measure"
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — MaterialMeasure",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/MaterialMeasure"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__Measure",
+      "label": "measure",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "amount or degree of something; the dimensions, capacity, or amount of something ascertained by measuring",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Measure",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/Measure"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__MeasurementProcedure",
+      "label": "measurement procedure",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "procedure of a measurement according to one or more measurement principles (i.e. phenomena, observables) and a given measurement method, based on a measurement model and including any calculation to obtain a measurement result",
+      "detail": "",
+      "examples": [
+        "Lowering of the concentration of glucose in blood in a fasting rabbit is an observable that can be applied to the measurement of insulin concentration in a preparation. Together with a description of the measurement method this can be used to define a measurement procedure."
+      ],
+      "synonyms": [
+        "SOP",
+        "standard operating procedure"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — MeasurementProcedure",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/MeasurementProcedure"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__MeasurementReference",
+      "label": "measurement reference",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "measurement unit, measurement procedure, reference material, or a combination of such",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — MeasurementReference",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/MeasurementReference"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__MeasurementScale",
+      "label": "measurement scale",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "ordered set of quantity values of quantities of a given kind of quantity used in ranking, according to magnitude, quantities of that kind",
+      "detail": "",
+      "examples": [],
+      "synonyms": [
+        "quantity-value scale"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — MeasurementScale",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/MeasurementScale"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__MeasurementUnit",
+      "label": "measurement unit",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "real scalar quantity, defined and adopted by convention, with which any other quantity of the same kind can be compared to express the ratio of the second quantity to the first one as a number",
+      "detail": "",
+      "examples": [
+        "week, day, hour, minute, second, kilogram, joule, meter"
+      ],
+      "synonyms": [
+        "unit of measurement"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — MeasurementUnit",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/MeasurementUnit"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__NominalScale",
+      "label": "nominal scale",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "measurement scale that represents objects as belonging to classes that have no particular order",
+      "detail": "",
+      "examples": [
+        "Many nominal scales are qualitative in nature. A common example of a nominal scale is that of gender identity, which is a way of describing one's persistent inner concept of their gender. While the terminology from a psychological and medical perspective continues to evolve, the scale covers individuals who self identify as male or female as well as those that have a less determinant perspective, such as transsexual or non-binary."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — NominalScale",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/NominalScale"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__OrdinalScale",
+      "label": "ordinal scale",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "quantity-value scale for ordinal quantities, i.e., one that represents order but no further algebraic structure",
+      "detail": "",
+      "examples": [
+        "For example, the Mohs scale of mineral hardness represents minerals with numbers ranging from 1 (softest) to 10 (hardest), but there is no empirical significance to equality among intervals or ratios of those numbers."
+      ],
+      "synonyms": [
+        "ordinal quantity-value scale",
+        "ordinal value scale"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — OrdinalScale",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/OrdinalScale"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__Percentage",
+      "label": "percentage",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "ratio value expressed as a fraction of 100, i.e., in which the denominator is fixed rather than variable and equal to 100",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Percentage",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/Percentage"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__PhysicalUnit",
+      "label": "physical unit",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "unit of measurement that is defined using a physical quantity",
+      "detail": "",
+      "examples": [],
+      "synonyms": [
+        "physical unit of measurement"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — PhysicalUnit",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/PhysicalUnit"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__Prefix",
+      "label": "prefix",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "named multiple or sub-multiple multiplication factor used in the specification of a derived unit",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Prefix",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/Prefix"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__PrefixedUnit",
+      "label": "prefixed unit",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "conversion-based unit that is defined with respect to another measurement reference unit through a linear conversion relationship with a named prefix that represents a multiple or submultiple of a unit",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — PrefixedUnit",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/PrefixedUnit"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__QuantityDimension",
+      "label": "quantity dimension",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "expression of the dependence of a quantity on the base quantities of a system of quantities as a product of powers of factors corresponding to the base quantities, omitting any numerical factor",
+      "detail": "",
+      "examples": [],
+      "synonyms": [
+        "dimension",
+        "dimension of a quantity"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — QuantityDimension",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/QuantityDimension"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__QuantityKind",
+      "label": "quantity kind",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "aspect common to mutually comparable quantities",
+      "detail": "",
+      "examples": [
+        "The quantities diameter, circumference, and wavelength are generally considered to be quantities of the same kind, namely, of the kind of quantity called length.",
+        "The quantities heat, kinetic energy, and potential energy are generally considered to be quantities of the same kind, namely, of the kind of quantity called energy.",
+        "The quantities moment of force and energy are, by convention, not regarded as being of the same kind, although they have the same dimension. Similarly for heat capacity and entropy, as well as for number of entities, relative permeability, and mass fraction."
+      ],
+      "synonyms": [
+        "kind of quantity"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — QuantityKind",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/QuantityKind"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__QuantityKindPowerFactor",
+      "label": "quantity kind power factor",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "factor in a product of powers that defines a derived quantity",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — QuantityKindPowerFactor",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/QuantityKindPowerFactor"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__QuantityName",
+      "label": "quantity name",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "human-readable textual representation of the quantity",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — QuantityName",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/QuantityName"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__Ratio",
+      "label": "ratio",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "proportional relationship between two different quantity values that gives rise to a datum of a specific quantity kind",
+      "detail": "",
+      "examples": [],
+      "synonyms": [
+        "rate"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Ratio",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/Ratio"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__RatioScale",
+      "label": "ratio scale",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "measurement scale that represents quantitative values, allows comparison of differences in values, has a fixed zero value and is invariant under multiplication by a positive number",
+      "detail": "",
+      "examples": [
+        "The Kelvin scale is a ratio scale, as are the familiar scales representing mass in kilograms, length in meters and duration in seconds."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — RatioScale",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/RatioScale"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__RatioScaleWithAdditionalLimitValues",
+      "label": "ratio scale with additional limit values",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "measurement scale that that represents a ratio scale that has additional limit values",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — RatioScaleWithAdditionalLimitValues",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/RatioScaleWithAdditionalLimitValues"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__ReferenceMaterial",
+      "label": "reference material",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "material, sufficiently homogeneous and stable with reference to specified properties, which has been established to be fit for its intended use in measurement or in examination of nominal properties",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ReferenceMaterial",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/ReferenceMaterial"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__ScalarQuantity",
+      "label": "scalar quantity",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "property of a phenomenon, body, or substance, where the property has a magnitude that can be expressed by means of a number and a reference",
+      "detail": "",
+      "examples": [
+        "second, kilogram, joule, meter"
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ScalarQuantity",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/ScalarQuantity"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "label": "scalar quantity value",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "number and reference together expressing the magnitude of a quantity",
+      "detail": "",
+      "examples": [],
+      "synonyms": [
+        "measurement",
+        "value of a quantity"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ScalarQuantityValue",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/ScalarQuantityValue"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__ScalarQuantityValueRange",
+      "label": "scalar quantity value range",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "expression of the lowest possible value and/or highest possible value for some scalar quantity",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ScalarQuantityValueRange",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/ScalarQuantityValueRange"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__SystemOfQuantities",
+      "label": "system of quantities",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "set of quantities together with a set of non-contradictory equations relating those quantities",
+      "detail": "",
+      "examples": [
+        "The International System of Quantities (ISQ) is an example of a SystemOfQuantities, defined in ISO 31 and ISO/IEC 80000."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — SystemOfQuantities",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/SystemOfQuantities"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__SystemOfUnits",
+      "label": "system of units",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "set of base units and derived units, together with their multiples and submultiples, defined in accordance with given rules, for a given system of quantities",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — SystemOfUnits",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/SystemOfUnits"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__Total",
+      "label": "total",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "sum of the values for some characteristic of all units",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Total",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/Total"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__UnitPowerFactor",
+      "label": "unit power factor",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "factor in a product of powers that defines a derived unit",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — UnitPowerFactor",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/UnitPowerFactor"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__QuantitiesAndUnits__Variable",
+      "label": "variable",
+      "type": "FIBO Class",
+      "cluster": "CMNS__QuantitiesAndUnits",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "symbol that represents a parameter in a formula or expression",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Variable",
+          "u": "https://www.omg.org/spec/Commons/QuantitiesAndUnits/Variable"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
+      "label": "registered identifier",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RegistrationAuthorities",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "contextual identifier that is registered in a registry by, or on behalf of, a registration authority according to some registration scheme",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — RegisteredIdentifier",
+          "u": "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegisteredIdentifier"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RegistrationAuthorities__Registrar",
+      "label": "registrar",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RegistrationAuthorities",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "role of a party that acts as a representative of a registration authority to provide registration services, including official record keeping",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Registrar",
+          "u": "https://www.omg.org/spec/Commons/RegistrationAuthorities/Registrar"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RegistrationAuthorities__RegistrationAuthority",
+      "label": "registration authority",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RegistrationAuthorities",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "service provider that is officially responsible for maintaining a registry and providing registration services and/or for delegating of some or all of these roles to a registrar",
+      "detail": "",
+      "examples": [],
+      "synonyms": [
+        "RA"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — RegistrationAuthority",
+          "u": "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistrationAuthority"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RegistrationAuthorities__RegistrationScheme",
+      "label": "registration scheme",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RegistrationAuthorities",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "scheme for organizing information in a registry and allocating identifiers to registered items",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — RegistrationScheme",
+          "u": "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistrationScheme"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RegistrationAuthorities__RegistrationService",
+      "label": "registration service",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RegistrationAuthorities",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "service provided to individuals and/or organizations for the registration of items in a registry",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — RegistrationService",
+          "u": "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistrationService"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RegistrationAuthorities__Registry",
+      "label": "registry",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RegistrationAuthorities",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "authoritative record or collection of records relating to something",
+      "detail": "Electronic registries typically contain a unique identifier for each entry, so that individual records can be referenced from other documents and registries.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Registry",
+          "u": "https://www.omg.org/spec/Commons/RegistrationAuthorities/Registry"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "label": "registry entry",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RegistrationAuthorities",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "constituent of a registry that includes the details for something recorded in that registry",
+      "detail": "Note: From an ISO 11179 perspective, a registry item (entry) is recorded in the registry, but is not necessarily identified, named, defined, classified, registered or administered. Specific information needs to be provided for each of these categories which can be provided when the item is initially recorded, or later.",
+      "examples": [],
+      "synonyms": [
+        "registry item"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — RegistryEntry",
+          "u": "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistryEntry"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "label": "jurisdiction",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RegulatoryAgencies",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "power of a court or regulatory agency to adjudicate cases, issue orders, and interpret and apply the law with respect to some specific geographic area",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Jurisdiction",
+          "u": "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "label": "regulatory agency",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RegulatoryAgencies",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "public authority or government agency responsible for exercising authority over something in a regulatory or supervisory capacity",
+      "detail": "Typically, a regulatory agency is chartered to protect some constituancy, (e.g., investors in the financial industry, consumers with respect to product safety), to ensure the fairness and integrity of some market, and fair and safe business practices among the service providers in that market.",
+      "examples": [
+        "See http://www.finra.org/AboutFINRA/ for an example describing a regulatory agency."
+      ],
+      "synonyms": [
+        "regulator",
+        "regulatory authority",
+        "regulatory body"
+      ],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — RegulatoryAgency",
+          "u": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RegulatoryAgencies__RegulatoryReport",
+      "label": "regulatory report",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RegulatoryAgencies",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "document required to support operational transparency that demonstrates compliance with some specification, law, policy, restriction, or other rule specified by a regulatory agency",
+      "detail": "Such a report may be needed for licensing, monitoring, taxation, or for other purposes that demonstrate the integrity, fairness, safety, or other capacity of a given industry, organization, or product.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — RegulatoryReport",
+          "u": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RegulatoryAgencies__RegulatoryService",
+      "label": "regulatory service",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RegulatoryAgencies",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "service provided by a regulatory agency, which may include, but not be limited to, examination, monitoring, supervision, testing, or other capabilities required to ensure the integrity, fairness, safety, or other capacity of a given industry, organization, or product",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — RegulatoryService",
+          "u": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryService"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RolesAndCompositions__Composition",
+      "label": "composition",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RolesAndCompositions",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "distinct thing resulting from bringing together other things, possibly in specific roles, for a particular purpose",
+      "detail": "The composition may be specified based on the roles that the things play in the composition, such as the roles that various ingredients play in a recipe or pharmaceutical product, and such things may or may not be transformed in some way through the process of combining them. Quantification including the nature and amount of each thing, potentially including the ratio of the quantities, may be required depending kind of composition. The properties hasConstituent and hasRole are included in value restrictions rather than via number restrictions to facilitate their use in complex property chains and other axioms as needed for some applications.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Composition",
+          "u": "https://www.omg.org/spec/Commons/RolesAndCompositions/Composition"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RolesAndCompositions__FunctionalRole",
+      "label": "functional role",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RolesAndCompositions",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "role representing an underlying functionality that something, such as a person, organization, process, or service, is expected to perform or deliver",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — FunctionalRole",
+          "u": "https://www.omg.org/spec/Commons/RolesAndCompositions/FunctionalRole"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RolesAndCompositions__ProcessRole",
+      "label": "process role",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RolesAndCompositions",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "role that associates resources and participants to a structured set of activities involving various enterprise entities, that is designed and organised for a given purpose",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — ProcessRole",
+          "u": "https://www.omg.org/spec/Commons/RolesAndCompositions/ProcessRole"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RolesAndCompositions__Role",
+      "label": "role",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RolesAndCompositions",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "named specific behavior of something participating in a particular context",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Role",
+          "u": "https://www.omg.org/spec/Commons/RolesAndCompositions/Role"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__RolesAndCompositions__StructuralRole",
+      "label": "structural role",
+      "type": "FIBO Class",
+      "cluster": "CMNS__RolesAndCompositions",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "role specifying relations between entities in the sense of competence, often reflecting organizational or structural relations (hierarchies)",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — StructuralRole",
+          "u": "https://www.omg.org/spec/Commons/RolesAndCompositions/StructuralRole"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__SitesAndFacilities__Facility",
+      "label": "facility",
+      "type": "FIBO Class",
+      "cluster": "CMNS__SitesAndFacilities",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "something established to serve a particular purpose, make some course of action or operation easier, or provide some capability or service",
+      "detail": "A facility may be concrete (as in a manufacturing facility) or abstract. Concrete facilities may be permanent, semi-permanent, or temporary structures, providing one or more capabilities at a given site. A single site may include multiple facilities and a given facility may span multiple sites.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Facility",
+          "u": "https://www.omg.org/spec/Commons/SitesAndFacilities/Facility"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__SitesAndFacilities__Site",
+      "label": "site",
+      "type": "FIBO Class",
+      "cluster": "CMNS__SitesAndFacilities",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "place, setting, or context in which something, such as a facility, is situated",
+      "detail": "A physical site has certain characteristics that contribute to the context it provides, including area, shape, accessibility, and in the case of a geographic site, landforms, soil and ground conditions, climate, and so forth.",
+      "examples": [
+        "Example facilities that may situated at some site include structures and buildings, an archeological dig, the landing location for an aircraft or spacecraft, and the site of a wound. A given site may accommodate multiple facilities."
+      ],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Site",
+          "u": "https://www.omg.org/spec/Commons/SitesAndFacilities/Site"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__SitesAndFacilities__TractIdentifier",
+      "label": "tract identifier",
+      "type": "FIBO Class",
+      "cluster": "CMNS__SitesAndFacilities",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "unique identifier for a parcel issued for use in some jurisdiction",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — TractIdentifier",
+          "u": "https://www.omg.org/spec/Commons/SitesAndFacilities/TractIdentifier"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__SitesAndFacilities__TractOfLand",
+      "label": "tract of land",
+      "type": "FIBO Class",
+      "cluster": "CMNS__SitesAndFacilities",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "geographic region that is a contiguous parcel or area of land within a larger region on the surface of the earth, typically defined by its boundaries as described in a deed, survey, or legal document",
+      "detail": "In some cases, such as in the case of unimproved land that may be owned by a government but without improvements, there may not be an address. Such a description typically includes a detailed, quantitative specification for that region specified using a prescribed coordinate and/or mapping system and/or a narrative description, such as 'metes and bounds', which provides a qualitative, but less precise, legal description of the location. The system(s) used to describe the tract are specified in local, regional, and national law.",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — TractOfLand",
+          "u": "https://www.omg.org/spec/Commons/SitesAndFacilities/TractOfLand"
+        }
+      ]
+    },
+    {
+      "id": "CMNS__SitesAndFacilities__Venue",
+      "label": "venue",
+      "type": "FIBO Class",
+      "cluster": "CMNS__SitesAndFacilities",
+      "domain": "CMNS",
+      "level": 3,
+      "maturity": "n/a",
+      "core": false,
+      "summary": "site where something happens, described in the context of an event, activity, or something else that occurs there",
+      "detail": "",
+      "examples": [],
+      "synonyms": [],
+      "examplesProvenance": "fibo",
+      "definitionProvenance": "fibo",
+      "refs": [
+        {
+          "t": "FIBO ontology — Venue",
+          "u": "https://www.omg.org/spec/Commons/SitesAndFacilities/Venue"
+        }
+      ]
     }
   ],
   "edges": [
@@ -29410,6 +33115,24 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "BE__FunctionalEntities__FunctionalEntities__FunctionalBusinessEntity",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__FunctionalEntities__FunctionalEntities__FunctionalEntity",
+      "t": "CMNS__RolesAndCompositions__FunctionalRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__FunctionalEntities__FunctionalEntities__FunctionalEntity",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
       "s": "BE__FunctionalEntities__FunctionalEntities__Merchant",
       "t": "BE__FunctionalEntities__FunctionalEntities__FunctionalBusinessEntity",
       "r": "is-a",
@@ -29431,6 +33154,12 @@ const GRAPH = {
       "s": "BE__FunctionalEntities__FunctionalEntities__MerchantCategoryCode",
       "t": "BE__FunctionalEntities__FunctionalEntities__Merchant",
       "r": "classifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__FunctionalEntities__FunctionalEntities__MerchantCategoryCode",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -29461,6 +33190,30 @@ const GRAPH = {
       "s": "BE__FunctionalEntities__FunctionalEntities__MerchantIdentifier",
       "t": "BE__FunctionalEntities__FunctionalEntities__Merchant",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__FunctionalEntities__FunctionalEntities__MerchantIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__FunctionalEntities__FunctionalEntities__Syndicate",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "has-member",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__FunctionalEntities__FunctionalEntities__Syndicate",
+      "t": "CMNS__Organizations__Organization",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__FunctionalEntities__FunctionalEntities__SyndicateMember",
+      "t": "CMNS__Organizations__OrganizationMember",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -29512,6 +33265,24 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "BE__FunctionalEntities__Publishers__Publication",
+      "t": "CMNS__Documents__Document",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__FunctionalEntities__Publishers__Publisher",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__FunctionalEntities__Publishers__Publisher",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
       "s": "BE__FunctionalEntities__Publishers__ReferenceDataSpecialistProvider",
       "t": "BE__FunctionalEntities__Publishers__MarketDataProvider",
       "r": "is-a",
@@ -29545,6 +33316,12 @@ const GRAPH = {
       "s": "BE__GovernmentEntities__GovernmentEntities__FederatedSovereignty",
       "t": "BE__GovernmentEntities__GovernmentEntities__SovereignState",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__GovernmentEntities__GovernmentEntities__Government",
+      "t": "CMNS__Locations__GeopoliticalEntity",
+      "r": "governs",
       "provenance": "fibo"
     },
     {
@@ -29584,6 +33361,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "BE__GovernmentEntities__GovernmentEntities__GovernmentBody",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "BE__GovernmentEntities__GovernmentEntities__GovernmentDepartment",
       "t": "BE__GovernmentEntities__GovernmentEntities__GovernmentBody",
       "r": "is-a",
@@ -29609,6 +33392,12 @@ const GRAPH = {
     },
     {
       "s": "BE__GovernmentEntities__GovernmentEntities__GovernmentOfficial",
+      "t": "CMNS__BusinessAuthorizations__ResponsibleParty",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__GovernmentEntities__GovernmentEntities__GovernmentOfficial",
       "t": "BE__LegalEntities__LegalPersons__LegallyCompetentNaturalPerson",
       "r": "is-played-by",
       "provenance": "fibo"
@@ -29616,6 +33405,12 @@ const GRAPH = {
     {
       "s": "BE__GovernmentEntities__GovernmentEntities__Instrumentality",
       "t": "BE__GovernmentEntities__GovernmentEntities__GovernmentBody",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__GovernmentEntities__GovernmentEntities__Instrumentality",
+      "t": "CMNS__Organizations__LegalEntity",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -29651,6 +33446,12 @@ const GRAPH = {
     },
     {
       "s": "BE__GovernmentEntities__GovernmentEntities__MunicipalEntity",
+      "t": "CMNS__Locations__Municipality",
+      "r": "has-sovereignty-over",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__GovernmentEntities__GovernmentEntities__MunicipalEntity",
       "t": "BE__GovernmentEntities__GovernmentEntities__Polity",
       "r": "is-a",
       "provenance": "fibo"
@@ -29663,8 +33464,20 @@ const GRAPH = {
     },
     {
       "s": "BE__GovernmentEntities__GovernmentEntities__MunicipalGovernment",
+      "t": "CMNS__Locations__Municipality",
+      "r": "governs",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__GovernmentEntities__GovernmentEntities__MunicipalGovernment",
       "t": "BE__GovernmentEntities__GovernmentEntities__Government",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__GovernmentEntities__GovernmentEntities__NationalGovernment",
+      "t": "CMNS__Locations__Country",
+      "r": "governs",
       "provenance": "fibo"
     },
     {
@@ -29675,7 +33488,19 @@ const GRAPH = {
     },
     {
       "s": "BE__GovernmentEntities__GovernmentEntities__Polity",
+      "t": "CMNS__Locations__GeopoliticalEntity",
+      "r": "has-sovereignty-over",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__GovernmentEntities__GovernmentEntities__Polity",
       "t": "BE__GovernmentEntities__GovernmentEntities__GovernmentBody",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__GovernmentEntities__GovernmentEntities__Polity",
+      "t": "CMNS__Organizations__LegalPerson",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -29687,8 +33512,20 @@ const GRAPH = {
     },
     {
       "s": "BE__GovernmentEntities__GovernmentEntities__RegionalGovernment",
+      "t": "CMNS__Locations__GeopoliticalEntity",
+      "r": "governs",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__GovernmentEntities__GovernmentEntities__RegionalGovernment",
       "t": "BE__GovernmentEntities__GovernmentEntities__Government",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__GovernmentEntities__GovernmentEntities__RegionalSovereignty",
+      "t": "CMNS__Locations__GeopoliticalEntity",
+      "r": "has-shared-sovereignty-over",
       "provenance": "fibo"
     },
     {
@@ -29705,6 +33542,12 @@ const GRAPH = {
     },
     {
       "s": "BE__GovernmentEntities__GovernmentEntities__SovereignState",
+      "t": "CMNS__Locations__Country",
+      "r": "has-full-sovereignty-over",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__GovernmentEntities__GovernmentEntities__SovereignState",
       "t": "BE__GovernmentEntities__GovernmentEntities__Polity",
       "r": "is-a",
       "provenance": "fibo"
@@ -29717,6 +33560,12 @@ const GRAPH = {
     },
     {
       "s": "BE__GovernmentEntities__GovernmentEntities__SupranationalEntity",
+      "t": "CMNS__Locations__Country",
+      "r": "has-shared-sovereignty-over",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__GovernmentEntities__GovernmentEntities__SupranationalEntity",
       "t": "BE__GovernmentEntities__GovernmentEntities__Polity",
       "r": "is-a",
       "provenance": "fibo"
@@ -29725,6 +33574,12 @@ const GRAPH = {
       "s": "BE__GovernmentEntities__GovernmentEntities__SupranationalEntity",
       "t": "BE__GovernmentEntities__GovernmentEntities__GovernmentBody",
       "r": "is-represented-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__GovernmentEntities__GovernmentEntities__TribalArea",
+      "t": "CMNS__Locations__GeopoliticalEntity",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -29777,8 +33632,20 @@ const GRAPH = {
     },
     {
       "s": "BE__LegalEntities__CorporateBodies__Corporation",
+      "t": "CMNS__Organizations__LegalEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__CorporateBodies__Corporation",
       "t": "BE__LegalEntities__CorporateBodies__InstrumentOfIncorporation",
       "r": "is-constituted-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__CorporateBodies__Corporation",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-incorporated-in",
       "provenance": "fibo"
     },
     {
@@ -29809,6 +33676,12 @@ const GRAPH = {
       "s": "BE__LegalEntities__CorporateBodies__InstrumentOfIncorporation",
       "t": "FND__Law__LegalCore__Constitution",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__CorporateBodies__InstrumentOfIncorporation",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-governed-by",
       "provenance": "fibo"
     },
     {
@@ -29843,14 +33716,38 @@ const GRAPH = {
     },
     {
       "s": "BE__LegalEntities__CorporateBodies__RegistrationIdentifier",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__CorporateBodies__RegistrationIdentifier",
+      "t": "CMNS__Organizations__OrganizationIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__CorporateBodies__RegistrationIdentifier",
       "t": "BE__LegalEntities__CorporateBodies__RegistrationIdentifierScheme",
       "r": "is-defined-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__CorporateBodies__RegistrationIdentifier",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-governed-by",
       "provenance": "fibo"
     },
     {
       "s": "BE__LegalEntities__CorporateBodies__RegistrationIdentifierScheme",
       "t": "BE__LegalEntities__CorporateBodies__RegistrationIdentifier",
       "r": "defines",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__CorporateBodies__RegistrationIdentifierScheme",
+      "t": "CMNS__Organizations__OrganizationIdentificationScheme",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -29863,6 +33760,18 @@ const GRAPH = {
       "s": "BE__LegalEntities__CorporateBodies__ReligiousCorporation",
       "t": "BE__LegalEntities__CorporateBodies__NotForProfitCorporation",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__CorporateBodies__StockCorporation",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-date-of-incorporation",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__CorporateBodies__StockCorporation",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-date-of-registration",
       "provenance": "fibo"
     },
     {
@@ -29884,6 +33793,24 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "BE__LegalEntities__FormalBusinessOrganizations__Branch",
+      "t": "CMNS__Organizations__OrganizationalSubUnit",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__FormalBusinessOrganizations__Division",
+      "t": "CMNS__Organizations__OrganizationalSubUnit",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__FormalBusinessOrganizations__JointVenture",
+      "t": "CMNS__Organizations__LegalEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "BE__LegalEntities__FormalBusinessOrganizations__NonGovernmentalOrganization",
       "t": "BE__LegalEntities__LegalPersons__PublicPurpose",
       "r": "has-objective",
@@ -29902,8 +33829,26 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "BE__LegalEntities__FormalBusinessOrganizations__NotForProfitOrganization",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "BE__LegalEntities__FormalBusinessOrganizations__OrganizationCoveringAgreement",
       "t": "FND__Agreements__Contracts__WrittenContract",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__FormalBusinessOrganizations__ValueAddedTaxIdentificationNumber",
+      "t": "CMNS__Organizations__OrganizationIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__FormalBusinessOrganizations__ValueAddedTaxIdentificationNumber",
+      "t": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -29926,6 +33871,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "BE__LegalEntities__LegalPersons__BusinessEntity",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "BE__LegalEntities__LegalPersons__BusinessLicense",
       "t": "BE__LegalEntities__LegalPersons__BusinessEntity",
       "r": "applies-to",
@@ -29934,6 +33885,24 @@ const GRAPH = {
     {
       "s": "BE__LegalEntities__LegalPersons__BusinessLicense",
       "t": "FND__Law__LegalCapacity__License",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LegalPersons__BusinessLicense",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-recognized-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LegalPersons__CharteredLegalPerson",
+      "t": "CMNS__Organizations__LegalEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LegalPersons__LegallyCompetentNaturalPerson",
+      "t": "CMNS__Organizations__LegalPerson",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -29947,6 +33916,12 @@ const GRAPH = {
       "s": "BE__LegalEntities__LegalPersons__NotForProfitObjective",
       "t": "FND__GoalsAndObjectives__Objectives__Objective",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LegalPersons__PowerOfAttorney",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-effective-date",
       "provenance": "fibo"
     },
     {
@@ -29980,9 +33955,63 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "BE__LegalEntities__LegalPersons__SpecialPurposeVehicle",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-intended-liquidation-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LegalPersons__SpecialPurposeVehicle",
+      "t": "CMNS__Organizations__LegalEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LegalPersons__StatutoryBody",
+      "t": "CMNS__Organizations__LegalEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LegalPersons__VariableInterestEntity",
+      "t": "CMNS__Organizations__LegalEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "BE__LegalEntities__LEIEntities__AccountingFramework",
       "t": "BE__LegalEntities__LEIEntities__RelationshipQualifier",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__ContractuallyCapableEntity",
+      "t": "CMNS__PartiesAndSituations__AgentRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__ContractuallyCapableEntity",
+      "t": "CMNS__Organizations__LegalEntity",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__EntityLegalForm",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "classifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__EntityLegalForm",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__EntityLegalForm",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-applicable-in",
       "provenance": "fibo"
     },
     {
@@ -29999,6 +34028,12 @@ const GRAPH = {
     },
     {
       "s": "BE__LegalEntities__LEIEntities__EntityLegalFormIdentifier",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__EntityLegalFormIdentifier",
       "t": "BE__LegalEntities__LEIEntities__EntityLegalFormScheme",
       "r": "is-defined-in",
       "provenance": "fibo"
@@ -30007,6 +34042,36 @@ const GRAPH = {
       "s": "BE__LegalEntities__LEIEntities__EntityLegalFormScheme",
       "t": "BE__LegalEntities__LEIEntities__EntityLegalFormIdentifier",
       "r": "defines",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__EntityLegalFormScheme",
+      "t": "CMNS__Classifiers__ClassificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__EntityLegalFormScheme",
+      "t": "CMNS__CodesAndCodeSets__CodeSet",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__LegalEntityIdentifier",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__LegalEntityIdentifier",
+      "t": "CMNS__Organizations__OrganizationIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__LegalEntityIdentifier",
+      "t": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -30022,6 +34087,36 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "BE__LegalEntities__LEIEntities__LegalEntityIdentifierScheme",
+      "t": "CMNS__Organizations__OrganizationIdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__LEIRegisteredEntity",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__RelationshipPeriodQualifier",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__RelationshipQualifier",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__RelationshipRecord",
+      "t": "CMNS__Collections__Constituent",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "BE__LegalEntities__LEIEntities__RelationshipRecord",
       "t": "BE__LegalEntities__LEIEntities__RelationshipQualifier",
       "r": "is-qualified-by",
@@ -30031,6 +34126,12 @@ const GRAPH = {
       "s": "BE__LegalEntities__LEIEntities__RelationshipRecord",
       "t": "BE__OwnershipAndControl__OwnershipParties__EntityOwnership",
       "r": "records",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__LegalEntities__LEIEntities__RelationshipStatus",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -30049,6 +34150,12 @@ const GRAPH = {
       "s": "BE__OwnershipAndControl__ControlParties__ControlledParty",
       "t": "FND__OwnershipAndControl__Control__ControlledThing",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__OwnershipAndControl__ControlParties__ControlledParty",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "is-played-by",
       "provenance": "fibo"
     },
     {
@@ -30103,6 +34210,12 @@ const GRAPH = {
       "s": "BE__OwnershipAndControl__ControlParties__EntityControllingParty",
       "t": "FND__OwnershipAndControl__Control__ControllingParty",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__OwnershipAndControl__ControlParties__EntityControllingParty",
+      "t": "CMNS__Organizations__LegalEntity",
+      "r": "is-controlling-party-of",
       "provenance": "fibo"
     },
     {
@@ -30208,6 +34321,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "BE__OwnershipAndControl__CorporateControl__Affiliate",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "BE__OwnershipAndControl__CorporateControl__Affiliation",
       "t": "BE__OwnershipAndControl__CorporateControl__ControllingAffiliate",
       "r": "has-actor",
@@ -30235,6 +34354,12 @@ const GRAPH = {
       "s": "BE__OwnershipAndControl__CorporateControl__ControlledAffiliate",
       "t": "BE__OwnershipAndControl__CorporateControl__Affiliate",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__OwnershipAndControl__CorporateControl__ControlledAffiliate",
+      "t": "CMNS__Organizations__LegalEntity",
+      "r": "is-played-by",
       "provenance": "fibo"
     },
     {
@@ -30394,6 +34519,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "BE__OwnershipAndControl__Executives__Auditor",
+      "t": "CMNS__BusinessAuthorizations__AuthorizedParty",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__OwnershipAndControl__Executives__AuthorizedIndividual",
+      "t": "CMNS__BusinessAuthorizations__ResponsibleParty",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "BE__OwnershipAndControl__Executives__AuthorizedIndividual",
       "t": "BE__LegalEntities__LegalPersons__LegallyCompetentNaturalPerson",
       "r": "is-played-by",
@@ -30420,6 +34557,24 @@ const GRAPH = {
     {
       "s": "BE__OwnershipAndControl__Executives__BoardCompositionControl",
       "t": "FND__OwnershipAndControl__Control__Control",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__OwnershipAndControl__Executives__BoardMember",
+      "t": "CMNS__BusinessAuthorizations__LegallyDelegatedAuthority",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__OwnershipAndControl__Executives__BoardMember",
+      "t": "CMNS__BusinessAuthorizations__ResponsibleParty",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__OwnershipAndControl__Executives__BoardMember",
+      "t": "CMNS__Organizations__OrganizationMember",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -30502,6 +34657,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "BE__OwnershipAndControl__Executives__ControllingNominee",
+      "t": "CMNS__BusinessAuthorizations__LegallyDelegatedAuthority",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "BE__OwnershipAndControl__Executives__CorporateBylaws",
       "t": "BE__OwnershipAndControl__Executives__Bylaws",
       "r": "is-a",
@@ -30516,6 +34677,18 @@ const GRAPH = {
     {
       "s": "BE__OwnershipAndControl__Executives__CorporateOfficer",
       "t": "BE__OwnershipAndControl__Executives__Signatory",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__OwnershipAndControl__Executives__CorporateOfficer",
+      "t": "CMNS__Organizations__OrganizationMember",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__OwnershipAndControl__Executives__Executive",
+      "t": "CMNS__BusinessAuthorizations__LegallyDelegatedAuthority",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -30568,8 +34741,20 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "BE__OwnershipAndControl__Executives__PrincipalParty",
+      "t": "CMNS__Organizations__OrganizationMember",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "BE__OwnershipAndControl__Executives__Signatory",
       "t": "BE__OwnershipAndControl__Executives__AuthorizedIndividual",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__OwnershipAndControl__Executives__Signatory",
+      "t": "CMNS__BusinessAuthorizations__LegallyDelegatedAuthority",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -30613,6 +34798,12 @@ const GRAPH = {
       "s": "BE__OwnershipAndControl__OwnershipParties__EntityOwner",
       "t": "FND__OwnershipAndControl__Ownership__Owner",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__OwnershipAndControl__OwnershipParties__EntityOwnership",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "has-owning-entity",
       "provenance": "fibo"
     },
     {
@@ -30760,6 +34951,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "BE__Partnerships__Partnerships__Partner",
+      "t": "CMNS__Organizations__OrganizationMember",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__Partnerships__Partnerships__Partner",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
       "s": "BE__Partnerships__Partnerships__Partnership",
       "t": "BE__LegalEntities__LegalPersons__ProfitObjective",
       "r": "has-objective",
@@ -30768,6 +34971,12 @@ const GRAPH = {
     {
       "s": "BE__Partnerships__Partnerships__Partnership",
       "t": "BE__LegalEntities__LegalPersons__BusinessEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__Partnerships__Partnerships__Partnership",
+      "t": "CMNS__Organizations__LegalEntity",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -30815,6 +35024,12 @@ const GRAPH = {
     },
     {
       "s": "BE__PrivateLimitedCompanies__PrivateLimitedCompanies__LimitedLiabilityCompanyMember",
+      "t": "CMNS__Organizations__OrganizationMember",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__PrivateLimitedCompanies__PrivateLimitedCompanies__LimitedLiabilityCompanyMember",
       "t": "BE__LegalEntities__LegalPersons__LegallyCompetentNaturalPerson",
       "r": "is-played-by",
       "provenance": "fibo"
@@ -30846,6 +35061,12 @@ const GRAPH = {
     {
       "s": "BE__PrivateLimitedCompanies__PrivateLimitedCompanies__PrivateCompanyWithLimitedLiability",
       "t": "BE__LegalEntities__LegalPersons__BusinessEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__PrivateLimitedCompanies__PrivateLimitedCompanies__PrivateCompanyWithLimitedLiability",
+      "t": "CMNS__Organizations__LegalEntity",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -30882,6 +35103,12 @@ const GRAPH = {
     {
       "s": "BE__SoleProprietorships__SoleProprietorships__SoleProprietorship",
       "t": "BE__LegalEntities__LegalPersons__BusinessEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__SoleProprietorships__SoleProprietorships__SoleProprietorship",
+      "t": "CMNS__Organizations__LegalPerson",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -30941,6 +35168,12 @@ const GRAPH = {
     },
     {
       "s": "BE__Trusts__Trusts__Trust",
+      "t": "CMNS__Organizations__LegalEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__Trusts__Trusts__Trust",
       "t": "BE__Trusts__Trusts__TrustAgreement",
       "r": "is-governed-by",
       "provenance": "fibo"
@@ -30973,6 +35206,1872 @@ const GRAPH = {
       "s": "BE__Trusts__Trusts__TrustBeneficiary",
       "t": "FND__Agreements__Agreements__Beneficiary",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__Trusts__Trusts__Trustee",
+      "t": "CMNS__BusinessAuthorizations__LegallyDelegatedAuthority",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__Trusts__Trusts__Trustee",
+      "t": "CMNS__Organizations__OrganizationMember",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__Trusts__Trusts__TrustFundManager",
+      "t": "CMNS__BusinessAuthorizations__LegallyDelegatedAuthority",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__Trusts__Trusts__Trustor",
+      "t": "CMNS__Organizations__OrganizationMember",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "BE__Trusts__Trusts__Trustor",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__BusinessAuthorizations__Authorization",
+      "t": "CMNS__BusinessAuthorizations__AuthorizedParty",
+      "r": "has-authorized-party",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__BusinessAuthorizations__Authorization",
+      "t": "CMNS__BusinessAuthorizations__AuthorizingParty",
+      "r": "has-authorizing-party",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__BusinessAuthorizations__Authorization",
+      "t": "CMNS__PartiesAndSituations__Situation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__BusinessAuthorizations__AuthorizedParty",
+      "t": "CMNS__RolesAndCompositions__FunctionalRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__BusinessAuthorizations__AuthorizedParty",
+      "t": "CMNS__BusinessAuthorizations__Authorization",
+      "r": "is-authorized-through",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__BusinessAuthorizations__AuthorizedParty",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__BusinessAuthorizations__AuthorizingParty",
+      "t": "CMNS__BusinessAuthorizations__Authorization",
+      "r": "authorizes-through",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__BusinessAuthorizations__AuthorizingParty",
+      "t": "CMNS__PartiesAndSituations__Actor",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__BusinessAuthorizations__AuthorizingParty",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__BusinessAuthorizations__LegallyDelegatedAuthority",
+      "t": "CMNS__BusinessAuthorizations__AuthorizedParty",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__BusinessAuthorizations__LegallyDelegatedAuthority",
+      "t": "FND__OwnershipAndControl__Control__ControllingParty",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__BusinessAuthorizations__ResponsibleParty",
+      "t": "CMNS__BusinessAuthorizations__AuthorizedParty",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__BusinessAuthorizations__ResponsibleParty",
+      "t": "BE__LegalEntities__LegalPersons__LegallyCompetentNaturalPerson",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Classifiers__ClassificationScheme",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "defines",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Classifiers__ClassificationScheme",
+      "t": "CMNS__Collections__Arrangement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Classifiers__ClassificationScheme",
+      "t": "FND__Arrangements__Arrangements__Scheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Classifiers__Classifier",
+      "t": "CMNS__Classifiers__Aspect",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Classifiers__Classifier",
+      "t": "CMNS__Classifiers__ClassificationScheme",
+      "r": "is-defined-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__CodesAndCodeSets__CodeElement",
+      "t": "CMNS__Designators__Designation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__CodesAndCodeSets__CodeElement",
+      "t": "CMNS__CodesAndCodeSets__CodeSet",
+      "r": "is-member-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__CodesAndCodeSets__CodeSet",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "has-member",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__CodesAndCodeSets__CodeSet",
+      "t": "CMNS__Collections__Arrangement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__CodesAndCodeSets__CodeSet",
+      "t": "CMNS__Collections__Collection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__CodesAndCodeSets__CodeSet",
+      "t": "FND__Arrangements__Arrangements__Scheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Collections__StructuredCollection",
+      "t": "CMNS__Collections__Arrangement",
+      "r": "has-arrangement",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Collections__StructuredCollection",
+      "t": "CMNS__Collections__Collection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualDesignators__ContextualDesignation",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-applicable-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualDesignators__ContextualDesignation",
+      "t": "CMNS__Designators__Designation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualDesignators__ContextualDesignation",
+      "t": "CMNS__ContextualDesignators__Context",
+      "r": "is-applicable-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualDesignators__ContextualName",
+      "t": "CMNS__ContextualDesignators__ContextualDesignation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualDesignators__ContextualName",
+      "t": "CMNS__Designators__Name",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualDesignators__ContextualName",
+      "t": "CMNS__ContextualDesignators__Context",
+      "r": "is-applicable-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualDesignators__ContextualName",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "is-name-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualIdentifiers__ContextualIdentificationScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualIdentifiers__ContextualIdentificationScheme",
+      "t": "CMNS__ContextualDesignators__Context",
+      "r": "is-applicable-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualIdentifiers__ContextualIdentifier",
+      "t": "CMNS__ContextualDesignators__ContextualDesignation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualIdentifiers__ContextualIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualIdentifiers__ContextualIdentifier",
+      "t": "CMNS__ContextualDesignators__Context",
+      "r": "is-applicable-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualIdentifiers__StructuredIdentifier",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "comprises",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualIdentifiers__StructuredIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "comprises",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__ContextualIdentifiers__StructuredIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__Date",
+      "t": "CMNS__DatesAndTimes__TimeInstant",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__DatePeriod",
+      "t": "CMNS__DatesAndTimes__Duration",
+      "r": "has-duration",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__DatePeriod",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-end-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__DatePeriod",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-start-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__DatePeriod",
+      "t": "CMNS__DatesAndTimes__TimeInterval",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__DateTime",
+      "t": "CMNS__DatesAndTimes__TimeInstant",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__DateTimeStamp",
+      "t": "CMNS__DatesAndTimes__TimeInstant",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__Duration",
+      "t": "CMNS__DatesAndTimes__TimeInterval",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ExplicitDate",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ExplicitDatePeriod",
+      "t": "CMNS__DatesAndTimes__ExplicitDuration",
+      "r": "has-duration",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ExplicitDatePeriod",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-end-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ExplicitDatePeriod",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-start-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ExplicitDatePeriod",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ExplicitDatePeriod",
+      "t": "CMNS__DatesAndTimes__ProperInterval",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ExplicitDuration",
+      "t": "CMNS__DatesAndTimes__Duration",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ExplicitDuration",
+      "t": "CMNS__DatesAndTimes__ProperInterval",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ExplicitTimePeriod",
+      "t": "CMNS__DatesAndTimes__ExplicitDuration",
+      "r": "has-duration",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ExplicitTimePeriod",
+      "t": "CMNS__DatesAndTimes__TimeOfDay",
+      "r": "has-end-time",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ExplicitTimePeriod",
+      "t": "CMNS__DatesAndTimes__TimeOfDay",
+      "r": "has-start-time",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ExplicitTimePeriod",
+      "t": "CMNS__DatesAndTimes__ProperInterval",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ExplicitTimePeriod",
+      "t": "CMNS__DatesAndTimes__TimePeriod",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__ProperInterval",
+      "t": "CMNS__DatesAndTimes__TimeInterval",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__TimeInstant",
+      "t": "CMNS__DatesAndTimes__TemporalEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__TimeInterval",
+      "t": "CMNS__DatesAndTimes__TemporalEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__TimeOfDay",
+      "t": "CMNS__DatesAndTimes__TimeInstant",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__TimePeriod",
+      "t": "CMNS__DatesAndTimes__Duration",
+      "r": "has-duration",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__TimePeriod",
+      "t": "CMNS__DatesAndTimes__TimeOfDay",
+      "r": "has-end-time",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__TimePeriod",
+      "t": "CMNS__DatesAndTimes__TimeOfDay",
+      "r": "has-start-time",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__DatesAndTimes__TimePeriod",
+      "t": "CMNS__DatesAndTimes__TimeInterval",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Designators__Name",
+      "t": "CMNS__Designators__Designation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Documents__Certificate",
+      "t": "CMNS__Documents__Document",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Documents__DocumentPart",
+      "t": "CMNS__Documents__Document",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Documents__DocumentPart",
+      "t": "CMNS__Documents__Document",
+      "r": "is-member-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Documents__LegalDocument",
+      "t": "CMNS__Documents__Document",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Documents__Notice",
+      "t": "CMNS__Documents__Document",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Documents__Record",
+      "t": "CMNS__Documents__Document",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Documents__ReferenceDocument",
+      "t": "CMNS__Documents__Document",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Documents__ReferenceDocument",
+      "t": "CMNS__Documents__Reference",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Documents__TechnicalSpecificationDocument",
+      "t": "CMNS__Documents__ReferenceDocument",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Documents__TechnicalSpecificationDocument",
+      "t": "CMNS__Documents__Specification",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Identifiers__IdentificationScheme",
+      "t": "CMNS__Collections__Arrangement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Identifiers__IdentificationScheme",
+      "t": "FND__Arrangements__Arrangements__Scheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Identifiers__Identifier",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "complies-with",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Identifiers__Identifier",
+      "t": "CMNS__Designators__Designation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__BusinessCenter",
+      "t": "CMNS__Locations__Municipality",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__Country",
+      "t": "CMNS__Locations__GeopoliticalEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__CountrySubdivision",
+      "t": "CMNS__Locations__GeopoliticalEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__CountrySubdivision",
+      "t": "CMNS__Locations__GeographicRegionKind",
+      "r": "is-classified-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__County",
+      "t": "CMNS__Locations__CountrySubdivision",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__FederalCapitalArea",
+      "t": "CMNS__Locations__CountrySubdivision",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__FederalState",
+      "t": "CMNS__Locations__CountrySubdivision",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__GeodeticCoordinateSystem",
+      "t": "CMNS__Collections__Arrangement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__GeographicRegion",
+      "t": "CMNS__Designators__Name",
+      "r": "has-name",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__GeographicRegion",
+      "t": "CMNS__Locations__Region",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__GeographicRegionIdentificationScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__GeographicRegionIdentifier",
+      "t": "CMNS__Locations__GeographicRegion",
+      "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__GeographicRegionIdentifier",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__GeographicRegionIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__GeographicRegionIdentifier",
+      "t": "CMNS__Locations__GeographicRegionIdentificationScheme",
+      "r": "is-member-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__GeographicRegionKind",
+      "t": "CMNS__Locations__GeographicRegion",
+      "r": "classifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__GeographicRegionKind",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__GeopoliticalEntity",
+      "t": "CMNS__Locations__GeographicRegion",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__Municipality",
+      "t": "CMNS__Locations__CountrySubdivision",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__Municipality",
+      "t": "CMNS__Locations__GeopoliticalEntity",
+      "r": "is-part-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__PhysicalLocation",
+      "t": "CMNS__Locations__Location",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__Territory",
+      "t": "CMNS__Locations__GeographicRegion",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Locations__VirtualLocation",
+      "t": "CMNS__Locations__Location",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__Capability",
+      "t": "CMNS__Classifiers__Aspect",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__Capability",
+      "t": "CMNS__SitesAndFacilities__Facility",
+      "r": "is-enabled-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__Capacity",
+      "t": "CMNS__Classifiers__Aspect",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__FormalOrganization",
+      "t": "CMNS__Organizations__Organization",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__FormalOrganization",
+      "t": "FBC__FunctionalEntities__BusinessRegistries__NorthAmericanIndustryClassificationSystemCode",
+      "r": "is-classified-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__FormalOrganization",
+      "t": "FBC__FunctionalEntities__BusinessRegistries__StandardIndustrialClassificationCode",
+      "r": "is-classified-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__FormalOrganization",
+      "t": "CMNS__Locations__GeopoliticalEntity",
+      "r": "is-domiciled-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__InformalOrganization",
+      "t": "CMNS__Organizations__Organization",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalEntity",
+      "t": "FBC__FunctionalEntities__BusinessRegistries__EntityExpirationReason",
+      "r": "has-entity-expiration-reason",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalEntity",
+      "t": "FBC__FunctionalEntities__BusinessRegistries__EntityStatus",
+      "r": "has-entity-status",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalEntity",
+      "t": "FND__Places__Addresses__PhysicalAddress",
+      "r": "has-headquarters-address",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalEntity",
+      "t": "FND__Places__Addresses__ConventionalStreetAddress",
+      "r": "has-legal-address",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalEntity",
+      "t": "BE__LegalEntities__LEIEntities__EntityLegalForm",
+      "r": "has-legal-form",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalEntity",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalEntity",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalEntity",
+      "t": "FBC__FunctionalEntities__BusinessRegistries__NorthAmericanIndustryClassificationSystemCode",
+      "r": "is-classified-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalEntity",
+      "t": "FBC__FunctionalEntities__BusinessRegistries__StandardIndustrialClassificationCode",
+      "r": "is-classified-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalEntity",
+      "t": "FND__Arrangements__ClassificationSchemes__IndustrySectorClassifier",
+      "r": "is-classified-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalEntity",
+      "t": "BE__LegalEntities__FormalBusinessOrganizations__OrganizationCoveringAgreement",
+      "r": "is-governed-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalEntity",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-organized-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalPerson",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalPerson",
+      "t": "BE__LegalEntities__LEIEntities__LegalEntityIdentifier",
+      "r": "is-identified-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalPerson",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-recognized-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__MemberBearingOrganization",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__Membership",
+      "t": "CMNS__Organizations__MemberBearingOrganization",
+      "r": "has-membership",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__Membership",
+      "t": "CMNS__Organizations__OrganizationMember",
+      "r": "has-organization-member",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__Membership",
+      "t": "CMNS__PartiesAndSituations__Situation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__Organization",
+      "t": "FND__GoalsAndObjectives__Objectives__Goal",
+      "r": "has-goal",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__Organization",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "has-member",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__Organization",
+      "t": "CMNS__Organizations__OrganizationName",
+      "r": "has-name",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__Organization",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__OrganizationalSubUnit",
+      "t": "CMNS__Organizations__Organization",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__OrganizationalSubUnit",
+      "t": "CMNS__Organizations__Organization",
+      "r": "is-part-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__OrganizationIdentificationScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__OrganizationIdentifier",
+      "t": "CMNS__Organizations__Organization",
+      "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__OrganizationIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__OrganizationIdentifier",
+      "t": "CMNS__Organizations__OrganizationIdentificationScheme",
+      "r": "is-member-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__OrganizationMember",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__OrganizationName",
+      "t": "CMNS__ContextualDesignators__ContextualName",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__OrganizationName",
+      "t": "CMNS__Organizations__Organization",
+      "r": "is-name-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__OrganizationSubUnitIdentifier",
+      "t": "CMNS__Organizations__OrganizationalSubUnit",
+      "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__OrganizationSubUnitIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__Service",
+      "t": "CMNS__Organizations__ServiceProvider",
+      "r": "is-provided-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__Service",
+      "t": "CMNS__Organizations__ServiceProvider",
+      "r": "is-provisioned-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__Service",
+      "t": "CMNS__Organizations__Capability",
+      "r": "provides",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__ServiceProvider",
+      "t": "BE__FunctionalEntities__FunctionalEntities__FunctionalEntity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__ServiceProvider",
+      "t": "CMNS__PartiesAndSituations__AgentRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__ServiceProvider",
+      "t": "CMNS__RolesAndCompositions__FunctionalRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__ServiceProvider",
+      "t": "CMNS__Organizations__Service",
+      "r": "provides",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__ServiceProvider",
+      "t": "CMNS__Organizations__Service",
+      "r": "provisions",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__ServiceProvider",
+      "t": "CMNS__SitesAndFacilities__Facility",
+      "r": "provisions",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__Actor",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__Agent",
+      "t": "CMNS__ContextualDesignators__ContextualName",
+      "r": "has-name",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__AgentRole",
+      "t": "CMNS__RolesAndCompositions__Role",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__AgentRole",
+      "t": "CMNS__PartiesAndSituations__Agent",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__Party",
+      "t": "FND__Places__Addresses__PhysicalAddress",
+      "r": "has-address",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__Party",
+      "t": "FND__Places__Addresses__PhysicalAddress",
+      "r": "has-mailing-address",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__Party",
+      "t": "CMNS__PartiesAndSituations__Agent",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__PartyRole",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-applicable-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__PartyRole",
+      "t": "CMNS__PartiesAndSituations__AgentRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__PartyRole",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__Situation",
+      "t": "CMNS__RolesAndCompositions__Role",
+      "r": "has-object-role",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__Situation",
+      "t": "CMNS__RolesAndCompositions__Role",
+      "r": "has-subject-role",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__Situation",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "holds-during",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__SoftwareAgent",
+      "t": "CMNS__PartiesAndSituations__Agent",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__SoftwareAgent",
+      "t": "FND__AgentsAndPeople__Agents__AutomatedSystem",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__PartiesAndSituations__Undergoer",
+      "t": "CMNS__RolesAndCompositions__Role",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ArbitraryUnit",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementUnit",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ArbitraryUnit",
+      "t": "CMNS__QuantitiesAndUnits__MaterialMeasure",
+      "r": "refers-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ArbitraryUnit",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementProcedure",
+      "r": "refers-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ArbitraryUnit",
+      "t": "CMNS__QuantitiesAndUnits__ReferenceMaterial",
+      "r": "refers-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__BaseQuantityKind",
+      "t": "CMNS__QuantitiesAndUnits__QuantityKind",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__BaseQuantityKind",
+      "t": "CMNS__QuantitiesAndUnits__SystemOfQuantities",
+      "r": "is-defined-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__BaseUnit",
+      "t": "CMNS__QuantitiesAndUnits__PhysicalUnit",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__CoherentDerivedUnit",
+      "t": "CMNS__QuantitiesAndUnits__DerivedUnit",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__Constant",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ConversionBasedUnit",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "has-expression",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ConversionBasedUnit",
+      "t": "CMNS__QuantitiesAndUnits__DerivedUnit",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ConversionFactorBetweenUnits",
+      "t": "CMNS__QuantitiesAndUnits__QuantityKind",
+      "r": "has-quantity-kind",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ConversionFactorBetweenUnits",
+      "t": "CMNS__QuantitiesAndUnits__Factor",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ConversionFactorBetweenUnits",
+      "t": "CMNS__QuantitiesAndUnits__Ratio",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__CyclicRatioScale",
+      "t": "CMNS__QuantitiesAndUnits__RatioScale",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__DerivedQuantityKind",
+      "t": "CMNS__QuantitiesAndUnits__QuantityKindPowerFactor",
+      "r": "has-factor",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__DerivedQuantityKind",
+      "t": "CMNS__QuantitiesAndUnits__QuantityKind",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__DerivedQuantityKind",
+      "t": "CMNS__QuantitiesAndUnits__QuantityKind",
+      "r": "is-derived-from",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__DerivedUnit",
+      "t": "CMNS__QuantitiesAndUnits__UnitPowerFactor",
+      "r": "has-factor",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__DerivedUnit",
+      "t": "CMNS__QuantitiesAndUnits__PhysicalUnit",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__DerivedUnit",
+      "t": "CMNS__QuantitiesAndUnits__BaseUnit",
+      "r": "is-derived-from",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__DimensionlessQuantity",
+      "t": "CMNS__QuantitiesAndUnits__QuantityKind",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__Expression",
+      "t": "CMNS__QuantitiesAndUnits__Constant",
+      "r": "has-argument",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__Expression",
+      "t": "CMNS__QuantitiesAndUnits__Variable",
+      "r": "has-argument",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__Expression",
+      "t": "CMNS__Documents__Specification",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__Factor",
+      "t": "CMNS__Classifiers__Aspect",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__IntervalScale",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementScale",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__LogarithmicScale",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementScale",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__MaterialMeasure",
+      "t": "CMNS__QuantitiesAndUnits__Measure",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__MeasurementProcedure",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementReference",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__MeasurementReference",
+      "t": "CMNS__Documents__Reference",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__MeasurementScale",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementUnit",
+      "r": "classifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__MeasurementScale",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "has-maximum-permissive-value",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__MeasurementScale",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "has-minimum-permissive-value",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__MeasurementScale",
+      "t": "CMNS__Classifiers__ClassificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__MeasurementScale",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementReference",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__MeasurementUnit",
+      "t": "CMNS__QuantitiesAndUnits__UnitPowerFactor",
+      "r": "has-factor",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__MeasurementUnit",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementReference",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__MeasurementUnit",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__MeasurementUnit",
+      "t": "CMNS__QuantitiesAndUnits__SystemOfUnits",
+      "r": "is-defined-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__NominalScale",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementScale",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__OrdinalScale",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementScale",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__Percentage",
+      "t": "CMNS__QuantitiesAndUnits__Ratio",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__PhysicalUnit",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementUnit",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__PhysicalUnit",
+      "t": "CMNS__QuantitiesAndUnits__SystemOfUnits",
+      "r": "is-defined-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__Prefix",
+      "t": "CMNS__QuantitiesAndUnits__Factor",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__PrefixedUnit",
+      "t": "CMNS__QuantitiesAndUnits__Prefix",
+      "r": "has-factor",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__PrefixedUnit",
+      "t": "CMNS__QuantitiesAndUnits__ConversionBasedUnit",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__QuantityDimension",
+      "t": "CMNS__QuantitiesAndUnits__QuantityKindPowerFactor",
+      "r": "has-factor",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__QuantityDimension",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__QuantityKind",
+      "t": "CMNS__QuantitiesAndUnits__QuantityDimension",
+      "r": "has-dimension",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__QuantityKind",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementUnit",
+      "r": "has-measurement-unit",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__QuantityKind",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__QuantityKind",
+      "t": "CMNS__QuantitiesAndUnits__SystemOfQuantities",
+      "r": "is-defined-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__QuantityKindPowerFactor",
+      "t": "CMNS__QuantitiesAndUnits__QuantityKind",
+      "r": "has-quantity-kind",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__QuantityKindPowerFactor",
+      "t": "CMNS__QuantitiesAndUnits__Factor",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__QuantityName",
+      "t": "CMNS__ContextualDesignators__ContextualName",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__QuantityName",
+      "t": "CMNS__QuantitiesAndUnits__SystemOfQuantities",
+      "r": "is-applicable-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__QuantityName",
+      "t": "CMNS__QuantitiesAndUnits__SystemOfUnits",
+      "r": "is-applicable-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__QuantityName",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantity",
+      "r": "is-name-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__Ratio",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "has-denominator",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__Ratio",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "has-numerator",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__Ratio",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__RatioScale",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementScale",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__RatioScaleWithAdditionalLimitValues",
+      "t": "CMNS__QuantitiesAndUnits__RatioScale",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ReferenceMaterial",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementReference",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ScalarQuantity",
+      "t": "CMNS__QuantitiesAndUnits__QuantityName",
+      "r": "has-name",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ScalarQuantity",
+      "t": "CMNS__QuantitiesAndUnits__QuantityKind",
+      "r": "has-quantity-kind",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantity",
+      "r": "expresses-the-magnitude-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementReference",
+      "r": "has-measurement-reference",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ScalarQuantityValueRange",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "has-lower-bound",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ScalarQuantityValueRange",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "has-upper-bound",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__ScalarQuantityValueRange",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__SystemOfQuantities",
+      "t": "CMNS__Classifiers__ClassificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__SystemOfUnits",
+      "t": "CMNS__Classifiers__ClassificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__Total",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__UnitPowerFactor",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementUnit",
+      "r": "has-measurement-unit",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__UnitPowerFactor",
+      "t": "CMNS__QuantitiesAndUnits__Factor",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__QuantitiesAndUnits__Variable",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
+      "t": "CMNS__RegistrationAuthorities__RegistrationScheme",
+      "r": "complies-with",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
+      "t": "CMNS__ContextualIdentifiers__ContextualIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
+      "t": "CMNS__RegistrationAuthorities__Registrar",
+      "r": "is-registered-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
+      "t": "CMNS__RegistrationAuthorities__Registry",
+      "r": "is-registered-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__Registrar",
+      "t": "CMNS__Organizations__ServiceProvider",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__Registrar",
+      "t": "CMNS__PartiesAndSituations__Actor",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__Registrar",
+      "t": "CMNS__RegistrationAuthorities__RegistrationAuthority",
+      "r": "is-designated-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__Registrar",
+      "t": "CMNS__RegistrationAuthorities__RegistrationService",
+      "r": "provides",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__RegistrationAuthority",
+      "t": "CMNS__BusinessAuthorizations__AuthorizingParty",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__RegistrationAuthority",
+      "t": "CMNS__Organizations__ServiceProvider",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__RegistrationAuthority",
+      "t": "CMNS__RegistrationAuthorities__Registry",
+      "r": "manages",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__RegistrationScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__RegistrationService",
+      "t": "CMNS__Organizations__Service",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__RegistrationService",
+      "t": "CMNS__RegistrationAuthorities__Registrar",
+      "r": "is-provided-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__Registry",
+      "t": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "r": "comprises",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__Registry",
+      "t": "CMNS__Collections__StructuredCollection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__Registry",
+      "t": "CMNS__Documents__Record",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__Registry",
+      "t": "CMNS__RegistrationAuthorities__RegistrationAuthority",
+      "r": "is-managed-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "t": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
+      "r": "comprises",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "t": "CMNS__Collections__Constituent",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "t": "CMNS__RegistrationAuthorities__Registry",
+      "r": "is-included-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "t": "CMNS__Locations__GeographicRegion",
+      "r": "has-reach",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "t": "CMNS__ContextualDesignators__Context",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "has-jurisdiction",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "t": "CMNS__BusinessAuthorizations__AuthorizingParty",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "t": "CMNS__Organizations__ServiceProvider",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "t": "FBC__FunctionalEntities__RegulatoryAgencies__GovernmentIssuedLicense",
+      "r": "issues",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryService",
+      "r": "provides",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegulatoryAgencies__RegulatoryReport",
+      "t": "CMNS__Documents__Record",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegulatoryAgencies__RegulatoryReport",
+      "t": "CMNS__Documents__ReferenceDocument",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegulatoryAgencies__RegulatoryReport",
+      "t": "FND__Arrangements__Reporting__Report",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegulatoryAgencies__RegulatoryService",
+      "t": "CMNS__Organizations__Service",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RegulatoryAgencies__RegulatoryService",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "is-provided-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RolesAndCompositions__Composition",
+      "t": "CMNS__Collections__Constituent",
+      "r": "has-constituent",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RolesAndCompositions__Composition",
+      "t": "CMNS__RolesAndCompositions__Role",
+      "r": "has-role",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RolesAndCompositions__Composition",
+      "t": "CMNS__ContextualDesignators__Context",
+      "r": "is-applicable-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RolesAndCompositions__FunctionalRole",
+      "t": "CMNS__RolesAndCompositions__Role",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RolesAndCompositions__ProcessRole",
+      "t": "CMNS__RolesAndCompositions__Role",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__RolesAndCompositions__StructuralRole",
+      "t": "CMNS__RolesAndCompositions__Role",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__SitesAndFacilities__Facility",
+      "t": "CMNS__SitesAndFacilities__Site",
+      "r": "is-situated-at",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__SitesAndFacilities__Site",
+      "t": "CMNS__SitesAndFacilities__TractOfLand",
+      "r": "applies-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__SitesAndFacilities__Site",
+      "t": "CMNS__ContextualDesignators__Context",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__SitesAndFacilities__Site",
+      "t": "CMNS__SitesAndFacilities__Facility",
+      "r": "situates",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__SitesAndFacilities__TractIdentifier",
+      "t": "CMNS__SitesAndFacilities__TractOfLand",
+      "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__SitesAndFacilities__TractIdentifier",
+      "t": "CMNS__ContextualIdentifiers__ContextualIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__SitesAndFacilities__TractIdentifier",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-applicable-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__SitesAndFacilities__TractOfLand",
+      "t": "FND__Places__Addresses__PhysicalAddress",
+      "r": "has-address",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__SitesAndFacilities__TractOfLand",
+      "t": "CMNS__Locations__GeographicRegion",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__SitesAndFacilities__TractOfLand",
+      "t": "CMNS__Locations__GeographicRegion",
+      "r": "is-subregion-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__SitesAndFacilities__Venue",
+      "t": "CMNS__SitesAndFacilities__Site",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__SitesAndFacilities__Venue",
+      "t": "CMNS__ContextualDesignators__Context",
+      "r": "is-applicable-in",
       "provenance": "fibo"
     },
     {
@@ -31031,8 +37130,20 @@ const GRAPH = {
     },
     {
       "s": "FBC__DebtAndEquities__CreditEvents__EntitySpecificCreditEvent",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "applies-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__CreditEvents__EntitySpecificCreditEvent",
       "t": "FBC__DebtAndEquities__CreditEvents__CreditEvent",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__CreditEvents__FailureToPay",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-grace-period",
       "provenance": "fibo"
     },
     {
@@ -31069,6 +37180,12 @@ const GRAPH = {
       "s": "FBC__DebtAndEquities__CreditEvents__InstallmentDefault",
       "t": "FBC__DebtAndEquities__CreditEvents__DefaultEvent",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__CreditEvents__InterestObligationInLightOfDefault",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-default-interest-compounding-basis",
       "provenance": "fibo"
     },
     {
@@ -31163,6 +37280,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__DebtAndEquities__CreditRatings__CreditInquiry",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "concerns-party",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__CreditRatings__CreditInquiry",
       "t": "FND__Arrangements__Reporting__RequestActivity",
       "r": "is-a",
       "provenance": "fibo"
@@ -31180,9 +37303,27 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__DebtAndEquities__CreditRatings__CreditInquiryType",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__CreditRatings__CreditMessage",
+      "t": "CMNS__Documents__Notice",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__DebtAndEquities__CreditRatings__CreditMessage",
       "t": "FBC__DebtAndEquities__CreditRatings__CreditMessageType",
       "r": "is-classified-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__CreditRatings__CreditMessageType",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -31235,6 +37376,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__DebtAndEquities__CreditRatings__CreditRatingModel",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__CreditRatings__CreditRatingModel",
       "t": "FBC__DebtAndEquities__CreditRatings__CreditRatingModelType",
       "r": "is-classified-by",
       "provenance": "fibo"
@@ -31243,6 +37390,12 @@ const GRAPH = {
       "s": "FBC__DebtAndEquities__CreditRatings__CreditRatingModel",
       "t": "FND__Arrangements__Ratings__RatingScore",
       "r": "produces",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__CreditRatings__CreditRatingModelType",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -31283,8 +37436,26 @@ const GRAPH = {
     },
     {
       "s": "FBC__DebtAndEquities__CreditRatings__CreditReport",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "concerns-party",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__CreditRatings__CreditReport",
       "t": "FBC__DebtAndEquities__CreditRatings__CreditReportProduct",
       "r": "exemplifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__CreditRatings__CreditReport",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-as-of-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__CreditRatings__CreditReport",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-coverage-period",
       "provenance": "fibo"
     },
     {
@@ -31301,8 +37472,20 @@ const GRAPH = {
     },
     {
       "s": "FBC__DebtAndEquities__CreditRatings__CreditReport",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-identified-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__CreditRatings__CreditReport",
       "t": "FBC__DebtAndEquities__CreditRatings__CreditRatingAgency",
       "r": "is-produced-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__CreditRatings__CreditReportCategory",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -31342,6 +37525,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__DebtAndEquities__CreditRatings__CreditWatchDirection",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__DebtAndEquities__CreditRatings__CreditWatchOutlook",
       "t": "FND__Arrangements__Ratings__Rating",
       "r": "is-a",
@@ -31372,6 +37561,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__DebtAndEquities__CreditRatings__OrganizationCreditRating",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "rates",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__DebtAndEquities__CreditRatings__ShortTermCreditRating",
       "t": "FBC__DebtAndEquities__CreditRatings__InvestmentCreditRating",
       "r": "is-a",
@@ -31384,8 +37579,26 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__DebtAndEquities__Debt__Accrual",
+      "t": "CMNS__RolesAndCompositions__Role",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__AccruedInterest",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-as-of-date",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__DebtAndEquities__Debt__AccruedInterest",
       "t": "FBC__DebtAndEquities__Debt__Interest",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__Amortization",
+      "t": "CMNS__RolesAndCompositions__Role",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -31475,6 +37688,18 @@ const GRAPH = {
     },
     {
       "s": "FBC__DebtAndEquities__Debt__BorrowingCapacity",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "applies-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__BorrowingCapacity",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-date-of-assessment",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__BorrowingCapacity",
       "t": "FND__Accounting__CurrencyAmount__MonetaryAmount",
       "r": "is-a",
       "provenance": "fibo"
@@ -31493,8 +37718,20 @@ const GRAPH = {
     },
     {
       "s": "FBC__DebtAndEquities__Debt__Collateral",
+      "t": "CMNS__PartiesAndSituations__Undergoer",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__Collateral",
       "t": "FND__OwnershipAndControl__Ownership__Asset",
       "r": "is-collateralization-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__CollateralValueAsOfDate",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-date-of-assessment",
       "provenance": "fibo"
     },
     {
@@ -31571,6 +37808,18 @@ const GRAPH = {
     },
     {
       "s": "FBC__DebtAndEquities__Debt__CreditAgreement",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-initial-exchange-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__CreditAgreement",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-maturity-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__CreditAgreement",
       "t": "FND__Agreements__Contracts__WrittenContract",
       "r": "is-a",
       "provenance": "fibo"
@@ -31579,6 +37828,12 @@ const GRAPH = {
       "s": "FBC__DebtAndEquities__Debt__CreditAgreement",
       "t": "FBC__DebtAndEquities__Debt__Collateral",
       "r": "is-collateralized-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__CreditAgreementRepaidAtMaturity",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-maturity-date",
       "provenance": "fibo"
     },
     {
@@ -31666,6 +37921,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__DebtAndEquities__Debt__Creditor",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__DayCountConvention",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__DebtAndEquities__Debt__DayCountConvention",
       "t": "FND__DatesAndTimes__BusinessDates__BusinessRecurrenceIntervalConvention",
       "r": "is-a",
@@ -31693,6 +37960,12 @@ const GRAPH = {
       "s": "FBC__DebtAndEquities__Debt__Debtor",
       "t": "FND__Agreements__Agreements__Obligor",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__Debtor",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "is-played-by",
       "provenance": "fibo"
     },
     {
@@ -31735,6 +38008,12 @@ const GRAPH = {
       "s": "FBC__DebtAndEquities__Debt__FullAmortization",
       "t": "FBC__DebtAndEquities__Debt__Amortization",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__Interest",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-date-period",
       "provenance": "fibo"
     },
     {
@@ -31831,6 +38110,24 @@ const GRAPH = {
       "s": "FBC__DebtAndEquities__Debt__InterestPaymentTerms",
       "t": "FND__DatesAndTimes__FinancialDates__RecurrenceInterval",
       "r": "has-compounding-frequency",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__InterestPaymentTerms",
+      "t": "CMNS__DatesAndTimes__ExplicitDuration",
+      "r": "has-first-rate-change-term",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__InterestPaymentTerms",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-initial-interest-accrual-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__InterestPaymentTerms",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-initial-interest-payment-date",
       "provenance": "fibo"
     },
     {
@@ -31968,6 +38265,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__DebtAndEquities__Debt__Principal",
+      "t": "CMNS__Classifiers__Aspect",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__Principal",
       "t": "FBC__DebtAndEquities__Debt__Debt",
       "r": "is-principal-of",
       "provenance": "fibo"
@@ -32010,6 +38313,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__DebtAndEquities__Debt__PrincipalRepaymentTerms",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-initial-principal-payment-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__PrincipalRepaymentTerms",
       "t": "FND__DatesAndTimes__BusinessDates__DayOfMonth",
       "r": "has-principal-payment-day",
       "provenance": "fibo"
@@ -32018,6 +38327,12 @@ const GRAPH = {
       "s": "FBC__DebtAndEquities__Debt__PrincipalRepaymentTerms",
       "t": "FND__DatesAndTimes__FinancialDates__RecurrenceInterval",
       "r": "has-principal-payment-frequency",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__PrincipalRepaymentTerms",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-principal-repayment-date",
       "provenance": "fibo"
     },
     {
@@ -32035,6 +38350,18 @@ const GRAPH = {
     {
       "s": "FBC__DebtAndEquities__Debt__ProjectedContractEventSchedule",
       "t": "FND__DatesAndTimes__FinancialDates__RegularSchedule",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__RateResetTimeOfDay",
+      "t": "CMNS__Locations__BusinessCenter",
+      "r": "has-business-center",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Debt__RateResetTimeOfDay",
+      "t": "CMNS__DatesAndTimes__TimeOfDay",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -32141,6 +38468,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__DebtAndEquities__Guaranty__Guarantor",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Guaranty__Guaranty",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-expiration-date",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__DebtAndEquities__Guaranty__Guaranty",
       "t": "FND__Accounting__CurrencyAmount__MonetaryAmount",
       "r": "has-guaranteed-amount",
@@ -32150,6 +38489,12 @@ const GRAPH = {
       "s": "FBC__DebtAndEquities__Guaranty__Guaranty",
       "t": "FBC__DebtAndEquities__Guaranty__PriorityLevel",
       "r": "has-priority-level",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Guaranty__Guaranty",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "holds-during",
       "provenance": "fibo"
     },
     {
@@ -32226,6 +38571,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__DebtAndEquities__Guaranty__LetterOfCredit",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-issued-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__DebtAndEquities__Guaranty__LetterOfCredit",
       "t": "FND__Accounting__AccountingEquity__FinancialAsset",
       "r": "plays-role",
       "provenance": "fibo"
@@ -32255,6 +38606,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__DebtAndEquities__Guaranty__PriorityLevel",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FinancialInstruments__FinancialInstruments__CalculationAgent",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__ThirdPartyAgent",
       "r": "is-a",
@@ -32270,6 +38627,12 @@ const GRAPH = {
       "s": "FBC__FinancialInstruments__FinancialInstruments__CommodityInstrument",
       "t": "FND__Accounting__CurrencyAmount__MonetaryAmount",
       "r": "has-commodity-value-as-of-execution-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__FinancialInstruments__CommodityInstrument",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "has-quantity-value",
       "provenance": "fibo"
     },
     {
@@ -32328,6 +38691,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FinancialInstruments__FinancialInstruments__DerivativeInstrument",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-initial-exchange-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__FinancialInstruments__DerivativeInstrument",
       "t": "FBC__FinancialInstruments__FinancialInstruments__FinancialInstrument",
       "r": "is-a",
       "provenance": "fibo"
@@ -32381,9 +38750,21 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FinancialInstruments__FinancialInstruments__FinancialInstrument",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-legally-recorded-in",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FinancialInstruments__FinancialInstruments__FinancialInstrumentIdentifier",
       "t": "FBC__FinancialInstruments__FinancialInstruments__FinancialInstrument",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__FinancialInstruments__FinancialInstrumentIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -32471,6 +38852,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FinancialInstruments__FinancialInstruments__Security",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-legally-recorded-in",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FinancialInstruments__FinancialInstruments__SpotContract",
       "t": "FBC__FinancialInstruments__FinancialInstruments__FinancialInstrument",
       "r": "is-a",
@@ -32483,6 +38870,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FinancialInstruments__FinancialInstruments__Underlier",
+      "t": "CMNS__PartiesAndSituations__Undergoer",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FinancialInstruments__InstrumentPricing__AdjustedClosingPrice",
       "t": "FBC__FinancialInstruments__InstrumentPricing__ClosingPrice",
       "r": "is-a",
@@ -32490,8 +38883,20 @@ const GRAPH = {
     },
     {
       "s": "FBC__FinancialInstruments__InstrumentPricing__BestBid",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-applicable-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__BestBid",
       "t": "FBC__FinancialInstruments__InstrumentPricing__BidPrice",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__BestOffer",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-applicable-period",
       "provenance": "fibo"
     },
     {
@@ -32561,6 +38966,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__CompositeMarket",
+      "t": "CMNS__Collections__StructuredCollection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FinancialInstruments__InstrumentPricing__DerivedPrice",
       "t": "FBC__FinancialInstruments__InstrumentPricing__SecurityPrice",
       "r": "is-a",
@@ -32586,6 +38997,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FinancialInstruments__InstrumentPricing__HighPrice",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-applicable-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__HighPrice",
       "t": "FBC__FinancialInstruments__InstrumentPricing__SecurityPrice",
       "r": "is-a",
       "provenance": "fibo"
@@ -32604,6 +39021,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FinancialInstruments__InstrumentPricing__LowPrice",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-applicable-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__LowPrice",
       "t": "FBC__FinancialInstruments__InstrumentPricing__SecurityPrice",
       "r": "is-a",
       "provenance": "fibo"
@@ -32612,6 +39035,12 @@ const GRAPH = {
       "s": "FBC__FinancialInstruments__InstrumentPricing__MarketPrice",
       "t": "FBC__FinancialInstruments__InstrumentPricing__SecurityPrice",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__MidPrice",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-applicable-period",
       "provenance": "fibo"
     },
     {
@@ -32676,6 +39105,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FinancialInstruments__InstrumentPricing__PriceAnalytic",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-applicable-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__PriceAnalytic",
       "t": "FND__Utilities__Analytics__ScopedMeasure",
       "r": "is-a",
       "provenance": "fibo"
@@ -32694,6 +39129,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FinancialInstruments__InstrumentPricing__PriceSpread",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-applicable-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__PriceSpread",
       "t": "FND__Accounting__CurrencyAmount__MonetaryPrice",
       "r": "has-argument",
       "provenance": "fibo"
@@ -32701,6 +39142,24 @@ const GRAPH = {
     {
       "s": "FBC__FinancialInstruments__InstrumentPricing__PriceSpread",
       "t": "FND__Utilities__Analytics__Difference",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__PricingModel",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__RateOfReturn",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-applicable-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__RateOfReturn",
+      "t": "CMNS__QuantitiesAndUnits__Percentage",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -32723,6 +39182,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__TradingDay",
+      "t": "CMNS__DatesAndTimes__ExplicitDatePeriod",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__TradingSession",
+      "t": "CMNS__DatesAndTimes__ExplicitDatePeriod",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FinancialInstruments__InstrumentPricing__VolumeWeightedAveragePrice",
       "t": "FBC__FinancialInstruments__InstrumentPricing__PriceAnalytic",
       "r": "is-a",
@@ -32736,8 +39207,20 @@ const GRAPH = {
     },
     {
       "s": "FBC__FinancialInstruments__InstrumentPricing__Yield",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-applicable-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__Yield",
       "t": "FND__Accounting__CurrencyAmount__Currency",
       "r": "has-currency",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FinancialInstruments__InstrumentPricing__Yield",
+      "t": "CMNS__QuantitiesAndUnits__Percentage",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -32825,9 +39308,33 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__BusinessCenters__BusinessCenterCode",
+      "t": "CMNS__Locations__BusinessCenter",
+      "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessCenters__BusinessCenterCode",
+      "t": "CMNS__Locations__GeographicRegionIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessCenters__BusinessCenterCodeScheme",
+      "t": "CMNS__CodesAndCodeSets__CodeSet",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__BusinessCenters__BusinessDayAdjustmentCode",
       "t": "FND__DatesAndTimes__BusinessDates__BusinessDayConvention",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessCenters__BusinessDayAdjustmentCode",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -32838,8 +39345,26 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__BusinessRegistries__BusinessRegisterIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__BusinessRegisterIdentifier",
       "t": "FBC__FunctionalEntities__BusinessRegistries__BusinessRegistrationAuthority",
       "r": "is-registered-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__BusinessRegistrationAuthority",
+      "t": "CMNS__RegistrationAuthorities__Registrar",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__BusinessRegistrationAuthority",
+      "t": "CMNS__RegistrationAuthorities__RegistrationAuthority",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -32862,6 +39387,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__BusinessRegistries__BusinessRegistry",
+      "t": "CMNS__RegistrationAuthorities__Registry",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__BusinessRegistry",
       "t": "FBC__FunctionalEntities__BusinessRegistries__BusinessRegistrationAuthority",
       "r": "is-managed-by",
       "provenance": "fibo"
@@ -32879,9 +39410,27 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__BusinessRegistryEntry",
+      "t": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__EntityExpirationReason",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__BusinessRegistries__EntityLegalFormRegistry",
       "t": "FBC__FunctionalEntities__BusinessRegistries__EntityLegalFormRegistryEntry",
       "r": "comprises",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__EntityLegalFormRegistry",
+      "t": "CMNS__RegistrationAuthorities__Registry",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -32891,8 +39440,20 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__EntityLegalFormRegistryEntry",
+      "t": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__BusinessRegistries__EntityStatus",
       "t": "FND__Arrangements__Lifecycles__LifecycleStage",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__EntityValidationLevel",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -32946,6 +39507,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__BusinessRegistries__LocalOperatingUnit",
+      "t": "CMNS__RegistrationAuthorities__Registrar",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__LocalOperatingUnit",
       "t": "BE__LegalEntities__LEIEntities__LegalEntityIdentifier",
       "r": "issues",
       "provenance": "fibo"
@@ -32954,6 +39521,18 @@ const GRAPH = {
       "s": "FBC__FunctionalEntities__BusinessRegistries__LocalOperatingUnit",
       "t": "BE__LegalEntities__LEIEntities__LegalEntityIdentifier",
       "r": "registers",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__NorthAmericanIndustryClassificationSystemCode",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "classifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__NorthAmericanIndustryClassificationSystemCode",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -32976,6 +39555,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__BusinessRegistries__NorthAmericanIndustryClassificationSystemScheme",
+      "t": "CMNS__CodesAndCodeSets__CodeSet",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__NorthAmericanIndustryClassificationSystemScheme",
       "t": "FND__Arrangements__ClassificationSchemes__IndustrySectorClassificationScheme",
       "r": "is-a",
       "provenance": "fibo"
@@ -32987,8 +39572,32 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__RegistrationAuthorityCode",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__RegistrationAuthorityCode",
+      "t": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__BusinessRegistries__RegistrationStatus",
       "t": "FND__Arrangements__Lifecycles__LifecycleStage",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__StandardIndustrialClassificationCode",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "classifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__StandardIndustrialClassificationCode",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -33008,6 +39617,12 @@ const GRAPH = {
       "s": "FBC__FunctionalEntities__BusinessRegistries__StandardIndustrialClassificationScheme",
       "t": "FBC__FunctionalEntities__BusinessRegistries__StandardIndustrialClassificationCode",
       "r": "defines",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__BusinessRegistries__StandardIndustrialClassificationScheme",
+      "t": "CMNS__CodesAndCodeSets__CodeSet",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -33089,6 +39704,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__EuropeanEntities__EURegulatoryAgencies__CreditInstitutionRegisterEntry",
+      "t": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__FinancialServicesEntities__Bank",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__DepositoryInstitution",
       "r": "is-a",
@@ -33162,6 +39783,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessIdentifierCode",
+      "t": "CMNS__Organizations__OrganizationSubUnitIdentifier",
+      "r": "comprises",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessIdentifierCode",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessPartyPrefix",
       "r": "comprises",
       "provenance": "fibo"
@@ -33170,6 +39797,30 @@ const GRAPH = {
       "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessIdentifierCode",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessPartySuffix",
       "r": "comprises",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessIdentifierCode",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "denotes",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessIdentifierCode",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessIdentifierCode",
+      "t": "CMNS__ContextualIdentifiers__StructuredIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessIdentifierCode",
+      "t": "CMNS__Organizations__OrganizationIdentifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -33185,6 +39836,30 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessIdentifierCodeScheme",
+      "t": "CMNS__CodesAndCodeSets__CodeSet",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessIdentifierCodeScheme",
+      "t": "CMNS__Organizations__OrganizationIdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessPartyPrefix",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessPartyPrefix",
+      "t": "CMNS__Organizations__OrganizationIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessPartyPrefix",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessIdentifierCodeScheme",
       "r": "is-defined-in",
@@ -33194,6 +39869,12 @@ const GRAPH = {
       "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessPartyPrefix",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessIdentifierCode",
       "r": "is-included-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__BusinessPartySuffix",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -33409,6 +40090,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__FinancialServicesEntities__FinancialInstitution",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "is-regulated-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__FinancialInstitution",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialService",
       "r": "provides",
       "provenance": "fibo"
@@ -33427,6 +40114,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__FinancialServicesEntities__FinancialServiceProviderIdentifier",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-governed-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__FinancialServiceProviderIdentifier",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__FinancialServiceProviderIdentifierScheme",
       "r": "is-member-of",
       "provenance": "fibo"
@@ -33435,6 +40128,12 @@ const GRAPH = {
       "s": "FBC__FunctionalEntities__FinancialServicesEntities__FinancialServiceProviderIdentifierScheme",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__FinancialServiceProviderIdentifier",
       "r": "has-member",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__FinancialServiceProviderIdentifierScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -33494,6 +40193,12 @@ const GRAPH = {
     {
       "s": "FBC__FunctionalEntities__FinancialServicesEntities__MerchantService",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialService",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__MonetaryAuthority",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -33583,6 +40288,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__FinancialServicesEntities__SelfRegulatingOrganization",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__FinancialServicesEntities__SelfRegulatingOrganization",
       "t": "BE__LegalEntities__FormalBusinessOrganizations__NonGovernmentalOrganization",
       "r": "is-played-by",
       "provenance": "fibo"
@@ -33654,6 +40365,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__InternationalRegistriesAndAuthorities__MarketIdentifierCodeRegistryEntry",
+      "t": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__Markets__AlternativeTradingSystem",
       "t": "FBC__FunctionalEntities__Markets__Exchange",
       "r": "is-a",
@@ -33696,6 +40413,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__Markets__CryptoAssetServicesProvider",
+      "t": "CMNS__Locations__Country",
+      "r": "operates-in-country",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__CryptoAssetServicesProvider",
+      "t": "CMNS__Locations__Municipality",
+      "r": "operates-in-municipality",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__Markets__DarkPool",
       "t": "FBC__FunctionalEntities__Markets__AlternativeTradingSystem",
       "r": "is-a",
@@ -33720,6 +40449,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__Markets__DataReportingServicesProvider",
+      "t": "CMNS__Locations__Country",
+      "r": "operates-in-country",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__DataReportingServicesProvider",
+      "t": "CMNS__Locations__Municipality",
+      "r": "operates-in-municipality",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__Markets__DesignatedContractMarket",
       "t": "FBC__FunctionalEntities__Markets__Exchange",
       "r": "is-a",
@@ -33733,6 +40474,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__Markets__Exchange",
+      "t": "CMNS__SitesAndFacilities__Facility",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__Exchange",
       "t": "FBC__FunctionalEntities__Markets__MarketIdentifier",
       "r": "is-identified-by",
       "provenance": "fibo"
@@ -33741,6 +40488,24 @@ const GRAPH = {
       "s": "FBC__FunctionalEntities__Markets__Exchange",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialServiceProvider",
       "r": "is-managed-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__Exchange",
+      "t": "CMNS__Locations__Country",
+      "r": "operates-in-country",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__Exchange",
+      "t": "CMNS__Locations__Municipality",
+      "r": "operates-in-municipality",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__ExchangeParticipant",
+      "t": "CMNS__Organizations__OrganizationMember",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -33762,8 +40527,26 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__Markets__MarketCategoryClassifier",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__MarketIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__Markets__MarketIdentifierCodeStatus",
       "t": "FND__Arrangements__Lifecycles__LifecycleStage",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__MarketLevelClassifier",
+      "t": "CMNS__Classifiers__Classifier",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -33823,6 +40606,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__Markets__OrganizedTradingFacility",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-governed-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__OrganizedTradingFacility",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialServiceProvider",
       "r": "is-managed-by",
       "provenance": "fibo"
@@ -33847,14 +40636,38 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__Markets__RegisteredMultilateralTradingFacility",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-governed-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__RegisteredMultilateralTradingFacility",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialServiceProvider",
       "r": "is-managed-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__RegisteredMultilateralTradingFacility",
+      "t": "CMNS__RegistrationAuthorities__RegistrationAuthority",
+      "r": "is-registered-by",
       "provenance": "fibo"
     },
     {
       "s": "FBC__FunctionalEntities__Markets__RegulatedExchange",
       "t": "FBC__FunctionalEntities__Markets__Exchange",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__RegulatedExchange",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-governed-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__RegulatedExchange",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "is-regulated-by",
       "provenance": "fibo"
     },
     {
@@ -33871,6 +40684,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__Markets__TradeReportingFacility",
+      "t": "CMNS__SitesAndFacilities__Facility",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__TradeReportingFacility",
       "t": "FBC__FunctionalEntities__Markets__MarketIdentifier",
       "r": "is-identified-by",
       "provenance": "fibo"
@@ -33879,6 +40698,18 @@ const GRAPH = {
       "s": "FBC__FunctionalEntities__Markets__TradeReportingFacility",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialServiceProvider",
       "r": "is-managed-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__TradeReportingFacility",
+      "t": "CMNS__Locations__Country",
+      "r": "operates-in-country",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__Markets__TradeReportingFacility",
+      "t": "CMNS__Locations__Municipality",
+      "r": "operates-in-municipality",
       "provenance": "fibo"
     },
     {
@@ -33891,6 +40722,12 @@ const GRAPH = {
       "s": "FBC__FunctionalEntities__NorthAmericanEntities__CAFinancialServicesEntities__CanadianCreditUnion",
       "t": "BE__FunctionalEntities__FunctionalEntities__Association",
       "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__CARegulatoryAgencies__BusinessNumber",
+      "t": "CMNS__Organizations__OrganizationIdentifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -34207,8 +41044,32 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__NorthAmericanEntities__USFinancialServicesEntities__ForeignBank",
+      "t": "CMNS__Locations__Country",
+      "r": "has-home-country",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USFinancialServicesEntities__ForeignBank",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "has-home-country-supervisor",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USFinancialServicesEntities__ForeignBank",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__Bank",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USFinancialServicesEntities__ForeignBankingOrganization",
+      "t": "CMNS__Locations__Country",
+      "r": "has-home-country",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USFinancialServicesEntities__ForeignBankingOrganization",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "has-home-country-supervisor",
       "provenance": "fibo"
     },
     {
@@ -34346,6 +41207,12 @@ const GRAPH = {
     {
       "s": "FBC__FunctionalEntities__NorthAmericanEntities__USFinancialServicesEntities__NonDepositoryTrustCompany",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__TrustCompany",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USFinancialServicesEntities__OfficeOfAForeignBank",
+      "t": "CMNS__SitesAndFacilities__Facility",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -34512,6 +41379,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USNationalInformationCenterControlledVocabularies__NationalInformationCenterControlledVocabulary",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USNationalInformationCenterControlledVocabularies__NationalInformationCenterControlledVocabulary",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__NorthAmericanEntities__USNationalInformationCenterControlledVocabularies__NICEntityTypeClassifier",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialServiceProvider",
       "r": "classifies",
@@ -34536,6 +41415,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__ABAIINRegistryEntry",
+      "t": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__ABARTNRegistryEntry",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__FinancialInstitution",
       "r": "applies-to",
@@ -34545,6 +41430,18 @@ const GRAPH = {
       "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__ABARTNRegistryEntry",
       "t": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__RoutingTransitNumber",
       "r": "comprises",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__ABARTNRegistryEntry",
+      "t": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__EmployerIdentificationNumber",
+      "t": "CMNS__Organizations__OrganizationIdentifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -34567,6 +41464,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__FDICCertificateNumber",
+      "t": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__FDICCertificateNumber",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__FinancialServiceProviderIdentifier",
       "r": "is-a",
       "provenance": "fibo"
@@ -34584,8 +41487,20 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__FDICRegistryEntry",
+      "t": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__FederalGovernmentEntity",
       "t": "BE__GovernmentEntities__GovernmentEntities__GovernmentBody",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__FederalReserveDistrict",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -34614,6 +41529,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__FederalReserveDistrictIdentifier",
+      "t": "CMNS__Locations__GeographicRegionIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__FederalReserveSystemMember",
+      "t": "CMNS__Organizations__OrganizationMember",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__FederalReserveSystemMember",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__FinancialInstitution",
       "r": "is-a",
@@ -34633,6 +41560,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__IssuerIdentificationNumber",
+      "t": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__IssuerIdentificationNumber",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__FinancialServiceProviderIdentifier",
       "r": "is-a",
       "provenance": "fibo"
@@ -34647,6 +41580,12 @@ const GRAPH = {
       "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__NICRegistryEntry",
       "t": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__ResearchStatisticsSupervisionDiscountIdentifier",
       "r": "comprises",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__NICRegistryEntry",
+      "t": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -34669,13 +41608,31 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__PrimaryFederalRegulator",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__PrimaryFederalRegulator",
       "t": "BE__GovernmentEntities__GovernmentEntities__GovernmentBody",
       "r": "is-played-by",
       "provenance": "fibo"
     },
     {
       "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__ResearchStatisticsSupervisionDiscountIdentifier",
+      "t": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__ResearchStatisticsSupervisionDiscountIdentifier",
       "t": "FBC__FunctionalEntities__FinancialServicesEntities__FinancialServiceProviderIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__NorthAmericanEntities__USRegulatoryAgencies__RoutingTransitNumber",
+      "t": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -34723,6 +41680,18 @@ const GRAPH = {
     },
     {
       "s": "FBC__FunctionalEntities__RegulatoryAgencies__Examiner",
+      "t": "CMNS__BusinessAuthorizations__ResponsibleParty",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__RegulatoryAgencies__Examiner",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "is-authorized-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__RegulatoryAgencies__Examiner",
       "t": "BE__LegalEntities__LegalPersons__LegallyCompetentNaturalPerson",
       "r": "is-played-by",
       "provenance": "fibo"
@@ -34734,15 +41703,33 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__RegulatoryAgencies__GovernmentIssuedLicense",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "is-issued-by",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__RegulatoryAgencies__RegulationIdentificationScheme",
       "t": "FBC__FunctionalEntities__RegulatoryAgencies__RegulationIdentifier",
       "r": "has-member",
       "provenance": "fibo"
     },
     {
+      "s": "FBC__FunctionalEntities__RegulatoryAgencies__RegulationIdentificationScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__FunctionalEntities__RegulatoryAgencies__RegulationIdentifier",
       "t": "FND__Law__LegalCapacity__Regulation",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__RegulatoryAgencies__RegulationIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -34754,6 +41741,18 @@ const GRAPH = {
     {
       "s": "FBC__FunctionalEntities__RegulatoryAgencies__RegulatoryCapacity",
       "t": "FND__Law__LegalCapacity__LegalCapacity",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__RegulatoryAgencies__TaxAuthority",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "has-jurisdiction",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__FunctionalEntities__RegulatoryAgencies__TaxAuthority",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -34848,6 +41847,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__AccountIdentifier",
+      "t": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__AccountingTransaction",
       "t": "FND__ProductsAndServices__ProductsAndServices__TransactionEvent",
       "r": "is-a",
@@ -34868,6 +41873,12 @@ const GRAPH = {
     {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__AccountOwnership",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__Holding",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__AccountProvider",
+      "t": "CMNS__Organizations__ServiceProvider",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -34909,8 +41920,26 @@ const GRAPH = {
     },
     {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__AccountStatement",
+      "t": "CMNS__DatesAndTimes__ExplicitDatePeriod",
+      "r": "has-reporting-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__AccountStatement",
       "t": "FBC__ProductsAndServices__ClientsAndAccounts__Balance",
       "r": "has-starting-balance",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__AccountStatement",
+      "t": "CMNS__Documents__LegalDocument",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__AccountStatement",
+      "t": "CMNS__Documents__Record",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -34963,6 +41992,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__BasicBankAccountIdentifier",
+      "t": "CMNS__ContextualIdentifiers__StructuredIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__BasicBankAccountIdentifier",
       "t": "FBC__ProductsAndServices__ClientsAndAccounts__BankAccountIdentifier",
       "r": "is-a",
       "provenance": "fibo"
@@ -34971,6 +42006,12 @@ const GRAPH = {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__BrokerageAccount",
       "t": "FBC__ProductsAndServices__ClientsAndAccounts__InvestmentAccount",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__CertificateOfDeposit",
+      "t": "CMNS__DatesAndTimes__Duration",
+      "r": "has-contract-duration",
       "provenance": "fibo"
     },
     {
@@ -34999,7 +42040,19 @@ const GRAPH = {
     },
     {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__ChartOfAccounts",
+      "t": "CMNS__Collections__Arrangement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__ChartOfAccounts",
       "t": "FND__Arrangements__Documents__FinancialRecord",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__CloseDate",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -35161,8 +42214,20 @@ const GRAPH = {
     },
     {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__InternationalBankAccountIdentifier",
+      "t": "CMNS__Locations__GeographicRegionIdentifier",
+      "r": "comprises",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__InternationalBankAccountIdentifier",
       "t": "FBC__ProductsAndServices__ClientsAndAccounts__BasicBankAccountIdentifier",
       "r": "comprises",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__InternationalBankAccountIdentifier",
+      "t": "CMNS__ContextualIdentifiers__StructuredIdentifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -35202,6 +42267,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__LedgerAccountClassifier",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__LendingOfficer",
       "t": "BE__OwnershipAndControl__Executives__CorporateOfficer",
       "r": "is-a",
@@ -35222,6 +42293,30 @@ const GRAPH = {
     {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__NonTransactionDepositAccount",
       "t": "FBC__ProductsAndServices__ClientsAndAccounts__DepositAccount",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__OpenDate",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__PaymentDueDate",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__PostingDate",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__RelationshipManager",
+      "t": "CMNS__BusinessAuthorizations__ResponsibleParty",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -35268,6 +42363,24 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionCategory",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionCategory",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionDate",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionDepositAccount",
       "t": "FBC__ProductsAndServices__ClientsAndAccounts__DepositAccount",
       "r": "is-a",
@@ -35277,6 +42390,12 @@ const GRAPH = {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionIdentifier",
       "t": "FBC__ProductsAndServices__ClientsAndAccounts__IndividualTransaction",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -35305,6 +42424,18 @@ const GRAPH = {
     },
     {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionRecord",
+      "t": "CMNS__Documents__Record",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionRecord",
+      "t": "CMNS__RegistrationAuthorities__Registry",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionRecord",
       "t": "FND__DatesAndTimes__FinancialDates__DatedStructuredCollection",
       "r": "is-a",
       "provenance": "fibo"
@@ -35328,9 +42459,27 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionRecordIdentifier",
+      "t": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionSubcategory",
       "t": "FBC__ProductsAndServices__ClientsAndAccounts__IndividualTransaction",
       "r": "classifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionSubcategory",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionSubcategory",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -35358,6 +42507,24 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__Basket",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "has-selecting-party",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__Basket",
+      "t": "CMNS__Collections__Collection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__BasketConstituent",
+      "t": "CMNS__Collections__Constituent",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__Broker",
       "t": "FND__Agreements__Contracts__ContractThirdParty",
       "r": "is-a",
@@ -35379,6 +42546,12 @@ const GRAPH = {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__Catalog",
       "t": "BE__FunctionalEntities__Publishers__Publication",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__Catalog",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-identified-by",
       "provenance": "fibo"
     },
     {
@@ -35520,6 +42693,24 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__Dealer",
+      "t": "CMNS__Organizations__ServiceProvider",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__Exposure",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "applies-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialExposure",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialExposure",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__Exposure",
       "r": "is-a",
@@ -35557,6 +42748,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialService",
+      "t": "CMNS__Organizations__Service",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialService",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialServiceProvider",
       "r": "is-provided-by",
       "provenance": "fibo"
@@ -35565,6 +42762,18 @@ const GRAPH = {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialServiceProvider",
       "t": "BE__FunctionalEntities__FunctionalEntities__FunctionalBusinessEntity",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialServiceProvider",
+      "t": "CMNS__Organizations__ServiceProvider",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__FinancialServiceProvider",
+      "t": "CMNS__Organizations__LegalEntity",
+      "r": "is-played-by",
       "provenance": "fibo"
     },
     {
@@ -35586,6 +42795,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__LegalAgent",
+      "t": "CMNS__PartiesAndSituations__AgentRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__LicensedAgent",
+      "t": "CMNS__BusinessAuthorizations__ResponsibleParty",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__LicensedAgent",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__LegalAgent",
       "r": "is-a",
@@ -35594,6 +42815,12 @@ const GRAPH = {
     {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__LicensedAgent",
       "t": "FND__Law__LegalCapacity__Licensee",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__Offeree",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -35613,6 +42840,12 @@ const GRAPH = {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__Offering",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__Offeror",
       "r": "is-issued-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__Offeror",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -35778,9 +43011,27 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__RegulatedCommodity",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-governed-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__RegulatedCommodity",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "is-regulated-by",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__SettlementTerms",
       "t": "FBC__FinancialInstruments__Settlement__Settlement",
       "r": "applies-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__SettlementTerms",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-settlement-date",
       "provenance": "fibo"
     },
     {
@@ -35799,6 +43050,12 @@ const GRAPH = {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__SettlementTerms",
       "t": "FBC__FinancialInstruments__Settlement__SettlementConvention",
       "r": "specifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__ThirdPartyAgent",
+      "t": "CMNS__Organizations__ServiceProvider",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -35823,6 +43080,12 @@ const GRAPH = {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__Trade",
       "t": "FND__ProductsAndServices__ProductsAndServices__Seller",
       "r": "has-seller",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__Trade",
+      "t": "CMNS__PartiesAndSituations__Situation",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -35853,6 +43116,12 @@ const GRAPH = {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__TradeIdentifier",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__Trade",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__TradeIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -35994,9 +43263,21 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__Trader",
+      "t": "CMNS__Organizations__ServiceProvider",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__TradingStrategy",
       "t": "FND__GoalsAndObjectives__Objectives__Strategy",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__UniqueTransactionIdentifier",
+      "t": "CMNS__Organizations__LegalEntity",
+      "r": "has-generating-entity",
       "provenance": "fibo"
     },
     {
@@ -36025,6 +43306,12 @@ const GRAPH = {
     },
     {
       "s": "FBC__ProductsAndServices__FinancialProductsAndServices__WeightedBasket",
+      "t": "CMNS__Collections__StructuredCollection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FBC__ProductsAndServices__FinancialProductsAndServices__WeightedBasket",
       "t": "FBC__ProductsAndServices__FinancialProductsAndServices__Basket",
       "r": "is-a",
       "provenance": "fibo"
@@ -36042,6 +43329,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Accounting__AccountingEquity__EarningsBeforeInterestTaxesDepreciationAmortization",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "applies-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__AccountingEquity__EarningsBeforeInterestTaxesDepreciationAmortization",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Accounting__AccountingEquity__FinancialAsset",
       "t": "FND__OwnershipAndControl__Ownership__TangibleAsset",
       "r": "is-a",
@@ -36049,8 +43348,20 @@ const GRAPH = {
     },
     {
       "s": "FND__Accounting__AccountingEquity__Income",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-date-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__AccountingEquity__Income",
       "t": "FND__Accounting__CurrencyAmount__MonetaryAmount",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__AccountingEquity__OwnersEquity",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "applies-to",
       "provenance": "fibo"
     },
     {
@@ -36063,6 +43374,12 @@ const GRAPH = {
       "s": "FND__Accounting__AccountingEquity__OwnersEquity",
       "t": "FND__Accounting__AccountingEquity__RetainedEarnings",
       "r": "has-argument",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__AccountingEquity__OwnersEquity",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -36138,6 +43455,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Accounting__CurrencyAmount__AmountOfMoney",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__CurrencyAmount__CalculatedPrice",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "has-expression",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Accounting__CurrencyAmount__CalculatedPrice",
       "t": "FND__Accounting__CurrencyAmount__MonetaryPrice",
       "r": "is-a",
@@ -36150,15 +43479,45 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Accounting__CurrencyAmount__Currency",
+      "t": "CMNS__QuantitiesAndUnits__MeasurementUnit",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__CurrencyAmount__Currency",
+      "t": "CMNS__Locations__GeopoliticalEntity",
+      "r": "is-used-by",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Accounting__CurrencyAmount__CurrencyBasket",
       "t": "FND__Accounting__CurrencyAmount__Currency",
       "r": "has-member",
       "provenance": "fibo"
     },
     {
+      "s": "FND__Accounting__CurrencyAmount__CurrencyBasket",
+      "t": "CMNS__Collections__StructuredCollection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Accounting__CurrencyAmount__CurrencyIdentifier",
       "t": "FND__Accounting__CurrencyAmount__Currency",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__CurrencyAmount__CurrencyIdentifier",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__CurrencyAmount__CurrencyIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -36171,6 +43530,12 @@ const GRAPH = {
       "s": "FND__Accounting__CurrencyAmount__ExchangeRate",
       "t": "FND__Accounting__CurrencyAmount__Currency",
       "r": "has-dealt-currency",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__CurrencyAmount__ExchangeRate",
+      "t": "CMNS__QuantitiesAndUnits__Ratio",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -36192,6 +43557,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Accounting__CurrencyAmount__FundsIdentifier",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__CurrencyAmount__FundsIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Accounting__CurrencyAmount__InterestRate",
       "t": "FND__Accounting__CurrencyAmount__PercentageMonetaryAmount",
       "r": "is-a",
@@ -36201,6 +43578,12 @@ const GRAPH = {
       "s": "FND__Accounting__CurrencyAmount__MonetaryAmount",
       "t": "FND__Accounting__CurrencyAmount__Currency",
       "r": "has-currency",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__CurrencyAmount__MonetaryAmount",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -36222,6 +43605,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Accounting__CurrencyAmount__PercentageMonetaryAmount",
+      "t": "CMNS__QuantitiesAndUnits__Percentage",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Accounting__CurrencyAmount__PreciousMetal",
       "t": "FND__ProductsAndServices__ProductsAndServices__NegotiableCommodity",
       "r": "is-a",
@@ -36231,6 +43620,24 @@ const GRAPH = {
       "s": "FND__Accounting__CurrencyAmount__PreciousMetalIdentifier",
       "t": "FND__Accounting__CurrencyAmount__PreciousMetal",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__CurrencyAmount__PreciousMetalIdentifier",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__CurrencyAmount__PreciousMetalIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__CurrencyAmount__Price",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -36246,8 +43653,26 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Accounting__CurrencyAmount__UnitOfAccountIdentifier",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Accounting__CurrencyAmount__UnitOfAccountIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Accounting__CurrencyAmount__UnitPrice",
       "t": "FND__Accounting__CurrencyAmount__MonetaryPrice",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__Agents__AutomatedSystem",
+      "t": "CMNS__PartiesAndSituations__Agent",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -36266,6 +43691,12 @@ const GRAPH = {
     {
       "s": "FND__AgentsAndPeople__People__AgeOfMajority",
       "t": "FND__AgentsAndPeople__People__LegalAge",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__BirthCertificate",
+      "t": "CMNS__Documents__Certificate",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -36294,9 +43725,21 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__AgentsAndPeople__People__BirthCertificateIdentificationScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__AgentsAndPeople__People__BirthCertificateIdentifier",
       "t": "FND__AgentsAndPeople__People__BirthCertificate",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__BirthCertificateIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -36307,8 +43750,20 @@ const GRAPH = {
     },
     {
       "s": "FND__AgentsAndPeople__People__Contact",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__Contact",
       "t": "FND__Parties__Parties__PartyRoleIdentifier",
       "r": "is-identified-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__Contact",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "is-played-by",
       "provenance": "fibo"
     },
     {
@@ -36327,6 +43782,30 @@ const GRAPH = {
       "s": "FND__AgentsAndPeople__People__ContactRecord",
       "t": "FND__AgentsAndPeople__People__Contact",
       "r": "denotes",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__ContactRecord",
+      "t": "CMNS__Documents__Record",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__DateOfBirth",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__DateOfDeath",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__DeathCertificate",
+      "t": "CMNS__Documents__Certificate",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -36354,9 +43833,21 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__AgentsAndPeople__People__DeathCertificateIdentificationScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__AgentsAndPeople__People__DeathCertificateIdentifier",
       "t": "FND__AgentsAndPeople__People__DeathCertificate",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__DeathCertificateIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -36384,9 +43875,21 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__AgentsAndPeople__People__DriversLicenseIdentificationScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__AgentsAndPeople__People__DriversLicenseIdentifier",
       "t": "FND__AgentsAndPeople__People__DriversLicense",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__DriversLicenseIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -36403,8 +43906,26 @@ const GRAPH = {
     },
     {
       "s": "FND__AgentsAndPeople__People__IdentityDocument",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-date-of-issuance",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__IdentityDocument",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-expiration-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__IdentityDocument",
       "t": "FND__AgentsAndPeople__People__Person",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__IdentityDocument",
+      "t": "CMNS__Documents__LegalDocument",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -36427,6 +43948,12 @@ const GRAPH = {
     },
     {
       "s": "FND__AgentsAndPeople__People__IdentityDocument",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-identified-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__IdentityDocument",
       "t": "BE__GovernmentEntities__GovernmentEntities__Government",
       "r": "is-issued-by",
       "provenance": "fibo"
@@ -36441,6 +43968,12 @@ const GRAPH = {
       "s": "FND__AgentsAndPeople__People__LegalAge",
       "t": "FND__DatesAndTimes__FinancialDates__Age",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__LegalAge",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-applicable-in",
       "provenance": "fibo"
     },
     {
@@ -36481,6 +44014,12 @@ const GRAPH = {
     },
     {
       "s": "FND__AgentsAndPeople__People__NationalIdentificationNumber",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__NationalIdentificationNumber",
       "t": "FND__AgentsAndPeople__People__NationalIdentificationNumberScheme",
       "r": "is-defined-in",
       "provenance": "fibo"
@@ -36498,6 +44037,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__AgentsAndPeople__People__NationalIdentificationNumberScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__AgentsAndPeople__People__Passport",
       "t": "FND__AgentsAndPeople__People__PassportNumber",
       "r": "comprises",
@@ -36506,6 +44051,12 @@ const GRAPH = {
     {
       "s": "FND__AgentsAndPeople__People__Passport",
       "t": "FND__AgentsAndPeople__People__IdentityDocument",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__PassportNumber",
+      "t": "CMNS__RegistrationAuthorities__RegisteredIdentifier",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -36528,9 +44079,21 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__AgentsAndPeople__People__PassportNumberIdentificationScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__AgentsAndPeople__People__Person",
       "t": "FND__DatesAndTimes__FinancialDates__Age",
       "r": "has-age",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__Person",
+      "t": "CMNS__Locations__Country",
+      "r": "has-citizenship",
       "provenance": "fibo"
     },
     {
@@ -36564,9 +44127,27 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__AgentsAndPeople__People__Person",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__PersonName",
+      "t": "CMNS__ContextualDesignators__ContextualName",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__AgentsAndPeople__People__PersonName",
       "t": "FND__AgentsAndPeople__People__Person",
       "r": "is-name-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__AgentsAndPeople__People__PlaceOfBirth",
+      "t": "CMNS__Locations__PhysicalLocation",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -36576,8 +44157,44 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Agreements__Agreements__Agreement",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "has-party-role",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Agreements__Agreement",
+      "t": "CMNS__PartiesAndSituations__Situation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Agreements__Beneficiary",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Agreements__BilateralAgreement",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "has-party-role",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Agreements__Agreements__BilateralAgreement",
       "t": "FND__Agreements__Agreements__Agreement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Agreements__Commitment",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "has-party-role",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Agreements__Commitment",
+      "t": "CMNS__PartiesAndSituations__Situation",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -36589,7 +44206,19 @@ const GRAPH = {
     },
     {
       "s": "FND__Agreements__Agreements__MultilateralAgreement",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "has-party-role",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Agreements__MultilateralAgreement",
       "t": "FND__Agreements__Agreements__Agreement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Agreements__Obligee",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -36597,6 +44226,12 @@ const GRAPH = {
       "s": "FND__Agreements__Agreements__Obligor",
       "t": "FND__Agreements__Agreements__Commitment",
       "r": "has-obligation",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Agreements__Obligor",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -36733,7 +44368,19 @@ const GRAPH = {
     },
     {
       "s": "FND__Agreements__Contracts__Contract",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-effective-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Contracts__Contract",
       "t": "FND__Agreements__Agreements__Agreement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Contracts__ContractDocument",
+      "t": "CMNS__Documents__LegalDocument",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -36768,8 +44415,26 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Agreements__Contracts__ContractParty",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Contracts__ContractParty",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "is-played-by",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Agreements__Contracts__ContractPrincipal",
       "t": "FND__Agreements__Contracts__ContractParty",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Contracts__ContractThirdParty",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -36792,6 +44457,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Agreements__Contracts__ContractualElement",
+      "t": "CMNS__Collections__Constituent",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Agreements__Contracts__Counterparty",
       "t": "FND__Agreements__Contracts__ContractParty",
       "r": "is-a",
@@ -36805,8 +44476,20 @@ const GRAPH = {
     },
     {
       "s": "FND__Agreements__Contracts__EarlyTerminationProvision",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-expiration-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Contracts__EarlyTerminationProvision",
       "t": "FND__Agreements__Contracts__TerminationProvision",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Contracts__ExtensionProvision",
+      "t": "CMNS__DatesAndTimes__ExplicitDatePeriod",
+      "r": "has-extendable-period",
       "provenance": "fibo"
     },
     {
@@ -36991,6 +44674,30 @@ const GRAPH = {
     },
     {
       "s": "FND__Agreements__Contracts__WrittenContract",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-date-of-issuance",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Contracts__WrittenContract",
+      "t": "CMNS__DatesAndTimes__DateTimeStamp",
+      "r": "has-effective-date-time-stamp",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Contracts__WrittenContract",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-execution-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Contracts__WrittenContract",
+      "t": "CMNS__DatesAndTimes__DateTimeStamp",
+      "r": "has-execution-date-time-stamp",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Agreements__Contracts__WrittenContract",
       "t": "FND__Agreements__Contracts__ContractPrincipal",
       "r": "has-principal-party",
       "provenance": "fibo"
@@ -37005,6 +44712,12 @@ const GRAPH = {
       "s": "FND__Agreements__Contracts__WrittenContract",
       "t": "FND__Agreements__Contracts__ContractDocument",
       "r": "is-evidenced-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Arrangements__Scheme",
+      "t": "CMNS__Collections__Arrangement",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -37039,6 +44752,12 @@ const GRAPH = {
     },
     {
       "s": "FND__Arrangements__Assessments__Appraiser",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Assessments__Appraiser",
       "t": "FND__Arrangements__Assessments__Appraisal",
       "r": "provides",
       "provenance": "fibo"
@@ -37047,6 +44766,12 @@ const GRAPH = {
       "s": "FND__Arrangements__Assessments__AssessmentActivity",
       "t": "FND__DatesAndTimes__Occurrences__OccurrenceKind",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Assessments__AssessmentActivity",
+      "t": "CMNS__PartiesAndSituations__AgentRole",
+      "r": "is-provided-by",
       "provenance": "fibo"
     },
     {
@@ -37071,6 +44796,12 @@ const GRAPH = {
       "s": "FND__Arrangements__Assessments__AssessmentEvent",
       "t": "FND__DatesAndTimes__Occurrences__Occurrence",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Assessments__AssessmentEvent",
+      "t": "CMNS__PartiesAndSituations__AgentRole",
+      "r": "is-provided-by",
       "provenance": "fibo"
     },
     {
@@ -37123,6 +44854,12 @@ const GRAPH = {
     },
     {
       "s": "FND__Arrangements__Assessments__Opinion",
+      "t": "CMNS__PartiesAndSituations__AgentRole",
+      "r": "is-generated-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Assessments__Opinion",
       "t": "FND__Arrangements__Assessments__AssessmentEvent",
       "r": "is-output-from",
       "provenance": "fibo"
@@ -37141,7 +44878,19 @@ const GRAPH = {
     },
     {
       "s": "FND__Arrangements__Assessments__QuantitativeValue",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Assessments__QuantitativeValue",
       "t": "FND__Arrangements__Assessments__Value",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Assessments__ReferenceValue",
+      "t": "CMNS__Documents__Reference",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -37158,9 +44907,21 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Arrangements__Assessments__Value",
+      "t": "CMNS__Classifiers__Aspect",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Arrangements__Assessments__ValueAssessment",
       "t": "FND__Arrangements__Assessments__ValuationMethod",
       "r": "applies-methodology",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Assessments__ValueAssessment",
+      "t": "CMNS__PartiesAndSituations__AgentRole",
+      "r": "has-appraiser",
       "provenance": "fibo"
     },
     {
@@ -37182,9 +44943,39 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Arrangements__ClassificationSchemes__IndustrySectorClassificationScheme",
+      "t": "CMNS__Classifiers__ClassificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__ClassificationSchemes__IndustrySectorClassifier",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Arrangements__ClassificationSchemes__IndustrySectorClassifier",
       "t": "FND__Arrangements__ClassificationSchemes__IndustrySectorClassificationScheme",
       "r": "is-defined-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Documents__FinancialRecord",
+      "t": "CMNS__Collections__Collection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Documents__FinancialRecord",
+      "t": "CMNS__Documents__Record",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__IdentifiersAndIndices__Index",
+      "t": "CMNS__Documents__Reference",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -37206,6 +44997,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Arrangements__IdentifiersAndIndices__ReassignableIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Arrangements__Lifecycles__Lifecycle",
       "t": "FND__Arrangements__Lifecycles__LifecycleStage",
       "r": "defines",
@@ -37215,6 +45012,12 @@ const GRAPH = {
       "s": "FND__Arrangements__Lifecycles__Lifecycle",
       "t": "FND__Arrangements__Lifecycles__LifecycleStage",
       "r": "has-stage",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Lifecycles__Lifecycle",
+      "t": "CMNS__Collections__Arrangement",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -37273,6 +45076,12 @@ const GRAPH = {
     },
     {
       "s": "FND__Arrangements__Lifecycles__LifecycleStage",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Lifecycles__LifecycleStage",
       "t": "FND__Arrangements__Lifecycles__Lifecycle",
       "r": "is-defined-in",
       "provenance": "fibo"
@@ -37314,6 +45123,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Arrangements__Lifecycles__LifecycleStatus",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Ratings__QualitativeRatingScore",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Arrangements__Ratings__QualitativeRatingScore",
       "t": "FND__Arrangements__Ratings__RatingScore",
       "r": "is-a",
@@ -37323,6 +45144,18 @@ const GRAPH = {
       "s": "FND__Arrangements__Ratings__QuantitativeRatingScore",
       "t": "FND__Arrangements__Ratings__RatingScore",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Ratings__Rating",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-date-of-issuance",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Ratings__Rating",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "has-effective-date",
       "provenance": "fibo"
     },
     {
@@ -37359,6 +45192,12 @@ const GRAPH = {
       "s": "FND__Arrangements__Ratings__RatingAgency",
       "t": "FND__Arrangements__Ratings__RatingScalePublisher",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Ratings__RatingAgency",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "is-played-by",
       "provenance": "fibo"
     },
     {
@@ -37405,6 +45244,12 @@ const GRAPH = {
     },
     {
       "s": "FND__Arrangements__Ratings__RatingIssuer",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Ratings__RatingIssuer",
       "t": "FND__Arrangements__Ratings__Rating",
       "r": "issues",
       "provenance": "fibo"
@@ -37413,6 +45258,12 @@ const GRAPH = {
       "s": "FND__Arrangements__Ratings__RatingParty",
       "t": "FND__Arrangements__Ratings__Rating",
       "r": "generates",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Ratings__RatingParty",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -37435,8 +45286,20 @@ const GRAPH = {
     },
     {
       "s": "FND__Arrangements__Ratings__RatingScale",
+      "t": "CMNS__Classifiers__ClassificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Ratings__RatingScale",
       "t": "FND__Arrangements__Ratings__RatingScalePublisher",
       "r": "is-managed-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Ratings__RatingScalePublisher",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -37447,8 +45310,38 @@ const GRAPH = {
     },
     {
       "s": "FND__Arrangements__Ratings__RatingScore",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Ratings__RatingScore",
       "t": "FND__Arrangements__Ratings__RatingScale",
       "r": "is-defined-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Reporting__Report",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-report-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Reporting__Report",
+      "t": "CMNS__DatesAndTimes__DateTime",
+      "r": "has-report-date-time",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Reporting__Report",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-reporting-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Reporting__Report",
+      "t": "CMNS__Documents__Document",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -37459,8 +45352,26 @@ const GRAPH = {
     },
     {
       "s": "FND__Arrangements__Reporting__Report",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-reported-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Reporting__Report",
       "t": "FND__Arrangements__Reporting__Submitter",
       "r": "is-submitted-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Reporting__Report",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-submitted-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Reporting__ReportingParty",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -37477,6 +45388,18 @@ const GRAPH = {
     },
     {
       "s": "FND__Arrangements__Reporting__Request",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-request-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Reporting__Request",
+      "t": "CMNS__DatesAndTimes__DateTime",
+      "r": "has-request-date-time",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Reporting__Request",
       "t": "FND__DatesAndTimes__Occurrences__Occurrence",
       "r": "is-a",
       "provenance": "fibo"
@@ -37488,8 +45411,26 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Arrangements__Reporting__Request",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-requested-of",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Arrangements__Reporting__RequestActivity",
       "t": "FND__DatesAndTimes__Occurrences__OccurrenceKind",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Reporting__Requester",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Arrangements__Reporting__Submitter",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -37497,6 +45438,12 @@ const GRAPH = {
       "s": "FND__Arrangements__Reporting__Submitter",
       "t": "FND__Arrangements__Reporting__Report",
       "r": "submits",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__BusinessDates__BusinessDayConvention",
+      "t": "CMNS__Locations__BusinessCenter",
+      "r": "has-business-center",
       "provenance": "fibo"
     },
     {
@@ -37566,6 +45513,24 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__DatesAndTimes__FinancialDates__Age",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-as-of-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__FinancialDates__Age",
+      "t": "CMNS__DatesAndTimes__Duration",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__FinancialDates__AnchorDate",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__DatesAndTimes__FinancialDates__BusinessCalendar",
       "t": "FND__DatesAndTimes__FinancialDates__Schedule",
       "r": "is-a",
@@ -37578,9 +45543,33 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__DatesAndTimes__FinancialDates__CalculatedDate",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__DatesAndTimes__FinancialDates__CalculationPeriod",
       "t": "FND__DatesAndTimes__FinancialDates__CalculationPeriodLength",
       "r": "has-duration",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__FinancialDates__CalculationPeriod",
+      "t": "CMNS__DatesAndTimes__ExplicitDatePeriod",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__FinancialDates__CalculationPeriodLength",
+      "t": "CMNS__DatesAndTimes__ExplicitDuration",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__FinancialDates__CalendarPeriod",
+      "t": "CMNS__DatesAndTimes__TimeInterval",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -37602,14 +45591,32 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__DatesAndTimes__FinancialDates__DatedCollectionConstituent",
+      "t": "CMNS__Collections__Constituent",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__DatesAndTimes__FinancialDates__DatedStructuredCollection",
       "t": "FND__DatesAndTimes__FinancialDates__DatedCollectionConstituent",
       "r": "has-member",
       "provenance": "fibo"
     },
     {
+      "s": "FND__DatesAndTimes__FinancialDates__DatedStructuredCollection",
+      "t": "CMNS__Collections__StructuredCollection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__DatesAndTimes__FinancialDates__ExplicitRecurrenceInterval",
       "t": "FND__DatesAndTimes__FinancialDates__RecurrenceInterval",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__FinancialDates__RecurrenceInterval",
+      "t": "CMNS__DatesAndTimes__TimeInterval",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -37657,6 +45664,12 @@ const GRAPH = {
     },
     {
       "s": "FND__DatesAndTimes__FinancialDates__RegularSchedule",
+      "t": "CMNS__Collections__StructuredCollection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__FinancialDates__RegularSchedule",
       "t": "FND__DatesAndTimes__FinancialDates__Schedule",
       "r": "is-a",
       "provenance": "fibo"
@@ -37668,9 +45681,33 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__DatesAndTimes__FinancialDates__RelativeDate",
+      "t": "CMNS__DatesAndTimes__Date",
+      "r": "is-relative-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__FinancialDates__Schedule",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-overall-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__FinancialDates__Schedule",
+      "t": "CMNS__Collections__Collection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__DatesAndTimes__FinancialDates__ScheduleStub",
       "t": "FND__DatesAndTimes__Occurrences__OccurrenceKind",
       "r": "comprises",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__FinancialDates__ScheduleStub",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-date-period",
       "provenance": "fibo"
     },
     {
@@ -37680,8 +45717,20 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__DatesAndTimes__FinancialDates__ScheduleStub",
+      "t": "CMNS__Collections__Collection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__DatesAndTimes__FinancialDates__SpecifiedDate",
       "t": "FND__DatesAndTimes__FinancialDates__CalculatedDate",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__FinancialDates__TimeDirection",
+      "t": "CMNS__DatesAndTimes__TemporalEntity",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -37689,6 +45738,24 @@ const GRAPH = {
       "s": "FND__DatesAndTimes__Occurrences__Calculation",
       "t": "FND__DatesAndTimes__Occurrences__CalculationEvent",
       "r": "exemplifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__Occurrences__Calculation",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "has-expression",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__Occurrences__Calculation",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "has-quantity-value",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__Occurrences__Calculation",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValueRange",
+      "r": "has-quantity-value-range",
       "provenance": "fibo"
     },
     {
@@ -37717,6 +45784,12 @@ const GRAPH = {
     },
     {
       "s": "FND__DatesAndTimes__Occurrences__Occurrence",
+      "t": "CMNS__Locations__Location",
+      "r": "has-location",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__Occurrences__Occurrence",
       "t": "FND__DatesAndTimes__Occurrences__OccurrenceKind",
       "r": "is-classified-by",
       "provenance": "fibo"
@@ -37737,6 +45810,12 @@ const GRAPH = {
       "s": "FND__DatesAndTimes__Occurrences__OccurrenceKind",
       "t": "FND__DatesAndTimes__Occurrences__Occurrence",
       "r": "classifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__DatesAndTimes__Occurrences__OccurrenceKind",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -37819,6 +45898,12 @@ const GRAPH = {
     },
     {
       "s": "FND__GoalsAndObjectives__Objectives__Objective",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "has-date-period",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__GoalsAndObjectives__Objectives__Objective",
       "t": "FND__GoalsAndObjectives__Objectives__Aim",
       "r": "is-a",
       "provenance": "fibo"
@@ -37849,6 +45934,12 @@ const GRAPH = {
     },
     {
       "s": "FND__GoalsAndObjectives__Objectives__Program",
+      "t": "CMNS__PartiesAndSituations__Situation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__GoalsAndObjectives__Objectives__Program",
       "t": "FND__GoalsAndObjectives__Objectives__ProgramIdentifier",
       "r": "is-identified-by",
       "provenance": "fibo"
@@ -37857,6 +45948,18 @@ const GRAPH = {
       "s": "FND__GoalsAndObjectives__Objectives__ProgramIdentifier",
       "t": "FND__GoalsAndObjectives__Objectives__Program",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__GoalsAndObjectives__Objectives__ProgramIdentifier",
+      "t": "CMNS__ContextualIdentifiers__ContextualIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__GoalsAndObjectives__Objectives__ProgramName",
+      "t": "CMNS__ContextualDesignators__ContextualName",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -37885,6 +45988,12 @@ const GRAPH = {
     },
     {
       "s": "FND__GoalsAndObjectives__Objectives__Project",
+      "t": "CMNS__PartiesAndSituations__Situation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__GoalsAndObjectives__Objectives__Project",
       "t": "FND__GoalsAndObjectives__Objectives__ProjectIdentifier",
       "r": "is-identified-by",
       "provenance": "fibo"
@@ -37899,6 +46008,18 @@ const GRAPH = {
       "s": "FND__GoalsAndObjectives__Objectives__ProjectIdentifier",
       "t": "FND__GoalsAndObjectives__Objectives__Project",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__GoalsAndObjectives__Objectives__ProjectIdentifier",
+      "t": "CMNS__ContextualIdentifiers__ContextualIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__GoalsAndObjectives__Objectives__ProjectName",
+      "t": "CMNS__ContextualDesignators__ContextualName",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -37929,6 +46050,18 @@ const GRAPH = {
       "s": "FND__GoalsAndObjectives__Objectives__Study",
       "t": "FND__GoalsAndObjectives__Objectives__Goal",
       "r": "has-goal",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__GoalsAndObjectives__Objectives__Study",
+      "t": "CMNS__PartiesAndSituations__Situation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__GoalsAndObjectives__Objectives__Study",
+      "t": "CMNS__ContextualDesignators__Context",
+      "r": "is-applicable-in",
       "provenance": "fibo"
     },
     {
@@ -37971,6 +46104,12 @@ const GRAPH = {
       "s": "FND__Law__LegalCapacity__ContingentRight",
       "t": "FND__Law__LegalCapacity__Right",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Law__LegalCapacity__ContingentRight",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "is-conferred-on",
       "provenance": "fibo"
     },
     {
@@ -38058,9 +46197,21 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Law__LegalCapacity__LegalConstruct",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "is-conferred-on",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Law__LegalCapacity__LegalObligation",
       "t": "FND__Law__LegalCapacity__Duty",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Law__LegalCapacity__LegalObligation",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-applicable-in",
       "provenance": "fibo"
     },
     {
@@ -38073,6 +46224,12 @@ const GRAPH = {
       "s": "FND__Law__LegalCapacity__LegalRight",
       "t": "FND__Law__LegalCapacity__Right",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Law__LegalCapacity__LegalRight",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-applicable-in",
       "provenance": "fibo"
     },
     {
@@ -38101,14 +46258,44 @@ const GRAPH = {
     },
     {
       "s": "FND__Law__LegalCapacity__License",
+      "t": "CMNS__DatesAndTimes__DatePeriod",
+      "r": "holds-during",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Law__LegalCapacity__License",
+      "t": "CMNS__Documents__LegalDocument",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Law__LegalCapacity__License",
       "t": "FND__Law__LegalCapacity__Licensor",
       "r": "is-issued-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Law__LegalCapacity__Licensee",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
       "s": "FND__Law__LegalCapacity__LicenseIdentifier",
       "t": "FND__Law__LegalCapacity__License",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Law__LegalCapacity__LicenseIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Law__LegalCapacity__Licensor",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -38149,8 +46336,20 @@ const GRAPH = {
     },
     {
       "s": "FND__Law__LegalCapacity__Regulation",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-applicable-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Law__LegalCapacity__Regulation",
       "t": "FND__Law__LegalCore__Law",
       "r": "is-conferred-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Law__LegalCapacity__Regulation",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "is-issued-by",
       "provenance": "fibo"
     },
     {
@@ -38178,8 +46377,32 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Law__LegalCore__Constitution",
+      "t": "CMNS__Collections__Collection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Law__LegalCore__CourtOfLaw",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Law__LegalCore__StatuteLaw",
       "t": "FND__Law__LegalCore__Law",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Law__LegalCore__StatuteLaw",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-in-force-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Organizations__FormalOrganizations__Employee",
+      "t": "CMNS__Organizations__OrganizationMember",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -38209,8 +46432,20 @@ const GRAPH = {
     },
     {
       "s": "FND__Organizations__FormalOrganizations__Employer",
+      "t": "CMNS__Organizations__MemberBearingOrganization",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Organizations__FormalOrganizations__Employer",
       "t": "FND__Organizations__FormalOrganizations__Employment",
       "r": "is-employing-party",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Organizations__FormalOrganizations__Employer",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "is-played-by",
       "provenance": "fibo"
     },
     {
@@ -38226,6 +46461,24 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Organizations__FormalOrganizations__Employment",
+      "t": "CMNS__Organizations__Membership",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Organizations__FormalOrganizations__Group",
+      "t": "CMNS__PartiesAndSituations__Agent",
+      "r": "has-member",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Organizations__FormalOrganizations__Group",
+      "t": "CMNS__Collections__Collection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__OwnershipAndControl__Control__Control",
       "t": "FND__OwnershipAndControl__Control__ControllingParty",
       "r": "has-party-in-control",
@@ -38238,6 +46491,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__OwnershipAndControl__Control__Control",
+      "t": "CMNS__PartiesAndSituations__Situation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__OwnershipAndControl__Control__ControlledThing",
       "t": "FND__OwnershipAndControl__Control__ControllingParty",
       "r": "has-controlling-party",
@@ -38245,8 +46504,20 @@ const GRAPH = {
     },
     {
       "s": "FND__OwnershipAndControl__Control__ControlledThing",
+      "t": "CMNS__PartiesAndSituations__Undergoer",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__OwnershipAndControl__Control__ControlledThing",
       "t": "FND__OwnershipAndControl__Control__Control",
       "r": "is-controlled-thing-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__OwnershipAndControl__Control__ControllingParty",
+      "t": "CMNS__PartiesAndSituations__Actor",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -38281,6 +46552,12 @@ const GRAPH = {
     },
     {
       "s": "FND__OwnershipAndControl__Ownership__Asset",
+      "t": "CMNS__PartiesAndSituations__Undergoer",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__OwnershipAndControl__Ownership__Asset",
       "t": "FND__OwnershipAndControl__Ownership__Owner",
       "r": "is-asset-of",
       "provenance": "fibo"
@@ -38294,6 +46571,12 @@ const GRAPH = {
     {
       "s": "FND__OwnershipAndControl__Ownership__IntangibleAsset",
       "t": "FND__OwnershipAndControl__Ownership__Asset",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__OwnershipAndControl__Ownership__Owner",
+      "t": "CMNS__PartiesAndSituations__Actor",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -38322,8 +46605,20 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__OwnershipAndControl__Ownership__Ownership",
+      "t": "CMNS__PartiesAndSituations__Situation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__OwnershipAndControl__Ownership__TangibleAsset",
       "t": "FND__OwnershipAndControl__Ownership__Asset",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__OwnershipAndControl__OwnershipAndControl__OwnershipControlSituation",
+      "t": "CMNS__PartiesAndSituations__Situation",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -38331,6 +46626,24 @@ const GRAPH = {
       "s": "FND__Parties__Parties__PartyRoleIdentificationScheme",
       "t": "FND__Parties__Parties__PartyRoleIdentifier",
       "r": "has-member",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Parties__Parties__PartyRoleIdentificationScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Parties__Parties__PartyRoleIdentifier",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Parties__Parties__PartyRoleIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -38343,6 +46656,36 @@ const GRAPH = {
       "s": "FND__Parties__Parties__PartyRoleIdentifier",
       "t": "FND__Parties__Parties__PartyRoleIdentificationScheme",
       "r": "is-member-of",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Parties__Parties__TaxIdentificationScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Parties__Parties__TaxIdentificationScheme",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-applicable-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Parties__Parties__TaxIdentifier",
+      "t": "CMNS__PartiesAndSituations__Party",
+      "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Parties__Parties__TaxIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Parties__Parties__TaxIdentifier",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-applicable-in",
       "provenance": "fibo"
     },
     {
@@ -38361,6 +46704,18 @@ const GRAPH = {
       "s": "FND__Places__Addresses__Address",
       "t": "FND__Places__Addresses__AddressingScheme",
       "r": "is-defined-in",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__Address",
+      "t": "CMNS__Locations__Location",
+      "r": "is-index-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__AddressComponent",
+      "t": "CMNS__Classifiers__Aspect",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -38388,9 +46743,33 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Places__Addresses__GeographicDirectionalSymbol",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__PhysicalAddress",
+      "t": "CMNS__Locations__Country",
+      "r": "has-country",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Places__Addresses__PhysicalAddress",
       "t": "FND__Places__Addresses__Postcode",
       "r": "has-individual-postcode",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__PhysicalAddress",
+      "t": "CMNS__Locations__Municipality",
+      "r": "has-municipality",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__PhysicalAddress",
+      "t": "CMNS__Locations__CountrySubdivision",
+      "r": "has-subdivision",
       "provenance": "fibo"
     },
     {
@@ -38400,9 +46779,27 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Places__Addresses__PhysicalAddress",
+      "t": "CMNS__Locations__PhysicalLocation",
+      "r": "is-index-to",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Places__Addresses__PhysicalAddressIdentifier",
       "t": "FND__Places__Addresses__PhysicalAddress",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__PhysicalAddressIdentifier",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__PhysicalAddressIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -38421,6 +46818,24 @@ const GRAPH = {
       "s": "FND__Places__Addresses__Postcode",
       "t": "FND__Places__Addresses__PostCodeArea",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__Postcode",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__Postcode",
+      "t": "CMNS__Locations__GeographicRegionIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__PostCodeArea",
+      "t": "CMNS__Locations__GeographicRegion",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -38472,6 +46887,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Places__Addresses__RegionSpecificIdentifier",
+      "t": "CMNS__Locations__GeographicRegionIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__RegionSpecificIdentifier",
+      "t": "CMNS__Locations__GeopoliticalEntity",
+      "r": "is-used-by",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Places__Addresses__SecondaryUnit",
       "t": "FND__Places__Addresses__SecondaryUnitDesignator",
       "r": "comprises",
@@ -38486,6 +46913,12 @@ const GRAPH = {
     {
       "s": "FND__Places__Addresses__SecondaryUnit",
       "t": "FND__Places__Addresses__AddressComponent",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__SecondaryUnitDesignator",
+      "t": "CMNS__Classifiers__Classifier",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -38539,13 +46972,31 @@ const GRAPH = {
     },
     {
       "s": "FND__Places__Addresses__StreetName",
+      "t": "CMNS__Designators__Name",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__StreetName",
       "t": "FND__Places__Addresses__AddressComponent",
       "r": "is-a",
       "provenance": "fibo"
     },
     {
       "s": "FND__Places__Addresses__StreetSuffix",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__StreetSuffix",
       "t": "FND__Places__Addresses__AddressComponent",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__Addresses__StructureName",
+      "t": "CMNS__Designators__Name",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -38580,6 +47031,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Places__Addresses__SupplementalAddressDesignator",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Places__Addresses__SupplementalAddressUnit",
       "t": "FND__Places__Addresses__AddressComponent",
       "r": "is-a",
@@ -38604,6 +47061,24 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Places__NorthAmerica__USPostalServiceAddresses__DeliveryAddressCodeSet",
+      "t": "CMNS__CodesAndCodeSets__CodeSet",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__NorthAmerica__USPostalServiceAddresses__DeliveryAddressCodeSet",
+      "t": "CMNS__Identifiers__IdentificationScheme",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__NorthAmerica__USPostalServiceAddresses__DeliveryPointCode",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Places__NorthAmerica__USPostalServiceAddresses__DeliveryPointCode",
       "t": "FND__Places__NorthAmerica__USPostalServiceAddresses__DeliveryPointCodeSet",
       "r": "is-member-of",
@@ -38613,6 +47088,12 @@ const GRAPH = {
       "s": "FND__Places__NorthAmerica__USPostalServiceAddresses__DeliveryPointCodeSet",
       "t": "FND__Places__NorthAmerica__USPostalServiceAddresses__DeliveryPointCode",
       "r": "has-member",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__NorthAmerica__USPostalServiceAddresses__DeliveryPointCodeSet",
+      "t": "CMNS__CodesAndCodeSets__CodeSet",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -38736,6 +47217,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Places__NorthAmerica__USPostalServiceAddresses__Urbanization",
+      "t": "CMNS__Locations__CountrySubdivision",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Places__NorthAmerica__USPostalServiceAddresses__USPostalServiceAddressIdentifier",
       "t": "FND__Places__NorthAmerica__USPostalServiceAddresses__DeliveryPointCode",
       "r": "comprises",
@@ -38756,6 +47243,18 @@ const GRAPH = {
     {
       "s": "FND__Places__NorthAmerica__USPostalServiceAddresses__ZIPCode",
       "t": "FND__Places__Addresses__Postcode",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__NorthAmerica__USPostalServiceAddresses__ZipCodeScheme",
+      "t": "CMNS__CodesAndCodeSets__CodeSet",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__NorthAmerica__USPostalServiceAddresses__ZipCodeScheme",
+      "t": "CMNS__Identifiers__IdentificationScheme",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -38874,6 +47373,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__Places__RealProperty__RealPropertyIdentifier",
+      "t": "CMNS__ContextualIdentifiers__ContextualIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__RealProperty__RealPropertyIdentifier",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-applicable-in",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__Places__VirtualPlaces__ElectronicMailAddress",
       "t": "FND__Places__Addresses__VirtualAddress",
       "r": "is-a",
@@ -38881,8 +47392,20 @@ const GRAPH = {
     },
     {
       "s": "FND__Places__VirtualPlaces__NetworkLocation",
+      "t": "CMNS__Locations__VirtualLocation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__VirtualPlaces__NetworkLocation",
       "t": "FND__Places__Addresses__Address",
       "r": "is-identified-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Places__VirtualPlaces__NotionalPlace",
+      "t": "CMNS__Locations__Location",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -38988,6 +47511,18 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "FND__ProductsAndServices__ProductsAndServices__Buyer",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__ProductsAndServices__ProductsAndServices__Client",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "FND__ProductsAndServices__ProductsAndServices__ClientIdentifier",
       "t": "FND__ProductsAndServices__ProductsAndServices__Client",
       "r": "identifies",
@@ -39002,6 +47537,12 @@ const GRAPH = {
     {
       "s": "FND__ProductsAndServices__ProductsAndServices__Commodity",
       "t": "FND__ProductsAndServices__ProductsAndServices__Good",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__ProductsAndServices__ProductsAndServices__Consumer",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -39073,6 +47614,12 @@ const GRAPH = {
     },
     {
       "s": "FND__ProductsAndServices__ProductsAndServices__Producer",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__ProductsAndServices__ProductsAndServices__Producer",
       "t": "FND__ProductsAndServices__ProductsAndServices__Good",
       "r": "produces",
       "provenance": "fibo"
@@ -39093,6 +47640,12 @@ const GRAPH = {
       "s": "FND__ProductsAndServices__ProductsAndServices__ProductIdentifier",
       "t": "FND__ProductsAndServices__ProductsAndServices__Product",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__ProductsAndServices__ProductsAndServices__ProductIdentifier",
+      "t": "CMNS__Identifiers__Identifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -39121,7 +47674,19 @@ const GRAPH = {
     },
     {
       "s": "FND__ProductsAndServices__ProductsAndServices__Sale",
+      "t": "CMNS__PartiesAndSituations__Situation",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__ProductsAndServices__ProductsAndServices__Sale",
       "t": "FND__ProductsAndServices__ProductsAndServices__TransactionEvent",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__ProductsAndServices__ProductsAndServices__Seller",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -39133,7 +47698,25 @@ const GRAPH = {
     },
     {
       "s": "FND__ProductsAndServices__ProductsAndServices__ServiceAgreement",
+      "t": "CMNS__Organizations__Service",
+      "r": "governs",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__ProductsAndServices__ProductsAndServices__ServiceAgreement",
+      "t": "CMNS__Organizations__ServiceProvider",
+      "r": "has-contract-party",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__ProductsAndServices__ProductsAndServices__ServiceAgreement",
       "t": "FND__Agreements__Contracts__WrittenContract",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__ProductsAndServices__ProductsAndServices__Supplier",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -39141,6 +47724,12 @@ const GRAPH = {
       "s": "FND__ProductsAndServices__ProductsAndServices__Supplier",
       "t": "FND__ProductsAndServices__ProductsAndServices__Product",
       "r": "supplies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__ProductsAndServices__ProductsAndServices__TransactionConfirmation",
+      "t": "CMNS__Documents__LegalDocument",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -39279,6 +47868,12 @@ const GRAPH = {
       "s": "FND__TransactionsExt__REATransactions__ContractualTransactionParty",
       "t": "FND__TransactionsExt__REATransactions__TransactionParty",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__TransactionsExt__REATransactions__ContractualTransactionParty",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "is-played-by",
       "provenance": "fibo"
     },
     {
@@ -39427,6 +48022,12 @@ const GRAPH = {
     },
     {
       "s": "FND__TransactionsExt__REATransactions__LedgerEntry",
+      "t": "CMNS__RegistrationAuthorities__RegistryEntry",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__TransactionsExt__REATransactions__LedgerEntry",
       "t": "FND__DatesAndTimes__FinancialDates__DatedCollectionConstituent",
       "r": "is-a",
       "provenance": "fibo"
@@ -39471,6 +48072,12 @@ const GRAPH = {
       "s": "FND__TransactionsExt__REATransactions__TransactionEvent",
       "t": "FND__TransactionsExt__REATransactions__TransactionUndertaking",
       "r": "has-start",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__TransactionsExt__REATransactions__TransactionParty",
+      "t": "CMNS__PartiesAndSituations__PartyRole",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -39643,6 +48250,12 @@ const GRAPH = {
     },
     {
       "s": "FND__Utilities__Analytics__Difference",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__Difference",
       "t": "FND__Utilities__Analytics__StatisticalMeasure",
       "r": "is-a",
       "provenance": "fibo"
@@ -39655,7 +48268,37 @@ const GRAPH = {
     },
     {
       "s": "FND__Utilities__Analytics__Dispersion",
+      "t": "CMNS__Collections__StructuredCollection",
+      "r": "has-observed-value",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__Dispersion",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__Dispersion",
       "t": "FND__Utilities__Analytics__StatisticalMeasure",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__FinitePopulation",
+      "t": "CMNS__Collections__Collection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__Formula",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "has-expression",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__Formula",
+      "t": "CMNS__Documents__Specification",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -39685,7 +48328,31 @@ const GRAPH = {
     },
     {
       "s": "FND__Utilities__Analytics__Mean",
+      "t": "CMNS__Collections__StructuredCollection",
+      "r": "has-observed-value",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__Mean",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__Mean",
       "t": "FND__Utilities__Analytics__StatisticalMeasure",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__Median",
+      "t": "CMNS__Collections__StructuredCollection",
+      "r": "has-observed-value",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__Median",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -39704,6 +48371,12 @@ const GRAPH = {
     {
       "s": "FND__Utilities__Analytics__MedianAbsoluteDeviation",
       "t": "FND__Utilities__Analytics__Dispersion",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__NumericIndexValue",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -39763,6 +48436,12 @@ const GRAPH = {
     },
     {
       "s": "FND__Utilities__Analytics__StatisticalArea",
+      "t": "CMNS__Locations__GeographicRegion",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__StatisticalArea",
       "t": "FND__Utilities__Analytics__StatisticalAreaIdentifier",
       "r": "is-identified-by",
       "provenance": "fibo"
@@ -39771,6 +48450,24 @@ const GRAPH = {
       "s": "FND__Utilities__Analytics__StatisticalAreaIdentifier",
       "t": "FND__Utilities__Analytics__StatisticalArea",
       "r": "identifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__StatisticalAreaIdentifier",
+      "t": "CMNS__Locations__GeographicRegionIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__StatisticalMeasure",
+      "t": "CMNS__QuantitiesAndUnits__Measure",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__StatisticalMeasure",
+      "t": "CMNS__Classifiers__Aspect",
+      "r": "is-characterized-by",
       "provenance": "fibo"
     },
     {
@@ -39783,6 +48480,12 @@ const GRAPH = {
       "s": "FND__Utilities__Analytics__StatisticalPopulation",
       "t": "FND__Utilities__Analytics__StatisticalUniverse",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__StatisticalPopulation",
+      "t": "CMNS__DatesAndTimes__ExplicitDatePeriod",
+      "r": "is-characterized-by",
       "provenance": "fibo"
     },
     {
@@ -39817,6 +48520,12 @@ const GRAPH = {
     },
     {
       "s": "FND__Utilities__Analytics__StatisticalUniverse",
+      "t": "CMNS__Collections__Collection",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__StatisticalUniverse",
       "t": "FND__Utilities__Analytics__StatisticalProgram",
       "r": "is-applicable-in",
       "provenance": "fibo"
@@ -39835,13 +48544,31 @@ const GRAPH = {
     },
     {
       "s": "FND__Utilities__Analytics__WeightingFunction",
+      "t": "CMNS__QuantitiesAndUnits__Expression",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__Analytics__WeightingFunction",
       "t": "FND__Utilities__Analytics__StatisticalMeasure",
       "r": "is-a",
       "provenance": "fibo"
     },
     {
       "s": "FND__Utilities__AnnotationVocabulary__MaturityLevel",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__AnnotationVocabulary__MaturityLevel",
       "t": "FND__Arrangements__Lifecycles__LifecycleStage",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "FND__Utilities__AnnotationVocabulary__Module",
+      "t": "CMNS__Classifiers__Classifier",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -39879,6 +48606,12 @@ const GRAPH = {
       "s": "LOAN__LoansGeneral__LoanApplications__BorrowerAssessment",
       "t": "LOAN__LoansGeneral__Loans__PaymentHistory",
       "r": "comprises",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__LoanApplications__BorrowerAssessment",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-date-of-assessment",
       "provenance": "fibo"
     },
     {
@@ -40027,6 +48760,24 @@ const GRAPH = {
     },
     {
       "s": "LOAN__LoansGeneral__LoanApplications__LoanApplication",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-application-date",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__LoanApplications__LoanApplication",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-date-received",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__LoanApplications__LoanApplication",
+      "t": "CMNS__Documents__Document",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__LoanApplications__LoanApplication",
       "t": "FND__Arrangements__Reporting__Requester",
       "r": "is-submitted-by",
       "provenance": "fibo"
@@ -40099,8 +48850,20 @@ const GRAPH = {
     },
     {
       "s": "LOAN__LoansGeneral__LoanApplications__PublicRecord",
+      "t": "CMNS__Documents__Record",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__LoanApplications__PublicRecord",
       "t": "LOAN__LoansGeneral__LoanApplications__PublicRecordCategory",
       "r": "is-classified-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__LoanApplications__PublicRecord",
+      "t": "CMNS__Documents__LegalDocument",
+      "r": "is-evidenced-by",
       "provenance": "fibo"
     },
     {
@@ -40110,8 +48873,26 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "LOAN__LoansGeneral__LoanApplications__PublicRecordCategory",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__LoansGeneral__LoanApplications__TotalDebtExpenseRatio",
       "t": "FND__Accounting__CurrencyAmount__PercentageMonetaryAmount",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__LoanApplications__UnderwritingAutomation",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__LoanApplications__UnderwritingDecision",
+      "t": "CMNS__Classifiers__Classifier",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -40155,6 +48936,18 @@ const GRAPH = {
       "s": "LOAN__LoansGeneral__LoanEvents__LegalProceeding",
       "t": "FND__DatesAndTimes__Occurrences__Occurrence",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__LoanEvents__LegalProceeding",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "is-against",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__LoanEvents__LegalProceeding",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-governed-by",
       "provenance": "fibo"
     },
     {
@@ -40278,6 +49071,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "LOAN__LoansGeneral__Loans__LenderLienPosition",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__LoansGeneral__Loans__Loan",
       "t": "LOAN__LoansGeneral__Loans__LoanSpecificCustomerAccount",
       "r": "has-corresponding-account",
@@ -40287,6 +49086,12 @@ const GRAPH = {
       "s": "LOAN__LoansGeneral__Loans__Loan",
       "t": "FBC__DebtAndEquities__Guaranty__Guarantor",
       "r": "has-guarantor",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__Loans__Loan",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "has-maturity-date",
       "provenance": "fibo"
     },
     {
@@ -40446,6 +49251,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "LOAN__LoansGeneral__Loans__OwnershipInterest",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__LoansGeneral__Loans__PaymentHistory",
       "t": "LOAN__LoansGeneral__Loans__LoanSpecificCustomerAccount",
       "r": "applies-to-account",
@@ -40461,6 +49272,12 @@ const GRAPH = {
       "s": "LOAN__LoansGeneral__Loans__PaymentHistory",
       "t": "FBC__ProductsAndServices__ClientsAndAccounts__TransactionRecord",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__Loans__PrepaymentTerms",
+      "t": "CMNS__DatesAndTimes__ExplicitDuration",
+      "r": "has-pre-payment-penalty-term",
       "provenance": "fibo"
     },
     {
@@ -40554,6 +49371,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "LOAN__LoansGeneral__LoansRegulatory__ConsumerCreditReferenceAgency",
+      "t": "CMNS__Organizations__FormalOrganization",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__LoansGeneral__LoansRegulatory__ConsumerCreditRequirement",
       "t": "LOAN__LoansGeneral__LoansRegulatory__ConsumerRight",
       "r": "confers",
@@ -40569,6 +49392,12 @@ const GRAPH = {
       "s": "LOAN__LoansGeneral__LoansRegulatory__ConsumerCreditRequirement",
       "t": "LOAN__LoansGeneral__LoansRegulatory__ConsumerProtectionAgency",
       "r": "overseen-by",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__LoansRegulatory__ConsumerProtectionAgency",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -40629,6 +49458,12 @@ const GRAPH = {
       "s": "LOAN__LoansGeneral__LoansRegulatory__LoanProductRepresentations",
       "t": "LOAN__LoansSpecific__LoanProducts__LoanProduct",
       "r": "is-about",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansGeneral__LoansRegulatory__LoanRegulatoryRequirement",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "administered-by",
       "provenance": "fibo"
     },
     {
@@ -40752,6 +49587,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "LOAN__LoansSpecific__CardAccounts__CardExpirationDate",
+      "t": "CMNS__DatesAndTimes__ExplicitDate",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__LoansSpecific__CardAccounts__Cardholder",
       "t": "LOAN__LoansSpecific__CardAccounts__CardAccount",
       "r": "holds",
@@ -40771,8 +49612,20 @@ const GRAPH = {
     },
     {
       "s": "LOAN__LoansSpecific__CardAccounts__CardProduct",
+      "t": "CMNS__Locations__Country",
+      "r": "has-country",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansSpecific__CardAccounts__CardProduct",
       "t": "LOAN__LoansSpecific__CardAccounts__CreditCardNetwork",
       "r": "has-credit-card-network",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansSpecific__CardAccounts__CardProduct",
+      "t": "CMNS__Locations__CountrySubdivision",
+      "r": "has-subdivision",
       "provenance": "fibo"
     },
     {
@@ -40815,6 +49668,12 @@ const GRAPH = {
       "s": "LOAN__LoansSpecific__CardAccounts__CardVerificationCodeValue",
       "t": "LOAN__LoansSpecific__CardAccounts__PaymentCard",
       "r": "applies-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansSpecific__CardAccounts__CardVerificationCodeValue",
+      "t": "CMNS__CodesAndCodeSets__CodeElement",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -40950,6 +49809,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "LOAN__LoansSpecific__CardAccounts__CreditCardNetwork",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__LoansSpecific__CardAccounts__CreditCardProduct",
       "t": "LOAN__LoansSpecific__CardAccounts__CreditCard",
       "r": "classifies",
@@ -41061,6 +49926,12 @@ const GRAPH = {
       "s": "LOAN__LoansSpecific__CardAccounts__PaymentCard",
       "t": "LOAN__LoansSpecific__CardAccounts__PrimaryCardAccountNumber",
       "r": "has-primary-account-number",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansSpecific__CardAccounts__PaymentCard",
+      "t": "CMNS__Documents__LegalDocument",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -41208,6 +50079,42 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "LOAN__LoansSpecific__GreenLoans__AssessmentBoundary",
+      "t": "CMNS__SitesAndFacilities__Facility",
+      "r": "applies-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansSpecific__GreenLoans__AssessmentBoundary",
+      "t": "CMNS__Locations__GeographicRegion",
+      "r": "has-spatial-boundary",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansSpecific__GreenLoans__AssessmentBoundary",
+      "t": "CMNS__SitesAndFacilities__Site",
+      "r": "involves",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansSpecific__GreenLoans__AssessmentBoundary",
+      "t": "CMNS__ContextualDesignators__Context",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansSpecific__GreenLoans__AssessmentBoundary",
+      "t": "CMNS__Documents__Specification",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansSpecific__GreenLoans__AssessmentBoundary",
+      "t": "CMNS__RegulatoryAgencies__Jurisdiction",
+      "r": "is-applicable-in",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__LoansSpecific__GreenLoans__EnvironmentalProgram",
       "t": "LOAN__LoansSpecific__GreenLoans__EnvironmentalProject",
       "r": "has-member",
@@ -41311,6 +50218,12 @@ const GRAPH = {
     },
     {
       "s": "LOAN__LoansSpecific__GreenLoans__ObservedIndicatorValue",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "has-quantity-value",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansSpecific__GreenLoans__ObservedIndicatorValue",
       "t": "FND__DatesAndTimes__FinancialDates__DatedCollectionConstituent",
       "r": "is-a",
       "provenance": "fibo"
@@ -41394,6 +50307,12 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "LOAN__LoansSpecific__GreenLoans__SustainabilityKeyPerformanceIndicatorIdentifier",
+      "t": "CMNS__ContextualIdentifiers__ContextualIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__LoansSpecific__GreenLoans__SustainabilityLinkedLoan",
       "t": "FND__Agreements__Contracts__DisclosureProvision",
       "r": "has-contractual-element",
@@ -41460,9 +50379,21 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "LOAN__LoansSpecific__GreenLoans__SustainabilityPerformanceTargetIdentifier",
+      "t": "CMNS__ContextualIdentifiers__ContextualIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__LoansSpecific__GreenLoans__SustainabilityStructuringAgent",
       "t": "BE__FunctionalEntities__FunctionalEntities__SyndicateMember",
       "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansSpecific__GreenLoans__TargetIndicatorValue",
+      "t": "CMNS__QuantitiesAndUnits__ScalarQuantityValue",
+      "r": "has-quantity-value",
       "provenance": "fibo"
     },
     {
@@ -41601,6 +50532,12 @@ const GRAPH = {
       "s": "LOAN__LoansSpecific__LoanProducts__LineItem",
       "t": "FND__Accounting__CurrencyAmount__MonetaryAmount",
       "r": "has-unit-cost",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__LoansSpecific__LoanProducts__LineItem",
+      "t": "CMNS__Collections__Constituent",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -41778,9 +50715,21 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "LOAN__RealEstateLoans__HomeMortgageDisclosureActCoveredMortgages__ConstructionType",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__RealEstateLoans__HomeMortgageDisclosureActCoveredMortgages__Ethnicity",
       "t": "BE__LegalEntities__LegalPersons__LegallyCompetentNaturalPerson",
       "r": "classifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__RealEstateLoans__HomeMortgageDisclosureActCoveredMortgages__Ethnicity",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -41803,6 +50752,12 @@ const GRAPH = {
       "bridge": true
     },
     {
+      "s": "LOAN__RealEstateLoans__HomeMortgageDisclosureActCoveredMortgages__HMDA-Disposition",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__RealEstateLoans__HomeMortgageDisclosureActCoveredMortgages__HMDA-PreApprovalRequest",
       "t": "LOAN__LoansGeneral__LoanApplications__PreApprovalRequest",
       "r": "is-a",
@@ -41822,9 +50777,27 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "LOAN__RealEstateLoans__HomeMortgageDisclosureActCoveredMortgages__HMDA-Report",
+      "t": "CMNS__RegulatoryAgencies__RegulatoryAgency",
+      "r": "is-submitted-to",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__RealEstateLoans__HomeMortgageDisclosureActCoveredMortgages__HowSubmitted",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__RealEstateLoans__HomeMortgageDisclosureActCoveredMortgages__Race",
       "t": "BE__LegalEntities__LegalPersons__LegallyCompetentNaturalPerson",
       "r": "classifies",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__RealEstateLoans__HomeMortgageDisclosureActCoveredMortgages__Race",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
       "provenance": "fibo"
     },
     {
@@ -41846,14 +50819,44 @@ const GRAPH = {
       "provenance": "fibo"
     },
     {
+      "s": "LOAN__RealEstateLoans__MortgageOrigination__AmortizationType",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__RealEstateLoans__MortgageOrigination__AutomatedUnderwritingSystem",
       "t": "FND__AgentsAndPeople__Agents__AutomatedSystem",
       "r": "is-a",
       "provenance": "fibo"
     },
     {
+      "s": "LOAN__RealEstateLoans__MortgageOrigination__CashOutStatus",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__RealEstateLoans__MortgageOrigination__ChargeCategory",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__RealEstateLoans__MortgageOrigination__DwellingCapacity",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
       "s": "LOAN__RealEstateLoans__MortgageOrigination__GovernmentSponsoredLoan",
       "t": "LOAN__RealEstateLoans__Mortgages__LoanSecuredByRealEstate",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__RealEstateLoans__MortgageOrigination__ManufacturedHomeLegalClassification",
+      "t": "CMNS__Classifiers__Classifier",
       "r": "is-a",
       "provenance": "fibo"
     },
@@ -41901,6 +50904,12 @@ const GRAPH = {
     },
     {
       "s": "LOAN__RealEstateLoans__MortgageOrigination__MortgageLoanPurpose",
+      "t": "CMNS__Classifiers__Classifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__RealEstateLoans__MortgageOrigination__MortgageLoanPurpose",
       "t": "LOAN__LoansSpecific__LoanProducts__LoanPurpose",
       "r": "is-a",
       "provenance": "fibo"
@@ -41908,6 +50917,12 @@ const GRAPH = {
     {
       "s": "LOAN__RealEstateLoans__MortgageOrigination__NMLSR-ID",
       "t": "FND__Law__LegalCapacity__LicenseIdentifier",
+      "r": "is-a",
+      "provenance": "fibo"
+    },
+    {
+      "s": "LOAN__RealEstateLoans__MortgageOrigination__PropertyUsage",
+      "t": "CMNS__Classifiers__Classifier",
       "r": "is-a",
       "provenance": "fibo"
     },
