@@ -805,7 +805,7 @@
         <div class="welcome-head"><span class="om" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/><path d="M12 6.2V2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g stroke="#0a3f24" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round"><path d="M12 7.3V20"/><path d="M12 10.1 8.9 8.3"/><path d="M12 10.1 15.1 8.3"/><path d="M12 12.9 8.6 11.3"/><path d="M12 12.9 15.4 11.3"/><path d="M12 15.6 9.2 14.5"/><path d="M12 15.6 14.8 14.5"/></g></svg></span><h2>Welcome to Kuber Map</h2><span class="wbadge">the treasury of financial knowledge</span></div>
         <button class="fb-close" id="welClose" aria-label="Close">×</button>
       </div>
-      <p class="welcome-sub">A curated, learner-first map of the <b>Financial Industry Business Ontology</b> — audit-ready grounding for financial AI agents. You start on <b>71 loan-origination concepts</b> (of ${GRAPH.nodes.length}); domains are colour-coded and every concept carries its FIBO IRI. Here's how to explore:</p>
+      <p class="welcome-sub">A curated, learner-first map of the <b>Financial Industry Business Ontology</b> — the knowledge base and taxonomy for building AI and agentic AI in finance. You start on <b>71 loan-origination concepts</b> (of ${GRAPH.nodes.length}), grounded and audit-ready; every concept carries its FIBO IRI. Here's how to explore:</p>
       <div class="welcome-features">
         ${WELCOME_FEATURES.map((f) => `<div class="welcome-feature"><span class="wf-ic">${f.ic}</span><div><b>${f.t}</b><span>${f.d}</span></div></div>`).join('')}
       </div>
