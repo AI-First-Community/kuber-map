@@ -51,9 +51,9 @@ Last updated: 2026-07-04
 - [ ] Write up MLV result in `SPIKE_RESULTS.md` (the accuracy/hallucination/auditability numbers)
 
 ### E2 — The map UI (fork of Bodhi)
-- [ ] Vendor Bodhi frontend (`app.html`, Cytoscape.js + fcose) into repo
-- [ ] Extend `scripts/okf.js` → generate `js/data.js` (nodes + typed+provenance edges) from `knowledge/`
-- [ ] Cluster colors per FIBO domain; edge styling by type; bridges styled distinctly (curated)
+- [x] **Data layer** — `scripts/okf.js build` (+ `make map`) + `okf.config.js` generate `js/data.js` from `knowledge/`: 1284 nodes (71 core), 2108 edges (4 curated bridges), every edge provenance-tagged; deterministic. Handles our module-nested paths + inline-object relations (Bodhi's parser could not).
+- [ ] Vendor Bodhi frontend (`app.html`, `js/graph.js`, Cytoscape.js + fcose, css, fonts) into repo — **next**
+- [ ] Adapt `graph.js` for FIBO: cluster colors per domain; edge styling by type; **bridges styled distinctly by `provenance: curated`** (config ready)
 - [ ] Domain selector; maturity (Release/Provisional/Informative) filter; **core-view default + "show full ontology" toggle**
 - [ ] Level-of-detail / lazy per-domain loading (required — 5–10k elements at full scale)
 - [ ] Use-case lens (highlight a use-case subgraph) + reverse lookup (concept → use cases)

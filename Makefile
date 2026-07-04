@@ -2,7 +2,7 @@ PY := ./.venv/bin/python
 PIP := ./.venv/bin/pip
 DOMAINS ?= FND LOAN FBC BE
 
-.PHONY: setup fibo extract build curate pack eval validate test lint attribution check all clean
+.PHONY: setup fibo extract build curate pack eval map validate test lint attribution check all clean
 
 setup:
 	python3 -m venv .venv
@@ -30,6 +30,10 @@ pack:
 
 eval:
 	$(PY) eval/harness.py --adapter offline
+
+# knowledge/ OKF bundle + okf.config.js -> js/data.js for the Cytoscape map (needs node).
+map:
+	node scripts/okf.js build
 
 validate:
 	$(PY) etl/validate.py --bundle knowledge
