@@ -9,3 +9,6 @@ commons-source/
 eval/result.json
 eval/kyc-result.json
 eval/securities-result.json
+eval/loan-origination-gpt4o-result.json
+eval/kyc-gpt4o-result.json
+eval/securities-gpt4o-result.json

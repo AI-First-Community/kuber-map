@@ -94,8 +94,33 @@ cited a real pack IRI, none fabricated. The accuracy lift is the largest of the 
 Across **157 questions in three independent financial domains**, grounding in the curated FIBO
 context pack lifts accuracy **+39.6 to +53.7 points**, takes auditability from **0% to 92–100%**, and
 drives grounded IRI hallucination to **0%** every time (from 5.7–90% ungrounded). The effect is not a
-loan-domain artifact; it is the product thesis. **Next (optional):** corroborate on a stronger model
-(gpt-4o); surface the headline on the landing.
+loan-domain artifact; it is the product thesis.
+
+### Corroboration — stronger model (gpt-4o)
+
+Date: 2026-07-04 · Model: `gpt-4o` · same three benchmarks (157 questions) · Verdict: **✅ The lift is model-robust — a stronger model does not close the gap.**
+
+The obvious objection to any RAG result is "a better base model would just know this." It does not:
+on gpt-4o, grounding still lifts accuracy **+40 to +48 pt** per domain and eliminates hallucination.
+
+| Use case | n | Accuracy (ungrounded → grounded) | Lift | Auditability | Ungrounded hallucination |
+|---|---|---|---|---|---|
+| Loan origination | 53 | 35.8% → 83.0% | **+47.2 pt** | 94.3% | 17.0% → 0% |
+| KYC / beneficial ownership | 50 | 52.0% → 92.0% | **+40.0 pt** | 92.0% | 42.0% → 0% |
+| Securities instruments & issuance | 54 | 46.3% → 94.4% | **+48.1 pt** | 100.0% | 48.1% → 0% |
+| **Aggregate** | **157** | **44.6% → 89.8%** | **+45.2 pt** | **95.5%** | **35.7% → 0%** |
+
+gpt-4o's ungrounded accuracy is barely higher than gpt-4o-mini's (44.6% vs 43.3%) — the missing
+knowledge is FIBO-specific structure and exact IRIs, which scale of parametric training does not
+supply. gpt-4o hallucinates fewer fake IRIs unprompted than the mini (35.7% vs ~60% aggregate) but
+still fabricates them a third of the time with no grounding; grounded, it is **0%** on both models.
+
+**Two models, three domains, one conclusion:** the value is in the grounding, not the model. Grounding
+lifts accuracy **~+45–47 pt aggregate**, takes auditability to **95–97%**, and eliminates grounded IRI
+hallucination — on both gpt-4o-mini and gpt-4o. **Next (optional):** surface on the landing; add more
+use cases.
+
+**Reproduce:** `EVAL_LLM_CMD='./.venv/bin/python eval/openai_cli.py' ./.venv/bin/python eval/harness.py --benchmark eval/kyc-benchmark.json --pack export/kyc/pack.json --adapter llm --model gpt-4o`
 
 ---
 
