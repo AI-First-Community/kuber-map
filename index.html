@@ -22,7 +22,7 @@
       --green:#4fe08a; --green-deep:#1f9d57; --gold:#f3c969;
       --ink:#eaf3ee; --muted:#9fbcab;
       --sans:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-      --bi:88px;
+      --bi:0px;   /* body indent — 0 now that the title has no leading icon (text aligns to title's edge) */
     }
     *{box-sizing:border-box;margin:0;padding:0}
     html,body{height:100%;overflow:hidden}
@@ -61,8 +61,6 @@
     .credit b{ color:var(--ink); font-weight:700; }
     .brandrow{ display:flex; align-items:center; gap:12px; animation-delay:.05s; }
     .titlestack{ display:inline-flex; flex-direction:column; align-items:stretch; }
-    .brandrow .leaf{ filter:drop-shadow(0 4px 16px rgba(243,201,105,.5)); animation:breathe 7s ease-in-out 1s infinite; }
-    .brandrow .leaf svg{ width:76px; height:76px; color:var(--gold); display:block; }
     .brandrow h1{ font-size:clamp(56px,8.4vw,104px); font-weight:800; letter-spacing:-.02em; line-height:1;
       background:
         linear-gradient(125deg, transparent 16%, rgba(255,255,255,.95) 27%, transparent 38%, transparent 60%, rgba(255,224,150,.9) 71%, transparent 82%),
@@ -132,15 +130,6 @@
     <div class="content">
       <a class="credit" href="https://github.com/AI-First-Community/Bodhi" target="_blank" rel="noopener">✦ Inspired by <b>Bodhi&nbsp;Map</b> ↗</a>
       <div class="brandrow">
-        <span class="leaf" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3.2" y="12.5" width="3.4" height="8" rx="1" fill="currentColor" stroke="none" opacity=".45"/>
-            <rect x="10.3" y="9" width="3.4" height="11.5" rx="1" fill="currentColor" stroke="none" opacity=".68"/>
-            <rect x="17.4" y="5" width="3.4" height="15.5" rx="1" fill="currentColor" stroke="none" opacity=".9"/>
-            <polyline points="3 15 9 10 13 13 21 5.5"/>
-            <polyline points="15.5 5.5 21 5.5 21 11"/>
-          </svg>
-        </span>
         <div class="titlestack">
           <h1>Kuber&nbsp;Map</h1>
           <p class="tag" aria-label="the treasury of financial knowledge">the treasury of financial knowledge</p>
