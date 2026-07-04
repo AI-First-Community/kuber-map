@@ -178,9 +178,18 @@
   const laidOut = new Set();
   function layoutVisible(fit) {
     const vis = cy.elements(':visible');
-    if (!vis.nodes().length) return;
-    cy.layout(Object.assign({}, HAS_FCOSE ? fcoseOpts : coseOpts, { eles: vis })).run();
-    vis.nodes('[!isCluster]').forEach((n) => laidOut.add(n.id()));
+    const leaves = vis.nodes('[!isCluster]');
+    if (!leaves.length) return;
+    const opts = Object.assign({}, HAS_FCOSE ? fcoseOpts : coseOpts, { eles: vis });
+    // Pin nodes that already have a position so revealing/expanding places only the
+    // new nodes and the existing map does not reshuffle under the user.
+    if (HAS_FCOSE) {
+      const fixed = [];
+      leaves.forEach((n) => { if (laidOut.has(n.id())) fixed.push({ nodeId: n.id(), position: { x: n.position('x'), y: n.position('y') } }); });
+      if (fixed.length && fixed.length < leaves.length) { opts.fixedNodeConstraint = fixed; opts.packComponents = false; }
+    }
+    cy.layout(opts).run();
+    leaves.forEach((n) => laidOut.add(n.id()));
     if (fit !== false) cy.fit(vis, 60);
   }
   // Run physics only when a now-visible node has never been positioned; otherwise
@@ -380,6 +389,7 @@
   // ---- Filters: level + cluster + "new only" (one combined predicate) --------
   const activeLevels = new Set([1, 2, 3]);        // FIBO maturity: Release / Provisional / Informative
   const activeClusters = new Set(Object.keys(CLUSTERS));
+  const revealedClusters = new Set();             // non-core clusters explicitly shown over the core view
   let newOnly = false;
   let coreOnly = true;                            // curated core is the default landing view (PLAN §9)
 
@@ -392,7 +402,8 @@
 
   function nodeVisible(n) {
     if (newOnly) return newFocusIds.has(n.id());
-    if (coreOnly && !n.data('isCore')) return false;
+    // core view hides non-core concepts, unless the user explicitly revealed that cluster
+    if (coreOnly && !n.data('isCore') && !revealedClusters.has(n.data('cluster'))) return false;
     if (!activeLevels.has(n.data('level'))) return false;
     if (!activeClusters.has(n.data('cluster'))) return false;
     return true;
@@ -432,6 +443,7 @@
     coreChip.classList.toggle('active', coreOnly);
     coreChip.addEventListener('click', () => {
       coreOnly = !coreOnly;
+      revealedClusters.clear();   // the toggle is authoritative; drop any per-cluster reveals
       coreChip.classList.toggle('active', coreOnly);
       applyFilters();
       ensureLayout();   // first expansion to the full graph pays one layout, then it's cached
@@ -439,7 +451,6 @@
   }
   applyFilters();                                  // land on the curated core view
   layoutVisible(true);                             // lay out just the visible core — fast first paint
-  runLayout();
 
   // ---- Cluster legend: grouped by learning phase, collapsible, with counts ---
   // The 9 clusters map onto the three phases of the learning arc.
@@ -473,8 +484,9 @@
       head.setAttribute('aria-expanded', String(!collapsed));
     };
   });
-  // click anywhere on a cluster item (except the show/hide dot) -> focus it:
-  // re-show it if hidden, spotlight its nodes over a dimmed rest, and fit the view to them
+  // click anywhere on a cluster item (except the show/hide dot) -> focus it: re-show
+  // it if hidden (including revealing a non-core domain over the core view), lay out
+  // any newly shown nodes, then spotlight the cluster over a dimmed rest and fit to it.
   function focusCluster(cid) {
     if (!activeClusters.has(cid)) {              // clicking a hidden cluster brings it back
       activeClusters.add(cid);
@@ -484,13 +496,18 @@
         const b = it.querySelector('.legend-toggle');
         if (b) b.setAttribute('aria-pressed', 'true');
       }
-      applyFilters();
     }
-    const nodes = cy.nodes(`[cluster = "${cid}"]`).filter((n) => n.visible());
-    if (!nodes.length) return;
-    // Spotlight the cluster over a dimmed rest. On the full graph the class churn
-    // over thousands of elements blocks briefly, so gate it behind the busy overlay.
+    const all = cy.nodes(`[cluster = "${cid}"]`);
+    if (!all.length) return;                     // truly empty cluster (nothing to focus)
+    // In the core view a non-core domain (e.g. Securities) is hidden — reveal this
+    // cluster's nodes over the core so the click actually shows something.
+    if (coreOnly && all.filter((n) => n.visible()).length === 0) revealedClusters.add(cid);
+    applyFilters();
+
+    const label = CLUSTERS[cid] ? CLUSTERS[cid].label : cid;
     const spotlight = () => {
+      const nodes = cy.nodes(`[cluster = "${cid}"]`).filter((n) => n.visible());
+      if (!nodes.length) return;
       cy.elements().removeClass('faded faded-edge highlight path-active');
       const hood = nodes.closedNeighborhood();
       cy.elements().not(hood).addClass('faded');
@@ -498,12 +515,12 @@
       nodes.addClass('highlight');
       cy.animate({ fit: { eles: nodes, padding: 80 } }, { duration: 400 });
     };
-    if (cy.elements().length > 800) {
-      const c = CLUSTERS[cid];
-      runBusy('Focusing ' + (c ? c.label : cid) + '…', spotlight);
-    } else {
-      spotlight();
-    }
+    // Newly revealed nodes have no position yet -> lay them out (pinning the core) first.
+    let need = false;
+    cy.nodes('[!isCluster]').forEach((n) => { if (n.visible() && !laidOut.has(n.id())) need = true; });
+    if (need) runBusy('Loading ' + label + '…', () => { layoutVisible(false); spotlight(); });
+    else if (cy.elements(':visible').length > 800) runBusy('Focusing ' + label + '…', spotlight);
+    else spotlight();
   }
   legend.querySelectorAll('.legend-item').forEach((item) => {
     item.onclick = () => focusCluster(item.getAttribute('data-cluster'));
