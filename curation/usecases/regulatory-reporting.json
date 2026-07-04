@@ -1,0 +1,41 @@
+{
+  "use_case": "Regulatory Reporting & Compliance (supervisory filing)",
+  "_comment": "Facet spec for the regulatory-reporting use case. Each entry is [local-id, cluster], grounded in the extract (nominate_core.py verifies each). Deliberately cross-domain: regulators live in CMNS/FBC/BE, regulations/reports in FND/CMNS, reporting processes in BP, and concrete US filings (HMDA, Reg B/Z) in LOAN.",
+  "facets": {
+    "Regulators & authorities": [
+      ["RegulatoryAgency", "CMNS"], ["PrimaryFederalRegulator", "FBC"], ["SelfRegulatingOrganization", "FBC"],
+      ["FundSupervisoryAuthority", "SEC"], ["GovernmentAgency", "BE"], ["GovernmentBody", "BE"],
+      ["BusinessRegistrationAuthority", "FBC"], ["RegulatedExchange", "FBC"], ["RegulatoryCapacity", "FBC"],
+      ["RegulatoryService", "CMNS"]
+    ],
+    "Regulations, rules & law": [
+      ["Regulation", "FND"], ["RegulationIdentifier", "FBC"], ["RegulationIdentificationScheme", "FBC"],
+      ["FinancialMarketsRegulation", "BP"], ["ConsumerCreditProtectionLaw", "LOAN"], ["RegB", "LOAN"],
+      ["RegZ", "LOAN"], ["LegalObligation", "FND"]
+    ],
+    "Reports & disclosures": [
+      ["Report", "FND"], ["RegulatoryReport", "CMNS"], ["RatingReport", "FND"], ["CreditReport", "FBC"],
+      ["CreditReportProduct", "FBC"], ["RemittanceReport", "BP"], ["HMDA-Report", "LOAN"],
+      ["IncomeVerificationReport", "LOAN"], ["DisclosureProvision", "FND"]
+    ],
+    "Reporting requirements": [
+      ["DisclosureRequirement", "LOAN"], ["ProductDisclosureRequirement", "LOAN"],
+      ["BorrowerDisclosureRequirement", "LOAN"], ["LoanRegulatoryRequirement", "LOAN"],
+      ["ConsumerCreditRequirement", "LOAN"], ["DataProtectionRequirement", "LOAN"]
+    ],
+    "Reporting mechanisms & parties": [
+      ["ReportingParty", "FND"], ["TradeReportingFacility", "FBC"], ["ApprovedReportingMechanism", "FBC"],
+      ["DataReportingServicesProvider", "FBC"], ["ReportingAccountant", "BP"],
+      ["SecuritiesTradesReporting", "BP"], ["SecuritiesTradeDatePositionReporting", "BP"]
+    ],
+    "Registration, filing & identifiers": [
+      ["RegisterWithRegulatoryAuthority", "BP"], ["FilingDetails", "BP"], ["BusinessRegisterIdentifier", "FBC"],
+      ["LegalEntityIdentifier", "BE"], ["LegalEntityIdentifierRegistry", "FBC"],
+      ["UniversalLoanIdentifier", "LOAN"], ["NMLSR-ID", "LOAN"]
+    ],
+    "Regulatory actions & rating agencies": [
+      ["RegulatoryAction", "CAE"], ["DisclosureAction", "CAE"], ["CreditRatingAgency", "FBC"],
+      ["RatingAgency", "FND"], ["HMDA-CoveredLoanContract", "LOAN"]
+    ]
+  }
+}

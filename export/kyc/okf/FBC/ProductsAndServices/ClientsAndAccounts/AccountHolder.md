@@ -4,7 +4,13 @@ title: "account holder"
 description: "party that owns an account"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountHolder
 tags: [FBC, Release]
+core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 detail: "An account holder is named on the account and is authorized to conduct transactions associated with the account. Authorization is typically evidenced by signatures maintained on file by the account provider. Note that this concept of account holder applies to internal accounts that are non-general ledger accounts also have account holders, such as payroll accounts, internal checking accounts associated with cashier's checks, and so forth."
+examples:
+  - "The named owner of a checking account, e.g. Jane Doe on account 000123456."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/OwnershipAndControl/Ownership/Owner.md", provenance: fibo}
   - {type: holds, target: "/FBC/ProductsAndServices/ClientsAndAccounts/Account.md", provenance: fibo}

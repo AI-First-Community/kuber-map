@@ -75,9 +75,9 @@
 - core · [general partnership](Partnerships/Partnerships/GeneralPartnership.md) — partnership that has at least two general partners that agree to share in all assets, profits, and financial and legal l
 - [global ultimate parent](OwnershipAndControl/CorporateControl/GlobalUltimateParent.md) — party that is recognized as the ultimate parent of a given organization world-wide
 - [government](GovernmentEntities/GovernmentEntities/Government.md) — system by which a state or community is controlled
-- [government agency](GovernmentEntities/GovernmentEntities/GovernmentAgency.md) — permanent or semi-permanent organization, often an appointed commission, in the machinery of government that is responsi
+- core · [government agency](GovernmentEntities/GovernmentEntities/GovernmentAgency.md) — permanent or semi-permanent organization, often an appointed commission, in the machinery of government that is responsi
 - [government appointee](GovernmentEntities/GovernmentEntities/GovernmentAppointee.md) — individual designated by government decree to lead, or participate in some capacity in a government body
-- [government body](GovernmentEntities/GovernmentEntities/GovernmentBody.md) — formal organization that is an agency, instrumentality, or other body of a supranational, national, federal, state, or l
+- core · [government body](GovernmentEntities/GovernmentEntities/GovernmentBody.md) — formal organization that is an agency, instrumentality, or other body of a supranational, national, federal, state, or l
 - [government department](GovernmentEntities/GovernmentEntities/GovernmentDepartment.md) — specialized organization responsible for a sector of government public administration
 - [government minister](GovernmentEntities/GovernmentEntities/GovernmentMinister.md) — government official that is an executive, who is either appointed or elected to a high office in the government
 - [government official](GovernmentEntities/GovernmentEntities/GovernmentOfficial.md) — person elected or appointed to administer some aspect of a government

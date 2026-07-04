@@ -4,6 +4,9 @@ title: "listing"
 description: "catalog entry for a securities offering managed by an exchange that provides the terms under which that security is made available on that exchange"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing
 tags: [SEC, Release]
+core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "Apple Inc.'s listing on the Nasdaq Stock Market under ticker AAPL."
 examples_provenance: curated

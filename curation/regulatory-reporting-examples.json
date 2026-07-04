@@ -1,0 +1,369 @@
+{
+  "_comment": "Curated illustrative examples for the regulatory-reporting use-case core concepts. Real-world supervisory/filing instances (general domain knowledge), not FIBO axioms. Applied by to_okf when FIBO supplies none; provenance curated.",
+  "examples": [
+    {
+      "iri": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
+      "title": "regulatory agency",
+      "examples": [
+        "The US Securities and Exchange Commission (SEC) or the UK Financial Conduct Authority (FCA)."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/PrimaryFederalRegulator",
+      "title": "primary federal regulator",
+      "examples": [
+        "The Office of the Comptroller of the Currency (OCC) as the primary federal regulator of a national bank."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/SelfRegulatingOrganization",
+      "title": "self-regulating organization",
+      "examples": [
+        "FINRA, which regulates US broker-dealers under SEC oversight."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundSupervisoryAuthority",
+      "title": "fund supervisory authority",
+      "examples": [
+        "The authority that authorizes and supervises a UCITS fund, such as the CSSF in Luxembourg."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentAgency",
+      "title": "government agency",
+      "examples": [
+        "A government agency such as the US Treasury's FinCEN."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentBody",
+      "title": "government body",
+      "examples": [
+        "A central bank such as the Federal Reserve."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority",
+      "title": "business registration authority",
+      "examples": [
+        "A companies registry such as the UK Companies House."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/RegulatedExchange",
+      "title": "regulated exchange",
+      "examples": [
+        "The New York Stock Exchange, a regulated securities exchange."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulatoryCapacity",
+      "title": "regulatory capacity",
+      "examples": [
+        "The capacity in which the SEC acts when it supervises a registered broker-dealer."
+      ]
+    },
+    {
+      "iri": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryService",
+      "title": "regulatory service",
+      "examples": [
+        "A supervisory service provided by a regulator, such as reviewing registration filings."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Regulation",
+      "title": "regulation",
+      "examples": [
+        "Regulation Z (Truth in Lending), issued under US federal law."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulationIdentifier",
+      "title": "regulation identifier",
+      "examples": [
+        "'Regulation Z', the identifier for the US Truth in Lending regulation."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulationIdentificationScheme",
+      "title": "regulation identification scheme",
+      "examples": [
+        "The 'Regulation A/B/C\u2026' labelling scheme used to identify US Federal Reserve regulations."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/FinancialMarketsRegulation",
+      "title": "financial markets regulation",
+      "examples": [
+        "MiFID II, which governs the conduct of EU financial markets."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw",
+      "title": "consumer credit protection law",
+      "examples": [
+        "The US Consumer Credit Protection Act."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegB",
+      "title": "reg b",
+      "examples": [
+        "Regulation B, implementing the US Equal Credit Opportunity Act."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegZ",
+      "title": "reg z",
+      "examples": [
+        "Regulation Z, implementing the US Truth in Lending Act."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation",
+      "title": "legal obligation",
+      "examples": [
+        "A covered lender's legal obligation to file a HMDA report each year."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/Report",
+      "title": "report",
+      "examples": [
+        "An annual report filed by a company with its regulator."
+      ]
+    },
+    {
+      "iri": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport",
+      "title": "regulatory report",
+      "examples": [
+        "A HMDA loan/application register filed with the CFPB, or a MiFID II transaction report."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingReport",
+      "title": "rating report",
+      "examples": [
+        "A credit rating agency's report assigning an issuer an 'AA' rating."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditReport",
+      "title": "credit report",
+      "examples": [
+        "A consumer credit report from Experian showing an individual's credit history."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditReportProduct",
+      "title": "credit report product",
+      "examples": [
+        "A tri-merge credit report product combining Equifax, Experian, and TransUnion data."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/PrivateLabelMBSIssuance/RemittanceReport",
+      "title": "remittance report",
+      "examples": [
+        "A monthly servicer remittance report on payments collected for a mortgage pool."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report",
+      "title": "HMDA report",
+      "examples": [
+        "A bank's annual Home Mortgage Disclosure Act Loan/Application Register filed with the CFPB."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IncomeVerificationReport",
+      "title": "income verification report",
+      "examples": [
+        "A report verifying a borrower's income from pay stubs and tax returns during underwriting."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/DisclosureProvision",
+      "title": "disclosure provision",
+      "examples": [
+        "A loan-agreement clause requiring the APR to be disclosed to the borrower."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/DisclosureRequirement",
+      "title": "disclosure requirement",
+      "examples": [
+        "The Truth in Lending requirement to disclose the APR and finance charge."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ProductDisclosureRequirement",
+      "title": "product disclosure requirement",
+      "examples": [
+        "A requirement to provide a Key Facts document for a mortgage product."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement",
+      "title": "borrower disclosure requirement",
+      "examples": [
+        "The requirement to give a borrower a Loan Estimate within three business days of application."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/LoanRegulatoryRequirement",
+      "title": "loan regulatory requirement",
+      "examples": [
+        "The requirement that a covered lender report HMDA data on its mortgage originations."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditRequirement",
+      "title": "consumer credit requirement",
+      "examples": [
+        "A requirement that consumer-credit advertising state the representative APR."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/DataProtectionRequirement",
+      "title": "data protection requirement",
+      "examples": [
+        "A requirement to protect borrower personal data under data-protection law such as GDPR."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/ReportingParty",
+      "title": "reporting party",
+      "examples": [
+        "The bank that files a HMDA report is the reporting party."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/TradeReportingFacility",
+      "title": "trade reporting facility",
+      "examples": [
+        "A FINRA Trade Reporting Facility (TRF) that captures off-exchange US equity trades."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/ApprovedReportingMechanism",
+      "title": "approved reporting mechanism",
+      "examples": [
+        "A MiFID II Approved Reporting Mechanism (ARM) that submits transaction reports to regulators."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/DataReportingServicesProvider",
+      "title": "data reporting services provider",
+      "examples": [
+        "A MiFID II data reporting services provider operating an ARM or APA."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/ReportingAccountant",
+      "title": "reporting accountant",
+      "examples": [
+        "The accountant who prepares and signs off the financial statements in a regulatory filing."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradesReporting",
+      "title": "securities trades reporting",
+      "examples": [
+        "Reporting an executed equity trade to a FINRA Trade Reporting Facility within seconds of execution."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradeDatePositionReporting",
+      "title": "securities trade date position reporting",
+      "examples": [
+        "Reporting a fund's securities positions as of the trade date for regulatory transparency."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/RegisterWithRegulatoryAuthority",
+      "title": "register with regulatory authority",
+      "examples": [
+        "Filing a registration statement with the SEC before an initial public offering."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/FilingDetails",
+      "title": "filing details",
+      "examples": [
+        "The particulars of a filing: the form type, the filing date, and the receiving authority."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegisterIdentifier",
+      "title": "business register identifier",
+      "examples": [
+        "A company registration number issued by a national business registry."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "title": "legal entity identifier",
+      "examples": [
+        "5493001KJTIIGC8Y1R12, the LEI used to identify a reporting entity (ISO 17442)."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry",
+      "title": "legal entity identifier registry",
+      "examples": [
+        "A GLEIF-accredited Local Operating Unit that issues and maintains LEIs."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/UniversalLoanIdentifier",
+      "title": "universal loan identifier",
+      "examples": [
+        "The Universal Loan Identifier (ULI) assigned to a mortgage for HMDA reporting."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/NMLSR-ID",
+      "title": "Nationwide Mortgage Licensing System and Registry Identifier",
+      "examples": [
+        "The unique identifier a mortgage loan originator holds in the NMLS registry."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActions/RegulatoryAction",
+      "title": "regulatory action",
+      "examples": [
+        "A regulator's enforcement action fining a firm for a reporting breach."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActions/DisclosureAction",
+      "title": "disclosure action",
+      "examples": [
+        "A company's disclosure of a material event to the market."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditRatingAgency",
+      "title": "credit rating agency",
+      "examples": [
+        "Moody's or S&P Global Ratings."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingAgency",
+      "title": "rating agency",
+      "examples": [
+        "A rating agency such as Fitch Ratings."
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract",
+      "title": "HMDA covered loan contract",
+      "examples": [
+        "A closed-end home-purchase mortgage that must be reported under HMDA."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1559 @@
+{
+  "use_case": "Regulatory Reporting & Compliance (supervisory filing)",
+  "generated_from": {
+    "intermediate": "out/intermediate.json",
+    "core": "curation/regulatory-reporting.json",
+    "bridges": "curation/regulatory-reporting-bridges.json",
+    "definitions": "curation/regulatory-reporting-definitions.json"
+  },
+  "counts": {
+    "concepts": 52,
+    "bridges": 4,
+    "curated_definitions": 8,
+    "concepts_without_definition": 0
+  },
+  "concepts": [
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/NMLSR-ID",
+      "title": "Nationwide Mortgage Licensing System and Registry Identifier",
+      "facet": "Registration, filing & identifiers",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "the number permanently assigned by the Nationwide Mortgage Licensing System and Registry (NMLS) for each company, branch, and individual that maintains a single account on NMLS.",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/NMLSR-ID",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LicenseIdentifier",
+          "target_title": "license identifier",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegisterIdentifier",
+      "title": "business register identifier",
+      "facet": "Registration, filing & identifiers",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "identifier that uniquely identifies a business register, such as a register identified by the Global Legal Entity Identifier Foundation (GLEIF) registration authorities list",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegisterIdentifier",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Identifiers/Identifier",
+          "target_title": "identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "identifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistry",
+          "target_title": "business registry",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-registered-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority",
+          "target_title": "business registration authority",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/FilingDetails",
+      "title": "filing details",
+      "facet": "Registration, filing & identifiers",
+      "cluster": "BP",
+      "maturity": "Provisional",
+      "definition": "Document capturing the particulars of a regulatory filing, such as what was filed, when, and with which authority.",
+      "definition_provenance": "curated",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/FilingDetails",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Documents/Document",
+          "target_title": "document",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "title": "legal entity identifier",
+      "facet": "Registration, filing & identifiers",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "an organization identifier that uniquely identifies a legal person as defined in ISO 17442",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/OrganizationIdentifier",
+          "target_title": "organization identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegisteredIdentifier",
+          "target_title": "registered identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "identifies",
+          "target": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
+          "target_title": "legal person",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-defined-in",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifierScheme",
+          "target_title": "legal entity identifier scheme",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry",
+      "title": "legal entity identifier registry",
+      "facet": "Registration, filing & identifiers",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "registry for registering and maintaining information about business entities for a particular jurisdiction",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistry",
+          "target_title": "business registry",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry",
+          "target_title": "legal entity identifier registry entry",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/RegisterWithRegulatoryAuthority",
+      "title": "register with regulatory authority",
+      "facet": "Registration, filing & identifiers",
+      "cluster": "BP",
+      "maturity": "Provisional",
+      "definition": "Process step in which an issuer registers a securities offering with the relevant regulatory authority before it can be listed or sold.",
+      "definition_provenance": "curated",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/RegisterWithRegulatoryAuthority",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/InitialPublicOfferingProcessStep",
+          "target_title": "initial public offering process step",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-provided-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange",
+          "target_title": "exchange",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/UniversalLoanIdentifier",
+      "title": "universal loan identifier",
+      "facet": "Registration, filing & identifiers",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "unique identifier given to unequivocally identify a specific loan secured by real estate",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/UniversalLoanIdentifier",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/FinancialInstrumentIdentifier",
+          "target_title": "financial instrument identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+          "target_title": "legal entity identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "identifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/LoanSecuredByRealEstate",
+          "target_title": "loan secured by real estate",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw",
+      "title": "consumer credit protection law",
+      "facet": "Regulations, rules & law",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "Consumer protection law that regulates the extension of consumer credit, requiring fair terms and disclosure to borrowers, such as the US Consumer Credit Protection Act.",
+      "definition_provenance": "curated",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerProtectionLaw",
+          "target_title": "consumer protection law",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/FinancialMarketsRegulation",
+      "title": "financial markets regulation",
+      "facet": "Regulations, rules & law",
+      "cluster": "BP",
+      "maturity": "Provisional",
+      "definition": "Body of rules and requirements, set by regulators, that governs the conduct of financial markets and their participants (e.g. MiFID II).",
+      "definition_provenance": "curated",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/FinancialMarketsRegulation",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/FinancialIndustryContext",
+          "target_title": "financial industry context",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation",
+      "title": "legal obligation",
+      "facet": "Regulations, rules & law",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "an obligation or duty that is enforceable by a court",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Duty",
+          "target_title": "duty",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-applicable-in",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction",
+          "target_title": "jurisdiction",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegB",
+      "title": "reg b",
+      "facet": "Regulations, rules & law",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "US regulation concerning \"Equal credit opportunity act\" Electronic delivery of disclosures",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegB",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditEqualTreatmentRequirement",
+          "target_title": "consumer credit equal treatment requirement",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/DisclosureRequirement",
+          "target_title": "disclosure requirement",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegZ",
+      "title": "reg z",
+      "facet": "Regulations, rules & law",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "US Fed regulation \"Truth in Lending Act\" uniform standards for electronic delivery of disclosures",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegZ",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ProductDisclosureRequirement",
+          "target_title": "product disclosure requirement",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Regulation",
+      "title": "regulation",
+      "facet": "Regulations, rules & law",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "a rule used to carry out a law",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Regulation",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalConstruct",
+          "target_title": "legal construct",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-applicable-in",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction",
+          "target_title": "jurisdiction",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-conferred-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCore/Law",
+          "target_title": "law",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-issued-by",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
+          "target_title": "regulatory agency",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulationIdentificationScheme",
+      "title": "regulation identification scheme",
+      "facet": "Regulations, rules & law",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "a scheme for organizing information and allocating identifiers to regulations",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulationIdentificationScheme",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Identifiers/IdentificationScheme",
+          "target_title": "identification scheme",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-member",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulationIdentifier",
+          "target_title": "regulation identifier",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulationIdentifier",
+      "title": "regulation identifier",
+      "facet": "Regulations, rules & law",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "an identifier associated with a regulation",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulationIdentifier",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Identifiers/Identifier",
+          "target_title": "identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "identifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Regulation",
+          "target_title": "regulation",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-member-of",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulationIdentificationScheme",
+          "target_title": "regulation identification scheme",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority",
+      "title": "business registration authority",
+      "facet": "Regulators & authorities",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "registration authority that is responsible for maintaining a registry of business entities",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/RegistrationAuthorities/Registrar",
+          "target_title": "registrar",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistrationAuthority",
+          "target_title": "registration authority",
+          "provenance": "fibo"
+        },
+        {
+          "type": "manages",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistry",
+          "target_title": "business registry",
+          "provenance": "fibo"
+        },
+        {
+          "type": "registers",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/RegistrationIdentifier",
+          "target_title": "registration identifier",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundSupervisoryAuthority",
+      "title": "fund supervisory authority",
+      "facet": "Regulators & authorities",
+      "cluster": "SEC",
+      "maturity": "Provisional",
+      "definition": "party that supervises the fund or fund industry",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundSupervisoryAuthority",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/PartyRole",
+          "target_title": "party role",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentAgency",
+      "title": "government agency",
+      "facet": "Regulators & authorities",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "permanent or semi-permanent organization, often an appointed commission, in the machinery of government that is responsible for the oversight and administration of specific functions",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentAgency",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentBody",
+          "target_title": "government body",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-managed-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentAppointee",
+          "target_title": "government appointee",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentBody",
+      "title": "government body",
+      "facet": "Regulators & authorities",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "formal organization that is an agency, instrumentality, or other body of a supranational, national, federal, state, or local government, including certain multijurisdictional agencies and departments that carry out the business of government",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentBody",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/FormalOrganization",
+          "target_title": "formal organization",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-objective",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/PublicPurpose",
+          "target_title": "public purpose",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/PrimaryFederalRegulator",
+      "title": "primary federal regulator",
+      "facet": "Regulators & authorities",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "federal regulatory agency that is designated as the main agency responsible for oversight of a given institution for an institution",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/PrimaryFederalRegulator",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
+          "target_title": "regulatory agency",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-played-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentBody",
+          "target_title": "government body",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/RegulatedExchange",
+      "title": "regulated exchange",
+      "facet": "Regulators & authorities",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "regulated market that is operated by and/or managed by a market operator that brings together or facilitates the bringing together of multiple third-party buying and selling interests in financial instruments",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/RegulatedExchange",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange",
+          "target_title": "exchange",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/MarketCategoryClassifier-RMKT",
+          "target_title": "MarketCategoryClassifier-RMKT",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-governed-by",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction",
+          "target_title": "jurisdiction",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-regulated-by",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
+          "target_title": "regulatory agency",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
+      "title": "regulatory agency",
+      "facet": "Regulators & authorities",
+      "cluster": "CMNS",
+      "maturity": null,
+      "definition": "public authority or government agency responsible for exercising authority over something in a regulatory or supervisory capacity",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/BusinessAuthorizations/AuthorizingParty",
+          "target_title": "authorizing party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/ServiceProvider",
+          "target_title": "service provider",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-jurisdiction",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction",
+          "target_title": "jurisdiction",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-played-by",
+          "target": "https://www.omg.org/spec/Commons/Organizations/FormalOrganization",
+          "target_title": "formal organization",
+          "provenance": "fibo"
+        },
+        {
+          "type": "issues",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/GovernmentIssuedLicense",
+          "target_title": "government-issued license",
+          "provenance": "fibo"
+        },
+        {
+          "type": "provides",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryService",
+          "target_title": "regulatory service",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulatoryCapacity",
+      "title": "regulatory capacity",
+      "facet": "Regulators & authorities",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "the capacity of some natural person to regulate some industry, organization, or product by virtue of some certification program on behalf of some regulatory agency",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulatoryCapacity",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalCapacity",
+          "target_title": "legal capacity",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryService",
+      "title": "regulatory service",
+      "facet": "Regulators & authorities",
+      "cluster": "CMNS",
+      "maturity": null,
+      "definition": "service provided by a regulatory agency, which may include, but not be limited to, examination, monitoring, supervision, testing, or other capabilities required to ensure the integrity, fairness, safety, or other capacity of a given industry, organization, or product",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryService",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/Service",
+          "target_title": "service",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-provided-by",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
+          "target_title": "regulatory agency",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/SelfRegulatingOrganization",
+      "title": "self-regulating organization",
+      "facet": "Regulators & authorities",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "non-governmental organization that has the power to create and exercise some degree of regulatory authority over an industry or profession in some country or group of countries",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/SelfRegulatingOrganization",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
+          "target_title": "regulatory agency",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-played-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NonGovernmentalOrganization",
+          "target_title": "non-governmental organization",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract",
+      "title": "HMDA covered loan contract",
+      "facet": "Regulatory actions & rating agencies",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "a closed-end mortgage loan or open-end line of credit that is not an excluded transaction for HMDA reporting under US section 1003.3(c) of the Revised Home Mortgage Disclosure Act of 2015",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/LoanSecuredByRealEstate",
+          "target_title": "loan secured by real estate",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HowSubmitted",
+          "target_title": "how submitted",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditRatingAgency",
+      "title": "credit rating agency",
+      "facet": "Regulatory actions & rating agencies",
+      "cluster": "FBC",
+      "maturity": "Provisional",
+      "definition": "rating agency that publishes reports assessing the creditworthiness of a borrower or legal entity, either generally or with respect to a specific obligation",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditRatingAgency",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider",
+          "target_title": "financial service provider",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingAgency",
+          "target_title": "rating agency",
+          "provenance": "fibo"
+        },
+        {
+          "type": "issues",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditRating",
+          "target_title": "credit rating",
+          "provenance": "fibo"
+        },
+        {
+          "type": "manages",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditRatingScale",
+          "target_title": "credit rating scale",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActions/DisclosureAction",
+      "title": "disclosure action",
+      "facet": "Regulatory actions & rating agencies",
+      "cluster": "CAE",
+      "maturity": "Release",
+      "definition": "corporate action involving a request for holders or beneficial owners to disclose their name, location and holdings of any issue to the issuer",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActions/DisclosureAction",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActions/VoluntaryCorporateAction",
+          "target_title": "voluntary corporate action",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingAgency",
+      "title": "rating agency",
+      "facet": "Regulatory actions & rating agencies",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "rating issuer that is also a rating scale publisher, frequently but not always an independent rating service",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingAgency",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingIssuer",
+          "target_title": "rating issuer",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingScalePublisher",
+          "target_title": "rating scale publisher",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-played-by",
+          "target": "https://www.omg.org/spec/Commons/Organizations/FormalOrganization",
+          "target_title": "formal organization",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActions/RegulatoryAction",
+      "title": "regulatory action",
+      "facet": "Regulatory actions & rating agencies",
+      "cluster": "CAE",
+      "maturity": "Release",
+      "definition": "action initiated by a regulatory agency that affects a legal entity or the securities it issues and may have a material impact on that entity's stakeholders, such as shareholders and creditors",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActions/RegulatoryAction",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActions/Action",
+          "target_title": "action",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/ApprovedReportingMechanism",
+      "title": "approved reporting mechanism",
+      "facet": "Reporting mechanisms & parties",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "data reporting services provider that is authorized to provide the service of reporting details of transactions to competent authorities or ESMA (the European Securities and Markets Authority) on behalf of investment firms",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/ApprovedReportingMechanism",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/DataReportingServicesProvider",
+          "target_title": "data reporting services provider",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/MarketCategoryClassifier-ARMS",
+          "target_title": "MarketCategoryClassifier-ARMS",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/DataReportingServicesProvider",
+      "title": "data reporting services provider",
+      "facet": "Reporting mechanisms & parties",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "market data provider and reporting party that reports and/or publishes data on securities transactions, including required regulatory reporting for such transactions, and as such is subject to regulatory supervision",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/DataReportingServicesProvider",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/MarketDataProvider",
+          "target_title": "market data provider",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/ReportingParty",
+          "target_title": "reporting party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-identified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/MarketIdentifier",
+          "target_title": "market identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "operates-in-country",
+          "target": "https://www.omg.org/spec/Commons/Locations/Country",
+          "target_title": "country",
+          "provenance": "fibo"
+        },
+        {
+          "type": "operates-in-municipality",
+          "target": "https://www.omg.org/spec/Commons/Locations/Municipality",
+          "target_title": "municipality",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/ReportingAccountant",
+      "title": "reporting accountant",
+      "facet": "Reporting mechanisms & parties",
+      "cluster": "BP",
+      "maturity": "Provisional",
+      "definition": "Party role of an accountant responsible for preparing or attesting to the financial information in a regulatory report or filing.",
+      "definition_provenance": "curated",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/ReportingAccountant",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/PartyRole",
+          "target_title": "party role",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/ReportingParty",
+      "title": "reporting party",
+      "facet": "Reporting mechanisms & parties",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "party providing a report, typically in response to some contractual, legal, regulatory or other business requirement",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/ReportingParty",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/PartyRole",
+          "target_title": "party role",
+          "provenance": "fibo"
+        },
+        {
+          "type": "provides",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/Report",
+          "target_title": "report",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradeDatePositionReporting",
+      "title": "securities trade date position reporting",
+      "facet": "Reporting mechanisms & parties",
+      "cluster": "BP",
+      "maturity": "Provisional",
+      "definition": "Reporting of a party's securities positions as of a given trade date, used for regulatory position and transparency reporting.",
+      "definition_provenance": "curated",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradeDatePositionReporting",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTrade",
+          "target_title": "securities trade",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradesReporting",
+      "title": "securities trades reporting",
+      "facet": "Reporting mechanisms & parties",
+      "cluster": "BP",
+      "maturity": "Provisional",
+      "definition": "Post-trade process of reporting executed securities trades to a trade repository or regulator.",
+      "definition_provenance": "curated",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradesReporting",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesPostTrade",
+          "target_title": "securities post trade",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/TradeReportingFacility",
+      "title": "trade reporting facility",
+      "facet": "Reporting mechanisms & parties",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "facility that provides a mechanism for the reporting of transactions effected otherwise than on an exchange",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/TradeReportingFacility",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/SitesAndFacilities/Facility",
+          "target_title": "facility",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/MarketCategoryClassifier-TRFS",
+          "target_title": "MarketCategoryClassifier-TRFS",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-identified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/MarketIdentifier",
+          "target_title": "market identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-managed-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider",
+          "target_title": "financial service provider",
+          "provenance": "fibo"
+        },
+        {
+          "type": "operates-in-country",
+          "target": "https://www.omg.org/spec/Commons/Locations/Country",
+          "target_title": "country",
+          "provenance": "fibo"
+        },
+        {
+          "type": "operates-in-municipality",
+          "target": "https://www.omg.org/spec/Commons/Locations/Municipality",
+          "target_title": "municipality",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement",
+      "title": "borrower disclosure requirement",
+      "facet": "Reporting requirements",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "Disclosure requirement obliging a lender to give a borrower specified information about a loan product, conferring the borrower's product disclosure right.",
+      "definition_provenance": "curated",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/DisclosureRequirement",
+          "target_title": "disclosure requirement",
+          "provenance": "fibo"
+        },
+        {
+          "type": "confers",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ProductDisclosureRight",
+          "target_title": "product disclosure right",
+          "provenance": "fibo"
+        },
+        {
+          "type": "governs",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/BorrowerAssessment",
+          "target_title": "borrower assessment",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditRequirement",
+      "title": "consumer credit requirement",
+      "facet": "Reporting requirements",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "Requirement set out on the lender about how they must treat the appliction to a loan",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditRequirement",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation",
+          "target_title": "legal obligation",
+          "provenance": "fibo"
+        },
+        {
+          "type": "confers",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerRight",
+          "target_title": "consumer right",
+          "provenance": "fibo"
+        },
+        {
+          "type": "overseen-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerProtectionAgency",
+          "target_title": "consumer protection agency",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/DataProtectionRequirement",
+      "title": "data protection requirement",
+      "facet": "Reporting requirements",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "Requirements defining how data about individuals is held. Example is the EU DA directive and laws, which make the data the property of the individual that data is about. Covers - what information i sheld - who information can be divulged to. - the individual's rights in respect of that information Privacy regulations cover most of this. EU defines \"Personal Data\" and \"Sensitive Personal Data\". For credit reference agencies the latter would be covered. More detail about whether they can divulge facts which are not subject to formal judgements etc.",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/DataProtectionRequirement",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation",
+          "target_title": "legal obligation",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/DisclosureRequirement",
+      "title": "disclosure requirement",
+      "facet": "Reporting requirements",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "Requirement for disclosure to borrowers or potential borrowers. There are two kinds of disclosure requirement: 1. Disclosure about the information held on the borrower 2. Disclsure about the product.",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/DisclosureRequirement",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditRequirement",
+          "target_title": "consumer credit requirement",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/LoanRegulatoryRequirement",
+      "title": "loan regulatory requirement",
+      "facet": "Reporting requirements",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "A regulatory requirement defined in regulations by a comsumer credit act or other legislation.",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/LoanRegulatoryRequirement",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation",
+          "target_title": "legal obligation",
+          "provenance": "fibo"
+        },
+        {
+          "type": "administered-by",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
+          "target_title": "regulatory agency",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-mandated-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw",
+          "target_title": "consumer credit protection law",
+          "provenance": "fibo"
+        },
+        {
+          "type": "regulates",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Loan",
+          "target_title": "loan",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ProductDisclosureRequirement",
+      "title": "product disclosure requirement",
+      "facet": "Reporting requirements",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "A requirement governing what representations can be made about a product, as it affects the consumer.",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ProductDisclosureRequirement",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/DisclosureRequirement",
+          "target_title": "disclosure requirement",
+          "provenance": "fibo"
+        },
+        {
+          "type": "governs",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/GoodFaithEstimate",
+          "target_title": "good faith estimate",
+          "provenance": "fibo"
+        },
+        {
+          "type": "governs",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/LoanProductRepresentations",
+          "target_title": "loan product representations",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report",
+      "title": "HMDA report",
+      "facet": "Reports & disclosures",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "a report prepared to satisfy HMDA regulatory reporting requirements as described US section 1003.3(c) of the Revised Home Mortgage Disclosure Act of 2015",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/Report",
+          "target_title": "report",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-number-of-entries",
+          "target": "http://www.w3.org/2001/XMLSchema#positiveInteger",
+          "target_title": "positiveInteger",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-submitted-to",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
+          "target_title": "regulatory agency",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditReport",
+      "title": "credit report",
+      "facet": "Reports & disclosures",
+      "cluster": "FBC",
+      "maturity": "Provisional",
+      "definition": "report describing the creditworthiness and related credit attributes of a borrower",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditReport",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingReport",
+          "target_title": "rating report",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditInquiry",
+          "target_title": "credit inquiry",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditMessage",
+          "target_title": "credit message",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditRating",
+          "target_title": "credit rating",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditTradeline",
+          "target_title": "credit tradeline",
+          "provenance": "fibo"
+        },
+        {
+          "type": "concerns-party",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/Party",
+          "target_title": "party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "exemplifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditReportProduct",
+          "target_title": "credit report product",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-as-of-date",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/Date",
+          "target_title": "date",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-coverage-period",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/DatePeriod",
+          "target_title": "date period",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditReportCategory",
+          "target_title": "credit report category",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-identified-by",
+          "target": "https://www.omg.org/spec/Commons/Identifiers/Identifier",
+          "target_title": "identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-produced-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditRatingAgency",
+          "target_title": "credit rating agency",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditReportProduct",
+      "title": "credit report product",
+      "facet": "Reports & disclosures",
+      "cluster": "FBC",
+      "maturity": "Provisional",
+      "definition": "branded credit report offered in the marketplace",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditReportProduct",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialProduct",
+          "target_title": "financial product",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/OffTheShelfProduct",
+          "target_title": "off-the-shelf product",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-produced-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditRatingAgency",
+          "target_title": "credit rating agency",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/DisclosureProvision",
+      "title": "disclosure provision",
+      "facet": "Reports & disclosures",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "contractual provision that outlines the requirements and responsibilities of one or both parties to reveal certain information to each other",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/DisclosureProvision",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractualCommitment",
+          "target_title": "contractual commitment",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IncomeVerificationReport",
+      "title": "income verification report",
+      "facet": "Reports & disclosures",
+      "cluster": "LOAN",
+      "maturity": "Provisional",
+      "definition": "report providing the methodology and supporting documentation used to verify the borrower's income",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IncomeVerificationReport",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/AssessmentReport",
+          "target_title": "assessment report",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingReport",
+      "title": "rating report",
+      "facet": "Reports & disclosures",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "report describing a set of ratings",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingReport",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/AssessmentReport",
+          "target_title": "assessment report",
+          "provenance": "fibo"
+        },
+        {
+          "type": "reports-on",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/Rating",
+          "target_title": "rating",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport",
+      "title": "regulatory report",
+      "facet": "Reports & disclosures",
+      "cluster": "CMNS",
+      "maturity": null,
+      "definition": "document required to support operational transparency that demonstrates compliance with some specification, law, policy, restriction, or other rule specified by a regulatory agency",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/Report",
+          "target_title": "report",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Documents/Record",
+          "target_title": "record",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Documents/ReferenceDocument",
+          "target_title": "reference document",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/PrivateLabelMBSIssuance/RemittanceReport",
+      "title": "remittance report",
+      "facet": "Reports & disclosures",
+      "cluster": "BP",
+      "maturity": "Provisional",
+      "definition": "Report containing a specific and limited set of information about the Deal. Term origin:MBS PoC Reviews",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/PrivateLabelMBSIssuance/RemittanceReport",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/Report",
+          "target_title": "report",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/Report",
+      "title": "report",
+      "facet": "Reports & disclosures",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "document that provides a structured description of something, prepared on ad hoc, periodic, recurring, regular, or as required basis",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/Report",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Documents/Document",
+          "target_title": "document",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-report-date",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate",
+          "target_title": "explicit date",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-report-date-time",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/DateTime",
+          "target_title": "date time",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-reporting-period",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/DatePeriod",
+          "target_title": "date period",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-provided-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/ReportingParty",
+          "target_title": "reporting party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-reported-to",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/PartyRole",
+          "target_title": "party role",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-submitted-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/Submitter",
+          "target_title": "submitter",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-submitted-to",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/PartyRole",
+          "target_title": "party role",
+          "provenance": "fibo"
+        }
+      ]
+    }
+  ],
+  "bridges": [
+    {
+      "id": "reporting-party-identified-by-lei",
+      "edge": "identified-by",
+      "kind": "cross-domain (FND->BE)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/ReportingParty",
+      "source_title": "reporting party",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "target_title": "legal entity identifier",
+      "provenance": "curated",
+      "rationale": "In supervisory and transaction reporting the party that submits a report is identified by its Legal Entity Identifier. FIBO defines the ReportingParty role (FND) and the LegalEntityIdentifier (BE) but does not connect a reporting party to its LEI.",
+      "citation": "ISO 17442 (LEI); MiFID II / ESMA transaction reporting; CFTC swap reporting"
+    },
+    {
+      "id": "regulatory-report-submitted-to-agency",
+      "edge": "submitted-to",
+      "kind": "intra-domain gap (CMNS)",
+      "source": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport",
+      "source_title": "regulatory report",
+      "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
+      "target_title": "regulatory agency",
+      "provenance": "curated",
+      "rationale": "A regulatory report is submitted to the regulatory agency that requires it. FIBO defines both RegulatoryReport and RegulatoryAgency in Commons but does not draw the edge from a report to the agency it is filed with.",
+      "citation": "General supervisory-reporting practice; e.g. HMDA filing to the CFPB, MiFID II reporting to national competent authorities"
+    },
+    {
+      "id": "regulatory-report-required-by-regulation",
+      "edge": "required-by",
+      "kind": "cross-domain (CMNS->FND)",
+      "source": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport",
+      "source_title": "regulatory report",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Regulation",
+      "target_title": "regulation",
+      "provenance": "curated",
+      "rationale": "A regulatory report exists because a regulation mandates it. FIBO models RegulatoryReport (CMNS) and Regulation (FND) separately but leaves the report-to-mandating-regulation link implicit.",
+      "citation": "Reporting obligations arise from regulations, e.g. HMDA report required by Regulation C"
+    },
+    {
+      "id": "securities-trades-reporting-to-trade-reporting-facility",
+      "edge": "submitted-to",
+      "kind": "cross-domain (BP->FBC)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradesReporting",
+      "source_title": "securities trades reporting",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/TradeReportingFacility",
+      "target_title": "trade reporting facility",
+      "provenance": "curated",
+      "rationale": "Executed off-exchange securities trades are reported to a trade reporting facility. FIBO models the securities-trades-reporting process (BP) and the TradeReportingFacility (FBC) but does not connect the reporting activity to the facility it reports to.",
+      "citation": "FINRA Trade Reporting Facility rules; MiFID II APA reporting"
+    }
+  ]
+}

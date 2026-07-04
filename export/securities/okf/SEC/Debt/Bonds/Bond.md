@@ -4,6 +4,9 @@ title: "bond"
 description: "tradable debt instrument representing a loan in which the issuer owes the holder(s) a debt"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/Bond
 tags: [SEC, Release]
+core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 detail: "Depending on the terms of the contract, the issuer is obliged to pay interest (the coupon) and/or to repay the principal at maturity. The most common bonds are corporate or governmental, typically used to finance specific projects or operations."
 examples:
   - "A US$1,000 face-value, 10-year US Treasury bond paying a 4% coupon."

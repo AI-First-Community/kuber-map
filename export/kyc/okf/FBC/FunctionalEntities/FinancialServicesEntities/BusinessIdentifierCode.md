@@ -4,7 +4,13 @@ title: "business identifier code"
 description: "international identifier for financial and non-financial institutions used to facilitate automated processing of information for financial services"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCode
 tags: [FBC, Release]
+core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
 detail: "The BIC is used for addressing messages, routing business transactions and identifying business parties. Note that the use of OrganizationSubUnitIdentifier in FIBO corresponds to the Branch Code in the SWIFT scheme."
+examples:
+  - "BOFAUS3N, the SWIFT BIC for Bank of America."
+examples_provenance: curated
 synonyms:
   - "BIC"
   - "SWIFT ID"

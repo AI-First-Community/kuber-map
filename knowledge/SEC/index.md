@@ -266,7 +266,7 @@
 - [fund reinvestment policy](Funds/CollectiveInvestmentVehicles/FundReinvestmentPolicy.md) — Terms for the expected reinvestment of profits on fund units
 - [fund share class unit](Funds/CollectiveInvestmentVehicles/FundShareClassUnit.md) — The legal structure in which you can purchase part of an investment pool, defined by a variety of characteristics like i
 - [fund subscription terms](Funds/CollectiveInvestmentVehicles/FundSubscriptionTerms.md) — Subscription terms for the fund
-- [fund supervisory authority](Funds/CollectiveInvestmentVehicles/FundSupervisoryAuthority.md) — party that supervises the fund or fund industry
+- core · [fund supervisory authority](Funds/CollectiveInvestmentVehicles/FundSupervisoryAuthority.md) — party that supervises the fund or fund industry
 - [fund transfer agent](Funds/CollectiveInvestmentVehicles/FundTransferAgent.md) — An entity that undertakes the execution of subscription, redemption and switch orders on behalf of a fund
 - core · [fund unit](Funds/Funds/FundUnit.md) — quantified share of beneficial interest in a pooled fund, representing a proportional claim on the fund's assets, income
 - [fund unit distribution method](Funds/CollectiveInvestmentVehicles/FundUnitDistributionMethod.md) — The normal distribution policy for funds

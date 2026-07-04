@@ -122,9 +122,9 @@
 - [registration service](RegistrationAuthorities/RegistrationService.md) — service provided to individuals and/or organizations for the registration of items in a registry
 - [registry](RegistrationAuthorities/Registry.md) — authoritative record or collection of records relating to something
 - [registry entry](RegistrationAuthorities/RegistryEntry.md) — constituent of a registry that includes the details for something recorded in that registry
-- [regulatory agency](RegulatoryAgencies/RegulatoryAgency.md) — public authority or government agency responsible for exercising authority over something in a regulatory or supervisory
-- [regulatory report](RegulatoryAgencies/RegulatoryReport.md) — document required to support operational transparency that demonstrates compliance with some specification, law, policy,
-- [regulatory service](RegulatoryAgencies/RegulatoryService.md) — service provided by a regulatory agency, which may include, but not be limited to, examination, monitoring, supervision,
+- core · [regulatory agency](RegulatoryAgencies/RegulatoryAgency.md) — public authority or government agency responsible for exercising authority over something in a regulatory or supervisory
+- core · [regulatory report](RegulatoryAgencies/RegulatoryReport.md) — document required to support operational transparency that demonstrates compliance with some specification, law, policy,
+- core · [regulatory service](RegulatoryAgencies/RegulatoryService.md) — service provided by a regulatory agency, which may include, but not be limited to, examination, monitoring, supervision,
 - [responsible party](BusinessAuthorizations/ResponsibleParty.md) — legal person acting in a role that has some formal responsibility
 - [role](RolesAndCompositions/Role.md) — named specific behavior of something participating in a particular context
 - [scalar quantity](QuantitiesAndUnits/ScalarQuantity.md) — property of a phenomenon, body, or substance, where the property has a magnitude that can be expressed by means of a num

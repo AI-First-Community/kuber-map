@@ -306,12 +306,12 @@
 - [quantitative value](Arrangements/Assessments/QuantitativeValue.md) — value determined via quantitative methods, expressed as a numerical value in appropriate units
 - [r e a claim](TransactionsExt/REATransactions/REAClaim.md) — Some imbalance, at a given point in time, between the respective rights and obligations of two parties with respect to o
 - [rating](Arrangements/Ratings/Rating.md) — standing of something at a particular time, indicated by at least one scores with respect to some scale, based on an ass
-- [rating agency](Arrangements/Ratings/RatingAgency.md) — rating issuer that is also a rating scale publisher, frequently but not always an independent rating service
+- core · [rating agency](Arrangements/Ratings/RatingAgency.md) — rating issuer that is also a rating scale publisher, frequently but not always an independent rating service
 - [rating assessment activity](Arrangements/Ratings/RatingAssessmentActivity.md) — assessment activity resulting in a grade or score and potentially a report describing the score and the process used to 
 - [rating assessment event](Arrangements/Ratings/RatingAssessmentEvent.md) — individual assessment resulting in a grade or score and potentially a report describing the score
 - [rating issuer](Arrangements/Ratings/RatingIssuer.md) — party that is responsible for issuing ratings
 - [rating party](Arrangements/Ratings/RatingParty.md) — person, organization or group that analyzes some aspect of something and develops a rating
-- [rating report](Arrangements/Ratings/RatingReport.md) — report describing a set of ratings
+- core · [rating report](Arrangements/Ratings/RatingReport.md) — report describing a set of ratings
 - [rating scale](Arrangements/Ratings/RatingScale.md) — system for assigning a value to something according to some scale with respect to quality, a standard, or ranking
 - [rating scale publisher](Arrangements/Ratings/RatingScalePublisher.md) — party responsible for managing one or more rating schemes and potentially publishing ratings based on those schemes
 - [rating score](Arrangements/Ratings/RatingScore.md) — grade, classification, or ranking of for something in accordance with some rating scale
@@ -325,10 +325,10 @@
 - [referent](Relations/Relations/Referent.md) — something that another concept stands for, exemplifies, symbolizes, or otherwise mentions
 - [region-specific identifier](Places/Addresses/RegionSpecificIdentifier.md) — geographic region or subdivision identifier used internally by a country or other region
 - [regular schedule](DatesAndTimes/FinancialDates/RegularSchedule.md) — schedule whose time intervals recur regularly
-- [regulation](Law/LegalCapacity/Regulation.md) — a rule used to carry out a law
+- core · [regulation](Law/LegalCapacity/Regulation.md) — a rule used to carry out a law
 - [relative date](DatesAndTimes/FinancialDates/RelativeDate.md) — calculated date that is some duration before or after another date
-- [report](Arrangements/Reporting/Report.md) — document that provides a structured description of something, prepared on ad hoc, periodic, recurring, regular, or as re
-- [reporting party](Arrangements/Reporting/ReportingParty.md) — party providing a report, typically in response to some contractual, legal, regulatory or other business requirement
+- core · [report](Arrangements/Reporting/Report.md) — document that provides a structured description of something, prepared on ad hoc, periodic, recurring, regular, or as re
+- core · [reporting party](Arrangements/Reporting/ReportingParty.md) — party providing a report, typically in response to some contractual, legal, regulatory or other business requirement
 - [reporting policy](Law/LegalCapacity/ReportingPolicy.md) — policy specifying principles, rules and/or guidelines regarding some aspect of reporting
 - [representation](Agreements/Contracts/Representation.md) — contractual element that is a statement made by a party to the contract, before or at the time of making the contract, i
 - [request](Arrangements/Reporting/Request.md) — event in which some party asks another party for something at some point in time

@@ -4,6 +4,9 @@ title: "government bond"
 description: "debt security issued by a government to fund government spending"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/GovernmentBond
 tags: [SEC, Release]
+core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "A German Bund or a US Treasury bond."
 examples_provenance: curated

@@ -4,6 +4,9 @@ title: "share"
 description: "financial instrument that signifies a unit of equity ownership in a corporation, or a unit of ownership in a mutual fund, or interest in a general or limited partnership, or a unit of ownership in a structured product, such as a real estate investment trust"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Share
 tags: [SEC, Release]
+core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "One share of Tesla, Inc. common stock."
 examples_provenance: curated

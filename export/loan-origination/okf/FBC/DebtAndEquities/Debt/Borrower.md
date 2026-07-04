@@ -5,6 +5,8 @@ description: "party to a credit agreement that is obligated to repay the amount 
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Borrower
 tags: [FBC, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "In residential origination the borrower is usually an individual or couple; the lender assesses their income, credit, and existing debts to decide whether and on what terms to lend."
 detail_provenance: curated
 examples:

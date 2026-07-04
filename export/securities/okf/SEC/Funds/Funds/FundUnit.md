@@ -4,6 +4,9 @@ title: "fund unit"
 description: "quantified share of beneficial interest in a pooled fund, representing a proportional claim on the fund's assets, income, or entitlements"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/FundUnit
 tags: [SEC, Release]
+core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 detail: "A fund unit may be tradable or non-tradable depending on the legal form, regulatory status, and operational framework of the fund. Fund units are allocated to a participant, investor, or beneficiary according to the fund's governing structure. If it is a closed fund, you can still trade the units. You trade back with the fund. Not with a counterparty. Therefore this is a tradable contract, though it may not necessarily be a transferable contract."
 examples:
   - "One unit of a mutual fund, priced at its net asset value (NAV)."

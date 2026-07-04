@@ -29,15 +29,18 @@ curate:
 	$(PY) etl/nominate_core.py --in out/intermediate.json --out curation/loan-origination.json
 	$(PY) etl/nominate_core.py --in out/intermediate.json --spec curation/usecases/kyc.json --out curation/kyc.json
 	$(PY) etl/nominate_core.py --in out/intermediate.json --spec curation/usecases/securities.json --out curation/securities.json
+	$(PY) etl/nominate_core.py --in out/intermediate.json --spec curation/usecases/regulatory-reporting.json --out curation/regulatory-reporting.json
 	$(PY) etl/bridges.py --in out/intermediate.json --bundle knowledge
 	$(PY) etl/bridges.py --in out/intermediate.json --bundle knowledge --spec curation/usecases/kyc-bridges.json --out curation/kyc-bridges.json
 	$(PY) etl/bridges.py --in out/intermediate.json --bundle knowledge --spec curation/usecases/securities-bridges.json --out curation/securities-bridges.json
+	$(PY) etl/bridges.py --in out/intermediate.json --bundle knowledge --spec curation/usecases/regulatory-reporting-bridges.json --out curation/regulatory-reporting-bridges.json
 	$(MAKE) build
 
 pack:
 	$(PY) etl/export_pack.py --use-case loan-origination
 	$(PY) etl/export_pack.py --use-case kyc --core curation/kyc.json --bridges curation/kyc-bridges.json --out export/kyc
 	$(PY) etl/export_pack.py --use-case securities --core curation/securities.json --bridges curation/securities-bridges.json --out export/securities
+	$(PY) etl/export_pack.py --use-case regulatory-reporting --core curation/regulatory-reporting.json --bridges curation/regulatory-reporting-bridges.json --defs curation/regulatory-reporting-definitions.json --out export/regulatory-reporting
 
 eval:
 	$(PY) eval/harness.py --adapter offline

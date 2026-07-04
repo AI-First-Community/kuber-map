@@ -5,6 +5,8 @@ description: "ratio of all monthly debt payments of all borrowers, including pro
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/TotalDebtExpenseRatio
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "The debt-to-income (DTI) ratio; under US ability-to-repay / Qualified Mortgage rules it is commonly capped around 43%."
 detail_provenance: curated
 examples:

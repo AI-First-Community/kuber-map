@@ -1,0 +1,40 @@
+{
+  "bridges": [
+    {
+      "id": "reporting-party-identified-by-lei",
+      "edge": "identified-by",
+      "kind": "cross-domain (FND->BE)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/ReportingParty",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "rationale": "In supervisory and transaction reporting the party that submits a report is identified by its Legal Entity Identifier. FIBO defines the ReportingParty role (FND) and the LegalEntityIdentifier (BE) but does not connect a reporting party to its LEI.",
+      "citation": "ISO 17442 (LEI); MiFID II / ESMA transaction reporting; CFTC swap reporting"
+    },
+    {
+      "id": "regulatory-report-submitted-to-agency",
+      "edge": "submitted-to",
+      "kind": "intra-domain gap (CMNS)",
+      "source": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport",
+      "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
+      "rationale": "A regulatory report is submitted to the regulatory agency that requires it. FIBO defines both RegulatoryReport and RegulatoryAgency in Commons but does not draw the edge from a report to the agency it is filed with.",
+      "citation": "General supervisory-reporting practice; e.g. HMDA filing to the CFPB, MiFID II reporting to national competent authorities"
+    },
+    {
+      "id": "regulatory-report-required-by-regulation",
+      "edge": "required-by",
+      "kind": "cross-domain (CMNS->FND)",
+      "source": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Regulation",
+      "rationale": "A regulatory report exists because a regulation mandates it. FIBO models RegulatoryReport (CMNS) and Regulation (FND) separately but leaves the report-to-mandating-regulation link implicit.",
+      "citation": "Reporting obligations arise from regulations, e.g. HMDA report required by Regulation C"
+    },
+    {
+      "id": "securities-trades-reporting-to-trade-reporting-facility",
+      "edge": "submitted-to",
+      "kind": "cross-domain (BP->FBC)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradesReporting",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/TradeReportingFacility",
+      "rationale": "Executed off-exchange securities trades are reported to a trade reporting facility. FIBO models the securities-trades-reporting process (BP) and the TradeReportingFacility (FBC) but does not connect the reporting activity to the facility it reports to.",
+      "citation": "FINRA Trade Reporting Facility rules; MiFID II APA reporting"
+    }
+  ]
+}

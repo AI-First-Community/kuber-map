@@ -66,14 +66,14 @@
 - [equity demutualization process](SecuritiesIssuance/MuniIssuance/EquityDemutualizationProcess.md) — 
 - [equity i p o process](SecuritiesIssuance/MuniIssuance/EquityIPOProcess.md) — 
 - [equity underwriting issuance process](SecuritiesIssuance/MuniIssuance/EquityUnderwritingIssuanceProcess.md) — 
-- [filing details](SecuritiesIssuance/EquitiesIPOIssuance/FilingDetails.md) — 
+- core · [filing details](SecuritiesIssuance/EquitiesIPOIssuance/FilingDetails.md) — Document capturing the particulars of a regulatory filing, such as what was filed, when, and with which authority
 - [final prospectus](SecuritiesIssuance/IssuanceDocuments/FinalProspectus.md) — The final Prospectus for an issue describes the Offer Issue, including facts about the issue itself such as closing date
 - [finalize pool content](SecuritiesIssuance/AgencyMBSIssuance/FinalizePoolContent.md) — 
 - [finalize pool content](SecuritiesIssuance/PrivateLabelMBSIssuance/FinalizePoolContent.md) — 
 - [finalize prospectus](SecuritiesIssuance/AgencyMBSIssuance/FinalizeProspectus.md) — 
 - [finalize prospectus](SecuritiesIssuance/PrivateLabelMBSIssuance/FinalizeProspectus.md) — 
 - [financial industry context](Process/FinancialContextAndProcess/FinancialIndustryContext.md) — The context in which business activites take place within the financial industry, i
-- [financial markets regulation](Process/FinancialContextAndProcess/FinancialMarketsRegulation.md) — 
+- core · [financial markets regulation](Process/FinancialContextAndProcess/FinancialMarketsRegulation.md) — Body of rules and requirements, set by regulators, that governs the conduct of financial markets and their participants 
 - [formal approval for listing and trading](SecuritiesIssuance/EquitiesIPOIssuance/FormalApprovalForListingAndTrading.md) — 
 - [get commitment from investors](SecuritiesIssuance/PrivateLabelMBSIssuance/GetCommitmentFromInvestors.md) — 
 - [home equity line of credit pool creation process](SecuritiesIssuance/DebtIssuance/HomeEquityLineOfCreditPoolCreationProcess.md) — 
@@ -189,15 +189,15 @@
 - [refunding purpose](SecuritiesIssuance/DebtIssuance/RefundingPurpose.md) — a procedure whereby an issuer refinances outstanding bonds by issuing new bonds
 - [register security](SecuritiesIssuance/AgencyMBSIssuance/RegisterSecurity.md) — 
 - [register security](SecuritiesIssuance/PrivateLabelMBSIssuance/RegisterSecurity.md) — After the deal is closed the security is formally registered with some registraton authority This is the "official" bit 
-- [register with regulatory authority](SecuritiesIssuance/EquitiesIPOIssuance/RegisterWithRegulatoryAuthority.md) — 
+- core · [register with regulatory authority](SecuritiesIssuance/EquitiesIPOIssuance/RegisterWithRegulatoryAuthority.md) — Process step in which an issuer registers a securities offering with the relevant regulatory authority before it can be 
 - [registered security issuance process](SecuritiesIssuance/MuniIssuance/RegisteredSecurityIssuanceProcess.md) — 
 - [registration](SecuritiesIssuance/MuniIssuance/Registration.md) — 
 - [registration information](SecuritiesIssuance/IssuanceProcess/RegistrationInformation.md) — Information relating to the registration of a registered security
 - [registration statement document](SecuritiesIssuance/EquitiesIPOIssuance/RegistrationStatementDocument.md) — 
 - [remarketing agent](SecuritiesIssuance/MuniIssuance/RemarketingAgent.md) — 
 - [remarketing purpose](SecuritiesIssuance/DebtIssuance/RemarketingPurpose.md) — the process of reselling securities to the public that have been tendered for purchase by the previous owners thereof
-- [remittance report](SecuritiesIssuance/PrivateLabelMBSIssuance/RemittanceReport.md) — Report containing a specific and limited set of information about the Deal
-- [reporting accountant](SecuritiesIssuance/EquitiesIPOIssuance/ReportingAccountant.md) — 
+- core · [remittance report](SecuritiesIssuance/PrivateLabelMBSIssuance/RemittanceReport.md) — Report containing a specific and limited set of information about the Deal
+- core · [reporting accountant](SecuritiesIssuance/EquitiesIPOIssuance/ReportingAccountant.md) — Party role of an accountant responsible for preparing or attesting to the financial information in a regulatory report o
 - [retail asset pool creation process](SecuritiesIssuance/DebtIssuance/RetailAssetPoolCreationProcess.md) — The process by which pools of assets are created
 - [secondary market trading context](Process/FinancialContextAndProcess/SecondaryMarketTradingContext.md) — 
 - [secondary security offering distribution](SecuritiesIssuance/IssuanceProcess/SecondarySecurityOfferingDistribution.md) — An Offering of a security which has been previously issued
@@ -212,11 +212,11 @@
 - [securities trade allocation](Process/FinancialContextAndProcess/SecuritiesTradeAllocation.md) — 
 - [securities trade capture and validation](Process/FinancialContextAndProcess/SecuritiesTradeCaptureAndValidation.md) — 
 - [securities trade confirmation affirmation](Process/FinancialContextAndProcess/SecuritiesTradeConfirmationAffirmation.md) — 
-- [securities trade date position reporting](Process/FinancialContextAndProcess/SecuritiesTradeDatePositionReporting.md) — 
+- core · [securities trade date position reporting](Process/FinancialContextAndProcess/SecuritiesTradeDatePositionReporting.md) — Reporting of a party's securities positions as of a given trade date, used for regulatory position and transparency repo
 - [securities trade execution](Process/FinancialContextAndProcess/SecuritiesTradeExecution.md) — 
 - [securities trade order routing](Process/FinancialContextAndProcess/SecuritiesTradeOrderRouting.md) — 
 - [securities trades matching](Process/FinancialContextAndProcess/SecuritiesTradesMatching.md) — Matching of trade allegations to identify confirmed trades, on an Over the Counter market in Traded Securities
-- [securities trades reporting](Process/FinancialContextAndProcess/SecuritiesTradesReporting.md) — 
+- core · [securities trades reporting](Process/FinancialContextAndProcess/SecuritiesTradesReporting.md) — Post-trade process of reporting executed securities trades to a trade repository or regulator
 - [securities underwriting issuance](SecuritiesIssuance/MuniIssuance/SecuritiesUnderwritingIssuance.md) — Underwriting, as a method of Securities Issuance
 - [securities underwriting issuance process](SecuritiesIssuance/MuniIssuance/SecuritiesUnderwritingIssuanceProcess.md) — The process by which debt instruments are offered to the market by a syndicate of underwriters who underwrite the issue
 - [securitization process actor](SecuritiesIssuance/DebtIssuance/SecuritizationProcessActor.md) — 

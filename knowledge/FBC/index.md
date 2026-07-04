@@ -46,7 +46,7 @@
 - [amortization](DebtAndEquities/Debt/Amortization.md) — the process of reduction of debt or other costs through periodic charges to assets or liabilities, such as through princ
 - [amortization schedule](DebtAndEquities/Debt/AmortizationSchedule.md) — schedule of periodic payments (repayment installments) that specify changes in the balance of the debt over time
 - [approved publication arrangement](FunctionalEntities/Markets/ApprovedPublicationArrangement.md) — data reporting services provider that is authorized to provide the service of publishing certain trade reports on behalf
-- [approved reporting mechanism](FunctionalEntities/Markets/ApprovedReportingMechanism.md) — data reporting services provider that is authorized to provide the service of reporting details of transactions to compe
+- core · [approved reporting mechanism](FunctionalEntities/Markets/ApprovedReportingMechanism.md) — data reporting services provider that is authorized to provide the service of reporting details of transactions to compe
 - [auction market](FunctionalEntities/Markets/AuctionMarket.md) — exchange in which buyers and sellers submit competitive bids that do not involve direct negotiations between parties, as
 - [balance](ProductsAndServices/ClientsAndAccounts/Balance.md) — amount of money available or owed
 - [bank](FunctionalEntities/FinancialServicesEntities/Bank.md) — depository institution, usually a corporation, that accepts deposits, makes loans, pays checks, and performs related ser
@@ -145,12 +145,12 @@
 - [credit message type](DebtAndEquities/CreditRatings/CreditMessageType.md) — classifier that categorizes credit messages
 - [credit quality](DebtAndEquities/CreditRatings/CreditQuality.md) — classifier for borrowers, rates, or holdings in the lending market with respect to the quality of the credit
 - [credit rating](DebtAndEquities/CreditRatings/CreditRating.md) — assessment of creditworthiness of a borrower generally or with respect to a particular debt or financial obligation
-- [credit rating agency](DebtAndEquities/CreditRatings/CreditRatingAgency.md) — rating agency that publishes reports assessing the creditworthiness of a borrower or legal entity, either generally or w
+- core · [credit rating agency](DebtAndEquities/CreditRatings/CreditRatingAgency.md) — rating agency that publishes reports assessing the creditworthiness of a borrower or legal entity, either generally or w
 - [credit rating model](DebtAndEquities/CreditRatings/CreditRatingModel.md) — algorithm for computing a credit rating
 - [credit rating scale](DebtAndEquities/CreditRatings/CreditRatingScale.md) — rating scale for assigning a credit rating to individual, entity, or instrument, including defining a set of codes or nu
-- [credit report](DebtAndEquities/CreditRatings/CreditReport.md) — report describing the creditworthiness and related credit attributes of a borrower
+- core · [credit report](DebtAndEquities/CreditRatings/CreditReport.md) — report describing the creditworthiness and related credit attributes of a borrower
 - [credit report category](DebtAndEquities/CreditRatings/CreditReportCategory.md) — classifier for credit reports, often available from multiple vendors
-- [credit report product](DebtAndEquities/CreditRatings/CreditReportProduct.md) — branded credit report offered in the marketplace
+- core · [credit report product](DebtAndEquities/CreditRatings/CreditReportProduct.md) — branded credit report offered in the marketplace
 - [credit score model type](DebtAndEquities/CreditRatings/CreditRatingModelType.md) — a type corresonding to a family of credit scoring algorithms sharing common characteristics
 - [credit tradeline](DebtAndEquities/CreditRatings/CreditTradeline.md) — report derived from the transaction history of a credit account
 - [credit union](FunctionalEntities/FinancialServicesEntities/CreditUnion.md) — not-for-profit depository institution that makes personal loans and offers other consumer banking services, organized fo
@@ -165,7 +165,7 @@
 - [dark pool](FunctionalEntities/Markets/DarkPool.md) — privately organized alternative trading system, that allows institutional investors the ability to trade without exposur
 - [data processing service](FunctionalEntities/FinancialServicesEntities/DataProcessingService.md) — financial service offered by an entity primarily engaged in providing infrastructure for hosting or data processing serv
 - [data processing servicer](FunctionalEntities/FinancialServicesEntities/DataProcessingServicer.md) — finance services provider primarily engaged in providing infrastructure for hosting or data processing services
-- [data reporting services provider](FunctionalEntities/Markets/DataReportingServicesProvider.md) — market data provider and reporting party that reports and/or publishes data on securities transactions, including requir
+- core · [data reporting services provider](FunctionalEntities/Markets/DataReportingServicesProvider.md) — market data provider and reporting party that reports and/or publishes data on securities transactions, including requir
 - [day-count convention](DebtAndEquities/Debt/DayCountConvention.md) — a business recurrence interval convention that is used to calculate the number of days in an interest payment, which app
 - [dealer](ProductsAndServices/FinancialProductsAndServices/Dealer.md) — any party that purchases goods or services for resale and acts on their own behalf in a transaction
 - [debt](DebtAndEquities/Debt/Debt.md) — obligation to pay something, such as an amount of money, good, service, or instrument
@@ -381,7 +381,7 @@
 - [price determination method](FinancialInstruments/InstrumentPricing/PriceDeterminationMethod.md) — strategy for calculating or otherwise establishing a price for something
 - [price spread](FinancialInstruments/InstrumentPricing/PriceSpread.md) — difference between two prices
 - [pricing model](FinancialInstruments/InstrumentPricing/PricingModel.md) — expression used to determine a value for an instrument at a given point in time
-- [primary federal regulator](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/PrimaryFederalRegulator.md) — federal regulatory agency that is designated as the main agency responsible for oversight of a given institution for an 
+- core · [primary federal regulator](FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/PrimaryFederalRegulator.md) — federal regulatory agency that is designated as the main agency responsible for oversight of a given institution for an 
 - core · [principal](DebtAndEquities/Debt/Principal.md) — with respect to a debt: the value of an obligation, such as a bond or loan, raised and that must be repaid at maturity; 
 - [principal payment](DebtAndEquities/Debt/PrincipalPayment.md) — event reflecting the actual payment of some amount of the principal of a debt
 - [principal payment schedule](DebtAndEquities/Debt/PrincipalPaymentSchedule.md) — regular, contract-specific schedule including the dates on which some percentage or all of the principal is due to be (r
@@ -410,10 +410,10 @@
 - core · [registration authority code](FunctionalEntities/BusinessRegistries/RegistrationAuthorityCode.md) — identifier that uniquely identifies a business registry, and is associated with a registration authority and jurisdictio
 - [registration status](FunctionalEntities/BusinessRegistries/RegistrationStatus.md) — lifecycle stage indicating the status of a given registration of something, such as a business or legal entity, as speci
 - [regulated commodity](ProductsAndServices/FinancialProductsAndServices/RegulatedCommodity.md) — commodity under the jurisdiction of the regulatory agency, such as the Commodities Futures Trading Commission (CFTF) in 
-- [regulated exchange](FunctionalEntities/Markets/RegulatedExchange.md) — regulated market that is operated by and/or managed by a market operator that brings together or facilitates the bringin
-- [regulation identification scheme](FunctionalEntities/RegulatoryAgencies/RegulationIdentificationScheme.md) — a scheme for organizing information and allocating identifiers to regulations
-- [regulation identifier](FunctionalEntities/RegulatoryAgencies/RegulationIdentifier.md) — an identifier associated with a regulation
-- [regulatory capacity](FunctionalEntities/RegulatoryAgencies/RegulatoryCapacity.md) — the capacity of some natural person to regulate some industry, organization, or product by virtue of some certification 
+- core · [regulated exchange](FunctionalEntities/Markets/RegulatedExchange.md) — regulated market that is operated by and/or managed by a market operator that brings together or facilitates the bringin
+- core · [regulation identification scheme](FunctionalEntities/RegulatoryAgencies/RegulationIdentificationScheme.md) — a scheme for organizing information and allocating identifiers to regulations
+- core · [regulation identifier](FunctionalEntities/RegulatoryAgencies/RegulationIdentifier.md) — an identifier associated with a regulation
+- core · [regulatory capacity](FunctionalEntities/RegulatoryAgencies/RegulatoryCapacity.md) — the capacity of some natural person to regulate some industry, organization, or product by virtue of some certification 
 - [relationship manager](ProductsAndServices/ClientsAndAccounts/RelationshipManager.md) — responsible party who manages a client's account and oversees their relationship with the service provider
 - [representative office of a foreign bank](FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/RepresentativeOfficeOfAForeignBank.md) — office of a foreign bank which is located in any state and is not a federal branch, federal agency, state branch, state 
 - [repudiation](DebtAndEquities/CreditEvents/Repudiation.md) — credit event involving the refusal to honor the terms of a contract
@@ -430,7 +430,7 @@
 - core · [security](FinancialInstruments/FinancialInstruments/Security.md) — financial instrument that can be bought or sold
 - [security agreement](DebtAndEquities/Debt/SecurityAgreement.md) — collateral agreement that grants a financial interest in some collateral to a party that is not an owner of that collate
 - [security price](FinancialInstruments/InstrumentPricing/SecurityPrice.md) — monetary price for a financial instrument at some point in time
-- [self-regulating organization](FunctionalEntities/FinancialServicesEntities/SelfRegulatingOrganization.md) — non-governmental organization that has the power to create and exercise some degree of regulatory authority over an indu
+- core · [self-regulating organization](FunctionalEntities/FinancialServicesEntities/SelfRegulatingOrganization.md) — non-governmental organization that has the power to create and exercise some degree of regulatory authority over an indu
 - [settlement](FinancialInstruments/Settlement/Settlement.md) — act of finalizing a transaction, including but not limited to finalizing accounting, exchanging consideration, and/or le
 - [settlement convention](FinancialInstruments/Settlement/SettlementConvention.md) — convention employed to determine the closing date (from the stated settlement date) in the process of settling a transac
 - [settlement event](FinancialInstruments/Settlement/SettlementEvent.md) — specific event involving the finalization a transaction or portion thereof, including but not limited to finalizing acco
@@ -468,7 +468,7 @@
 - [trade lifecycle occurrence](ProductsAndServices/FinancialProductsAndServices/TradeLifecycleOccurrence.md) — realization of the lifecycle for a specific trade
 - [trade lifecycle stage](ProductsAndServices/FinancialProductsAndServices/TradeLifecycleStage.md) — phase in the lifecycle of a trade
 - [trade lifecycle stage occurrence](ProductsAndServices/FinancialProductsAndServices/TradeLifecycleStageOccurrence.md) — realization of a phase in the lifecycle of a specific trade
-- [trade reporting facility](FunctionalEntities/Markets/TradeReportingFacility.md) — facility that provides a mechanism for the reporting of transactions effected otherwise than on an exchange
+- core · [trade reporting facility](FunctionalEntities/Markets/TradeReportingFacility.md) — facility that provides a mechanism for the reporting of transactions effected otherwise than on an exchange
 - [trader](ProductsAndServices/FinancialProductsAndServices/Trader.md) — party that engages in the transfer of financial assets in any financial market on behalf of a client or the financial se
 - [trading day](FinancialInstruments/InstrumentPricing/TradingDay.md) — time span that a particular trading venue is open
 - [trading session](FinancialInstruments/InstrumentPricing/TradingSession.md) — window of time within a trading day in which orders may be placed and filled

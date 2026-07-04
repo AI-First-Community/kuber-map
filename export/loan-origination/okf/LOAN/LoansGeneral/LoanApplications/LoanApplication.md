@@ -5,6 +5,8 @@ description: "request by a potential borrower to a potential lender to borrow mo
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplication
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "Captures the borrower, the property, the terms sought, and financials (in the US, Form 1003); submitting it initiates underwriting."
 detail_provenance: curated
 examples:

@@ -5,6 +5,8 @@ description: "loan secured by real estate with no ability for the borrower to re
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/ClosedEndMortgageLoan
 tags: [LOAN, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "The common purchase or refinance mortgage: the full amount is advanced at closing and repaid on a fixed schedule, with no further draws permitted."
 detail_provenance: curated
 examples:

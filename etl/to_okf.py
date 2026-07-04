@@ -155,9 +155,11 @@ def main():
     ap.add_argument("--clusters", nargs="+", default=["FND", "LOAN"])
     ap.add_argument("--curation", nargs="+",
                     default=["curation/loan-origination.json", "curation/kyc.json",
-                             "curation/securities.json", "curation/definitions.json",
+                             "curation/securities.json", "curation/regulatory-reporting.json",
+                             "curation/definitions.json", "curation/regulatory-reporting-definitions.json",
                              "curation/examples.json", "curation/notes.json",
-                             "curation/securities-examples.json", "curation/kyc-examples.json"],
+                             "curation/securities-examples.json", "curation/kyc-examples.json",
+                             "curation/regulatory-reporting-examples.json"],
                     help="curation JSON: `core:` stamps core; `definitions:`/`examples:`/`notes:` overlay content")
     args = ap.parse_args()
     keep = set(args.clusters)

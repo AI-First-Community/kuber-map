@@ -12,7 +12,7 @@
 - core · [automated underwriting system](RealEstateLoans/MortgageOrigination/AutomatedUnderwritingSystem.md) — software system that collects the information necessary to approve a loan application and supports a mortgage lender's a
 - core · [borrower assessment](LoansGeneral/LoanApplications/BorrowerAssessment.md) — assessment report detailing information about the borrower and their credit history that may be relevant to the loan app
 - [borrower data protection requirement](LoansGeneral/LoansRegulatory/BorrowerDataProtectionRequirement.md) — 
-- core · [borrower disclosure requirement](LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement.md) — regulatory requirement that a lender disclose specified information to a borrower or prospective borrower — such as the 
+- core · [borrower disclosure requirement](LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement.md) — Disclosure requirement obliging a lender to give a borrower specified information about a loan product, conferring the b
 - core · [borrower monthly income](LoansGeneral/LoanApplications/BorrowerMonthlyIncome.md) — total monthly qualifying income of a potential borrower
 - [borrower right](LoansGeneral/LoansRegulatory/BorrowerRight.md) — 
 - [bridging loan purpose](LoansSpecific/LoanProducts/BridgingLoanPurpose.md) — 
@@ -45,9 +45,9 @@
 - [construction type](RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/ConstructionType.md) — particular kind of construction
 - [consumer credit card agreement](LoansSpecific/CardAccounts/ConsumerCreditCardAgreement.md) — credit card agreement for a card issued for household, family, or other personal expenditures that is accessed by a borr
 - [consumer credit equal treatment requirement](LoansGeneral/LoansRegulatory/ConsumerCreditEqualTreatmentRequirement.md) — 
-- core · [consumer credit protection law](LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw.md) — consumer protection law that regulates the extension of credit to consumers — governing matters such as disclosure of te
+- core · [consumer credit protection law](LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw.md) — Consumer protection law that regulates the extension of consumer credit, requiring fair terms and disclosure to borrower
 - [consumer credit reference agency](LoansGeneral/LoansRegulatory/ConsumerCreditReferenceAgency.md) — Applicable regulations: vary by jurisdiciton
-- [consumer credit requirement](LoansGeneral/LoansRegulatory/ConsumerCreditRequirement.md) — Requirement set out on the lender about how they must treat the appliction to a loan
+- core · [consumer credit requirement](LoansGeneral/LoansRegulatory/ConsumerCreditRequirement.md) — Requirement set out on the lender about how they must treat the appliction to a loan
 - [consumer loan](LoansSpecific/ConsumerLoans/ConsumerLoan.md) — loan to one or more individuals for household, family, or other personal expenditures, excluding mortgages and student l
 - [consumer protection agency](LoansGeneral/LoansRegulatory/ConsumerProtectionAgency.md) — Some agency tasked with regulating consumer protection in some jurisdiction
 - [consumer protection law](LoansGeneral/LoansRegulatory/ConsumerProtectionLaw.md) — 
@@ -61,11 +61,11 @@
 - [credit card receivable purpose](LoansSpecific/LoanProducts/CreditCardReceivablePurpose.md) — 
 - [credit reference agency requirements](LoansGeneral/LoansRegulatory/CreditReferenceAgencyRequirements.md) — REquirements other than data protection, governing what a credit reference agency can or cannot do
 - core · [credit risk assessment](LoansGeneral/LoanApplications/CreditRiskAssessment.md) — risk assessment that focuses on determining the likelihood of a potential borrower repaying a loan
-- [data protection requirement](LoansGeneral/LoansRegulatory/DataProtectionRequirement.md) — Requirements defining how data about individuals is held
+- core · [data protection requirement](LoansGeneral/LoansRegulatory/DataProtectionRequirement.md) — Requirements defining how data about individuals is held
 - [debit card](LoansSpecific/CardAccounts/DebitCard.md) — payment card issued by a financial service provider that enables the cardholder to access funds in a demand deposit acco
 - [debit card account](LoansSpecific/CardAccounts/DebitCardAccount.md) — card account that is represented by a one or more debit cards
 - [debit card product](LoansSpecific/CardAccounts/DebitCardProduct.md) — card product card typically provided by a depository institution allowing the holder to transfer money electronically to
-- [disclosure requirement](LoansGeneral/LoansRegulatory/DisclosureRequirement.md) — Requirement for disclosure to borrowers or potential borrowers
+- core · [disclosure requirement](LoansGeneral/LoansRegulatory/DisclosureRequirement.md) — Requirement for disclosure to borrowers or potential borrowers
 - [dwelling capacity](RealEstateLoans/MortgageOrigination/DwellingCapacity.md) — classifier indicating how many dwellings some property has
 - [environmental program](LoansSpecific/GreenLoans/EnvironmentalProgram.md) — broad scale initiative, activity, or investment aimed at improving environmental sustainability, reducing ecological har
 - [environmental project](LoansSpecific/GreenLoans/EnvironmentalProject.md) — specific initiative, activity, or investment aimed at improving environmental sustainability, reducing ecological harm, 
@@ -138,7 +138,7 @@
 - [prepayment](LoansGeneral/LoanEvents/Prepayment.md) — 
 - [primary card account number](LoansSpecific/CardAccounts/PrimaryCardAccountNumber.md) — composite identifier of 14 or 16 digits embossed on a bank or payment card and encoded in the card's magnetic strip
 - [private student loan](LoansSpecific/StudentLoans/PrivateStudentLoan.md) — student loan that is not considered a government-backed / regulated loan
-- [product disclosure requirement](LoansGeneral/LoansRegulatory/ProductDisclosureRequirement.md) — A requirement governing what representations can be made about a product, as it affects the consumer
+- core · [product disclosure requirement](LoansGeneral/LoansRegulatory/ProductDisclosureRequirement.md) — A requirement governing what representations can be made about a product, as it affects the consumer
 - [product disclosure right](LoansGeneral/LoansRegulatory/ProductDisclosureRight.md) — The right to information about products at the point of purchasing these
 - core · [property usage](RealEstateLoans/MortgageOrigination/PropertyUsage.md) — a category indicating the manner in which the borrower intends to utilize the property
 - [public record](LoansGeneral/LoanApplications/PublicRecord.md) — record about an action involving a party that is publicly available from a court or other government agency

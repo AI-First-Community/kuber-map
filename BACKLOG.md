@@ -70,7 +70,7 @@ Last updated: 2026-07-04
 - [ ] Map working bridge edge-names → formal FIBO object properties
 - [x] **Second use case: KYC / beneficial-ownership** — 58 curated core concepts (`curation/kyc.json`) + 4 cross-domain bridges (`curation/kyc-bridges.json`) + context pack (`export/kyc/`). Backbone party/entity classes come from Commons (CMNS). Tooling is now **spec-driven** (`curation/usecases/*.json`), so a use case is a repeatable recipe.
 - [x] **Third use case: Securities instruments & issuance** — 59 core (`curation/securities.json`), curated examples overlay for the cards (`curation/securities-examples.json`), 3 cross-domain bridges (`curation/securities-bridges.json`), pack (`export/securities/`). New `backed-by` relation added for the MBS→mortgage / ABS→loan bridges.
-- [ ] Regulatory-reporting use case (BE + FBC + MD) — needs MD domain
+- [x] **Fourth use case: Regulatory reporting & compliance** — 52 curated core concepts (`curation/regulatory-reporting.json`) spanning **8 clusters** (CMNS/FBC/FND/BE/BP/LOAN/CAE/SEC), the most cross-domain use case; curated examples (52) + 8 grounded definitions for FIBO's undefined classes + 4 cross-domain bridges (reporting-party→LEI, report→agency, report→regulation, trades-reporting→facility) + pack (`export/regulatory-reporting/`). Map now shows **15 curated bridges**; default core spans 4 use cases (224 concepts).
 
 ### E4 — Scale domains
 - [x] **Onboard SEC, DER, IND, MD, BP, CAE** — all six loaded alongside FND/LOAN/FBC/BE + CMNS. Full FIBO now emitted: 3,104 concepts / 6,676 edges / 68 sub-clusters, gate green. Pending (not-yet-loaded) edges fell ~580 → 217 (remaining targets are LCC).

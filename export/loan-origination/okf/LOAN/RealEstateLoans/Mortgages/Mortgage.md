@@ -5,6 +5,8 @@ description: "grant of financial interest in real property to a party that is no
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/Mortgage
 tags: [LOAN, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "A mortgage prevents transfer of the ownership of the real property unless the financial interest is satisfied. Any loan can be collateralized by a mortgage, including, for example, a bail bond."
 examples:
   - "A 30-year fixed-rate home loan"

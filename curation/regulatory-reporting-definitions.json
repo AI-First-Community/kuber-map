@@ -1,0 +1,53 @@
+{
+  "_comment": "Curated learner-friendly definitions for regulatory-reporting core concepts FIBO ships with no skos:definition. Grounded in each class's FIBO superclass/axioms; applied by to_okf as definition_provenance: curated (never overrides a real FIBO definition).",
+  "definitions": [
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/FinancialMarketsRegulation",
+      "title": "financial markets regulation",
+      "definition": "Body of rules and requirements, set by regulators, that governs the conduct of financial markets and their participants (e.g. MiFID II).",
+      "grounded_in": "FIBO superclass + label"
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw",
+      "title": "consumer credit protection law",
+      "definition": "Consumer protection law that regulates the extension of consumer credit, requiring fair terms and disclosure to borrowers, such as the US Consumer Credit Protection Act.",
+      "grounded_in": "FIBO superclass + label"
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement",
+      "title": "borrower disclosure requirement",
+      "definition": "Disclosure requirement obliging a lender to give a borrower specified information about a loan product, conferring the borrower's product disclosure right.",
+      "grounded_in": "FIBO superclass + label"
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/ReportingAccountant",
+      "title": "reporting accountant",
+      "definition": "Party role of an accountant responsible for preparing or attesting to the financial information in a regulatory report or filing.",
+      "grounded_in": "FIBO superclass + label"
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradesReporting",
+      "title": "securities trades reporting",
+      "definition": "Post-trade process of reporting executed securities trades to a trade repository or regulator.",
+      "grounded_in": "FIBO superclass + label"
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradeDatePositionReporting",
+      "title": "securities trade date position reporting",
+      "definition": "Reporting of a party's securities positions as of a given trade date, used for regulatory position and transparency reporting.",
+      "grounded_in": "FIBO superclass + label"
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/RegisterWithRegulatoryAuthority",
+      "title": "register with regulatory authority",
+      "definition": "Process step in which an issuer registers a securities offering with the relevant regulatory authority before it can be listed or sold.",
+      "grounded_in": "FIBO superclass + label"
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/FilingDetails",
+      "title": "filing details",
+      "definition": "Document capturing the particulars of a regulatory filing, such as what was filed, when, and with which authority.",
+      "grounded_in": "FIBO superclass + label"
+    }
+  ]
+}

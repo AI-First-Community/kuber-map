@@ -4,6 +4,9 @@ title: "partially paid share"
 description: "share whose payment status indicates that only a portion of the market value has been received by the company for the shares"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PartiallyPaidShare
 tags: [SEC, Release]
+core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "A share issued where only part of the subscription price has been called and paid."
 examples_provenance: curated

@@ -4,6 +4,13 @@ title: "legal entity identifier registry"
 description: "registry for registering and maintaining information about business entities for a particular jurisdiction"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry
 tags: [FBC, Release]
+core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
+  - "Regulatory Reporting & Compliance (supervisory filing)"
+examples:
+  - "A GLEIF-accredited Local Operating Unit that issues and maintains LEIs."
+examples_provenance: curated
 synonyms:
   - "LEI registry"
 relations:

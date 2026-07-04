@@ -5,6 +5,8 @@ description: "financial product that is realized as a loan that a party may acqu
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanProduct
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "A standardized template — such as a 30-year fixed conventional, a 5/1 ARM, or an FHA loan — with defined characteristics that individual loans instantiate."
 detail_provenance: curated
 examples:

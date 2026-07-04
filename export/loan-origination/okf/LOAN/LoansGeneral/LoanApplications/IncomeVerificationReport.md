@@ -5,10 +5,13 @@ description: "report providing the methodology and supporting documentation used
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IncomeVerificationReport
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
+  - "Regulatory Reporting & Compliance (supervisory filing)"
 detail: "Documents such as pay stubs, W-2s, tax returns, or a verification of employment that support claimed income and help satisfy ability-to-repay rules."
 detail_provenance: curated
 examples:
-  - "A verification of employment (VOE) with pay stubs and W-2s."
+  - "A report verifying a borrower's income from pay stubs and tax returns during underwriting."
 examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Arrangements/Assessments/AssessmentReport.md", provenance: fibo}

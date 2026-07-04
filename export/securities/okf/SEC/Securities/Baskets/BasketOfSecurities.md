@@ -4,6 +4,9 @@ title: "basket of securities"
 description: "basket composed of securities, typically of a particular asset class such as equities or bonds"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Baskets/BasketOfSecurities
 tags: [SEC, Release]
+core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "The basket of 500 stocks underlying an S&P 500 index fund."
 examples_provenance: curated

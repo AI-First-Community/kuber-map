@@ -5,6 +5,8 @@ description: "physical asset defined as land together with any structures that a
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Places/RealProperty/RealProperty
 tags: [FND, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "Real property may be classified according to its general use as residential, commercial, agricultural, industrial, or special purpose. This term is sometimes used synonymously with 'real estate', though not in all circumstances under US law. Real property typically encompasses both the physical land and everything that lies above, below, or on its surface, including any fixed structures, natural resources, and rights or interests (e.g., mineral rights). There are cases, such as condominiums, in which the interior of the structure is owned by a party that may not own the land. There are also cases in which certain long-term leases have similar characteristics to ownership, but are time-bound."
 examples:
   - "A single-family house and the land it sits on."

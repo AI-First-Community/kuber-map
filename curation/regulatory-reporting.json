@@ -1,0 +1,473 @@
+{
+  "use_case": "Regulatory Reporting & Compliance (supervisory filing)",
+  "core": [
+    {
+      "facet": "Regulators & authorities",
+      "iri": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryAgency",
+      "id": "RegulatoryAgency",
+      "cluster": "CMNS",
+      "title": "regulatory agency",
+      "description": "public authority or government agency responsible for exercising authority over something in a regulatory or supervisory capacity",
+      "core": true
+    },
+    {
+      "facet": "Regulators & authorities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/PrimaryFederalRegulator",
+      "id": "PrimaryFederalRegulator",
+      "cluster": "FBC",
+      "title": "primary federal regulator",
+      "description": "federal regulatory agency that is designated as the main agency responsible for oversight of a given institution for an institution",
+      "core": true
+    },
+    {
+      "facet": "Regulators & authorities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/SelfRegulatingOrganization",
+      "id": "SelfRegulatingOrganization",
+      "cluster": "FBC",
+      "title": "self-regulating organization",
+      "description": "non-governmental organization that has the power to create and exercise some degree of regulatory authority over an industry or profession in some country or group of countries",
+      "core": true
+    },
+    {
+      "facet": "Regulators & authorities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/CollectiveInvestmentVehicles/FundSupervisoryAuthority",
+      "id": "FundSupervisoryAuthority",
+      "cluster": "SEC",
+      "title": "fund supervisory authority",
+      "description": "party that supervises the fund or fund industry",
+      "core": true
+    },
+    {
+      "facet": "Regulators & authorities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentAgency",
+      "id": "GovernmentAgency",
+      "cluster": "BE",
+      "title": "government agency",
+      "description": "permanent or semi-permanent organization, often an appointed commission, in the machinery of government that is responsible for the oversight and administration of specific functions",
+      "core": true
+    },
+    {
+      "facet": "Regulators & authorities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/GovernmentBody",
+      "id": "GovernmentBody",
+      "cluster": "BE",
+      "title": "government body",
+      "description": "formal organization that is an agency, instrumentality, or other body of a supranational, national, federal, state, or local government, including certain multijurisdictional agencies and departments that carry out the business of government",
+      "core": true
+    },
+    {
+      "facet": "Regulators & authorities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority",
+      "id": "BusinessRegistrationAuthority",
+      "cluster": "FBC",
+      "title": "business registration authority",
+      "description": "registration authority that is responsible for maintaining a registry of business entities",
+      "core": true
+    },
+    {
+      "facet": "Regulators & authorities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/RegulatedExchange",
+      "id": "RegulatedExchange",
+      "cluster": "FBC",
+      "title": "regulated exchange",
+      "description": "regulated market that is operated by and/or managed by a market operator that brings together or facilitates the bringing together of multiple third-party buying and selling interests in financial instruments",
+      "core": true
+    },
+    {
+      "facet": "Regulators & authorities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulatoryCapacity",
+      "id": "RegulatoryCapacity",
+      "cluster": "FBC",
+      "title": "regulatory capacity",
+      "description": "the capacity of some natural person to regulate some industry, organization, or product by virtue of some certification program on behalf of some regulatory agency",
+      "core": true
+    },
+    {
+      "facet": "Regulators & authorities",
+      "iri": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryService",
+      "id": "RegulatoryService",
+      "cluster": "CMNS",
+      "title": "regulatory service",
+      "description": "service provided by a regulatory agency, which may include, but not be limited to, examination, monitoring, supervision, testing, or other capabilities required to ensure the integrity, fairness, safety, or other capacity of a given industry, organization, or product",
+      "core": true
+    },
+    {
+      "facet": "Regulations, rules & law",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Regulation",
+      "id": "Regulation",
+      "cluster": "FND",
+      "title": "regulation",
+      "description": "a rule used to carry out a law",
+      "core": true
+    },
+    {
+      "facet": "Regulations, rules & law",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulationIdentifier",
+      "id": "RegulationIdentifier",
+      "cluster": "FBC",
+      "title": "regulation identifier",
+      "description": "an identifier associated with a regulation",
+      "core": true
+    },
+    {
+      "facet": "Regulations, rules & law",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulationIdentificationScheme",
+      "id": "RegulationIdentificationScheme",
+      "cluster": "FBC",
+      "title": "regulation identification scheme",
+      "description": "a scheme for organizing information and allocating identifiers to regulations",
+      "core": true
+    },
+    {
+      "facet": "Regulations, rules & law",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/FinancialMarketsRegulation",
+      "id": "FinancialMarketsRegulation",
+      "cluster": "BP",
+      "title": "financial markets regulation",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Regulations, rules & law",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw",
+      "id": "ConsumerCreditProtectionLaw",
+      "cluster": "LOAN",
+      "title": "consumer credit protection law",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Regulations, rules & law",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegB",
+      "id": "RegB",
+      "cluster": "LOAN",
+      "title": "reg b",
+      "description": "US regulation concerning \"Equal credit opportunity act\" Electronic delivery of disclosures",
+      "core": true
+    },
+    {
+      "facet": "Regulations, rules & law",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/RegZ",
+      "id": "RegZ",
+      "cluster": "LOAN",
+      "title": "reg z",
+      "description": "US Fed regulation \"Truth in Lending Act\" uniform standards for electronic delivery of disclosures",
+      "core": true
+    },
+    {
+      "facet": "Regulations, rules & law",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation",
+      "id": "LegalObligation",
+      "cluster": "FND",
+      "title": "legal obligation",
+      "description": "an obligation or duty that is enforceable by a court",
+      "core": true
+    },
+    {
+      "facet": "Reports & disclosures",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/Report",
+      "id": "Report",
+      "cluster": "FND",
+      "title": "report",
+      "description": "document that provides a structured description of something, prepared on ad hoc, periodic, recurring, regular, or as required basis",
+      "core": true
+    },
+    {
+      "facet": "Reports & disclosures",
+      "iri": "https://www.omg.org/spec/Commons/RegulatoryAgencies/RegulatoryReport",
+      "id": "RegulatoryReport",
+      "cluster": "CMNS",
+      "title": "regulatory report",
+      "description": "document required to support operational transparency that demonstrates compliance with some specification, law, policy, restriction, or other rule specified by a regulatory agency",
+      "core": true
+    },
+    {
+      "facet": "Reports & disclosures",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingReport",
+      "id": "RatingReport",
+      "cluster": "FND",
+      "title": "rating report",
+      "description": "report describing a set of ratings",
+      "core": true
+    },
+    {
+      "facet": "Reports & disclosures",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditReport",
+      "id": "CreditReport",
+      "cluster": "FBC",
+      "title": "credit report",
+      "description": "report describing the creditworthiness and related credit attributes of a borrower",
+      "core": true
+    },
+    {
+      "facet": "Reports & disclosures",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditReportProduct",
+      "id": "CreditReportProduct",
+      "cluster": "FBC",
+      "title": "credit report product",
+      "description": "branded credit report offered in the marketplace",
+      "core": true
+    },
+    {
+      "facet": "Reports & disclosures",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/PrivateLabelMBSIssuance/RemittanceReport",
+      "id": "RemittanceReport",
+      "cluster": "BP",
+      "title": "remittance report",
+      "description": "Report containing a specific and limited set of information about the Deal. Term origin:MBS PoC Reviews",
+      "core": true
+    },
+    {
+      "facet": "Reports & disclosures",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report",
+      "id": "HMDA-Report",
+      "cluster": "LOAN",
+      "title": "HMDA report",
+      "description": "a report prepared to satisfy HMDA regulatory reporting requirements as described US section 1003.3(c) of the Revised Home Mortgage Disclosure Act of 2015",
+      "core": true
+    },
+    {
+      "facet": "Reports & disclosures",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IncomeVerificationReport",
+      "id": "IncomeVerificationReport",
+      "cluster": "LOAN",
+      "title": "income verification report",
+      "description": "report providing the methodology and supporting documentation used to verify the borrower's income",
+      "core": true
+    },
+    {
+      "facet": "Reports & disclosures",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/DisclosureProvision",
+      "id": "DisclosureProvision",
+      "cluster": "FND",
+      "title": "disclosure provision",
+      "description": "contractual provision that outlines the requirements and responsibilities of one or both parties to reveal certain information to each other",
+      "core": true
+    },
+    {
+      "facet": "Reporting requirements",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/DisclosureRequirement",
+      "id": "DisclosureRequirement",
+      "cluster": "LOAN",
+      "title": "disclosure requirement",
+      "description": "Requirement for disclosure to borrowers or potential borrowers. There are two kinds of disclosure requirement: 1. Disclosure about the information held on the borrower 2. Disclsure about the product.",
+      "core": true
+    },
+    {
+      "facet": "Reporting requirements",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ProductDisclosureRequirement",
+      "id": "ProductDisclosureRequirement",
+      "cluster": "LOAN",
+      "title": "product disclosure requirement",
+      "description": "A requirement governing what representations can be made about a product, as it affects the consumer.",
+      "core": true
+    },
+    {
+      "facet": "Reporting requirements",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement",
+      "id": "BorrowerDisclosureRequirement",
+      "cluster": "LOAN",
+      "title": "borrower disclosure requirement",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Reporting requirements",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/LoanRegulatoryRequirement",
+      "id": "LoanRegulatoryRequirement",
+      "cluster": "LOAN",
+      "title": "loan regulatory requirement",
+      "description": "A regulatory requirement defined in regulations by a comsumer credit act or other legislation.",
+      "core": true
+    },
+    {
+      "facet": "Reporting requirements",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditRequirement",
+      "id": "ConsumerCreditRequirement",
+      "cluster": "LOAN",
+      "title": "consumer credit requirement",
+      "description": "Requirement set out on the lender about how they must treat the appliction to a loan",
+      "core": true
+    },
+    {
+      "facet": "Reporting requirements",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/DataProtectionRequirement",
+      "id": "DataProtectionRequirement",
+      "cluster": "LOAN",
+      "title": "data protection requirement",
+      "description": "Requirements defining how data about individuals is held. Example is the EU DA directive and laws, which make the data the property of the individual that data is about. Covers - what information i sheld - who information can be divulged to. - the individual's rights in respect of that information Privacy regulations cover most of this. EU defines \"Personal Data\" and \"Sensitive Personal Data\". For credit reference agencies the latter would be covered. More detail about whether they can divulge facts which are not subject to formal judgements etc.",
+      "core": true
+    },
+    {
+      "facet": "Reporting mechanisms & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/ReportingParty",
+      "id": "ReportingParty",
+      "cluster": "FND",
+      "title": "reporting party",
+      "description": "party providing a report, typically in response to some contractual, legal, regulatory or other business requirement",
+      "core": true
+    },
+    {
+      "facet": "Reporting mechanisms & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/TradeReportingFacility",
+      "id": "TradeReportingFacility",
+      "cluster": "FBC",
+      "title": "trade reporting facility",
+      "description": "facility that provides a mechanism for the reporting of transactions effected otherwise than on an exchange",
+      "core": true
+    },
+    {
+      "facet": "Reporting mechanisms & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/ApprovedReportingMechanism",
+      "id": "ApprovedReportingMechanism",
+      "cluster": "FBC",
+      "title": "approved reporting mechanism",
+      "description": "data reporting services provider that is authorized to provide the service of reporting details of transactions to competent authorities or ESMA (the European Securities and Markets Authority) on behalf of investment firms",
+      "core": true
+    },
+    {
+      "facet": "Reporting mechanisms & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/DataReportingServicesProvider",
+      "id": "DataReportingServicesProvider",
+      "cluster": "FBC",
+      "title": "data reporting services provider",
+      "description": "market data provider and reporting party that reports and/or publishes data on securities transactions, including required regulatory reporting for such transactions, and as such is subject to regulatory supervision",
+      "core": true
+    },
+    {
+      "facet": "Reporting mechanisms & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/ReportingAccountant",
+      "id": "ReportingAccountant",
+      "cluster": "BP",
+      "title": "reporting accountant",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Reporting mechanisms & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradesReporting",
+      "id": "SecuritiesTradesReporting",
+      "cluster": "BP",
+      "title": "securities trades reporting",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Reporting mechanisms & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/SecuritiesTradeDatePositionReporting",
+      "id": "SecuritiesTradeDatePositionReporting",
+      "cluster": "BP",
+      "title": "securities trade date position reporting",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Registration, filing & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/RegisterWithRegulatoryAuthority",
+      "id": "RegisterWithRegulatoryAuthority",
+      "cluster": "BP",
+      "title": "register with regulatory authority",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Registration, filing & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/FilingDetails",
+      "id": "FilingDetails",
+      "cluster": "BP",
+      "title": "filing details",
+      "description": null,
+      "core": true
+    },
+    {
+      "facet": "Registration, filing & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegisterIdentifier",
+      "id": "BusinessRegisterIdentifier",
+      "cluster": "FBC",
+      "title": "business register identifier",
+      "description": "identifier that uniquely identifies a business register, such as a register identified by the Global Legal Entity Identifier Foundation (GLEIF) registration authorities list",
+      "core": true
+    },
+    {
+      "facet": "Registration, filing & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "id": "LegalEntityIdentifier",
+      "cluster": "BE",
+      "title": "legal entity identifier",
+      "description": "an organization identifier that uniquely identifies a legal person as defined in ISO 17442",
+      "core": true
+    },
+    {
+      "facet": "Registration, filing & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry",
+      "id": "LegalEntityIdentifierRegistry",
+      "cluster": "FBC",
+      "title": "legal entity identifier registry",
+      "description": "registry for registering and maintaining information about business entities for a particular jurisdiction",
+      "core": true
+    },
+    {
+      "facet": "Registration, filing & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/UniversalLoanIdentifier",
+      "id": "UniversalLoanIdentifier",
+      "cluster": "LOAN",
+      "title": "universal loan identifier",
+      "description": "unique identifier given to unequivocally identify a specific loan secured by real estate",
+      "core": true
+    },
+    {
+      "facet": "Registration, filing & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/NMLSR-ID",
+      "id": "NMLSR-ID",
+      "cluster": "LOAN",
+      "title": "Nationwide Mortgage Licensing System and Registry Identifier",
+      "description": "the number permanently assigned by the Nationwide Mortgage Licensing System and Registry (NMLS) for each company, branch, and individual that maintains a single account on NMLS.",
+      "core": true
+    },
+    {
+      "facet": "Regulatory actions & rating agencies",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActions/RegulatoryAction",
+      "id": "RegulatoryAction",
+      "cluster": "CAE",
+      "title": "regulatory action",
+      "description": "action initiated by a regulatory agency that affects a legal entity or the securities it issues and may have a material impact on that entity's stakeholders, such as shareholders and creditors",
+      "core": true
+    },
+    {
+      "facet": "Regulatory actions & rating agencies",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActions/DisclosureAction",
+      "id": "DisclosureAction",
+      "cluster": "CAE",
+      "title": "disclosure action",
+      "description": "corporate action involving a request for holders or beneficial owners to disclose their name, location and holdings of any issue to the issuer",
+      "core": true
+    },
+    {
+      "facet": "Regulatory actions & rating agencies",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/CreditRatingAgency",
+      "id": "CreditRatingAgency",
+      "cluster": "FBC",
+      "title": "credit rating agency",
+      "description": "rating agency that publishes reports assessing the creditworthiness of a borrower or legal entity, either generally or with respect to a specific obligation",
+      "core": true
+    },
+    {
+      "facet": "Regulatory actions & rating agencies",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/RatingAgency",
+      "id": "RatingAgency",
+      "cluster": "FND",
+      "title": "rating agency",
+      "description": "rating issuer that is also a rating scale publisher, frequently but not always an independent rating service",
+      "core": true
+    },
+    {
+      "facet": "Regulatory actions & rating agencies",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract",
+      "id": "HMDA-CoveredLoanContract",
+      "cluster": "LOAN",
+      "title": "HMDA covered loan contract",
+      "description": "a closed-end mortgage loan or open-end line of credit that is not an excluded transaction for HMDA reporting under US section 1003.3(c) of the Revised Home Mortgage Disclosure Act of 2015",
+      "core": true
+    }
+  ]
+}

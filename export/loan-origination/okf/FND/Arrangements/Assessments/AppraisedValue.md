@@ -5,6 +5,8 @@ description: "estimated value of some asset as of a given point in time"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/AppraisedValue
 tags: [FND, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "Serves as the denominator of the loan-to-value ratio and the basis for how much a lender will advance against the property."
 detail_provenance: curated
 examples:

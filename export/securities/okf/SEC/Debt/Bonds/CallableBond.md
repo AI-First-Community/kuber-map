@@ -4,6 +4,9 @@ title: "callable bond"
 description: "bond that includes a stipulation allowing the issuer the right to repurchase and retire the bond at the call price after the call protection period"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/CallableBond
 tags: [SEC, Release]
+core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "A corporate bond the issuer may redeem after five years if interest rates fall."
 examples_provenance: curated

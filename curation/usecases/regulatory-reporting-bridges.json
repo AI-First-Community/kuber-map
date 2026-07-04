@@ -1,0 +1,38 @@
+[
+  {
+    "id": "reporting-party-identified-by-lei",
+    "source": ["ReportingParty", "FND"],
+    "edge": "identified-by",
+    "target": ["LegalEntityIdentifier", "BE"],
+    "kind": "cross-domain (FND->BE)",
+    "rationale": "In supervisory and transaction reporting the party that submits a report is identified by its Legal Entity Identifier. FIBO defines the ReportingParty role (FND) and the LegalEntityIdentifier (BE) but does not connect a reporting party to its LEI.",
+    "citation": "ISO 17442 (LEI); MiFID II / ESMA transaction reporting; CFTC swap reporting"
+  },
+  {
+    "id": "regulatory-report-submitted-to-agency",
+    "source": ["RegulatoryReport", "CMNS"],
+    "edge": "submitted-to",
+    "target": ["RegulatoryAgency", "CMNS"],
+    "kind": "intra-domain gap (CMNS)",
+    "rationale": "A regulatory report is submitted to the regulatory agency that requires it. FIBO defines both RegulatoryReport and RegulatoryAgency in Commons but does not draw the edge from a report to the agency it is filed with.",
+    "citation": "General supervisory-reporting practice; e.g. HMDA filing to the CFPB, MiFID II reporting to national competent authorities"
+  },
+  {
+    "id": "regulatory-report-required-by-regulation",
+    "source": ["RegulatoryReport", "CMNS"],
+    "edge": "required-by",
+    "target": ["Regulation", "FND"],
+    "kind": "cross-domain (CMNS->FND)",
+    "rationale": "A regulatory report exists because a regulation mandates it. FIBO models RegulatoryReport (CMNS) and Regulation (FND) separately but leaves the report-to-mandating-regulation link implicit.",
+    "citation": "Reporting obligations arise from regulations, e.g. HMDA report required by Regulation C"
+  },
+  {
+    "id": "securities-trades-reporting-to-trade-reporting-facility",
+    "source": ["SecuritiesTradesReporting", "BP"],
+    "edge": "submitted-to",
+    "target": ["TradeReportingFacility", "FBC"],
+    "kind": "cross-domain (BP->FBC)",
+    "rationale": "Executed off-exchange securities trades are reported to a trade reporting facility. FIBO models the securities-trades-reporting process (BP) and the TradeReportingFacility (FBC) but does not connect the reporting activity to the facility it reports to.",
+    "citation": "FINRA Trade Reporting Facility rules; MiFID II APA reporting"
+  }
+]

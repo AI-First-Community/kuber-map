@@ -5,6 +5,8 @@ description: "regular or explicit (ad hoc) payment schedule associated with a gi
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LoanPaymentSchedule
 tags: [LOAN, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "Loan payment schedules may or may not be amortization schedules, i.e., they may or may not include principal."
 examples:
   - "A monthly amortization schedule of principal and interest over 360 months."

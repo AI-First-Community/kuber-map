@@ -4,6 +4,9 @@ title: "non-voting share"
 description: "share that has no voting right"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/NonVotingShare
 tags: [SEC, Release]
+core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "A Class C Alphabet share (GOOG), which carries no voting rights."
 examples_provenance: curated

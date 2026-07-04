@@ -4,6 +4,9 @@ title: "yield"
 description: "return on the investor's capital investment"
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/Yield
 tags: [FBC, Release]
+core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 detail: "A Yield must be based on a price, and must be in reference to some event or duration of time. It has a calculation method, and may have other qualifying terms such as for compounded yield. Yield reflects income over some period of time which is then annualized, and typically projected into the future, assuming that conditions and rates remain the same, whereas return on investment is retrospective."
 examples:
   - "A bond bought at US$950 that pays US$40 a year has roughly a 4.2% current yield."

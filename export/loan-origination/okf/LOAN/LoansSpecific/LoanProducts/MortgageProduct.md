@@ -6,6 +6,8 @@ definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/MortgageProduct
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "A loan product realized as a mortgage; conforming vs jumbo, fixed vs adjustable, and government-backed vs conventional are common distinctions."
 detail_provenance: curated
 examples:

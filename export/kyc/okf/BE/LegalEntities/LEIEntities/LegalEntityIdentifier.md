@@ -4,6 +4,13 @@ title: "legal entity identifier"
 description: "an organization identifier that uniquely identifies a legal person as defined in ISO 17442"
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier
 tags: [BE, Release]
+core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
+  - "Regulatory Reporting & Compliance (supervisory filing)"
+examples:
+  - "5493001KJTIIGC8Y1R12, the LEI used to identify a reporting entity (ISO 17442)."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/Organizations/OrganizationIdentifier.md", provenance: fibo}
   - {type: is-a, target: "/CMNS/RegistrationAuthorities/RegisteredIdentifier.md", provenance: fibo}

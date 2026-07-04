@@ -4,6 +4,9 @@ title: "share yield"
 description: "ratio of the annualized dividend per share divided by the (current) price per share"
 resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareYield
 tags: [SEC, Release]
+core: true
+use_cases:
+  - "Securities Instruments & Issuance (capital markets)"
 examples:
   - "A US$2 annual dividend on a US$50 share, a 4% dividend yield."
 examples_provenance: curated

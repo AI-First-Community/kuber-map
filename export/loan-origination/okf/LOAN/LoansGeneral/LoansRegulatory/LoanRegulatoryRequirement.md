@@ -5,10 +5,12 @@ description: "A regulatory requirement defined in regulations by a comsumer cred
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/LoanRegulatoryRequirement
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
+  - "Regulatory Reporting & Compliance (supervisory filing)"
 detail: "Presence of a loan regulatory requirement associated with a loan indicates that the loan is regulated by the UK Consumer credit act or the equivalent in continental Europe."
 examples:
-  - "Ability-to-Repay / Qualified Mortgage rules"
-  - "HMDA data collection"
+  - "The requirement that a covered lender report HMDA data on its mortgage originations."
 examples_provenance: curated
 relations:
   - {type: is-a, target: "/FND/Law/LegalCapacity/LegalObligation.md", provenance: fibo}

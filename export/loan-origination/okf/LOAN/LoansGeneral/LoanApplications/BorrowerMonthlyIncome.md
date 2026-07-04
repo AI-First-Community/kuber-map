@@ -5,6 +5,8 @@ description: "total monthly qualifying income of a potential borrower"
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/BorrowerMonthlyIncome
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "A key underwriting input; combined with monthly debt obligations it yields the debt-to-income ratio that drives the credit decision."
 detail_provenance: curated
 examples:

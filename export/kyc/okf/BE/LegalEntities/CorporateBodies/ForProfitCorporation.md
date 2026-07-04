@@ -4,6 +4,12 @@ title: "for profit corporation"
 description: "corporation whose objective is to make money, i.e., to ensure realization of a financial benefit such that the amount of revenue gained from a business activity exceeds the expenses, costs and taxes needed to sustain that activity"
 resource: https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/ForProfitCorporation
 tags: [BE, Release]
+core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "A privately held manufacturing company organized to earn profit for its shareholders."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/BE/LegalEntities/CorporateBodies/Corporation.md", provenance: fibo}
   - {type: has-objective, target: "/BE/LegalEntities/LegalPersons/ProfitObjective.md", provenance: fibo}

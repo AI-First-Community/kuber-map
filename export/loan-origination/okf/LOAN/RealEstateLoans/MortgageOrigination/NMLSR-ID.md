@@ -5,10 +5,13 @@ description: "the number permanently assigned by the Nationwide Mortgage Licensi
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/NMLSR-ID
 tags: [LOAN, Provisional]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
+  - "Regulatory Reporting & Compliance (supervisory filing)"
 detail: "The NMLS identifier uniquely identifies licensed mortgage companies and loan originators; it appears on loan documents to support accountability."
 detail_provenance: curated
 examples:
-  - "NMLS #1234567 assigned to a licensed mortgage loan originator."
+  - "The unique identifier a mortgage loan originator holds in the NMLS registry."
 examples_provenance: curated
 synonyms:
   - "NMLSR ID"

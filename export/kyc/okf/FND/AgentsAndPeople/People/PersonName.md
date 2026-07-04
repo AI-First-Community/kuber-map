@@ -4,6 +4,12 @@ title: "person name"
 description: "designation by which someone is known in some context"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/PersonName
 tags: [FND, Release]
+core: true
+use_cases:
+  - "KYC & Beneficial Ownership (entity resolution)"
+examples:
+  - "'Jane Elizabeth Doe', the legal name recorded on a customer's identity document."
+examples_provenance: curated
 relations:
   - {type: is-a, target: "/CMNS/ContextualDesignators/ContextualName.md", provenance: fibo}
   - {type: is-name-of, target: "/FND/AgentsAndPeople/People/Person.md", provenance: fibo}

@@ -5,6 +5,8 @@ description: "account associated with a service in which the account holder rece
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/LoanOrCreditAccount
 tags: [FBC, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "Note that this may be an internal account held on behalf of an institution or a customer account, such as a line of credit account associated with an internal line of business."
 examples:
   - "The servicing account tracking a mortgage's balance and payments."

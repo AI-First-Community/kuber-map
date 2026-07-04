@@ -5,6 +5,8 @@ description: "measure that is an amount of money specified in monetary units"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount
 tags: [FND, Release]
 core: true
+use_cases:
+  - "Loan Origination & Underwriting (residential mortgage)"
 detail: "A measured amount of money in a currency; the type used for principal, payments, income, and valuations throughout origination."
 detail_provenance: curated
 examples:

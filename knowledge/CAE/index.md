@@ -29,7 +29,7 @@
 - [corporate change of status event](CorporateEvents/SecurityRelatedCorporateActions/CorporateChangeOfStatusEvent.md) — Some change to the status of some security
 - [coupon strip](CorporateEvents/SecurityRelatedCorporateActions/CouponStrip.md) — Coupon stripping is the process whereby interest coupons for future payment dates are separated from the security corpus
 - [decrease in value action](CorporateEvents/SecurityRelatedCorporateActions/DecreaseInValueAction.md) — corporate action resulting in a reduction of face value of a share or the value of fund assets
-- [disclosure action](CorporateEvents/CorporateActions/DisclosureAction.md) — corporate action involving a request for holders or beneficial owners to disclose their name, location and holdings of a
+- core · [disclosure action](CorporateEvents/CorporateActions/DisclosureAction.md) — corporate action involving a request for holders or beneficial owners to disclose their name, location and holdings of a
 - [divestiture](CorporateEvents/CorporateActions/Divestiture.md) — corporate action involving the sales of subsidiary business interests or investments
 - [dividend option action](CorporateEvents/SecurityRelatedCorporateActions/DividendOptionAction.md) — corporate action that involves distribution of a dividend to shareholders with a choice of benefit to receive
 - [dividend reinvestment action](CorporateEvents/SecurityRelatedCorporateActions/DividendReinvestmentAction.md) — corporate action that involves a dividend payment whereby holders can keep cash or have the cash reinvested into additio
@@ -63,7 +63,7 @@
 - [put redemption action](CorporateEvents/SecurityRelatedCorporateActions/PutRedemptionAction.md) — corporate action involving early redemption of a security at the election of the holder subject to the terms and conditi
 - [redemption at maturity action](CorporateEvents/SecurityRelatedCorporateActions/RedemptionAtMaturityAction.md) — corporate action that involves redemption of an entire issue outstanding of securities at final maturity
 - [redenomination action](CorporateEvents/SecurityRelatedCorporateActions/RedenominationAction.md) — corporate action by which the unit (currency and/or nominal) of a security is restated
-- [regulatory action](CorporateEvents/CorporateActions/RegulatoryAction.md) — action initiated by a regulatory agency that affects a legal entity or the securities it issues and may have a material 
+- core · [regulatory action](CorporateEvents/CorporateActions/RegulatoryAction.md) — action initiated by a regulatory agency that affects a legal entity or the securities it issues and may have a material 
 - [repurchase offer](CorporateEvents/SecurityRelatedCorporateActions/RepurchaseOffer.md) — corporate action in which an offer is made to existing shareholders by the issuing company to repurchase equity or other
 - [reverse stock split](CorporateEvents/SecurityRelatedCorporateActions/ReverseStockSplit.md) — corporate action involving a decrease in a company's number of outstanding equities without any change in the shareholde
 - [rights exercise event](CorporateEvents/SecurityRelatedCorporateActions/RightsExerciseEvent.md) — Exercising the right to purchase the shares
