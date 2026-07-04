@@ -1,0 +1,18 @@
+---
+type: FIBO Class
+title: "preferred, voting, redeemable extendable, normal income, registered share"
+description: "preferred share that confers exactly one vote per share, whose issuer and/or shareholders have the option to extend the maturity date, that provides the same dividends as common/ordinary shareholders, and is registered"
+resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/PreferredVotingRedeemableExtendableNormalIncomeRegisteredShare
+tags: [SEC, Release]
+relations:
+  - {type: is-a, target: "/SEC/Equities/EquityInstruments/ExtendablePreferredShare.md", provenance: fibo}
+  - {type: is-a, target: "/SEC/Equities/EquityInstruments/SingleVotingShare.md", provenance: fibo}
+  - {type: is-a, target: "/SEC/Securities/SecuritiesListings/RegisteredSecurity.md", provenance: fibo}
+---
+
+preferred share that confers exactly one vote per share, whose issuer and/or shareholders have the option to extend the maturity date, that provides the same dividends as common/ordinary shareholders, and is registered
+
+### Relationships
+- is-a: [ExtendablePreferredShare](/SEC/Equities/EquityInstruments/ExtendablePreferredShare.md)
+- is-a: [SingleVotingShare](/SEC/Equities/EquityInstruments/SingleVotingShare.md)
+- is-a: [RegisteredSecurity](/SEC/Securities/SecuritiesListings/RegisteredSecurity.md)

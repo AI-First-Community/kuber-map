@@ -14,7 +14,7 @@ Last updated: 2026-07-04
 - ✅ FIBO→OKF pipeline: `etl/extract.py` (walks `owl:Restriction` blank nodes), `etl/to_okf.py`, `etl/validate.py`, `etl/fibo_ns.py`.
 - ✅ De-risking spike passed + ETL hardened (kebab edges, module-aware collision-free paths, namespace classification, maturity propagation). See `SPIKE_RESULTS.md`.
 - ✅ **Deterministic extraction** — `best_literal()` prefers en-US labels/definitions; stable relation order (is-a first, then typed). `make all` now reproduces the bundle byte-for-byte. Fixed `make setup` on fresh checkouts (setuptools flat-layout).
-- ✅ Domains **emitted** in the bundle: **FND, LOAN, FBC, BE** (~1,288 concepts). Default `DOMAINS = FND LOAN FBC BE` so the loan-origination core + bridge endpoints all resolve to real nodes.
+- ✅ **All ten FIBO domains emitted**: FND, LOAN, FBC, BE, SEC, DER, IND, MD, BP, CAE + Commons (CMNS) — **3,104 concepts, 6,676 typed relations, 68 sub-domain clusters**. `scripts/fetch_fibo.sh` sparse-checks out all ten; `DOMAINS`/`CLUSTERS` and `okf.config.js` cover every domain. The map now spans all of FIBO; the curated use-case cores stay the default lens.
 - ✅ Loan-Origination curation: **71 core concepts** (`curation/loan-origination.json`) + **4 validated cross-domain bridges** (`curation/bridges.json`, `knowledge/bridges/`). Tools: `etl/nominate_core.py`, `etl/bridges.py`.
 - ✅ **`core:` wired into the bundle** — `to_okf.py` stamps `core: true` on all 71 curated concepts (frontmatter + index markers); `make curate` = nominate + bridges + rebuild.
 - ✅ **Definition-rewrite overlay** — `curation/definitions.json` supplies learner-friendly definitions for the 7 core concepts FIBO ships with no `skos:definition` (each grounded in its FIBO superclass/axioms); `to_okf.py` applies them as `definition_provenance: curated`, keeps FIBO's `resource:` IRI, and refuses to overwrite any real FIBO definition.
@@ -71,7 +71,7 @@ Last updated: 2026-07-04
 - [ ] Regulatory-reporting use case (BE + FBC + MD) — needs MD domain
 
 ### E4 — Scale domains
-- [ ] Onboard SEC, DER, IND, MD, BP, CAE (per-domain recipe in PLAN §7)
+- [x] **Onboard SEC, DER, IND, MD, BP, CAE** — all six loaded alongside FND/LOAN/FBC/BE + CMNS. Full FIBO now emitted: 3,104 concepts / 6,676 edges / 68 sub-clusters, gate green. Pending (not-yet-loaded) edges fell ~580 → 217 (remaining targets are LCC).
 - [x] **Loaded Commons (CMNS)** — `scripts/fetch_commons.sh` fetches the 19 OMG Commons modules FIBO imports (content-negotiated RDF); `extract.py` loads them as CMNS. Resolved ~580 edges: pending links 693 → 114; graph now 1,440 nodes / 3,001 edges. (Commons isn't SHA-pinnable via OMG deref — a reproducibility caveat vs. the fibo pin.)
 - [ ] Per-domain `core:` sets + lateral bridges + `index.md`
 

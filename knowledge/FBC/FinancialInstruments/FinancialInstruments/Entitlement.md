@@ -9,9 +9,11 @@ synonyms:
   - "right"
 relations:
   - {type: is-a, target: "/FBC/FinancialInstruments/FinancialInstruments/FinancialInstrument.md", provenance: fibo}
+  - {type: is-issued-in-form, target: "/SEC/Securities/SecuritiesIssuance/SecurityForm.md", provenance: fibo}
 ---
 
 financial instrument that provides the holder an interest in, or the privilege to subscribe to, or to receive specific assets under terms specified
 
 ### Relationships
 - is-a: [FinancialInstrument](/FBC/FinancialInstruments/FinancialInstruments/FinancialInstrument.md)
+- is-issued-in-form: [SecurityForm](/SEC/Securities/SecuritiesIssuance/SecurityForm.md)

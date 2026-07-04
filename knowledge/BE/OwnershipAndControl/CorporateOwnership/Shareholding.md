@@ -7,9 +7,11 @@ tags: [BE, Release]
 detail: "Shareholding refers to the total ownership a party has in some organization, and determines voting power, dividend entitlement, and exposure to risk."
 relations:
   - {type: is-a, target: "/FND/Accounting/AccountingEquity/FinancialAsset.md", provenance: fibo}
+  - {type: is-played-by, target: "/SEC/Equities/EquityInstruments/Share.md", provenance: fibo}
 ---
 
 ownership interest in the equity of a company, represented by shares that confer financial rights and governance privileges
 
 ### Relationships
 - is-a: [FinancialAsset](/FND/Accounting/AccountingEquity/FinancialAsset.md)
+- is-played-by: [Share](/SEC/Equities/EquityInstruments/Share.md)

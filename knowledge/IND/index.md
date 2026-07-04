@@ -1,0 +1,122 @@
+# IND
+
+- [American statistics publisher](EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/AmericanStatisticsPublisher.md) — statistical information publisher comprised of the government agencies and departments that publish statistical informat
+- [Canadian consumer price index](EconomicIndicators/NorthAmericanIndicators/CAEconomicIndicators/CanadianConsumerPriceIndex.md) — economic indicator representing a measure of changes over time in the prices of a fixed basket of consumer goods and ser
+- [Canadian households consumers universe](EconomicIndicators/NorthAmericanIndicators/CAEconomicIndicators/CanadianHouseholdsConsumersUniverse.md) — a statistical universe consisting of all private households in Canada, with the exception of soldiers on military bases,
+- [Canadian producer price index](EconomicIndicators/NorthAmericanIndicators/CAEconomicIndicators/CanadianProducerPriceIndex.md) — an economic indicator representing a measure of the change over time in the prices of a fixed-basket of domestic produce
+- [U.S. producer price index](EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/USProducerPriceIndex.md) — an economic indicator representing a measure of the change over time in the selling prices received by domestic producer
+- [average daily earnings](EconomicIndicators/EconomicIndicators/AverageDailyEarnings.md) — measure of the average daily wage an employee makes over the reporting period
+- [average earnings](EconomicIndicators/EconomicIndicators/AverageEarnings.md) — measure of the average wage an hourly or salaried worker makes in a given period of time
+- [average hourly earnings](EconomicIndicators/EconomicIndicators/AverageHourlyEarnings.md) — measure of the average hourly wage an employee makes over the reporting period
+- [average monthly earnings](EconomicIndicators/EconomicIndicators/AverageMonthlyEarnings.md) — measure of the average monthly wage an employee makes over the reporting period
+- [average weekly earnings](EconomicIndicators/EconomicIndicators/AverageWeeklyEarnings.md) — measure of the average weekly wage an employee makes over the reporting period
+- [base rate](InterestRates/InterestRates/BaseRate.md) — basic rate of interest on which the actual rate a bank charges on loans to its customers is calculated
+- [basket of credit risks](MarketIndices/BasketIndices/BasketOfCreditRisks.md) — basket of instruments, legal entities, or a combination thereof collected for the purpose of analyzing risk
+- [basket of equities](MarketIndices/BasketIndices/BasketOfEquities.md) — basket of securities whose constituents are listed shares
+- [capital productivity, based on value added](EconomicIndicators/EconomicIndicators/CapitalProductivityValueAdded.md) — ratio of a quantity index of value added to a quantity index of capital input
+- [capital-labor multifactor productivity (MFP), based on value added](EconomicIndicators/EconomicIndicators/CapitalLaborMultifactorProductivityValueAdded.md) — ratio of a quantity index of value added to a quantity index of combined labor and capital input
+- [capital-labor-energy-materials multifactor productivity](EconomicIndicators/EconomicIndicators/CapitalLaborEnergyMaterialsMultifactorProductivity.md) — ratio of a quantity index of gross output to a quantity index of combined inputs
+- [capitalization-based weighting function](MarketIndices/BasketIndices/CapitalizationBasedWeightingFunction.md) — weighting function derived from the relative market capitalization (share price times the number of shares outstanding) 
+- [civilian](EconomicIndicators/EconomicIndicators/Civilian.md) — person that is not a member of the military (i
+- [civilian labor force](EconomicIndicators/EconomicIndicators/CivilianLaborForce.md) — subset of the civilian, non-institutional population considered to be part of the labor force during a given reporting p
+- [civilian labor force participation rate](EconomicIndicators/EconomicIndicators/CivilianLaborForceParticipationRate.md) — economic indicator representing the rate of participation the labor force of a given economy for some specified period
+- [civilian non-institutional person](EconomicIndicators/EconomicIndicators/CivilianNonInstitutionalPerson.md) — legal working-age person that does not live in an institution (for example, a correctional facility, long-term care hosp
+- [civilian non-institutional population](EconomicIndicators/EconomicIndicators/CivilianNonInstitutionalPopulation.md) — statistical universe consisting of people of a certain age who reside in a given region, do not live in institutions (fo
+- [combined statistical area](EconomicIndicators/EconomicIndicators/CombinedStatisticalArea.md) — combination of adjacent metropolitan and micropolitan areas with economic ties measured by commuting patterns
+- [consumer expenditure survey](EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/ConsumerExpenditureSurvey.md) — statistical program conducted on a regular basis that provides information on the buying habits of consumers, including 
+- [consumer price index](EconomicIndicators/EconomicIndicators/ConsumerPriceIndex.md) — economic indicator representing measure of the change over time in the prices of consumer goods and services that househ
+- [credit index](MarketIndices/BasketIndices/CreditIndex.md) — reference index that is a function of credit events that change the value of an underlying portfolio
+- [credit index constituent](MarketIndices/BasketIndices/CreditIndexConstituent.md) — constituent of a basket of credit risks
+- [currency conversion service](ForeignExchange/ForeignExchange/CurrencyConversionService.md) — foreign exchange service involving the conversion of currency of one country or group of countries for another, typicall
+- [currency forward rate](ForeignExchange/ForeignExchange/CurrencyForwardRate.md) — rate of exchange between two currencies for settlement at some future point in time, expressed as a premium on the spot 
+- [currency forward rate volatility](ForeignExchange/ForeignExchange/CurrencyForwardRateVolatility.md) — measure of exchange rate fluctuation based on a range of projected values for exchange rates
+- [currency spot buy rate](ForeignExchange/ForeignExchange/CurrencySpotBuyRate.md) — indicative spot buying market rate as observed by the reporting source
+- [currency spot mid rate](ForeignExchange/ForeignExchange/CurrencySpotMidRate.md) — indicative middle market (mean of spot buying and selling) rate as observed by the reporting source
+- [currency spot rate](ForeignExchange/ForeignExchange/CurrencySpotRate.md) — rate at which one currency may be exchanged for another for immediate delivery
+- [currency spot sell rate](ForeignExchange/ForeignExchange/CurrencySpotSellRate.md) — indicative spot selling market rate as observed by the reporting source
+- [currency spot volatility](ForeignExchange/ForeignExchange/CurrencySpotVolatility.md) — measure of exchange rate fluctuation based on a range of past actual values for exchange rates
+- [current employment statistics](EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/CurrentEmploymentStatistics.md) — survey conducted on a regular basis that presents analytical information related to businesses and government agencies, 
+- [current population survey](EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/CurrentPopulationSurvey.md) — survey conducted on a regular basis that presents analytical information related to the general population of a given st
+- [daily average market rate](Indicators/Indicators/DailyAverageMarketRate.md) — overall level of a given rate, calculated as the sum of some selected observed values of the rates for a particular refe
+- [discouraged worker population](EconomicIndicators/EconomicIndicators/DiscouragedWorkerPopulation.md) — subset of the marginally attached population that have given a job-market related reason for not currently looking for w
+- [economic indicator](EconomicIndicators/EconomicIndicators/EconomicIndicator.md) — statistical measure of economic activity that is regular and comparable in the context of a statistical area (region), u
+- [employed population](EconomicIndicators/EconomicIndicators/EmployedPopulation.md) — subset of the civilian labor force considered to be employed during the reporting period
+- [employed population part-time](EconomicIndicators/EconomicIndicators/EmployedPopulationPartTime.md) — subset of the employed population that includes persons that are working fewer than 30 to 35 hours per week based on usu
+- [employed population part-time for economic reasons](EconomicIndicators/EconomicIndicators/EmployedPopulationPartTimeForEconomicReasons.md) — subset of the employed population that includes persons that are working fewer than 30 to 35 hours per week due to slack
+- [employed population part-time for non-economic reasons](EconomicIndicators/EconomicIndicators/EmployedPopulationPartTimeForNonEconomicReasons.md) — subset of the employed population that includes persons that are working fewer than 30 to 35 hours per week due to illne
+- [employed population temporarily not at work](EconomicIndicators/EconomicIndicators/EmployedPopulationTemporarilyNotAtWork.md) — subset of the employed population that includes persons that are temporarily absent from work for various reasons
+- [employment situation establishment survey](EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/EmploymentSituationEstablishmentSurvey.md) — survey conducted on a regular basis that presents analytical information related to the labor force of a given statistic
+- [employment situation household survey](EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/EmploymentSituationHouseholdSurvey.md) — a survey conducted on a regular basis that presents analytical information related to the labor force of a given statist
+- [employment situation survey](EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/EmploymentSituationSurvey.md) — a survey conducted on a regular basis that presents analytical information focused on the employment characteristics of 
+- [employment-population ratio](EconomicIndicators/EconomicIndicators/EmploymentPopulationRatio.md) — economic indicator representing the ratio of the employed population with respect to the overall civilian non-institutio
+- [end-of-day market rate](Indicators/Indicators/EndOfDayMarketRate.md) — value of a given market rate of the end of the business day for a specific date
+- [enterprise](EconomicIndicators/EconomicIndicators/Enterprise.md) — functional business entity that produces and/or sells goods or services
+- [enterprise population](EconomicIndicators/EconomicIndicators/EnterprisePopulation.md) — statistical universe consisting of enterprises designed for the purposes of supporting surveys such as those used as the
+- [equity index](MarketIndices/BasketIndices/EquityIndex.md) — benchmark whose constituents are exclusively equity instruments
+- [establishment](EconomicIndicators/EconomicIndicators/Establishment.md) — an enterprise (or part of an enterprise) that operates from a single physical location
+- [establishment employment](EconomicIndicators/EconomicIndicators/EstablishmentEmployment.md) — economic indicator representing the total number of persons who work in or for the establishment including working propr
+- [establishment population](EconomicIndicators/EconomicIndicators/EstablishmentPopulation.md) — a subset of the enterprise population focused on establishments
+- [exchange rate structure](ForeignExchange/ForeignExchange/ExchangeRateStructure.md) — structured collection of quoted or projected exchange rates, such that volatility may be constructed for the structure
+- [exchange rate volatility](ForeignExchange/ForeignExchange/ExchangeRateVolatility.md) — statistical measure of the rate of change in the rate at which one currency can be exchanged for another
+- [fixed basket](EconomicIndicators/EconomicIndicators/FixedBasket.md) — basket of goods and services whose quantity and quality are held fixed for some period of time
+- [fixed basket constituent](EconomicIndicators/EconomicIndicators/FixedBasketConstituent.md) — component of a fixed basket
+- [fixed basket population](EconomicIndicators/EconomicIndicators/FixedBasketPopulation.md) — statistical universe consisting of specific goods and/or services designed for the purposes of supporting surveys such a
+- [foreign exchange service](ForeignExchange/ForeignExchange/ForeignExchangeService.md) — financial service involving the exchange of one currency for another, conversion of one currency for another, and transf
+- [government-specified statistical area](EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea.md) — statistical area defined by a government agency
+- [gross domestic product](EconomicIndicators/EconomicIndicators/GrossDomesticProduct.md) — economic indicator representing the broadest measure of aggregate economic activity, measuring the total unduplicated ma
+- [historical price volatility](Indicators/Indicators/HistoricalPriceVolatility.md) — historical volatility measure of past trading ranges of prices of underlying securities and indexes
+- [historical volatility](Indicators/Indicators/HistoricalVolatility.md) — measure of volatility that uses actual values for pricing, rates, and other measurements calculated over some prior peri
+- [household](EconomicIndicators/EconomicIndicators/Household.md) — individual or small group of persons who occupy a housing unit (such as a house or apartment) as their usual place of re
+- [housing unit](EconomicIndicators/EconomicIndicators/HousingUnit.md) — house, an apartment, a mobile home or trailer, a group of rooms, or a single room occupied as separate living quarters, 
+- [implied price volatility](Indicators/Indicators/ImpliedPriceVolatility.md) — measure of volatility that represents the expected fluctuations of an underlying stock or index over a specific time fra
+- [implied volatility](Indicators/Indicators/ImpliedVolatility.md) — measure of volatility that is a forward-looking metric used to calculate probability
+- [industrial products sector](EconomicIndicators/NorthAmericanIndicators/CAEconomicIndicators/IndustrialProductsSector.md) — a classifier for a sector of the economy used for price indices focused on major commodities sold by manufacturers in Ca
+- [inflation rate](EconomicIndicators/EconomicIndicators/InflationRate.md) — economic indicator representing a change in prices of goods and services for a specified period, for a given statistical
+- [input producer price index](EconomicIndicators/EconomicIndicators/InputProducerPriceIndex.md) — economic indicator representing measure of the rate of change over time in the prices of inputs of goods and services pu
+- [institutional person](EconomicIndicators/EconomicIndicators/InstitutionalPerson.md) — person that resides in an institution for some reason, due, for example, to hospitalization, rehabilitation, or incarcer
+- [institutional unit](EconomicIndicators/EconomicIndicators/InstitutionalUnit.md) — party that is capable, in its own right, of owning assets, incurring liabilities, and engaging in economic activities an
+- [interbank bid rate](InterestRates/InterestRates/InterbankBidRate.md) — interbank rate that is the interest rate at which participating banks are willing to borrow deposits from other banks
+- [interbank mid rate](InterestRates/InterestRates/InterbankMidRate.md) — interbank rate that represents the mid-point between bid and offer rates
+- [interbank offered rate](InterestRates/InterestRates/InterbankOfferedRate.md) — interbank rate that is the interest rate at which participating banks lend money
+- [interbank rate](InterestRates/InterestRates/InterbankRate.md) — reference rate that is the rate of interest charged on short-term loans between banks
+- [interest rate authority](InterestRates/InterestRates/InterestRateAuthority.md) — financial service provider/publisher responsible for specifying some benchmark interest rate
+- [interest rate benchmark](InterestRates/InterestRates/InterestRateBenchmark.md) — classifier for regularly updated interest rates that are publicly accessible, typically set by a central bank or group o
+- [interest rate benchmark classification scheme](InterestRates/InterestRates/InterestRateBenchmarkClassificationScheme.md) — scheme for classifying interest rate benchmarks, such as the FpML classification scheme
+- [international electronic funds transfer service](ForeignExchange/ForeignExchange/InternationalElectronicFundsTransferService.md) — electronic funds transfer (EFT) service involving the transfer of funds across national borders, that may also involve c
+- [labor productivity, based on gross output](EconomicIndicators/EconomicIndicators/LaborProductivityGrossOutput.md) — ratio of a quantity index of gross output to a quantity index of labor input
+- [labor productivity, based on value added](EconomicIndicators/EconomicIndicators/LaborProductivityValueAdded.md) — ratio of a quantity index of value added to a quantity index of labor input
+- [marginally attached population](EconomicIndicators/EconomicIndicators/MarginallyAttachedPopulation.md) — subset of the population that includes people who currently are neither working nor looking for work but indicate that t
+- [market capitalization](MarketIndices/BasketIndices/MarketCapitalization.md) — expression representing the perceived value of a company as determined by the stock market at a specific point in time
+- [market rate](Indicators/Indicators/MarketRate.md) — value of a rate established in the marketplace for a set of instruments or that describes the economic climate for an in
+- [market spread](Indicators/Indicators/MarketSpread.md) — statistical measure providing the difference (or spread) between two market rates
+- [metropolitan statistical area](EconomicIndicators/EconomicIndicators/MetropolitanStatisticalArea.md) — one or more adjacent counties or county equivalents that have at least one urban core area of at least 50,000 population
+- [micropolitan statistical area](EconomicIndicators/EconomicIndicators/MicropolitanStatisticalArea.md) — one or more adjacent counties or county equivalents that have at least one urban core area of at least 10,000 population
+- [military person](EconomicIndicators/EconomicIndicators/MilitaryPerson.md) — person that is a member of the active duty military
+- [new housing sector](EconomicIndicators/NorthAmericanIndicators/CAEconomicIndicators/NewHousingSector.md) — a classifier for a sector of the economy used for price indices focused on contractors' selling prices of new residentia
+- [output producer price index](EconomicIndicators/EconomicIndicators/OutputProducerPriceIndex.md) — economic indicator representing measure of the rate of change over time in the prices of products sold as they leave the
+- [overnight rate](InterestRates/InterestRates/OvernightRate.md) — reference rate that is an interest rate at which a depository institution lends funds to another depository institution 
+- [personal consumption expenditures](EconomicIndicators/EconomicIndicators/PersonalConsumptionExpenditures.md) — economic indicator representing measure of the value of the goods and services purchased by, or on the behalf of, 'perso
+- [point of purchase survey](EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/PointOfPurchaseSurvey.md) — a program conducted on a regular basis that provides information on purchases of various items and services by consumers
+- [population not in the labor force](EconomicIndicators/EconomicIndicators/PopulationNotInLaborForce.md) — subset of the civilian, noninstitutional population, that is considered neither employed nor unemployed by the reporting
+- [price structure](Indicators/Indicators/PriceStructure.md) — structured collection of prices, such as market prices for some index or security, such that volatility or other analyse
+- [price volatility](Indicators/Indicators/PriceVolatility.md) — statistical measure of the rate of change in pricing for a given security or market index
+- [producer price index](EconomicIndicators/EconomicIndicators/ProducerPriceIndex.md) — economic indicator representing measure of the rate of change over time in the prices of goods and services bought and s
+- [productivity](EconomicIndicators/EconomicIndicators/Productivity.md) — economic indicator representing ratio of a volume measure of output to a volume measure of input use
+- [quoted exchange rate](ForeignExchange/ForeignExchange/QuotedExchangeRate.md) — exchange rate quoted at a specific point in time, for a given block amount of currency as quoted against another (base) 
+- [quoted price](Indicators/Indicators/QuotedPrice.md) — a monetary price quoted by some publisher on a given date
+- [raw materials sector](EconomicIndicators/NorthAmericanIndicators/CAEconomicIndicators/RawMaterialsSector.md) — a classifier used for price indices related to raw materials purchased by industries in Canada for further processing
+- [reference index](MarketIndices/BasketIndices/ReferenceIndex.md) — measure of change in the value of the contents of a basket over a given period of time
+- [reference interest rate](InterestRates/InterestRates/ReferenceInterestRate.md) — market rate that is a rate of interest paid by or agreed among some bank or set of banks
+- [specific-provider interest rate benchmark](InterestRates/InterestRates/SpecificProviderInterestRateBenchmark.md) — interest rate benchmark that is made available by a specific market data provider for reference purposes
+- [statistical information publisher](EconomicIndicators/EconomicIndicators/StatisticalInformationPublisher.md) — publisher that packages and makes analytical and statistical data available
+- [term structure](Indicators/Indicators/TermStructure.md) — structured collection of rates, such as interest rates, or bond yields with different terms to maturity, such that a yie
+- [ultimate consumer](EconomicIndicators/EconomicIndicators/UltimateConsumer.md) — person that is the ultimate user of a good, product or service
+- [underemployed population](EconomicIndicators/EconomicIndicators/UnderemployedPopulation.md) — subset of the employed population that includes persons employed part-time for economic reasons, who want and are availa
+- [underemployed population with respect to occupation](EconomicIndicators/EconomicIndicators/UnderemployedPopulationWithRespectToOccupation.md) — subset of the underemployed population that includes persons employed in a role that does not reflect their training and
+- [underutilized population](EconomicIndicators/EconomicIndicators/UnderutilizedPopulation.md) — subset of the civilian non-institutional population that includes persons employed part-time for economic reasons, perso
+- [unemployed population](EconomicIndicators/EconomicIndicators/UnemployedPopulation.md) — subset of the civilian labor force that is considered to have had no employment but was available for work, except for t
+- [unemployment rate](EconomicIndicators/EconomicIndicators/UnemploymentRate.md) — economic indicator representing the ratio of the unemployed population with respect to the civilian labor force of a giv
+- [urban consumer price index](EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/UrbanConsumerPriceIndex.md) — an economic indicator representing a measure of the average change over time in the prices paid by urban consumers for a
+- [urban consumers universe](EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/UrbanConsumersUniverse.md) — a statistical universe for consumer expenditure surveys consisting of people within a household that make joint expendit
+- [value-added producer price index](EconomicIndicators/EconomicIndicators/ValueAddedProducerPriceIndex.md) — economic indicator representing a weighted average of the input and output producer price indices
+- [volatility](Indicators/Indicators/Volatility.md) — statistical measure of the dispersion around the average of some random variable over some period of time

@@ -26,15 +26,22 @@
   // shades of the domain hue — so the canvas shows per-sub-domain hulls and the left legend
   // groups them under the domain. `order` fixes the legend group order.
   const DOMAINS = {
-    LOAN: { label: 'Loans',               color: '#10b981', order: 1 },
-    FBC:  { label: 'Business & Commerce', color: '#f59e0b', order: 2 },
-    FND:  { label: 'Foundations',         color: '#3b82f6', order: 3 },
-    BE:   { label: 'Business Entities',   color: '#8b5cf6', order: 4 },
-    CMNS: { label: 'Commons (shared)',    color: '#64748b', order: 5 },   // FIBO upper ontology
+    LOAN: { label: 'Loans',                color: '#10b981', order: 1 },
+    FBC:  { label: 'Business & Commerce',  color: '#f59e0b', order: 2 },
+    FND:  { label: 'Foundations',          color: '#3b82f6', order: 3 },
+    BE:   { label: 'Business Entities',    color: '#8b5cf6', order: 4 },
+    SEC:  { label: 'Securities',           color: '#ec4899', order: 5 },
+    DER:  { label: 'Derivatives',          color: '#ef4444', order: 6 },
+    IND:  { label: 'Indices & Indicators', color: '#14b8a6', order: 7 },
+    MD:   { label: 'Market Data',          color: '#84cc16', order: 8 },
+    BP:   { label: 'Business Process',     color: '#fb923c', order: 9 },
+    CAE:  { label: 'Corporate Actions',    color: '#d946ef', order: 10 },
+    CMNS: { label: 'Commons (shared)',     color: '#64748b', order: 11 },  // FIBO upper ontology
   };
 
   const CLUSTER_TYPE = { LOAN: 'FIBO Class', FBC: 'FIBO Class', FND: 'FIBO Class', BE: 'FIBO Class',
-                         CMNS: 'Commons Class' };
+                         SEC: 'FIBO Class', DER: 'FIBO Class', IND: 'FIBO Class', MD: 'FIBO Class',
+                         BP: 'FIBO Class', CAE: 'FIBO Class', CMNS: 'Commons Class' };
 
   // FIBO maturity, propagated per class — reused as Bodhi's "level" filter dimension.
   const LEVELS = { 1: 'Release', 2: 'Provisional', 3: 'Informative' };

@@ -9,9 +9,11 @@ examples:
   - "Certain revolving credit, such as credit-card related debt, may adjust after a specified period of time to an absolute rate stated in the agreement (variable but not floating) rather than based on a benchmark rate (variable, floating)."
 relations:
   - {type: is-a, target: "/FBC/DebtAndEquities/Debt/VariableInterestRate.md", provenance: fibo}
+  - {type: is-based-on, target: "/IND/InterestRates/InterestRates/ReferenceInterestRate.md", provenance: fibo}
 ---
 
 variable interest rate that is based on a specific index or benchmark rate
 
 ### Relationships
 - is-a: [VariableInterestRate](/FBC/DebtAndEquities/Debt/VariableInterestRate.md)
+- is-based-on: [ReferenceInterestRate](/IND/InterestRates/InterestRates/ReferenceInterestRate.md)

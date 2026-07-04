@@ -1,0 +1,22 @@
+---
+type: FIBO Class
+title: "preferred, voting, redeemable/exchangeable/extendable, normal income, registered share"
+description: "preferred share that confers exactly one vote per share, may be exchanged for securities of another issuer, whose issuer and/or shareholders have the option to extend the maturity date, that provides the same dividends as common/ordinary shareholders, and is registered"
+resource: https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/PreferredVotingRedeemableExchangeableExtendableNormalIncomeRegisteredShare
+tags: [SEC, Release]
+relations:
+  - {type: is-a, target: "/SEC/Equities/EquityInstruments/ExchangeablePreferredShare.md", provenance: fibo}
+  - {type: is-a, target: "/SEC/Equities/EquityInstruments/ExtendablePreferredShare.md", provenance: fibo}
+  - {type: is-a, target: "/SEC/Equities/EquityInstruments/NonCumulativePreferredShare.md", provenance: fibo}
+  - {type: is-a, target: "/SEC/Equities/EquityInstruments/SingleVotingShare.md", provenance: fibo}
+  - {type: is-a, target: "/SEC/Securities/SecuritiesListings/RegisteredSecurity.md", provenance: fibo}
+---
+
+preferred share that confers exactly one vote per share, may be exchanged for securities of another issuer, whose issuer and/or shareholders have the option to extend the maturity date, that provides the same dividends as common/ordinary shareholders, and is registered
+
+### Relationships
+- is-a: [ExchangeablePreferredShare](/SEC/Equities/EquityInstruments/ExchangeablePreferredShare.md)
+- is-a: [ExtendablePreferredShare](/SEC/Equities/EquityInstruments/ExtendablePreferredShare.md)
+- is-a: [NonCumulativePreferredShare](/SEC/Equities/EquityInstruments/NonCumulativePreferredShare.md)
+- is-a: [SingleVotingShare](/SEC/Equities/EquityInstruments/SingleVotingShare.md)
+- is-a: [RegisteredSecurity](/SEC/Securities/SecuritiesListings/RegisteredSecurity.md)

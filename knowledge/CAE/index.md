@@ -1,0 +1,80 @@
+# CAE
+
+- [action](CorporateEvents/CorporateActions/Action.md) — event announced, initiated or carried out by an organization that affects a legal entity or the securities it issues and
+- [action classification scheme](CorporateEvents/CorporateActions/ActionClassificationScheme.md) — scheme for classifying the kinds of actions and events that may be announced, initiated or carried out by an organizatio
+- [action classifier](CorporateEvents/CorporateActions/ActionClassifier.md) — classifier that distinguishes the kinds of actions and events that may be announced, initiated or carried out by an orga
+- [action group](CorporateEvents/GLEIF-CorporateActionIndividuals/ActionGroup.md) — classifier that differentiates corporate actions based on a GLEIF specific grouping
+- [action status](CorporateEvents/CorporateActions/ActionStatus.md) — state of some action at some point in time
+- [bond default event](CorporateEvents/SecurityRelatedCorporateActions/BondDefaultAction.md) — corporate action which indicates a failure by the issuer to perform obligations defined as default events under the bond
+- [bonus issue](CorporateEvents/SecurityRelatedCorporateActions/BonusIssue.md) — corporate action in which security holders are awarded additional assets free of payment from the issuer in proportion t
+- [bonus rights issue](CorporateEvents/SecurityRelatedCorporateActions/BonusRightsIssue.md) — A Rights Issue in which the rights are given to the holders of the referenced shares for free
+- [bonus share plan distribution](CorporateEvents/SecurityRelatedCorporateActions/BonusSharePlanDistribution.md) — Event in which shares are issued from the Share Premium Reserve of the company and are considered as a capital distribut
+- [business strategy classifier](CorporateEvents/CorporateActions/BusinessStrategyClassifier.md) — classifier of corporate actions that involve improving liquidity or changing the overall structure of the organization t
+- [call on intermediate securities](CorporateEvents/SecurityRelatedCorporateActions/CallOnIntermediateSecurities.md) — corporate action that involves a call or exercise on nil paid securities or intermediate securities resulting from an in
+- [cancellation of shares](CorporateEvents/SecurityRelatedCorporateActions/CancellationOfShares.md) — The cancellation of shares
+- [capital distribution](CorporateEvents/SecurityRelatedCorporateActions/CapitalDistribution.md) — corporate action that pays shareholders an amount in cash issued from the issuer's capital account
+- [capital gains distribution](CorporateEvents/SecurityRelatedCorporateActions/CapitalGainsDistribution.md) — corporate action that distributes profits resulting from the sale of company assets to shareholders
+- [cash dividend action](CorporateEvents/SecurityRelatedCorporateActions/CashDividendAction.md) — corporate action that distributes cash to shareholders in proportion to their equity holding
+- [change action](CorporateEvents/CorporateActions/ChangeAction.md) — corporate action to disseminate information regarding a change further described in the corporate action details
+- [change of security trading status event](CorporateEvents/SecurityRelatedCorporateActions/ChangeOfSecurityTradingStatusEvent.md) — An event in which the trading status of a tradable security changes
+- [change to smallest negotiable unit](CorporateEvents/SecurityRelatedCorporateActions/ChangeToSmallestNegotiableUnit.md) — Modification of the smallest negotiable unit of shares in order to obtain a new negotiable unit
+- [class action](CorporateEvents/CorporateActions/ClassAction.md) — corporate action involving a situation where interested parties seek restitution for financial loss
+- [consent solicitation](CorporateEvents/CorporateActions/ConsentSolicitation.md) — corporate action that is a procedure that aims to obtain consent of holder to a proposal by the issuer or a third party 
+- [conversion action](CorporateEvents/SecurityRelatedCorporateActions/ConversionAction.md) — corporate action involving conversion of securities (generally convertible bonds or preferred shares) into another form 
+- [conversion suspension action](CorporateEvents/SecurityRelatedCorporateActions/ConversionSuspensionAction.md) — Suspension of conversion of securities, generally a couple of weeks before a meeting takes place
+- [corporate action](CorporateEvents/CorporateActions/CorporateAction.md) — action carried out by or specifically relating to a legal entity that may affect the securities it issues and may have a
+- [corporate action obligation](CorporateEvents/SecurityRelatedCorporateActions/CorporateActionObligation.md) — An obligation related to the holding of a Security
+- [corporate action payment obligation](CorporateEvents/SecurityRelatedCorporateActions/CorporateActionPaymentObligation.md) — 
+- [corporate action securities delivery obligation](CorporateEvents/SecurityRelatedCorporateActions/CorporateActionSecuritiesDeliveryObligation.md) — Some obligation to deliver some security in the thr context of corporate actions
+- [corporate change of status event](CorporateEvents/SecurityRelatedCorporateActions/CorporateChangeOfStatusEvent.md) — Some change to the status of some security
+- [coupon strip](CorporateEvents/SecurityRelatedCorporateActions/CouponStrip.md) — Coupon stripping is the process whereby interest coupons for future payment dates are separated from the security corpus
+- [decrease in value action](CorporateEvents/SecurityRelatedCorporateActions/DecreaseInValueAction.md) — corporate action resulting in a reduction of face value of a share or the value of fund assets
+- [disclosure action](CorporateEvents/CorporateActions/DisclosureAction.md) — corporate action involving a request for holders or beneficial owners to disclose their name, location and holdings of a
+- [divestiture](CorporateEvents/CorporateActions/Divestiture.md) — corporate action involving the sales of subsidiary business interests or investments
+- [dividend option action](CorporateEvents/SecurityRelatedCorporateActions/DividendOptionAction.md) — corporate action that involves distribution of a dividend to shareholders with a choice of benefit to receive
+- [dividend reinvestment action](CorporateEvents/SecurityRelatedCorporateActions/DividendReinvestmentAction.md) — corporate action that involves a dividend payment whereby holders can keep cash or have the cash reinvested into additio
+- [drawing](CorporateEvents/SecurityRelatedCorporateActions/Drawing.md) — Redemption in part before the scheduled final maturity date of a security
+- [dutch auction](CorporateEvents/SecurityRelatedCorporateActions/DutchAuction.md) — corporate action by a party wishing to acquire a security
+- [exchange action](CorporateEvents/SecurityRelatedCorporateActions/ExchangeAction.md) — corporate action that reflects an exchange of holdings for other securities and/or cash
+- [formal offer](CorporateEvents/SecurityRelatedCorporateActions/FormalOffer.md) — corporate action involving an offer to a holder, potential holder, or other intersted party, to enter into a trade which
+- [full call early redemption action](CorporateEvents/SecurityRelatedCorporateActions/FullCallEarlyRedemptionAction.md) — corporate action that involves redemption of an entire issue outstanding of securities prior to maturity
+- [income-oriented classifier](CorporateEvents/CorporateActions/IncomeOrientedClassifier.md) — classifier of corporate actions that impacts income to shareholders
+- [interest payment action](CorporateEvents/SecurityRelatedCorporateActions/InterestPaymentAction.md) — corporate action that involves distribution of a regular interest payment to holders of an interest-bearing asset
+- [interest payment in kind](CorporateEvents/SecurityRelatedCorporateActions/InterestPaymentInKind.md) — Interest payment, in any kind except cash, distributed to holders of an interest bearing asset
+- [interest payment with principal](CorporateEvents/SecurityRelatedCorporateActions/InterestPaymentWithPrincipal.md) — A payment of a portion of the principal of an interest bearing asset, in addition to the interest payment
+- [interest rate adjustment](CorporateEvents/SecurityRelatedCorporateActions/InterestRateAdjustment.md) — Scheduled change to the coupon rate for a floating or adjustable rate security
+- [intermediate securities distribution](CorporateEvents/SecurityRelatedCorporateActions/IntermediateSecuritiesDistribution.md) — corporate action involving the distribution of intermediate securities or privilege that gives the holder the right to t
+- [legal form change](CorporateEvents/CorporateActions/LegalFormChange.md) — corporate action indicating a modification of the legal form of the organization
+- [liquidation](CorporateEvents/CorporateActions/Liquidation.md) — corporate action related to winding up a business, including but not limited to distribution of cash, assets, or both
+- [listing status delisting message](CorporateEvents/SecurityRelatedCorporateActions/ListingStatusDelistingMessage.md) — Security is no longer able to comply with the listing requirements of a stock exchange and is removed from official boar
+- [mandatory corporate action](CorporateEvents/CorporateActions/MandatoryCorporateAction.md) — action initiated by the board of directors of a corporation that affects all shareholders
+- [mandatory with choice corporate action](CorporateEvents/CorporateActions/MandatoryWithChoiceCorporateAction.md) — mandatory corporate action where shareholders are given an opportunity to choose among several options
+- [market action](CorporateEvents/CorporateActions/MarketAction.md) — action that is initiated by a market, such as a securities exchange, that affects a legal entity or the securities it is
+- [merger / acquisition](CorporateEvents/CorporateActions/MergerAcquisition.md) — corporate action involving the consolidation of legal entities or assets
+- [notification](CorporateEvents/CorporateActions/Notification.md) — corporate action involving information provided by the issuer having no accounting/financial impact on the holder
+- [odd lot offer](CorporateEvents/SecurityRelatedCorporateActions/OddLotOffer.md) — Offer by issuer to allow holders of an odd lot of a security to order a commission-free transaction at market price, to 
+- [organization address change](CorporateEvents/CorporateActions/OrganizationAddressChange.md) — information action that provides details of address changes for a legal entity
+- [organization name change](CorporateEvents/CorporateActions/OrganizationNameChange.md) — information action that provides details of name changes for a legal entity
+- [pari-passu action](CorporateEvents/SecurityRelatedCorporateActions/PariPassuAction.md) — corporate action that occurs when securities with different characteristics become identical in all respects
+- [partial redemption with reduction of nominal value action](CorporateEvents/SecurityRelatedCorporateActions/PartialRedemptionWithReductionOfNominalValueAction.md) — corporate action that involves redemption of securities in part before their scheduled final maturity date with reductio
+- [partial redemption without reduction of nominal value action](CorporateEvents/SecurityRelatedCorporateActions/PartialRedemptionWithoutReductionOfNominalValueAction.md) — corporate action that involves redemption of securities in part before their scheduled final maturity date with no reduc
+- [post-merger securities exchange](CorporateEvents/SecurityRelatedCorporateActions/PostMergerSecuritiesExchange.md) — corporate action that involves the exchange of outstanding securities, initiated by the issuer which may include options
+- [priority issue](CorporateEvents/CorporateActions/PriorityIssue.md) — corporate action that is a public offer where, due to a limited amount of securities available, priority is given to exi
+- [put redemption action](CorporateEvents/SecurityRelatedCorporateActions/PutRedemptionAction.md) — corporate action involving early redemption of a security at the election of the holder subject to the terms and conditi
+- [redemption at maturity action](CorporateEvents/SecurityRelatedCorporateActions/RedemptionAtMaturityAction.md) — corporate action that involves redemption of an entire issue outstanding of securities at final maturity
+- [redenomination action](CorporateEvents/SecurityRelatedCorporateActions/RedenominationAction.md) — corporate action by which the unit (currency and/or nominal) of a security is restated
+- [regulatory action](CorporateEvents/CorporateActions/RegulatoryAction.md) — action initiated by a regulatory agency that affects a legal entity or the securities it issues and may have a material 
+- [repurchase offer](CorporateEvents/SecurityRelatedCorporateActions/RepurchaseOffer.md) — corporate action in which an offer is made to existing shareholders by the issuing company to repurchase equity or other
+- [reverse stock split](CorporateEvents/SecurityRelatedCorporateActions/ReverseStockSplit.md) — corporate action involving a decrease in a company's number of outstanding equities without any change in the shareholde
+- [rights exercise event](CorporateEvents/SecurityRelatedCorporateActions/RightsExerciseEvent.md) — Exercising the right to purchase the shares
+- [shares premium dividend action](CorporateEvents/SecurityRelatedCorporateActions/SharesPremiumDividendAction.md) — corporate action that pays shareholders an amount in cash issued from the shares premium reserve
+- [spin off](CorporateEvents/CorporateActions/SpinOff.md) — corporate action involving the distribution of subsidiary stock to the shareholders of the parent company without a surr
+- [stock dividend action](CorporateEvents/SecurityRelatedCorporateActions/StockDividendAction.md) — corporate action that involves distribution of a dividend to shareholders in the form of equities of the issuing corpora
+- [stock split](CorporateEvents/SecurityRelatedCorporateActions/StockSplit.md) — corporate action involving an increase in a corporation's number of outstanding equities without any change in the share
+- [tender offer](CorporateEvents/SecurityRelatedCorporateActions/TenderOffer.md) — corporate action involving an offer made to shareholders, normally by a third party, requesting them to sell (tender) or
+- [trading status active message](CorporateEvents/SecurityRelatedCorporateActions/TradingStatusActiveMessage.md) — Trading in security has commenced or security has been re-activated after a supsension in trading
+- [trading status message](CorporateEvents/SecurityRelatedCorporateActions/TradingStatusMessage.md) — A message about trading status
+- [trading status suspended message](CorporateEvents/SecurityRelatedCorporateActions/TradingStatusSuspendedMessage.md) — Trading in the security has been suspended
+- [voluntary corporate action](CorporateEvents/CorporateActions/VoluntaryCorporateAction.md) — event in which the shareholders elect to participate and must respond in order for the issuer to process the action
+- [warrant exercise action](CorporateEvents/SecurityRelatedCorporateActions/WarrantExerciseAction.md) — corporate action that offers holders the option to buy (call warrant) or to sell (put warrant) a specific amount of stoc
+- [worthless security action](CorporateEvents/SecurityRelatedCorporateActions/WorthlessSecurityAction.md) — corporate action that involves booking out of valueless securities

@@ -8,6 +8,7 @@ detail: "If you sell a gold futures contract of say 100 troy ounces then you hav
 relations:
   - {type: is-a, target: "/FBC/ProductsAndServices/FinancialProductsAndServices/SettlementTerms.md", provenance: fibo}
   - {type: has-settlement-method, target: "/FBC/FinancialInstruments/Settlement/PhysicalDeliveryMethod.md", provenance: fibo}
+  - {type: specifies, target: "/DER/CreditDerivatives/CreditDefaultSwaps/EscrowAgent.md", provenance: fibo}
 ---
 
 commitment to deliver the actual underlying asset on the specified delivery date, rather than cash
@@ -15,3 +16,4 @@ commitment to deliver the actual underlying asset on the specified delivery date
 ### Relationships
 - is-a: [SettlementTerms](/FBC/ProductsAndServices/FinancialProductsAndServices/SettlementTerms.md)
 - has-settlement-method: [PhysicalDeliveryMethod](/FBC/FinancialInstruments/Settlement/PhysicalDeliveryMethod.md)
+- specifies: [EscrowAgent](/DER/CreditDerivatives/CreditDefaultSwaps/EscrowAgent.md)

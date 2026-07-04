@@ -1,0 +1,105 @@
+# MD
+
+- [MacCaulays Duration Analytic](DebtTemporal/DebtAnalytics/MacCaulaysDurationAnalytic.md) — 
+- [accrued fees](CIVTemporal/FundsTemporal/AccruedFees.md) — 
+- [accrued income](CIVTemporal/FundsTemporal/AccruedIncome.md) — 
+- [accrued taxes](CIVTemporal/FundsTemporal/AccruedTaxes.md) — 
+- [active](TemporalCore/SecurityTradingStatuses/Active.md) — Security is actively traded
+- [actively trading](TemporalCore/SecurityTradingStatuses/ActivelyTrading.md) — Security is actively traded on the exchange or trading facility
+- [annualized performance determination method](CIVTemporal/FundsTemporal/AnnualizedPerformanceDeterminationMethod.md) — Annualized performance determination
+- [bond equivalent yield](DebtTemporal/DebtAnalytics/BondEquivalentYield.md) — Yield determined on an equivalent basis to the yield of another bond
+- [credit o k](TemporalCore/SecurityCreditStatuses/CreditOK.md) — Not defaulted
+- [credit spread](DebtTemporal/DebtAnalytics/CreditSpread.md) — yield spread that reflects the additional net yield an investor can earn from a security with more credit risk relative 
+- [current yield calculation method](DebtTemporal/DebtAnalytics/CurrentYieldCalculationMethod.md) — The ratio of the interest payment amount to the clean price
+- [debt convexity analytic](DebtTemporal/DebtAnalytics/DebtConvexityAnalytic.md) — The second derivative of a security's price with respect to its yield, divided by the security's price
+- [debt instrument yield](DebtTemporal/DebtAnalytics/DebtInstrumentYield.md) — The return on the debt instrument at the stated price
+- [debt price spread](DebtTemporal/DebtAnalytics/DebtPriceSpread.md) — The difference between the [what?] of a security and the fair price value of a different security which is used as a poi
+- [debt securities market maker](DebtTemporal/DebtAnalytics/DebtSecuritiesMarketMaker.md) — An actor which has the role of Market Maker in a given market
+- [debt yield to average life](DebtTemporal/DebtAnalytics/DebtYieldToAverageLife.md) — The yield achieved by substituting a bond's average life for the issue's final maturity date
+- [debt yield to equivalent life](DebtTemporal/DebtAnalytics/DebtYieldToEquivalentLife.md) — The yield achieved by substituting a bond's equivalent life for the issue's final maturity date
+- [debt yield to maturity](DebtTemporal/DebtAnalytics/DebtYieldToMaturity.md) — The internal rate of return an investor would achieve if he or she purchased that bond at its current dirty price, and h
+- [debt yield to next call](DebtTemporal/DebtAnalytics/DebtYieldToNextCall.md) — The yield of a bond to the next possible call date
+- [debt yield to worst](DebtTemporal/DebtAnalytics/DebtYieldToWorst.md) — Yield to the worst case of when the instrument might be called
+- [delta](DerivativesTemporal/ETOptionsTemporal/Delta.md) — First derivative of option value with respect to theoretical price is a delta (or on a position)
+- [discounted instrument yield](DebtTemporal/DebtAnalytics/DiscountedInstrumentYield.md) — Yield quoted for a discount instrument
+- [duration analytic](DebtTemporal/DebtAnalytics/DurationAnalytic.md) — Weighted average time to receipt of all the payments
+- [effective duration](DebtTemporal/DebtAnalytics/EffectiveDuration.md) — 
+- [effective yield](DebtTemporal/DebtAnalytics/EffectiveYield.md) — 
+- [equivalent life analytic](DebtTemporal/DebtAnalytics/EquivalentLifeAnalytic.md) — 
+- [equivalent yield calculation method](DebtTemporal/DebtAnalytics/EquivalentYieldCalculationMethod.md) — 
+- [exchange futures price](DerivativesTemporal/FuturesTemporal/ExchangeFuturesPrice.md) — 
+- [exchange security trading status](TemporalCore/SecurityTradingStatuses/ExchangeSecurityTradingStatus.md) — trading status of a listed security on a given trading exchange
+- [exchange traded bond price](DebtTemporal/DebtAnalytics/ExchangeTradedBondPrice.md) — 
+- [f f i e c down 300 prepay speed](DebtTemporal/DebtAnalytics/FFIECDown300PrepaySpeed.md) — Public Securities Association (PSA) speed used for the underlying collateral for cash-flow calculations in the "down 300
+- [f f i e c up 300 prepay speed](DebtTemporal/DebtAnalytics/FFIECUp300PrepaySpeed.md) — Public Securities Association (PSA) speed used for the underlying collateral for cash-flow calculations in the "up 300" 
+- [fee payable](CIVTemporal/FundsTemporal/FeePayable.md) — 
+- [fund price](CIVTemporal/FundsTemporal/FundPrice.md) — 
+- [fund unit performance](CIVTemporal/FundsTemporal/FundUnitPerformance.md) — 
+- [funds tax](CIVTemporal/FundsTemporal/FundsTax.md) — 
+- [futures closing price](DerivativesTemporal/FuturesTemporal/FuturesClosingPrice.md) — 
+- [futures daily settlement price](DerivativesTemporal/FuturesTemporal/FuturesDailySettlementPrice.md) — Review whether this exists
+- [futures greek](DerivativesTemporal/FuturesTemporal/FuturesGreek.md) — quantity representing the sensitivity of the price of a future or futures to a change in underlying parameters on which 
+- [futures theta](DerivativesTemporal/FuturesTemporal/FuturesTheta.md) — 
+- [futures trading account holder](DerivativesTemporal/FuturesTemporal/FuturesTradingAccountHolder.md) — A party who has an account for futures trading at a derivatives exchange
+- [futures vega](DerivativesTemporal/FuturesTemporal/FuturesVega.md) — 
+- [gross of fee performance determination method](CIVTemporal/FundsTemporal/GrossOfFeePerformanceDeterminationMethod.md) — Performance determined gross of fee
+- [i c m a yield formula](DebtTemporal/DebtAnalytics/ICMAYieldFormula.md) — The calculation method specified by ICMA (formerly ISMA) for determination of yield for fixed-rate bonds
+- [implied forward rate](DebtTemporal/DebtAnalytics/ImpliedForwardRate.md) — 
+- [in default](TemporalCore/SecurityCreditStatuses/InDefault.md) — The issuer has failed to pay somthing that they are contractually obliged to pay
+- [inactive](TemporalCore/SecurityTradingStatuses/Inactive.md) — 
+- [initial margin](DerivativesTemporal/FuturesTemporal/InitialMargin.md) — money or securities put up as a good faith deposit assuring that a future contract will be fulfilled
+- [internally determined price spread](DebtTemporal/DebtAnalytics/InternallyDeterminedPriceSpread.md) — The spread determined internally within the organisation from information available at their own trading desks
+- [issued](TemporalCore/SecurityTradingStatuses/Issued.md) — The security has been issued into the secondary market
+- [japanese compound yield calculation method](DebtTemporal/DebtAnalytics/JapaneseCompoundYieldCalculationMethod.md) — No definition in selection list
+- [japanese simple yield calculation method](DebtTemporal/DebtAnalytics/JapaneseSimpleYieldCalculationMethod.md) — No definition
+- [key rate duration](DebtTemporal/DebtAnalytics/KeyRateDuration.md) — 
+- [life analytic](DebtTemporal/DebtAnalytics/LifeAnalytic.md) — Some measure of the life of a security, other than the actual time to maturity itself
+- [loan pool prepayment model](DebtTemporal/DebtAnalytics/LoanPoolPrepaymentModel.md) — Model of the prepayments of loans in a pool of individual loans, such as a mortgage pool or loan pool
+- [loan prepayment formula](DebtTemporal/DebtAnalytics/LoanPrepaymentFormula.md) — The formula which embodies the model for loan pool prepayment speed
+- [maturity equivalent p s a](DebtTemporal/DebtAnalytics/MaturityEquivalentPSA.md) — Prepayment speed that results in the same average life as that computed for the Collateralized Mortgage Obligation (CMO)
+- [minimum margin](DerivativesTemporal/FuturesTemporal/MinimumMargin.md) — The lowest amount an account can reach before needing to be replenished
+- [modified duration analytic](DebtTemporal/DebtAnalytics/ModifiedDurationAnalytic.md) — The percentage price change of a security for a given change in yield
+- [money weighted rate of return performance determination method](CIVTemporal/FundsTemporal/MoneyWeightedRateOfReturnPerformanceDeterminationMethod.md) — Money weighted rate of return
+- [native yield](DebtTemporal/DebtAnalytics/NativeYield.md) — The yield of the security as determined using the Yield Calculation Method that is the default for the market that the s
+- [native yield calculation method](DebtTemporal/DebtAnalytics/NativeYieldCalculationMethod.md) — The convention used in the marketplace for that security
+- [next call](DebtTemporal/DebtAnalytics/NextCall.md) — The next call of the issue, as at the current time
+- [next call date](DebtTemporal/DebtAnalytics/NextCallDate.md) — The next date on which the issue can be called, from the present date
+- [next put](DebtTemporal/DebtAnalytics/NextPut.md) — The next available put date for the issue, as at the current time
+- [o t c bond market price](DebtTemporal/DebtAnalytics/OTCBondMarketPrice.md) — The price determined for the marketplace for a bond which is traded over the counter
+- [option adjusted yield](DebtTemporal/DebtAnalytics/OptionAdjustedYield.md) — NB specified as a spread
+- [option daily settlement price](DerivativesTemporal/ETOptionsTemporal/OptionDailySettlementPrice.md) — The official price at the end of a trading session
+- [option theoretical value](DerivativesTemporal/ETOptionsTemporal/OptionTheoreticalValue.md) — fair value of the option as determined by an option pricing model
+- [options greek](DerivativesTemporal/ETOptionsTemporal/OptionsGreek.md) — quantity representing the sensitivity of the price of an option or options to a change in underlying parameters on which
+- [options theta](DerivativesTemporal/ETOptionsTemporal/OptionsTheta.md) — A measure of the rate of change in an option's theoretical value for a one-unit change in time to the option's expiratio
+- [options vega](DerivativesTemporal/ETOptionsTemporal/OptionsVega.md) — A measure of the rate of change in an option's theoretical value for a one-unit change in the volatility assumption
+- [partial calls estimation model](DebtTemporal/DebtAnalytics/PartialCallsEstimationModel.md) — A model of how the early partial calls are estimated
+- [performance determination method](CIVTemporal/FundsTemporal/PerformanceDeterminationMethod.md) — A method for performance determination (e
+- [pool factor](DebtTemporal/DebtAnalytics/PoolFactor.md) — How much of the original pool is still outstanding
+- [pool paydown rate](DebtTemporal/DebtAnalytics/PoolPaydownRate.md) — The rate at which the pool is paying down
+- [price value of basis point](DebtTemporal/DebtAnalytics/PriceValueOfBasisPoint.md) — Sensitivity of the price for one basis point change in yield, defined as the difference in price given 1 bp change in yi
+- [relative yield calculation method](DebtTemporal/DebtAnalytics/RelativeYieldCalculationMethod.md) — 
+- [relatively defined debt instrument yield](DebtTemporal/DebtAnalytics/RelativelyDefinedDebtInstrumentYield.md) — 
+- [russian yield calculation method](DebtTemporal/DebtAnalytics/RussianYieldCalculationMethod.md) — The method used in determining Yield in the Russian markets
+- [russian yield formula](DebtTemporal/DebtAnalytics/RussianYieldFormula.md) — This is based on a different Effective Yield than on another market
+- [security cashflow status](TemporalCore/SecurityCreditStatuses/SecurityCashflowStatus.md) — The status of the cashflow due to the holder from the security
+- [security credit status](TemporalCore/SecurityCreditStatuses/SecurityCreditStatus.md) — 
+- [security lifecycle status](TemporalCore/SecurityTradingStatuses/SecurityLifecycleStatus.md) — status of a security within its lifecycle
+- [security trading status](TemporalCore/SecurityTradingStatuses/SecurityTradingStatus.md) — status of the security in terms of whether it is trading or not, and any special considerations relating to trading
+- [sigma value of holdings](CIVTemporal/FundsTemporal/SigmaValueOfHoldings.md) — 
+- [simple yield calculation method](DebtTemporal/DebtAnalytics/SimpleYieldCalculationMethod.md) — The annual rate of return expressed as a percentage
+- [spanish yield calculation method](DebtTemporal/DebtAnalytics/SpanishYieldCalculationMethod.md) — The method used in determining annual yield in Spanish corporate bonds
+- [swing](CIVTemporal/FundsTemporal/Swing.md) — 
+- [swing price](CIVTemporal/FundsTemporal/SwingPrice.md) — 
+- [time weighted rate of return performance determination method](CIVTemporal/FundsTemporal/TimeWeightedRateOfReturnPerformanceDeterminationMethod.md) — Time weighted rate of return
+- [trading halted](TemporalCore/SecurityTradingStatuses/TradingHalted.md) — 
+- [u s corporate bond yield calculation method](DebtTemporal/DebtAnalytics/USCorporateBondYieldCalculationMethod.md) — This has 30/360 and semi-annual compounding
+- [u s treasury yield calculation method](DebtTemporal/DebtAnalytics/USTreasuryYieldCalculationMethod.md) — 
+- [wall street yield calculation method](DebtTemporal/DebtAnalytics/WallStreetYieldCalculationMethod.md) — No definition
+- [weighted average time to receipt of cashflows](DebtTemporal/DebtAnalytics/WeightedAverageTimeToReceiptOfCashflows.md) — The weighted average time to the receipt of cashflows for an instrument
+- [when distributed](TemporalCore/SecurityTradingStatuses/WhenDistributed.md) — Used to refer to a security that trades after the date of issue but before the time at which the certificates are delive
+- [when issued](TemporalCore/SecurityTradingStatuses/WhenIssued.md) — When Issued or Gray Market trading is when a security is traded ahead of the date at which it is to be issued
+- [worst call](DebtTemporal/DebtAnalytics/WorstCall.md) — call event representing the worst case with respect to when the instrument might be called
+- [worthless](TemporalCore/SecurityTradingStatuses/Worthless.md) — Announcement by the regulator that the security has become worthless
+- [yield calculation formula](DebtTemporal/DebtAnalytics/YieldCalculationFormula.md) — The formula used in determining the Yield
+- [yield calculation method](DebtTemporal/DebtAnalytics/YieldCalculationMethod.md) — The method by which the yield is calculated
+- [yield to next put](DebtTemporal/DebtAnalytics/YieldToNextPut.md) — 

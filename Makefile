@@ -1,6 +1,6 @@
 PY := ./.venv/bin/python
 PIP := ./.venv/bin/pip
-DOMAINS ?= FND LOAN FBC BE
+DOMAINS ?= FND LOAN FBC BE SEC DER IND MD BP CAE
 CLUSTERS ?= $(DOMAINS) CMNS   # domains emitted in the bundle (+ Commons upper ontology)
 
 .PHONY: setup fibo commons extract build curate pack eval map validate test lint attribution check all clean
@@ -61,4 +61,4 @@ check: lint test validate attribution
 all: extract build validate
 
 clean:
-	rm -rf out knowledge/FND knowledge/LOAN knowledge/FBC knowledge/BE knowledge/CMNS knowledge/LCC __pycache__ etl/__pycache__
+	rm -rf out $(addprefix knowledge/,$(CLUSTERS)) knowledge/LCC __pycache__ etl/__pycache__

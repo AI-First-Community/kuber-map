@@ -13,6 +13,7 @@ relations:
   - {type: is-managed-by, target: "/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider.md", provenance: fibo}
   - {type: operates-in-country, target: "/CMNS/Locations/Country.md", provenance: fibo}
   - {type: operates-in-municipality, target: "/CMNS/Locations/Municipality.md", provenance: fibo}
+  - {type: provides, target: "/SEC/Securities/SecuritiesListings/ListingService.md", provenance: fibo}
 ---
 
 any organization, association, or group of persons, whether incorporated or unincorporated, which constitutes, maintains, or provides a facility for bringing together purchasers and sellers of financial instruments, commodities, or other products, services, or goods, and includes the market place and facilities maintained by such exchange
@@ -23,3 +24,4 @@ any organization, association, or group of persons, whether incorporated or unin
 - is-managed-by: [FinancialServiceProvider](/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider.md)
 - operates-in-country: [Country](/CMNS/Locations/Country.md)
 - operates-in-municipality: [Municipality](/CMNS/Locations/Municipality.md)
+- provides: [ListingService](/SEC/Securities/SecuritiesListings/ListingService.md)

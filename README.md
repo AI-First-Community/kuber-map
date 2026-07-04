@@ -9,11 +9,13 @@ Named for **Kubera**, the treasurer and god of wealth. Inspired by the
 [Bodhi Map](https://github.com/AI-First-Community/Bodhi) approach: reveal how concepts
 *connect*, not just what they mean.
 
-> **Status:** the FIBO→OKF pipeline runs on FND + LOAN + FBC + BE plus the Commons (CMNS)
-> upper ontology (1,440 concepts, 3,001 typed relations). The loan-origination use case is
-> curated end to end (71 core concepts, 4 cross-domain bridges, a context pack, and an MCP
-> retrieval endpoint), and the interactive map ships. The live grounded-vs-ungrounded eval is
-> the next milestone. See [`PLAN.md`](PLAN.md) and [`BACKLOG.md`](BACKLOG.md).
+> **Status:** the FIBO→OKF pipeline runs on all ten FIBO domains (FND, LOAN, FBC, BE, SEC,
+> DER, IND, MD, BP, CAE) plus the Commons (CMNS) upper ontology — 3,104 concepts, 6,676 typed
+> relations, 68 sub-domain clusters. Two use cases are curated end to end (loan origination: 71
+> core concepts; KYC / beneficial ownership: 58) with 8 cross-domain bridges, context packs, and
+> an MCP retrieval endpoint. The interactive map ships and covers every domain. The live
+> grounded-vs-ungrounded eval is proven on loan origination (+39.6pt accuracy, 98.1% auditable).
+> See [`PLAN.md`](PLAN.md) and [`BACKLOG.md`](BACKLOG.md).
 
 ## Why
 

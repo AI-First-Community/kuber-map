@@ -422,7 +422,7 @@
           const c = CLUSTERS[id];
           return `<div class="legend-item" data-cluster="${id}">
             <button class="legend-toggle" aria-pressed="true" title="Show / hide ${c.label}"><span class="dot" style="background:${c.color}"></span></button>
-            <span class="li-label" title="Zoom to ${c.label}">${c.label}</span>
+            <span class="li-label" title="Focus ${c.label}">${c.label}</span>
             <span class="legend-count">${clusterCount[id] || 0}</span>
           </div>`;
         }).join('')}
@@ -437,13 +437,30 @@
       head.setAttribute('aria-expanded', String(!collapsed));
     };
   });
-  // click a cluster label -> zoom to it
-  legend.querySelectorAll('.legend-item .li-label').forEach((el) => {
-    el.onclick = () => {
-      const cid = el.closest('.legend-item').getAttribute('data-cluster');
-      const nodes = cy.nodes(`[cluster = "${cid}"]`);
-      if (nodes.length) cy.animate({ fit: { eles: nodes, padding: 80 } }, { duration: 400 });
-    };
+  // click anywhere on a cluster item (except the show/hide dot) -> focus it:
+  // re-show it if hidden, spotlight its nodes over a dimmed rest, and fit the view to them
+  function focusCluster(cid) {
+    if (!activeClusters.has(cid)) {              // clicking a hidden cluster brings it back
+      activeClusters.add(cid);
+      const it = legend.querySelector(`.legend-item[data-cluster="${cid}"]`);
+      if (it) {
+        it.classList.remove('off');
+        const b = it.querySelector('.legend-toggle');
+        if (b) b.setAttribute('aria-pressed', 'true');
+      }
+      applyFilters();
+    }
+    const nodes = cy.nodes(`[cluster = "${cid}"]`).filter((n) => n.visible());
+    if (!nodes.length) return;
+    cy.elements().removeClass('faded faded-edge highlight path-active');
+    const hood = nodes.closedNeighborhood();
+    cy.elements().not(hood).addClass('faded');
+    cy.edges().not(hood.edges()).addClass('faded-edge');
+    nodes.addClass('highlight');
+    cy.animate({ fit: { eles: nodes, padding: 80 } }, { duration: 400 });
+  }
+  legend.querySelectorAll('.legend-item').forEach((item) => {
+    item.onclick = () => focusCluster(item.getAttribute('data-cluster'));
   });
   // toggle a cluster's swatch -> show / hide that cluster
   legend.querySelectorAll('.legend-toggle').forEach((btn) => {

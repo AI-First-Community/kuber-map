@@ -3,7 +3,7 @@
 # commit recorded in fibo-source.pin. Lets a fresh checkout rebuild the ETL inputs with one step.
 set -euo pipefail
 
-DOMAINS="FND LOAN FBC BE"
+DOMAINS="FND LOAN FBC BE SEC DER IND MD BP CAE"
 SHA="$(grep '^commit:' fibo-source.pin | awk '{print $2}')"
 REPO="https://github.com/edmcouncil/fibo.git"
 

@@ -1,0 +1,319 @@
+# DER
+
+- [Asian option](DerivativesContracts/ExoticOptions/AsianOption.md) — option whose exercise terms involve a payoff determined by the average underlying price (either the strike price or the 
+- [Asian option classifier](DerivativesContracts/ExoticOptions/AsianOptionClassifier.md) — financial instrument classifier that classifies Asian options based on whether they are rate-based or price based
+- [account change notification obligation](DerivativesContracts/DerivativesMasterAgreements/AccountChangeNotificationObligation.md) — obligation to notify a counterparty of any changes in account details
+- [agricultural resource](DerivativesContracts/CommoditiesContracts/AgriculturalResource.md) — negotiable commodity that is obtained via some agricultural process, including forestry, fishing, livestock, grain, dair
+- [allotment right](DerivativesContracts/RightsAndWarrants/AllotmentRight.md) — privileges allotted to existing security holders, entitling them to receive new securities free of charge
+- [allotment right formula](DerivativesContracts/RightsAndWarrants/AllotmentRightFormula.md) — rule applied to calculate the number of securities for an allotment right, typically based on the number of these instru
+- [asset-backed credit default swap](CreditDerivatives/CreditDefaultSwaps/AssetBackedCreditDefaultSwap.md) — credit default swap whose underlying reference obligation is an asset-backed security rather than corporate credit
+- [averaging strategy](DerivativesContracts/ExoticOptions/AveragingStrategy.md) — method used for calculating the average rate or price of an Asian option
+- [barrier capital protection certificate](DerivativesContracts/StructuredInstruments/BarrierCapitalProtectionCertificate.md) — capital-protected product whose protection is defined as a percentage of the nominal price (e
+- [barrier discount certificate](DerivativesContracts/StructuredInstruments/BarrierDiscountCertificate.md) — participation certificate that enables the investor to acquire the underlying asset at a lower price in return for a lim
+- [barrier instrument-based mini-future certificate](DerivativesContracts/RightsAndWarrants/BarrierInstrumentBasedMiniFutureCertificate.md) — mini-future certificate that immediately expires if the barrier instrument trading price level is breached during produc
+- [barrier option](DerivativesContracts/ExoticOptions/BarrierOption.md) — option whose final exercise depends upon the path taken by the price of an underlying instrument, i
+- [barrier reverse convertible certificate](DerivativesContracts/StructuredInstruments/BarrierReverseConvertibleCertificate.md) — participation certificate whose payout is conditional: should the barrier never be breached, the nominal price plus coup
+- [barrier underlying mini-future certificate](DerivativesContracts/RightsAndWarrants/BarrierUnderlyingMiniFutureCertificate.md) — mini-future certificate that immediately expires if the barrier underlying level is breached during product lifetime
+- [base metal](DerivativesContracts/CommoditiesContracts/BaseMetal.md) — common metal that tarnishes, oxidizes, or corrodes relatively quickly when exposed to air or moisture, that is widely us
+- [basis swap](DerivativesContracts/Swaps/BasisSwap.md) — swap in which payment streams are referenced to different bases
+- [basket certificate](DerivativesContracts/StructuredInstruments/BasketCertificate.md) — certificate whose underlying asset represents a fraction of a basket of securities that corresponds to the subscription 
+- [basket credit default swap](CreditDerivatives/CreditDefaultSwaps/BasketCreditDefaultSwap.md) — credit default swap that references a bespoke, synthetic portfolio of underlying assets whose components have been agree
+- [basket future](DerivativesContracts/FuturesAndForwards/BasketFuture.md) — futures contract whose underlying asset is a basket of securities and/or indices
+- [basket of commodities](DerivativesContracts/CommoditiesContracts/BasketOfCommodities.md) — custom basket whose constituents consist of one or more negotiable commodities
+- [basket of credit default swaps](CreditDerivatives/CreditDefaultSwaps/BasketOfCreditDefaultSwaps.md) — basket of reference obligations are credit default swap instruments
+- [basket of debt instruments](SecurityBasedDerivatives/SecurityBasedDerivatives/BasketOfDebtInstruments.md) — basket of securities whose constituents are debt instruments
+- [basket option](DerivativesContracts/Options/BasketOption.md) — option whose underlying asset is a group, or basket, of commodities, securities, indices, or currencies
+- [basket warrant](DerivativesContracts/RightsAndWarrants/BasketWarrant.md) — warrant that permits the holder to acquire a package or group of assets at a specified price during a specified period
+- [bond future](DerivativesContracts/FuturesAndForwards/BondFuture.md) — futures contract whose underlying asset is at least one bond
+- [bond option](DerivativesContracts/Options/BondOption.md) — option giving the buyer (holder) the right, but not the obligation, to buy or sell (depending on whether it is a call or
+- [bond purchase right](DerivativesContracts/RightsAndWarrants/BondPurchaseRight.md) — purchase right that gives a prospective acquiree's bondholders the right to buy bonds of the firm or bonds of anyone who
+- [bond subscription right](DerivativesContracts/RightsAndWarrants/BondSubscriptionRight.md) — subscription right entitling existing bond holders to subscribe to new securities at a price normally lower than the pre
+- [bonus certificate](DerivativesContracts/StructuredInstruments/BonusCertificate.md) — certificate whose minimum redemption is equal to the nominal value provided the barrier has not been breached, with a gr
+- [bullion](DerivativesContracts/CommoditiesContracts/Bullion.md) — physical precious metal that is officially recognized as being at least 99
+- [butterfly](DerivativesContracts/Options/Butterfly.md) — strategy that combines bull and bear spreads with a fixed risk and capped profit
+- [call option](DerivativesContracts/Options/CallOption.md) — option giving the buyer (holder) the right, but not the obligation, to buy the assets specified at a fixed price or form
+- [call put warrant](DerivativesContracts/RightsAndWarrants/CallPutWarrant.md) — warrant that either does not specify call or put features, or that explicitly includes both a call and put feature
+- [call warrant](DerivativesContracts/RightsAndWarrants/CallWarrant.md) — warrant giving the buyer (holder) the right, but not the obligation, to acquire specific underlying assets during a spec
+- [capital protection certificate with coupons](DerivativesContracts/StructuredInstruments/CapitalProtectionCertificateWithCoupons.md) — capital-protected product whose protection is defined as a percentage of the nominal price (e
+- [capital protection certificate with participation](DerivativesContracts/StructuredInstruments/CapitalProtectionCertificateWithParticipation.md) — capital-protected product whose protection is defined as a percentage of the nominal amount (e
+- [capital protection convertible certificate](DerivativesContracts/StructuredInstruments/CapitalProtectionConvertibleCertificate.md) — capital-protected product whose protection is defined as a percentage of the nominal price (e
+- [capital-protected product](DerivativesContracts/StructuredInstruments/CapitalProtectedProduct.md) — structured product that participates in the performance of a financial asset, such as a stock, fund or index, while prot
+- [capitalized lease obligation debt basket](SecurityBasedDerivatives/SecurityBasedDerivatives/CapitalizedLeaseObligationDebtBasket.md) — basket of debt instruments whose constituents are contracts entitling a renter the temporary use of an asset and, in acc
+- [capped option](DerivativesContracts/Options/CappedOption.md) — option with an established profit cap or cap price
+- [cash settlement method](CreditDerivatives/CreditDefaultSwaps/CashSettlementMethod.md) — strategy for calculating or otherwise establishing a reference final price for the contract
+- [cashflow expression](DerivativesContracts/DerivativesBasics/CashflowExpression.md) — expression that specifies a calculation of a cash flow as a component of a cashflow formula
+- [cashflow formula](DerivativesContracts/DerivativesBasics/CashflowFormula.md) — formula for determining cashflows for a derivative instrument
+- [cashflow terms](DerivativesContracts/DerivativesBasics/CashflowTerms.md) — terms setting out a cashflow structure of payments committed to by one party to a contract
+- [chooser option](DerivativesContracts/ExoticOptions/ChooserOption.md) — exotic option that allows its holder (buyer) to exercise the right to buy (call) or sell (put) specified assets at a fix
+- [cliquet option](DerivativesContracts/ExoticOptions/CliquetOption.md) — exotic option that is a series of at-the-money (ATM) options, either puts or calls, where each successive option becomes
+- [collar](DerivativesContracts/Options/Collar.md) — option trading strategy that involves buying a downside put and selling an upside call that is implemented to protect ag
+- [combined instruments purchase right](DerivativesContracts/RightsAndWarrants/CombinedInstrumentsPurchaseRight.md) — purchase right that gives a prospective acquiree's holders of multiple securities the right to buy securities of the fir
+- [combined instruments subscription right](DerivativesContracts/RightsAndWarrants/CombinedInstrumentsSubscriptionRight.md) — subscription right entitling existing holders of multiple securities to subscribe to new securities at a price normally 
+- [commodity basket constituent](DerivativesContracts/CommoditiesContracts/CommodityBasketConstituent.md) — component of a custom commodity basket whose relative importance with respect to other basket constituents is known
+- [commodity derivative](DerivativesContracts/CommoditiesContracts/CommodityDerivative.md) — derivative instrument whose primary underlying item is a physical commodity, or the price, or related index, or any othe
+- [commodity derivative underlier](DerivativesContracts/CommoditiesContracts/CommodityDerivativeUnderlier.md) — underlier of a commodity derivative, including, but not limited to, the negotiable commodity itself
+- [commodity forward](DerivativesContracts/CommoditiesContracts/CommodityForward.md) — forward contract in which a buyer and seller agree upon delivery of a specified quality and quantity of goods at a speci
+- [commodity future](DerivativesContracts/CommoditiesContracts/CommodityFuture.md) — futures contract to buy or sell a predetermined amount of a commodity at a specific price on a specific date in the futu
+- [commodity index](DerivativesContracts/CommoditiesContracts/CommodityIndex.md) — investment vehicle that tracks a basket of commodities to measure their price and investment return performance
+- [commodity option](DerivativesContracts/CommoditiesContracts/CommodityOption.md) — option where the option buyer has the right to buy or sell specified commodities or commodity related index at a fixed p
+- [commodity return leg](DerivativesContracts/CommoditiesContracts/CommodityReturnLeg.md) — leg of a commodity return swap in which the return is based on a physical commodity, or the price, or behavior of the pr
+- [commodity spot contract](DerivativesContracts/CommoditiesContracts/CommoditySpotContract.md) — contract that involves physical delivery of the commodity asset at settlement
+- [commodity swap](DerivativesContracts/CommoditiesContracts/CommoditySwap.md) — commodity derivative that includes, without limitation, any swap for which the primary underlying notional item is a phy
+- [commodity warrant](DerivativesContracts/RightsAndWarrants/CommodityWarrant.md) — warrant that permits the holder to acquire a specified amount of a commodity during a specified period at a specified pr
+- [commodore option](DerivativesContracts/ExoticOptions/CommodoreOption.md) — exotic option consisting of a number of digital barrier options that pay a coupon if a pre-determined level of the under
+- [common convertible share purchase right](DerivativesContracts/RightsAndWarrants/CommonConvertibleSharePurchaseRight.md) — purchase right that gives a prospective acquiree's common, convertible shareholders the right to buy common, convertible
+- [common convertible share subscription right](DerivativesContracts/RightsAndWarrants/CommonConvertibleShareSubscriptionRight.md) — subscription right entitling existing common convertible shareholders to subscribe to new securities at a price normally
+- [common share purchase right](DerivativesContracts/RightsAndWarrants/CommonSharePurchaseRight.md) — purchase right that gives a prospective acquiree's common shareholders the right to buy common shares of the firm or com
+- [common share subscription right](DerivativesContracts/RightsAndWarrants/CommonShareSubscriptionRight.md) — subscription right entitling existing common shareholders to subscribe to new securities at a price normally lower than 
+- [compound option](DerivativesContracts/ExoticOptions/CompoundOption.md) — exotic option for which the underlying asset is another option
+- [condor spread](DerivativesContracts/Options/CondorSpread.md) — non-directional options strategy that limits both gains and losses while seeking to profit from either low or high volat
+- [constant leverage certificate](DerivativesContracts/RightsAndWarrants/ConstantLeverageCertificate.md) — entitlement that combines the structure of an open-end certificate with a leverage option with no fixed term, making lev
+- [contingent credit default swap](CreditDerivatives/CreditDefaultSwaps/ContingentCreditDefaultSwap.md) — credit default swap in which an additional triggering event is required
+- [contract for difference](DerivativesContracts/DerivativesBasics/ContractForDifference.md) — cash-settled derivative where the parties agree to exchange on the maturity of the contract the difference between the c
+- [contribution debt basket](SecurityBasedDerivatives/SecurityBasedDerivatives/ContributionDebtBasket.md) — basket of debt instruments that allows a company to incur an amount of indebtedness that is equal to (or in top tier spo
+- [correlation leg](DerivativesContracts/Swaps/CorrelationLeg.md) — floating leg of a correlation swap that pays an amount based on the observed average correlation of the prices of a coll
+- [correlation swap](DerivativesContracts/Swaps/CorrelationSwap.md) — over-the-counter statistical derivative that allows one to hedge risks associated with the observed average correlation 
+- [covered call](DerivativesContracts/Options/CoveredCall.md) — call option in which the seller (investor) owns an equivalent amount of the underlying security
+- [covered warrant](DerivativesContracts/RightsAndWarrants/CoveredWarrant.md) — warrant that gives the holder the right, but not the obligation, to buy (call warrant) or to sell (put warrant) an under
+- [credit default swap](CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwap.md) — bilateral contract in which one party (protection seller) agrees to provide payment to the other party (protection buyer
+- [credit default swap index](CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwapIndex.md) — index whose underlying reference obligations are credit default swap instruments
+- [credit derivative](DerivativesContracts/DerivativesBasics/CreditDerivative.md) — derivative instrument that is a privately held, negotiable bilateral contract traded over-the-counter (OTC) between two 
+- [credit event notice](CreditDerivatives/CreditDefaultSwaps/CreditEventNotice.md) — irrevocable written or verbal notice that states that a triggering event has occurred
+- [credit facility debt basket](SecurityBasedDerivatives/SecurityBasedDerivatives/CreditFacilityDebtBasket.md) — basket of securities whose constituents are credit agreements that allow the borrower to periodically take out money ove
+- [credit protection terms](CreditDerivatives/CreditDefaultSwaps/CreditProtectionTerms.md) — legal terms that define triggering events and associated conditions related to settlement
+- [cross-currency interest rate swap](RateDerivatives/IRSwaps/CrossCurrencyInterestRateSwap.md) — interest rate swap in which the two streams of interest payments are in different currencies
+- [currency derivative](DerivativesContracts/CurrencyContracts/CurrencyDerivative.md) — agreement to deliver and settle a given amount of money in one currency, in exchange for a given amount in another curre
+- [currency forward](DerivativesContracts/CurrencyContracts/CurrencyForward.md) — agreement to deliver and settle a given amount of money in one currency, in exchange for a given amount in another curre
+- [currency forward outright](DerivativesContracts/CurrencyContracts/CurrencyForwardOutright.md) — forward contract in a foreign exchange market that locks in the price at which an entity must buy or sell a currency on 
+- [currency future](DerivativesContracts/FuturesAndForwards/CurrencyFuture.md) — futures contract whose underlying asset is an agreement to exchange a specified amount of one currency for another at so
+- [currency option](DerivativesContracts/CurrencyContracts/CurrencyOption.md) — option giving the buyer (holder) the right, but not the obligation, to buy or sell currency at a specified exchange rate
+- [currency spot contract](DerivativesContracts/CurrencyContracts/CurrencySpotContract.md) — foreign-exchange contract for immediate delivery
+- [currency spot forward swap](DerivativesContracts/CurrencyContracts/CurrencySpotForwardSwap.md) — foreign exchange agreement between two parties involving an exchange of two currencies at agreed fixed rates: a) on the 
+- [currency swap](DerivativesContracts/CurrencyContracts/CurrencySwap.md) — foreign exchange agreement between two parties to exchange a given amount of one currency for another currency for spot 
+- [currency volatility option](DerivativesContracts/CurrencyContracts/CurrencyVolatilityOption.md) — currency option whose underlying asset is based on the volatility of a foreign exchange rate
+- [currency warrant](DerivativesContracts/RightsAndWarrants/CurrencyWarrant.md) — warrant that permits the holder to acquire a specified amount in a certain currency at a specified exchange rate during 
+- [debt instrument derivative](SecurityBasedDerivatives/SecurityBasedDerivatives/DebtInstrumentDerivative.md) — security-based derivative whose underlier is a debt observable
+- [debt instrument future](DerivativesContracts/FuturesAndForwards/DebtInstrumentFuture.md) — futures contract whose underlying asset is at least one debt instrument
+- [debt warrant](DerivativesContracts/RightsAndWarrants/DebtWarrant.md) — warrant that permits the holder to acquire a specified amount of a debt instrument or related debt observable a specifie
+- [deliverable asset](CreditDerivatives/CreditDefaultSwaps/DeliverableObligation.md) — asset that must be delivered as a part of the process of settling a credit default swap
+- [deliverable obligation buyer](CreditDerivatives/CreditDefaultSwaps/DeliverableObligationBuyer.md) — contract party that is obliged to purchase a deliverable obligation (asset) if a triggering event occurs, depending on t
+- [deliverable obligation seller](CreditDerivatives/CreditDefaultSwaps/DeliverableObligationSeller.md) — contract party that is obliged to sell a deliverable obligation (asset) if a triggering event occurs, depending on the e
+- [derivative credit support agreement](DerivativesContracts/DerivativesMasterAgreements/DerivativeCreditSupportAgreement.md) — addendum to the master agreement that governs the exchange of collateral between parties in derivatives transactions
+- [derivative master agreement](DerivativesContracts/DerivativesMasterAgreements/DerivativeMasterAgreement.md) — master agreement covering derivatives transactions to be carried out between the parties to this contract
+- [derivative settlement terms](DerivativesContracts/DerivativesBasics/DerivativeSettlementTerms.md) — settlement terms specifying additional details with respect to what is to be delivered when, to whom, under what conditi
+- [derivative terms](DerivativesContracts/DerivativesBasics/DerivativeTerms.md) — contractual terms specific to derivative contracts, including terms related to payments and delivery between parties
+- [derivatives clearing organization](DerivativesContracts/DerivativesBasics/DerivativesClearingOrganization.md) — clearing house that enables parties to substitute the credit of the DCO for the credit of the parties
+- [digital option](DerivativesContracts/ExoticOptions/DigitalOption.md) — exotic option that has a pre-determined payout if the option is in-the-money and the payoff condition is satisfied
+- [discount certificate](DerivativesContracts/StructuredInstruments/DiscountCertificate.md) — participation certificate that enables the investor to acquire the underlying asset at a lower price in return for a lim
+- [dispersion leg](DerivativesContracts/Swaps/DispersionLeg.md) — floating leg of a dispersion swap that pays an amount based on the realized dispersion of the price changes of the under
+- [dispersion swap](DerivativesContracts/Swaps/DispersionSwap.md) — statistical derivative used to hedge on the magnitude of a price movement of an underlying asset
+- [dispersion swap index constituents leg](SecurityBasedDerivatives/EquitySwaps/DispersionSwapIndexConstituentsLeg.md) — dispersion leg whose underlier is a defined set of constituents of a given equity index
+- [dispersion swap index leg](SecurityBasedDerivatives/EquitySwaps/DispersionSwapIndexLeg.md) — dispersion leg whose underlier is an equity index
+- [dividend adjustment period](DerivativesContracts/FuturesAndForwards/DividendAdjustmentPeriod.md) — date period used to calculate the difference, if any between an anticipated dividend and the actual dividend distributed
+- [dividend future](DerivativesContracts/FuturesAndForwards/DividendFuture.md) — futures contract whose underlying asset is at least one stock dividend
+- [dividend leg](SecurityBasedDerivatives/EquitySwaps/DividendLeg.md) — floating leg of a dividend swap
+- [dividend swap](SecurityBasedDerivatives/EquitySwaps/DividendSwap.md) — equity swap that has at least one leg whose underlier is a dividend stream
+- [double barrier option](DerivativesContracts/ExoticOptions/DoubleBarrierOption.md) — barrier option applied to currencies or over the counter stocks that works as a binary, or digital option in that it pay
+- [economic rate-based derivative](DerivativesContracts/DerivativesBasics/EconomicRateBasedDerivative.md) — rate-based derivative whose underlier is some economic indicator
+- [energy resource](DerivativesContracts/CommoditiesContracts/EnergyResource.md) — negotiable commodity that is an energy-related product, or a derivative of an energy-related product, including electric
+- [energy transmission rights](DerivativesContracts/CommoditiesContracts/EnergyTransmissionRights.md) — rights to the transmission of power across an electricity distribution network
+- [environmental resource](DerivativesContracts/CommoditiesContracts/EnvironmentalResource.md) — negotiable commodity including offset credits
+- [equity correlation swap](SecurityBasedDerivatives/EquitySwaps/EquityCorrelationSwap.md) — correlation swap that allows one to hedge risks associated with the observed average correlation of a collection of unde
+- [equity derivative](SecurityBasedDerivatives/SecurityBasedDerivatives/EquityDerivative.md) — security-based derivative whose underlier is based on equities (e
+- [equity forward](DerivativesContracts/FuturesAndForwards/EquityForward.md) — forward contract to buy or sell the underlying equity stock, equity index, basket of equity stock, equity futures contra
+- [equity future](DerivativesContracts/FuturesAndForwards/EquityFuture.md) — futures contract whose underlying asset is at least one equity security, specifically a publicly issued and traded share
+- [equity option](DerivativesContracts/Options/EquityOption.md) — option giving the buyer (holder) the right, but not the obligation, to buy (via a call option) or sell (via a put option
+- [equity price return swap](SecurityBasedDerivatives/EquitySwaps/EquityPriceReturnSwap.md) — return swap whose return leg underlier is based on equities
+- [equity return leg](SecurityBasedDerivatives/EquitySwaps/EquityReturnLeg.md) — return leg whose income is based on equities
+- [equity swap](SecurityBasedDerivatives/EquitySwaps/EquitySwap.md) — swap whose payments are linked to the change in value of underlying equities (e
+- [equity total return swap](SecurityBasedDerivatives/EquitySwaps/EquityTotalReturnSwap.md) — total return swap whose return leg underlier is based on equities
+- [equity variance swap](SecurityBasedDerivatives/EquitySwaps/EquityVarianceSwap.md) — dispersion swap in which the parties agree to exchange payments based on the difference between (i) the realized varianc
+- [equity volatility swap](SecurityBasedDerivatives/EquitySwaps/EquityVolatilitySwap.md) — dispersion swap that is a forward contract on the variability of movements in the price of its underlying equities
+- [equity warrant](DerivativesContracts/RightsAndWarrants/EquityWarrant.md) — warrant that permits the holder to acquire a specified amount of an equity instrument during a specified period at a spe
+- [escrow agent](CreditDerivatives/CreditDefaultSwaps/EscrowAgent.md) — third party that holds an asset or funds before they are formally transferred from one party to another party, per the t
+- [excess return swap](DerivativesContracts/Swaps/ExcessReturnSwap.md) — return swap in which the change in the level of the index will be equal to the returns generated primarily by the change
+- [exchange-traded warrant](DerivativesContracts/RightsAndWarrants/ExchangeTradedWarrant.md) — warrant that is listed on a securities exchange
+- [exotic option](DerivativesContracts/Options/ExoticOption.md) — option that has a non-standard payout structure or other feature
+- [exotic warrant](DerivativesContracts/RightsAndWarrants/ExoticWarrant.md) — warrant that gives the holder the right (but not the obligation) to buy (or sometimes sell) an underlying asset under no
+- [express certificate](DerivativesContracts/StructuredInstruments/ExpressCertificate.md) — participation certificate whose payout is conditional: should the underlying trade above the strike on the observation d
+- [extraction resource](DerivativesContracts/CommoditiesContracts/ExtractionResource.md) — negotiable commodity that is a mineral resource obtained via withdrawal from the natural environment
+- [extrinsic value](DerivativesContracts/Options/ExtrinsicValue.md) — measure of the difference between the market price of an option, called the premium, and its intrinsic value
+- [fence](DerivativesContracts/Options/Fence.md) — option trading strategy that uses options to limit the range of possible returns on a financial instrument
+- [fertilizer resource](DerivativesContracts/CommoditiesContracts/FertilizerResource.md) — negotiable commodity that includes ammonia, diammonium phosphate (DAP), potash, sulphur, urea, urea and ammonium nitrate
+- [financial future](DerivativesContracts/FuturesAndForwards/FinancialFuture.md) — futures contract based on underlying assets excluding commodities
+- [fixed fixed interest rate swap](RateDerivatives/IRSwaps/FixedFixedInterestRateSwap.md) — interest rate swap in which both parties pay a fixed interest rate that they could not otherwise obtain outside of a swa
+- [fixed float cross-currency interest rate swap](RateDerivatives/IRSwaps/FixedFloatCrossCurrencyInterestRateSwap.md) — interest rate swap in which fixed interest payments on the notional are exchanged for floating interest payments and the
+- [fixed float interest rate swap](RateDerivatives/IRSwaps/FixedFloatInterestRateSwap.md) — interest rate swap in which fixed interest payments on the notional are exchanged for floating interest payments
+- [fixed float single currency interest rate swap](RateDerivatives/IRSwaps/FixedFloatSingleCurrencyInterestRateSwap.md) — interest rate swap in which fixed interest payments on the notional are exchanged for floating interest payments and whe
+- [fixed income option](DerivativesContracts/Options/FixedIncomeOption.md) — option giving the buyer (holder) the right, but not the obligation, to buy (via a call option) or sell (via a put option
+- [fixed interest rate leg](RateDerivatives/IRSwaps/FixedInterestRateLeg.md) — fixed leg that specifies fixed interest amounts and terms for the payment of that interest
+- [fixed leg](DerivativesContracts/Swaps/FixedLeg.md) — swap leg whose paying party is obligated to make payments from time to time over the term of a swap calculated by refere
+- [fixed lookback strike expression](DerivativesContracts/ExoticOptions/FixedLookbackStrikeExpression.md) — cashflow expression specifying the arguments required to calculate the fixed price at which the lookback option is to be
+- [fixed payment leg](DerivativesContracts/Swaps/FixedPaymentLeg.md) — swap leg that specifies contractual terms associated with a schedule of payments for any swap calculated by reference to
+- [float float cross-currency interest rate swap](RateDerivatives/IRSwaps/FloatFloatCrossCurrencyInterestRateSwap.md) — interest rate swap that exchanges cashflows based on two different interest rates in different currencies
+- [float float interest rate swap](RateDerivatives/IRSwaps/FloatFloatInterestRateSwap.md) — interest rate swap that exchanges cashflows based on two different floating interest rates
+- [float float single currency interest rate swap](RateDerivatives/IRSwaps/FloatFloatSingleCurrencyInterestRateSwap.md) — interest rate swap that exchanges cashflows based on two different floating interest rates in the same currency
+- [floating interest rate leg](RateDerivatives/IRSwaps/FloatingInterestRateLeg.md) — floating leg in which variable interest is paid on some notional amount, linked to some underlying interest reference ra
+- [floating leg](DerivativesContracts/Swaps/FloatingLeg.md) — swap leg whose paying party is obligated to make payments from time to time over the term of a swap calculated by refere
+- [floating lookback strike expression](DerivativesContracts/ExoticOptions/FloatingLookbackStrikeExpression.md) — cashflow expression specifying the arguments required to calculate the best projected price at which the lookback option
+- [foreign exchange master agreement](DerivativesContracts/CurrencyContracts/ForeignExchangeMasterAgreement.md) — product-specific master agreement intended to reflect best market practice and to provide a standard agreement for parti
+- [foreign exchange settlement netting provision](DerivativesContracts/CurrencyContracts/ForeignExchangeSettlementNettingProvision.md) — settlement netting provision that is specific to foreign exchange contracts
+- [forward](DerivativesContracts/FuturesAndForwards/Forward.md) — derivative instrument that is privately negotiated between parties to buy the underlier at a specified future date at th
+- [forward contract adjustment method](DerivativesContracts/FuturesAndForwards/ForwardContractAdjustmentMethod.md) — method by which adjustments will be made to the contract should one or more of a number of extraordinary events occur
+- [forward rate agreement](DerivativesContracts/DerivativesBasics/ForwardRateAgreement.md) — agreement to exchange an interest rate commitment on a notional amount at a future date
+- [forward start option](DerivativesContracts/ExoticOptions/ForwardStartOption.md) — exotic option that is fully specified with respect to a set expiry date, underlying asset and other parameters, purchase
+- [freight resource](DerivativesContracts/CommoditiesContracts/FreightResource.md) — negotiable commodity that is a freight index route
+- [future on future](DerivativesContracts/FuturesAndForwards/FutureOnFuture.md) — futures contract whose underlying asset is at least one (other) futures contract
+- [future on option](DerivativesContracts/FuturesAndForwards/FutureOnOption.md) — futures contract whose underlying asset is at least one option contract
+- [future on swap](DerivativesContracts/FuturesAndForwards/FutureOnSwap.md) — futures contract whose underlying asset is at least one swap contract
+- [gas commodity](DerivativesContracts/CommoditiesContracts/GasCommodity.md) — extraction resource that is natural gas
+- [general debt basket](SecurityBasedDerivatives/SecurityBasedDerivatives/GeneralDebtBasket.md) — basket of debt instruments that provides additional capacity for potential funding and does not require the proceeds to 
+- [generated resource](DerivativesContracts/CommoditiesContracts/GeneratedResource.md) — negotiable commodity obtained via some generation process, including electricity, renewable energy, or any power/energy 
+- [grain commodity](DerivativesContracts/CommoditiesContracts/GrainCommodity.md) — agricultural resource that is a small, hard seed, of a food plant, especially of a cereal plant, such as wheat, corn, ry
+- [incremental facility debt basket](SecurityBasedDerivatives/SecurityBasedDerivatives/IncrementalFacilityDebtBasket.md) — basket of credit facilities whose constituents are extensible, allowing companies to borrow an additional term loan or r
+- [index certificate](DerivativesContracts/StructuredInstruments/IndexCertificate.md) — certificate whose underlying asset is an index
+- [index credit default swap](CreditDerivatives/CreditDefaultSwaps/IndexCreditDefaultSwap.md) — credit default swap that references a family of standardized credit derivative indices, where the underlying reference e
+- [index future](DerivativesContracts/FuturesAndForwards/IndexFuture.md) — futures contract whose underlying asset is at least one reference index or economic indicator
+- [index return swap](DerivativesContracts/Swaps/IndexReturnSwap.md) — return swap in which payments are based on a fee paid to the seller of the swap and on a floating reference price based 
+- [index tranche credit default swap](CreditDerivatives/CreditDefaultSwaps/IndexTrancheCreditDefaultSwap.md) — credit default swap that references a synthetic collateralized debt obligation (CDO) based on a credit index where each 
+- [index warrant](DerivativesContracts/RightsAndWarrants/IndexWarrant.md) — warrant that permits the holder to acquire a specified amount based on the performance of an index during a specified pe
+- [industrial resource](DerivativesContracts/CommoditiesContracts/IndustrialResource.md) — negotiable commodity that is obtained via some industrial process, including construction and manufacturing
+- [inflation leg](RateDerivatives/IRSwaps/InflationLeg.md) — floating rate leg of an inflation swap linked to an inflation index, such as the Consumer Price Index (CPI)
+- [inflation swap](RateDerivatives/IRSwaps/InflationSwap.md) — rate swap in which one party pays an amount calculated using an inflation rate index, and the other party pays an amount
+- [interest rate cap option](DerivativesContracts/ExoticOptions/InterestRateCapOption.md) — interest rate derivative in which the buyer receives payments at the end of each period in which the interest rate excee
+- [interest rate derivative](DerivativesContracts/DerivativesBasics/InterestRateDerivative.md) — rate-based derivative whose underlier is an interest rate
+- [interest rate floor option](DerivativesContracts/ExoticOptions/InterestRateFloorOption.md) — interest rate derivative in which the buyer receives payments at the end of each period in which the interest rate is be
+- [interest rate future](DerivativesContracts/FuturesAndForwards/InterestRateFuture.md) — futures contract with an interest-bearing instrument as the underlying asset
+- [interest rate option](DerivativesContracts/Options/InterestRateOption.md) — option that giving the buyer (holder) the right, but not the obligation, to receive a cash payment if market interest ra
+- [interest rate swap](RateDerivatives/IRSwaps/InterestRateSwap.md) — swap in which the reference (underlier) for at least one leg is an interest rate
+- [interest rate swap leg](RateDerivatives/IRSwaps/InterestRateSwapLeg.md) — swap leg that has an interest rate payment stream, including both a parametric and cashflow representation for the strea
+- [intrinsic value](DerivativesContracts/Options/IntrinsicValue.md) — measure of what an asset is worth, i
+- [introducing broker](DerivativesContracts/DerivativesBasics/IntroducingBroker.md) — broker that solicits or accepts orders for derivatives that are traded on or subject to the rules of an exchange
+- [iron butterfly](DerivativesContracts/Options/IronButterfly.md) — butterfly strategy that consists of two call options and two put options, three strike prices and the same expiration da
+- [iron condor](DerivativesContracts/Options/IronCondor.md) — condor strategy consisting of two puts (one long and one short) and two calls (one long and one short), and four strike 
+- [knock-in option](DerivativesContracts/ExoticOptions/KnockInOption.md) — barrier option that is not triggered until a certain price threshold is met
+- [knock-out option](DerivativesContracts/ExoticOptions/KnockOutOption.md) — barrier option with a built-in mechanism to expire as worthless if a specified price level in the underlying asset is re
+- [leveraged product](DerivativesContracts/StructuredInstruments/LeveragedProduct.md) — structured product that provides a further enhanced yield (over and above that of a yield-enhancement product), often wi
+- [loan credit default swap](CreditDerivatives/CreditDefaultSwaps/LoanCreditDefaultSwap.md) — credit default swap whose underlying reference obligation is limited strictly to syndicated secured loans, rather than a
+- [local lines of credit debt basket](SecurityBasedDerivatives/SecurityBasedDerivatives/LocalLinesOfCreditDebtBasket.md) — basket of debt instruments that may be relevant for companies with international operations, often permitting debt to be
+- [long mini-future certificate](DerivativesContracts/RightsAndWarrants/LongMiniFutureCertificate.md) — mini-future certificate that typically entitles the holder to acquire specific underlying assets during a specified peri
+- [long-term equity anticipation security](DerivativesContracts/Options/LongTermEquityAnticipationSecurity.md) — equity option that allows the holder to buy or sell shares of stock with expiration dates that are longer than one year,
+- [lookback option](DerivativesContracts/ExoticOptions/LookbackOption.md) — exotic option that minimizes the uncertainties related to the timing of market entry, providing the holder the advantage
+- [lookback strike terms](DerivativesContracts/ExoticOptions/LookbackStrikeTerms.md) — terms specifying the value of the underlying asset based on analysis during a specific period, typically ending in the m
+- [low exercise price option](DerivativesContracts/ExoticOptions/LowExercisePriceOption.md) — exotic option that is a European-style call option with an exercise price of one cent that mimics a futures contract
+- [major swap participant](DerivativesContracts/Swaps/MajorSwapParticipant.md) — financial service provider that maintains a substantial position in swaps for any of the major swap categories
+- [master agreement early termination right](DerivativesContracts/DerivativesMasterAgreements/MasterAgreementEarlyTerminationRight.md) — contractual right of a party to the master agreement to terminate the agreement early
+- [meat commodity](DerivativesContracts/CommoditiesContracts/MeatCommodity.md) — agricultural resource derived from the flesh of an animal (especially a mammal), such as pork bellies
+- [metal](DerivativesContracts/CommoditiesContracts/Metal.md) — material that, when freshly prepared, polished, or fractured, shows a lustrous appearance, and conducts electricity and 
+- [mini-future certificate](DerivativesContracts/RightsAndWarrants/MiniFutureCertificate.md) — entitlement that combines the structure of an open-end certificate with a leverage option with no fixed term, making lev
+- [money market future](DerivativesContracts/FuturesAndForwards/MoneyMarketFuture.md) — futures contract with a money market instrument as the underlying asset
+- [moneyness](DerivativesContracts/Options/Moneyness.md) — classifier for a derivative relating its strike price to the price of its underlying asset
+- [mountain range option](DerivativesContracts/ExoticOptions/MountainRangeOption.md) — exotic option based on multiple underlying securities
+- [multi-name credit default swap](CreditDerivatives/CreditDefaultSwaps/MultiNameCreditDefaultSwap.md) — credit default swap that references more than one obligation or borrower
+- [naked warrant](DerivativesContracts/RightsAndWarrants/NakedWarrant.md) — warrant that gives the holder the right, but not the obligation, to buy (call warrant) or to sell (put warrant) an under
+- [non-guarantor debt basket](SecurityBasedDerivatives/SecurityBasedDerivatives/Non-GuarantorDebtBasket.md) — basket of debt instruments that include a provision allowing certain subsidiaries within a corporate group, which are no
+- [notifying party](CreditDerivatives/CreditDefaultSwaps/NotifyingParty.md) — party responsible for issuing one or more formal notices indicating that an event that is relevant to a given contract h
+- [notional step amount](RateDerivatives/IRSwaps/NotionalStepAmount.md) — the amount of money that is subtracted from the notional on each step date
+- [notional step change event](RateDerivatives/IRSwaps/NotionalStepChangeEvent.md) — event in which a step change in the notional amount for a given swap leg occurs
+- [notional step period length](RateDerivatives/IRSwaps/NotionalStepPeriodLength.md) — recurrence interval indicating the frequency with which step changes occur, which is a multiple of the calculation perio
+- [notional step schedule](RateDerivatives/IRSwaps/NotionalStepSchedule.md) — schedule of changes in the notional amount on which interest is paid, comprising the regular sequence of step events
+- [observable value](DerivativesContracts/DerivativesBasics/ObservableValue.md) — specification for the value for something discernible and for which evidence can be obtained
+- [observed best value](DerivativesContracts/ExoticOptions/ObservedBestValue.md) — observed value of the underlying asset as of some date during the lookback period that is considered the best value from
+- [oil commodity](DerivativesContracts/CommoditiesContracts/OilCommodity.md) — generated resource that is a viscous liquid derived from petroleum, including for use as fuel, or as a lubricant, and th
+- [oil grade](DerivativesContracts/CommoditiesContracts/OilGrade.md) — measure of the viscosity of oil during operation
+- [option holder](DerivativesContracts/Options/OptionHolder.md) — party that owns an option
+- [option issuer](DerivativesContracts/Options/OptionIssuer.md) — issuer granting the rights defined in the option in exchange for some consideration
+- [option on future](DerivativesContracts/Options/OptionOnFuture.md) — option that gives the holder the right, but not the obligation, to buy or sell a specific futures contract at a specifie
+- [option premium](DerivativesContracts/Options/OptionPremium.md) — current market price of an option contract
+- [option premium formula](DerivativesContracts/Options/OptionPremiumFormula.md) — expression used to calculate the premium based either on the price per option or percentage of the notional amount
+- [option trading strategy](DerivativesContracts/Options/OptionTradingStrategy.md) — trading tactic involving more than one option type, strike price, or expiration date on the same underlying asset
+- [outperformance bonus certificate](DerivativesContracts/StructuredInstruments/OutperformanceBonusCertificate.md) — certificate that allows disproportionate participation (outperformance) in positive performance above the strike, in whi
+- [outperformance certificate](DerivativesContracts/StructuredInstruments/OutperformanceCertificate.md) — certificate that allows disproportionate participation (outperformance) in positive performance above the strike, reflec
+- [over-the-counter derivative instrument](DerivativesContracts/DerivativesBasics/OverTheCounterDerivativeInstrument.md) — derivative instrument that is not listed on an organized exchange
+- [over-the-counter instrument](DerivativesContracts/DerivativesBasics/OverTheCounterInstrument.md) — financial instrument and bilateral contract that is not listed on an organized exchange
+- [overnight index swap](RateDerivatives/IRSwaps/OvernightIndexSwap.md) — swap in which the periodic payments for one leg are based on an overnight interest rate index multiplied by the same not
+- [overnight rate index leg](RateDerivatives/IRSwaps/OvernightRateIndexLeg.md) — floating leg in which periodic payments are based on an overnight interest rate index multiplied by the same notional am
+- [paper resource](DerivativesContracts/CommoditiesContracts/PaperResource.md) — negotiable commodity that is a paper product, including containerboard, newsprint, pulp, recovered paper
+- [parametric cashflow terms](DerivativesContracts/DerivativesBasics/ParametricCashflowTerms.md) — terms for a set of cashflows defined according to a mathematical formula
+- [participation certificate](DerivativesContracts/StructuredInstruments/ParticipationCertificate.md) — participation product that provides the possibility to participate in the gains or losses in the price of an asset, subj
+- [participation instrument](DerivativesContracts/StructuredInstruments/ParticipationInstrument.md) — structured product that provides the possibility to participate in the performance of an asset or basket of assets
+- [paying party](DerivativesContracts/DerivativesBasics/PayingParty.md) — party responsible for making payments in a transaction specified in a contract
+- [performance-based variable leg](DerivativesContracts/Swaps/PerformanceBasedVariableLeg.md) — floating leg of a swap that depends on some statistical measure of the performance of the underlier
+- [perpetual warrant](DerivativesContracts/RightsAndWarrants/PerpetualWarrant.md) — warrant without an expiration date, giving the holder the right, but not the obligation, to buy (call warrant) or to sel
+- [plain vanilla interest rate swap](RateDerivatives/IRSwaps/PlainVanillaInterestRateSwap.md) — fixed-float single currency interest rate swap in which interest payments are netted, the notional principal does not ch
+- [polypropylene resource](DerivativesContracts/CommoditiesContracts/PolypropyleneResource.md) — negotiable commodity including plastics
+- [preferred convertible share purchase right](DerivativesContracts/RightsAndWarrants/PreferredConvertibleSharePurchaseRight.md) — purchase right that gives a prospective acquiree's preferred, convertible shareholders the right to buy preferred, conve
+- [preferred convertible share subscription right](DerivativesContracts/RightsAndWarrants/PreferredConvertibleShareSubscriptionRight.md) — subscription right entitling existing preferred, convertible shareholders to subscribe to new securities at a price norm
+- [preferred share purchase right](DerivativesContracts/RightsAndWarrants/PreferredSharePurchaseRight.md) — purchase right that gives a prospective acquiree's preferred shareholders the right to buy preferred shares of the firm 
+- [preferred share subscription right](DerivativesContracts/RightsAndWarrants/PreferredShareSubscriptionRight.md) — subscription right entitling existing preferred shareholders to subscribe to new securities at a price normally lower th
+- [private warrant](DerivativesContracts/RightsAndWarrants/PrivateWarrant.md) — warrant that is not tradable
+- [projected value at maturity](DerivativesContracts/ExoticOptions/ProjectedValueAtMaturity.md) — expected value of the underlying asset at maturity calculated as of some date during the lookback period
+- [protective collar](DerivativesContracts/Options/ProtectiveCollar.md) — collar that consists of a covered call and protective put
+- [protective put](DerivativesContracts/Options/ProtectivePut.md) — put option giving the buyer (holder) the right, but not the obligation, to sell the assets specified at with a strike pr
+- [public warrant](DerivativesContracts/RightsAndWarrants/PublicWarrant.md) — warrant that may be traded over the counter (OTC) or through an exchange
+- [purchase right](DerivativesContracts/RightsAndWarrants/PurchaseRight.md) — anti-takeover device that gives a prospective acquiree's shareholders the right to buy shares of the firm or shares of a
+- [put option](DerivativesContracts/Options/PutOption.md) — option giving the buyer (holder) the right, but not the obligation, to sell the assets specified at a fixed price or for
+- [put warrant](DerivativesContracts/RightsAndWarrants/PutWarrant.md) — warrant giving the buyer (holder) the right, but not the obligation, to sell the assets specified (i
+- [qualifying dividend period](SecurityBasedDerivatives/EquitySwaps/QualifyingDividendPeriod.md) — date period over which the sum of all qualifying dividends paid by the relevant issuers as identified in the swap terms 
+- [rainbow option](DerivativesContracts/ExoticOptions/RainbowOption.md) — exotic option linked to the performances of two or more underlying assets
+- [rate-based derivative](DerivativesContracts/DerivativesBasics/RateBasedDerivative.md) — derivative instrument where the holder has the right but may not have the obligation, depending on the nature of the ins
+- [rate-based leg](DerivativesContracts/Swaps/RateBasedLeg.md) — swap leg of a rate-based swap based on a floating interest, floating inflation or fixed interest rate
+- [rates swap](DerivativesContracts/Swaps/RatesSwap.md) — swap in two counterparties each agree to pay the other cash flows on defined dates during an agreed period, based on a s
+- [ratio debt basket](SecurityBasedDerivatives/SecurityBasedDerivatives/RatioDebtBasket.md) — basket of debt instruments whose constituents are specified based on a leverage ratio based on total debt rather than on
+- [realized variable leg](DerivativesContracts/Swaps/RealizedVariableLeg.md) — performance-based leg wherein the payment is netted at maturity rather than periodically
+- [receiving counterparty](DerivativesContracts/DerivativesBasics/ReceivingParty.md) — party that receives payments in a transaction specified in a contract
+- [return leg](DerivativesContracts/Swaps/ReturnLeg.md) — leg of a swap in which the income generated by some underlier is paid
+- [return swap](DerivativesContracts/Swaps/ReturnSwap.md) — swap in which one leg, the return leg, is based on income generated from some underlier
+- [reverse convertible certificate](DerivativesContracts/StructuredInstruments/ReverseConvertibleCertificate.md) — participation certificate whose payout is conditional: should the underlying asset close below the strike on expiry, the
+- [risk reversal](DerivativesContracts/Options/RiskReversal.md) — option trading strategy that consists of being short (selling) an out of the money put and being long (i
+- [security-based derivative](SecurityBasedDerivatives/SecurityBasedDerivatives/SecurityBasedDerivative.md) — derivative instrument whose underlier is based on a security, including collections of securities and indices based on s
+- [service resource](DerivativesContracts/CommoditiesContracts/ServiceResource.md) — negotiable commodity involving services such as transportation, communications, and trade
+- [settlement auction](CreditDerivatives/CreditDefaultSwaps/SettlementAuction.md) — independently administered synthetic auction process on a set of defined deliverable obligations that sets the reference
+- [short mini-future certificate](DerivativesContracts/RightsAndWarrants/ShortMiniFutureCertificate.md) — mini-future certificate that entitles the holder to acquire cash in exchange for specific underlying assets
+- [simple return leg](DerivativesContracts/Swaps/SimpleReturnLeg.md) — return leg based strictly on the income generated by the underlying asset, excluding appreciation, decrease in value, ca
+- [single currency interest rate swap](RateDerivatives/IRSwaps/SingleCurrencyInterestRateSwap.md) — interest rate swap in which the two streams of interest payments are in the same currency
+- [single name credit default swap](CreditDerivatives/CreditDefaultSwaps/SingleNameCreditDefaultSwap.md) — credit default swap whose underlying risk is a single reference obligation, or a single reference entity, such as a corp
+- [special dividend leg terms](SecurityBasedDerivatives/EquitySwaps/SpecialDividendLegTerms.md) — terms that are invoked if special dividend and memorial dividends are applicable
+- [standardized futures listing terms](DerivativesContracts/FuturesAndForwards/StandardizedFuturesListingTerms.md) — contract terms established by a derivatives exchange that apply to any listing of a futures contract on that exchange
+- [standardized futures terms](DerivativesContracts/FuturesAndForwards/StandardizedFuturesTerms.md) — contract terms established by a derivatives exchange that apply to any futures contract traded on that exchange
+- [standardized options terms](DerivativesContracts/Options/StandardizedOptionsTerms.md) — standardized contract terms established by a securities or options exchange or by an options clearing entity
+- [statistical swap](DerivativesContracts/Swaps/StatisticalSwap.md) — swap that depends on some statistical measure of the performance of the underlier
+- [straddle](DerivativesContracts/Options/Straddle.md) — neutral option trading strategy that involves simultaneously buying both a put option and a call option for the underlyi
+- [strangle](DerivativesContracts/Options/Strangle.md) — option trading strategy in which the investor holds a position in both a call and a put option with different strike pri
+- [strike leg](DerivativesContracts/Swaps/StrikeLeg.md) — swap leg that specifies a fixed amount, 'the strike', quoted at the time of execution
+- [strike price](DerivativesContracts/Options/StrikePrice.md) — price at which a lot of the underlying asset may be bought or sold when the contract is exercised
+- [strip strategy](DerivativesContracts/Options/StripStrategy.md) — option trading strategy that involves a sequential set of options with periodic reset dates, such that each period betwe
+- [structured product](DerivativesContracts/StructuredInstruments/StructuredProduct.md) — security whose cash flow characteristics depend upon one or more indices or that have embedded forwards or options or se
+- [structured warrant](DerivativesContracts/RightsAndWarrants/StructuredWarrant.md) — warrant that is listed on an exchange, offering investors a way to participate in the price performance of an underlying
+- [subscription right](DerivativesContracts/RightsAndWarrants/SubscriptionRight.md) — privileges allotted to existing security holders, entitling them to subscribe to new securities at a price normally lowe
+- [swap](DerivativesContracts/Swaps/Swap.md) — derivative instrument whereby counterparties agree to exchange periodic streams of cash flows or liabilities from two di
+- [swap confirmation](DerivativesContracts/Swaps/SwapConfirmation.md) — formal confirmation that codifies the terms and conditions specific to a lifecycle event with respect to the overall tra
+- [swap data repository](DerivativesContracts/Swaps/SwapDataRepository.md) — financial service provider that provides a central facility for swap data reporting and recordkeeping
+- [swap dealer](DerivativesContracts/Swaps/SwapDealer.md) — non-depository institution such as one that deals in swaps, makes a market in swaps, regularly enters into swaps with co
+- [swap leg](DerivativesContracts/Swaps/SwapLeg.md) — terms defining and the commitment to fulfill cashflow requirements (e
+- [swap leg event](DerivativesContracts/Swaps/SwapLegEvent.md) — swap lifecycle event, such as a payment or rate reset event, that applies to one leg of a swap
+- [swap lifecycle event](DerivativesContracts/Swaps/SwapLifecycleEvent.md) — event that occurs during the lifecycle of a swap, where the overall set of events includes those specific to the issuer,
+- [swap lifecycle event identifier](DerivativesContracts/Swaps/SwapLifecycleEventIdentifier.md) — identifier that uniquely identifies a specific event in the lifecycle of a swap
+- [swap party](DerivativesContracts/Swaps/SwapParty.md) — party to a swap and therefore a legal party to the contract that embodies that transaction
+- [swap paying party](DerivativesContracts/Swaps/SwapPayingParty.md) — swap party responsible for making payments for a given leg of the transaction as defined in the contract
+- [swap receiving party](DerivativesContracts/Swaps/SwapReceivingParty.md) — swap party that receives payments for a given leg of the transaction as defined in the contract
+- [swap terms](DerivativesContracts/Swaps/SwapTerms.md) — legal contractual terms of a swap transaction
+- [swaption](DerivativesContracts/ExoticOptions/Swaption.md) — over-the-counter option that confers the right but not the obligation, to enter into a swap transaction at some time in 
+- [total return leg](DerivativesContracts/Swaps/TotalReturnLeg.md) — return leg based on the income generated by the underlying asset as well as any appreciation, decrease in value, capital
+- [total return swap](DerivativesContracts/Swaps/TotalReturnSwap.md) — return swap where the seller agrees to pay the other party the difference in value of some underlying asset multiplied b
+- [tracker certificate](DerivativesContracts/StructuredInstruments/TrackerCertificate.md) — certificate that reflects underlying price moves 1:1 (adjusted by conversion ratio and any related fees), in which the a
+- [traditional warrant](DerivativesContracts/RightsAndWarrants/TraditionalWarrant.md) — warrant that gives the holder the right, but not the obligation, to buy (call warrant) or to sell (put warrant) an under
+- [triggering event](CreditDerivatives/CreditDefaultSwaps/TriggeringEvent.md) — event that relates to or triggers some aspect of a credit default swap
+- [turbo certificate](DerivativesContracts/StructuredInstruments/TurboCertificate.md) — certificate that acts as a leveraged security, whose price tracks an underlying financial asset's price one for one, and
+- [twin-win certificate](DerivativesContracts/StructuredInstruments/TwinWinCertificate.md) — certificate that makes profits possible with rising and falling underlying asset values, in which a falling underlying a
+- [underlying asset valuation](DerivativesContracts/DerivativesBasics/UnderlyingAssetValuation.md) — assessment activity to estimate the value of an underlying asset of a derivative
+- [unique product identifier](DerivativesContracts/DerivativesBasics/UniqueProductIdentifier.md) — sequence of characters uniquely identifying an OTC derivative product that is reportable to a trade repository
+- [unique product identifier registry entry](DerivativesContracts/DerivativesBasics/UniqueProductIdentifierRegistryEntry.md) — entry in a unique product identifier registry
+- [unique product identifier service provider](DerivativesContracts/DerivativesBasics/UniqueProductIdentifierServiceProvider.md) — organization designated by an external body of financial regulators to assign UPIs and operate a UPI reference data libr
+- [unique swap identifier](DerivativesContracts/Swaps/UniqueSwapIdentifier.md) — identifier for a swap that is used in recordkeeping and swap data reporting
+- [valuation terms](DerivativesContracts/DerivativesBasics/ValuationTerms.md) — contract terms specific to valuation of the underlying asset(s)
+- [vanilla option](DerivativesContracts/Options/VanillaOption.md) — common option giving the buyer (holder) the right, but not the obligation, to buy (via a call option) or sell (via a put
+- [warrant](DerivativesContracts/RightsAndWarrants/Warrant.md) — entitlement that permits the holder to purchase a specified amount of a financial instrument, commodity, currency or oth
+- [weather derivative](DerivativesContracts/CommoditiesContracts/WeatherDerivative.md) — derivative instrument whose primary underlying notional item is based on something related to the weather, for example, 
+- [yield-enhancement product](DerivativesContracts/StructuredInstruments/YieldEnhancementProduct.md) — structured product that provides a predefined yield in return for a downside risk
+- [zero coupon interest rate swap](RateDerivatives/IRSwaps/ZeroCouponInterestRateSwap.md) — interest rate swap in which the fixed rate cash flows are compounded and paid once on the expiration date, rather than p
