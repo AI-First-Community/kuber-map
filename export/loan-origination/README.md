@@ -7,6 +7,16 @@ Audit-ready FIBO grounding for a financial AI agent.
 - `context.md` — the same content rendered for direct injection into an LLM prompt.
 - `okf/` — a self-contained OKF slice (concept + bridge markdown).
 
+## Retrieval endpoint (MCP)
+An agent can query this pack over the Model Context Protocol:
+
+```
+python etl/mcp_server.py --pack export/Loan Origination & Underwriting (residential mortgage)/pack.json
+```
+
+Tools: `search_concepts(query, k)`, `get_concept(iri)`, `list_bridges()` — each result
+carries the FIBO `citation` IRI and `provenance`.
+
 ## Citation model
 71 concepts, 4 curated bridges. Each concept's `citation` is its
 FIBO `resource` IRI — an agent cites it to justify a claim. `provenance` on every edge

@@ -18,7 +18,8 @@ Last updated: 2026-07-04
 - ✅ Loan-Origination curation: **71 core concepts** (`curation/loan-origination.json`) + **4 validated cross-domain bridges** (`curation/bridges.json`, `knowledge/bridges/`). Tools: `etl/nominate_core.py`, `etl/bridges.py`.
 - ✅ **`core:` wired into the bundle** — `to_okf.py` stamps `core: true` on all 71 curated concepts (frontmatter + index markers); `make curate` = nominate + bridges + rebuild.
 - ✅ **Definition-rewrite overlay** — `curation/definitions.json` supplies learner-friendly definitions for the 7 core concepts FIBO ships with no `skos:definition` (each grounded in its FIBO superclass/axioms); `to_okf.py` applies them as `definition_provenance: curated`, keeps FIBO's `resource:` IRI, and refuses to overwrite any real FIBO definition.
-- ✅ **Context-pack export** (the product, `etl/export_pack.py` + `make pack`) — `export/loan-origination/` with `pack.json` (structured RAG records), `context.md` (LLM-injectable grounding doc), and a self-contained `okf/` slice. 71 concepts + 4 bridges, each carrying its FIBO IRI as citation + `provenance` on every edge/definition. **MCP retrieval endpoint still TODO.**
+- ✅ **Context-pack export** (the product, `etl/export_pack.py` + `make pack`) — `export/loan-origination/` with `pack.json` (structured RAG records), `context.md` (LLM-injectable grounding doc), and a self-contained `okf/` slice. 71 concepts + 4 bridges, each carrying its FIBO IRI as citation + `provenance` on every edge/definition.
+- ✅ **MCP retrieval endpoint** — `etl/mcp_server.py` (stdlib-only MCP stdio server) + `etl/retrieval.py` (weighted keyword search). Tools: `search_concepts`, `get_concept`, `list_bridges`; every hit carries citation IRI + provenance. Reusable by the eval runner.
 - ✅ Published to GitHub (private): `AI-First-Community/Bodhi-Map-For-FinTech`, reproducible via `make fibo`.
 
 **Not started:** context-pack export, the agent eval, the map UI, additional domains/use-cases, EDM contribution.
@@ -31,8 +32,8 @@ Last updated: 2026-07-04
 
 1. ✅ **Wire `core:` into the bundle** — done. `to_okf.py` reads `curation/loan-origination.json`, stamps `core: true` on all 71 concepts + marks them in each `index.md`; `make curate` runs nominate + bridges + rebuild.
 2. ✅ **Learner-friendly definition rewrites** — done. `curation/definitions.json` covers the 7 empty-definition core concepts (*mortgage product*, *loan phase*, *consumer credit protection law*, the lifecycle phases/status, *borrower disclosure requirement*); applied as `definition_provenance: curated`, grounded in each class's FIBO superclass. The other 6 thin-but-present defs were left as FIBO's (Rule 1 — don't replace real FIBO text).
-3. **Context-pack export** (the product) — mostly done (`export_pack.py`, `make pack`): OKF slice + flat JSON + `context.md` all ship. **Remaining: the MCP tool / retrieval endpoint** an agent calls against `pack.json`. ◀ **next**
-4. **Grounded-vs-ungrounded eval** (the value proof) — `eval/`: a 50–100 Q financial-semantics benchmark for loan underwriting; run an agent **with** vs **without** the context pack; score accuracy, hallucination rate, and % answers carrying a valid FIBO provenance citation. **Target: ≥15–20pt accuracy lift + 100% auditable.**
+3. ✅ **Context-pack export** (the product) — done. `export_pack.py`/`make pack` emit OKF slice + flat JSON + `context.md`; `etl/mcp_server.py` + `etl/retrieval.py` provide the MCP retrieval endpoint.
+4. **Grounded-vs-ungrounded eval** (the value proof) — `eval/`: a 50–100 Q financial-semantics benchmark for loan underwriting; run an agent **with** vs **without** the context pack; score accuracy, hallucination rate, and % answers carrying a valid FIBO provenance citation. **Target: ≥15–20pt accuracy lift + 100% auditable.** ◀ **next**
 
 ---
 
@@ -42,7 +43,8 @@ Last updated: 2026-07-04
 - [x] Wire `core:` flag from curation into generated bundle (`to_okf.py`)
 - [x] `make curate` target (nominate_core + bridges + rebuild)
 - [x] Definition-rewrite overlay for thin-def core concepts (curation input + `to_okf` apply)
-- [x] `etl/export_pack.py` — grounds_in closure → OKF slice + JSON + `context.md` (MCP endpoint still TODO)
+- [x] `etl/export_pack.py` — grounds_in closure → OKF slice + JSON + `context.md`
+- [x] MCP retrieval endpoint (`etl/mcp_server.py` + `etl/retrieval.py`)
 - [ ] `eval/` harness: benchmark, grounded vs ungrounded runner, scorecard
 - [ ] Write up MLV result in `SPIKE_RESULTS.md` (the accuracy/hallucination/auditability numbers)
 
