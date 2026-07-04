@@ -1,6 +1,8 @@
 ---
 type: FIBO Class
 title: "borrower disclosure requirement"
+description: "regulatory requirement that a lender disclose specified information to a borrower or prospective borrower — such as the terms and costs of a loan product — conferring a corresponding right to that information and governing how the borrower is assessed"
+definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement
 tags: [LOAN, Provisional]
 core: true
@@ -10,7 +12,7 @@ relations:
   - {type: governs, target: "/LOAN/LoansGeneral/LoanApplications/BorrowerAssessment.md", provenance: fibo}
 ---
 
-FIBO class *borrower disclosure requirement*.
+regulatory requirement that a lender disclose specified information to a borrower or prospective borrower — such as the terms and costs of a loan product — conferring a corresponding right to that information and governing how the borrower is assessed
 
 ### Relationships
 - is-a: [DisclosureRequirement](/LOAN/LoansGeneral/LoansRegulatory/DisclosureRequirement.md)

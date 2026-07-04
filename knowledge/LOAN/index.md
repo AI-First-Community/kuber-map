@@ -12,7 +12,7 @@
 - core · [automated underwriting system](RealEstateLoans/MortgageOrigination/AutomatedUnderwritingSystem.md) — software system that collects the information necessary to approve a loan application and supports a mortgage lender's a
 - core · [borrower assessment](LoansGeneral/LoanApplications/BorrowerAssessment.md) — assessment report detailing information about the borrower and their credit history that may be relevant to the loan app
 - [borrower data protection requirement](LoansGeneral/LoansRegulatory/BorrowerDataProtectionRequirement.md) — 
-- core · [borrower disclosure requirement](LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement.md) — 
+- core · [borrower disclosure requirement](LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement.md) — regulatory requirement that a lender disclose specified information to a borrower or prospective borrower — such as the 
 - core · [borrower monthly income](LoansGeneral/LoanApplications/BorrowerMonthlyIncome.md) — total monthly qualifying income of a potential borrower
 - [borrower right](LoansGeneral/LoansRegulatory/BorrowerRight.md) — 
 - [bridging loan purpose](LoansSpecific/LoanProducts/BridgingLoanPurpose.md) — 
@@ -45,7 +45,7 @@
 - [construction type](RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/ConstructionType.md) — particular kind of construction
 - [consumer credit card agreement](LoansSpecific/CardAccounts/ConsumerCreditCardAgreement.md) — credit card agreement for a card issued for household, family, or other personal expenditures that is accessed by a borr
 - [consumer credit equal treatment requirement](LoansGeneral/LoansRegulatory/ConsumerCreditEqualTreatmentRequirement.md) — 
-- core · [consumer credit protection law](LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw.md) — 
+- core · [consumer credit protection law](LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw.md) — consumer protection law that regulates the extension of credit to consumers — governing matters such as disclosure of te
 - [consumer credit reference agency](LoansGeneral/LoansRegulatory/ConsumerCreditReferenceAgency.md) — Applicable regulations: vary by jurisdiciton
 - [consumer credit requirement](LoansGeneral/LoansRegulatory/ConsumerCreditRequirement.md) — Requirement set out on the lender about how they must treat the appliction to a loan
 - [consumer loan](LoansSpecific/ConsumerLoans/ConsumerLoan.md) — loan to one or more individuals for household, family, or other personal expenditures, excluding mortgages and student l
@@ -93,15 +93,15 @@
 - core · [loan application](LoansGeneral/LoanApplications/LoanApplication.md) — request by a potential borrower to a potential lender to borrow money containing information used to decide whether to g
 - [loan application at agreement stage](LoansGeneral/LoanApplications/LoanApplicationAtAgreementStage.md) — 
 - [loan application at disbursement stage](LoansGeneral/LoanApplications/LoanApplicationAtDisbursementStage.md) — 
-- core · [loan application phase](LoansGeneral/LoanApplications/LoanApplicationPhase.md) — 
-- core · [loan application status](LoansGeneral/LoanApplications/LoanApplicationStatus.md) — 
+- core · [loan application phase](LoansGeneral/LoanApplications/LoanApplicationPhase.md) — distinct phase in the lifecycle of a loan application, such as pre-qualification, application intake, underwriting, or d
+- core · [loan application status](LoansGeneral/LoanApplications/LoanApplicationStatus.md) — classifier indicating the state of a loan application at a particular point in its lifecycle, such as submitted, under r
 - [loan at application stage](LoansGeneral/LoanApplications/LoanAtApplicationStage.md) — 
 - [loan default proceeding](LoansGeneral/LoanEvents/LoanDefaultProceeding.md) — [no definition] Further Review This is typically part of mortgagte servicing
 - [loan market category](LoansSpecific/LoanProducts/LoanMarketCategory.md) — category indicating the market domain in which the loan product is offered
 - core · [loan offering](LoansSpecific/LoanProducts/LoanProductOffering.md) — offering related to a loan product that may be a tailored to particular circumstances, aimed at a group of borrowers or 
 - [loan paid in full](LoansGeneral/LoanEvents/LoanPaidInFull.md) — 
 - core · [loan payment schedule](LoansGeneral/Loans/LoanPaymentSchedule.md) — regular or explicit (ad hoc) payment schedule associated with a given loan-specific account
-- core · [loan phase](LoansGeneral/LoanEvents/LoanPhase.md) — 
+- core · [loan phase](LoansGeneral/LoanEvents/LoanPhase.md) — distinct phase in the lifecycle of a loan, such as origination, disbursement, repayment, or closure
 - core · [loan product](LoansSpecific/LoanProducts/LoanProduct.md) — financial product that is realized as a loan that a party may acquire from a lending institution with specific character
 - [loan product disclosure right](LoansSpecific/LoanProducts/LoanProductDisclosureRight.md) — Right to fair representation of the facts about Loan products before entrering into agreements for same
 - [loan product representations](LoansGeneral/LoansRegulatory/LoanProductRepresentations.md) — Representations about the loan product and the appropriateness of this for the borrower
@@ -118,7 +118,7 @@
 - core · [mortgage indemnity guarantor](RealEstateLoans/MortgageOrigination/MortgageIndemnityGuarantor.md) — guarantor and insurer that provides mortgage insurance in the form of a mortgage indemnity guarantee (MIG)
 - [mortgage indemnity insurance policy](RealEstateLoans/MortgageOrigination/MortgageIndemnityInsurancePolicy.md) — insurance policy providing the mortgage indemnity guarantee
 - core · [mortgage loan purpose](RealEstateLoans/MortgageOrigination/MortgageLoanPurpose.md) — the purpose for which mortgage loan proceeds will be used, such as real property purchase, dwelling construction, or loa
-- core · [mortgage product](LoansSpecific/LoanProducts/MortgageProduct.md) — 
+- core · [mortgage product](LoansSpecific/LoanProducts/MortgageProduct.md) — loan product, offered by a lender, that is realized as a mortgage — a loan secured by real property — with specific elig
 - [motor vehicle loan](LoansSpecific/ConsumerLoans/MotorVehicleLoan.md) — collateralized, simple-interest loan that is repaid in monthly installments over a period of typically three to five yea
 - [motorhome loan purpose](LoansSpecific/LoanProducts/MotorhomeLoanPurpose.md) — 
 - [observed indicator value](LoansSpecific/GreenLoans/ObservedIndicatorValue.md) — observation (measurement) of a key performance indicator measured at specific date and time
@@ -147,7 +147,7 @@
 - core · [reg b](LoansGeneral/LoansRegulatory/RegB.md) — US regulation concerning "Equal credit opportunity act" Electronic delivery of disclosures
 - core · [reg z](LoansGeneral/LoansRegulatory/RegZ.md) — US Fed regulation "Truth in Lending Act" uniform standards for electronic delivery of disclosures
 - [regulated student loan](LoansSpecific/StudentLoans/RegulatedStudentLoan.md) — student loan (1) whose lender is a government agency or instrumentality, and/or (2) that is treated uniquely due to tax 
-- core · [repayment phase](LoansGeneral/LoanEvents/RepaymentPhase.md) — 
+- core · [repayment phase](LoansGeneral/LoanEvents/RepaymentPhase.md) — phase in a loan's lifecycle during which the borrower repays outstanding principal and interest according to the loan's 
 - [residential houseboat loan purpose](LoansSpecific/LoanProducts/ResidentialHouseboatLoanPurpose.md) — 
 - core · [reverse mortgage loan](RealEstateLoans/Mortgages/ReverseMortgageLoan.md) — loan secured by real estate that pays money to the borrower against a set principal limit based on the value of existing
 - [right of credit record correction](LoansGeneral/LoansRegulatory/RightOfCreditRecordCorrection.md) — The right to have a credit record corrected

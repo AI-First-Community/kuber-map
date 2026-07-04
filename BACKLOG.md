@@ -17,6 +17,7 @@ Last updated: 2026-07-04
 - ✅ Domains **emitted** in the bundle: **FND, LOAN, FBC, BE** (~1,288 concepts). Default `DOMAINS = FND LOAN FBC BE` so the loan-origination core + bridge endpoints all resolve to real nodes.
 - ✅ Loan-Origination curation: **71 core concepts** (`curation/loan-origination.json`) + **4 validated cross-domain bridges** (`curation/bridges.json`, `knowledge/bridges/`). Tools: `etl/nominate_core.py`, `etl/bridges.py`.
 - ✅ **`core:` wired into the bundle** — `to_okf.py` stamps `core: true` on all 71 curated concepts (frontmatter + index markers); `make curate` = nominate + bridges + rebuild.
+- ✅ **Definition-rewrite overlay** — `curation/definitions.json` supplies learner-friendly definitions for the 7 core concepts FIBO ships with no `skos:definition` (each grounded in its FIBO superclass/axioms); `to_okf.py` applies them as `definition_provenance: curated`, keeps FIBO's `resource:` IRI, and refuses to overwrite any real FIBO definition.
 - ✅ Published to GitHub (private): `AI-First-Community/Bodhi-Map-For-FinTech`, reproducible via `make fibo`.
 
 **Not started:** context-pack export, the agent eval, the map UI, additional domains/use-cases, EDM contribution.
@@ -28,8 +29,8 @@ Last updated: 2026-07-04
 ## Immediate next (in order)
 
 1. ✅ **Wire `core:` into the bundle** — done. `to_okf.py` reads `curation/loan-origination.json`, stamps `core: true` on all 71 concepts + marks them in each `index.md`; `make curate` runs nominate + bridges + rebuild.
-2. **Learner-friendly definition rewrites** — ~15 core concepts have thin/empty FIBO definitions (e.g. *mortgage product*, *loan phase*, *consumer credit protection law*). Author rewrites as a curation overlay (never edit generated files); `to_okf.py` applies them. Keep FIBO's `resource:` IRI for provenance. ◀ **next**
-3. **Context-pack export** (the product) — `etl/export_pack.py`: take a use-case's `grounds_in` closure (71 core + 4 bridges) and emit (a) an OKF slice, (b) flat JSON for RAG, (c) an MCP tool / retrieval endpoint. One pack = one agent's grounding context, each concept carrying its FIBO IRI for citation.
+2. ✅ **Learner-friendly definition rewrites** — done. `curation/definitions.json` covers the 7 empty-definition core concepts (*mortgage product*, *loan phase*, *consumer credit protection law*, the lifecycle phases/status, *borrower disclosure requirement*); applied as `definition_provenance: curated`, grounded in each class's FIBO superclass. The other 6 thin-but-present defs were left as FIBO's (Rule 1 — don't replace real FIBO text).
+3. **Context-pack export** (the product) — `etl/export_pack.py`: take a use-case's `grounds_in` closure (71 core + 4 bridges) and emit (a) an OKF slice, (b) flat JSON for RAG, (c) an MCP tool / retrieval endpoint. One pack = one agent's grounding context, each concept carrying its FIBO IRI for citation. ◀ **next**
 4. **Grounded-vs-ungrounded eval** (the value proof) — `eval/`: a 50–100 Q financial-semantics benchmark for loan underwriting; run an agent **with** vs **without** the context pack; score accuracy, hallucination rate, and % answers carrying a valid FIBO provenance citation. **Target: ≥15–20pt accuracy lift + 100% auditable.**
 
 ---
@@ -39,7 +40,7 @@ Last updated: 2026-07-04
 ### E1 — Complete the Loan-Origination MLV (value proof)  ◀ current focus
 - [x] Wire `core:` flag from curation into generated bundle (`to_okf.py`)
 - [x] `make curate` target (nominate_core + bridges + rebuild)
-- [ ] Definition-rewrite overlay for thin-def core concepts (curation input + `to_okf` apply)
+- [x] Definition-rewrite overlay for thin-def core concepts (curation input + `to_okf` apply)
 - [ ] `etl/export_pack.py` — grounds_in closure → OKF slice + JSON + MCP endpoint
 - [ ] `eval/` harness: benchmark, grounded vs ungrounded runner, scorecard
 - [ ] Write up MLV result in `SPIKE_RESULTS.md` (the accuracy/hallucination/auditability numbers)

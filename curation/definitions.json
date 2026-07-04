@@ -1,0 +1,47 @@
+{
+  "_comment": "Learner-friendly definition overlay for CORE concepts that FIBO ships with no skos:definition. Applied by etl/to_okf.py, which marks the description `definition_provenance: curated` and keeps FIBO's resource: IRI. Each rewrite is GROUNDED in the class's FIBO superclass + owl:Restriction structure (see grounded_in) — not invented. Never override a concept that already has a real FIBO definition.",
+  "definitions": [
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/MortgageProduct",
+      "title": "mortgage product",
+      "definition": "loan product, offered by a lender, that is realized as a mortgage — a loan secured by real property — with specific eligibility criteria, characteristics, and terms",
+      "grounded_in": "rdfs:subClassOf LoanProduct ('financial product realized as a loan ... with specific characteristics and terms'); a mortgage is a loan secured by real property"
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationStatus",
+      "title": "loan application status",
+      "definition": "classifier indicating the state of a loan application at a particular point in its lifecycle, such as submitted, under review, approved, declined, or withdrawn",
+      "grounded_in": "rdfs:subClassOf fibo-fnd-arr-lif:LifecycleStatus ('classifier indicating the position or state of something at a particular point in its life-cycle'); stage names illustrative"
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationPhase",
+      "title": "loan application phase",
+      "definition": "distinct phase in the lifecycle of a loan application, such as pre-qualification, application intake, underwriting, or decisioning",
+      "grounded_in": "rdfs:subClassOf fibo-fnd-arr-lif:LifecycleStage ('phase in a lifecycle'); phase names illustrative"
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/LoanPhase",
+      "title": "loan phase",
+      "definition": "distinct phase in the lifecycle of a loan, such as origination, disbursement, repayment, or closure",
+      "grounded_in": "rdfs:subClassOf fibo-fnd-arr-lif:LifecycleStage ('phase in a lifecycle'); phase names illustrative"
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/RepaymentPhase",
+      "title": "repayment phase",
+      "definition": "phase in a loan's lifecycle during which the borrower repays outstanding principal and interest according to the loan's payment schedule",
+      "grounded_in": "rdfs:subClassOf fibo-loan-ln-ev:LoanPhase (a phase in the lifecycle of a loan)"
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw",
+      "title": "consumer credit protection law",
+      "definition": "consumer protection law that regulates the extension of credit to consumers — governing matters such as disclosure of terms and costs, fair lending, and borrower rights (for example, in the US, the Consumer Credit Protection Act and its implementing regulations)",
+      "grounded_in": "rdfs:subClassOf fibo-loan-ln-reg:ConsumerProtectionLaw (a consumer protection law), specialized to the extension of credit; US example is illustrative"
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement",
+      "title": "borrower disclosure requirement",
+      "definition": "regulatory requirement that a lender disclose specified information to a borrower or prospective borrower — such as the terms and costs of a loan product — conferring a corresponding right to that information and governing how the borrower is assessed",
+      "grounded_in": "rdfs:subClassOf fibo-loan-ln-reg:DisclosureRequirement ('Requirement for disclosure to borrowers or potential borrowers'); confers ProductDisclosureRight; governs BorrowerAssessment (owl:Restriction axioms)"
+    }
+  ]
+}

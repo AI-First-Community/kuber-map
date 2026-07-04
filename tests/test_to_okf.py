@@ -29,3 +29,23 @@ def test_emit_stamps_core_flag():
            "cluster": "LOAN", "maturity": "Release", "relations": []}
     assert "core: true" in to_okf.emit(rec, is_core=True)
     assert "core: true" not in to_okf.emit(rec, is_core=False)
+
+
+def test_load_definitions_collects_overrides(tmp_path):
+    f = tmp_path / "defs.json"
+    f.write_text(json.dumps({"definitions": [
+        {"iri": "https://ex/A", "definition": "our text"},
+        {"iri": "https://ex/B"},                 # no definition -> excluded
+        {"definition": "orphan"},                # no iri -> excluded
+    ]}))
+    assert to_okf.load_definitions([str(f)]) == {"https://ex/A": "our text"}
+
+
+def test_emit_marks_curated_definition_provenance():
+    rec = {"iri": "https://ex/A", "title": "a", "description": "our learner def",
+           "cluster": "LOAN", "maturity": "Release", "relations": []}
+    curated = to_okf.emit(rec, curated_def=True)
+    assert "definition_provenance: curated" in curated
+    # FIBO's resource IRI is always preserved, never rewritten as ours.
+    assert "resource: https://ex/A" in curated
+    assert "definition_provenance" not in to_okf.emit(rec, curated_def=False)

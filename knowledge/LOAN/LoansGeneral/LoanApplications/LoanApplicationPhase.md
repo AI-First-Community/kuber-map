@@ -1,6 +1,8 @@
 ---
 type: FIBO Class
 title: "loan application phase"
+description: "distinct phase in the lifecycle of a loan application, such as pre-qualification, application intake, underwriting, or decisioning"
+definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationPhase
 tags: [LOAN, Provisional]
 core: true
@@ -8,7 +10,7 @@ relations:
   - {type: is-a, target: "/FND/Arrangements/Lifecycles/LifecycleStage.md", provenance: fibo}
 ---
 
-FIBO class *loan application phase*.
+distinct phase in the lifecycle of a loan application, such as pre-qualification, application intake, underwriting, or decisioning
 
 ### Relationships
 - is-a: [LifecycleStage](/FND/Arrangements/Lifecycles/LifecycleStage.md)
