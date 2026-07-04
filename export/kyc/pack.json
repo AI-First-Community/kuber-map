@@ -1,0 +1,1847 @@
+{
+  "use_case": "KYC & Beneficial Ownership (entity resolution)",
+  "generated_from": {
+    "intermediate": "out/intermediate.json",
+    "core": "curation/kyc.json",
+    "bridges": "curation/kyc-bridges.json",
+    "definitions": "curation/definitions.json"
+  },
+  "counts": {
+    "concepts": 58,
+    "bridges": 4,
+    "curated_definitions": 0,
+    "concepts_without_definition": 0
+  },
+  "concepts": [
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountHolder",
+      "title": "account holder",
+      "facet": "Customer & parties",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "party that owns an account",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountHolder",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Owner",
+          "target_title": "owner",
+          "provenance": "fibo"
+        },
+        {
+          "type": "holds",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/Account",
+          "target_title": "account",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://www.omg.org/spec/Commons/PartiesAndSituations/Agent",
+      "title": "agent",
+      "facet": "Customer & parties",
+      "cluster": "CMNS",
+      "maturity": null,
+      "definition": "something autonomous that can adapt to and interact with its environment",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://www.omg.org/spec/Commons/PartiesAndSituations/Agent",
+      "relations": [
+        {
+          "type": "has-name",
+          "target": "https://www.omg.org/spec/Commons/ContextualDesignators/ContextualName",
+          "target_title": "contextual name",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Client",
+      "title": "client",
+      "facet": "Customer & parties",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "party that purchases professional services from, or has a formal relationship to purchase services from another party",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Client",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/PartyRole",
+          "target_title": "party role",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractParty",
+      "title": "contract party",
+      "facet": "Customer & parties",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "legally competent party that has entered into a binding agreement, accepting and conceding obligations, responsibilities, and benefits as specified",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractParty",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/PartyRole",
+          "target_title": "party role",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-played-by",
+          "target": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
+          "target_title": "legal person",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Customer",
+      "title": "customer",
+      "facet": "Customer & parties",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "party that receives or consumes products (goods or services) and has the ability to choose between different products and suppliers",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Customer",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Buyer",
+          "target_title": "buyer",
+          "provenance": "fibo"
+        },
+        {
+          "type": "buys-from",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Supplier",
+          "target_title": "supplier",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccount",
+      "title": "customer account",
+      "facet": "Customer & parties",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "account that represents an identified, named collection of balances and cumulative totals used to summarize customer transaction-related activity over a designated period of time",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccount",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/Account",
+          "target_title": "account",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-defined-in",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/ServiceAgreement",
+          "target_title": "service agreement",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-held-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccountHolder",
+          "target_title": "customer account holder",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-identified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountIdentifier",
+          "target_title": "account identifier",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccountHolder",
+      "title": "customer account holder",
+      "facet": "Customer & parties",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "party that owns a customer account",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccountHolder",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountHolder",
+          "target_title": "account holder",
+          "provenance": "fibo"
+        },
+        {
+          "type": "holds",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccount",
+          "target_title": "customer account",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/LegallyCompetentNaturalPerson",
+      "title": "legally competent natural person",
+      "facet": "Customer & parties",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "person who is considered competent, under the circumstances, to enter into a contract, conduct business, or participate in other activities that generally require the mental ability to understand problems and make decisions on his or her own behalf",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/LegallyCompetentNaturalPerson",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/Person",
+          "target_title": "person",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
+          "target_title": "legal person",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://www.omg.org/spec/Commons/PartiesAndSituations/Party",
+      "title": "party",
+      "facet": "Customer & parties",
+      "cluster": "CMNS",
+      "maturity": null,
+      "definition": "person or organization",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://www.omg.org/spec/Commons/PartiesAndSituations/Party",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/Agent",
+          "target_title": "agent",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-address",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/PhysicalAddress",
+          "target_title": "physical address",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-mailing-address",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/PhysicalAddress",
+          "target_title": "physical address",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/Person",
+      "title": "person",
+      "facet": "Customer & parties",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "individual human being, with consciousness of self",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/Person",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/Party",
+          "target_title": "party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-age",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/Age",
+          "target_title": "age",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-citizenship",
+          "target": "https://www.omg.org/spec/Commons/Locations/Country",
+          "target_title": "country",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-date-of-birth",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DateOfBirth",
+          "target_title": "date of birth",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-date-of-death",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DateOfDeath",
+          "target_title": "date of death",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-name",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/PersonName",
+          "target_title": "person name",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-place-of-birth",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/PlaceOfBirth",
+          "target_title": "place of birth",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-residence",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/ConventionalStreetAddress",
+          "target_title": "conventional street address",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/PersonName",
+      "title": "person name",
+      "facet": "Customer & parties",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "designation by which someone is known in some context",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/PersonName",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/ContextualDesignators/ContextualName",
+          "target_title": "contextual name",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-name-of",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/Person",
+          "target_title": "person",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCode",
+      "title": "business identifier code",
+      "facet": "Identity & identifiers",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "international identifier for financial and non-financial institutions used to facilitate automated processing of information for financial services",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCode",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/CodesAndCodeSets/CodeElement",
+          "target_title": "code element",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/ContextualIdentifiers/StructuredIdentifier",
+          "target_title": "structured identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/OrganizationIdentifier",
+          "target_title": "organization identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/BusinessPartyPrefix",
+          "target_title": "business party prefix",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/BusinessPartySuffix",
+          "target_title": "business party suffix",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://www.omg.org/spec/Commons/Organizations/OrganizationSubUnitIdentifier",
+          "target_title": "organization sub-unit identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://www.omg.org/spec/LCC/Countries/CountryRepresentation/Alpha2Code",
+          "target_title": "Alpha2Code",
+          "provenance": "fibo"
+        },
+        {
+          "type": "denotes",
+          "target": "https://www.omg.org/spec/Commons/Organizations/FormalOrganization",
+          "target_title": "formal organization",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-member-of",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCodeScheme",
+          "target_title": "business identifier code scheme",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/ClientIdentifier",
+      "title": "client identifier",
+      "facet": "Identity & identifiers",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "sequence of characters uniquely identifying a client within the context of some organization",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/ClientIdentifier",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/PartyRoleIdentifier",
+          "target_title": "party role identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "identifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Client",
+          "target_title": "client",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/CustomerIdentifier",
+      "title": "customer identifier",
+      "facet": "Identity & identifiers",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "sequence of characters uniquely identifying a customer within the context of some organization",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/CustomerIdentifier",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/PartyRoleIdentifier",
+          "target_title": "party role identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "identifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Customer",
+          "target_title": "customer",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DriversLicenseIdentifier",
+      "title": "driver's license identifier",
+      "facet": "Identity & identifiers",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "identifier associated with a drivers' or operating license for operating a motor vehicle or non-driver identification card",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DriversLicenseIdentifier",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Identifiers/Identifier",
+          "target_title": "identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "identifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DriversLicense",
+          "target_title": "driver's license",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-defined-in",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DriversLicenseIdentificationScheme",
+          "target_title": "driver's license identification scheme",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/EntityLegalFormIdentifier",
+      "title": "entity legal form identifier",
+      "facet": "Identity & identifiers",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "code that denotes an entity legal form as defined in ISO 20275",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/EntityLegalFormIdentifier",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/CodesAndCodeSets/CodeElement",
+          "target_title": "code element",
+          "provenance": "fibo"
+        },
+        {
+          "type": "denotes",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/EntityLegalForm",
+          "target_title": "entity legal form",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-defined-in",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/EntityLegalFormScheme",
+          "target_title": "entity legal form scheme",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/IdentityDocument",
+      "title": "identity document",
+      "facet": "Identity & identifiers",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "any legal document which may be used to verify aspects of a person's identity",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/IdentityDocument",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Documents/LegalDocument",
+          "target_title": "legal document",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-date-of-issuance",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/Date",
+          "target_title": "date",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-expiration-date",
+          "target": "https://www.omg.org/spec/Commons/DatesAndTimes/Date",
+          "target_title": "date",
+          "provenance": "fibo"
+        },
+        {
+          "type": "identifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/Person",
+          "target_title": "person",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-evidence-for",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DateOfBirth",
+          "target_title": "date of birth",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-evidence-for",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/PlaceOfBirth",
+          "target_title": "place of birth",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-evidence-for",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/PhysicalAddress",
+          "target_title": "physical address",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-identified-by",
+          "target": "https://www.omg.org/spec/Commons/Identifiers/Identifier",
+          "target_title": "identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-issued-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/Government",
+          "target_title": "government",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "title": "legal entity identifier",
+      "facet": "Identity & identifiers",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "an organization identifier that uniquely identifies a legal person as defined in ISO 17442",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/OrganizationIdentifier",
+          "target_title": "organization identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegisteredIdentifier",
+          "target_title": "registered identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "identifies",
+          "target": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
+          "target_title": "legal person",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-defined-in",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifierScheme",
+          "target_title": "legal entity identifier scheme",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifierScheme",
+      "title": "legal entity identifier scheme",
+      "facet": "Identity & identifiers",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "a scheme that specifies the elements of an unambiguous legal entity identifier (LEI) scheme to identify the legal entities relevant to any financial transaction",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifierScheme",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/OrganizationIdentificationScheme",
+          "target_title": "organization identification scheme",
+          "provenance": "fibo"
+        },
+        {
+          "type": "defines",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+          "target_title": "legal entity identifier",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LEIRegisteredEntity",
+      "title": "LEI registered entity",
+      "facet": "Legal persons & entity types",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "a legal person that has registered for and is identified by a legal entity identifier",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LEIRegisteredEntity",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
+          "target_title": "legal person",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/CharteredLegalPerson",
+      "title": "chartered legal person",
+      "facet": "Legal persons & entity types",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "a legal person created by a royal charter or decree",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/CharteredLegalPerson",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/LegalEntity",
+          "target_title": "legal entity",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation",
+      "title": "corporation",
+      "facet": "Legal persons & entity types",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "formal organization that is a legal entity (artificial person) distinct from its owners, created under the jurisdiction of the laws of a state or nation",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/LegalEntity",
+          "target_title": "legal entity",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-legal-name",
+          "target": "http://www.w3.org/2001/XMLSchema#string",
+          "target_title": "string",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-constituted-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/InstrumentOfIncorporation",
+          "target_title": "instrument of incorporation",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-incorporated-in",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction",
+          "target_title": "jurisdiction",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/ForProfitCorporation",
+      "title": "for profit corporation",
+      "facet": "Legal persons & entity types",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "corporation whose objective is to make money, i.e., to ensure realization of a financial benefit such that the amount of revenue gained from a business activity exceeds the expenses, costs and taxes needed to sustain that activity",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/ForProfitCorporation",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation",
+          "target_title": "corporation",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-objective",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/ProfitObjective",
+          "target_title": "profit objective",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://www.omg.org/spec/Commons/Organizations/FormalOrganization",
+      "title": "formal organization",
+      "facet": "Legal persons & entity types",
+      "cluster": "CMNS",
+      "maturity": null,
+      "definition": "organization that is recognized in some legal jurisdiction, with associated rights and responsibilities",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://www.omg.org/spec/Commons/Organizations/FormalOrganization",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/Organization",
+          "target_title": "organization",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/NorthAmericanIndustryClassificationSystemCode",
+          "target_title": "North American Industry Classification System code",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/StandardIndustrialClassificationCode",
+          "target_title": "standard industrial classification code",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-domiciled-in",
+          "target": "https://www.omg.org/spec/Commons/Locations/GeopoliticalEntity",
+          "target_title": "geopolitical entity",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://www.omg.org/spec/Commons/Organizations/LegalEntity",
+      "title": "legal entity",
+      "facet": "Legal persons & entity types",
+      "cluster": "CMNS",
+      "maturity": null,
+      "definition": "legal person that is a partnership, corporation, or other organization having the capacity to negotiate contracts, assume financial obligations, and pay off debts, organized under the laws of some jurisdiction",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://www.omg.org/spec/Commons/Organizations/LegalEntity",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/FormalOrganization",
+          "target_title": "formal organization",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
+          "target_title": "legal person",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-entity-expiration-reason",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/EntityExpirationReason",
+          "target_title": "entity expiration reason",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-entity-status",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/EntityStatus",
+          "target_title": "entity status",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-headquarters-address",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/PhysicalAddress",
+          "target_title": "physical address",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-legal-address",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/ConventionalStreetAddress",
+          "target_title": "conventional street address",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-legal-form",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/EntityLegalForm",
+          "target_title": "entity legal form",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/NorthAmericanIndustryClassificationSystemCode",
+          "target_title": "North American Industry Classification System code",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/StandardIndustrialClassificationCode",
+          "target_title": "standard industrial classification code",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/IndustrySectorClassifier",
+          "target_title": "industry sector classifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-governed-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/OrganizationCoveringAgreement",
+          "target_title": "organization covering agreement",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-organized-in",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction",
+          "target_title": "jurisdiction",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
+      "title": "legal person",
+      "facet": "Legal persons & entity types",
+      "cluster": "CMNS",
+      "maturity": null,
+      "definition": "party that is recognized as having rights and obligations under the law, including but not limited to the right to sue and be sued, enter into contracts, own property, and incur financial and other obligations",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/Party",
+          "target_title": "party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-identified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+          "target_title": "legal entity identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-recognized-in",
+          "target": "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction",
+          "target_title": "jurisdiction",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NonGovernmentalOrganization",
+      "title": "non-governmental organization",
+      "facet": "Legal persons & entity types",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "not-for-profit organization that functions independently of government",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NonGovernmentalOrganization",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NotForProfitOrganization",
+          "target_title": "not for profit organization",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-objective",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/PublicPurpose",
+          "target_title": "public purpose",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NotForProfitOrganization",
+      "title": "not for profit organization",
+      "facet": "Legal persons & entity types",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "organization that uses its surplus revenues to further achieve its purpose rather than distributing its surplus income to the organization's owners (directors, investors, and equivalents) as profit / dividends",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NotForProfitOrganization",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/FormalOrganization",
+          "target_title": "formal organization",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-objective",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/NotForProfitObjective",
+          "target_title": "not for profit objective",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/NotForProfitCorporation",
+      "title": "not-for-profit corporation",
+      "facet": "Legal persons & entity types",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "corporation approved by its jurisdictional oversight and tax authorities as operating for educational, charitable, social, religious, civic or humanitarian purposes",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/NotForProfitCorporation",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation",
+          "target_title": "corporation",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NotForProfitOrganization",
+          "target_title": "not for profit organization",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://www.omg.org/spec/Commons/Organizations/Organization",
+      "title": "organization",
+      "facet": "Legal persons & entity types",
+      "cluster": "CMNS",
+      "maturity": null,
+      "definition": "framework of authority within which a person, persons, or groups of people act, or are designated to act, towards some purpose, such as to meet a need or pursue collective goals",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://www.omg.org/spec/Commons/Organizations/Organization",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/Party",
+          "target_title": "party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-goal",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/Goal",
+          "target_title": "goal",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-member",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/Party",
+          "target_title": "party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-name",
+          "target": "https://www.omg.org/spec/Commons/Organizations/OrganizationName",
+          "target_title": "organization name",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwner",
+      "title": "beneficial owner",
+      "facet": "Ownership & control",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "party that enjoys the benefits of ownership (such as receipt of income) of something even though its ownership (title) may be in the name of another party (called a nominee or registered owner)",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwner",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Owner",
+          "target_title": "owner",
+          "provenance": "fibo"
+        },
+        {
+          "type": "delegates-control-to",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/ControllingNominee",
+          "target_title": "controlling nominee",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-beneficial-owner-of",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Asset",
+          "target_title": "asset",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-played-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/LegallyCompetentNaturalPerson",
+          "target_title": "legally competent natural person",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwnership",
+      "title": "beneficial ownership",
+      "facet": "Ownership & control",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "situation linking party that enjoys the benefits of ownership (such as receipt of income) of something even though its ownership (title) may be in the name of another party (called a nominee or registered owner) to the asset that they own",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwnership",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Ownership",
+          "target_title": "ownership",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-owned-asset",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Asset",
+          "target_title": "asset",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-owning-party",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwner",
+          "target_title": "beneficial owner",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/BoardCompositionControl",
+      "title": "board composition control",
+      "facet": "Ownership & control",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "situation in which a voting shareholder, entity owner, or some other party in the case of a not-for-profit organization, appoints and/or nominates someone to the board of directors of an organization for some period of time",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/BoardCompositionControl",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/Control",
+          "target_title": "control",
+          "provenance": "fibo"
+        },
+        {
+          "type": "involves-controlled-thing",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/BoardMember",
+          "target_title": "board member",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/ContractualControl",
+      "title": "contractual control",
+      "facet": "Ownership & control",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "control established through the terms of some contract",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/ContractualControl",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeJureControl",
+          "target_title": "de jure control",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-conferred-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/Contract",
+          "target_title": "contract",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/Control",
+      "title": "control",
+      "facet": "Ownership & control",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "situation in which some party has the power to direct or strongly influence the direction of the management and policies related to something",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/Control",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/Situation",
+          "target_title": "situation",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-party-in-control",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ControllingParty",
+          "target_title": "controlling party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "involves-controlled-thing",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ControlledThing",
+          "target_title": "controlled thing",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/ControlledParty",
+      "title": "controlled party",
+      "facet": "Ownership & control",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "person or organization over which some party exercises some form of authority or influence with respect to some situation",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/ControlledParty",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ControlledThing",
+          "target_title": "controlled thing",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-played-by",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/Party",
+          "target_title": "party",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/OwnershipParties/ControllingEquity",
+      "title": "controlling equity",
+      "facet": "Ownership & control",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "shareholders's equity that formally confers control in the entity, either by law or as explicitly stated in a corresponding equity instrument",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/OwnershipParties/ControllingEquity",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/ShareholdersEquity",
+          "target_title": "shareholders' equity",
+          "provenance": "fibo"
+        },
+        {
+          "type": "confers",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeJureControl",
+          "target_title": "de jure control",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ControllingParty",
+      "title": "controlling party",
+      "facet": "Ownership & control",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "actor that exercises some form of control in the context of some situation",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ControllingParty",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/Actor",
+          "target_title": "actor",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-controlling-party-in",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/Control",
+          "target_title": "control",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-party-controlling",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ControlledThing",
+          "target_title": "controlled thing",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeFactoControl",
+      "title": "de facto control",
+      "facet": "Ownership & control",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "control that exists informally and is accepted, although not formally recognized",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeFactoControl",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/Control",
+          "target_title": "control",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/DeFactoControllingInterestParty",
+      "title": "de facto controlling interest party",
+      "facet": "Ownership & control",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "party that exercises some control over an entity other than via explicit, legal means",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/DeFactoControllingInterestParty",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ControllingParty",
+          "target_title": "controlling party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-controlling-party-in",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeFactoControl",
+          "target_title": "de facto control",
+          "provenance": "fibo"
+        },
+        {
+          "type": "nominates",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/BoardMember",
+          "target_title": "board member",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeJureControl",
+      "title": "de jure control",
+      "facet": "Ownership & control",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "control that exists as a matter of law, i.e., legitimate, legal control of something",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeJureControl",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalConstruct",
+          "target_title": "legal construct",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/Control",
+          "target_title": "control",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/DeJureControllingInterestParty",
+      "title": "de jure controlling interest party",
+      "facet": "Ownership & control",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "party that has the legal authority to exercise control",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/DeJureControllingInterestParty",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ControllingParty",
+          "target_title": "controlling party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-controlling-party-in",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeJureControl",
+          "target_title": "de jure control",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/EntityControllingParty",
+      "title": "entity controlling party",
+      "facet": "Ownership & control",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "party that has the authority to control some legal entity",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/EntityControllingParty",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ControllingParty",
+          "target_title": "controlling party",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-controlling-party-of",
+          "target": "https://www.omg.org/spec/Commons/Organizations/LegalEntity",
+          "target_title": "legal entity",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/OwnershipParties/EntityOwnership",
+      "title": "entity ownership",
+      "facet": "Ownership & control",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "ownership by some party of an interest in some non-governmental formal organization",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/OwnershipParties/EntityOwnership",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Ownership",
+          "target_title": "ownership",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-owning-entity",
+          "target": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
+          "target_title": "legal person",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-classified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/RelationshipStatus",
+          "target_title": "relationship status",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-qualified-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/RelationshipQualifier",
+          "target_title": "relationship qualifier",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/MajorityControllingParty",
+      "title": "majority controlling party",
+      "facet": "Ownership & control",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "controlling party that possesses, either directly or indirectly, the power to direct or cause the direction of the management and policies of a legal person, whether through the ownership of a majority of voting securities, by contract, or otherwise",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/MajorityControllingParty",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/EntityControllingParty",
+          "target_title": "entity controlling party",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Ownership",
+      "title": "ownership",
+      "facet": "Ownership & control",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "situation in which some party holds the legal title to something (explicitly or implicitly) and has the right to transfer that title and/or possession",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Ownership",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/Situation",
+          "target_title": "situation",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-owned-asset",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Asset",
+          "target_title": "asset",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-owning-party",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Owner",
+          "target_title": "owner",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/OwnershipAndControl/OwnershipControlSituation",
+      "title": "ownership control situation",
+      "facet": "Ownership & control",
+      "cluster": "FND",
+      "maturity": "Release",
+      "definition": "situation in which some party owns and controls something",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/OwnershipAndControl/OwnershipControlSituation",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/PartiesAndSituations/Situation",
+          "target_title": "situation",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/GeneralPartnership",
+      "title": "general partnership",
+      "facet": "Partnerships & trusts",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "partnership that has at least two general partners that agree to share in all assets, profits, and financial and legal liabilities of the business",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/GeneralPartnership",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/Partnership",
+          "target_title": "partnership",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-general-partner",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/GeneralPartner",
+          "target_title": "general partner",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/IrrevocableTrust",
+      "title": "irrevocable trust",
+      "facet": "Partnerships & trusts",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "trust that cannot be modified, amended or terminated except under certain legal circumstances and typically not without the permission of the grantor's named beneficiary or beneficiaries",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/IrrevocableTrust",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/Trust",
+          "target_title": "trust",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/LimitedLiabilityPartnership",
+      "title": "limited liability partnership",
+      "facet": "Partnerships & trusts",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "partnership that has general partners but provides its individual partners some level of protection against personal liability for certain partnership liabilities",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/LimitedLiabilityPartnership",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/Partnership",
+          "target_title": "partnership",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-general-partner",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/GeneralPartner",
+          "target_title": "general partner",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/LimitedPartnership",
+      "title": "limited partnership",
+      "facet": "Partnerships & trusts",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "partnership that has at least one general partner and at least one limited partner",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/LimitedPartnership",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/Partnership",
+          "target_title": "partnership",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-general-partner",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/GeneralPartner",
+          "target_title": "general partner",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-limited-partner",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/LimitedPartner",
+          "target_title": "limited partner",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/LivingTrust",
+      "title": "living trust",
+      "facet": "Partnerships & trusts",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "trust created during an individual's lifetime where a designated person, the trustee, is given responsibility for managing that individual's assets for the benefit of the eventual beneficiary",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/LivingTrust",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/Trust",
+          "target_title": "trust",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/Partnership",
+      "title": "partnership",
+      "facet": "Partnerships & trusts",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "association of two or more legal persons to carry on as co-owners a business for profit",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/Partnership",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/BusinessEntity",
+          "target_title": "business entity",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/LegalEntity",
+          "target_title": "legal entity",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-objective",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/ProfitObjective",
+          "target_title": "profit objective",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-governed-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/PartnershipAgreement",
+          "target_title": "partnership agreement",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/Trust",
+      "title": "trust",
+      "facet": "Partnerships & trusts",
+      "cluster": "BE",
+      "maturity": "Release",
+      "definition": "fiduciary relationship and legal entity in which one party, known as a trustor, gives another party, the trustee, the right to hold title to and manage assets for the benefit of a third party, the beneficiary",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/Trust",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/BusinessEntity",
+          "target_title": "business entity",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Organizations/LegalEntity",
+          "target_title": "legal entity",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-party-role",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/TrustBeneficiary",
+          "target_title": "trust beneficiary",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-party-role",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/Trustee",
+          "target_title": "trustee",
+          "provenance": "fibo"
+        },
+        {
+          "type": "has-party-role",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/Trustor",
+          "target_title": "trustor",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-governed-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/TrustAgreement",
+          "target_title": "trust agreement",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegisterIdentifier",
+      "title": "business register identifier",
+      "facet": "Registration authorities",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "identifier that uniquely identifies a business register, such as a register identified by the Global Legal Entity Identifier Foundation (GLEIF) registration authorities list",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegisterIdentifier",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/Identifiers/Identifier",
+          "target_title": "identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "identifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistry",
+          "target_title": "business registry",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-registered-by",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority",
+          "target_title": "business registration authority",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority",
+      "title": "business registration authority",
+      "facet": "Registration authorities",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "registration authority that is responsible for maintaining a registry of business entities",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/RegistrationAuthorities/Registrar",
+          "target_title": "registrar",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistrationAuthority",
+          "target_title": "registration authority",
+          "provenance": "fibo"
+        },
+        {
+          "type": "manages",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistry",
+          "target_title": "business registry",
+          "provenance": "fibo"
+        },
+        {
+          "type": "registers",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/RegistrationIdentifier",
+          "target_title": "registration identifier",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry",
+      "title": "legal entity identifier registry",
+      "facet": "Registration authorities",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "registry for registering and maintaining information about business entities for a particular jurisdiction",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistry",
+          "target_title": "business registry",
+          "provenance": "fibo"
+        },
+        {
+          "type": "comprises",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry",
+          "target_title": "legal entity identifier registry entry",
+          "provenance": "fibo"
+        }
+      ]
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/RegistrationAuthorityCode",
+      "title": "registration authority code",
+      "facet": "Registration authorities",
+      "cluster": "FBC",
+      "maturity": "Release",
+      "definition": "identifier that uniquely identifies a business registry, and is associated with a registration authority and jurisdiction, issued by the Global Legal Entity Identifier Foundation (GLEIF)",
+      "definition_provenance": "fibo",
+      "core": true,
+      "citation": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/RegistrationAuthorityCode",
+      "relations": [
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/CodesAndCodeSets/CodeElement",
+          "target_title": "code element",
+          "provenance": "fibo"
+        },
+        {
+          "type": "is-a",
+          "target": "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegisteredIdentifier",
+          "target_title": "registered identifier",
+          "provenance": "fibo"
+        },
+        {
+          "type": "identifies",
+          "target": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistry",
+          "target_title": "business registry",
+          "provenance": "fibo"
+        }
+      ]
+    }
+  ],
+  "bridges": [
+    {
+      "id": "legal-entity-identified-by-lei",
+      "edge": "identified-by",
+      "kind": "cross-domain (CMNS->BE)",
+      "source": "https://www.omg.org/spec/Commons/Organizations/LegalEntity",
+      "source_title": "legal entity",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "target_title": "legal entity identifier",
+      "provenance": "curated",
+      "rationale": "For KYC and entity resolution a legal entity is identified by its Legal Entity Identifier (ISO 17442). FIBO defines LegalEntityIdentifier and applies it to LEI-registered entities, but does not link the base LegalEntity class to it, leaving generic entity-to-LEI resolution implicit.",
+      "citation": "ISO 17442 (LEI); FATF Recommendation 24"
+    },
+    {
+      "id": "beneficial-owner-of-legal-entity",
+      "edge": "beneficial-owner-of",
+      "kind": "cross-domain (BE->CMNS)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwner",
+      "source_title": "beneficial owner",
+      "target": "https://www.omg.org/spec/Commons/Organizations/LegalEntity",
+      "target_title": "legal entity",
+      "provenance": "curated",
+      "rationale": "A beneficial owner is the party that ultimately owns or controls a legal entity. FIBO models BeneficialOwnership as a situation but draws no direct edge from the BeneficialOwner role to the legal entity owned, which KYC / ultimate-beneficial-owner resolution needs.",
+      "citation": "FATF Recommendations 24 & 25; US CDD rule 31 CFR 1010.230"
+    },
+    {
+      "id": "customer-played-by-legal-person",
+      "edge": "played-by",
+      "kind": "role->entity gap (FND->CMNS)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Customer",
+      "source_title": "customer",
+      "target": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
+      "target_title": "legal person",
+      "provenance": "curated",
+      "rationale": "A customer is a party role played by a legal person (or a natural person). Resolving 'the customer' to the underlying legal entity is core to KYC onboarding, but FIBO leaves the role-to-entity link implicit.",
+      "citation": "FIBO FND party-role vs entity modeling; KYC customer onboarding"
+    },
+    {
+      "id": "account-holder-identified-by-lei",
+      "edge": "identified-by",
+      "kind": "cross-domain (FBC->BE)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountHolder",
+      "source_title": "account holder",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "target_title": "legal entity identifier",
+      "provenance": "curated",
+      "rationale": "An institutional account holder is identified for KYC by its Legal Entity Identifier. FIBO models accounts and their holders but does not connect an account holder to its LEI.",
+      "citation": "ISO 17442 (LEI); KYC / CDD account onboarding"
+    }
+  ]
+}

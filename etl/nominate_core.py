@@ -78,7 +78,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--in", dest="inp", default="out/intermediate.json")
     ap.add_argument("--out", default="curation/loan-origination.json")
+    ap.add_argument("--spec", default=None,
+                    help="use-case spec JSON {use_case, facets}; default = built-in loan-origination")
     args = ap.parse_args()
+
+    # A use case is a spec of facets, each a list of (local-id, cluster) grounded in the extract.
+    if args.spec:
+        spec = json.load(open(args.spec))
+        use_case = spec["use_case"]
+        facets = {f: [tuple(e) for e in entries] for f, entries in spec["facets"].items()}
+    else:
+        use_case, facets = USE_CASE, FACETS
 
     recs = json.load(open(args.inp))
     idx = {}
@@ -86,7 +96,7 @@ def main():
         idx.setdefault((r["id"], r["cluster"]), []).append(r)
 
     resolved, unresolved, dupes = [], [], []
-    for facet, entries in FACETS.items():
+    for facet, entries in facets.items():
         for cid, cl in entries:
             hits = idx.get((cid, cl), [])
             if not hits:
@@ -100,11 +110,11 @@ def main():
                                  "description": r["description"], "core": True})
 
     # ---- report ----
-    print(f"\n=== CORE NOMINATION — {USE_CASE} ===")
+    print(f"\n=== CORE NOMINATION — {use_case} ===")
     by_facet = {}
     for r in resolved:
         by_facet.setdefault(r["facet"], []).append(r)
-    for facet in FACETS:
+    for facet in facets:
         rows = by_facet.get(facet, [])
         print(f"\n## {facet}  ({len(rows)})")
         for r in rows:
@@ -121,7 +131,7 @@ def main():
             print(f"   {facet}: {cid} [{cl}]")
 
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
-    json.dump({"use_case": USE_CASE, "core": resolved}, open(args.out, "w"), indent=2)
+    json.dump({"use_case": use_case, "core": resolved}, open(args.out, "w"), indent=2)
     print(f"\nWrote {args.out} ({len(resolved)} concepts)")
     return 1 if unresolved else 0
 

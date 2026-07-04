@@ -1,0 +1,527 @@
+{
+  "use_case": "KYC & Beneficial Ownership (entity resolution)",
+  "core": [
+    {
+      "facet": "Customer & parties",
+      "iri": "https://www.omg.org/spec/Commons/PartiesAndSituations/Party",
+      "id": "Party",
+      "cluster": "CMNS",
+      "title": "party",
+      "description": "person or organization",
+      "core": true
+    },
+    {
+      "facet": "Customer & parties",
+      "iri": "https://www.omg.org/spec/Commons/PartiesAndSituations/Agent",
+      "id": "Agent",
+      "cluster": "CMNS",
+      "title": "agent",
+      "description": "something autonomous that can adapt to and interact with its environment",
+      "core": true
+    },
+    {
+      "facet": "Customer & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/Person",
+      "id": "Person",
+      "cluster": "FND",
+      "title": "person",
+      "description": "individual human being, with consciousness of self",
+      "core": true
+    },
+    {
+      "facet": "Customer & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/LegallyCompetentNaturalPerson",
+      "id": "LegallyCompetentNaturalPerson",
+      "cluster": "BE",
+      "title": "legally competent natural person",
+      "description": "person who is considered competent, under the circumstances, to enter into a contract, conduct business, or participate in other activities that generally require the mental ability to understand problems and make decisions on his or her own behalf",
+      "core": true
+    },
+    {
+      "facet": "Customer & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Customer",
+      "id": "Customer",
+      "cluster": "FND",
+      "title": "customer",
+      "description": "party that receives or consumes products (goods or services) and has the ability to choose between different products and suppliers",
+      "core": true
+    },
+    {
+      "facet": "Customer & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Client",
+      "id": "Client",
+      "cluster": "FND",
+      "title": "client",
+      "description": "party that purchases professional services from, or has a formal relationship to purchase services from another party",
+      "core": true
+    },
+    {
+      "facet": "Customer & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractParty",
+      "id": "ContractParty",
+      "cluster": "FND",
+      "title": "contract party",
+      "description": "legally competent party that has entered into a binding agreement, accepting and conceding obligations, responsibilities, and benefits as specified",
+      "core": true
+    },
+    {
+      "facet": "Customer & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/PersonName",
+      "id": "PersonName",
+      "cluster": "FND",
+      "title": "person name",
+      "description": "designation by which someone is known in some context",
+      "core": true
+    },
+    {
+      "facet": "Customer & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountHolder",
+      "id": "AccountHolder",
+      "cluster": "FBC",
+      "title": "account holder",
+      "description": "party that owns an account",
+      "core": true
+    },
+    {
+      "facet": "Customer & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccount",
+      "id": "CustomerAccount",
+      "cluster": "FBC",
+      "title": "customer account",
+      "description": "account that represents an identified, named collection of balances and cumulative totals used to summarize customer transaction-related activity over a designated period of time",
+      "core": true
+    },
+    {
+      "facet": "Customer & parties",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccountHolder",
+      "id": "CustomerAccountHolder",
+      "cluster": "FBC",
+      "title": "customer account holder",
+      "description": "party that owns a customer account",
+      "core": true
+    },
+    {
+      "facet": "Legal persons & entity types",
+      "iri": "https://www.omg.org/spec/Commons/Organizations/LegalEntity",
+      "id": "LegalEntity",
+      "cluster": "CMNS",
+      "title": "legal entity",
+      "description": "legal person that is a partnership, corporation, or other organization having the capacity to negotiate contracts, assume financial obligations, and pay off debts, organized under the laws of some jurisdiction",
+      "core": true
+    },
+    {
+      "facet": "Legal persons & entity types",
+      "iri": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
+      "id": "LegalPerson",
+      "cluster": "CMNS",
+      "title": "legal person",
+      "description": "party that is recognized as having rights and obligations under the law, including but not limited to the right to sue and be sued, enter into contracts, own property, and incur financial and other obligations",
+      "core": true
+    },
+    {
+      "facet": "Legal persons & entity types",
+      "iri": "https://www.omg.org/spec/Commons/Organizations/FormalOrganization",
+      "id": "FormalOrganization",
+      "cluster": "CMNS",
+      "title": "formal organization",
+      "description": "organization that is recognized in some legal jurisdiction, with associated rights and responsibilities",
+      "core": true
+    },
+    {
+      "facet": "Legal persons & entity types",
+      "iri": "https://www.omg.org/spec/Commons/Organizations/Organization",
+      "id": "Organization",
+      "cluster": "CMNS",
+      "title": "organization",
+      "description": "framework of authority within which a person, persons, or groups of people act, or are designated to act, towards some purpose, such as to meet a need or pursue collective goals",
+      "core": true
+    },
+    {
+      "facet": "Legal persons & entity types",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation",
+      "id": "Corporation",
+      "cluster": "BE",
+      "title": "corporation",
+      "description": "formal organization that is a legal entity (artificial person) distinct from its owners, created under the jurisdiction of the laws of a state or nation",
+      "core": true
+    },
+    {
+      "facet": "Legal persons & entity types",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/ForProfitCorporation",
+      "id": "ForProfitCorporation",
+      "cluster": "BE",
+      "title": "for profit corporation",
+      "description": "corporation whose objective is to make money, i.e., to ensure realization of a financial benefit such that the amount of revenue gained from a business activity exceeds the expenses, costs and taxes needed to sustain that activity",
+      "core": true
+    },
+    {
+      "facet": "Legal persons & entity types",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/NotForProfitCorporation",
+      "id": "NotForProfitCorporation",
+      "cluster": "BE",
+      "title": "not-for-profit corporation",
+      "description": "corporation approved by its jurisdictional oversight and tax authorities as operating for educational, charitable, social, religious, civic or humanitarian purposes",
+      "core": true
+    },
+    {
+      "facet": "Legal persons & entity types",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/CharteredLegalPerson",
+      "id": "CharteredLegalPerson",
+      "cluster": "BE",
+      "title": "chartered legal person",
+      "description": "a legal person created by a royal charter or decree",
+      "core": true
+    },
+    {
+      "facet": "Legal persons & entity types",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LEIRegisteredEntity",
+      "id": "LEIRegisteredEntity",
+      "cluster": "BE",
+      "title": "LEI registered entity",
+      "description": "a legal person that has registered for and is identified by a legal entity identifier",
+      "core": true
+    },
+    {
+      "facet": "Legal persons & entity types",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NonGovernmentalOrganization",
+      "id": "NonGovernmentalOrganization",
+      "cluster": "BE",
+      "title": "non-governmental organization",
+      "description": "not-for-profit organization that functions independently of government",
+      "core": true
+    },
+    {
+      "facet": "Legal persons & entity types",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NotForProfitOrganization",
+      "id": "NotForProfitOrganization",
+      "cluster": "BE",
+      "title": "not for profit organization",
+      "description": "organization that uses its surplus revenues to further achieve its purpose rather than distributing its surplus income to the organization's owners (directors, investors, and equivalents) as profit / dividends",
+      "core": true
+    },
+    {
+      "facet": "Partnerships & trusts",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/Partnership",
+      "id": "Partnership",
+      "cluster": "BE",
+      "title": "partnership",
+      "description": "association of two or more legal persons to carry on as co-owners a business for profit",
+      "core": true
+    },
+    {
+      "facet": "Partnerships & trusts",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/GeneralPartnership",
+      "id": "GeneralPartnership",
+      "cluster": "BE",
+      "title": "general partnership",
+      "description": "partnership that has at least two general partners that agree to share in all assets, profits, and financial and legal liabilities of the business",
+      "core": true
+    },
+    {
+      "facet": "Partnerships & trusts",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/LimitedPartnership",
+      "id": "LimitedPartnership",
+      "cluster": "BE",
+      "title": "limited partnership",
+      "description": "partnership that has at least one general partner and at least one limited partner",
+      "core": true
+    },
+    {
+      "facet": "Partnerships & trusts",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/LimitedLiabilityPartnership",
+      "id": "LimitedLiabilityPartnership",
+      "cluster": "BE",
+      "title": "limited liability partnership",
+      "description": "partnership that has general partners but provides its individual partners some level of protection against personal liability for certain partnership liabilities",
+      "core": true
+    },
+    {
+      "facet": "Partnerships & trusts",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/Trust",
+      "id": "Trust",
+      "cluster": "BE",
+      "title": "trust",
+      "description": "fiduciary relationship and legal entity in which one party, known as a trustor, gives another party, the trustee, the right to hold title to and manage assets for the benefit of a third party, the beneficiary",
+      "core": true
+    },
+    {
+      "facet": "Partnerships & trusts",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/LivingTrust",
+      "id": "LivingTrust",
+      "cluster": "BE",
+      "title": "living trust",
+      "description": "trust created during an individual's lifetime where a designated person, the trustee, is given responsibility for managing that individual's assets for the benefit of the eventual beneficiary",
+      "core": true
+    },
+    {
+      "facet": "Partnerships & trusts",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/IrrevocableTrust",
+      "id": "IrrevocableTrust",
+      "cluster": "BE",
+      "title": "irrevocable trust",
+      "description": "trust that cannot be modified, amended or terminated except under certain legal circumstances and typically not without the permission of the grantor's named beneficiary or beneficiaries",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Ownership",
+      "id": "Ownership",
+      "cluster": "FND",
+      "title": "ownership",
+      "description": "situation in which some party holds the legal title to something (explicitly or implicitly) and has the right to transfer that title and/or possession",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/OwnershipParties/EntityOwnership",
+      "id": "EntityOwnership",
+      "cluster": "BE",
+      "title": "entity ownership",
+      "description": "ownership by some party of an interest in some non-governmental formal organization",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/OwnershipAndControl/OwnershipControlSituation",
+      "id": "OwnershipControlSituation",
+      "cluster": "FND",
+      "title": "ownership control situation",
+      "description": "situation in which some party owns and controls something",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwner",
+      "id": "BeneficialOwner",
+      "cluster": "BE",
+      "title": "beneficial owner",
+      "description": "party that enjoys the benefits of ownership (such as receipt of income) of something even though its ownership (title) may be in the name of another party (called a nominee or registered owner)",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwnership",
+      "id": "BeneficialOwnership",
+      "cluster": "BE",
+      "title": "beneficial ownership",
+      "description": "situation linking party that enjoys the benefits of ownership (such as receipt of income) of something even though its ownership (title) may be in the name of another party (called a nominee or registered owner) to the asset that they own",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/Control",
+      "id": "Control",
+      "cluster": "FND",
+      "title": "control",
+      "description": "situation in which some party has the power to direct or strongly influence the direction of the management and policies related to something",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeFactoControl",
+      "id": "DeFactoControl",
+      "cluster": "FND",
+      "title": "de facto control",
+      "description": "control that exists informally and is accepted, although not formally recognized",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/DeJureControl",
+      "id": "DeJureControl",
+      "cluster": "FND",
+      "title": "de jure control",
+      "description": "control that exists as a matter of law, i.e., legitimate, legal control of something",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ControllingParty",
+      "id": "ControllingParty",
+      "cluster": "FND",
+      "title": "controlling party",
+      "description": "actor that exercises some form of control in the context of some situation",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/EntityControllingParty",
+      "id": "EntityControllingParty",
+      "cluster": "BE",
+      "title": "entity controlling party",
+      "description": "party that has the authority to control some legal entity",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/ControlledParty",
+      "id": "ControlledParty",
+      "cluster": "BE",
+      "title": "controlled party",
+      "description": "person or organization over which some party exercises some form of authority or influence with respect to some situation",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/MajorityControllingParty",
+      "id": "MajorityControllingParty",
+      "cluster": "BE",
+      "title": "majority controlling party",
+      "description": "controlling party that possesses, either directly or indirectly, the power to direct or cause the direction of the management and policies of a legal person, whether through the ownership of a majority of voting securities, by contract, or otherwise",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/OwnershipParties/ControllingEquity",
+      "id": "ControllingEquity",
+      "cluster": "BE",
+      "title": "controlling equity",
+      "description": "shareholders's equity that formally confers control in the entity, either by law or as explicitly stated in a corresponding equity instrument",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/BoardCompositionControl",
+      "id": "BoardCompositionControl",
+      "cluster": "BE",
+      "title": "board composition control",
+      "description": "situation in which a voting shareholder, entity owner, or some other party in the case of a not-for-profit organization, appoints and/or nominates someone to the board of directors of an organization for some period of time",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/DeFactoControllingInterestParty",
+      "id": "DeFactoControllingInterestParty",
+      "cluster": "BE",
+      "title": "de facto controlling interest party",
+      "description": "party that exercises some control over an entity other than via explicit, legal means",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/DeJureControllingInterestParty",
+      "id": "DeJureControllingInterestParty",
+      "cluster": "BE",
+      "title": "de jure controlling interest party",
+      "description": "party that has the legal authority to exercise control",
+      "core": true
+    },
+    {
+      "facet": "Ownership & control",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/ContractualControl",
+      "id": "ContractualControl",
+      "cluster": "BE",
+      "title": "contractual control",
+      "description": "control established through the terms of some contract",
+      "core": true
+    },
+    {
+      "facet": "Identity & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "id": "LegalEntityIdentifier",
+      "cluster": "BE",
+      "title": "legal entity identifier",
+      "description": "an organization identifier that uniquely identifies a legal person as defined in ISO 17442",
+      "core": true
+    },
+    {
+      "facet": "Identity & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifierScheme",
+      "id": "LegalEntityIdentifierScheme",
+      "cluster": "BE",
+      "title": "legal entity identifier scheme",
+      "description": "a scheme that specifies the elements of an unambiguous legal entity identifier (LEI) scheme to identify the legal entities relevant to any financial transaction",
+      "core": true
+    },
+    {
+      "facet": "Identity & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/EntityLegalFormIdentifier",
+      "id": "EntityLegalFormIdentifier",
+      "cluster": "BE",
+      "title": "entity legal form identifier",
+      "description": "code that denotes an entity legal form as defined in ISO 20275",
+      "core": true
+    },
+    {
+      "facet": "Identity & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCode",
+      "id": "BusinessIdentifierCode",
+      "cluster": "FBC",
+      "title": "business identifier code",
+      "description": "international identifier for financial and non-financial institutions used to facilitate automated processing of information for financial services",
+      "core": true
+    },
+    {
+      "facet": "Identity & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/IdentityDocument",
+      "id": "IdentityDocument",
+      "cluster": "FND",
+      "title": "identity document",
+      "description": "any legal document which may be used to verify aspects of a person's identity",
+      "core": true
+    },
+    {
+      "facet": "Identity & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DriversLicenseIdentifier",
+      "id": "DriversLicenseIdentifier",
+      "cluster": "FND",
+      "title": "driver's license identifier",
+      "description": "identifier associated with a drivers' or operating license for operating a motor vehicle or non-driver identification card",
+      "core": true
+    },
+    {
+      "facet": "Identity & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/CustomerIdentifier",
+      "id": "CustomerIdentifier",
+      "cluster": "FND",
+      "title": "customer identifier",
+      "description": "sequence of characters uniquely identifying a customer within the context of some organization",
+      "core": true
+    },
+    {
+      "facet": "Identity & identifiers",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/ClientIdentifier",
+      "id": "ClientIdentifier",
+      "cluster": "FND",
+      "title": "client identifier",
+      "description": "sequence of characters uniquely identifying a client within the context of some organization",
+      "core": true
+    },
+    {
+      "facet": "Registration authorities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority",
+      "id": "BusinessRegistrationAuthority",
+      "cluster": "FBC",
+      "title": "business registration authority",
+      "description": "registration authority that is responsible for maintaining a registry of business entities",
+      "core": true
+    },
+    {
+      "facet": "Registration authorities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry",
+      "id": "LegalEntityIdentifierRegistry",
+      "cluster": "FBC",
+      "title": "legal entity identifier registry",
+      "description": "registry for registering and maintaining information about business entities for a particular jurisdiction",
+      "core": true
+    },
+    {
+      "facet": "Registration authorities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegisterIdentifier",
+      "id": "BusinessRegisterIdentifier",
+      "cluster": "FBC",
+      "title": "business register identifier",
+      "description": "identifier that uniquely identifies a business register, such as a register identified by the Global Legal Entity Identifier Foundation (GLEIF) registration authorities list",
+      "core": true
+    },
+    {
+      "facet": "Registration authorities",
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/RegistrationAuthorityCode",
+      "id": "RegistrationAuthorityCode",
+      "cluster": "FBC",
+      "title": "registration authority code",
+      "description": "identifier that uniquely identifies a business registry, and is associated with a registration authority and jurisdiction, issued by the Global Legal Entity Identifier Foundation (GLEIF)",
+      "core": true
+    }
+  ]
+}

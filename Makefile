@@ -24,13 +24,17 @@ build:
 
 # Regenerate the curated layer (grounded in out/intermediate.json), then rebuild the bundle
 # so core: flags and bridges land in the OKF files. Run `make extract` (or `make all`) first.
+# Each use case = a spec under curation/usecases/.
 curate:
 	$(PY) etl/nominate_core.py --in out/intermediate.json --out curation/loan-origination.json
+	$(PY) etl/nominate_core.py --in out/intermediate.json --spec curation/usecases/kyc.json --out curation/kyc.json
 	$(PY) etl/bridges.py --in out/intermediate.json --bundle knowledge
+	$(PY) etl/bridges.py --in out/intermediate.json --bundle knowledge --spec curation/usecases/kyc-bridges.json --out curation/kyc-bridges.json
 	$(MAKE) build
 
 pack:
 	$(PY) etl/export_pack.py --use-case loan-origination
+	$(PY) etl/export_pack.py --use-case kyc --core curation/kyc.json --bridges curation/kyc-bridges.json --out export/kyc
 
 eval:
 	$(PY) eval/harness.py --adapter offline

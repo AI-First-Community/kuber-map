@@ -1,0 +1,42 @@
+{
+  "use_case": "KYC & Beneficial Ownership (entity resolution)",
+  "_comment": "Facet spec for the KYC / beneficial-ownership use case. Each entry is [local-id, cluster], grounded in the extract (nominate_core.py verifies each exists and reports any that don't). Backbone party/entity classes live in CMNS (Commons upper ontology).",
+  "facets": {
+    "Customer & parties": [
+      ["Party", "CMNS"], ["Agent", "CMNS"], ["Person", "FND"],
+      ["LegallyCompetentNaturalPerson", "BE"], ["Customer", "FND"], ["Client", "FND"],
+      ["ContractParty", "FND"], ["PersonName", "FND"],
+      ["AccountHolder", "FBC"], ["CustomerAccount", "FBC"], ["CustomerAccountHolder", "FBC"]
+    ],
+    "Legal persons & entity types": [
+      ["LegalEntity", "CMNS"], ["LegalPerson", "CMNS"], ["FormalOrganization", "CMNS"],
+      ["Organization", "CMNS"], ["Corporation", "BE"], ["ForProfitCorporation", "BE"],
+      ["NotForProfitCorporation", "BE"], ["CharteredLegalPerson", "BE"], ["LEIRegisteredEntity", "BE"],
+      ["NonGovernmentalOrganization", "BE"], ["NotForProfitOrganization", "BE"]
+    ],
+    "Partnerships & trusts": [
+      ["Partnership", "BE"], ["GeneralPartnership", "BE"], ["LimitedPartnership", "BE"],
+      ["LimitedLiabilityPartnership", "BE"], ["Trust", "BE"], ["LivingTrust", "BE"],
+      ["IrrevocableTrust", "BE"]
+    ],
+    "Ownership & control": [
+      ["Ownership", "FND"], ["EntityOwnership", "BE"], ["OwnershipControlSituation", "FND"],
+      ["BeneficialOwner", "BE"], ["BeneficialOwnership", "BE"], ["Control", "FND"],
+      ["DeFactoControl", "FND"], ["DeJureControl", "FND"], ["ControllingParty", "FND"],
+      ["EntityControllingParty", "BE"], ["ControlledParty", "BE"], ["MajorityControllingParty", "BE"],
+      ["ControllingEquity", "BE"], ["BoardCompositionControl", "BE"],
+      ["DeFactoControllingInterestParty", "BE"], ["DeJureControllingInterestParty", "BE"],
+      ["ContractualControl", "BE"]
+    ],
+    "Identity & identifiers": [
+      ["LegalEntityIdentifier", "BE"], ["LegalEntityIdentifierScheme", "BE"],
+      ["EntityLegalFormIdentifier", "BE"], ["BusinessIdentifierCode", "FBC"],
+      ["IdentityDocument", "FND"], ["DriversLicenseIdentifier", "FND"],
+      ["CustomerIdentifier", "FND"], ["ClientIdentifier", "FND"]
+    ],
+    "Registration authorities": [
+      ["BusinessRegistrationAuthority", "FBC"], ["LegalEntityIdentifierRegistry", "FBC"],
+      ["BusinessRegisterIdentifier", "FBC"], ["RegistrationAuthorityCode", "FBC"]
+    ]
+  }
+}

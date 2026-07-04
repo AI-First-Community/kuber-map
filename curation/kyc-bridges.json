@@ -1,0 +1,40 @@
+{
+  "bridges": [
+    {
+      "id": "legal-entity-identified-by-lei",
+      "edge": "identified-by",
+      "kind": "cross-domain (CMNS->BE)",
+      "source": "https://www.omg.org/spec/Commons/Organizations/LegalEntity",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "rationale": "For KYC and entity resolution a legal entity is identified by its Legal Entity Identifier (ISO 17442). FIBO defines LegalEntityIdentifier and applies it to LEI-registered entities, but does not link the base LegalEntity class to it, leaving generic entity-to-LEI resolution implicit.",
+      "citation": "ISO 17442 (LEI); FATF Recommendation 24"
+    },
+    {
+      "id": "beneficial-owner-of-legal-entity",
+      "edge": "beneficial-owner-of",
+      "kind": "cross-domain (BE->CMNS)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/BeneficialOwner",
+      "target": "https://www.omg.org/spec/Commons/Organizations/LegalEntity",
+      "rationale": "A beneficial owner is the party that ultimately owns or controls a legal entity. FIBO models BeneficialOwnership as a situation but draws no direct edge from the BeneficialOwner role to the legal entity owned, which KYC / ultimate-beneficial-owner resolution needs.",
+      "citation": "FATF Recommendations 24 & 25; US CDD rule 31 CFR 1010.230"
+    },
+    {
+      "id": "customer-played-by-legal-person",
+      "edge": "played-by",
+      "kind": "role->entity gap (FND->CMNS)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Customer",
+      "target": "https://www.omg.org/spec/Commons/Organizations/LegalPerson",
+      "rationale": "A customer is a party role played by a legal person (or a natural person). Resolving 'the customer' to the underlying legal entity is core to KYC onboarding, but FIBO leaves the role-to-entity link implicit.",
+      "citation": "FIBO FND party-role vs entity modeling; KYC customer onboarding"
+    },
+    {
+      "id": "account-holder-identified-by-lei",
+      "edge": "identified-by",
+      "kind": "cross-domain (FBC->BE)",
+      "source": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountHolder",
+      "target": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier",
+      "rationale": "An institutional account holder is identified for KYC by its Legal Entity Identifier. FIBO models accounts and their holders but does not connect an account holder to its LEI.",
+      "citation": "ISO 17442 (LEI); KYC / CDD account onboarding"
+    }
+  ]
+}

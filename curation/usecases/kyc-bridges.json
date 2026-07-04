@@ -1,0 +1,38 @@
+[
+  {
+    "id": "legal-entity-identified-by-lei",
+    "source": ["LegalEntity", "CMNS"],
+    "edge": "identified-by",
+    "target": ["LegalEntityIdentifier", "BE"],
+    "kind": "cross-domain (CMNS->BE)",
+    "rationale": "For KYC and entity resolution a legal entity is identified by its Legal Entity Identifier (ISO 17442). FIBO defines LegalEntityIdentifier and applies it to LEI-registered entities, but does not link the base LegalEntity class to it, leaving generic entity-to-LEI resolution implicit.",
+    "citation": "ISO 17442 (LEI); FATF Recommendation 24"
+  },
+  {
+    "id": "beneficial-owner-of-legal-entity",
+    "source": ["BeneficialOwner", "BE"],
+    "edge": "beneficial-owner-of",
+    "target": ["LegalEntity", "CMNS"],
+    "kind": "cross-domain (BE->CMNS)",
+    "rationale": "A beneficial owner is the party that ultimately owns or controls a legal entity. FIBO models BeneficialOwnership as a situation but draws no direct edge from the BeneficialOwner role to the legal entity owned, which KYC / ultimate-beneficial-owner resolution needs.",
+    "citation": "FATF Recommendations 24 & 25; US CDD rule 31 CFR 1010.230"
+  },
+  {
+    "id": "customer-played-by-legal-person",
+    "source": ["Customer", "FND"],
+    "edge": "played-by",
+    "target": ["LegalPerson", "CMNS"],
+    "kind": "role->entity gap (FND->CMNS)",
+    "rationale": "A customer is a party role played by a legal person (or a natural person). Resolving 'the customer' to the underlying legal entity is core to KYC onboarding, but FIBO leaves the role-to-entity link implicit.",
+    "citation": "FIBO FND party-role vs entity modeling; KYC customer onboarding"
+  },
+  {
+    "id": "account-holder-identified-by-lei",
+    "source": ["AccountHolder", "FBC"],
+    "edge": "identified-by",
+    "target": ["LegalEntityIdentifier", "BE"],
+    "kind": "cross-domain (FBC->BE)",
+    "rationale": "An institutional account holder is identified for KYC by its Legal Entity Identifier. FIBO models accounts and their holders but does not connect an account holder to its LEI.",
+    "citation": "ISO 17442 (LEI); KYC / CDD account onboarding"
+  }
+]

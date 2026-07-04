@@ -113,7 +113,17 @@ def main():
     ap.add_argument("--in", dest="inp", default="out/intermediate.json")
     ap.add_argument("--bundle", default="knowledge")
     ap.add_argument("--out", default="curation/bridges.json")
+    ap.add_argument("--spec", default=None,
+                    help="bridge spec JSON (list of {id, source:[id,cl], edge, target:[id,cl], "
+                         "kind, rationale, citation}); default = built-in loan-origination bridges")
     args = ap.parse_args()
+
+    if args.spec:
+        raw = json.load(open(args.spec))
+        raw = raw.get("bridges", raw) if isinstance(raw, dict) else raw
+        bridges = [{**b, "source": tuple(b["source"]), "target": tuple(b["target"])} for b in raw]
+    else:
+        bridges = BRIDGES
 
     recs = json.load(open(args.inp))
     idx = {}
@@ -121,7 +131,7 @@ def main():
         idx.setdefault((r["id"], r["cluster"]), []).append(r)
 
     ok, errors = [], []
-    for b in BRIDGES:
+    for b in bridges:
         src = resolve(idx, b["source"])
         tgt = resolve(idx, b["target"])
         if not src:

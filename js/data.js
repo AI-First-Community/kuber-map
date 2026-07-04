@@ -35882,6 +35882,13 @@ const GRAPH = {
     },
     {
       "s": "BE__OwnershipAndControl__CorporateOwnership__BeneficialOwner",
+      "t": "CMNS__Organizations__LegalEntity",
+      "r": "beneficial-owner-of",
+      "provenance": "curated",
+      "bridge": true
+    },
+    {
+      "s": "BE__OwnershipAndControl__CorporateOwnership__BeneficialOwner",
       "t": "BE__OwnershipAndControl__Executives__ControllingNominee",
       "r": "delegates-control-to",
       "provenance": "fibo"
@@ -37403,6 +37410,13 @@ const GRAPH = {
       "t": "BE__LegalEntities__LEIEntities__EntityLegalForm",
       "r": "has-legal-form",
       "provenance": "fibo"
+    },
+    {
+      "s": "CMNS__Organizations__LegalEntity",
+      "t": "BE__LegalEntities__LEIEntities__LegalEntityIdentifier",
+      "r": "identified-by",
+      "provenance": "curated",
+      "bridge": true
     },
     {
       "s": "CMNS__Organizations__LegalEntity",
@@ -43276,6 +43290,13 @@ const GRAPH = {
     },
     {
       "s": "FBC__ProductsAndServices__ClientsAndAccounts__AccountHolder",
+      "t": "BE__LegalEntities__LEIEntities__LegalEntityIdentifier",
+      "r": "identified-by",
+      "provenance": "curated",
+      "bridge": true
+    },
+    {
+      "s": "FBC__ProductsAndServices__ClientsAndAccounts__AccountHolder",
       "t": "FND__OwnershipAndControl__Ownership__Owner",
       "r": "is-a",
       "provenance": "fibo"
@@ -49021,6 +49042,13 @@ const GRAPH = {
       "t": "FND__ProductsAndServices__ProductsAndServices__Buyer",
       "r": "is-a",
       "provenance": "fibo"
+    },
+    {
+      "s": "FND__ProductsAndServices__ProductsAndServices__Customer",
+      "t": "CMNS__Organizations__LegalPerson",
+      "r": "played-by",
+      "provenance": "curated",
+      "bridge": true
     },
     {
       "s": "FND__ProductsAndServices__ProductsAndServices__CustomerIdentifier",
