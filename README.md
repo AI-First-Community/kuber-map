@@ -1,70 +1,77 @@
-# Kuber Map — the treasury of financial knowledge
+# Kuber Map · the treasury of financial knowledge
 
 A curated, learner-first knowledge map of the **Financial Industry Business Ontology
 ([FIBO](https://github.com/edmcouncil/fibo))**, stored in Google's **Open Knowledge Format
-(OKF)** — and designed to double as **audit-ready grounding context for financial AI agents**.
+(OKF)**. It's the knowledge base and taxonomy for building AI and agentic AI in finance:
+grounded, provenance-tagged, and audit-ready.
 
-Named for **Kubera**, the treasurer / god of wealth. Inspired by the
+Named for **Kubera**, the treasurer and god of wealth. Inspired by the
 [Bodhi Map](https://github.com/AI-First-Community/Bodhi) approach: reveal how concepts
 *connect*, not just what they mean.
 
-> **Status:** early build. The FIBO→OKF pipeline is working on FND + LOAN; the curated
-> learning map, cross-domain bridges, and agent-grounding layer are in progress. See
-> [`PLAN.md`](PLAN.md) for the plan and [`SPIKE_RESULTS.md`](SPIKE_RESULTS.md) for status.
+> **Status:** the FIBO→OKF pipeline runs on FND + LOAN + FBC + BE plus the Commons (CMNS)
+> upper ontology (1,440 concepts, 3,001 typed relations). The loan-origination use case is
+> curated end to end (71 core concepts, 4 cross-domain bridges, a context pack, and an MCP
+> retrieval endpoint), and the interactive map ships. The live grounded-vs-ungrounded eval is
+> the next milestone. See [`PLAN.md`](PLAN.md) and [`BACKLOG.md`](BACKLOG.md).
 
 ## Why
 
-FIBO is a formal, exhaustive ontology built for modelers. This project reshapes it into three
+FIBO is a formal, exhaustive ontology built for modelers. Kuber Map reshapes it into three
 things it isn't today:
 
-1. **A teachable map** — a hand-picked "core" view with learner-friendly framing (every existing
-   FIBO explorer renders it exhaustively for experts).
-2. **A cross-domain bridge layer** — provenance-tagged links across FIBO's separately-governed
+1. **A teachable map.** A hand-picked "core" view with learner-friendly framing, where every
+   other FIBO explorer renders the whole thing exhaustively for experts.
+2. **A cross-domain bridge layer.** Provenance-tagged links across FIBO's separately-governed
    domains, offered back to EDM Council.
-3. **Agent grounding** — per-use-case context packs (e.g. loan origination) that give financial
+3. **Agent grounding.** Per-use-case context packs (e.g. loan origination) that give financial
    AI agents accurate semantics with a FIBO provenance trail for audit.
 
-## How it works
+## Two products in one repo
 
-```
-fibo-source (OWL/RDF)  ──extract.py──►  out/intermediate.json  ──to_okf.py──►  knowledge/ (OKF bundle)
-   pinned FIBO clone       walks owl:Restriction        typed+provenance          markdown + YAML,
-                           blank-node axioms            relations                 module-mirrored paths
-```
-
-The hard part — FIBO's real relationships live in `owl:Restriction` blank nodes, not flat
-triples — is handled in [`etl/extract.py`](etl/extract.py).
+- **The map** (`index.html` landing + `app.html` graph): an interactive Cytoscape view of the
+  curated ontology, forked from Bodhi and driven by `okf.config.js` + generated `js/data.js`.
+- **The context pack** (`export/`): a use case's grounding closure exported as `pack.json`
+  (for RAG), `context.md` (to inject into a prompt), a self-contained OKF slice, and an MCP
+  retrieval server (`etl/mcp_server.py`) an agent can call. Every concept carries its FIBO IRI.
 
 ## Quick start
 
 ```bash
 make setup      # create venv, install deps
-make fibo       # fetch FIBO source (sparse clone pinned to fibo-source.pin) → fibo-source/
-make all        # extract (FND LOAN FBC BE) → build OKF bundle → validate
-make check      # quality gate: lint + tests + validation + attribution guard
+make fibo       # fetch the pinned FIBO source        -> fibo-source/
+make commons    # fetch the Commons upper ontology     -> commons-source/
+make all        # extract -> build OKF bundle -> validate
+make map        # OKF bundle -> js/data.js for the map
+make check      # quality gate: lint + tests + validate + attribution guard
 ```
 
-Requires Python 3.11+ and git. `fibo-source/` is gitignored; `make fibo` reconstitutes it at the
-pinned commit, so a fresh clone (e.g. on another machine) is `make setup && make fibo && make all`.
-The generated `knowledge/` bundle is committed, so the map is browsable without any of the above.
+Then open `index.html` (serve the folder over http for the offline/PWA layer, e.g.
+`python3 -m http.server`). Requires Python 3.11+, Node, and git. The generated `knowledge/`
+bundle and `js/data.js` are committed, so the map is browsable without a rebuild.
+
+Full walkthroughs are in **[`docs/`](docs/)**:
+[Getting Started](docs/Getting-Started.md) · [Architecture](docs/Architecture.md).
 
 ## Repository layout
 
 | Path | What |
 |---|---|
-| `PLAN.md` | Full project plan (source of truth for scope) |
-| `etl/` | FIBO extraction → OKF pipeline (Python, rdflib) |
+| `etl/` | FIBO extraction → OKF pipeline + context-pack export + MCP server (Python) |
 | `knowledge/` | Generated OKF bundle (do not hand-edit) |
-| `knowledge/bridges/`, `knowledge/use-cases/` | Hand-authored curated layers |
+| `curation/` | Hand-authored overlays: core set, bridges, definitions, examples, notes |
+| `scripts/okf.js`, `okf.config.js`, `js/`, `app.html`, `index.html` | The map (JS + Cytoscape) |
+| `export/` | Generated context packs (per use case) |
+| `eval/` | Grounded-vs-ungrounded eval harness + benchmark |
 | `tests/` | pytest quality gate |
-| `CLAUDE.md` | Contributor/agent working rules (grounding, gates, provenance) |
+| `PLAN.md`, `BACKLOG.md`, `CLAUDE.md` | Plan, execution tracker, contributor rules |
 
 ## License
 
-MIT © 2026 Sanjeev Azad. Derives from FIBO (MIT, EDM Council); attribution retained via each
-concept's `resource:` IRI. See [`LICENSE`](LICENSE).
+MIT © 2026 Sanjeev Azad. Derives from FIBO (MIT, EDM Council) and the OMG Commons Ontology
+Library; attribution retained via each concept's `resource:` IRI. See [`LICENSE`](LICENSE).
 
 ## Contributing
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md). Every change must pass `make check` and keep FIBO facts
-grounded in source (no invented IRIs) and provenance (`fibo` vs `curated`) unblurred.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md). Every change must pass `make check`, keep FIBO facts
+grounded in source (no invented IRIs), and keep provenance (`fibo` vs `curated`) unblurred.

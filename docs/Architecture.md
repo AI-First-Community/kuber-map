@@ -1,0 +1,100 @@
+# Architecture
+
+## The pipeline
+
+```
+fibo-source/  ┐
+commons-source/ ├─ extract.py ─► out/intermediate.json ─┬─ to_okf.py ─► knowledge/ (OKF bundle) ─┬─ okf.js ─► js/data.js ─► app.html (map)
+(pinned RDF)  ┘   (walks owl:Restriction  (flat records:  │  + curation/ overlays  (markdown+YAML)  │
+                   blank nodes; classifies  labels, defs,  │                                        └─ export_pack.py ─► export/ (pack.json,
+                   FND/LOAN/FBC/BE/CMNS)     relations,     │                                                            context.md, okf/, MCP)
+                                             annotations)   └─ nominate_core.py / bridges.py (curation inputs)
+```
+
+Two toolchains, cleanly split (PLAN §5):
+
+- **Python does the FIBO extraction** — the hard part, where relationships hide in
+  `owl:Restriction` blank-node axioms rather than flat triples.
+- **JavaScript does the browser build** — `scripts/okf.js` turns the OKF bundle into `js/data.js`
+  for the Cytoscape map. The UI (`app.html`, `js/graph.js`, `css/style.css`) is forked from Bodhi
+  and driven entirely by `okf.config.js` + `data.js`.
+
+## Extraction (`etl/extract.py`)
+
+- Parses every `.rdf` under the requested domains plus the Commons modules, merging into one
+  graph. Blank nodes are remapped per file so anonymous restrictions never collide.
+- For each class it pulls the label, definition, and **the typed relations buried in
+  `owl:Restriction` axioms** on `rdfs:subClassOf` (e.g. `secured-by`, `has-party-role`), plus the
+  richer annotations that feed the map's detail card: explanatory/usage notes, `skos:example`,
+  and synonyms.
+- **Deterministic:** labels/definitions prefer `en-US`; relations sort stably; maturity is taken
+  from a class's label-bearing home file. `make all` reproduces the bundle byte-for-byte,
+  independent of hash seed.
+- `fibo_ns.py` classifies every IRI into a cluster (FIBO domain / `CMNS` / `LCC`) and maps it to a
+  collision-free bundle path that mirrors FIBO's module structure.
+
+## The OKF bundle (`knowledge/`)
+
+One markdown file per concept, with YAML frontmatter:
+
+```yaml
+type: FIBO Class
+title: "mortgage"
+description: "grant of financial interest in real property ..."
+resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/.../Mortgage   # the audit citation
+tags: [LOAN, Release]
+core: true
+detail: "A mortgage prevents transfer of ownership unless ..."
+examples: ["A 30-year fixed-rate home loan", "An FHA-insured mortgage"]
+relations:
+  - {type: is-a, target: "/LOAN/.../SecuredLoan.md", provenance: fibo}
+  - {type: reported-in, target: "/LOAN/.../HMDA-Report.md", provenance: curated}   # a bridge
+```
+
+`knowledge/` is **generated**: to change it, change the ETL or its curation inputs and rebuild.
+Only `knowledge/bridges/` and the `curation/` overlays are hand-authored.
+
+## Curation overlays (`curation/`)
+
+Applied by `to_okf.py`, each grounded in real FIBO IRIs (resolved against the extract, so nothing
+can reference a concept that doesn't exist):
+
+| File | What it adds | Provenance |
+|---|---|---|
+| `loan-origination.json` | the 71 `core:` concepts for the use case | — |
+| `bridges.json` (+ `knowledge/bridges/`) | 4 cross-domain bridges FIBO doesn't draw natively | `curated` |
+| `definitions.json` | learner-friendly definitions for concepts FIBO leaves empty | `curated` |
+| `examples.json` | real-world examples where FIBO supplies none | `curated` |
+| `notes.json` | explanatory notes where FIBO has no `explanatoryNote` | `curated` |
+
+**Provenance is never blurred.** Every edge and every overlaid field is tagged `fibo` (from FIBO)
+or `curated` (authored here). Overlays only fill gaps; they never overwrite real FIBO text.
+
+## The map (`scripts/okf.js` + `okf.config.js` + `js/`)
+
+- `okf.config.js` holds everything that isn't a concept: the FIBO domains (each split into its
+  module **sub-clusters**, shaded within the domain hue), maturity levels, relation styling
+  (curated bridges drawn distinctly), and the interactive flows (a decision guide, a guided tour,
+  comparison tables), all referenced by FIBO IRI.
+- `scripts/okf.js build` reads the bundle + config and emits `js/data.js`: nodes + typed,
+  provenance-tagged edges, with the flow IRIs resolved to node ids.
+- `js/graph.js` (forked from Bodhi, ~6 small edits) renders it with Cytoscape + fcose. `css` is
+  byte-identical to Bodhi. The detail card surfaces each concept's definition, examples,
+  provenance, and its **FIBO IRI citation**.
+
+## The context pack (`etl/export_pack.py`)
+
+Takes a use case's grounding closure (its `core:` concepts + bridges) and emits a portable pack:
+`pack.json` (structured records for RAG), `context.md` (for direct prompt injection), a
+self-contained `okf/` slice, and a README. `etl/retrieval.py` provides weighted keyword search
+over the pack, exposed as an MCP retrieval endpoint by `etl/mcp_server.py`. Every result carries
+the FIBO `citation` IRI and provenance, so an agent can cite exactly which concept justified an
+answer and a regulator can trace it.
+
+## The eval (`eval/`)
+
+`eval/harness.py` runs a loan-underwriting agent over a 53-question benchmark **with** vs
+**without** the context pack, scoring accuracy, hallucination, and auditability deterministically
+(no LLM judge). The model is pluggable (`eval/adapters.py`): an offline oracle for gate tests, or
+any model via a user command (`EVAL_LLM_CMD`). Every benchmark question is grounded in a real pack
+IRI, enforced by a test.
