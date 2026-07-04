@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bodhi Map for FIBO — audit-ready financial ontology</title>
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0e1a13" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Bodhi FIBO" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <style>
+    @font-face { font-family:'Manrope'; font-weight:400; font-display:swap; src:url('fonts/manrope-400.woff2') format('woff2'); }
+    @font-face { font-family:'Manrope'; font-weight:500; font-display:swap; src:url('fonts/manrope-500.woff2') format('woff2'); }
+    @font-face { font-family:'Manrope'; font-weight:600; font-display:swap; src:url('fonts/manrope-600.woff2') format('woff2'); }
+    @font-face { font-family:'Manrope'; font-weight:700; font-display:swap; src:url('fonts/manrope-700.woff2') format('woff2'); }
+    @font-face { font-family:'Manrope'; font-weight:800; font-display:swap; src:url('fonts/manrope-800.woff2') format('woff2'); }
+
+    :root{
+      --green:#4fe08a; --green-deep:#1f9d57; --gold:#f3c969;
+      --ink:#eaf3ee; --muted:#9fbcab;
+      --sans:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+      --bi:88px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;overflow:hidden}
+    body{
+      font-family:var(--sans); color:var(--ink);
+      background:
+        radial-gradient(680px 620px at 30% 50%, rgba(60,170,100,.16), transparent 62%),
+        radial-gradient(560px 520px at 26% 74%, rgba(210,165,70,.10), transparent 60%),
+        radial-gradient(1200px 900px at 50% 50%, #0e1a13, #060d09 72%);
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; letter-spacing:-.01em;
+    }
+    #spark{ position:fixed; inset:0; width:100%; height:100%; z-index:1; pointer-events:none; }
+
+    /* emblem image (left) */
+    .emblem-wrap{ position:fixed; left:0; top:0; bottom:0; width:50%; z-index:2;
+      display:flex; align-items:center; justify-content:center; padding:5vh 2vw; }
+    .emblem{
+      height:min(88vh,880px); width:auto; max-width:94%;
+      filter:drop-shadow(0 14px 50px rgba(70,190,110,.18)) drop-shadow(0 4px 18px rgba(210,165,70,.14));
+      animation:rise 1.4s cubic-bezier(.2,.7,.2,1) both .1s, float 9s ease-in-out 1.4s infinite;
+      transform-origin:center;
+    }
+
+    .panel{
+      position:fixed; z-index:3; top:0; left:50%; right:0; bottom:0;
+      display:flex; flex-direction:column; justify-content:center; align-items:center;
+      text-align:center; padding:6vh 4vw 6vh 2vw;
+    }
+    .content{ display:flex; flex-direction:column; align-items:flex-start; text-align:left; max-width:100%; }
+    .content > *{ animation:rise 1s cubic-bezier(.2,.7,.2,1) both; }
+    .credit{ align-self:flex-start; display:inline-flex; align-items:center; gap:7px; text-decoration:none;
+      font-size:12.5px; font-weight:600; color:var(--muted); border:1px solid rgba(159,188,171,.24);
+      background:rgba(6,13,9,.32); padding:5px 12px; border-radius:999px; margin-bottom:20px;
+      transition:color .2s, border-color .2s, transform .2s; animation-delay:.02s; }
+    .credit:hover{ color:var(--green); border-color:var(--green); transform:translateY(-1px); }
+    .credit b{ color:var(--ink); font-weight:700; }
+    .brandrow{ display:flex; align-items:center; gap:12px; animation-delay:.05s; }
+    .titlestack{ display:inline-flex; flex-direction:column; align-items:stretch; }
+    .brandrow .leaf{ filter:drop-shadow(0 4px 16px rgba(79,224,138,.45)); animation:breathe 7s ease-in-out 1s infinite; }
+    .brandrow .leaf svg{ width:76px; height:76px; color:var(--green); display:block; }
+    .brandrow h1{ font-size:clamp(56px,8.4vw,104px); font-weight:800; letter-spacing:-.02em; line-height:1;
+      background:
+        linear-gradient(125deg, transparent 16%, rgba(255,255,255,.95) 27%, transparent 38%, transparent 60%, rgba(127,240,170,.85) 71%, transparent 82%),
+        linear-gradient(180deg,#ffffff,#bdeccf);
+      background-size:240% 240%, 100% 100%; background-repeat:no-repeat; background-position:175% -75%, 0 0;
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+      filter:drop-shadow(0 2px 22px rgba(79,224,138,.55)) drop-shadow(0 0 46px rgba(79,224,138,.3));
+      animation:shine 7s ease-in-out infinite; white-space:nowrap; }
+    .tag{ font-size:clamp(15px,1.9vw,22px); text-transform:uppercase; letter-spacing:0; color:var(--green); font-weight:700; margin:16px 0 0; animation-delay:.13s;
+      width:95%; align-self:center; text-align:justify; text-align-last:justify; }
+    .lead{ font-size:clamp(15px,1.7vw,18px); line-height:1.7; color:var(--ink); margin:38px 0 0 var(--bi); max-width:450px; animation-delay:.2s; }
+    .lead b{ color:#fff; font-weight:600; }
+    .sub2{ font-size:14px; line-height:1.7; color:var(--muted); margin:14px 0 0 var(--bi); max-width:450px; animation-delay:.27s; }
+    .enter{
+      align-self:flex-start; margin-left:var(--bi); display:inline-flex; align-items:center; gap:11px; margin-top:32px; text-decoration:none;
+      padding:14px 26px 14px 20px; border-radius:999px; font-weight:700; font-size:15.5px; color:#06250f;
+      background:linear-gradient(180deg,var(--green),var(--green-deep));
+      box-shadow:0 12px 34px rgba(79,224,138,.3), inset 0 1px 0 rgba(255,255,255,.3);
+      transition:transform .2s, box-shadow .2s; animation-delay:.36s;
+    }
+    .enter:hover{ transform:translateY(-2px); box-shadow:0 18px 44px rgba(79,224,138,.46), inset 0 1px 0 rgba(255,255,255,.35); }
+    .enter svg{ width:20px; height:20px; }
+    .enter .arrow{ transition:transform .2s; font-weight:800; }
+    .enter:hover .arrow{ transform:translateX(4px); }
+
+    .social{ position:fixed; top:18px; right:64px; z-index:5; display:flex; gap:9px; margin:0; animation:rise 1.2s both .55s; }
+    .social a{ width:34px; height:34px; display:inline-flex; align-items:center; justify-content:center;
+      border:1px solid rgba(159,188,171,.24); border-radius:10px; color:var(--ink);
+      background:rgba(6,13,9,.32); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px);
+      transition:color .2s, border-color .2s, transform .2s, background .2s; }
+    .social a:hover{ color:var(--green); border-color:var(--green); transform:translateY(-1px); background:rgba(79,224,138,.12); }
+    .social a svg{ width:16px; height:16px; display:block; }
+
+    footer{ position:fixed; z-index:3; left:24px; bottom:20px; font-size:11.5px; color:rgba(159,188,171,.7); animation:rise 1.3s both .7s; }
+    footer b{ color:var(--gold); font-weight:700; }
+    footer a{ color:inherit; text-decoration:none; }
+    footer a:hover{ color:var(--green); }
+
+    @keyframes rise{ from{opacity:0; transform:translateY(20px)} to{opacity:1; transform:none} }
+    @keyframes float{ 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+    @keyframes breathe{ 0%,100%{transform:scale(1)} 50%{transform:scale(1.05)} }
+    @keyframes shine{ 0%{ background-position:175% -75%, 0 0; } 55%,100%{ background-position:-75% 175%, 0 0; } }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+    @media (max-width:900px){
+      .emblem-wrap{ width:100%; align-items:center; }
+      .emblem{ height:auto; width:min(78vw,440px); opacity:.42; }
+      .panel{ width:100%; left:0; right:0; align-items:center; text-align:center; padding:0 26px;
+        background:linear-gradient(180deg, rgba(6,13,9,.35), rgba(6,13,9,.72) 55%); }
+      .content{ align-items:center; text-align:center; width:100%; }
+      .credit{ align-self:center; }
+      .brandrow h1{ white-space:normal; }
+      .lead,.sub2{ margin-left:auto; margin-right:auto; } .enter{ align-self:center; margin-left:0; }
+      .social{ top:14px; right:14px; gap:7px; }
+      footer{ left:0; right:0; text-align:center; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="spark"></canvas>
+
+  <div class="emblem-wrap">
+    <img class="emblem" src="images/bodhi-fibo.png" alt="Bodhi Map for FIBO — a golden Buddha beneath a Bodhi tree whose leaves bear financial icons (bank, wallet, chart, UPI, shield)" />
+  </div>
+
+  <!-- Branding panel (right) -->
+  <main class="panel">
+    <div class="content">
+      <a class="credit" href="https://github.com/AI-First-Community/Bodhi" target="_blank" rel="noopener">✦ Inspired by <b>Bodhi&nbsp;Map</b> ↗</a>
+      <div class="brandrow">
+        <span class="leaf" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/>
+            <path d="M12 6.2V2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <g stroke="#06351f" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round">
+              <path d="M12 7.3V20"/><path d="M12 10.1 8.9 8.3"/><path d="M12 10.1 15.1 8.3"/>
+              <path d="M12 12.9 8.6 11.3"/><path d="M12 12.9 15.4 11.3"/><path d="M12 15.6 9.2 14.5"/><path d="M12 15.6 14.8 14.5"/>
+            </g>
+          </svg>
+        </span>
+        <div class="titlestack">
+          <h1>Bodhi&nbsp;Map</h1>
+          <p class="tag" aria-label="for FIBO — financial ontology">f o r &nbsp; f i b o</p>
+        </div>
+      </div>
+      <p class="lead">A calm, living map of the <b>Financial Industry Business Ontology</b> — every concept a node, every relationship an edge.</p>
+      <p class="sub2">1,440 concepts across loans, business &amp; commerce, foundations, and business entities — audit-ready grounding for financial AI agents. Land on a curated core of 71 loan-origination concepts, with provenance-tagged cross-domain bridges.</p>
+      <a class="enter" href="app.html">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/></svg>
+        Enter the map <span class="arrow">→</span>
+      </a>
+      <nav class="social" aria-label="Links">
+        <a href="https://github.com/AI-First-Community/Bodhi-Map-For-FinTech" target="_blank" rel="noopener" title="GitHub repository" aria-label="GitHub repository">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.26.82-.57 0-.28-.01-1.02-.02-2-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.82 5.62-5.5 5.92.43.37.82 1.1.82 2.22 0 1.61-.02 2.9-.02 3.29 0 .32.22.69.83.57A12.3 12.3 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>
+        </a>
+        <a href="https://github.com/AI-First-Community/Bodhi" target="_blank" rel="noopener" title="Bodhi Map (the inspiration)" aria-label="Bodhi Map — the inspiration">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sanjeevazad/" target="_blank" rel="noopener" title="Sanjeev Azad on LinkedIn" aria-label="Sanjeev Azad on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+      </nav>
+    </div>
+  </main>
+
+  <footer>Open&nbsp;source · MIT · Curated FIBO for financial AI &nbsp;·&nbsp; <a href="https://github.com/AI-First-Community/Bodhi" target="_blank" rel="noopener">inspired by <b>Bodhi&nbsp;Map</b></a></footer>
+
+  <script>
+    (function () {
+      var c = document.getElementById('spark'), x = c.getContext('2d');
+      var DPR = Math.min(window.devicePixelRatio || 1, 2), W, H, parts;
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function rnd(a, b){ return a + Math.random() * (b - a); }
+      function size(){ W = c.width = innerWidth * DPR; H = c.height = innerHeight * DPR; }
+      function make(){ return { x: rnd(0, W), y: rnd(0, H), r: rnd(.5, 1.8) * DPR, vy: -rnd(.04, .26) * DPR,
+        vx: rnd(-.08, .08) * DPR, ph: rnd(0, 6.28), tw: rnd(.6, 1.7), gold: Math.random() < 0.42 }; }
+      function init(){ size(); var n = Math.max(30, Math.min(80, Math.floor(innerWidth / 18))); parts = []; for (var i=0;i<n;i++) parts.push(make()); }
+      var t = 0;
+      function frame(){
+        x.clearRect(0,0,W,H); t += 0.016;
+        for (var i=0;i<parts.length;i++){
+          var p = parts[i]; p.y += p.vy; p.x += p.vx;
+          if (p.y < -8) { parts[i] = make(); parts[i].y = H + 8; }
+          x.globalAlpha = 0.25 + 0.4 * (0.5 + 0.5 * Math.sin(t * p.tw + p.ph));
+          x.fillStyle = p.gold ? '#f3c969' : '#7df0aa';
+          x.beginPath(); x.arc(p.x, p.y, p.r, 0, 6.2832); x.fill();
+        }
+        requestAnimationFrame(frame);
+      }
+      init();
+      if (reduce){ x.globalAlpha=.5; for (var i=0;i<parts.length;i++){ x.fillStyle=parts[i].gold?'#f3c969':'#7df0aa'; x.beginPath(); x.arc(parts[i].x,parts[i].y,parts[i].r,0,6.2832); x.fill(); } }
+      else frame();
+      window.addEventListener('resize', init);
+    })();
+  </script>
+
+  <script src="js/sw-register.js"></script>
+</body>
+</html>
