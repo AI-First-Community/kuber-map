@@ -6,6 +6,8 @@ definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw
 tags: [LOAN, Provisional]
 core: true
+detail: "In the US this is the umbrella statute whose titles include the Truth in Lending Act (Regulation Z) and the Equal Credit Opportunity Act (Regulation B)."
+detail_provenance: curated
 examples:
   - "The US Consumer Credit Protection Act"
   - "The Truth in Lending Act (Reg Z)"

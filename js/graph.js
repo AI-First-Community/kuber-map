@@ -216,7 +216,7 @@
       <h2 style="--c:${c.color}">${n.label}</h2>
       <p class="summary">${n.summary}</p>
       ${cmpIdxFor !== -1 ? `<button class="panel-action" data-compare="${cmpIdxFor}">${TABLE_IC} Compare ${GRAPH.comparisons[cmpIdxFor].title}</button>` : ''}
-      ${n.detail ? `<h4>Detail</h4><p>${escapeHtml(n.detail)}</p>` : ''}
+      ${n.detail ? `<h4>Detail${n.detailProvenance === 'curated' ? ' <span class="rel-tag">curated</span>' : ''}</h4><p>${escapeHtml(n.detail)}</p>` : ''}
       ${n.examples && n.examples.length ? `<h4>Examples${n.examplesProvenance === 'curated' ? ' <span class="rel-tag">illustrative</span>' : ''}</h4><ul class="conn-list">${n.examples.map((e) => `<li>${escapeHtml(e)}</li>`).join('')}</ul>` : ''}
       ${n.synonyms && n.synonyms.length ? `<h4>Also known as</h4><p class="when">${n.synonyms.map((s) => escapeHtml(s)).join(' · ')}</p>` : ''}
       ${neighborsHtml(id)}

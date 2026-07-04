@@ -5,6 +5,8 @@ description: "credit rating that provides an opinion of the creditworthiness of 
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IndividualPersonCreditRating
 tags: [LOAN, Provisional]
 core: true
+detail: "Usually expressed as a credit score (e.g. FICO); a primary input to loan pricing and the approval decision."
+detail_provenance: curated
 examples:
   - "A FICO score of 720"
   - "A VantageScore"

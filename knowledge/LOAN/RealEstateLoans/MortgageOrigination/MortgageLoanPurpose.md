@@ -5,6 +5,8 @@ description: "the purpose for which mortgage loan proceeds will be used, such as
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/MortgageLoanPurpose
 tags: [LOAN, Provisional]
 core: true
+detail: "Specializes loan purpose for real-estate lending — purchase, rate-and-term refinance, cash-out refinance, or construction."
+detail_provenance: curated
 examples:
   - "Purchase"
   - "Rate-and-term refinance"

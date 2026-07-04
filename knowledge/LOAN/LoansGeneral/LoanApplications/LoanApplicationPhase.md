@@ -6,6 +6,8 @@ definition_provenance: curated
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationPhase
 tags: [LOAN, Provisional]
 core: true
+detail: "Tracks where an application sits in the workflow — for example pre-qualification, intake, underwriting, or decisioning — often driving permissions and turn-time targets."
+detail_provenance: curated
 examples:
   - "Pre-qualification"
   - "Application intake"

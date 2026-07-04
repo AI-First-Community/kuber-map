@@ -416,6 +416,7 @@ const GRAPH = {
       "detail": "This should be computed from the income of the individual borrowers.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -440,6 +441,7 @@ const GRAPH = {
         "A summary of the applicant's income, employment, and credit history."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -459,11 +461,12 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "total monthly qualifying income of a potential borrower",
-      "detail": "",
+      "detail": "A key underwriting input; combined with monthly debt obligations it yields the debt-to-income ratio that drives the credit decision.",
       "examples": [
         "$8,000/month gross qualifying income from salary plus bonus."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -488,6 +491,7 @@ const GRAPH = {
         "Scoring an applicant's probability of default from credit and income data."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -507,11 +511,12 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "report providing the methodology and supporting documentation used to verify the borrower's income",
-      "detail": "",
+      "detail": "Documents such as pay stubs, W-2s, tax returns, or a verification of employment that support claimed income and help satisfy ability-to-repay rules.",
       "examples": [
         "A verification of employment (VOE) with pay stubs and W-2s."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -531,12 +536,13 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "credit rating that provides an opinion of the creditworthiness of a person",
-      "detail": "",
+      "detail": "Usually expressed as a credit score (e.g. FICO); a primary input to loan pricing and the approval decision.",
       "examples": [
         "A FICO score of 720",
         "A VantageScore"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -556,11 +562,12 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "request by a potential borrower to a potential lender to borrow money containing information used to decide whether to grant the loan",
-      "detail": "",
+      "detail": "Captures the borrower, the property, the terms sought, and financials (in the US, Form 1003); submitting it initiates underwriting.",
       "examples": [
         "A completed Uniform Residential Loan Application (Form 1003)."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -583,6 +590,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -605,6 +613,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -624,7 +633,7 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "distinct phase in the lifecycle of a loan application, such as pre-qualification, application intake, underwriting, or decisioning",
-      "detail": "",
+      "detail": "Tracks where an application sits in the workflow — for example pre-qualification, intake, underwriting, or decisioning — often driving permissions and turn-time targets.",
       "examples": [
         "Pre-qualification",
         "Application intake",
@@ -632,6 +641,7 @@ const GRAPH = {
         "Decisioning"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "curated",
       "refs": [
@@ -651,7 +661,7 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "classifier indicating the state of a loan application at a particular point in its lifecycle, such as submitted, under review, approved, declined, or withdrawn",
-      "detail": "",
+      "detail": "A point-in-time state (submitted, in review, approved, declined, withdrawn) used for pipeline reporting and borrower communication.",
       "examples": [
         "Submitted",
         "Under review",
@@ -660,6 +670,7 @@ const GRAPH = {
         "Withdrawn"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "curated",
       "refs": [
@@ -682,6 +693,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -706,6 +718,7 @@ const GRAPH = {
         "A lender's written commitment to lend up to $400k subject to conditions."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -730,6 +743,7 @@ const GRAPH = {
         "A buyer asking a lender to pre-approve them for a $400k mortgage."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -752,6 +766,7 @@ const GRAPH = {
       "detail": "This can include court actions such as bankruptcy and foreclosure, as well as liens and other events that have been recorded.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -774,6 +789,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -793,13 +809,14 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "ratio of all monthly debt payments of all borrowers, including proposed expenses, with respect to the income of the borrowers as relied upon to make a credit decision",
-      "detail": "",
+      "detail": "The debt-to-income (DTI) ratio; under US ability-to-repay / Qualified Mortgage rules it is commonly capped around 43%.",
       "examples": [
         "All monthly debt ÷ income = 43% DTI used in the credit decision."
       ],
       "synonyms": [
         "back end ratio"
       ],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -822,6 +839,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -841,7 +859,7 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "classifier providing a loan approval recommendation determined either manually or by an automated underwriting system",
-      "detail": "",
+      "detail": "The outcome of assessing credit, capacity, and collateral — approve, approve with conditions, suspend, or deny.",
       "examples": [
         "Approve",
         "Approve with conditions",
@@ -849,6 +867,7 @@ const GRAPH = {
         "Deny"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -868,11 +887,12 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "assessment activity resulting in the valuation of real property as collateral",
-      "detail": "",
+      "detail": "Typically an appraisal or automated valuation model (AVM); its result feeds the loan-to-value ratio and lien decisions.",
       "examples": [
         "An appraisal or automated valuation model (AVM) of the pledged property."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -895,6 +915,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -917,6 +938,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -939,6 +961,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -961,6 +984,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -980,7 +1004,7 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "distinct phase in the lifecycle of a loan, such as origination, disbursement, repayment, or closure",
-      "detail": "",
+      "detail": "The stage of a loan across its whole life (origination, disbursement, repayment, payoff), distinct from the application workflow.",
       "examples": [
         "Origination",
         "Disbursement",
@@ -988,6 +1012,7 @@ const GRAPH = {
         "Payoff / closure"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "curated",
       "refs": [
@@ -1010,6 +1035,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1029,11 +1055,12 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "phase in a loan's lifecycle during which the borrower repays outstanding principal and interest according to the loan's payment schedule",
-      "detail": "",
+      "detail": "Begins after disbursement; the borrower makes scheduled payments per the amortization schedule until the loan is paid off.",
       "examples": [
         "The period after disbursement during which the borrower makes scheduled payments."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "curated",
       "refs": [
@@ -1056,6 +1083,7 @@ const GRAPH = {
       "detail": "The loan may require regular payments that pay down principal periodically, or it may require the full payment of principal at maturity.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1075,12 +1103,13 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "secured loan that is secured with cash or other acceptable collateral (real property, securities or other assets) provided by the borrower as specified in the collateral agreement",
-      "detail": "",
+      "detail": "A secured loan where specific assets (real property, securities, or cash) are pledged; the collateral reduces the lender's loss if the borrower defaults.",
       "examples": [
         "A mortgage secured by real estate",
         "A securities-backed line of credit"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1108,6 +1137,7 @@ const GRAPH = {
         "comaker",
         "cosigner"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1132,6 +1162,7 @@ const GRAPH = {
         "A $240k first mortgage + a $30k HELOC on a $300k home = 90% CLTV."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1154,6 +1185,7 @@ const GRAPH = {
       "detail": "A loan guarantee is a promise by one party to assume the debt obligation of a borrower if that borrower defaults. A guarantee can be limited or unlimited, making the guarantor liable for only a portion or all of the debt. In the U.S., the term 'guaranteed loan' typically refers to a loan that is backed by a federal agency, such as the Department of Veterans Affairs or the Small Business Administration. Student loans may be guaranteed by the Student Loan Marketing Association.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1176,6 +1208,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1195,12 +1228,13 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "classifier indicating whether the lender has the primary lien position with respect to an asset used as collateral for the loan",
-      "detail": "",
+      "detail": "First-lien loans are repaid before junior liens on default, so lien position strongly affects a loan's risk and its pricing.",
       "examples": [
         "First lien (the primary mortgage)",
         "Second lien (a HELOC)"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1220,12 +1254,13 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "debt instrument whereby one party extends money or credit to another party (or parties) with the understanding that the borrowed money will be repaid according to the terms of the contract",
-      "detail": "",
+      "detail": "The foundational debt instrument the other concepts specialize — money advanced now against a promise to repay according to agreed terms.",
       "examples": [
         "A $300,000 30-year home mortgage",
         "A $25,000 auto loan"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1250,6 +1285,7 @@ const GRAPH = {
         "A monthly amortization schedule of principal and interest over 360 months."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1272,6 +1308,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1291,13 +1328,14 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "ratio, expressed as a percentage, between the principal amount of the loan and the appraised value of the asset securing the financing",
-      "detail": "",
+      "detail": "A primary risk measure: a higher LTV means less borrower equity and greater loss on default, and above roughly 80% it commonly triggers mortgage insurance.",
       "examples": [
         "A $240,000 loan on a $300,000 appraised home = 80% LTV."
       ],
       "synonyms": [
         "LTV"
       ],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1325,6 +1363,7 @@ const GRAPH = {
         "charge account credit",
         "revolving credit"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1351,6 +1390,7 @@ const GRAPH = {
         "Joint tenancy"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1370,11 +1410,12 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "record of actual payments of principal, interest, and other related amounts made by a borrower to a lender or servicer in order to fulfill their re-payment obligation",
-      "detail": "",
+      "detail": "The borrower's record of on-time and late payments; central to credit scoring and to servicing and default decisions.",
       "examples": [
         "24 months of on-time mortgage payments with one 30-day late."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1400,6 +1441,7 @@ const GRAPH = {
         "Penalty-free prepayment"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1419,12 +1461,13 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "loan in which the borrower pledges some asset via a security agreement as collateral for the loan, or that is secured via third-party guarantee",
-      "detail": "",
+      "detail": "Backed by pledged assets or a guarantee, which lowers the lender's risk relative to an unsecured loan and usually the borrower's rate as well.",
       "examples": [
         "A mortgage (secured by a home)",
         "A pawn loan (secured by an item)"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1449,6 +1492,7 @@ const GRAPH = {
         "The company collecting monthly payments and managing escrow after closing."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1468,11 +1512,12 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "the principal balance of all loans secured by the property",
-      "detail": "",
+      "detail": "The aggregate unpaid principal secured by the property across all loans; used with appraised value to compute the combined loan-to-value ratio.",
       "examples": [
         "The combined unpaid principal of a first mortgage and a HELOC on the property."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1495,6 +1540,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1517,6 +1563,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1536,11 +1583,12 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "regulatory requirement that a lender disclose specified information to a borrower or prospective borrower — such as the terms and costs of a loan product — conferring a corresponding right to that information and governing how the borrower is assessed",
-      "detail": "",
+      "detail": "In the US these are implemented through the TILA-RESPA Integrated Disclosure (TRID) rule, giving borrowers standardized Loan Estimate and Closing Disclosure documents.",
       "examples": [
         "The TILA-RESPA (TRID) Loan Estimate a lender must give within 3 business days."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "curated",
       "refs": [
@@ -1563,6 +1611,7 @@ const GRAPH = {
       "detail": "example the right not to have a home reposessed. Example: RESPA Real Estate Setetlement Procedures Act (promulgated by HUD to govern real estate practices and disclosures Provisions of good faith estimate (GFE) of loan settlement costs. GFE would be when you apply - you get a GFE back from the lender telling you what it would cost if you close the loan.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1585,6 +1634,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1604,12 +1654,13 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "consumer protection law that regulates the extension of credit to consumers — governing matters such as disclosure of terms and costs, fair lending, and borrower rights (for example, in the US, the Consumer Credit Protection Act and its implementing regulations)",
-      "detail": "",
+      "detail": "In the US this is the umbrella statute whose titles include the Truth in Lending Act (Regulation Z) and the Equal Credit Opportunity Act (Regulation B).",
       "examples": [
         "The US Consumer Credit Protection Act",
         "The Truth in Lending Act (Reg Z)"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "curated",
       "refs": [
@@ -1632,6 +1683,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1654,6 +1706,7 @@ const GRAPH = {
       "detail": "e..g being able to see and challenge information about them held by the credit agency or lender. e.g. can't publish opinions only facts, etc.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1676,6 +1729,7 @@ const GRAPH = {
       "detail": "Note that this is consumer protection, and not other regulatory requirements such as systemic risk. an instance of this is the Consumer Financial Protection Bureau in the US. This is wide rthan just lending, but also covers lender rights.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1698,6 +1752,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1720,6 +1775,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1742,6 +1798,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1764,6 +1821,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1786,6 +1844,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1808,6 +1867,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1832,6 +1892,7 @@ const GRAPH = {
         "The lender's itemized estimate of closing costs (the Loan Estimate under TRID)."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1854,6 +1915,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1876,6 +1938,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1898,6 +1961,7 @@ const GRAPH = {
       "detail": "Covers responsible lending, consumer credit laws. See Aus Consumer Creti; US Reg Z and so on. In detail, this will include things like the representations about rates of interest, what people can or can't say when offering a product to a customer. Reg Z: Promoting the informed use of consumer credit by .. implictions and cost Also right to cancel a lien on a consumer's dwelling.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1923,6 +1987,7 @@ const GRAPH = {
         "HMDA data collection"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1945,6 +2010,7 @@ const GRAPH = {
       "detail": "There are also rules which encompass limitations on how you might attach loans and liens to principle dwellings, e.g. when or whether you can foreclose on someone's principal dwelling with impunity; what rights the consumer has - this last will be a separate kind of regulation.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1967,6 +2033,7 @@ const GRAPH = {
       "detail": "Includes retail, insurance and financial product disclosures",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -1991,6 +2058,7 @@ const GRAPH = {
         "Regulation B implementing the Equal Credit Opportunity Act."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2015,6 +2083,7 @@ const GRAPH = {
         "Regulation Z implementing the Truth in Lending Act."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2037,6 +2106,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2059,6 +2129,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2083,6 +2154,7 @@ const GRAPH = {
       "synonyms": [
         "CAV"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2107,6 +2179,7 @@ const GRAPH = {
       "synonyms": [
         "CAV2"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2129,6 +2202,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2151,6 +2225,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2175,6 +2250,7 @@ const GRAPH = {
       "synonyms": [
         "CID"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2197,6 +2273,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2221,6 +2298,7 @@ const GRAPH = {
       "synonyms": [
         "CSC"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2245,6 +2323,7 @@ const GRAPH = {
       "synonyms": [
         "PAN CVC"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2269,6 +2348,7 @@ const GRAPH = {
       "synonyms": [
         "PAN CVC2"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2291,6 +2371,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2315,6 +2396,7 @@ const GRAPH = {
       "synonyms": [
         "CVV"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2339,6 +2421,7 @@ const GRAPH = {
       "synonyms": [
         "CVV2"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2363,6 +2446,7 @@ const GRAPH = {
       "synonyms": [
         "corporate credit card agreement"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2385,6 +2469,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2407,6 +2492,7 @@ const GRAPH = {
       "detail": "In its non-physical form, a credit card represents a payment mechanism which facilitates both consumer and commercial business transactions, including purchases and cash advances. A credit card generally operates as a substitute for cash or a check and most often provides an unsecured revolving line of credit. The borrower is required to pay at least part of the card's outstanding balance each billing cycle, depending on the terms as set forth in the cardholder agreement. As the debt reduces, the available credit increases for accounts in good standing. These complex financial arrangements have ever-shifting terms and prices. A charge card differs from a credit card in that the charge card must be paid in full each month. In physical form, a credit card traditionally is a thin, rectangular plastic card. The front of the card contains a series of numbers that are representative of various items such as the applicable network, bank, and account. Issuance of credit cards has the condition that the cardholder will pay back the original, borrowed amount plus any additional agreed-upon charges. The credit company provider may also grant a line of credit (LOC) to the cardholder which allows the holder to borrow money in the form of a cash advance. The issuer pre-sets borrowing limits which have a basis on the individual's credit rating.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2429,6 +2515,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2451,6 +2538,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2475,6 +2563,7 @@ const GRAPH = {
         "Mastercard, Visa, American Express, Discover"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2497,6 +2586,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2519,6 +2609,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2541,6 +2632,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2563,6 +2655,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2587,6 +2680,7 @@ const GRAPH = {
       "synonyms": [
         "issuing bank"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2609,6 +2703,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2631,6 +2726,7 @@ const GRAPH = {
       "detail": "For purposes of Payment Card Industry Data Security Standard (PCI DSS), a payment card is any payment card/device that bears the logo of the founding members of PCI SSC, which are American Express, Discover Financial Services, JCB International, MasterCard, or Visa, Inc. The term payment card includes credit cards, debit cards, and stored-value cards, as well as payment through any distinctive marks of a payment card (such as a credit card number). A payment card is issued under an agreement that provides standards and mechanisms for settling the transactions between a merchant acquiring bank or similar entity and the providers who accept the cards as payment.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2653,6 +2749,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2678,6 +2775,7 @@ const GRAPH = {
         "PAN",
         "primary account number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2700,6 +2798,7 @@ const GRAPH = {
       "detail": "The circuits, also referred to as the 'chip,' contain payment card data including but not limited to data equivalent to the magnetic-stripe data.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2722,6 +2821,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2746,6 +2846,7 @@ const GRAPH = {
       "synonyms": [
         "commercial and industrial loan"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2770,6 +2871,7 @@ const GRAPH = {
         "Other secured consumer loans may include loans against insurance policies, against securities held in a retirement account, loans secured with collateral other than for the loan's stated purpose, lines of credit other than credit card agreements, and so forth."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2794,6 +2896,7 @@ const GRAPH = {
         "A $50,000 revolving HELOC secured by a homeowner's equity."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2818,6 +2921,7 @@ const GRAPH = {
       "synonyms": [
         "auto loan"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2840,6 +2944,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2862,6 +2967,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2884,6 +2990,7 @@ const GRAPH = {
       "detail": "The assessment boundary ensures consistency, transparency, and focus by specifying the parameters for the evaluation. It includes: (1) the scope of assessment, (2) the relevant spacial boundaries, (3) the time period(s) over which the assessment is to be conducted, (4) organizational boundaries - which parts of an organization or project are included in the evaluation, (5) impact categories - which environmental or sustainability impacts are included, (6) lifecycle boundaries - which stages of the lifecycle are included, (7) exclusions - specific elements, processes, or impacts that are excluded from the assessment and justification for these exclusions, and (8) stakeholder boundaries - the extent to which external stakeholders or externalities (e.g., indirect social impacts) are considered. \t\t \t\t- The scope statement specifies which aspects, activities, processes, or entities are included in the evaluation. For example, in a greenhouse gas (GHG) emissions assessment, the boundary might cover Scope 1 (direct emissions), Scope 2 (indirect emissions from energy use), and Scope 3 (upstream and downstream emissions in the value chain). \t\t \t\t- The spatial boundaries cover the geographic region(s) relevant for the assessment, including but not limited to a specific site, facility, region, or global operations of a company or project. \t\t \t\t- The relevant timeframe may be a single year, the entire lifecycle of a product, or a specific project phase. \t\t \t\t- Organizational boundaries may include a parent company, subsidiaries, joint ventures, or specific divisions based on control, ownership, or influence. \t\t \t\t- Impact may include carbon emissions, energy use, water consumption, biodiversity impact, and waste generation. \t\t \t\t- Lifecycle boundaries may cover product or process evaluations (e.g., Life Cycle Assessment or LCA). If so, the boundary defines which stages of the lifecycle are included: Cradle-to-Grave: Includes all stages, from raw material extraction to disposal, Cradle-to-Gate: Covers stages up to the point where the product leaves the manufacturing facility. or Gate-to-Gate: Focuses on a specific segment of the lifecycle, such as manufacturing processes, for example. \t\t \t\t- Small, immaterial emissions sources might be excluded if their impact is negligible. \t\t \t\t- Stakeholder boundaries with respect to a given sustainability evaluation might include impacts on local communities or supply chain partners.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2906,6 +3013,7 @@ const GRAPH = {
       "detail": "Key characteristics of an environmental or sustainability program include achieving measurable positive environmental outcomes, and aligning with broader sustainability goals, such as those outlined in international frameworks (e.g., the United Nations Sustainable Development Goals (SDGs), Paris Agreement). Large scale environmental programs may consist of a number of projects aimed at addressing specific requirements that support the broader challenges outlined under the program.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2928,6 +3036,7 @@ const GRAPH = {
       "detail": "Key characteristics of an environmental or sustainability project include achieving measurable positive environmental outcomes, and aligning with broader sustainability goals, such as those outlined in international frameworks (e.g., the United Nations Sustainable Development Goals (SDGs), Paris Agreement). Such projects are designed to align with environmental goals, such as mitigating climate change, conserving natural resources, protecting biodiversity, and promoting a circular economy.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2952,6 +3061,7 @@ const GRAPH = {
         "Example categories of eligibility contained in the LMA's Green Loan Principles (GLP) include loans designed to facilitate renewable energy, energy efficiency, climate change adaptation and green buildings that meet regional, national or internationally recognised standards or certifications."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2976,6 +3086,7 @@ const GRAPH = {
         "Examples include: renewable energy projects (e.g., solar, wind, hydroelectric power), green buildings certified by recognized standards (e.g., LEED, BREEAM), sustainable water and wastewater management systems, pollution reduction technologies and systems, sustainable forestry and agriculture initiatives, circular economy projects, such as recycling or waste-to-energy facilities, low-carbon transportation infrastructure (e.g., electric vehicle charging stations, public transit projects), and the like."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -2998,6 +3109,7 @@ const GRAPH = {
       "detail": "All designated Green Projects should provide clear environmental benefits, which will be assessed, and where feasible, quantified, measured and reported by the borrower, per requirements outlined in the LMA Green Loan Principles (GLP). Where funds are to be used, in whole or part, for refinancing, it is recommended that borrowers provide an estimate of the share of financing versus refinancing. Where appropriate, they should also clarify which investments or project portfolios may be refinanced, and, to the extent relevant, the expected look-back period for refinanced Green Projects. A green loan may take the form of one or more tranches of a loan facility. In such cases, the green tranche(s) must be clearly designated, with proceeds of the green tranche(s) credited to a separate account or tracked by the borrower in an appropriate manner.  \t\t \t\tThe GLP explicitly recognise several broad categories of eligibility for Green Projects with the objective of addressing key areas of environmental concern such as climate change, natural resources depletion, loss of biodiversity, and air, water and soil pollution. This non-exhaustive list, set out in Appendix 1, is intended to capture the most usual types of projects supported, and expected to be supported, by the green loan market. However, it is recognised that definitions of green and green projects may vary depending on sector and geography",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3020,6 +3132,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3042,6 +3155,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3064,6 +3178,7 @@ const GRAPH = {
       "detail": "The borrower of an SLL should clearly communicate to its lenders its sustainability objective(s) and how such objectives align with its proposed sustainability performance targets (SPTs).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3086,6 +3201,7 @@ const GRAPH = {
       "detail": "An SLL borrower should clearly communicate to its lender(s) its rationale for the selection of its KPI(s) (i.e. relevance, materiality, whether it is core to the borrower's overall business) and the motivation for the SPT(s) (i.e. ambition level, benchmarking approach and how the borrower intends to reach such SPTs). Borrowers are encouraged to position this information within the context of their overarching objectives, sustainability strategy, policy, sustainability commitments and/or processes relating to sustainability. SLLs aim to support a borrower's efforts in improving its sustainability profile over the term of the loan. They do so by aligning loan terms to the borrower's performance, which is measured using one or more sustainability KPIs that can be internal and/or external. The KPIs must be material to the borrower's core sustainability and business strategy, and address relevant ESG challenges of its industry sector.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3108,6 +3224,7 @@ const GRAPH = {
       "detail": "A sustainability KPI must be: (a) relevant, core and material to the borrower's overall business, and of high strategic significance to the borrower's current and/or future operations; (b) measurable or quantifiable on a consistent methodological basis; and (c) able to be benchmarked (i.e. as much as possible using an external reference or definitions to facilitate the assessment of the SPT's level of ambition). A clear definition of the KPI(s) should be provided by the borrower and should include the applicable scope or parameters, as well as the calculation methodology, a definition of a baseline and be benchmarked against an industry standard and/or industry peers where feasible.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3130,6 +3247,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3156,6 +3274,7 @@ const GRAPH = {
       "synonyms": [
         "SLL"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3180,6 +3299,7 @@ const GRAPH = {
       "synonyms": [
         "SPT"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3202,6 +3322,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3224,6 +3345,7 @@ const GRAPH = {
       "detail": "This role is typically present in sustainability-linked loans (SLLs) or green loans, which tie the loan's terms to the borrower's environmental, social, and governance (ESG) performance. The sustainability structuring agent's role is crucial in ensuring that the loan's sustainability metrics align with both the borrower's goals and the expectations of the participating lenders.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3246,6 +3368,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3268,6 +3391,7 @@ const GRAPH = {
       "detail": "Transition loans are part of the broader sustainable finance market and are specifically tailored for companies in industries that are not inherently green but are committed to adopting practices that align with a low-carbon or sustainable economy. Transition loans are structured to assist companies in reducing greenhouse gas (GHG) emissions, improving energy efficiency, adopting renewable energy sources, or meeting other sustainability targets aligned with climate transition goals. They support initiatives such as retrofitting fossil fuel-based systems, decarbonizing supply chains, or adopting cleaner production methods. Transition loans align with emerging Climate Transition Finance principles (developed by groups such as the International Capital Market Association, ICMA). Borrowers are expected to demonstrate that the loan aligns with long-term, science-based climate goals, such as those outlined in the Paris Agreement (e.g., limiting global warming to well below 2°C).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3290,6 +3414,7 @@ const GRAPH = {
       "detail": "Borrowers must demonstrate a credible transition plan, which include: (a) clear sustainability performance targets (SPTs), (b) alignment with recognized climate goals and frameworks (e.g., the Science Based Targets initiative, SBTi), and (c) transparency in reporting progress and outcomes. Third-party verification or certification of the transition plan and its alignment with best practices is often required. Green loans focus on funding projects with direct and measurable environmental benefits (e.g., solar farms, green buildings). Transition loans are for broader initiatives aimed at improving sustainability in traditionally carbon-intensive sectors. Sustainability-Linked Loans (SLLs): Transition loans share similarities with SLLs, as both tie terms (such as interest rates) to achieving predefined sustainability goals. However, transition loans are specifically framed within the context of long-term decarbonization or sustainability transitions.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3312,6 +3437,7 @@ const GRAPH = {
       "detail": "Note that although there are similarities with sustainability business strategies, they are not the same. KPIs and SPTs may, however, be defined similarly for a given project.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3334,6 +3460,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3356,6 +3483,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3378,6 +3506,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3400,6 +3529,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3422,6 +3552,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3444,6 +3575,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3466,6 +3598,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3488,6 +3621,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3507,12 +3641,13 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "financial product that is realized as a loan that a party may acquire from a lending institution with specific characteristics and terms",
-      "detail": "",
+      "detail": "A standardized template — such as a 30-year fixed conventional, a 5/1 ARM, or an FHA loan — with defined characteristics that individual loans instantiate.",
       "examples": [
         "A 30-year fixed conventional mortgage",
         "A 5/1 ARM"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3535,6 +3670,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3554,11 +3690,12 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "offering related to a loan product that may be a tailored to particular circumstances, aimed at a group of borrowers or individual borrower",
-      "detail": "",
+      "detail": "A specific packaging of a loan product — its rate, term, and eligibility — marketed to a borrower segment or tailored to an individual applicant.",
       "examples": [
         "A lender's advertised 6.5% 30-year fixed mortgage for first-time buyers."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3578,7 +3715,7 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "A selection of different types of loan purpose, being the purpose for which and manner in which loan (credit) draw-down amounts are to be used. This shows the purpose for which credit is to be used, and implies certain kinds of fact that relate to that specific type of loan e.g. mortgages. These are also identified as tranche types in tranches of a credit facility.",
-      "detail": "",
+      "detail": "Why the credit is drawn (purchase, refinance, cash-out, or improvement); it affects eligibility, pricing, and the disclosures required.",
       "examples": [
         "Home purchase",
         "Rate-and-term refinance",
@@ -3586,6 +3723,7 @@ const GRAPH = {
         "Home improvement"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3605,13 +3743,14 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "loan product, offered by a lender, that is realized as a mortgage — a loan secured by real property — with specific eligibility criteria, characteristics, and terms",
-      "detail": "",
+      "detail": "A loan product realized as a mortgage; conforming vs jumbo, fixed vs adjustable, and government-backed vs conventional are common distinctions.",
       "examples": [
         "A jumbo 30-year fixed",
         "A 7/1 ARM",
         "An FHA 203(k) rehab loan"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "curated",
       "refs": [
@@ -3634,6 +3773,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3656,6 +3796,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3678,6 +3819,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3700,6 +3842,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3722,6 +3865,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3744,6 +3888,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3766,6 +3911,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3788,6 +3934,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3810,6 +3957,7 @@ const GRAPH = {
       "detail": "In the United States, certain student loans survive bankruptcy and are subject to additional tax regulations that do not apply to other kinds of loans.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3832,6 +3980,7 @@ const GRAPH = {
       "detail": "Student loans may include loans for graduate and professional education. Student loans may be obtained from government institutions, from private sources such as a bank or financial institution, or from other organizations.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3854,6 +4003,7 @@ const GRAPH = {
       "detail": "A construction loan credit facility tranche (sub-facility) is a portion of a construction loan that is released in stages, or tranches, to fund specific phases of a construction project. Each tranche (committed sub-facility) is released once the borrower reaches a certain milestone, such as pouring concrete or completing the foundation. The borrower typically only pays interest on the amount that has been released at any given time. The Project Management Institute (PMI) breaks down most construction projects into five phases, which are initiation, planning, execution, monitoring and control, and closeout. Construction loans also typically include milestones at which a portion of the total facility is advanced to the borrower given proof of completion or meeting other requirements with respect to the work.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3876,6 +4026,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3898,6 +4049,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3917,11 +4069,12 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "a closed-end mortgage loan or open-end line of credit that is not an excluded transaction for HMDA reporting under US section 1003.3(c) of the Revised Home Mortgage Disclosure Act of 2015",
-      "detail": "",
+      "detail": "A loan or application subject to Home Mortgage Disclosure Act reporting; the lender must record specified data points about it on its register.",
       "examples": [
         "A closed-end home-purchase mortgage originated by a covered bank."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3944,6 +4097,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3966,6 +4120,7 @@ const GRAPH = {
       "detail": "This request is approved only after a comprehensive analysis of the credit worthiness of the borrower is carried out.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -3985,11 +4140,12 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "a report prepared to satisfy HMDA regulatory reporting requirements as described US section 1003.3(c) of the Revised Home Mortgage Disclosure Act of 2015",
-      "detail": "",
+      "detail": "The Loan/Application Register (LAR) a covered institution files annually with the CFPB; regulators use it to detect discriminatory or risky lending patterns.",
       "examples": [
         "A bank's annual Loan/Application Register (LAR) filed with the CFPB."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4012,6 +4168,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4034,6 +4191,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4058,6 +4216,7 @@ const GRAPH = {
         "The 23–45 character ULI assigned to a HMDA-reportable loan."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4077,13 +4236,14 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "classifier of amortization algorithms",
-      "detail": "",
+      "detail": "Determines how principal and interest are paid down over the term — fully amortizing loans retire the balance by maturity, while interest-only or balloon structures leave principal outstanding.",
       "examples": [
         "Fully amortizing",
         "Interest-only",
         "Negative amortization"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4109,6 +4269,7 @@ const GRAPH = {
         "Freddie Mac Loan Product Advisor (LPA)"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4131,6 +4292,7 @@ const GRAPH = {
       "detail": "This is subject to lender and/or investor policy(s).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4153,6 +4315,7 @@ const GRAPH = {
       "detail": "Use with LineItem, (has ChargeCategory instance), (hasNumericalValue for number of units) and (hasCost for the amount of money)",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4175,6 +4338,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4197,6 +4361,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4219,6 +4384,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4241,6 +4407,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4265,6 +4432,7 @@ const GRAPH = {
         "A private mortgage insurer providing PMI / MIG cover."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4287,6 +4455,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4306,7 +4475,7 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "the purpose for which mortgage loan proceeds will be used, such as real property purchase, dwelling construction, or loan refinancing",
-      "detail": "",
+      "detail": "Specializes loan purpose for real-estate lending — purchase, rate-and-term refinance, cash-out refinance, or construction.",
       "examples": [
         "Purchase",
         "Rate-and-term refinance",
@@ -4314,6 +4483,7 @@ const GRAPH = {
         "Cash-out"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4333,13 +4503,14 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "the number permanently assigned by the Nationwide Mortgage Licensing System and Registry (NMLS) for each company, branch, and individual that maintains a single account on NMLS.",
-      "detail": "",
+      "detail": "The NMLS identifier uniquely identifies licensed mortgage companies and loan originators; it appears on loan documents to support accountability.",
       "examples": [
         "NMLS #1234567 assigned to a licensed mortgage loan originator."
       ],
       "synonyms": [
         "NMLSR ID"
       ],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4359,13 +4530,14 @@ const GRAPH = {
       "maturity": "Provisional",
       "core": true,
       "summary": "a category indicating the manner in which the borrower intends to utilize the property",
-      "detail": "",
+      "detail": "How the borrower will use the property — primary residence, second home, or investment — which affects the rate, LTV limits, and disclosures.",
       "examples": [
         "Primary residence",
         "Second home",
         "Investment / rental property"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4385,11 +4557,12 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "loan secured by real estate with no ability for the borrower to receive additional funds under the loan at a later date",
-      "detail": "",
+      "detail": "The common purchase or refinance mortgage: the full amount is advanced at closing and repaid on a fixed schedule, with no further draws permitted.",
       "examples": [
         "A 30-year fixed-rate purchase mortgage with no further draws."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4412,6 +4585,7 @@ const GRAPH = {
       "detail": "Normally, closed-end reverse mortgages are first liens.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4436,6 +4610,7 @@ const GRAPH = {
         "Examples include (a) Construction, land development, and other land loans: (1) 1-4 family residential construction loans, and (2) Other construction loans and all land development and other land loans; (b) Secured by farmland (including farm residential and other improvements); (c) Secured by 1-4 family residential properties: (1) Revolving, open-end loans secured by 1-4 family residential properties and extended under lines of credit, and (2) Closed-end loans secured by 1-4 family residential properties including those secured by first liens and those secured by junior liens; (d) Secured by multifamily (5 or more) residential properties; and (e) Secured by nonfarm nonresidential properties: (1) Loans secured by owner-occupied nonfarm nonresidential, and (2) Loans secured by other nonfarm nonresidential properties."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4461,6 +4636,7 @@ const GRAPH = {
         "An FHA-insured mortgage"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4480,11 +4656,12 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "loan secured by real estate with a provision that the outstanding loan amount may be increased upon mutual agreement of the lender and the borrower",
-      "detail": "",
+      "detail": "Permits additional advances up to a limit after closing (as with a home-equity line), unlike a closed-end mortgage.",
       "examples": [
         "A mortgage allowing future advances up to a limit."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4507,6 +4684,7 @@ const GRAPH = {
       "detail": "Normally, open-end reverse mortgages are first liens. These include combinations of both a lump sum payment to the borrower at closing and payments after the closing of the loan.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4531,6 +4709,7 @@ const GRAPH = {
         "A HECM paying a 70-year-old homeowner monthly against home equity."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4553,6 +4732,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4575,6 +4755,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4597,6 +4778,7 @@ const GRAPH = {
       "detail": "Cross default provisions are commonly found in loans, bond indentures, syndicated loans, and other instruments such as certain master agreements (e.g., derivatives transactions master agreements).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4619,6 +4801,7 @@ const GRAPH = {
       "detail": "A default can occur when a borrower is unable to make timely payments, misses payments, or avoids or stops making payments, typically with respect to a single transaction. A default has adverse effects on the borrower's credit and ability to borrow in the future, and allows the creditor to demand immediate repayment of the obligation in full.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4641,6 +4824,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4665,6 +4849,7 @@ const GRAPH = {
         "On October 17, 2013, Dagong Global Credit Rating downgraded the United States from A to A- and maintained a negative outlook on the country's credit."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4687,6 +4872,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4709,6 +4895,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4731,6 +4918,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4753,6 +4941,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4775,6 +4964,7 @@ const GRAPH = {
       "detail": "The bankruptcy process is initiated via a petition filed by the debtor or on behalf of creditors. The debtor's assets may be used to repay a portion of outstanding debt as specified by the court or a court-appointed individual.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4797,6 +4987,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4819,6 +5010,7 @@ const GRAPH = {
       "detail": "The latter may result in a court action by the issuer or the sale of the securities to recover costs and/or a forfeit of partially paid securities.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4843,6 +5035,7 @@ const GRAPH = {
         "Prior to the occurrence or effective designation of an early termination date in respect of the relevant transaction, a party that defaults in the performance of any payment obligation will, to the extent permitted by law (and in the case of an ISDA Master Agreement is subject to Section 6(c)), be required to pay interest (before as well as after judgment) on the overdue amount to the other party on demand in the same currency as such overdue amount, for the period from (and including) the original due date for payment to (but excluding) the date of actual payment, at the default rate. Such interest will be calculated on the basis of daily compounding and the actual number of days elapsed."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4865,6 +5058,7 @@ const GRAPH = {
       "detail": "As stipulated in the terms and conditions for a bond, for example, the issuer or the bondholder may prolong the maturity date. After extension, the security may differ from original issue (new rate or maturity date). May be subject to bondholder's approval.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4887,6 +5081,7 @@ const GRAPH = {
       "detail": "A moratorium may be a legally-mandated hiatus in debt collection as a part of a bankruptcy process.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4909,6 +5104,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4931,6 +5127,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4953,6 +5150,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4975,6 +5173,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -4997,6 +5196,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5019,6 +5219,7 @@ const GRAPH = {
       "detail": "If the default is not repaired within a grace period, then a failure to repair (failure to pay) credit event is triggered, potentially as a hard default.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5041,6 +5242,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5063,6 +5265,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5085,6 +5288,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5107,6 +5311,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5129,6 +5334,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5151,6 +5357,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5173,6 +5380,7 @@ const GRAPH = {
       "detail": "Typically, a credit rating is provided as a detailed report based on the financial history of borrowing or lending and creditworthiness of the entity or person derived from income statements, historical records related to borrowing, etc. with an aim to determine their ability to meet debt obligations.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5195,6 +5403,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5217,6 +5426,7 @@ const GRAPH = {
       "detail": "Use dct:hasVersion to specify a version for the credit score model.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5239,6 +5449,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5261,6 +5472,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5283,6 +5495,7 @@ const GRAPH = {
       "detail": "This is typically provided by a credit rating agency but could be produced by an internal proprietary model as well.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5305,6 +5518,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5327,6 +5541,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5349,6 +5564,7 @@ const GRAPH = {
       "detail": "A tradeline on a credit report refers to a specific credit account. Tradelines report snapshot details derived from a combination of account features and payment history, and are used by credit reporting agencies as inputs to the analysis process that determines a party's credit rating.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5371,6 +5587,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5393,6 +5610,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5415,6 +5633,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5437,6 +5656,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5459,6 +5679,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5481,6 +5702,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5503,6 +5725,7 @@ const GRAPH = {
       "detail": "There are legal contractual terms for the accrual of interest, as distinct from the payment of interest.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5525,6 +5748,7 @@ const GRAPH = {
       "detail": "Accrued interest refers to the interest that has accumulated on a bond or other financial obligation since the last interest payment up to, but not including, the settlement date. This interest is earned over time but not yet paid out to the bondholder, for example. If this is a dirty price, this is the amount of accrued interest that is included in the price. This is therefore passed on to the purchaser of the bond or debt instrument.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5547,6 +5771,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5569,6 +5794,7 @@ const GRAPH = {
       "detail": "Payments are divided into equal amounts for the duration of the loan or debt instrument, making it the simplest repayment model. A greater amount of the payment is applied to interest at the beginning of the amortization schedule, while more money is applied to principal at the end.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5588,11 +5814,12 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "party to a credit agreement that is obligated to repay the amount borrowed (principal) with interest and other fees according to the terms of the instrument",
-      "detail": "",
+      "detail": "In residential origination the borrower is usually an individual or couple; the lender assesses their income, credit, and existing debts to decide whether and on what terms to lend.",
       "examples": [
         "A married couple applying for a mortgage to buy their first home."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5615,6 +5842,7 @@ const GRAPH = {
       "detail": "Many banks and other financial institutions have internal systems for assigning identifiers to borrowers. In the United States, larger banks may use a Customer Information File (CIF) number, assigned as a part of their federally mandated Customer Information Program (CIP).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5637,6 +5865,7 @@ const GRAPH = {
       "detail": "A given identifier identifies a particular borrower with respect to at least some number of notes/facilities inside a particular institution according to some policy for minting identifiers. Optimally, there would be a single identifier for a given borrower, but due to operational issues, this is often not the case. A CIF number, or Customer Information File number, is used to link accounts across an institution to all notes/facilities owed by a given borrower.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5659,6 +5888,7 @@ const GRAPH = {
       "detail": "The notion of borrowing capacity is related to management decisions pertaining to credit, i.e., the creditworthiness of the borrower, loan amount, risk tolerance, and so forth, and may be reassessed from time to time depending on the type of credit agreement and regulatory requirements. Determining borrowing capacity is typically done as a part of loan origination, especially for residential mortgages.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5683,6 +5913,7 @@ const GRAPH = {
       "synonyms": [
         "financial lease"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5702,12 +5933,13 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "something pledged as security to ensure fulfillment of an obligation to another party, to lend money, extend credit, or provision securities",
-      "detail": "",
+      "detail": "For a mortgage the collateral is the financed real property; on default the lender can foreclose and sell it to recover the debt.",
       "examples": [
         "The house securing a mortgage",
         "Securities pledged for a margin loan"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5730,6 +5962,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5752,6 +5985,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5774,6 +6008,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5793,11 +6028,12 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "contractual agreement in which a debtor receives something of value and typically agrees to repay the creditor by some date in the future, in some form (e.g., cash, securities, etc.), generally with interest",
-      "detail": "",
+      "detail": "The binding contract — note plus loan and security agreement — setting the amount, rate, repayment schedule, and the lender's remedies on default.",
       "examples": [
         "The signed mortgage note and loan agreement between borrower and lender."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5822,6 +6058,7 @@ const GRAPH = {
         "The most common example of a credit agreement repaid at maturity is a bond."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5846,6 +6083,7 @@ const GRAPH = {
         "Examples include revolving lines of credit, commercial loans, construction loans, residential mortgages and so forth."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5873,6 +6111,7 @@ const GRAPH = {
         "financial collateral arrangement",
         "margin arrangement"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5895,6 +6134,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5919,6 +6159,7 @@ const GRAPH = {
       "synonyms": [
         "master commitment"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5938,11 +6179,12 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "a party to whom an obligation, such as an amount of money, or good, or performance of some service exists",
-      "detail": "",
+      "detail": "The party entitled to repayment; in a mortgage the lender is the creditor, though the debt may later be sold to another creditor in the secondary market.",
       "examples": [
         "The bank owed repayment under a mortgage note."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5965,6 +6207,7 @@ const GRAPH = {
       "detail": "Day-count conventions apply to swaps, mortgages and forward rate agreements as well as bonds, each of which has its own day-count convention, which varies depending on the type of instrument, whether the interest rate is fixed or floating, and the country of issuance. Among the most common conventions are 30/360 or 365, actual/360 or 365, and actual/actual. A 30/360 convention assumes 30 days in a month and 360 days in a year. An actual/360 convention assumes the actual number of days in the given month and 360 days in the year. An actual/ actual convention uses the actual number of days in the given interest period and year.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -5987,6 +6230,7 @@ const GRAPH = {
       "detail": "In cases where the debtor and payer are the same legal person, then a debt is equivalent to a payment obligation.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6009,6 +6253,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6031,6 +6276,7 @@ const GRAPH = {
       "detail": "These may be terms in a loan contract (including for example a mortgage contract) or they may be the contractual terms of a debt security.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6053,6 +6299,7 @@ const GRAPH = {
       "detail": "This is a schedule of actual dates and events that are terms of the contract.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6075,6 +6322,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6099,6 +6347,7 @@ const GRAPH = {
         "Certain revolving credit, such as credit-card related debt, may adjust after a specified period of time to an absolute rate stated in the agreement (variable but not floating) rather than based on a benchmark rate (variable, floating)."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6121,6 +6370,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6143,6 +6393,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6165,6 +6416,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6187,6 +6439,7 @@ const GRAPH = {
       "detail": "The dates may be fixed, or relative to the corresponding interest payment date. It may be the same as the payment date, in arrears, or forward looking to the next interest payment.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6209,6 +6462,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6231,6 +6485,7 @@ const GRAPH = {
       "detail": "The dates may be fixed, or expressed as an offset of the calculation dates. Typically the payment dates are fixed and calculation dates are expressed as an offset, however.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6253,6 +6508,7 @@ const GRAPH = {
       "detail": "Interest is usually payable on any outstanding principal amount, therefore interest relates to the amount of debt outstanding at any given point of time, not to the principal amount advanced at the time that the loan was advanced or the debt security issued (aside from the initial payment). Note that in most cases, the dates and payment frequencies for interest will coincide with the dates and payment frequencies related to the principal.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6275,6 +6531,7 @@ const GRAPH = {
       "detail": "Note that depending on the contract, a rate reset can occur daily or on some other timetable, and depending on the underlying benchmark, the actual rate may or may not change. Rate resets may be associated with variable interest rate loans, scheduled reset dates for loans and other debt instruments, for example, interest rate swaps, certain kinds of bonds, and the like. The date on which interest is (re)calculated may be an explicit or date relative.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6297,6 +6554,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6319,6 +6577,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6344,6 +6603,7 @@ const GRAPH = {
         "lease agreement",
         "lease contract"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6363,11 +6623,12 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "a party that extends credit or money to a borrower with the expectation of being repaid, usually with interest",
-      "detail": "",
+      "detail": "The party advancing funds; a lender may originate a loan to hold it, or to sell it into the secondary market while keeping or transferring servicing.",
       "examples": [
         "A mortgage bank or credit union extending a home loan."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6390,6 +6651,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6412,6 +6674,7 @@ const GRAPH = {
       "detail": "Motor vehicle leasing is commonly offered by dealers as an alternative to a vehicle purchase but is widely used by businesses as a method of acquiring (or having the use of) vehicles for business use, without the usually needed cash outlay. The key difference in a lease is that after the primary term (usually 2, 3 or 4 years) the vehicle has to either be returned to the leasing company or purchased for the residual value.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6434,6 +6697,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6458,6 +6722,7 @@ const GRAPH = {
         "Examples of non-physical collateral include, but are not limited to, bank deposits, accounts receivable, stocks, bonds, other securities, and the like."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6480,6 +6745,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6504,6 +6770,7 @@ const GRAPH = {
         "Examples of physical collateral include, but are not limited to, real estate, equipment, vehicles, spare parts, inventory, goods, supplies, fixtures, and leasehold improvements."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6523,11 +6790,12 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "with respect to a debt: the value of an obligation, such as a bond or loan, raised and that must be repaid at maturity; for investments: the original amount of money invested, separate from any associated interest, dividends or capital gains",
-      "detail": "",
+      "detail": "The amount borrowed that must be repaid, separate from interest; the outstanding principal drives interest accrual and the payoff amount.",
       "examples": [
         "The $300,000 original balance of a mortgage, excluding interest."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6550,6 +6818,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6572,6 +6841,7 @@ const GRAPH = {
       "detail": "The dates may be fixed, or expressed as an offset of the calculation dates. Typically the payment dates are fixed and calculation dates are expressed as an offset, however.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6594,6 +6864,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6616,6 +6887,7 @@ const GRAPH = {
       "detail": "A projected schedule is a regular schedule that documents the anchor dates and frequency of occurrences, using rules, rather than providing an explicit list of dates. This method will project future event dates (transaction event dates), based on the frequencies specified and may be adjusted due to calendar restrictions and other rules to deal with holidays, weekends, and so forth in addition to contract-specific events.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6640,6 +6912,7 @@ const GRAPH = {
         "Examples include certain rates published by the Federal Reserve Board in their H.15 schedule, which are published at 4:15 pm on business days that are not holidays in the US."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6664,6 +6937,7 @@ const GRAPH = {
         "Most consumer credit cards are retail credit facilities, for example."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6686,6 +6960,7 @@ const GRAPH = {
       "detail": "Revolving credit facilities are essentially lines of credit with variable interest rates.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6710,6 +6985,7 @@ const GRAPH = {
         "Examples include deeds of trust and uniform commercial code (UCC) agreements."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6732,6 +7008,7 @@ const GRAPH = {
       "detail": "Each sub-facility may have separate terms, and may be or include individual promissory notes, depending on the facility. The amount of associated with the individual sub-facilities sums to the total credit facility amount. Sub-facilities may, individually, have a stated purpose, such as to cover inventory, equipment, accounts receivable, working capital, letters of credit, and so forth.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6754,6 +7031,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6776,6 +7054,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6800,6 +7079,7 @@ const GRAPH = {
       "synonyms": [
         "adjustable rate"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6822,6 +7102,7 @@ const GRAPH = {
       "detail": "In some cases, the lender may require the borrower to place pledged assets such as cash or securities in a separate account that the lender controls.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6844,6 +7125,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6869,6 +7151,7 @@ const GRAPH = {
         "A parent guaranteeing repayment"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6891,6 +7174,7 @@ const GRAPH = {
       "detail": "The commitment may cover a debt, cash flows on a debt instrument (such as interest payments), or performance of some obligation.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6913,6 +7197,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6935,6 +7220,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6957,6 +7243,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -6979,6 +7266,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7003,6 +7291,7 @@ const GRAPH = {
       "synonyms": [
         "L/C"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7025,6 +7314,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7047,6 +7337,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7071,6 +7362,7 @@ const GRAPH = {
       "synonyms": [
         "insured party"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7093,6 +7385,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7115,6 +7408,7 @@ const GRAPH = {
       "detail": "A calculation agent is an entity responsible for performing calculations and determinations outlined in financial agreements, often related to derivatives or structured products. They ensure accuracy and timeliness in calculating payments, interest rates, or other terms based on predefined formulas and market conditions. The agent can establish the price for a given instrument and may act as its guarantor and issuer. If the counterparty in a derivative transaction is a broker-dealer, then the broker-dealer will often act as the calculation agent.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7137,6 +7431,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7159,6 +7454,7 @@ const GRAPH = {
       "detail": "The value of the contract is derived from the market value of an underlying commodity or commodity index. Commodity derivatives can be physically or cash settled. Primary underliers include metals, agricultural goods and energy.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7183,6 +7479,7 @@ const GRAPH = {
         "Example currencies include UK pounds, US dollars, Euro. An example currency instrument is spot currency instrument."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7205,6 +7502,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7231,6 +7529,7 @@ const GRAPH = {
       "synonyms": [
         "derivative contract"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7255,6 +7554,7 @@ const GRAPH = {
       "synonyms": [
         "right"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7277,6 +7577,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7301,6 +7602,7 @@ const GRAPH = {
         "Some exemptions from the registration requirement include: private offerings to a limited number of persons or institutions; offerings of limited size; intrastate offerings; and securities of municipal, state, and federal governments."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7325,6 +7627,7 @@ const GRAPH = {
         "Examples of financial instruments include: cash, evidence of an ownership interest in an entity, or a contractual right to receive (or deliver) cash, or another financial instrument."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7347,6 +7650,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7369,6 +7673,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7391,6 +7696,7 @@ const GRAPH = {
       "detail": "An issuer can be any legal person, including a legally competent natural person, company, government, or political subdivision, agency, or instrumentality of a government, depending on the nature of the instrument. A person might provide a loan directly to another party, but most instruments are issued by legal entities. With respect to certificates of deposit for securities, voting-trust certificates, or collateral- trust certificates, or with respect to certificates of interest or shares in an unincorporated investment trust not having a board of directors or of the fixed, restricted management, or unit type, the term issuer means the person or persons performing the acts and assuming the duties of depositor or manager pursuant to the provisions of the trust or other agreement or instrument under which such securities are issued; and except that with respect to equipment-trust certificates or like securities, the term issuer means the person by whom the equipment or property is, or is to be, used.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7413,6 +7719,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7435,6 +7742,7 @@ const GRAPH = {
       "detail": "Certain securities that can be redeemed by the issuer may not be 'negotiable', such as savings bonds and certificates of deposit.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7457,6 +7765,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7482,6 +7791,7 @@ const GRAPH = {
         "market-linked investment",
         "structured product"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7504,6 +7814,7 @@ const GRAPH = {
       "detail": "Promissory notes are generally fully fungible. They may or may not be negotiable.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7526,6 +7837,7 @@ const GRAPH = {
       "detail": "In general, redemption is synonymous with 'buy back' or 'cash in', depending on the kind of instrument. Redemption provisions are commonly applicable to the process of annulling a defeasible title, such as for a mortgage or tax sale, by paying the debt or fulfilling an obligation.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7550,6 +7862,7 @@ const GRAPH = {
       "synonyms": [
         "financial transaction"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7572,6 +7885,7 @@ const GRAPH = {
       "detail": "A security can be any note, stock, treasury stock, security future, security-based swap, bond, debenture,certificate of interest or participation in any profit-sharing agreement or in any oil, gas, or other mineral royalty or lease, any collateral-trust certificate, preorganization certificate or subscription, transferable share, investment contract, voting-trust certificate, certificate of deposit for a security, any put, call, straddle, option, or privilege on any security, certificate of deposit, or group or index of securities (including any interest therein or based on the value thereof), or any put, call, straddle, option, or privilege entered into on a national securities exchange relating to foreign currency, or in general, any instrument commonly known as a security, or any certificate of interest or participation in, temporary or interim certificate for, receipt for, or warrant or right to subscribe to or purchase, any of the foregoing; but shall not include currency or any note, draft, bill of exchange, or bankers' acceptance which has a maturity at the time of issuance of not exceeding nine months, exclusive of days of grace, or any renewal thereof the maturity of which is likewise limited. In the U.S., the Supreme Court has adopted a flexible and liberal approach in determining what constitutes a security. In its famous decision of SEC v. W.J. Howey Co., 328 U.S. 293, 90 L.Ed. 1244, 66 S.Ct. 1100 (1946), the Court held that land sales contracts for citrus groves in Florida, coupled with warranty deeds for the land and a contract to service the land, were 'investment contracts' and thus securities. The Court stated that [a]n investment contract for purposes of the Securities Act means a contract, transaction or scheme whereby a person invests his money in a common enterprise and is led to expect profits solely from the efforts of the promoter or a third party. 66 S.Ct. at 1103. According to the Court, it is immaterial whether the shares in the enterprise are evidenced by formal certificates or by nominal interests in the physical assets employed in the enterprise. 66 S.Ct. at 1104. Some securities may be traded over the counter, or through an exchange, or via some other trading venue such as an electronic trading platform. Whether a contract or other economic right is a security essentially depends on whether the holder of the contract is acting as an investor who seeks financial benefits based on the work of a promoter or a third party.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7594,6 +7908,7 @@ const GRAPH = {
       "detail": "A spot transaction is a transaction in which some goods or instrument(s) are exchanged for some other goods or instruments, including currency, with no future delivery provision, i.e., within the minimum number of days possible. Examples include currency spots and commodity spot transactions, whose settlement convention is determined by the relevant market.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7618,6 +7933,7 @@ const GRAPH = {
         "Each exchange has a set of terms they apply to membership agreements and with respect to the instruments that may be traded on that exchange. For example, there is a set expiration date that exchanges will publish for exchange-traded options - in the US it is the Saturday following the third Friday of every month. Similarly, there are set incremental dates for strike for exchange traded options. Contract sizes are also stipulated, for example in the US these are standardized by the OPRA Convention (Options Pricing Reporting Authority)."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7640,6 +7956,7 @@ const GRAPH = {
       "detail": "Underlier means any rate (including interest and foreign exchange rates), currency, commodity, security, instrument of indebtedness, index, quantitative measure, occurrence or non-occurrence of an event, or other financial or economic interest, or property of any kind, or any interest therein or based on the value thereof, in or by reference to which any payment or delivery under a transaction is to be made or determined.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7662,6 +7979,7 @@ const GRAPH = {
       "detail": "A particularly dramatic change in price occurs when a company announces a stock split. When the change is made, the price displayed will immediately reflect the split. For example, if a company splits its stock 2-for-1, the last closing price will be cut in half. That's the adjusted closing price.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7684,6 +8002,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7706,6 +8025,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7728,6 +8048,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7750,6 +8071,7 @@ const GRAPH = {
       "detail": "The term 'bid price' is used by traders / market makers with respect to a given security, and that are prepared to buy or sell round lots at publicly quoted prices, and by specialists in certain instruments that perform similar functions on an exchange.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7772,6 +8094,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7794,6 +8117,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7816,6 +8140,7 @@ const GRAPH = {
       "detail": "The official closing price is typically the final price at which something trades during regular market hours on an exchange or trading venue. Because of the evolving nature of online trading in a 24 hour world, every exchange has a method of calculating its official closing price, although that methodology changes from time to time. They may also publish an adjusted closing price, which reflects changes to the price that reflect corporate actions and after hours trading that occur before the opening of the exchange on the following day. Understanding how the closing price is determined is important to ensure price comparability for a given security across exchanges.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7838,6 +8163,7 @@ const GRAPH = {
       "detail": "Note that such a collection is of prices that may be quoted or may be established through analysis, such as an average over a number of markets (composite market) or developed via some pricing model (e.g., matrix pricing).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7860,6 +8186,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7887,6 +8214,7 @@ const GRAPH = {
         "interpolated price",
         "matrix price"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7909,6 +8237,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7931,6 +8260,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7953,6 +8283,7 @@ const GRAPH = {
       "detail": "This concept is central to many definitions of debt instrument analytics, and is the inverse of net present value.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7975,6 +8306,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -7997,6 +8329,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8019,6 +8352,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8041,6 +8375,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8067,6 +8402,7 @@ const GRAPH = {
         "asking price",
         "offering price"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8091,6 +8427,7 @@ const GRAPH = {
       "synonyms": [
         "end-of-day price"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8113,6 +8450,7 @@ const GRAPH = {
       "detail": "Investors that want to buy or sell as soon as the market opens will put in an order at the opening price. Depending on how the closing price for the prior day is determined, and if there is no after hours trading (AFT), the opening price will be the same as the prior trading day's closing price. Otherwise, the opening price may differ from the prior trading day's official closing price.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8135,6 +8473,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8157,6 +8496,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8179,6 +8519,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8201,6 +8542,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8225,6 +8567,7 @@ const GRAPH = {
       "synonyms": [
         "RoR"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8247,6 +8590,7 @@ const GRAPH = {
       "detail": "A security price may be the price that some party is willing to pay, has recently paid, or would like to be paid, depending on the circumstances.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8272,6 +8616,7 @@ const GRAPH = {
         "RTH",
         "regular trading hours"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8294,6 +8639,7 @@ const GRAPH = {
       "detail": "An exchange may have several trading sessions during a day. For example, the exchange may be open from 9 a.m. until 10:30 a.m., from 11:30 a.m. until 1 p.m., and from 2 p.m. to 3:30 p.m. Holding several trading sessions gives the market more time to digest information rationally without having to respond immediately.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8318,6 +8664,7 @@ const GRAPH = {
       "synonyms": [
         "VWAP"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8342,6 +8689,7 @@ const GRAPH = {
       "synonyms": [
         "VWOP"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8364,6 +8712,7 @@ const GRAPH = {
       "detail": "A Yield must be based on a price, and must be in reference to some event or duration of time. It has a calculation method, and may have other qualifying terms such as for compounded yield. Yield reflects income over some period of time which is then annualized, and typically projected into the future, assuming that conditions and rates remain the same, whereas return on investment is retrospective.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8386,6 +8735,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8408,6 +8758,7 @@ const GRAPH = {
       "detail": "Note that the security price represents a price per share or per lot, whereas the settlement amount represents a total.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8430,6 +8781,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8452,6 +8804,7 @@ const GRAPH = {
       "detail": "If you sell a gold futures contract of say 100 troy ounces then you have to deliver real gold to the buyer on the mutually agreed date. Most derivatives are not actually exercised, but are traded out before their delivery date. However, physical delivery still occurs with some trades: it is most common with commodities, but can also occur with other financial instruments.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8474,6 +8827,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8496,6 +8850,7 @@ const GRAPH = {
       "detail": "This is often stated in the form 'T+n' where n is the number of business days from the specified settlement date (T).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8518,6 +8873,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8540,6 +8896,7 @@ const GRAPH = {
       "detail": "The codes for business centers and municipalities defined herein are largely those identified either as FpML business centers or are locations where there is an exchange, as noted in the ISO 10962 MIC code standard.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8562,6 +8919,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8584,6 +8942,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8606,6 +8965,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8628,6 +8988,7 @@ const GRAPH = {
       "detail": "A business registry may include any government-managed registry for registering a business, such as a state department of corporations in the US, as well as other registries such as a local operating unit (LOU) for registration of legal entity identifiers (LEIs). Any sanctioned registration authority as defined by the Registration Authorities List, published by GLEIF, is a business registration authority in this sense.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8650,6 +9011,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8672,6 +9034,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8694,6 +9057,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8718,6 +9082,7 @@ const GRAPH = {
       "synonyms": [
         "ELF registry"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8742,6 +9107,7 @@ const GRAPH = {
       "synonyms": [
         "ELF registry entry"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8764,6 +9130,7 @@ const GRAPH = {
       "detail": "In some jurisdictions, there may be other possible values for entity status, such as suspended in the State of California, thus the individuals provided herein are not intended to be exhaustive.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8786,6 +9153,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8810,6 +9178,7 @@ const GRAPH = {
       "synonyms": [
         "LEI registry"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8834,6 +9203,7 @@ const GRAPH = {
       "synonyms": [
         "LEI registry entry"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8858,6 +9228,7 @@ const GRAPH = {
       "synonyms": [
         "LOU"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8882,6 +9253,7 @@ const GRAPH = {
       "synonyms": [
         "NAICS code"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8904,6 +9276,7 @@ const GRAPH = {
       "detail": "The North American Industry Classification System (NAICS) is the standard used by Federal statistical agencies in classifying business establishments for the purpose of collecting, analyzing, and publishing statistical data related to the U.S. business economy.  NAICS was developed under the auspices of the Office of Management and Budget (OMB), and adopted in 1997 to replace the Standard Industrial Classification (SIC) system. It was developed jointly by the U.S. Economic Classification Policy Committee (ECPC), Statistics Canada and Mexico's Instituto Nacional Estadistica y Geografia, to allow for a high level of comparability in business statistics among the North American countries.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8926,6 +9299,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8948,6 +9322,7 @@ const GRAPH = {
       "detail": "There may be other possible values for registration status, depending on the registry, thus the individuals provided herein are not intended to be exhaustive.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8972,6 +9347,7 @@ const GRAPH = {
       "synonyms": [
         "SIC code"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -8994,6 +9370,7 @@ const GRAPH = {
       "detail": "Standard Industrial Classifications are four-digit codes that categorize companies by the type of business activities they engage in. These codes were created by the U.S. government in 1937 to facilitate analysis of economic activity across government agencies and within industries. They were mostly replaced in 1997 by a new system of six-digit codes called the North American Industry Classification System (NAICS). The new codes were adopted in part to standardize industry data collection and analysis in between Canada, the United States and Mexico which had entered into the North American Free Trade Agreement. Note that certain organizations, such as the Securities and Exchange Commission (SEC) still use SIC codes for some purposes.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9016,6 +9393,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9038,6 +9416,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9060,6 +9439,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9084,6 +9464,7 @@ const GRAPH = {
       "synonyms": [
         "EEA branch"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9106,6 +9487,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9128,6 +9510,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9152,6 +9535,7 @@ const GRAPH = {
       "synonyms": [
         "non-EEA branch"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9174,6 +9558,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9196,6 +9581,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9218,6 +9604,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9240,6 +9627,7 @@ const GRAPH = {
       "detail": "A bank holding company may also own another bank holding company, which in turn owns or controls a bank; the company at the top of the ownership chain is called the top holder.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9264,6 +9652,7 @@ const GRAPH = {
         "Examples include checking account, savings account, certificate of deposit, debit or pre-paid card, or credit card."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9288,6 +9677,7 @@ const GRAPH = {
         "Examples include cash management service, foreign exchange service, lending or credit service, investment service, insurance service, merchant service, payroll service, and the like."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9312,6 +9702,7 @@ const GRAPH = {
       "synonyms": [
         "market maker"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9341,6 +9732,7 @@ const GRAPH = {
         "bank identifier code",
         "business entity identifier"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9363,6 +9755,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9388,6 +9781,7 @@ const GRAPH = {
         "bank code",
         "institution code"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9410,6 +9804,7 @@ const GRAPH = {
       "detail": "In the prior version of the standard, position 7 of the BIC determined the location of the BIC in a particular country. In a country spanning over multiple time zones, each character may have been used to define a different time zone. If an organization moved location to a different time zone within the same country, the existing BIC would normally have been deleted and replaced by a new BIC with the appropriate location code. With the revision of the standard [and transition period ending November 2018], the location code has been re-defined as a 'party suffix' without any specific meaning. A new reference data attribute has been introduced in the SWIFTRef directories to indicate where the institution is located and to which time zone it refers.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9432,6 +9827,7 @@ const GRAPH = {
       "detail": "Its functions include issuing and managing the country's currency, controlling monetary policy and supervising money market operations, managing exchange and gold reserves, acting as lender of last resort to commercial banks, and providing banking services to the government. Central banks are state-controlled but are increasingly being given an independent status to insulate them from partisan politics.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9456,6 +9852,7 @@ const GRAPH = {
       "synonyms": [
         "CCP"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9480,6 +9877,7 @@ const GRAPH = {
       "synonyms": [
         "CSD"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9502,6 +9900,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9524,6 +9923,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9546,6 +9946,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9568,6 +9969,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9590,6 +9992,7 @@ const GRAPH = {
       "detail": "A commercial bank is a financial institution that is owned by stockholders, operates for a profit, and engages in various lending activities. Commercial banks provide services, such as accepting deposits, giving business loans and auto loans, mortgage lending, and basic investment products like savings accounts and certificates of deposit. The traditional commercial bank is a brick and mortar institution with tellers, safe deposit boxes, vaults and ATMs. However, some commercial banks do not have any physical branches and require consumers to complete all transactions by phone or Internet. In exchange, they generally pay higher interest rates on investments and deposits, and charge lower fees.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9614,6 +10017,7 @@ const GRAPH = {
       "synonyms": [
         "commercial credit company"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9638,6 +10042,7 @@ const GRAPH = {
       "synonyms": [
         "CTA"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9663,6 +10068,7 @@ const GRAPH = {
         "direct loan company",
         "small loan company"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9691,6 +10097,7 @@ const GRAPH = {
         "institutional investor",
         "investisseur institutionnel"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9713,6 +10120,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9735,6 +10143,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9757,6 +10166,7 @@ const GRAPH = {
       "detail": "These establishments may provide specialized hosting activities, such as web hosting, streaming services or application hosting, provide application service provisioning, or may provide general time-share mainframe facilities to clients. Data processing establishments provide complete processing and specialized reports from data supplied by clients or provide automated data processing and data entry services.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9779,6 +10189,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9804,6 +10215,7 @@ const GRAPH = {
         "development finance company (DFC)",
         "development financial institution (DFI)"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9831,6 +10243,7 @@ const GRAPH = {
         "EFT",
         "wire transfer service"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9853,6 +10266,7 @@ const GRAPH = {
       "detail": "An investor may enter into a contract with an issuer of a face amount certificate to contract to receive a stated or fixed amount of money (the face amount) at a stated date in the future. In exchange for this future sum, the investor must deposit an agreed lump sum or make scheduled installment payments over time. Face amount certificates are rarely issued these days, as most of the tax advantages that the investment once offered have been lost through changes in the tax laws.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9875,6 +10289,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9902,6 +10317,7 @@ const GRAPH = {
       "synonyms": [
         "financial intermediary"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9924,6 +10340,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9946,6 +10363,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9970,6 +10388,7 @@ const GRAPH = {
       "synonyms": [
         "FCM"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -9992,6 +10411,7 @@ const GRAPH = {
       "detail": "Holding companies protect their owners from losses to some degree, protecting assets, for example, in case of bankruptcy. They can also be set up to own property such as real estate, patents, trademarks, stocks and other assets to limit financial and legal liability",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10014,6 +10434,7 @@ const GRAPH = {
       "detail": "In the US, insurance companies are subject to supervision by the insurance commissioner or a similar official or agency of a State; or any receiver or similar official or any liquidating agent for such a company, in his capacity as such. Common forms of insurance include life, property and casualty, and health insurance. In addition to insuring against hazards, many insurance companies also sell investments or investment-like products. The most prevalent investment products offered by insurers are annuities and life insurance policies that also feature investment elements.  A number of insurance companies operate brokerage arms that trade securities on behalf of clients.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10036,6 +10457,7 @@ const GRAPH = {
       "detail": "Insurance providers invest the compensation they receive in order to make a profit. In general, insurance transfers risk from individuals or organizations to a larger pool of individuals or organizations that are better able to mitigate that risk.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10058,6 +10480,7 @@ const GRAPH = {
       "detail": "Major investment banks include Barclays, BofA Merrill Lynch, Warburgs, Goldman Sachs, Deutsche Bank, JP Morgan, Morgan Stanley, Salomon Brothers, UBS, Credit Suisse, Citibank and Lazard. Some investment banks specialize in particular industry sectors. Many investment banks also have retail operations that serve small, individual customers.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10080,6 +10503,7 @@ const GRAPH = {
       "detail": "An investment company is organized as either a corporation or as a trust. Individual investors' money is then pooled together in a single account and used to purchase securities that will have the greatest chance of helping the investment company reach its objectives. All investors jointly own the portfolio that is created through these pooled funds, and each investor has an undivided interest in the securities. In the US, all investment company offerings are subject to the Securities Act of 1933, which requires the investment company to register with the Securities Exchange Commission (SEC) and to give all purchasers a prospectus. Investment companies are also subject to the Investment Company Act of 1940, which sets forth guidelines on how investment companies must operate.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10102,6 +10526,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10124,6 +10549,7 @@ const GRAPH = {
       "detail": "Management companies allow investors to pool their capital with that of other investors in order to purchase professionally-managed groups of diversified securities.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10148,6 +10574,7 @@ const GRAPH = {
         "Example merchant services include credit and debit card processing, check guarantee and conversion services, point of sale (PoS) systems, gift card and loyalty programs, online transaction processing, etc."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10172,6 +10599,7 @@ const GRAPH = {
         "a central bank, the executive branch of a government, a central bank for several nations, a currency board"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10196,6 +10624,7 @@ const GRAPH = {
       "synonyms": [
         "MSB"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10218,6 +10647,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10244,6 +10674,7 @@ const GRAPH = {
         "non-bank financial institution (NBFI)",
         "non-banking financial institution (NBFI)"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10266,6 +10697,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10288,6 +10720,7 @@ const GRAPH = {
       "detail": "Payroll services typically include printing of employee pay checks, direct deposit of wages to employee bank accounts, calculation and withholding of employee taxes, calculation and payment of corporate payroll taxes and fees with appropriate government authorities (such as Social Security in the US), filing government quarterly and annual reports, and so forth. They may also include management of retirement and savings plans, health benefits, timekeeping, automated integration with the business' accounting system, etc.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10310,6 +10743,7 @@ const GRAPH = {
       "detail": "Principal underwriter of or for a closed-end company or any issuer which is not an investment company, or of any security issued by such a company or issuer, means any underwriter who, in connection with a primary distribution of securities, (a) is in privity of contract with the issuer or an affiliated person of the issuer; (b) acting alone or in concert with one or more other persons, initiates or directs the formation of an underwriting syndicate; or (c) is allowed a rate of gross commission, spread, or other profit greater than the rate allowed another underwriter participating in the distribution.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10334,6 +10768,7 @@ const GRAPH = {
       "synonyms": [
         "RIA"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10358,6 +10793,7 @@ const GRAPH = {
         "Insurance companies are the most common form of risk pooling institution."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10382,6 +10818,7 @@ const GRAPH = {
       "synonyms": [
         "acceptance company"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10404,6 +10841,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10428,6 +10866,7 @@ const GRAPH = {
       "synonyms": [
         "SRO"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10450,6 +10889,7 @@ const GRAPH = {
       "detail": "A professional trust company may be independently owned or owned by, for example, a bank or a law firm, and which specializes in being a trustee of various kinds of trusts. The trust company oversees the management of assets covered by the trust agreement. Such companies often are used when a grantor feels the trust company can do an equal or better job managing the assets than an individual person, or if the grantor does not know of anyone else who can act as trustee. Trust companies sometimes act as fiscal agents for corporations by attending to the registration and transfer of their stocks and bonds, serving as a trustee for their bond and mortgage creditors, and transacting general banking and loan business.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10472,6 +10912,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10494,6 +10935,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10519,6 +10961,7 @@ const GRAPH = {
         "UIT",
         "unit investment company"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10541,6 +10984,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10565,6 +11009,7 @@ const GRAPH = {
       "synonyms": [
         "BIC data record"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10589,6 +11034,7 @@ const GRAPH = {
       "synonyms": [
         "MIC registry entry"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10613,6 +11059,7 @@ const GRAPH = {
       "synonyms": [
         "ATS"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10639,6 +11086,7 @@ const GRAPH = {
         "authorised publication arrangement",
         "authorized publication arrangement"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10663,6 +11111,7 @@ const GRAPH = {
       "synonyms": [
         "ARM"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10685,6 +11134,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10709,6 +11159,7 @@ const GRAPH = {
       "synonyms": [
         "CTP"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10733,6 +11184,7 @@ const GRAPH = {
       "synonyms": [
         "CASP"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10755,6 +11207,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10779,6 +11232,7 @@ const GRAPH = {
       "synonyms": [
         "DRSP"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10803,6 +11257,7 @@ const GRAPH = {
       "synonyms": [
         "DCM"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10827,6 +11282,7 @@ const GRAPH = {
       "synonyms": [
         "ECN"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10851,6 +11307,7 @@ const GRAPH = {
       "synonyms": [
         "market"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10873,6 +11330,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10900,6 +11358,7 @@ const GRAPH = {
         "IQS",
         "inter-dealer quotation system"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10922,6 +11381,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10947,6 +11407,7 @@ const GRAPH = {
         "MIC",
         "Market Identifier Code"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10969,6 +11430,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -10991,6 +11453,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11015,6 +11478,7 @@ const GRAPH = {
         "Dark pool"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11037,6 +11501,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11061,6 +11526,7 @@ const GRAPH = {
       "synonyms": [
         "MTF"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11086,6 +11552,7 @@ const GRAPH = {
         "off-book",
         "off-facility"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11108,6 +11575,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11130,6 +11598,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11154,6 +11623,7 @@ const GRAPH = {
       "synonyms": [
         "OTF"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11178,6 +11648,7 @@ const GRAPH = {
       "synonyms": [
         "price-driven market"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11202,6 +11673,7 @@ const GRAPH = {
       "synonyms": [
         "RMO"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11224,6 +11696,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11249,6 +11722,7 @@ const GRAPH = {
         "RM",
         "regulated market"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11273,6 +11747,7 @@ const GRAPH = {
       "synonyms": [
         "SEF"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11297,6 +11772,7 @@ const GRAPH = {
       "synonyms": [
         "SI"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11323,6 +11799,7 @@ const GRAPH = {
       "synonyms": [
         "TRF"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11345,6 +11822,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11371,6 +11849,7 @@ const GRAPH = {
       "synonyms": [
         "BN"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11395,6 +11874,7 @@ const GRAPH = {
         "000000000RC0001"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11421,6 +11901,7 @@ const GRAPH = {
       "synonyms": [
         "GST/HST registation number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11445,6 +11926,7 @@ const GRAPH = {
         "000000000RM0001"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11469,6 +11951,7 @@ const GRAPH = {
         "000000000RZ0001"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11493,6 +11976,7 @@ const GRAPH = {
         "000000000RP0001"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11517,6 +12001,7 @@ const GRAPH = {
         "000000000RR0001"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11539,6 +12024,7 @@ const GRAPH = {
       "detail": "Obligations shall not be considered credit balances unless they are:  (1) Incidental to, or arise out of the exercise of, other lawful banking powers;  (2) To serve a specific purpose;  (3) Not solicited from the general public;  (4) Not used to pay routine operating expenses in the United States such as salaries, rent, or taxes;  (5) Withdrawn within a reasonable period of time after the specific purpose for which they were placed has been accomplished; and  (6) Drawn upon in a manner reasonable in relation to the size and nature of the account.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11561,6 +12047,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11583,6 +12070,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11605,6 +12093,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11627,6 +12116,7 @@ const GRAPH = {
       "detail": "Bankers' banks are typically (1) organized solely to do business with other financial institutions (with the exceptions defined herein), (2) owned primarily by the financial institutions with which they conduct business, and (3) do not do business with the general public.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11649,6 +12139,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11671,6 +12162,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11693,6 +12185,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11715,6 +12208,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11737,6 +12231,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11759,6 +12254,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11781,6 +12277,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11803,6 +12300,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11827,6 +12325,7 @@ const GRAPH = {
       "synonyms": [
         "DEO"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11849,6 +12348,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11871,6 +12371,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11893,6 +12394,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11915,6 +12417,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11937,6 +12440,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11959,6 +12463,7 @@ const GRAPH = {
       "detail": "All Farm Credit System institutions are federally-chartered instrumentalities of the United States.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -11981,6 +12486,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12003,6 +12509,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12025,6 +12532,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12047,6 +12555,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12071,6 +12580,7 @@ const GRAPH = {
       "synonyms": [
         "Financial Holding Company / BHC"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12093,6 +12603,7 @@ const GRAPH = {
       "detail": "For the purposes of the International Banking Act of 1978, the term 'foreign bank' includes, without limitation, foreign commercial banks, foreign merchant banks and other foreign institutions that engage in banking activities usual in connection with the business of banking in the countries where such foreign institutions are organized or operating. Foreign bank means an organization that is organized under the laws of a foreign country and that engages directly in the business of banking outside the United States. The term foreign bank does not include a central bank of a foreign country that does not engage or seek to engage in a commercial banking business in the United States through an office.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12117,6 +12628,7 @@ const GRAPH = {
       "synonyms": [
         "FBO"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12141,6 +12653,7 @@ const GRAPH = {
       "synonyms": [
         "Financial Holding Company / FBO"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12163,6 +12676,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12185,6 +12699,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12207,6 +12722,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12229,6 +12745,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12251,6 +12768,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12273,6 +12791,7 @@ const GRAPH = {
       "detail": "Often called Morris Plan banks or industrial loan companies, industrial banks are distinguished from commercial loan companies because industrial banks accept deposits in addition to making consumer loans. Industrial banks differ from commercial banks because they do not offer demand deposit (checking) accounts. Industrial banks are not regulated by the Federal Reserve.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12295,6 +12814,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12317,6 +12837,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12339,6 +12860,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12361,6 +12883,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12383,6 +12906,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12405,6 +12929,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12427,6 +12952,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12449,6 +12975,7 @@ const GRAPH = {
       "detail": "National Banks are required to be members of the Federal Reserve System and belong to the Federal Deposit Insurance Corporation.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12471,6 +12998,7 @@ const GRAPH = {
       "detail": "An Article XII Investment Company is not an 'investment company' subject to registration under the Investment Company Act of 1940. An Article XII Investment Company may accept credit balances in New York that are incidental to the exercise of its other powers and may accept deposits outside New York with the approval of the Superintendent. Article XII Investment Companies may specialize in commercial or retail sales finance; others are involved in domestic and international commercial and merchant banking.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12493,6 +13021,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12515,6 +13044,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12537,6 +13067,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12561,6 +13092,7 @@ const GRAPH = {
       "synonyms": [
         "regional administrative office"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12585,6 +13117,7 @@ const GRAPH = {
       "synonyms": [
         "representative office"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12607,6 +13140,7 @@ const GRAPH = {
       "detail": "Savings banks can have state and federal affiliations, for example, State Savings Banks and Federal Savings Banks",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12631,6 +13165,7 @@ const GRAPH = {
       "synonyms": [
         "savings and loan association"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12655,6 +13190,7 @@ const GRAPH = {
       "synonyms": [
         "savings and loan holding company"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12677,6 +13213,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12699,6 +13236,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12721,6 +13259,7 @@ const GRAPH = {
       "detail": "A state bank is defined as any bank, banking association, trust company, savings bank, industrial bank (or similar depository institution operating substantially in the same manner as an industrial bank), or other banking institution which is engaged in the business of receiving deposits other than trust funds, and in the US, is incorporated under the laws of any State or which is operating under the Code of Law for the District of Columbia, including any cooperative bank or other unincorporated bank the deposits of which were insured by the Federal Deposit Insurance Corporation on the day before the date of the enactment of the Financial Institutions Reform, Recovery, and Enforcement Act of 1989. State-chartered banks may or may not be members of the Federal Reserve System, but typically belong to the Federal Deposit Insurance Corporation, who may be their primary federal regulator for those that are not FRS members.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12743,6 +13282,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12765,6 +13305,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12787,6 +13328,7 @@ const GRAPH = {
       "detail": "From the perspective of the International Banking Act of 1978, the definition of subsidiary is the definition from the Bank Holding Act of 1956. Thus, the meaining of the term 'subsidiary' with respect to the NIC repository and, specifically, with respect to the definition of an 'international non-bank subsidiary of a domestic entity', is the definition from the Bank Holding Company Act of 1956. The Bank Holding Company Act of 1956 defines a 'Subsidiary', with respect to a specified bank holding company, means (1) any company 25 per centum or more of whose voting shares (excluding shares owned by the United States or by any company wholly owned by the United States) is owned or controlled by such bank holding company; or (2) any company the election of a majority of whose directors is controlled in any manner by such bank holding company; or (3) any company 25 per centum or more of whose voting shares are held by trustees for the benefit of the shareholders or members of such bank holding company.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12811,6 +13353,7 @@ const GRAPH = {
         "Savings banks and savings and loan associations and credit unions are examples of thrift institutions."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12833,6 +13376,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12855,6 +13399,7 @@ const GRAPH = {
       "detail": "An uninsured branch does not accept retail deposits and need not apply for federal deposit insurance.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12877,6 +13422,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12899,6 +13445,7 @@ const GRAPH = {
       "detail": "An uninsured branch does not accept retail deposits and need not apply for federal deposit insurance.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12921,6 +13468,7 @@ const GRAPH = {
       "detail": "A bank, as specified in the Investment Company Act of 1940, is a financial intermediary that is (a) a depository institution (as defined in section 3 of the Federal Deposit Insurance Act) or a branch or agency of a foreign bank (as such terms are defined in section 1(b) of the International Banking Act of 1978), (b) a member bank of the Federal Reserve System, (c) any other banking institution or trust company, whether incorporated or not, doing business under the laws of any State or of the United States, a substantial portion of the business of which consists of receiving deposits or exercising fiduciary powers similar to those permitted to national banks under the authority of the Comptroller of the Currency, and which is supervised and examined by State or Federal authority having supervision over banks, and which is not operated for the purpose of evading the provisions of this title, and (d) a receiver, conservator, or other liquidating agent of any institution or firm included in clause (a), (b), or (c) of this paragraph. The Bank Holding Company Act of 1956 defines a bank as any depository financial intermediary that accepts checking accounts (checks) or makes commercial loans, and its deposits are insured by a federal deposit insurance agency. A bank acts as a middleman between suppliers of funds and users of funds, substituting its own credit judgement for that of the ultimate suppliers of funds, collecting those funds from three sources: checking accounts, savings and time deposits; short-term borrowings from other banks; and equity capital. A bank earns money by reinvesting these funds in longer-term assets.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12943,6 +13491,7 @@ const GRAPH = {
       "detail": "According to the FFIEC, a bank holding company is a company that owns and/or controls one or more U.S. banks or one that owns, or has controlling interest in, one or more banks. A bank holding company may also own another bank holding company, which in turn owns or controls a bank; the company at the top of the ownership chain is called the top holder. The Board of Governors is responsible for regulating and supervising bank holding companies, even if the bank owned by the holding company is under the primary supervision of a different federal agency (OCC or FDIC). From the Bank Holding Company Act of 1956, a 'bank holding company' means any company (1) which directly or indirectly owns, controls, or holds with power to vote, 25 per centum or more of the voting shares of each of two or more banks or of a company which is or becomes a bank holding company by virtue of this Act, or (2) which controls in any manner the election of a majority of the directors of each of two or more banks, or (3) for the benefit of whose shareholders or members 25 per centum or more of the voting shares of each of two or more banks or a bank holding company is held by trustees; and for the purposes of this Act, any successor to any such company shall be deemed to be a bank holding company from the date as of which such predecessor company became a bank holding company. Notwithstanding the foregoing, (A) no bank shall be a bank holding company by virtue of its ownership or control of shares in a fiduciary capacity, except where such shares are held for the benefit of the shareholders of such bank, (B) no company shall be a bank holding company which is registered under the Investment Company Act of 1940, and was so registered prior to May 15, 1955 (or which is affiliated with any such company in such manner as to constitute an affiliated company within the meaning of such Act), unless such company (or such affiliated company), as the case may be, directly owns 25 per centum or more of the voting shares of each of two or more banks, (C) no company shall be a bank holding company by virtue of its ownership or control of shares acquired by it in connection with its underwriting of securities and which are held only for such period of time as will permit the sale thereof upon a reasonable basis, (D) no company formed for the sole purpose of participating in a proxy solicitation shall be a bank holding company by virtue of its control of voting rights of shares acquired in the course of such solicitation, and (E) no company shall be a bank holding company if at least 80 per centum of its total assets are composed of holdings in the field of agriculture.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12965,6 +13514,7 @@ const GRAPH = {
       "detail": "As soon as you deposit funds into a credit union account, you become a partial owner and participate in the union's profitability. Credit unions may be formed by large corporations and organizations for their employees and members.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -12987,6 +13537,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13009,6 +13560,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13031,6 +13583,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13053,6 +13606,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13080,6 +13634,7 @@ const GRAPH = {
         "Federal Employer Identification Number",
         "Federal Tax Identification Number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13102,6 +13657,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13124,6 +13680,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13146,6 +13703,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13168,6 +13726,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13190,6 +13749,7 @@ const GRAPH = {
       "detail": "The Federal Reserve officially identifies Districts by number and Reserve Bank city. In the 12th District, the Seattle Branch serves Alaska, and the San Francisco Bank serves Hawaii. The System serves commonwealths and territories as follows: the New York Bank serves the Commonwealth of Puerto Rico and the U.S. Virgin Islands; the San Francisco Bank serves American Samoa, Guam, and the Commonwealth of the Northern Mariana Islands. The Board of Governors revised the branch boundaries of the System in February 1996.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13212,6 +13772,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13234,6 +13795,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13256,6 +13818,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13280,6 +13843,7 @@ const GRAPH = {
       "synonyms": [
         "non-member bank"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13304,6 +13868,7 @@ const GRAPH = {
       "synonyms": [
         "IIN"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13326,6 +13891,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13348,6 +13914,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13370,6 +13937,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13392,6 +13960,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13417,6 +13986,7 @@ const GRAPH = {
         "ID_RSSD",
         "RSSD ID"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13441,6 +14011,7 @@ const GRAPH = {
       "synonyms": [
         "RTN"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13463,6 +14034,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13485,6 +14057,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13509,6 +14082,7 @@ const GRAPH = {
       "synonyms": [
         "TIN"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13531,6 +14105,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13553,6 +14128,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13575,6 +14151,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13597,6 +14174,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13619,6 +14197,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13641,6 +14220,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13663,6 +14243,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13685,6 +14266,7 @@ const GRAPH = {
       "detail": "In general, an account is associated with a contractual relationship between a buyer and seller under which payment may be made at a later time. General ledger accounts are an exception to this, however, and typically do not have account holders, including internal account holders. They may, on the other hand, have responsible parties.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13707,6 +14289,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13729,6 +14312,7 @@ const GRAPH = {
       "detail": "An account holder is named on the account and is authorized to conduct transactions associated with the account. Authorization is typically evidenced by signatures maintained on file by the account provider. Note that this concept of account holder applies to internal accounts that are non-general ledger accounts also have account holders, such as payroll accounts, internal checking accounts associated with cashier's checks, and so forth.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13753,6 +14337,7 @@ const GRAPH = {
       "synonyms": [
         "account number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13775,6 +14360,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13797,6 +14383,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13819,6 +14406,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13841,6 +14429,7 @@ const GRAPH = {
       "detail": "Customers of financial service providers frequently hold multiple accounts - brokerage accounts, checking and savings accounts, trust accounts, and so forth - which may have specific terms and conditions associated with them.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13863,6 +14452,7 @@ const GRAPH = {
       "detail": "Common kinds of account statements include checking account statements, usually provided monthly, and brokerage account statements, which are provided monthly or quarterly, depending on the terms of the account agreement. Monthly credit card bills are also considered account statements.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13885,6 +14475,7 @@ const GRAPH = {
       "detail": "The balance is the net amount after factoring in all debits and credits, including service charges and fees.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13909,6 +14500,7 @@ const GRAPH = {
       "synonyms": [
         "bank account number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13933,6 +14525,7 @@ const GRAPH = {
       "synonyms": [
         "bank number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13958,6 +14551,7 @@ const GRAPH = {
         "BBAN",
         "basic bank account number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -13980,6 +14574,7 @@ const GRAPH = {
       "detail": "The investor owns the assets contained in the brokerage account and must usually claim as income any capital gains incurred.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14004,6 +14599,7 @@ const GRAPH = {
       "synonyms": [
         "CD"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14026,6 +14622,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14050,6 +14647,7 @@ const GRAPH = {
         "account close date, transaction record close date, and so forth"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14074,6 +14672,7 @@ const GRAPH = {
         "Examples include operating lines of credit and term loans for property, plant and equipment (PP&E)."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14098,6 +14697,7 @@ const GRAPH = {
       "synonyms": [
         "financial service account"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14120,6 +14720,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14144,6 +14745,7 @@ const GRAPH = {
       "synonyms": [
         "DDA"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14168,6 +14770,7 @@ const GRAPH = {
         "Deposit accounts include savings accounts, money market accounts, and transactional accounts, such as demand deposit accounts, among others."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14190,6 +14793,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14212,6 +14816,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14234,6 +14839,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14261,6 +14867,7 @@ const GRAPH = {
         "IBAN",
         "international bank account number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14283,6 +14890,7 @@ const GRAPH = {
       "detail": "The typical objectives of an investment account are to achieve long term growth, income or capital preservation from the deposited asset portfolio. Investment accounts are typically not insured.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14305,6 +14913,7 @@ const GRAPH = {
       "detail": "The account holder may or may not be entitled to consideration in exchange for providing such funds, for example, interest, depending on the type of account and the terms and conditions associated with it. Also, there may be fees associated with management services provided by the account provider. Note too that this may be an internal account held on behalf of an institution or a customer account.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14327,6 +14936,7 @@ const GRAPH = {
       "detail": "Ledger accounts are internal to a legal entity's accounting system(s).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14349,6 +14959,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14371,6 +14982,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14395,6 +15007,7 @@ const GRAPH = {
         "The servicing account tracking a mortgage's balance and payments."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14417,6 +15030,7 @@ const GRAPH = {
       "detail": "Non-transaction accounts include: (a) savings deposits ((i) money market deposit accounts (MMDAs) and (ii) other savings deposits) and (b) time deposits ((i) time certificates of deposit and (ii) time deposits, open account).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14439,6 +15053,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14461,6 +15076,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14483,6 +15099,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14507,6 +15124,7 @@ const GRAPH = {
       "synonyms": [
         "account manager"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14531,6 +15149,7 @@ const GRAPH = {
       "synonyms": [
         "CDA"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14553,6 +15172,7 @@ const GRAPH = {
       "detail": "A time deposit from which partial early withdrawals are permitted must impose additional early withdrawal penalties of at least seven days' simple interest on amounts withdrawn within six days after each partial withdrawal. If such additional early withdrawal penalties are not imposed, the account ceases to be a time deposit. The account may become a savings deposit if it meets the requirements for a savings deposit; otherwise it becomes a demand deposit.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14575,6 +15195,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14599,6 +15220,7 @@ const GRAPH = {
         "credit, debit, fee"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14621,6 +15243,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14643,6 +15266,7 @@ const GRAPH = {
       "detail": "Excluded from transaction accounts are savings deposits (both money market deposit accounts (MMDAs) and other savings deposits), even though such deposits permit some third-party transfers. However, an account that otherwise meets the definition of a savings deposit but that authorizes or permits the depositor to exceed the transfer limitations specified for that account shall be reported as a transaction account.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14665,6 +15289,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14687,6 +15312,7 @@ const GRAPH = {
       "detail": "The date a particular transaction record is closed typically corresponds to (and may precede) the date the account is closed, though in the case of certain accounts, such as a credit card account, if a customer is issued a new account or card number due to loss, fraud, or for some other reason, it is possible that multiple transaction records would be associated with the account. In that case, the close date might correspond to the date that a hold was placed on the original account.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14709,6 +15335,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14731,6 +15358,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14753,6 +15381,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14775,6 +15404,7 @@ const GRAPH = {
       "detail": "The person may be an officer of the corporation or a third party, such as the corporation's attorney, or a company providing such agency services.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14797,6 +15427,7 @@ const GRAPH = {
       "detail": "A basket may be associated with a specific market sector, and may be delineated for the purposes of statistical analysis, such as for calculating CPI. According to the US Bureau of Labor Statistics (BLS), with respect to the CPI, a market basket is a package of goods and services that consumers purchase for day-to-day living. The weight of each item is based on the amount of expenditure reported by a sample of households. From a securities perspective, a basket is a collection of products or securities that are designated to mimic the performance of a market. For investors, the market basket is the principal idea behind index funds, which are essentially a broad sample of stocks, bonds or other securities in the market; this provides investors with a benchmark against which to compare their investment returns.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14819,6 +15450,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14841,6 +15473,7 @@ const GRAPH = {
       "detail": "A broker that specializes in stocks, bonds, commodities, or certain derivatives must be registered with the exchange in which the securities are traded.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14863,6 +15496,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14885,6 +15519,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14907,6 +15542,7 @@ const GRAPH = {
       "detail": "Certain business agreements, such as partnership agreements,may involve planning, drafting/review/revision, execution and management, renewal, and possibly sunsetting phases. Financial contracts, such as loans and other instruments have specific stages and events during the execution and management phase, i.e. from the effective date of the contract through maturity and redemption.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14931,6 +15567,7 @@ const GRAPH = {
         "a call notification or coupon payment as a part of a bond lifecycle"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14953,6 +15590,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14975,6 +15613,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -14997,6 +15636,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15019,6 +15659,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15041,6 +15682,7 @@ const GRAPH = {
       "detail": "A dealer is a counterparty or principal in the transaction with the customer.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15065,6 +15707,7 @@ const GRAPH = {
         "Examples include financial exposure, credit exposure, legal exposure, credit rating exposure, reputational exposure, and so forth."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15089,6 +15732,7 @@ const GRAPH = {
         "Examples in banking include the total amount of unsecured loans, the amount of loans advanced to a single borrower, group, industry, or country, and the probability of loss from devaluation, revaluation, or foreign exchange fluctuations."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15111,6 +15755,7 @@ const GRAPH = {
       "detail": "Often investors and borrowers do not have precisely matching needs, and the intermediary's capital is put at risk to transform the credit risk and maturity of the liabilities to meet the needs of investors.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15133,6 +15778,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15155,6 +15801,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15177,6 +15824,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15199,6 +15847,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15221,6 +15870,7 @@ const GRAPH = {
       "detail": "Note that a holding may refer to a single asset, such as a piece of real estate, a portfolio of assets, multiple portfolios, and so forth, and is frequently aggregated over multiple assets.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15243,6 +15893,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15267,6 +15918,7 @@ const GRAPH = {
         "Insurance agents, realtors, financial advisors, certain attorneys, and brokers are examples of legal agents."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15289,6 +15941,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15311,6 +15964,7 @@ const GRAPH = {
       "detail": "An offering may or may not be considered a 'state of affairs' or situation, depending on the circumstances. In some cases such as a prospectus or other offering in the context of financial services, an offering may also be classified as a situation. Users may choose to model an individual offering as both an offering and situation, depending on the circumstances, in other words. The making of an offer is the first of three steps in the traditional process of forming a valid contract: an offer, an acceptance of the offer, and an exchange of consideration. (Consideration is the act of doing something or promising to do something that a person is not legally required to do, or the forbearance or the promise to forbear from doing something that he or she has the legal right to do.)",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15333,6 +15987,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15355,6 +16010,7 @@ const GRAPH = {
       "detail": "A position can be long or short, and it can be in any asset class, such as stocks, bonds, futures, or options. A position can be open (current) or closed (past), but in general use, unless a position is specifically referred to as closed, the assumption is that it references an open position.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15379,6 +16035,7 @@ const GRAPH = {
         "The product life cycle describes the period of time over which an item is developed, brought to market and eventually removed from the market. The cycle is broken into four stages: introduction, growth, maturity and decline. The idea of the product life cycle is used in marketing to decide when it is appropriate to advertise, reduce prices, explore new markets or create new packaging."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15401,6 +16058,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15423,6 +16081,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15445,6 +16104,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15469,6 +16129,7 @@ const GRAPH = {
         "research and development phase of a product lifecycle or the introduction phase in a marketing lifecycle, growth stage in an economic lifecycle for a product"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15491,6 +16152,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15516,6 +16178,7 @@ const GRAPH = {
         "resident agent",
         "statutory agent"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15538,6 +16201,7 @@ const GRAPH = {
       "detail": "The CFTC polices matters of information and disclosure, fair trading practices, registration of firms and individuals, protection of customer funds, record keeping, and maintenance of orderly options and futures markets in the United States.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15560,6 +16224,7 @@ const GRAPH = {
       "detail": "In general, settlement involves arrangement of disposition of property, typically for legal reasons. With respect to financial transactions, it involves completion of a trade, either between brokers or agents, or between a broker and client. This may include settlement in cash, either for the entire transaction or for the cash leg of a transaction, either now or at some specified time in the future.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15582,6 +16247,7 @@ const GRAPH = {
       "detail": "Note that third-party agent is defined as a service provider (organization) acting in an agency capacity, such as a law firm, accountancy, or investment bank. This is distinct from the concept of an individual (licensed agent), for example one who works for a broker-dealer, that is a registered agent licensed to sell securities.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15604,6 +16270,7 @@ const GRAPH = {
       "detail": "The advent of money as a medium of exchange has allowed trade to be conducted in a manner that is much simpler and effective compared to earlier forms of trade, such as bartering. In financial markets, trading also can mean performing a transaction that involves the selling and purchasing of a security. The seller must deliver the commodity sold to the buyer; the buyer must pay the agreed purchase price, which could be in the form of other goods or services, on the agreed date. Trading activities typically include (a) regularly underwriting or dealing in securities; interest rate, foreign exchange rate, commodity, equity, and credit derivative contracts; other financial instruments; and other assets for resale, (b) acquiring or taking positions in such items principally for the purpose of selling in the near term or otherwise with the intent to resell in order to profit from short-term price movements, and (c) acquiring or taking positions in such items as an accommodation to customers or for other trading purposes. (Source: Instructions for Preparation of Consolidated Reports of Condition and Income (FFIEC 031 and 041), Schedule RC-D - Trading Assets and Liabilities, 2013.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15626,6 +16293,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15650,6 +16318,7 @@ const GRAPH = {
         "The trade life cycle covers the period of time over which a trade is initiated, typically as a part of a broader deal, is consumated, processed and executed, is settled or closed for other reasons, and is reported. Parts of a trade lifecycle may include or overlap with the lifecycle of one or more contracts."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15672,6 +16341,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15694,6 +16364,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15716,6 +16387,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15738,6 +16410,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15760,6 +16433,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15782,6 +16456,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15804,6 +16479,7 @@ const GRAPH = {
       "detail": "A trading strategy is a plan whose aim is to make a profit or hedge against risk, based on rules and other criteria used when making trading decisions. A trading strategy may be simple or complex, and involve considerations such as investment style (e.g., value vs. growth), market cap, technical indicators, fundamental analysis, industry sector, level of portfolio diversification, time horizon or holding period, risk tolerance, leverage, tax considerations, and so on.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15828,6 +16504,7 @@ const GRAPH = {
       "synonyms": [
         "UTI"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15850,6 +16527,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15872,6 +16550,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15894,6 +16573,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15918,6 +16598,7 @@ const GRAPH = {
       "synonyms": [
         "EBITDA"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15940,6 +16621,7 @@ const GRAPH = {
       "detail": "Financial assets are typically more liquid than other tangible assets, such as commodities or real estate. Financial assets may not cover all assets that might be included on a balance sheet, and do not include tangible, physical assets or intangible assets such as intellectual property.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15966,6 +16648,7 @@ const GRAPH = {
         "Rental income used to qualify a borrower"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -15993,6 +16676,7 @@ const GRAPH = {
         "equity",
         "net worth"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16015,6 +16699,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16037,6 +16722,7 @@ const GRAPH = {
       "detail": "Physical (tangible) assets are real items of value that are used to generate revenue for a company.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16059,6 +16745,7 @@ const GRAPH = {
       "detail": "If the corporation takes a loss, then that loss is retained and called variously retained losses, accumulated losses or accumulated deficit. Retained earnings and losses are cumulative from year to year with losses offsetting earnings.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16081,6 +16768,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16103,6 +16791,7 @@ const GRAPH = {
       "detail": "From the perspective of an individual investor, the transaction date is the day when the investor's order is executed in the market. However, the process doesn't end there. The value date, on the other hand, is when the transaction actually settles, meaning when the buyer receives the securities and the seller gets the money. This lag between the transaction and value dates is known as the settlement period, which can vary depending on the type of security involved. One of the primary concepts in value dating is the 'value date', which is the date on which the funds from a transaction are considered available for use. This date can be influenced by various factors, including the type of transaction, the currencies involved, and the policies of the financial institutions handling the transaction. For instance, in international transactions, the value date might be delayed due to the time required for currency conversion and cross-border fund transfers.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16125,6 +16814,7 @@ const GRAPH = {
       "detail": "Cash flow structures may involve not only cash flows, but the kind of schedule, historic payments, projected payments, a link or links to the relevant contract(s) or account(s), and possibly some triggering event.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16147,6 +16837,7 @@ const GRAPH = {
       "detail": "A triggering event is typically a credit event, but could be anything that happens in the marketplace. For example, a weather-specific contract could be triggered by a hurricane - which wouldn't be considered a credit event per se.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16171,6 +16862,7 @@ const GRAPH = {
       "synonyms": [
         "cash"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16193,6 +16885,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16218,6 +16911,7 @@ const GRAPH = {
         "currency unit",
         "monetary unit"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16240,6 +16934,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16262,6 +16957,7 @@ const GRAPH = {
       "detail": "The first (left-most) two characters of the ISO 4217 3-letter currency identifier relate to the currency authority that issues the currency, and is, in most cases the ISO 3166-1 alpha 2 code for the geopolitical entity whose central bank is the issuer. The third (right-most) character of the identifier (alphabetic code) is an indicator derived from the name of the major currency unit or fund. If the currency is not associated with a single geographical entity as described in ISO 3166-1, typically a specially allocated identifier (alpha-2 code) is used to describe the currency authority. This code has been allocated by the Maintenance Agency from within the user-assigned range of codes XA to XZ specified in 8.1.3 of ISO 3166-1:2013. The character following X will be a mnemonic, where possible, derived from the name of the geographical area concerned.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16286,6 +16982,7 @@ const GRAPH = {
         "The exchange rate between the U.S. dollar and British pound is distinct from the exchange rate between the U.S. dollar and the euro."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16308,6 +17005,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16330,6 +17028,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16352,6 +17051,7 @@ const GRAPH = {
       "detail": "Interest rates are typically noted on an annual basis, known as the annual percentage rate (APR). The assets borrowed could include cash, consumer goods, and large assets such as a vehicle or building. The rate is derived by dividing the amount of interest by the amount of principal borrowed. Interest rates are quoted on bills, notes, bonds, credit cards, and many kinds of consumer and business loans.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16371,12 +17071,13 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "measure that is an amount of money specified in monetary units",
-      "detail": "",
+      "detail": "A measured amount of money in a currency; the type used for principal, payments, income, and valuations throughout origination.",
       "examples": [
         "$300,000.00 USD",
         "€1,500.00"
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16399,6 +17100,7 @@ const GRAPH = {
       "detail": "As the consideration given in exchange for transfer of ownership, price forms the essential basis of commercial transactions. It may be fixed by a contract, left to be determined by an agreed upon formula at a future date, or discovered or negotiated during the course of dealings between the parties involved. In commerce, price is determined by what (1) a buyer is willing to pay, (2) a seller is willing to accept, and (3) the competition is allowing to be charged.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16421,6 +17123,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16443,6 +17146,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16465,6 +17169,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16487,6 +17192,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16509,6 +17215,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16531,6 +17238,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16555,6 +17263,7 @@ const GRAPH = {
         "For example, gold is commonly measured in troy ounces, grams, etc., and oil is measured in terms of barrels."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16577,6 +17286,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16599,6 +17309,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16621,6 +17332,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16645,6 +17357,7 @@ const GRAPH = {
       "synonyms": [
         "certificate of live birth"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16667,6 +17380,7 @@ const GRAPH = {
       "detail": "Schemes for birth certificate identification are typically regionally defined, and there may be jurisdiction-specific scope required as an additional restriction on a specific scheme.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16691,6 +17405,7 @@ const GRAPH = {
       "synonyms": [
         "birth certificate number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16713,6 +17428,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16735,6 +17451,7 @@ const GRAPH = {
       "detail": "Contact records may include attributes such as name, role, communication channel, and affiliation, They may be found in registries, schemas, systems such as those designed for customer relationship management (CRM), enterprise resource planning (ERP), health information, legal and regulatory compliance and others, as well as personal address books, to support communications, coordination, support, or compliance.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16760,6 +17477,7 @@ const GRAPH = {
         "birth date",
         "birthday"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16784,6 +17502,7 @@ const GRAPH = {
       "synonyms": [
         "death date"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16806,6 +17525,7 @@ const GRAPH = {
       "detail": "A death certificate is a vital record documenting information (including age, occupation, place of birth, place of residence, and often identifying the parents and possibly spouse of the deceased) relating to a dead person and including a doctor's certification of the cause of death.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16828,6 +17548,7 @@ const GRAPH = {
       "detail": "Schemes for death certificate identification are typically regionally defined, and there may be jurisdiction-specific scope required as an additional restriction on a specific scheme.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16852,6 +17573,7 @@ const GRAPH = {
       "synonyms": [
         "death certificate number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16876,6 +17598,7 @@ const GRAPH = {
       "synonyms": [
         "driving licence"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16898,6 +17621,7 @@ const GRAPH = {
       "detail": "Schemes for driver's license identification are typically regionally defined, and there may be jurisdiction-specific scope required as an additional restriction on a specific scheme.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16922,6 +17646,7 @@ const GRAPH = {
       "synonyms": [
         "driver's license number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16944,6 +17669,7 @@ const GRAPH = {
       "detail": "The minor will then have full contractual capacity to conclude contracts with regard to the business. Whether parental consent is needed to achieve emancipated status varies from case to case. In some cases, court permission is necessary. Protocols vary by jurisdiction.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16968,6 +17694,7 @@ const GRAPH = {
       "synonyms": [
         "identity card"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -16990,6 +17717,7 @@ const GRAPH = {
       "detail": "Individuals may have an inherent physical condition which prevents them from achieving the normal levels of performance expected from persons of comparable age, or their inability to match current levels of performance may be caused by contracting an illness. Whatever the cause, if the resulting condition is such that individuals cannot care for themselves, or may act in ways that are against their interests, those persons are vulnerable through dependency and require the protection of the state against the risks of abuse or exploitation. Hence, any agreements that were made are voidable, and a court may declare that person a ward of the state and grant power of attorney to an appointed legal guardian.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17012,6 +17740,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17034,6 +17763,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17056,6 +17786,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17078,6 +17809,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17100,6 +17832,7 @@ const GRAPH = {
       "detail": "The age depends upon jurisdiction and application, but is generally 18.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17124,6 +17857,7 @@ const GRAPH = {
       "synonyms": [
         "national identity number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17146,6 +17880,7 @@ const GRAPH = {
       "detail": "Schemes for national identification numbers are jurisdiction-specific by country.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17168,6 +17903,7 @@ const GRAPH = {
       "detail": "The elements of identity contained in all standardized passports include information about the holder, including name, date of birth, gender and place of birth.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17190,6 +17926,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17212,6 +17949,7 @@ const GRAPH = {
       "detail": "Schemes for passport identification are jurisdiction-specific by country.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17236,6 +17974,7 @@ const GRAPH = {
       "synonyms": [
         "natural person"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17258,6 +17997,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17282,6 +18022,7 @@ const GRAPH = {
       "synonyms": [
         "birth place"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17304,6 +18045,7 @@ const GRAPH = {
       "detail": "All agreements are time bound, whether implicit or explicitly stated, and thus an agreement reflects a state of affairs that holds for some period of time.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17326,6 +18068,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17350,6 +18093,7 @@ const GRAPH = {
       "synonyms": [
         "mutual agreement"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17372,6 +18116,7 @@ const GRAPH = {
       "detail": "Such a promise often results a corresponding right or obligation with respect to another party to the commitment. Thus, obligations and rights are considered as reciprocal aspects of a commitment.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17394,6 +18139,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17416,6 +18162,7 @@ const GRAPH = {
       "detail": "Multilateral agreements are characterized by the participation and commitment of multiple countries or parties to achieve a common objective or address a shared issue.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17438,6 +18185,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17463,6 +18211,7 @@ const GRAPH = {
         "obligated party",
         "obligator"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17487,6 +18236,7 @@ const GRAPH = {
         "Unilateral commitments include some promotional offers, contests, and rewards, where the offering party sets conditions without requiring upfront agreement from others."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17511,6 +18261,7 @@ const GRAPH = {
         "Many, though not all, futures contracts are assignable. This means that the original contract holder can sell the contract to another party in return for cash, and that party then assumes the rights, responsibilities, and benefits of that contract from that point onwards."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17533,6 +18284,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17555,6 +18307,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17577,6 +18330,7 @@ const GRAPH = {
       "detail": "Examples of events that are considered a breach of contract include discovery of misrepresentation, not completing a job, not paying in full or on time, failing to deliver all the goods, substituting inferior or significantly different goods, not providing a bond when required, being late without excuse, or any act that demonstrates that a party will not complete required work ('anticipatory breach.') Breach of contract is one of the most common causes of law suits for damages and/or court-ordered 'specific performance' of the contract. A breach of contract frequently invalidates the contract.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17599,6 +18353,7 @@ const GRAPH = {
       "detail": "In the case of a breach of a covenant or warranty, the contract remains binding and damages only are recoverable for the breach, whereas a breach of contract typically invalidates the entire contract.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17623,6 +18378,7 @@ const GRAPH = {
       "synonyms": [
         "close out netting provision"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17647,6 +18403,7 @@ const GRAPH = {
         "Examples may be related to leases, to clarify responsibilities with respect to maintance and repair, to partnerships, clarifying how disputes should be resolved, loan agreements such as deeds of trust, covering the conditions under which the collateral would be forfeited, and uniform commercial code (UCC) agreements."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17669,6 +18426,7 @@ const GRAPH = {
       "detail": "Condition precedents are common in wills and trusts. They include events or states of affairs that act as triggers for the contract to come into effect, such as a beneficiary reaching the age of maturity, or death of a trustor, as well as define obligations on a party to the contract, such as those required of a trustee on the death of a trustor. There may also be condition precedents in the ongoing life of a contract, which state that if condition X occurs, event Y will then occur. Condition X is the condition precedent.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17691,6 +18449,7 @@ const GRAPH = {
       "detail": "A contractual relationship is evidenced by (1) an offer, (2) acceptance of the offer, and a (3) valid (legal and valuable) consideration. A contract is a kind of agreement, and as such it embodies the assertion that it has been negotiated, such negotiation having included the presence of some offer and the acceptance of that offer on the part of either or both of the parties. Contracts are usually written but may be spoken or implied, and generally have to do with employment, sale or lease, or tenancy. Note that the data of issuance may be, but is not always, the same as the effective date.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17713,6 +18472,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17735,6 +18495,7 @@ const GRAPH = {
       "detail": "Milestones are checkpoints that are predefined in the contract, used to measure progress. They specify tasks, deliverables, or objectives that must be achieved to meet each milestone and may trigger partial payment.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17757,6 +18518,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17779,6 +18541,7 @@ const GRAPH = {
       "detail": "The principal to a contract is typically the originator and, in the case of a security, the issuer. In law, the principal is the party that has the primary responsibility in a liability or obligation, as opposed to an endorser, guarantor, or surety.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17801,6 +18564,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17823,6 +18587,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17845,6 +18610,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17867,6 +18633,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17889,6 +18656,7 @@ const GRAPH = {
       "detail": "The counterparty is usually the party 'on the other side' of a contract from the perspective of the issuer or holder. The term 'counterparty' can refer to any party to an agreement, depending on context.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17913,6 +18681,7 @@ const GRAPH = {
         "A contract clause requiring the lender to disclose the APR and finance charges."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17935,6 +18704,7 @@ const GRAPH = {
       "detail": "Early termination date refers to the date set within an agreement for the parties to exercise the option to terminate the contract prior to its original expiration, typically subject to predefined terms such as notice periods or specific conditions. Early termination may be automatically triggered by an event of default with respect to any contract obligation, due to corporate action, or for other reasons. An early termination date may be calculated per the terms of the agreement or specified explicitly at the time the termination event occurs.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17957,6 +18727,7 @@ const GRAPH = {
       "detail": "In the case of a debt instrument, an extension may include extending the time allowed for repayment of the principal, the maturity date, and so forth.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -17984,6 +18755,7 @@ const GRAPH = {
       "synonyms": [
         "master contract"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18006,6 +18778,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18028,6 +18801,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18050,6 +18824,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18072,6 +18847,7 @@ const GRAPH = {
       "detail": "Rather than settling individual obligations between each party, as in bilateral netting, all transactions are aggregated, and a single net amount is determined for each participant.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18094,6 +18870,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18116,6 +18893,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18138,6 +18916,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18160,6 +18939,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18182,6 +18962,7 @@ const GRAPH = {
       "detail": "In general, novation means consensual substitution of a party or obligation in the original contract with a new party or obligation in the successor contract. The new party takes on the rights and obligations of the original party. The corresponding novation agreement must be signed by the transferor, the transferee, and the counterparty (the other contracting party). Novation is frequently used in mergers and acquisitions to replace any outstanding relationships or rights and obligations of the organization being subsumed with relationships or obligations of the acquiring entity. It is also commonly used with respect to loan rescheduling. Novation is different from assignment in the following ways: (1) novation is a consensual transfer of contractual rights and obligations, while an assignment can transfer only obligations and does not require the consent of the benefiting party, and (2) novation terminates the original contract, but assignment does not.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18204,6 +18985,7 @@ const GRAPH = {
       "detail": "Novation netting contemplates that for each value date and for each currency, the parties agree that all existing contracts will be canceled (discharged and extinguished) and simultaneously replaced by a new contract that aggregates and nets all of the payment obligations of the original contracts. Novation netting occurs immediately when a nettable transaction is entered into.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18226,6 +19008,7 @@ const GRAPH = {
       "detail": "For each value date and for each traded currency, the parties will aggregate and net all payments owed between them to arrive at a single currency obligation for each currency payable between the parties. The parties calculate net payments at some pre-agreed time, typically the day before value date (although it is possible to agree net payments on the value date, depending on the currency and time zone).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18248,6 +19031,7 @@ const GRAPH = {
       "detail": "A party may later claim misrepresentation if a false representation has been made. They may be entitled to rescind the contract, which means that the contract would be set aside and the receiving party may also be entitled to damages to put them back into the position they would have been had the contract never been entered into.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18270,6 +19054,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18292,6 +19077,7 @@ const GRAPH = {
       "detail": "Common reasons for termination include mutual consent, certain notices, breach or failure of a precedent or condition, insolvency, change in control, the occurrence of certain events, and court orders that prohibit continuation of the contract. Termination provisions may include whether they are mutual or unilateral, and may include rights with respect to any cure.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18314,6 +19100,7 @@ const GRAPH = {
       "detail": "Term sheets state the intentions of the parties and are used to guide legal counsel in the preparation of proposed agreements or contracts.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18336,6 +19123,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18358,6 +19146,7 @@ const GRAPH = {
       "detail": "In a unilateral, or one-sided, contract, one party, known as the offeror, makes a promise in exchange for an act (or abstention from acting) by another party, known as the offeree. If the offeree acts on the offeror's promise, the offeror is legally obligated to fulfill the contract, but an offeree cannot be forced to act (or not act), because no return promise has been made to the offeror. After an offeree has performed, only one enforceable promise exists, that of the offeror.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18382,6 +19171,7 @@ const GRAPH = {
         "A clause requiring loan funds be used only to purchase the specified home."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18404,6 +19194,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18426,6 +19217,7 @@ const GRAPH = {
       "detail": "If a warranty is determined to be false, the receiving party has a claim for breach of contract. If it is a fundamental breach the receiving party may have the right to terminate the contact in addition to a claim for damages. However, unlike a claim for misrepresentation, the contract may not necessarily be voided in its entirety as a consequence.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18448,6 +19240,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18470,6 +19263,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18489,11 +19283,12 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "written estimate of the market value of something as of some point in time, typically provided by a qualified appraiser",
-      "detail": "",
+      "detail": "Ordered by the lender during underwriting to establish the collateral's value; it constrains the maximum loan amount through the loan-to-value ratio.",
       "examples": [
         "A licensed appraiser's report valuing a home at $450,000."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18513,11 +19308,12 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "estimated value of some asset as of a given point in time",
-      "detail": "",
+      "detail": "Serves as the denominator of the loan-to-value ratio and the basis for how much a lender will advance against the property.",
       "examples": [
         "$450,000 — the appraiser's estimate of a property's market value."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18540,6 +19336,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18562,6 +19359,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18584,6 +19382,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18606,6 +19405,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18628,6 +19428,7 @@ const GRAPH = {
       "detail": "Expected values are often calculated using probability distributions. Note that they can be qualitative, however, such as certain ratings.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18650,6 +19451,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18672,6 +19474,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18694,6 +19497,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18716,6 +19520,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18738,6 +19543,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18760,6 +19566,7 @@ const GRAPH = {
       "detail": "Qualitative values may follow nominal or ordinal scales, and may be expressed as enumerations.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18782,6 +19589,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18804,6 +19612,7 @@ const GRAPH = {
       "detail": "Derivatives, such as certain exotics, can be based on values ascribed to virtually anything, including weather. Typically, however, a reference value refers to something that can be readily observed in the marketplace, such as a quoted rate (e.g., interest rate, exchange rate), index value, commodity price, stock price, economic indicator, or something similar as of some point in time.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18826,6 +19635,7 @@ const GRAPH = {
       "detail": "Asset valuation is the process of determining the fair market or present value of assets, using book values, absolute valuation models like discounted cash flow analysis, option pricing models or comparables. Such assets include investments in marketable securities such as stocks, bonds and options; tangible assets like buildings and equipment; or intangible assets such as brands, patents and trademarks.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18850,6 +19660,7 @@ const GRAPH = {
       "synonyms": [
         "business value"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18872,6 +19683,7 @@ const GRAPH = {
       "detail": "Note that an appraiser in this context may be a licensed appraiser, such as a real estate appraiser or auction house, or a calculation agent, depending on the circumstances.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18896,6 +19708,7 @@ const GRAPH = {
         "Examples include the North American Industry Classification System (NAICS) and Standardized Industry Classification (SIC) in the U.S. and Canada, and the NACE (Nomenclature Générale des Activités Économiques dans les Communautés Européennes) in the EU, developed by governments to classify industries. They also include commercial classification schemes, such as the Global Industry Standard Classification (GICS) developed jointly by Morgan Stanley Capital International (MSCI) and Standard and Poor's, and competing schemes including the Industry Classification Benchmark (ICB) system, maintained by Dow Jones and London's FTSE Group, among others."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18918,6 +19731,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18942,6 +19756,7 @@ const GRAPH = {
         "Financial records include accounts, agreements, trading books, etc."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18964,6 +19779,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -18986,6 +19802,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19010,6 +19827,7 @@ const GRAPH = {
         "ticker symbol, vehicle license number, such as a vanity plate that can be reassigned and moved from one car to another"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19034,6 +19852,7 @@ const GRAPH = {
         "The product life cycle describes the period of time over which an item is developed, brought to market and eventually removed from the market. The cycle is broken into four stages: introduction, growth, maturity and decline. The idea of the product life cycle is used in marketing to decide when it is appropriate to advertise, reduce prices, explore new markets or create new packaging."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19058,6 +19877,7 @@ const GRAPH = {
         "a call notification or coupon payment as a part of a bond lifecycle"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19080,6 +19900,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19102,6 +19923,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19126,6 +19948,7 @@ const GRAPH = {
         "a research and development phase of a product lifecycle, the introduction phase in a marketing lifecycle, a growth stage in an economic lifecycle, or the origination phase in the lifecycle of a loan"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19148,6 +19971,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19170,6 +19994,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19192,6 +20017,7 @@ const GRAPH = {
       "detail": "Ratings for the creditworthiness of securities are often qualitative, rather than quantitative, such as a triple-A (i.e., AAA). Many ratings for products and businesses on the Internet are also qualitative, such as 5-star ratings for something.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19214,6 +20040,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19236,6 +20063,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19258,6 +20086,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19280,6 +20109,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19302,6 +20132,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19324,6 +20155,7 @@ const GRAPH = {
       "detail": "A rating issuer is frequently, but not always the rating scale publisher. A rating issuer may delegate responsibility for producing a rating to a rating party.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19346,6 +20178,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19368,6 +20201,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19390,6 +20224,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19412,6 +20247,7 @@ const GRAPH = {
       "detail": "Rating scale publishers are frequently also rating agencies.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19434,6 +20270,7 @@ const GRAPH = {
       "detail": "The meaning and methodology for determining a rating score for the rating of something is determined by a rating issuer. A given rating may apply at some point in time, as a part of a lifecycle or process, or generally. Typically ratings reflect an assessment of a state of affairs at some point in time.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19456,6 +20293,7 @@ const GRAPH = {
       "detail": "Reports may refer to specific periods, events, occurrences, or subjects, and may be communicated or presented in oral, electronic, or written form.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19478,6 +20316,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19500,6 +20339,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19522,6 +20362,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19544,6 +20385,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19566,6 +20408,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19590,6 +20433,7 @@ const GRAPH = {
       "synonyms": [
         "business day adjustment"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19612,6 +20456,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19634,6 +20479,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19656,6 +20502,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19678,6 +20525,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19700,6 +20548,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19722,6 +20571,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19744,6 +20594,7 @@ const GRAPH = {
       "detail": "Other ontologies can extend AdHocSchedule and/or AdHocScheduleEntry as needed to relate the date to something. In particular, the Occurrences ontology extends AdHocScheduleEntry to associate an OccurrenceKind with each entry. The intended meaning is that an Occurrence of the OccurrenceKind happens on the corresponding Date.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19766,6 +20617,7 @@ const GRAPH = {
       "detail": "Other ontologies can extend AdHocScheduleEntry as needed. In particular, the Occurrences ontology extends AdHocScheduleEntry to consist of occurrences (events) of a given OccurrenceKind. The meaning is that an ad hoc schedule entry comprises a date and an event which is scheduled to occur on that date. The Date of an AdHocScheduleEntry can be an ExplicitDate or any kind of CalculatedDate, such as:  * An OccurrenceBasedDate -- a Date that itself is defined by an Occurrence (see the Occurrences ontology) * A RelativeDate - a Date relative to another Date, such as T+3 * A SpecifiedDate - a Date that is defined by an arbitrary rule The cmns-dt;hasDate property may be used to reify a date, if it is important to do so for a given application, or if not and typically, the inherited cmns-dt;hasObservedDateTime property may be used together with a cmns-dt;CombinedDateTime value, as long as the resulting schedule is consistent in using one or the other.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19788,6 +20640,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19810,6 +20663,7 @@ const GRAPH = {
       "detail": "It is an explicit date chosen to provide context or structure for analyzing data or events.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19834,6 +20688,7 @@ const GRAPH = {
         "academic calendar, bank holiday calendar"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19856,6 +20711,7 @@ const GRAPH = {
       "detail": "The hasDateValue property of a CalculatedDate is not set until the Date is calculated. Since the calculation may depend upon future events that may or may not ever happen, the hasDateValue property may never be set.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19878,6 +20734,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19900,6 +20757,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19922,6 +20780,7 @@ const GRAPH = {
       "detail": "A calendar-specified date may be figured with respect to a calendar week, a calendar month, a calendar quarter, or a calendar year.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19947,6 +20806,7 @@ const GRAPH = {
         "The last day of each quarter, specified as RelativeDay 1, and TimeDirection set to FromEnd."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19969,6 +20829,7 @@ const GRAPH = {
       "detail": "Note that the use of several options for the representation of a date and time stamp enables extensions for milliseconds, nanoseconds using an xsd:string that has the format of an xsd:dateTime datatype but extends the level of granularity consistently. An example of where this is required is to represent prices that change multiple times in a given day. The use of custom datatypes is outside the OWL 2 RL profile and so users should consider commenting out the restriction on hasObservedDateTime altogether or change the data range to rdfs:Literal in applications that are constrained to OWL 2 RL.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -19991,6 +20852,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20013,6 +20875,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20037,6 +20900,7 @@ const GRAPH = {
       "synonyms": [
         "frequency"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20062,6 +20926,7 @@ const GRAPH = {
         "A corporate bond pays interest for 10 years starting on the first day of 2015. Interest payments are due 15 days after the expiration of each 6 month period: on July 15 and January 16.  The payment schedule is a RegularSchedule, with these properties:  * comprises: identifies the interest payment details * overall DatePeriod starting date is '2015-01-01', ending date is '2025-01-15', and duration is 'P10Y15D' * hasCount is 20 (2 payments per year for 10 years) * hasRecurrenceInterval is 'P6M' * hasRecurrenceStartDate is '2015-01-15'"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20086,6 +20951,7 @@ const GRAPH = {
         "A settlement date, defined as T+3: three days after the trade date. The 'hasRelativeDuration' property is set to '3D'."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20108,6 +20974,7 @@ const GRAPH = {
       "detail": "The overall period covers the entire DatePeriod of the Schedule, from the earliest Date to the final Date of the Schedule. Schedules may be ad hoc, essentially a list of dates and events without any consistency in the durations between events, regular, in which case there is a consistently recurring interval between events, or a combination of the two. There may be a single overall period, or more than one if the schedule is extended for some reason.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20132,6 +20999,7 @@ const GRAPH = {
         "A 30 year mortgage calls for monthly payments on the first day of each month, according to a RegularSchedule. If the mortgage does not start on the first day of a calendar month, then an initial ScheduleStub specifies the payment due for the DatePeriod up to the first day of the next calendar month. Similarly, a final ScheduleStub specifies the last payment due for the DatePeriod after the end of the last full calendar month."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20154,6 +21022,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20176,6 +21045,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20198,6 +21068,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20220,6 +21091,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20244,6 +21116,7 @@ const GRAPH = {
       "synonyms": [
         "event"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20266,6 +21139,7 @@ const GRAPH = {
       "detail": "The 'hasDateValue' property of an OccurrenceBasedDate is not set until the Occurrence happens. The 'triggeredBy' property relates an OccurrenceBasedDate to the OccurrenceKind that gives the meaning of the OccurrenceBasedDate.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20291,6 +21165,7 @@ const GRAPH = {
         "trade settlement"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20313,6 +21188,7 @@ const GRAPH = {
       "detail": "Business aims are sometimes considered broad, long-term goals, and in such cases, the term 'aim' is used interchangeably with goal. Here, however we differentiate between qualitative goals and quantitative objectives, both of which are kinds of aims, with the critical differences including measurability and time frame. Goals tend to have a much longer trajectory, provide the basis for determining objectives, and are often aligned with an organization's mission, whereas objectives are short term and measurable.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20335,6 +21211,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20357,6 +21234,7 @@ const GRAPH = {
       "detail": "Business objectives allow an organization to define its goals and direction. A company uses strategy and tactics at every level of its operation to achieve its objectives. These define the way a company allocates its resources and the strengths, weaknesses and opportunities it may have. Companies usually do not alter their objectives once they are implemented, unless changes in circumstances arise. Setting a clear course for the organization is key to its success. In general, objectives are more specific and easier to measure than goals. Objectives are basic tools that underlie all planning and strategic activities. They serve as the basis for creating policy and evaluating performance. Some examples of business objectives include minimizing expenses, expanding internationally, or making a profit.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20379,6 +21257,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20401,6 +21280,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20423,6 +21303,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20445,6 +21326,7 @@ const GRAPH = {
       "detail": "Many people endeavor to reach goals within a finite time by setting deadlines.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20469,6 +21351,7 @@ const GRAPH = {
         "An investor whose objective is capital growth might choose to invest in more aggressive, growth-oriented mutual funds and/or stocks, over income-generating mutual funds and/or bonds."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20491,6 +21374,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20513,6 +21397,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20535,6 +21420,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20557,6 +21443,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20579,6 +21466,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20601,6 +21489,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20623,6 +21512,7 @@ const GRAPH = {
       "detail": "A project has a fixed - generally fairly short - timeframe, and a project manager is responsible for delivering the output on time and on budget.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20645,6 +21535,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20667,6 +21558,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20689,6 +21581,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20711,6 +21604,7 @@ const GRAPH = {
       "detail": "A strategy is a high-level plan or approach designed to achieve a long-term goal or outcome, often by choosing among different possible methods or courses of action. A strategy may involve activities that are needed in order to achieve specific goals or objectives. It may take into account one or more policies or any number of restrictions and constraints. Strategies are typically distinguished by long-term orientation, adaptive planning, and broad scope.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20733,6 +21627,7 @@ const GRAPH = {
       "detail": "Studies involve exploration, analysis, sometimes modeling, and sometimes evaluation, but are not necessarily focused on evaluation and may or may not be criteria-based, which distinguishes it from the concept of an assessment. In a business context, a study might map capabilities, analyze value streams, or model information flows. Only some studies produce an assessment (e.g., capability maturity assessment). A clinical research study may observe, test, or model phenomena, and may or may not result in a clinical or risk assessment. A study conducted as part of a project or larger programme may explore feasibility, options, impacts, or requirements.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20755,6 +21650,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20777,6 +21673,7 @@ const GRAPH = {
       "detail": "Claims arise from the existence of a formal commitment between the parties or as implicitly agreed upon through the operation of law or constitution.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20799,6 +21696,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20821,6 +21719,7 @@ const GRAPH = {
       "detail": "Contingent means that the interest, claim, or right is conditional, realized only when and if something occurs.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20843,6 +21742,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20865,6 +21765,7 @@ const GRAPH = {
       "detail": "Contractual interest may include rights to income, access, use, or participation, and is governed by the terms and conditions of the underlying contract. It may be transferable or limited, and can coexist with or be independent of ownership rights. Contractual interests differ from ownership interests in terms of (1) the source of rights, which are specified in an agreement or contract in the case of contractual interests, and in terms of title or equity with respect to ownership, (2) control, which is typically limited at best in the case of contractual interest, and (3) transferability, which depends on the terms of the contract. Examples of contractual interest include fund units, leaseholds, annuities, and rights to certain services, whereas shares, real estate, and assets of a trust reflect ownership interest.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20887,6 +21788,7 @@ const GRAPH = {
       "detail": "Contractual obligations require a party to perform or refrain from performing specific actions, and failure to meet an obligation can result in legal consequences.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20909,6 +21811,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20931,6 +21834,7 @@ const GRAPH = {
       "detail": "Contractual rights are established by the terms of a contract, which can be explicit (written) or implied by law, industry standards, or consistent practices.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20953,6 +21857,7 @@ const GRAPH = {
       "detail": "This is always accompanied by an equal responsibility for one's actions or a failure to act.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20975,6 +21880,7 @@ const GRAPH = {
       "detail": "A delivery obligation is the responsibility of one party to deliver goods, services, instruments, money, or other specified items to another party, typically as outlined in an agreement. Failure to do so may result in breach of contract if the obligation is specified as such, which may have further legal ramifications.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -20997,6 +21903,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21019,6 +21926,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21041,6 +21949,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21060,11 +21969,12 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "an obligation or duty that is enforceable by a court",
-      "detail": "",
+      "detail": "The borrower's court-enforceable duty to repay under the credit agreement; failure gives the lender legal remedies, including foreclosure of the collateral.",
       "examples": [
         "The borrower's court-enforceable duty to repay the mortgage."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21087,6 +21997,7 @@ const GRAPH = {
       "detail": "A legal right, if challenged, may be supported in court as recognizable and enforceable in law, statutes, regulations, or other legislative actions. This entitlement creates a corresponding obligation for the provider to deliver that benefit.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21109,6 +22020,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21131,6 +22043,7 @@ const GRAPH = {
       "detail": "Note that in some cases, a license may also be considered an agreement or contract, depending on the specifics of the license and jurisdiction.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21153,6 +22066,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21175,6 +22089,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21197,6 +22112,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21219,6 +22135,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21241,6 +22158,7 @@ const GRAPH = {
       "detail": "Common triggering events include breaches, changes in circumstances, delays, or other kinds of events that may have a material impact on the agreement.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21263,6 +22181,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21285,6 +22204,7 @@ const GRAPH = {
       "detail": "Many government agencies issue regulations to administer laws.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21309,6 +22229,7 @@ const GRAPH = {
         "For example a policy for how frequently a given kind of report is produced."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21333,6 +22254,7 @@ const GRAPH = {
         "Examples include contractual rights, legal rights, human rights, political rights, and so forth."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21355,6 +22277,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21377,6 +22300,7 @@ const GRAPH = {
       "detail": "A constitution is an aggregate of fundamental principles or established precedents that constitute the legal basis of a polity, organisation or other type of entity and commonly determine how that entity is to be governed.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21399,6 +22323,7 @@ const GRAPH = {
       "detail": "A court of law is a formal forum of justice that may have authority over civil, criminal, ecclesiastical, or military cases.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21421,6 +22346,7 @@ const GRAPH = {
       "detail": "Law is a term which does not have a universally accepted definition. Certain laws are made by governments, specifically by their legislatures although the sense intended here is broader. The formation of laws themselves may be influenced by a constitution (written or unwritten) and the rights encoded therein. The law shapes politics, economics and society in countless ways and serves as a social mediator of relations between people.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21445,6 +22371,7 @@ const GRAPH = {
       "synonyms": [
         "statutory law"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21467,6 +22394,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21489,6 +22417,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21511,6 +22440,7 @@ const GRAPH = {
       "detail": "In the broadest sense, employment is the situation in which someone is fully engaged in doing something that they want to do. From a FIBO perspective, however, employment is understood to be more specific. It is the relationship between two parties, evidenced by an implicit or explicit contract, in which work is compensated and in which one party, a legal person, typically a formal organization, acts as the employer and the other, typically a legally capable natural person, as the employee.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21533,6 +22463,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21555,6 +22486,7 @@ const GRAPH = {
       "detail": "Control may be direct (explicit) or indirect (implicit), derived through ownership of voting shares, beneficial ownership, other ownership relations, through provisions of a contract, or otherwise.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21577,6 +22509,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21599,6 +22532,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21621,6 +22555,7 @@ const GRAPH = {
       "detail": "For example, de facto acquisition or change of control means the acquisition, directly or indirectly, by any person or group of persons acting jointly or in concert, of beneficial ownership of, or control or direction over, sufficient voting shares of some legal entity to permit such person or persons to exercise, or to control or direct the voting of, 50 percent or more of the total number of votes in that entity.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21643,6 +22578,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21667,6 +22603,7 @@ const GRAPH = {
       "synonyms": [
         "economic resource"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21691,6 +22628,7 @@ const GRAPH = {
         "Intangible assets may include intellectual property, patents, copyrights, trademarks, rights-of-way (easements), brands, organizational abilities (know-how), and data."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21713,6 +22651,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21735,6 +22674,7 @@ const GRAPH = {
       "detail": "Ownership is the right to possess, use, sell, donate or give as a gift any asset or property belonging to a person known as the 'owner'. An owner can be either a beneficial owner or a legal owner.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21757,6 +22697,7 @@ const GRAPH = {
       "detail": "Tangible assets include cash, cash equivalents and accounts receivables (AR), inventory, equipment, buildings and real estate, crops, and investments. Tangible assets such as art, furniture, stamps, gold, wine, toys and books of significant value may be included in an individual or organization's asset portfolio.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21779,6 +22720,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21801,6 +22743,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21823,6 +22766,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21845,6 +22789,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21867,6 +22812,7 @@ const GRAPH = {
       "detail": "Tax identifiers are used for various tax-related purposes in the United States and in other countries under the Common Reporting Standard (CRS).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21889,6 +22835,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21911,6 +22858,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21933,6 +22881,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21955,6 +22904,7 @@ const GRAPH = {
       "detail": "Other unconventional addresses may include rural and highway route addresses, general delivery addresses, post office box addresses, private mail center addresses, and so forth.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -21979,6 +22929,7 @@ const GRAPH = {
         "In the United States, these include N, S, E, W, NE, NW, SE, SW."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22001,6 +22952,7 @@ const GRAPH = {
       "detail": "Typically, addresses will have only one postcode expressed either as a string value or individual, and only a municipality (individual) or city (string value).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22025,6 +22977,7 @@ const GRAPH = {
         "Physical address identifiers may include bar codes, QCR codes, and +codes in a number of countries."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22047,6 +23000,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22071,6 +23025,7 @@ const GRAPH = {
       "synonyms": [
         "postal code"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22093,6 +23048,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22115,6 +23071,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22137,6 +23094,7 @@ const GRAPH = {
       "detail": "Post office box identifiers are only unique to a given jurisdiction, which may be a post office, town, or other region.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22159,6 +23117,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22183,6 +23142,7 @@ const GRAPH = {
         "In the U.S., the preferred designator is 'PO BOX'."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22205,6 +23165,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22229,6 +23190,7 @@ const GRAPH = {
       "synonyms": [
         "street number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22251,6 +23213,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22273,6 +23236,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22295,6 +23259,7 @@ const GRAPH = {
       "detail": "Note that only certain secondary units require a secondary range, such as an apartment number, to complete a delivery point.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22317,6 +23282,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22339,6 +23305,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22361,6 +23328,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22383,6 +23351,7 @@ const GRAPH = {
       "detail": "The suffix may provide some insight into the size or length of the street, though not necessarily consistently. In some cities, the suffix differentiates the street from another in the same context, such as 19th Street vs. 19th Avenue in San Francisco.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22407,6 +23376,7 @@ const GRAPH = {
         "Examples include 'McCoy Center', which is the name of the office complex where JPMorgan Chase's Polaris facility is located, 'Apple Park', which is the name of the corporate headquarters of Apple, Inc., and 'Howells Bridge Cottage', which is the name of a very old cottage in Cornwall."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22429,6 +23399,7 @@ const GRAPH = {
       "detail": "Supplemental components include post office box information, rural route and highway contract route information, private mailboxes, and so forth, that are not part of a conventional street address.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22451,6 +23422,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22473,6 +23445,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22495,6 +23468,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22517,6 +23491,7 @@ const GRAPH = {
       "detail": "A complete address may be required on mail at some automation rates.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22539,6 +23514,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22561,6 +23537,7 @@ const GRAPH = {
       "detail": "When combined with the ZIP + 4 code, the delivery point code provides a unique identifier for every deliverable address served by the USPS. The delivery point digits are almost never printed on mail in human-readable form; instead they are encoded in the POSTNET delivery point barcode (DPBC) or as part of the newer Intelligent Mail Barcode (IMB).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22583,6 +23560,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22605,6 +23583,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22627,6 +23606,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22649,6 +23629,7 @@ const GRAPH = {
       "detail": "The value of the +4 component of a ZIP+4 code should be '9999'.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22671,6 +23652,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22693,6 +23675,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22715,6 +23698,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22737,6 +23721,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22759,6 +23744,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22781,6 +23767,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22803,6 +23790,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22825,6 +23813,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22847,6 +23836,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22869,6 +23859,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22891,6 +23882,7 @@ const GRAPH = {
       "detail": "This URB descriptor, commonly used in urban areas of Puerto Rico, is an important part of the addressing format, as it describes the location of a given street.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22913,6 +23905,7 @@ const GRAPH = {
       "detail": "The delivery point digits are almost never printed on mail in human-readable form; instead they are encoded in the POSTNET delivery point barcode (DPBC) or as part of the newer Intelligent Mail Barcode (IMB).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22935,6 +23928,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22957,6 +23951,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -22979,6 +23974,7 @@ const GRAPH = {
       "detail": "The correct format for a numeric ZIP+4 code is five digits, a hyphen, and four digits. The first five digits represent the 5-digit ZIP Code; the sixth and seventh digits (the first two after the hyphen) identify an area known as a sector; the eighth and ninth digits identify a smaller area known as a segment. Together, the final four digits identify geographic units such as a side of a street between intersections, both sides of a street between intersections, a building, a floor or group of floors in a building, a firm within a building, a span of boxes on a rural route, or a group of Post Office boxes to which a single USPS employee makes delivery.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23001,6 +23997,7 @@ const GRAPH = {
       "detail": "Personal property may include tangible assets, such as machinery, furniture, vehicles, artwork, and jewelry, regardless of whether such assets are owned by a person or organization, and intangible assets, including but not limited to intellectual property and financial instruments.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23023,6 +24020,7 @@ const GRAPH = {
       "detail": "The concept of a property inspection is separate from conducting an overarching appraisal. Examples are termite inspections, construction inspections, evaluation for completion of some milestone, improvement, correction, etc.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23045,6 +24043,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23069,6 +24068,7 @@ const GRAPH = {
       "synonyms": [
         "real estate asset"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23095,6 +24095,7 @@ const GRAPH = {
       "synonyms": [
         "parcel"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23117,6 +24118,7 @@ const GRAPH = {
       "detail": "The valuation uses one or more methodologies and is conducted by an appraiser or technology with a logical model that performs the same function.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23139,6 +24141,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23164,6 +24167,7 @@ const GRAPH = {
         "e-mail address",
         "email address"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23186,6 +24190,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23208,6 +24213,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23232,6 +24238,7 @@ const GRAPH = {
       "synonyms": [
         "phone number"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23254,6 +24261,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23276,6 +24284,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23295,11 +24304,12 @@ const GRAPH = {
       "maturity": "Release",
       "core": true,
       "summary": "delivery of money in fulfillment of an obligation, such as to satisfy a claim or debt",
-      "detail": "",
+      "detail": "A transfer of money settling part of the obligation; mortgage payments typically bundle principal, interest, and escrowed taxes and insurance.",
       "examples": [
         "A $1,800 monthly mortgage payment of principal and interest."
       ],
       "synonyms": [],
+      "detailProvenance": "curated",
       "examplesProvenance": "curated",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23322,6 +24332,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23346,6 +24357,7 @@ const GRAPH = {
         "the duty of a borrower to repay a loan, related to the legal right of a lender to enforce payment"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23370,6 +24382,7 @@ const GRAPH = {
         "Examples include coupon payment, loan payment, and interest payment schedules, among others."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23395,6 +24408,7 @@ const GRAPH = {
         "buyer",
         "purchaser"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23417,6 +24431,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23439,6 +24454,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23461,6 +24477,7 @@ const GRAPH = {
       "detail": "Commodities are most often used as inputs in the production of other goods or services. The quality of a given commodity may differ slightly, but it is essentially uniform across producers.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23483,6 +24500,7 @@ const GRAPH = {
       "detail": "The general notion of a consumer includes an end user, and is not limited to a purchaser, in the distribution chain of a good or service",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23505,6 +24523,7 @@ const GRAPH = {
       "detail": "This represents the case where the product itself is a contract, such as a life insurance policy or financial instrument, rather than a product or service whose terms of use, license to use, or terms of service are specified in a product.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23527,6 +24546,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23549,6 +24569,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23571,6 +24592,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23597,6 +24619,7 @@ const GRAPH = {
         "custom-made product",
         "made to order product"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23619,6 +24642,7 @@ const GRAPH = {
       "detail": "An inherently useful and relatively scarce tangible item produced from agricultural, construction, manufacturing, or mining activities. Off-the-shelf products, including off-the-shelf software products and customization of software products, are generally considered to be goods. Energy, such as electricity, is also considered to be a good from a legal perspective, and meets the criteria of being manufactured or produced via some process, including but not limited to a mining process. According to the UN Convention On Contract For The International Sale Of Goods, the term 'good' does not include (1) items bought for personal use, (2) items bought at an auction or foreclosure sale, (3) aircraft or ocean-going vessels. From the Universal Commercial Code (UCC) in the United States, the term 'good' includes (i) fixtures, (ii) standing timber that is to be cut and removed under a conveyance or contract for sale, (iii) the unborn young of animals, (iv) crops grown, growing, or to be grown, even if the crops are produced on trees, vines, or bushes, and (v) manufactured homes. The term also includes a computer program embedded in goods and any supporting information provided in connection with a transaction relating to the program if (i) the program is associated with the goods in such a manner that it customarily is considered part of the goods, or (ii) by becoming the owner of the goods, a person acquires a right to use the program in connection with the goods. The term does not include a computer program embedded in goods that consist solely of the medium in which the program is embedded. The term also does not include accounts, chattel paper, commercial tort claims, deposit accounts, documents, general intangibles, instruments, investment property, letter-of-credit rights, letters of credit, money, or oil, gas, or other minerals before extraction.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23641,6 +24665,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23667,6 +24692,7 @@ const GRAPH = {
         "commercial off-the-shelf product",
         "commercially available off-the-shelf product"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23689,6 +24715,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23711,6 +24738,7 @@ const GRAPH = {
       "detail": "Financial products include contracts that are developed via a financial service-specific process, such as a life insurance policy, demand deposit account or financial instrument, for example. Leases and rentals are similar in that they are initiated via some contractual development process, wherein the product is the right to use something for some period of time.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23733,6 +24761,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23755,6 +24784,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23780,6 +24810,7 @@ const GRAPH = {
         "purveyor",
         "vendor"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23804,6 +24835,7 @@ const GRAPH = {
       "synonyms": [
         "service contract"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23826,6 +24858,7 @@ const GRAPH = {
       "detail": "A supplier may be distinguished from a contractor or subcontractor, who commonly adds specialized input to deliverables.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23848,6 +24881,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23870,6 +24904,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23892,6 +24927,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23914,6 +24950,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23936,6 +24973,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23958,6 +24996,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -23980,6 +25019,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24002,6 +25042,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24024,6 +25065,7 @@ const GRAPH = {
       "detail": "The REA Economic Agreement may or may not be between two distinct legal persons, as the REA scope includes transactions within organizations. For REA based transaction models which are between separate legal entities or persons, the form of agreement in force is this Contractual Economic Agreement, that is the agreement, backed by a written or implied contract, which is in force between the parties to this agreement.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24046,6 +25088,7 @@ const GRAPH = {
       "detail": "This is distinct from a transaction between business units within an enterprise. This is the usual sense of 'Transaction' and forms the basis for all securities and derivatives transactions, while the parent term 'Economic Transaction' may also be used to define internal transactions and transactions that have no legal or contractual basis.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24068,6 +25111,7 @@ const GRAPH = {
       "detail": "In REA, transactions may include those which are not between legal entities,such as for example internal transactions within a business and between business units. This term Contractual Transaction Party forms the basis for all party definitions for transactions which have some formal contractual basis as being between discrete legal entities (legal persons or other contractually capable entities e.g. non incorporated entities). This is the basis for all derivatives transactions, securities market transactions and so on.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24090,6 +25134,7 @@ const GRAPH = {
       "detail": "The Master Agreement sets out the terms and conditions under which these transactions are to take place between the parties. These are Over the Counter transactions, including OTC Derivatives.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24112,6 +25157,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24134,6 +25180,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24156,6 +25203,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24178,6 +25226,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24200,6 +25249,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24222,6 +25272,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24244,6 +25295,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24266,6 +25318,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24288,6 +25341,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24310,6 +25364,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24332,6 +25387,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24354,6 +25410,7 @@ const GRAPH = {
       "detail": "This describes an event. The event may be delivery of something or settlement of monies in payment for something delivered. A Transaction Event will have terms describing the commitment embodied in that side of that transaction.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24376,6 +25433,7 @@ const GRAPH = {
       "detail": "This describes one side of one transaction event. The event may be delivery of something or settlement of monies in payment for something delivered. A Transaction Event Side shows that side of that transaction from the perspective of one or other party.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24398,6 +25456,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24420,6 +25479,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24442,6 +25502,7 @@ const GRAPH = {
       "detail": "This could be an undertaking to deliver something, to do something and so on. These correspond to negative and positive pledges in the contract.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24464,6 +25525,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24486,6 +25548,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24508,6 +25571,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24530,6 +25594,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24552,6 +25617,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24574,6 +25640,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24596,6 +25663,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24618,6 +25686,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24640,6 +25709,7 @@ const GRAPH = {
       "detail": "Standard deviation applied to the annual rate of return of an investment provides insights on the historical volatility of that investment. The greater the standard deviation of the price of a security, the greater the volatility. Multiplying monthly standard deviation by the square root of twelve (12) is an industry standard method of approximating annualized standard deviations of monthly returns.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24664,6 +25734,7 @@ const GRAPH = {
       "synonyms": [
         "average"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24688,6 +25759,7 @@ const GRAPH = {
       "synonyms": [
         "mean absolute deviation"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24710,6 +25782,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24734,6 +25807,7 @@ const GRAPH = {
         "Common examples of measures of statistical dispersion are the variance, standard deviation, and interquartile range. The collection size argument, above, represents the number of elements in the set, if known. The collection of values under consideration is represented as a structured collection in FIBO, typically a sample set derived from a finite population."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24756,6 +25830,7 @@ const GRAPH = {
       "detail": "In statistics, a population is a set of similar items or events of interest for some question or experiment. In other words, a population is the complete group of units to which survey results are to apply. (These units may be persons, animals, objects, businesses, trips, etc.). See http://www.statcan.gc.ca/edu/power-pouvoir/glossary-glossaire/5214842-eng.htm#p.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24780,6 +25855,7 @@ const GRAPH = {
       "synonyms": [
         "complex expression"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24802,6 +25878,7 @@ const GRAPH = {
       "detail": "The geometric mean is defined as the nth root of the product of n numbers. A geometric mean is often used when comparing different items - finding a single 'figure of merit' for these items - when each item has multiple properties that have different numeric ranges. For example, the geometric mean can give a meaningful 'average' to compare two companies which are each rated at 0 to 5 for their environmental sustainability, and are rated at 0 to 100 for their financial viability. If an arithmetic mean were used instead of a geometric mean, the financial viability is given more weight because its numeric range is larger - so a small percentage change in the financial rating (e.g. going from 80 to 90) makes a much larger difference in the arithmetic mean than a large percentage change in environmental sustainability (e.g. going from 2 to 5).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24828,6 +25905,7 @@ const GRAPH = {
       "synonyms": [
         "KPI"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24853,6 +25931,7 @@ const GRAPH = {
         "expected value",
         "first (raw) moment"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24875,6 +25954,7 @@ const GRAPH = {
       "detail": "The basic advantage of the median in describing data compared to the mean is that it is not skewed by extremely large or small values, and may provide a better idea of a 'typical' value. This measure represents the middle value (if n is odd) or the average of the two middle values (if n is even) in an ordered list of data values. The median divides the total frequency distribution into two equal parts: one-half of the cases fall below the median and one-half of the cases exceed the median.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24897,6 +25977,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24919,6 +26000,7 @@ const GRAPH = {
       "detail": "A mathematical device or number which is used to express the observation (e.g., price level, volume of trade, relative amount etc.) of a given period, in comparison with that of a prior period.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24941,6 +26023,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24963,6 +26046,7 @@ const GRAPH = {
       "detail": "The word 'sampling' can usually be omitted, as being defined by the context or otherwise understood. The sampling variance of a statistic is the square of its standard error.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -24985,6 +26069,7 @@ const GRAPH = {
       "detail": "Note that (1) the anchor date reflects the start of the current series, such as 1982-1984 for the CPI, (2) the fixed comparative date might be something like March 2009, if one is comparing a current index against its value at the end of the great recession, (3) the relative comparative date might be something like a month or year ago, depending on the analysis requirements, and (4) the relative comparative period might be a 3 month average prior value, again depending on the analysis requirements.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25009,6 +26094,7 @@ const GRAPH = {
       "synonyms": [
         "SD"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25031,6 +26117,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25053,6 +26140,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25075,6 +26163,7 @@ const GRAPH = {
       "detail": "Statistical measures may consist of several orthogonal characteristics, including (a) whether they reflect an estimate or variable, (b) the datatype, or from a FIBO perspective, nature of the measure (e.g., index, total, ratio, percent, percent change, mean, others), (c) the population (or the universe that applies to the highest level if defined in general) to which the measure applies, and (d) any relevant aspects used to subset or stratify a measure, (i.e., make them apply to a smaller universe).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25097,6 +26186,7 @@ const GRAPH = {
       "detail": "A common aim of statistical analysis is to produce information about some chosen population. In statistical inference, a subset of the population (a statistical sample) is chosen to represent the population in a statistical analysis. If a sample is chosen properly, characteristics of the entire population that the sample is drawn from can be estimated from corresponding characteristics of the sample.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25119,6 +26209,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25143,6 +26234,7 @@ const GRAPH = {
         "A statistical universe can be a group of actually existing objects (e.g. the set of all stars within the Milky Way galaxy) or a hypothetical and potentially infinite group of objects conceived as a generalization from experience (e.g. the set of all possible hands in a game of poker)."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25167,6 +26259,7 @@ const GRAPH = {
       "synonyms": [
         "second moment"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25191,6 +26284,7 @@ const GRAPH = {
         "Given a sample size of 1000, and a population of 300M, then the chance that any individual is selected is 1 in 300K. In that case, 300K is the weight assigned to each of the elements in the sample."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25213,6 +26307,7 @@ const GRAPH = {
       "detail": "FIBO currently has three maturity levels: Informative, Provisional, and Release.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25235,6 +26330,7 @@ const GRAPH = {
       "detail": "A module should be designed to reflect these principles, including a small number of models that have well-defined relationships with one another, that form a coherent and cohesive whole for some purpose, and that have clear boundaries or interfaces to other modules.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25257,6 +26353,7 @@ const GRAPH = {
       "detail": "Associations include trade or business associations, industry sector-specific groups, and professional associations, among others. They also commonly include cooperative farms and markets.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25283,6 +26380,7 @@ const GRAPH = {
       "synonyms": [
         "cooperative"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25305,6 +26403,7 @@ const GRAPH = {
       "detail": "Family offices are often privately held companies set up to handle investment and wealth management for wealthy families.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25327,6 +26426,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25349,6 +26449,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25371,6 +26472,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25395,6 +26497,7 @@ const GRAPH = {
       "synonyms": [
         "MCC"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25417,6 +26520,7 @@ const GRAPH = {
       "detail": "ISO 18245 provides a set of merchant category codes that are used internationally. Some countries, regional governments, banks, and other large organizations extend the basic codes with custom additions to fit business needs.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25439,6 +26543,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25463,6 +26568,7 @@ const GRAPH = {
         "For example, when a group of investment banks work together to bring a new issue of securities to the market, they form a distributing syndicate. Other types of syndicates are created for underwriting, banking, and insurance."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25488,6 +26594,7 @@ const GRAPH = {
         "participating member",
         "syndicate participant"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25510,6 +26617,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25532,6 +26640,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25554,6 +26663,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25576,6 +26686,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25598,6 +26709,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25620,6 +26732,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25642,6 +26755,7 @@ const GRAPH = {
       "detail": "Institutional market data providers Offer real-time and historical market data for various asset classes. They ensure data accuracy and compliance with regulatory standards. They typically provide tools for data visualization and analysis to aid decision-making. They may also facilitate access to proprietary research and market insights. Many such firms provide APIs and other options for ease of integration with trading platforms and risk management systems",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25664,6 +26778,7 @@ const GRAPH = {
       "detail": "Market data providers include exchanges and independent data vendors, among others. Market valuation and related control and risk processes typically require explicit documentation of the source for a given market rate, such as an interest rate benchmark, exchange rate, stock prices, and so forth.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25686,6 +26801,7 @@ const GRAPH = {
       "detail": "A publication can be anything made public by print (such as a newspaper, magazine, pamphlet, letter, telegram, via computer modem or program, or in a poster, brochure or pamphlet), orally, or by broadcast (radio, television).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25708,6 +26824,7 @@ const GRAPH = {
       "detail": "Publishers may also include banks, government agencies and the like.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25730,6 +26847,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25752,6 +26870,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25774,6 +26893,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25796,6 +26916,7 @@ const GRAPH = {
       "detail": "The executive branch executes and enforces the law.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25818,6 +26939,7 @@ const GRAPH = {
       "detail": "A federation is a political entity characterized by a union of partially self-governing states or regions under a central (federal) government. In a federation, the self-governing status of the component states, as well as the division of power between them and the central government, are typically constitutionally entrenched and may not be altered by a unilateral decision of either party, the states or the federal political body.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25840,6 +26962,7 @@ const GRAPH = {
       "detail": "The federated sovereignty is the legal entity that can incur debt for a federal government, as distinct from the Federal government.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25862,6 +26985,7 @@ const GRAPH = {
       "detail": "In the Commonwealth of Nations, the word government is also used more narrowly to refer to the collective group of people that exercises executive authority in a state. This usage is analogous to what is called an 'administration' in American English. Furthermore, especially in American English, the concepts of the state and the government may be used synonymously to refer to the person or group of people exercising authority over a politically organized territory.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25884,6 +27008,7 @@ const GRAPH = {
       "detail": "There is a notable variety of agency types. Although usage differs, a government agency is normally distinct both from a department or ministry, and other types of public body established by government. The functions of an agency are normally executive in character, since different types of organizations (such as commissions) are most often constituted in an advisory role; this distinction is often blurred in practice however.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25906,6 +27031,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25928,6 +27054,7 @@ const GRAPH = {
       "detail": "Identifying government bodies is a pre-requisite for identifying government officials. This information is needed to help ensure compliance with applicable laws relating to bribery or corruption, including the U.S. Foreign Corrupt Practices Act (FCPA), the UK Bribery Act 2010 (UKBA), the U.S. Bank Bribery Act (Bribery Act), and other anti-bribery and corruption laws in the jurisdictions where financial institutions conduct business.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25950,6 +27077,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25974,6 +27102,7 @@ const GRAPH = {
         "Minister of Finance, Secretary of State, Attorney General of California"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -25996,6 +27125,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26018,6 +27148,7 @@ const GRAPH = {
       "detail": "An instrumentality is a non-governmental agency that acts independently but whose obligations are backed by a government because of its role in providing a public service. Many instrumentalities are private companies, and some are chartered directly by government. Instrumentalities are subject to a unique set of laws that shape their activities. Certain organizations, such as Sallie Mae in the United States, may be considered instrumentalities from some perspectives but not others. Sallie Mae's status was changed in 2004, when it was privatized, and since that time it is no longer considered a government-sponsored enterprise (GSE).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26040,6 +27171,7 @@ const GRAPH = {
       "detail": "The judiciary also provides a mechanism for the resolution of disputes. Under the doctrine of the separation of powers, the judiciary generally does not make law (that is, in a plenary fashion, which is the responsibility of the legislature) or enforce law (which is the responsibility of the executive), but rather interprets law and applies it to the facts of each case.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26062,6 +27194,7 @@ const GRAPH = {
       "detail": "Laws enacted by legislatures are known as legislation. Legislatures observe and steer governing actions and usually have exclusive authority to amend the budget or budgets involved in the process.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26086,6 +27219,7 @@ const GRAPH = {
       "synonyms": [
         "municipality"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26108,6 +27242,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26130,6 +27265,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26152,6 +27288,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26176,6 +27313,7 @@ const GRAPH = {
       "synonyms": [
         "local government"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26200,6 +27338,7 @@ const GRAPH = {
         "A country may be divided into provinces, which, in turn, are divided into counties, which, in turn, may be divided in whole or in part into municipalities; and so on."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26222,6 +27361,7 @@ const GRAPH = {
       "detail": "A legal entity that is represented by one centralized government, has a permanent population, defined territory, and the capacity to enter into relations with other sovereign states.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26244,6 +27384,7 @@ const GRAPH = {
       "detail": "A supranational union is a supranational polity which lies somewhere between a confederation that is an association of states and a federation that is a state. Unlike states in a federal super-state, member states retain ultimate sovereignty, although some sovereignty is shared with, or ceded to, the supranational body.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26266,6 +27407,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26288,6 +27430,7 @@ const GRAPH = {
       "detail": "Any indigenous group or community which is recognized as having rights and obligations independent of the central government.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26310,6 +27453,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26332,6 +27476,7 @@ const GRAPH = {
       "detail": "This is a US-specific type of non-profit corporation defined in recent legislation in a number of states. In California, for example, benefit corporations may be defined as public benefit or mutual benefit corporations, depending on their purpose.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26354,6 +27499,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26378,6 +27524,7 @@ const GRAPH = {
         "http://www.dre.ca.gov/files/pdf/re39.pdf"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26402,6 +27549,7 @@ const GRAPH = {
       "synonyms": [
         "body corporate"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26424,6 +27572,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26446,6 +27595,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26468,6 +27618,7 @@ const GRAPH = {
       "detail": "This may be the issuance of shares, the existence of some agreement, guaranties and so on.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26490,6 +27641,7 @@ const GRAPH = {
       "detail": "1. In the UK, the original (17th century) name for a corporation in which the liability of the owners is limited to the nominal value of the stock (shares) held by them. 2. In the US, a joint stock company is similar to a corporation, but with unlimited liability for the shareholders. Investors in a US joint stock company receive stock (shares) which can be transferred, and can elect a board of directors, but are jointly-and-severally liable for the company's debts and obligations. A US joint stock company cannot hold title to a real property.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26514,6 +27666,7 @@ const GRAPH = {
       "synonyms": [
         "non-profit corporation"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26539,6 +27692,7 @@ const GRAPH = {
         "closed corporation",
         "privately held corporation"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26561,6 +27715,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26583,6 +27738,7 @@ const GRAPH = {
       "detail": "A registration identifier may be required for official communications and is publicly available. The relationship to the jurisdiction in which the organization is organized or registered is typically required, but is optional here to cover cases where jurisdictions may overlap or are not as clearly defined.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26605,6 +27761,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26627,6 +27784,7 @@ const GRAPH = {
       "detail": "Often religious corporations are recognized under the law on a sub-national level, for instance by a state or provincial government. The government agency responsible for regulating such corporations is usually the official holder of records, for instance a state department of corporations.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26649,6 +27807,7 @@ const GRAPH = {
       "detail": "The shares in a stock corporation may receive a return on their investment in the form of dividends. Shares are used for voting on matters of corporate policy or to elect directors, at the corporation's annual meeting and at other meetings of the corporation.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26671,6 +27830,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26693,6 +27853,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26715,6 +27876,7 @@ const GRAPH = {
       "detail": "In a joint venture, each of the participants is responsible for profits, losses, and costs associated with it. However, the venture is its own entity, separate from the participants' other business interests.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26739,6 +27901,7 @@ const GRAPH = {
       "synonyms": [
         "NGO"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26763,6 +27926,7 @@ const GRAPH = {
       "synonyms": [
         "non-profit organization"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26785,6 +27949,7 @@ const GRAPH = {
       "detail": "Also covers the aims and purposes of the Entity.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26811,6 +27976,7 @@ const GRAPH = {
         "VAT registration number",
         "VATIN"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26833,6 +27999,7 @@ const GRAPH = {
       "detail": "There are many types of business entities defined in the legal systems of various countries. These include corporations, cooperatives, partnerships, sole proprietorships, sole traders, limited liability companies, certain trusts and trust companies, and so forth. The rules vary by country and by state or province. Some of the more widely recognized types in the US, UK, and EU are defined in FIBO, by region. However, the regulations governing particular types of entity, even those described as roughly equivalent, differ from jurisdiction to jurisdiction.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26855,6 +28022,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26879,6 +28047,7 @@ const GRAPH = {
         "Anything with 'Royal Institute' in the name. Also universities are generally set up by royal charter in a monarchy or principality, (often pre-dating any Privy Council i.e. directly be the monarch in the case of older universities). The Bank of England and the British Broadcasting Council (BBC) are also incorporated through Royal Charter."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26901,6 +28070,7 @@ const GRAPH = {
       "detail": "The definition of mental competence, and potentially of the age of majority, is a function of the situation and law in a given jurisdiction.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26925,6 +28095,7 @@ const GRAPH = {
       "synonyms": [
         "nonprofit objective"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26947,6 +28118,7 @@ const GRAPH = {
       "detail": "The appointment can be effective immediately or if the principal is unable to make decisions or perform certain actions on their own. It may be a (1) general power of attorney that authorizes the agent to act generally on behalf of the principal, such as to transfer funds from one account to another, pay debts, make investments, and so forth, or (2) limited to a specific act or situation, such as for management of an individual's finances in a single account, such as a brokerage account, or for management of healthcare. Decisions made and actions taken by an attorney in fact (within the scope of his or her authority) are legally binding on the principal.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26972,6 +28144,7 @@ const GRAPH = {
         "for profit objective",
         "profit motive"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -26996,6 +28169,7 @@ const GRAPH = {
       "synonyms": [
         "public interest"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27018,6 +28192,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27044,6 +28219,7 @@ const GRAPH = {
         "SPV",
         "special purpose entity"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27066,6 +28242,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27091,6 +28268,7 @@ const GRAPH = {
         "VIE",
         "shell company"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27113,6 +28291,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27135,6 +28314,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27157,6 +28337,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27179,6 +28360,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27201,6 +28383,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27223,6 +28406,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27245,6 +28429,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27267,6 +28452,7 @@ const GRAPH = {
       "detail": "Note that the GLEIF data includes multiple LEIs for some entities due to corporate actions or other situations. The duplicates are typically archived after some period of time, but in order to reflect the reality in the data, the restriction is modeled as someValuesFrom rather than exactly 1 LEI for a given entity.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27289,6 +28475,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27311,6 +28498,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27333,6 +28521,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27355,6 +28544,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27377,6 +28567,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27399,6 +28590,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27421,6 +28613,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27443,6 +28636,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27467,6 +28661,7 @@ const GRAPH = {
         "a silent partner, i.e. where someone has made a large investment, which is bilateral (not part of the constitutional framework of the company)"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27489,6 +28684,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27511,6 +28707,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27533,6 +28730,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27555,6 +28753,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27577,6 +28776,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27599,6 +28799,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27621,6 +28822,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27643,6 +28845,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27665,6 +28868,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27687,6 +28891,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27709,6 +28914,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27731,6 +28937,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27753,6 +28960,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27775,6 +28983,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27797,6 +29006,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27819,6 +29029,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27841,6 +29052,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27863,6 +29075,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27885,6 +29098,7 @@ const GRAPH = {
       "detail": "Note that the concept of significance varies depending on the jurisdiction, and particularly with respect to reporting requirements. For example, in some cases, three (3) percent ownership of any class or series of shares is considered significant, and in others it means more than five or ten percent of the total combined voting power across all classes of securities.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27907,6 +29121,7 @@ const GRAPH = {
       "detail": "A subsidiary is a separate, distinct legal entity from its parent company(ies) for the purposes of taxation, regulatory compliance, and with respect to liability.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27931,6 +29146,7 @@ const GRAPH = {
       "synonyms": [
         "parent company"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27953,6 +29169,7 @@ const GRAPH = {
       "detail": "A voting shareholder may exercise control over board composition by (1) attending a shareholder meeting and voting directly, (2) assigning a proxy to vote on their behalf, either as specified in the recommendations made in the proxy card or as indicated in a manner that deviates from those recommendations but is detailed on the proxy card, (3) by rejection of the proxy, either implicitly or explicitly, or (4) through a direct ballot that they create themselves.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27975,6 +29192,7 @@ const GRAPH = {
       "detail": "From World Bank Report: In identifying the beneficial owner, the focus should be on two factors: the control exercised and the benefit derived. Control of a corporate vehicle will always depend on context, as control can be exercised in many different ways, including through ownership, contractually or informally. The Financial Action Task Force on Money Laundering (FATF) refers to a 'beneficial owner' as the natural person(s) who ultimately owns or controls a legal entity and/or the natural person on whose behalf a transaction is being conducted. It also includes those persons who exercise ultimate effective control over a legal person or arrangement. The National Credit Union Administration (NCUA) defines a 'beneficial owner' as (1) a single individual with significant responsibility to control, manage or direct a legal entity customer, or (2) each individual, if any, who, directly or indirectly, through any contract, arrangement, understanding, relationship or otherwise, owns 25 percent or more of the equity interests of a legal entity customer; if a trust owns directly or indirectly, through any contract, arrangement, understanding, relationship or otherwise, 25 percent or more of the equity interests of a legal entity customer, the beneficial owner is the trustee. Use of a nominee (who may be an agent, custodian, or a trustee) does not change the position regarding tax reporting and tax liability, and the beneficial owner remains responsible.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -27997,6 +29215,7 @@ const GRAPH = {
       "detail": "Beneficial ownership may be shared among a group of individuals. If a beneficial owner acquires a position of more than 5 percent in the United States, it must file Schedule 13D or 13G under Section 12 of the Securities Exchange Act of 1934.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28021,6 +29240,7 @@ const GRAPH = {
         "Buying 100 shares of Apple on Jan 10 at $150/share is one purchase lot; buying 50 more shares on Mar 15 at $160/share is another purchase lot."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28045,6 +29265,7 @@ const GRAPH = {
       "synonyms": [
         "stockholder"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28067,6 +29288,7 @@ const GRAPH = {
       "detail": "Shareholding refers to the total ownership a party has in some organization, and determines voting power, dividend entitlement, and exposure to risk.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28089,6 +29311,7 @@ const GRAPH = {
       "detail": "Tax lots reflect how shares or other assets are tracked for capital gains and may be adjusted by events including: - reinvested dividends (creates very small, new tax lots); - stock splits or mergers (adjusts basis, may create fractional lots); - Wash sale rules (can change which lots are recognized). When an investor sells, they select which tax lot to sell (specific ID, FIFO, etc.), which determines realized gain or loss.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28113,6 +29336,7 @@ const GRAPH = {
       "synonyms": [
         "articles of association"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28135,6 +29359,7 @@ const GRAPH = {
       "detail": "An auditor is authorized to audit one or more specific organizations, i.e., by the authorizing party indicated by the situation. An auditor may be an internal auditor - an individual whose primary job function is to audit his or her own company, or an external auditor - an individual from outside the company, who typically is employed by an auditing firm who handles many different clients.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28157,6 +29382,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28179,6 +29405,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28201,6 +29428,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28223,6 +29451,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28245,6 +29474,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28267,6 +29497,7 @@ const GRAPH = {
       "detail": "For a public, for profit organization, its members (directors) are elected normally by the subscribers (stockholders) of the firm (generally at an annual general meeting) to govern the firm and look after the subscribers' interests. In the case of a not-for-profit organization, the board ensures the organization is acting in line with its mission. The board has the ultimate decision-making authority and, in general, is empowered to (1) set the company's policy, objectives, and overall direction, (2) adopt bylaws, (3) name members of the advisory, executive, finance, and other committees, (4) hire, monitor, evaluate, and fire the managing director and senior executives, (5) determine and pay the dividend, and (6) issue additional shares. Though all its members might not be engaged in the company's day-to-day operations, the entire board is held liable (under the doctrine of collective responsibility) for the consequences of the firm's policies, actions, and failures to act. Members of the board usually include senior-most executives (called inside directors or executive directors) as well as experts or respected persons chosen from the wider community (called outside directors or non-executive directors).",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28292,6 +29523,7 @@ const GRAPH = {
         "byelaws",
         "membership agreement"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28316,6 +29548,7 @@ const GRAPH = {
       "synonyms": [
         "CEO"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28340,6 +29573,7 @@ const GRAPH = {
       "synonyms": [
         "CFO"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28364,6 +29598,7 @@ const GRAPH = {
       "synonyms": [
         "corporate law"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28388,6 +29623,7 @@ const GRAPH = {
       "synonyms": [
         "corporate secretary"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28410,6 +29646,7 @@ const GRAPH = {
       "detail": "The nominee is typically the registered owner of an asset, named in official records.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28432,6 +29669,7 @@ const GRAPH = {
       "detail": "Corporate bylaws may contain any provision, not inconsistent with law or with the certificate of incorporation, relating to the business of the corporation, the conduct of its affairs, and its rights or powers or the rights or powers of its stockholders, directors, officers or employees. Changes to the bylaws of a corporation require a board-level resolution and may require a vote of the shareholders.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28456,6 +29694,7 @@ const GRAPH = {
         "Corporate officers may include a Chief Executive Officer (CEO), Chief Financial Officer (CFO), president, vice president(s), and in some cases a Chief Operating Officer (COO), Chief Compliance Officer (CCO), or other executive responsible for a critical function in the organization."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28478,6 +29717,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28502,6 +29742,7 @@ const GRAPH = {
       "synonyms": [
         "inside director"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28524,6 +29765,7 @@ const GRAPH = {
       "detail": "An external auditor is an individual or organization from outside the company, who typically is employed by an auditing firm that handles many different clients.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28546,6 +29788,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28570,6 +29813,7 @@ const GRAPH = {
       "synonyms": [
         "outside director"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28592,6 +29836,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28614,6 +29859,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28636,6 +29882,7 @@ const GRAPH = {
       "detail": "Typically this would be share ownership or the holding of partnership equity. Ownership in this 'constitutional' sense means that the owner is in some way a member of the organization, such as an employee or director, as distinct from some outside investor.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28658,6 +29905,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28680,6 +29928,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28702,6 +29951,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28724,6 +29974,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28746,6 +29997,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28768,6 +30020,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28790,6 +30043,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28812,6 +30066,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28834,6 +30089,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28856,6 +30112,7 @@ const GRAPH = {
       "detail": "Note that although typically a general partner is a person, in the context of certain funds, such as private equity, a general partner may be a firm that manages the fund.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28880,6 +30137,7 @@ const GRAPH = {
       "synonyms": [
         "GP"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28904,6 +30162,7 @@ const GRAPH = {
       "synonyms": [
         "LLLP"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28931,6 +30190,7 @@ const GRAPH = {
       "synonyms": [
         "LLP"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28953,6 +30213,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -28979,6 +30240,7 @@ const GRAPH = {
       "synonyms": [
         "LP"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29001,6 +30263,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29023,6 +30286,7 @@ const GRAPH = {
       "detail": "Partnerships exist in many countries world-wide. Examples of the laws related to the establishment and operation of partnerships include the Partnership Act of 1890 in the United Kingdom and the Uniform Partnership Act in the United States. Whether or not partnerships are established through, for example, incorporation, depends on the jurisdiction. Partnerships typically not corporations in the US, but can be in Australia and Ghana. See https://legalvision.com.au/what-are-incorporated-limited-partnerships/ and http://swiftlaw.co/incorporated-partnership/ for additional details.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29047,6 +30311,7 @@ const GRAPH = {
       "synonyms": [
         "articles of partnership"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29071,6 +30336,7 @@ const GRAPH = {
       "synonyms": [
         "LLC"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29093,6 +30359,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29117,6 +30384,7 @@ const GRAPH = {
       "synonyms": [
         "C-LLC"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29139,6 +30407,7 @@ const GRAPH = {
       "detail": "If no members are interested in managing the LLC, an external manager (someone who doesn't own any portion of the LLC) can be hired to run the business operations, including, in some jurisdictions, a third-party entity, such as another company.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29161,6 +30430,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29183,6 +30453,7 @@ const GRAPH = {
       "detail": "A private company with limited liability, although a business entity, is not a corporation. The primary characteristic this legal form shares with a corporation is limited liability, and the primary characteristic it shares with a partnership is the availability of pass-through income taxation. It is often more flexible than a corporation, and it is well-suited for companies with a single owner.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29207,6 +30478,7 @@ const GRAPH = {
       "synonyms": [
         "Ltd."
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29232,6 +30504,7 @@ const GRAPH = {
         "sole owner",
         "sole trader"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29254,6 +30527,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29276,6 +30550,7 @@ const GRAPH = {
       "detail": "Irrevocable trusts also offer asset protection from future creditors and lawsuits.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29298,6 +30573,7 @@ const GRAPH = {
       "detail": "A living trust is designed to allow for the easy transfer of the trust creator or settlor's assets while bypassing the often complex and expensive legal process of probate. Living trust agreements designate a trustee who holds legal possession of assets and property that flow into the trust.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29320,6 +30596,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29342,6 +30619,7 @@ const GRAPH = {
       "detail": "A will could have more than one testamentary trust. The trustee named is responsible for managing and distributing the trustor's assets to the beneficiaries as directed in the will. Sometimes called a will trust, the testamentary trust is irrevocable.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29364,6 +30642,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29390,6 +30669,7 @@ const GRAPH = {
         "trust document",
         "trust instrument"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29412,6 +30692,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29434,6 +30715,7 @@ const GRAPH = {
       "detail": "The trustee is legally obliged to make all trust-related decisions with the beneficiary's interests in mind, and may be liable for damages in the event of not doing so. Trustees may be entitled to a payment for their services, if specified in the trust agreement. In the specific case of the bond market, a trustee administers a bond issue for a borrower, and ensures that the issuer meets all the terms and conditions associated with the borrowing.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29456,6 +30738,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29481,6 +30764,7 @@ const GRAPH = {
         "grantor",
         "settlor"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29503,6 +30787,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29525,6 +30810,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29547,6 +30833,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29569,6 +30856,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29593,6 +30881,7 @@ const GRAPH = {
         "party with a fiduciary responsibility such as a signatory, an examiner, registrar, obligor, payee, etc."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29617,6 +30906,7 @@ const GRAPH = {
       "synonyms": [
         "characteristic"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29639,6 +30929,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29663,6 +30954,7 @@ const GRAPH = {
         "The classifier 'color' embraces characteristics being red, blue, green, etc. The classifier 'material' embraces characteristics made of wood, metal, etc."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29687,6 +30979,7 @@ const GRAPH = {
         "An example of a code set that has multiple versions are the International Statistical Classification of Diseases and Related Health Problems (ICD) codes such as ICD-9, ICD-10, and so forth, that specify the same codes across multiple versions."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29711,6 +31004,7 @@ const GRAPH = {
       "synonyms": [
         "coding scheme"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29735,6 +31029,7 @@ const GRAPH = {
         "Examples include designs, schema, models, methodologies, alphabetical or numeric ordering, and the like."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29757,6 +31052,7 @@ const GRAPH = {
       "detail": "Users should use either comprises or hasPart, or one of their respective subproperties, to include things in a collection.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29779,6 +31075,7 @@ const GRAPH = {
       "detail": "Users should use either isIncludedIn or isPartOf, or one of their respective subproperties, to include a constituent in a collection.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29803,6 +31100,7 @@ const GRAPH = {
         "Examples include collections organized thematically, alphabetically, by method used to develop them, according to time and/or version, or based on encoding schemes such as the Dewey Decimal System or Library of Congress Subject Headings."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29825,6 +31123,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29847,6 +31146,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29869,6 +31169,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29891,6 +31192,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29913,6 +31215,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29939,6 +31242,7 @@ const GRAPH = {
         "For a fictional business identifier, the rule used to parse a composite identifier might be fibo-fnd-arr-id:parseRegex 'RA([0-9]{6})-([0-9A-Z]*)', and fibo-fnd-arr-id:constructRegex '$1-$2', where RA represents a text value corresponding to the registration authority for the business identifier."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29961,6 +31265,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -29983,6 +31288,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30005,6 +31311,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30029,6 +31336,7 @@ const GRAPH = {
       "synonyms": [
         "time stamp"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30051,6 +31359,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30073,6 +31382,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30095,6 +31405,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30117,6 +31428,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30139,6 +31451,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30161,6 +31474,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30183,6 +31497,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30210,6 +31525,7 @@ const GRAPH = {
         "instant in time",
         "time point"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30235,6 +31551,7 @@ const GRAPH = {
         "the lifetime of Henry V"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30257,6 +31574,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30279,6 +31597,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30303,6 +31622,7 @@ const GRAPH = {
       "synonyms": [
         "designator"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30325,6 +31645,7 @@ const GRAPH = {
       "detail": "Note that unlike symbols and other designations, a name is explicitly not linguistically neutral.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30347,6 +31668,7 @@ const GRAPH = {
       "detail": "A certificate may or may not also be a legal document, depending on the issuing authority and how it can be used. Certificates, such as electronic certificates, including public keys, may be issued by some certificate authority.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30369,6 +31691,7 @@ const GRAPH = {
       "detail": "A document, especially a legal document, may serve to establish one or several facts, and can be relied upon as a proof thereof. This definition of document corresponds to a subclass of expression in FRBR. The notion of being a unitary expression is the differentiator between an FRBR expression and document in this sense.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30391,6 +31714,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30415,6 +31739,7 @@ const GRAPH = {
         "Examples include some certificates, deeds, bonds, business documents (such as articles of incorporation, bylaws, partnership agreements), contracts, certain identity documents, wills, trusts, legislative acts, notarial acts, court writs or processes (such as related complaints and pleadings in the context of litigation as well as other documents relevant to some legal issue), and any law passed by a competent legislative body in municipal (domestic) or international law."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30439,6 +31764,7 @@ const GRAPH = {
         "registered trademark notice, disclaimer, copyright notice, overdue notice, recall notice"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30461,6 +31787,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30483,6 +31810,7 @@ const GRAPH = {
       "detail": "In linguistics, a reference characterizes, provides context for, or specifies the relationship of one linguistic expression to another, i.e., provides the information necessary to interpret the dependent expression. References may be rendered in the form of a document, but may also take other forms, such as reference materials, scientific equations, and constants, including in some cases physical things, used as the basis for units of measure.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30505,6 +31833,7 @@ const GRAPH = {
       "detail": "A reference document is typically one that provides pertinent details for consultation about a subject.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30529,6 +31858,7 @@ const GRAPH = {
       "synonyms": [
         "spec"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30551,6 +31881,7 @@ const GRAPH = {
       "detail": "A technical specification is a specification expressing technical requirements, such as one for designing and developing a solution to be implemented.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30573,6 +31904,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30595,6 +31927,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30617,6 +31950,7 @@ const GRAPH = {
       "detail": "Note that business centers, as defined in FpML, are intended for use in specifying the business calendar used by that municipality, or by certain organizations located in that municipality.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30639,6 +31973,7 @@ const GRAPH = {
       "detail": "It may be an independent sovereign state or part of a larger state, as a non-sovereign or formerly sovereign political division, a physical territory with a government, or a geographic region associated with sets of previously independent or differently associated peoples with distinct political characteristics.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30661,6 +31996,7 @@ const GRAPH = {
       "detail": "In the US, the US Census Bureau and other federal agencies may group some number of other subdivisions for statistical analysis and reporting purposes, ranging from multiple states to minor civil divisions.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30683,6 +32019,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30707,6 +32044,7 @@ const GRAPH = {
         "Examples include the District of Columbia in the US, and the Canberra area in Australia."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30733,6 +32071,7 @@ const GRAPH = {
         "province",
         "state"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30757,6 +32096,7 @@ const GRAPH = {
         "The three most widely used systems for indicating point locations in the United States are (1) latitude and longitude [and optionally elevation], (2) Universal Transverse Mercator (UTM) system, and (3) State Plane Coordinate Systems (SPCS)."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30779,6 +32119,7 @@ const GRAPH = {
       "detail": "A region may be defined by natural or artificial features, and may be described as part of a country or the world having definable characteristics but not always fixed boundaries. Many cases in which a geographic region, or subclass thereof, is mapped to certain applications or a relational store, or where codes are used to identify the region, require a class to represent the name of the region. In such situations, attributes of the name, such as the dates when a particular name was in use, or was valid under certain circumstances, may be important. For other applications, such as for addressing, a text value may be required. Thus, both options are provided here, with a preference for use of the full class option, depending on the use case.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30801,6 +32142,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30823,6 +32165,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30845,6 +32188,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30869,6 +32213,7 @@ const GRAPH = {
         "A geopolitical entity may be any country, federal province, city or other administrative unit that represents a geophysical location"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30891,6 +32236,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30915,6 +32261,7 @@ const GRAPH = {
         "A municipality can be any political jurisdiction from a sovereign state, such as the Principality of Monaco, or a small village, such as West Hampton Dunes, New York."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30937,6 +32284,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30959,6 +32307,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -30981,6 +32330,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31005,6 +32355,7 @@ const GRAPH = {
         "a network-based location without geographic boundaries"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31027,6 +32378,7 @@ const GRAPH = {
       "detail": "Capabilities are described in terms of outcomes as well as the roles involved in achieving those outcomes. The ability for an organization to perform or provide some capability may involve people with particular skills and knowledge, intellectual property, defined practices, operating facilities, tools and equipment.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31049,6 +32401,7 @@ const GRAPH = {
       "detail": "In contrast with capability, the concept of capacity is constrained by upper limits on resources including time and within some context, in addition to having the ability to do so if circumstances allow.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31073,6 +32426,7 @@ const GRAPH = {
         "Examples include a corporation, charity, government or church."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31095,6 +32449,7 @@ const GRAPH = {
       "detail": "A bridge club with officers and a bank account can be classified as an informal organization, but it depends on how the club is structured and whether it has taken steps to formalize its existence. If the bridge club has officers and a bank account but has not incorporated or registered as a legal entity (like a nonprofit organization or a corporation), it would be considered an informal organization. The officers manage the club's affairs, and the bank account is likely opened under the names of the officers or with the designation 'on behalf of the bridge club'. There is usually no formal registration with governmental authorities, and the group operates based on mutual agreement among its members rather than a formal legal structure.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31124,6 +32479,7 @@ const GRAPH = {
         "juridical person",
         "juristic person"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31146,6 +32502,7 @@ const GRAPH = {
       "detail": "To have legal personality means to be capable of having legal rights and duties within a certain legal system, such as to enter into contracts, sue, and be sued. Legal personality is a prerequisite to legal capacity, the ability of any legal person to amend (enter into, transfer, etc.) rights and obligations.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31168,6 +32525,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31190,6 +32548,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31214,6 +32573,7 @@ const GRAPH = {
         "This may be a business entity, government, international organization, not-for-profit, academic institution, or other unincorporated and/or informal social organization."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31238,6 +32598,7 @@ const GRAPH = {
       "synonyms": [
         "organization part"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31260,6 +32621,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31282,6 +32644,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31304,6 +32667,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31326,6 +32690,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31351,6 +32716,7 @@ const GRAPH = {
         "OPI",
         "organization part identifier"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31375,6 +32741,7 @@ const GRAPH = {
         "Services include intangible products, such as accounting, banking, cleaning, consultancy, education, insurance, expertise, medical treatment, or transportation services."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31399,6 +32766,7 @@ const GRAPH = {
         "Example services may include consulting, financial, legal, real estate, education, communications, registration, regulatory, manufacturing, storage, processing, or other services."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31423,6 +32791,7 @@ const GRAPH = {
         "Examples include owner, controlling party, beneficiary, guarantor, partner in a partnership, shareholder, etc."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31445,6 +32814,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31467,6 +32837,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31491,6 +32862,7 @@ const GRAPH = {
       "synonyms": [
         "independent party"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31515,6 +32887,7 @@ const GRAPH = {
         "Examples include organization member, employee, issuer, owner, partner in a partnership, shareholder, and so forth."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31539,6 +32912,7 @@ const GRAPH = {
         "Examples include ownership, control, possession, affiliation, beneficial ownership, employment, and other similar situations."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31561,6 +32935,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31585,6 +32960,7 @@ const GRAPH = {
         "Examples include something that is owned or controlled."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31607,6 +32983,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31634,6 +33011,7 @@ const GRAPH = {
         "base quantity",
         "simple quantity kind"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31660,6 +33038,7 @@ const GRAPH = {
       "synonyms": [
         "simple unit"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31684,6 +33063,7 @@ const GRAPH = {
         "If the meter, the second, and the mole are base units, the mole per cubic meter is the coherent derived unit of amount-of-substance concentration when amount-of-substance concentration is defined by the quantity equation c = n/V. The kilometer per hour and the knot, given as examples of derived units, are not coherent derived units in such a system of quantities."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31706,6 +33086,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31728,6 +33109,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31750,6 +33132,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31775,6 +33158,7 @@ const GRAPH = {
         "'hour of day' with modulus = 24 and unit 'hour'"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31799,6 +33183,7 @@ const GRAPH = {
         "In a system of quantities having the base quantities length and mass, mass density is a derived quantity defined as the quotient of mass and volume (length to the power three)."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31823,6 +33208,7 @@ const GRAPH = {
         "The meter per second, symbol m/s, and the centimeter per second, symbol cm/s, are derived units of speed in the SI. The kilometer per hour, symbol km/h, is a measurement unit of speed outside the SI but accepted for use with the SI. The knot, equal to one nautical mile per hour, is a measurement unit of speed outside the SI."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31849,6 +33235,7 @@ const GRAPH = {
       "synonyms": [
         "quantity of dimension one"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31871,6 +33258,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31893,6 +33281,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31917,6 +33306,7 @@ const GRAPH = {
         "Celsius and Fahrenheit are examples of interval scales: they represent equality or inequality among intervals of temperature, but not ratios of temperature, because their zero points are arbitrary. Rating scales, where it is assumed that the distances between the single expressions of evaluation (score) are equal, are also interval scales with no natural zero point."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31941,6 +33331,7 @@ const GRAPH = {
         "A logarithmic scale (or log scale) is a way of displaying numerical data over a very wide range of values in a compact way - typically the largest numbers in the data are hundreds or even thousands of times larger than the smallest numbers. Such a scale is nonlinear: the numbers 10 and 20, and 60 and 70, are not the same distance apart on a log scale. Rather, the numbers 10 and 100, and 60 and 600 are equally spaced. Thus moving a unit of distance along the scale means the number has been multiplied by 10 (or some other fixed factor)."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31965,6 +33356,7 @@ const GRAPH = {
         "Ruler, standard weight, volume measure"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -31987,6 +33379,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32014,6 +33407,7 @@ const GRAPH = {
         "SOP",
         "standard operating procedure"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32036,6 +33430,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32060,6 +33455,7 @@ const GRAPH = {
       "synonyms": [
         "quantity-value scale"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32086,6 +33482,7 @@ const GRAPH = {
       "synonyms": [
         "unit of measurement"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32110,6 +33507,7 @@ const GRAPH = {
         "Many nominal scales are qualitative in nature. A common example of a nominal scale is that of gender identity, which is a way of describing one's persistent inner concept of their gender. While the terminology from a psychological and medical perspective continues to evolve, the scale covers individuals who self identify as male or female as well as those that have a less determinant perspective, such as transsexual or non-binary."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32137,6 +33535,7 @@ const GRAPH = {
         "ordinal quantity-value scale",
         "ordinal value scale"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32159,6 +33558,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32183,6 +33583,7 @@ const GRAPH = {
       "synonyms": [
         "physical unit of measurement"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32205,6 +33606,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32227,6 +33629,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32252,6 +33655,7 @@ const GRAPH = {
         "dimension",
         "dimension of a quantity"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32280,6 +33684,7 @@ const GRAPH = {
       "synonyms": [
         "kind of quantity"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32302,6 +33707,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32324,6 +33730,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32348,6 +33755,7 @@ const GRAPH = {
       "synonyms": [
         "rate"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32372,6 +33780,7 @@ const GRAPH = {
         "The Kelvin scale is a ratio scale, as are the familiar scales representing mass in kilograms, length in meters and duration in seconds."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32394,6 +33803,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32416,6 +33826,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32440,6 +33851,7 @@ const GRAPH = {
         "second, kilogram, joule, meter"
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32465,6 +33877,7 @@ const GRAPH = {
         "measurement",
         "value of a quantity"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32487,6 +33900,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32511,6 +33925,7 @@ const GRAPH = {
         "The International System of Quantities (ISQ) is an example of a SystemOfQuantities, defined in ISO 31 and ISO/IEC 80000."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32533,6 +33948,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32555,6 +33971,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32577,6 +33994,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32599,6 +34017,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32621,6 +34040,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32643,6 +34063,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32667,6 +34088,7 @@ const GRAPH = {
       "synonyms": [
         "RA"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32689,6 +34111,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32711,6 +34134,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32733,6 +34157,7 @@ const GRAPH = {
       "detail": "Electronic registries typically contain a unique identifier for each entry, so that individual records can be referenced from other documents and registries.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32757,6 +34182,7 @@ const GRAPH = {
       "synonyms": [
         "registry item"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32779,6 +34205,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32807,6 +34234,7 @@ const GRAPH = {
         "regulatory authority",
         "regulatory body"
       ],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32829,6 +34257,7 @@ const GRAPH = {
       "detail": "Such a report may be needed for licensing, monitoring, taxation, or for other purposes that demonstrate the integrity, fairness, safety, or other capacity of a given industry, organization, or product.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32851,6 +34280,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32873,6 +34303,7 @@ const GRAPH = {
       "detail": "The composition may be specified based on the roles that the things play in the composition, such as the roles that various ingredients play in a recipe or pharmaceutical product, and such things may or may not be transformed in some way through the process of combining them. Quantification including the nature and amount of each thing, potentially including the ratio of the quantities, may be required depending kind of composition. The properties hasConstituent and hasRole are included in value restrictions rather than via number restrictions to facilitate their use in complex property chains and other axioms as needed for some applications.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32895,6 +34326,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32917,6 +34349,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32939,6 +34372,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32961,6 +34395,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -32983,6 +34418,7 @@ const GRAPH = {
       "detail": "A facility may be concrete (as in a manufacturing facility) or abstract. Concrete facilities may be permanent, semi-permanent, or temporary structures, providing one or more capabilities at a given site. A single site may include multiple facilities and a given facility may span multiple sites.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -33007,6 +34443,7 @@ const GRAPH = {
         "Example facilities that may situated at some site include structures and buildings, an archeological dig, the landing location for an aircraft or spacecraft, and the site of a wound. A given site may accommodate multiple facilities."
       ],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -33029,6 +34466,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -33051,6 +34489,7 @@ const GRAPH = {
       "detail": "In some cases, such as in the case of unimproved land that may be owned by a government but without improvements, there may not be an address. Such a description typically includes a detailed, quantitative specification for that region specified using a prescribed coordinate and/or mapping system and/or a narrative description, such as 'metes and bounds', which provides a qualitative, but less precise, legal description of the location. The system(s) used to describe the tract are specified in local, regional, and national law.",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [
@@ -33073,6 +34512,7 @@ const GRAPH = {
       "detail": "",
       "examples": [],
       "synonyms": [],
+      "detailProvenance": "fibo",
       "examplesProvenance": "fibo",
       "definitionProvenance": "fibo",
       "refs": [

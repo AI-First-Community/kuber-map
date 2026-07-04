@@ -5,6 +5,8 @@ description: "an obligation or duty that is enforceable by a court"
 resource: https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation
 tags: [FND, Release]
 core: true
+detail: "The borrower's court-enforceable duty to repay under the credit agreement; failure gives the lender legal remedies, including foreclosure of the collateral."
+detail_provenance: curated
 examples:
   - "The borrower's court-enforceable duty to repay the mortgage."
 examples_provenance: curated

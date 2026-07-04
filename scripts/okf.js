@@ -184,6 +184,7 @@ function build() {
       level: CONFIG.MATURITY_LEVEL[maturity] || 3, maturity: maturity || 'n/a',
       core: fm.core === true, summary: fm.description || '',
       detail: fm.detail || '', examples: fm.examples || [], synonyms: fm.synonyms || [],
+      detailProvenance: fm.detail_provenance || 'fibo',
       examplesProvenance: fm.examples_provenance || 'fibo',
       definitionProvenance: fm.definition_provenance || 'fibo',
       // The FIBO IRI is the audit citation — surfaced in the panel's References section.

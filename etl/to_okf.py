@@ -71,7 +71,22 @@ def load_examples(paths):
     return out
 
 
-def emit(rec, is_core=False, curated_def=False, curated_examples=False):
+def load_notes(paths):
+    """Curated explanatory notes per concept: iri -> note. Applied as `detail` only where FIBO
+    ships no explanatoryNote; marked provenance curated."""
+    out = {}
+    for path in paths:
+        try:
+            data = json.load(open(path))
+        except (OSError, json.JSONDecodeError):
+            continue
+        for e in data.get("notes", []):
+            if e.get("iri") and e.get("note"):
+                out[e["iri"]] = e["note"]
+    return out
+
+
+def emit(rec, is_core=False, curated_def=False, curated_examples=False, curated_detail=None):
     tags = [rec["cluster"]] + ([rec["maturity"]] if rec["maturity"] else [])
     out = ["---", "type: FIBO Class", f'title: "{yaml_1line(rec["title"])}"']
     if rec["description"]:
@@ -81,9 +96,13 @@ def emit(rec, is_core=False, curated_def=False, curated_examples=False):
     out += [f'resource: {rec["iri"]}', f'tags: [{", ".join(tags)}]']
     if is_core:
         out.append("core: true")
-    # Richer FIBO annotations for the detail card: explanatory/usage notes, examples, synonyms.
+    # Richer content for the detail card: FIBO explanatory notes where present, else a curated
+    # note; plus examples and synonyms.
     if rec.get("explanatory"):
         out.append(f'detail: "{yaml_1line(" ".join(rec["explanatory"]))}"')
+    elif curated_detail:
+        out.append(f'detail: "{yaml_1line(curated_detail)}"')
+        out.append("detail_provenance: curated")
     for key in ("examples", "synonyms"):
         vals = rec.get(key) or []
         if vals:
@@ -113,14 +132,15 @@ def main():
     ap.add_argument("--clusters", nargs="+", default=["FND", "LOAN"])
     ap.add_argument("--curation", nargs="+",
                     default=["curation/loan-origination.json", "curation/definitions.json",
-                             "curation/examples.json"],
-                    help="curation JSON: `core:` stamps core; `definitions:`/`examples:` overlay content")
+                             "curation/examples.json", "curation/notes.json"],
+                    help="curation JSON: `core:` stamps core; `definitions:`/`examples:`/`notes:` overlay content")
     args = ap.parse_args()
     keep = set(args.clusters)
     curation_paths = [p for pat in args.curation for p in glob.glob(pat)] or args.curation
     core_iris = load_core_iris(curation_paths)
     definitions = load_definitions(curation_paths)
     examples = load_examples(curation_paths)
+    notes = load_notes(curation_paths)
 
     records = [r for r in json.load(open(args.inp)) if r["cluster"] in keep]
     seen_paths = {}
@@ -141,12 +161,15 @@ def main():
                 r = {**r, "description": override}  # local copy; also flows to the index
                 curated_def = True
                 curated_defs += 1
-        # Curated examples fill in where FIBO supplies none (provenance kept distinct).
+        # Curated examples/notes fill in where FIBO supplies none (provenance kept distinct).
         curated_examples = False
         ex_override = examples.get(r["iri"])
         if ex_override and not (r.get("examples") or []):
             r = {**r, "examples": ex_override}
             curated_examples = True
+        curated_detail = None
+        if not (r.get("explanatory") or []):
+            curated_detail = notes.get(r["iri"])
         rel = iri_to_path(r["iri"])            # single source of truth for placement
         path = os.path.join(args.bundle, rel.lstrip("/"))
         if path in seen_paths and seen_paths[path] != r["iri"]:
@@ -154,7 +177,7 @@ def main():
         seen_paths[path] = r["iri"]
         os.makedirs(os.path.dirname(path), exist_ok=True)
         open(path, "w").write(emit(r, is_core=is_core, curated_def=curated_def,
-                                   curated_examples=curated_examples))
+                                   curated_examples=curated_examples, curated_detail=curated_detail))
         by_cluster.setdefault(cl, []).append(r)
 
     for cl, recs in by_cluster.items():

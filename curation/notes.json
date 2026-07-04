@@ -1,0 +1,220 @@
+{
+  "_comment": "Curated explanatory notes for core concepts FIBO ships without one. Grounded in the concept's role in loan origination; applied by etl/to_okf.py when FIBO has no explanatoryNote, provenance curated.",
+  "notes": [
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/AmortizationType",
+      "title": "AmortizationType",
+      "note": "Determines how principal and interest are paid down over the term \u2014 fully amortizing loans retire the balance by maturity, while interest-only or balloon structures leave principal outstanding."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/Appraisal",
+      "title": "Appraisal",
+      "note": "Ordered by the lender during underwriting to establish the collateral's value; it constrains the maximum loan amount through the loan-to-value ratio."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/AppraisedValue",
+      "title": "AppraisedValue",
+      "note": "Serves as the denominator of the loan-to-value ratio and the basis for how much a lender will advance against the property."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Borrower",
+      "title": "Borrower",
+      "note": "In residential origination the borrower is usually an individual or couple; the lender assesses their income, credit, and existing debts to decide whether and on what terms to lend."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/BorrowerDisclosureRequirement",
+      "title": "BorrowerDisclosureRequirement",
+      "note": "In the US these are implemented through the TILA-RESPA Integrated Disclosure (TRID) rule, giving borrowers standardized Loan Estimate and Closing Disclosure documents."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/BorrowerMonthlyIncome",
+      "title": "BorrowerMonthlyIncome",
+      "note": "A key underwriting input; combined with monthly debt obligations it yields the debt-to-income ratio that drives the credit decision."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/ClosedEndMortgageLoan",
+      "title": "ClosedEndMortgageLoan",
+      "note": "The common purchase or refinance mortgage: the full amount is advanced at closing and repaid on a fixed schedule, with no further draws permitted."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Collateral",
+      "title": "Collateral",
+      "note": "For a mortgage the collateral is the financed real property; on default the lender can foreclose and sell it to recover the debt."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/CollateralValuation",
+      "title": "CollateralValuation",
+      "note": "Typically an appraisal or automated valuation model (AVM); its result feeds the loan-to-value ratio and lien decisions."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/CollateralizedLoan",
+      "title": "CollateralizedLoan",
+      "note": "A secured loan where specific assets (real property, securities, or cash) are pledged; the collateral reduces the lender's loss if the borrower defaults."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoansRegulatory/ConsumerCreditProtectionLaw",
+      "title": "ConsumerCreditProtectionLaw",
+      "note": "In the US this is the umbrella statute whose titles include the Truth in Lending Act (Regulation Z) and the Equal Credit Opportunity Act (Regulation B)."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreement",
+      "title": "CreditAgreement",
+      "note": "The binding contract \u2014 note plus loan and security agreement \u2014 setting the amount, rate, repayment schedule, and the lender's remedies on default."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Creditor",
+      "title": "Creditor",
+      "note": "The party entitled to repayment; in a mortgage the lender is the creditor, though the debt may later be sold to another creditor in the secondary market."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-CoveredLoanContract",
+      "title": "HMDA-CoveredLoanContract",
+      "note": "A loan or application subject to Home Mortgage Disclosure Act reporting; the lender must record specified data points about it on its register."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages/HMDA-Report",
+      "title": "HMDA-Report",
+      "note": "The Loan/Application Register (LAR) a covered institution files annually with the CFPB; regulators use it to detect discriminatory or risky lending patterns."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IncomeVerificationReport",
+      "title": "IncomeVerificationReport",
+      "note": "Documents such as pay stubs, W-2s, tax returns, or a verification of employment that support claimed income and help satisfy ability-to-repay rules."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/IndividualPersonCreditRating",
+      "title": "IndividualPersonCreditRating",
+      "note": "Usually expressed as a credit score (e.g. FICO); a primary input to loan pricing and the approval decision."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/LegalObligation",
+      "title": "LegalObligation",
+      "note": "The borrower's court-enforceable duty to repay under the credit agreement; failure gives the lender legal remedies, including foreclosure of the collateral."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Lender",
+      "title": "Lender",
+      "note": "The party advancing funds; a lender may originate a loan to hold it, or to sell it into the secondary market while keeping or transferring servicing."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LenderLienPosition",
+      "title": "LenderLienPosition",
+      "note": "First-lien loans are repaid before junior liens on default, so lien position strongly affects a loan's risk and its pricing."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Loan",
+      "title": "Loan",
+      "note": "The foundational debt instrument the other concepts specialize \u2014 money advanced now against a promise to repay according to agreed terms."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplication",
+      "title": "LoanApplication",
+      "note": "Captures the borrower, the property, the terms sought, and financials (in the US, Form 1003); submitting it initiates underwriting."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationPhase",
+      "title": "LoanApplicationPhase",
+      "note": "Tracks where an application sits in the workflow \u2014 for example pre-qualification, intake, underwriting, or decisioning \u2014 often driving permissions and turn-time targets."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/LoanApplicationStatus",
+      "title": "LoanApplicationStatus",
+      "note": "A point-in-time state (submitted, in review, approved, declined, withdrawn) used for pipeline reporting and borrower communication."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanProductOffering",
+      "title": "LoanProductOffering",
+      "note": "A specific packaging of a loan product \u2014 its rate, term, and eligibility \u2014 marketed to a borrower segment or tailored to an individual applicant."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/LoanPhase",
+      "title": "LoanPhase",
+      "note": "The stage of a loan across its whole life (origination, disbursement, repayment, payoff), distinct from the application workflow."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanProduct",
+      "title": "LoanProduct",
+      "note": "A standardized template \u2014 such as a 30-year fixed conventional, a 5/1 ARM, or an FHA loan \u2014 with defined characteristics that individual loans instantiate."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/LoanPurpose",
+      "title": "LoanPurpose",
+      "note": "Why the credit is drawn (purchase, refinance, cash-out, or improvement); it affects eligibility, pricing, and the disclosures required."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LoanToValueRatio",
+      "title": "LoanToValueRatio",
+      "note": "A primary risk measure: a higher LTV means less borrower equity and greater loss on default, and above roughly 80% it commonly triggers mortgage insurance."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount",
+      "title": "MonetaryAmount",
+      "note": "A measured amount of money in a currency; the type used for principal, payments, income, and valuations throughout origination."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/MortgageLoanPurpose",
+      "title": "MortgageLoanPurpose",
+      "note": "Specializes loan purpose for real-estate lending \u2014 purchase, rate-and-term refinance, cash-out refinance, or construction."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/MortgageProduct",
+      "title": "MortgageProduct",
+      "note": "A loan product realized as a mortgage; conforming vs jumbo, fixed vs adjustable, and government-backed vs conventional are common distinctions."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/NMLSR-ID",
+      "title": "NMLSR-ID",
+      "note": "The NMLS identifier uniquely identifies licensed mortgage companies and loan originators; it appears on loan documents to support accountability."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/Mortgages/OpenEndMortgageLoan",
+      "title": "OpenEndMortgageLoan",
+      "note": "Permits additional advances up to a limit after closing (as with a home-equity line), unlike a closed-end mortgage."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/Payment",
+      "title": "Payment",
+      "note": "A transfer of money settling part of the obligation; mortgage payments typically bundle principal, interest, and escrowed taxes and insurance."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/PaymentHistory",
+      "title": "PaymentHistory",
+      "note": "The borrower's record of on-time and late payments; central to credit scoring and to servicing and default decisions."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Principal",
+      "title": "Principal",
+      "note": "The amount borrowed that must be repaid, separate from interest; the outstanding principal drives interest accrual and the payoff amount."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageOrigination/PropertyUsage",
+      "title": "PropertyUsage",
+      "note": "How the borrower will use the property \u2014 primary residence, second home, or investment \u2014 which affects the rate, LTV limits, and disclosures."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/RepaymentPhase",
+      "title": "RepaymentPhase",
+      "note": "Begins after disbursement; the borrower makes scheduled payments per the amortization schedule until the loan is paid off."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/SecuredLoan",
+      "title": "SecuredLoan",
+      "note": "Backed by pledged assets or a guarantee, which lowers the lender's risk relative to an unsecured loan and usually the borrower's rate as well."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/TotalDebtExpenseRatio",
+      "title": "TotalDebtExpenseRatio",
+      "note": "The debt-to-income (DTI) ratio; under US ability-to-repay / Qualified Mortgage rules it is commonly capped around 43%."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/TotalOutstandingPrincipal",
+      "title": "TotalOutstandingPrincipal",
+      "note": "The aggregate unpaid principal secured by the property across all loans; used with appraised value to compute the combined loan-to-value ratio."
+    },
+    {
+      "iri": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/UnderwritingDecision",
+      "title": "UnderwritingDecision",
+      "note": "The outcome of assessing credit, capacity, and collateral \u2014 approve, approve with conditions, suspend, or deny."
+    }
+  ]
+}

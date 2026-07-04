@@ -58,6 +58,18 @@ def test_emit_writes_examples_and_marks_curated():
     assert "examples_provenance: curated" in out
 
 
+def test_load_notes_and_curated_detail_emit():
+    rec = {"iri": "https://ex/A", "title": "a", "description": "d", "cluster": "LOAN",
+           "maturity": "Release", "relations": []}
+    out = to_okf.emit(rec, curated_detail="a grounded explanatory note")
+    assert 'detail: "a grounded explanatory note"' in out
+    assert "detail_provenance: curated" in out
+    # FIBO explanatory notes take precedence over a curated note.
+    rec_f = {**rec, "explanatory": ["FIBO's own note"]}
+    out_f = to_okf.emit(rec_f, curated_detail="should be ignored")
+    assert "FIBO's own note" in out_f and "detail_provenance: curated" not in out_f
+
+
 def test_emit_marks_curated_definition_provenance():
     rec = {"iri": "https://ex/A", "title": "a", "description": "our learner def",
            "cluster": "LOAN", "maturity": "Release", "relations": []}

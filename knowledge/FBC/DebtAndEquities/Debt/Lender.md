@@ -5,6 +5,8 @@ description: "a party that extends credit or money to a borrower with the expect
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Lender
 tags: [FBC, Release]
 core: true
+detail: "The party advancing funds; a lender may originate a loan to hold it, or to sell it into the secondary market while keeping or transferring servicing."
+detail_provenance: curated
 examples:
   - "A mortgage bank or credit union extending a home loan."
 examples_provenance: curated

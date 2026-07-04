@@ -5,6 +5,8 @@ description: "something pledged as security to ensure fulfillment of an obligati
 resource: https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Collateral
 tags: [FBC, Release]
 core: true
+detail: "For a mortgage the collateral is the financed real property; on default the lender can foreclose and sell it to recover the debt."
+detail_provenance: curated
 examples:
   - "The house securing a mortgage"
   - "Securities pledged for a margin loan"

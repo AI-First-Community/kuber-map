@@ -5,6 +5,8 @@ description: "classifier indicating whether the lender has the primary lien posi
 resource: https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/LenderLienPosition
 tags: [LOAN, Release]
 core: true
+detail: "First-lien loans are repaid before junior liens on default, so lien position strongly affects a loan's risk and its pricing."
+detail_provenance: curated
 examples:
   - "First lien (the primary mortgage)"
   - "Second lien (a HELOC)"
