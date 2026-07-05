@@ -477,6 +477,7 @@
   if (coreChip) {
     const coreCount = cy.nodes('[?isCore]').length;
     const cnt = coreChip.querySelector('.new-count'); if (cnt) cnt.textContent = coreCount;
+    const fc = document.getElementById('fullCount'); if (fc) fc.textContent = GRAPH.nodes.length.toLocaleString();
     coreChip.classList.toggle('active', coreOnly);
     coreChip.addEventListener('click', () => {
       coreOnly = !coreOnly;
