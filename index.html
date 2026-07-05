@@ -139,7 +139,7 @@
     }
 
     /* Scan-to-install QR (desktop): open the app on your phone to install the PWA */
-    .install-qr{ position:fixed; right:22px; bottom:18px; z-index:6; display:flex; align-items:center; gap:11px;
+    .install-qr{ position:fixed; right:22px; bottom:18px; z-index:6; display:none; align-items:center; gap:11px;
       padding:9px 15px 9px 9px; border-radius:16px; text-decoration:none;
       background:rgba(6,13,9,.46); border:1px solid rgba(159,188,171,.22);
       backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
@@ -148,7 +148,7 @@
     .install-qr img{ width:76px; height:76px; display:block; border-radius:9px; background:#fdf6e3; padding:4px; }
     .install-qr .qcap{ font-size:11.5px; font-weight:700; color:var(--muted); line-height:1.4; letter-spacing:.02em; }
     .install-qr .qcap b{ color:var(--ink); display:block; font-weight:800; }
-    @media (max-height: 560px){ .install-qr{ display:none; } }
+    @media (min-width: 901px) and (min-height: 561px){ .install-qr{ display:flex; } }  /* show the scan-to-install QR only on desktop */
   </style>
 </head>
 <body>
