@@ -45,6 +45,32 @@ well-cited) rather than all 19 at once.
 
 ---
 
+## Cover email — to accompany the attachments (shortest; paste-and-send)
+
+> Attach **`edm-council-proposal.pdf`** and **`bridge-brief.pdf`**. Use this when emailing directly;
+> use draft A instead when posting to a forum/CoP.
+
+**Subject:** Contribution proposal for FIBO — 19 grounded cross-domain relations + a measured grounding case
+
+Hello,
+
+I maintain **Kuber Map** (<https://github.com/AI-First-Community/kuber-map>), an open, MIT-licensed,
+learner-first map of FIBO. While curating five financial use cases on the pinned Production release,
+I collected **19 cross-domain relations FIBO doesn't currently draw** — each grounded in real
+FIBO/Commons classes, non-duplicative, and backed by a rationale and a regulation/standard citation
+— and I'd like to offer them back to the Council for review. Along the way I also measured what
+grounding in curated FIBO context does for financial AI (accuracy **+45.3 points**, auditability
+**0%→97%**, hallucinated citations **→0%**), which I hope makes a useful, citable case for FIBO.
+
+The **attached proposal** and **one-page brief** have the detail; I'd welcome the working group's
+view on which relations are worth drawing and how you'd prefer each modeled, and I'm happy to adapt
+to your contribution process. Thank you for FIBO — it's been a pleasure to build on.
+
+Best regards,
+Sanjeev Azad · <sanjeev.azad@gmail.com>
+
+---
+
 ## A) Intro note — FIBO Community of Practice / EDMConnect / OKG Innovation Lab
 
 > Post to the FIBO CoP (EDMConnect) or email the OKG Innovation Lab. Keep it short; attach the
