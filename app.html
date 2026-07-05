@@ -3,6 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Phones get the touch-friendly mobile view (override with ?desktop=1). Runs before
+       the graph libraries load, so mobile users never download the desktop bundle. -->
+  <script>
+    (function () {
+      try {
+        if (!/[?&]desktop=1/.test(location.search) && window.matchMedia && window.matchMedia('(max-width: 820px)').matches) {
+          location.replace('m.html' + location.hash);
+        }
+      } catch (e) {}
+    })();
+  </script>
   <title>Kuber Map · the treasury of financial knowledge</title>
   <!-- PWA -->
   <link rel="manifest" href="manifest.json" />

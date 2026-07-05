@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Kuber Map — FIBO, on your phone</title>
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0a1410" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Kuber Map" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <style>
+    @font-face { font-family:'Manrope'; font-weight:400; font-display:swap; src:url('fonts/manrope-400.woff2') format('woff2'); }
+    @font-face { font-family:'Manrope'; font-weight:600; font-display:swap; src:url('fonts/manrope-600.woff2') format('woff2'); }
+    @font-face { font-family:'Manrope'; font-weight:700; font-display:swap; src:url('fonts/manrope-700.woff2') format('woff2'); }
+    @font-face { font-family:'Manrope'; font-weight:800; font-display:swap; src:url('fonts/manrope-800.woff2') format('woff2'); }
+    :root{
+      --bg:#0a1410; --bg2:#0f1c16; --card:#12211a; --line:rgba(159,188,171,.14);
+      --ink:#eaf3ee; --muted:#9fbcab; --green:#4fe08a; --green-deep:#1f9d57; --gold:#f3c969;
+      --sans:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+    body{font-family:var(--sans);color:var(--ink);min-height:100vh;
+      background:radial-gradient(560px 420px at 82% -6%, rgba(60,170,100,.13), transparent 60%), var(--bg);
+      -webkit-font-smoothing:antialiased;}
+    .m-top{position:sticky;top:0;z-index:10;background:rgba(10,20,16,.92);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);
+      padding:calc(12px + env(safe-area-inset-top)) 16px 10px;border-bottom:1px solid var(--line);}
+    .m-brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;letter-spacing:-.01em;color:inherit;text-decoration:none;}
+    .m-brand svg{width:22px;height:22px;color:var(--green);filter:drop-shadow(0 3px 10px rgba(79,224,138,.4));}
+    .m-brand .count{margin-left:auto;font-size:11px;font-weight:700;color:var(--muted);}
+    .m-search{margin-top:11px;width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);
+      background:var(--bg2);color:var(--ink);font-size:16px;font-family:inherit;}
+    .m-search:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(79,224,138,.14);}
+    .m-chips{display:flex;gap:8px;overflow-x:auto;padding:12px 16px;scrollbar-width:none;}
+    .m-chips::-webkit-scrollbar{display:none}
+    .chip{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;padding:8px 13px;border-radius:999px;
+      border:1px solid var(--line);background:transparent;color:var(--muted);font-size:13px;font-weight:600;
+      font-family:inherit;cursor:pointer;white-space:nowrap;}
+    .chip .dot{width:9px;height:9px;border-radius:3px;}
+    .chip.active{background:var(--card);color:var(--ink);border-color:var(--green);}
+    .m-levels{display:flex;gap:7px;overflow-x:auto;padding:0 16px 12px;scrollbar-width:none;}
+    .m-levels::-webkit-scrollbar{display:none}
+    .lchip{flex:0 0 auto;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);font-size:12px;font-weight:700;font-family:inherit;cursor:pointer;white-space:nowrap;}
+    .lchip.active{background:var(--card);color:var(--ink);border-color:var(--green);}
+    .m-tools{display:flex;gap:8px;overflow-x:auto;padding:0 16px 12px;scrollbar-width:none;}
+    .m-tools::-webkit-scrollbar{display:none}
+    .tchip{flex:0 0 auto;display:inline-flex;align-items:center;gap:5px;padding:8px 13px;border-radius:999px;border:1px solid rgba(79,224,138,.32);background:rgba(79,224,138,.07);color:var(--ink);font-size:12.5px;font-weight:700;font-family:inherit;cursor:pointer;white-space:nowrap;}
+    .tchip.active{background:var(--green);color:#06250f;border-color:var(--green);}
+    .m-anslist{display:flex;flex-direction:column;gap:9px;margin-top:2px;}
+    .m-ans{text-align:left;line-height:1.4;}
+    .m-reccard{border:1px solid var(--line);border-left:3px solid var(--c,var(--green));border-radius:12px;background:var(--card);padding:13px 14px;margin-top:2px;}
+    .m-reccard h2{margin:6px 0 8px;font-size:22px;}
+    .m-cmp-tabs{display:flex;gap:7px;overflow-x:auto;padding-bottom:12px;scrollbar-width:none;}
+    .m-cmp-tabs::-webkit-scrollbar{display:none}
+    .m-cmp-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin-top:4px;-webkit-overflow-scrolling:touch;}
+    table.m-cmp{border-collapse:collapse;font-size:12.5px;white-space:nowrap;min-width:100%;}
+    table.m-cmp th,table.m-cmp td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);}
+    table.m-cmp th{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.5px;font-weight:800;background:var(--bg2);}
+    table.m-cmp tr:last-child td{border-bottom:0;}
+    .m-cmp-name{color:var(--green);font-weight:700;cursor:pointer;}
+    .m-list{padding:4px 16px 40px;display:flex;flex-direction:column;gap:10px;}
+    .m-group-title{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted);
+      font-weight:800;margin:16px 2px 3px;}
+    .card{position:relative;border:1px solid var(--line);border-radius:14px;background:var(--card);
+      padding:13px 14px 13px 17px;overflow:hidden;cursor:pointer;transition:border-color .15s, transform .06s;}
+    .card:active{transform:scale(.99);}
+    .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--c,#888);}
+    .card h3{font-size:15.5px;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+    .card .lvl{font-size:10px;font-weight:800;color:var(--muted);background:var(--bg2);border-radius:999px;padding:2px 7px;margin-left:auto;}
+    .card .newb{font-size:9px;font-weight:800;color:#06250f;background:var(--green);border-radius:999px;padding:2px 6px;}
+    .card p{margin-top:5px;font-size:13px;line-height:1.5;color:var(--muted);}
+    .empty{text-align:center;color:var(--muted);padding:50px 20px;font-size:14px;}
+    .m-foot{text-align:center;padding:8px 20px 34px;font-size:12px;color:var(--muted);}
+    .m-foot a{color:var(--green);text-decoration:none;font-weight:600;}
+    /* detail sheet */
+    .m-sheet{position:fixed;inset:0;z-index:50;display:none;}
+    .m-sheet.open{display:block;}
+    .m-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.58);}
+    .m-panel{position:absolute;left:0;right:0;bottom:0;max-height:90vh;overflow-y:auto;
+      background:var(--bg2);border-radius:20px 20px 0 0;border-top:1px solid var(--line);
+      padding:0 18px calc(34px + env(safe-area-inset-bottom));animation:up .28s cubic-bezier(.2,.7,.2,1);}
+    @keyframes up{from{transform:translateY(34px);opacity:.5}to{transform:none;opacity:1}}
+    .m-head{position:sticky;top:0;z-index:3;background:var(--bg2);margin:0 -18px;padding:8px 18px 11px;border-bottom:1px solid var(--line);}
+    .m-body{padding-top:14px;}
+    .m-close{float:right;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);
+      background:var(--card);color:var(--ink);font-size:19px;line-height:1;cursor:pointer;}
+    .m-grab{width:40px;height:4px;border-radius:99px;background:var(--line);margin:2px auto 12px;}
+    .m-tag{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--c,var(--green));
+      display:flex;align-items:center;gap:8px;flex-wrap:wrap;clear:both;}
+    .m-panel h2{font-size:23px;font-weight:800;margin:8px 0 0;letter-spacing:-.015em;line-height:1.15;}
+    .m-sum{font-size:15px;line-height:1.55;color:var(--ink);border-left:3px solid var(--c,var(--green));padding-left:13px;}
+    .m-badges{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 6px;}
+    .m-badge{font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;background:rgba(79,224,138,.12);border:1px solid rgba(79,224,138,.4);color:var(--ink);}
+    .m-ex{margin:2px 0 0;padding-left:19px;}
+    .m-ex li{font-size:14.5px;line-height:1.55;color:var(--ink);margin:4px 0;}
+    .m-syn{font-size:13.5px;color:var(--muted);}
+    .m-prov{font-size:10px;font-weight:700;color:var(--gold);border:1px solid rgba(243,201,105,.45);border-radius:999px;padding:1px 6px;margin-left:5px;vertical-align:middle;}
+    .m-detail{margin-top:14px;font-size:14px;line-height:1.65;color:var(--muted);}
+    .m-h{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted);font-weight:800;margin:20px 0 8px;}
+    .m-when{font-size:14px;line-height:1.6;color:var(--ink);background:var(--card);border-radius:12px;padding:12px 14px;}
+    .m-code{background:#08120d;border:1px solid var(--line);border-radius:12px;padding:12px;overflow-x:auto;
+      font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;line-height:1.5;color:#bfe8cf;white-space:pre;}
+    .m-conns{display:flex;flex-direction:column;gap:7px;}
+    .m-conn{display:flex;align-items:center;gap:9px;padding:10px 11px;border:1px solid var(--line);border-radius:11px;
+      background:var(--card);cursor:pointer;font-size:13px;}
+    .m-conn:active{border-color:var(--green);}
+    .m-conn .dot{width:8px;height:8px;border-radius:2px;flex:0 0 auto;}
+    .m-conn .rel{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;flex:0 0 auto;}
+    .m-conn .to{font-weight:600;color:var(--ink);}
+    .m-refs a{display:block;color:var(--green);text-decoration:none;font-size:13px;padding:5px 0;}
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+    /* My Map (personalization) */
+    .m-toprow{ display:flex; align-items:center; gap:10px; }
+    .m-custom{ margin-left:auto; flex:0 0 auto; display:inline-flex; align-items:center; gap:5px; padding:7px 12px; border-radius:999px; border:1px solid var(--line); background:var(--card); color:var(--ink); font-size:12.5px; font-weight:700; font-family:inherit; cursor:pointer; white-space:nowrap; }
+    .m-custom.on{ border-color:var(--green); color:var(--green); }
+    .m-brand .count{ margin-left:7px; }
+    .m-pick{ display:flex; flex-direction:column; gap:9px; }
+    .m-pick label{ display:flex; align-items:center; gap:11px; padding:11px 13px; border:1px solid var(--line); border-radius:12px; background:var(--card); font-size:14px; cursor:pointer; }
+    .m-pick input{ width:20px; height:20px; accent-color:var(--green); flex:0 0 auto; }
+    .m-pick .dot{ width:11px; height:11px; border-radius:3px; flex:0 0 auto; }
+    .m-pick .pc{ flex:1; font-weight:600; }
+    .m-pick .pn{ font-size:11px; color:var(--muted); }
+    .m-actions{ display:flex; gap:10px; margin-top:16px; }
+    .m-btn{ flex:1; padding:13px; border-radius:12px; border:1px solid var(--line); background:var(--card); color:var(--ink); font-size:14px; font-weight:700; font-family:inherit; cursor:pointer; }
+    .m-btn.primary{ background:linear-gradient(180deg,var(--green),var(--green-deep)); color:#06250f; border:0; }
+    .m-hint{ font-size:12.5px; color:var(--muted); margin-top:12px; text-align:center; }
+    .m-hint a{ color:var(--green); }
+    .m-path-note{ font-size:12.5px; line-height:1.5; color:var(--muted); background:var(--card); border:1px solid var(--line); border-radius:12px; padding:11px 13px; margin:2px 0 14px; }
+    .m-path-note a{ color:var(--green); text-decoration:none; font-weight:700; }
+    .m-toast{ position:fixed; left:50%; bottom:28px; transform:translateX(-50%) translateY(10px); background:#0f1c16; border:1px solid var(--line); color:var(--ink); padding:10px 16px; border-radius:999px; font-size:13px; font-weight:600; opacity:0; pointer-events:none; transition:opacity .2s, transform .2s; z-index:60; }
+    .m-toast.show{ opacity:1; transform:translateX(-50%) translateY(0); }
+  </style>
+</head>
+<body>
+  <header class="m-top">
+    <div class="m-toprow">
+      <a class="m-brand" href="index.html" aria-label="Kuber Map — back to home">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 6.2C10.4 4.5 6.7 4.6 5.1 7.6 3.3 10.9 5.7 15.9 12 22c6.3-6.1 8.7-11.1 6.9-14.4C17.3 4.6 13.6 4.5 12 6.2Z" fill="currentColor"/></svg>
+        Kuber Map <span class="count" id="count"></span>
+      </a>
+      <button class="m-custom" id="customize" type="button" aria-label="Build your learning map">★ Build map</button>
+    </div>
+    <input id="search" class="m-search" type="text" placeholder="Search concepts…" autocomplete="off" autocapitalize="off" aria-label="Search concepts" />
+  </header>
+
+  <nav class="m-tools" id="tools" aria-label="Interactive tools">
+    <button class="tchip" id="mWizard" type="button">🧭 Which concept?</button>
+    <button class="tchip" id="mPath" type="button">▶ Guided Path</button>
+    <button class="tchip" id="mCompare" type="button">⚖️ Compare</button>
+  </nav>
+  <nav class="m-chips" id="chips" aria-label="Filter by cluster"></nav>
+  <nav class="m-levels" id="levels" aria-label="Filter by level"></nav>
+  <main class="m-list" id="list"></main>
+  <div class="m-foot">Prefer the full graph? <a href="app.html?desktop=1">Open on desktop ↗</a> · <a href="https://github.com/AI-First-Community/kuber-map/wiki" target="_blank" rel="noopener">Docs</a></div>
+
+  <div class="m-sheet" id="sheet" role="dialog" aria-modal="true">
+    <div class="m-backdrop"></div>
+    <div class="m-panel" id="panel"></div>
+  </div>
+
+  <div class="m-sheet" id="pickSheet" role="dialog" aria-modal="true" aria-label="Build your learning map">
+    <div class="m-backdrop"></div>
+    <div class="m-panel" id="pickPanel"></div>
+  </div>
+
+  <div class="m-sheet" id="toolSheet" role="dialog" aria-modal="true" aria-label="Interactive tools">
+    <div class="m-backdrop"></div>
+    <div class="m-panel" id="toolPanel"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script>
+    (function () {
+      var nodes = GRAPH.nodes, edges = GRAPH.edges;
+      var byId = {}; nodes.forEach(function (n) { byId[n.id] = n; });
+      function ucShort(u){ if(/^Loan/i.test(u))return'Loan'; if(/^KYC/i.test(u))return'KYC'; if(/^Securities/i.test(u))return'Securities'; if(/^Regulatory/i.test(u))return'Reg reporting'; if(/^Derivatives/i.test(u))return'Derivatives'; return String(u).split(' (')[0]; }
+      function superclasses(id){ var o=[]; edges.forEach(function(e){ if(e.s===id && e.r==='is-a' && byId[e.t]) o.push(byId[e.t].label); }); return o; }
+      function sumOf(n){ var t=(n.summary||'').trim(); if(t) return esc(t); var p=superclasses(n.id).slice(0,3).map(esc); return p.length ? ('A type of '+p.join(', ')+'. FIBO defines this class through its superclass and axioms rather than a text definition.') : 'A FIBO class defined structurally, through axioms rather than a text definition.'; }
+      var relLabel = {}; Object.keys(RELATIONS).forEach(function (k) { relLabel[k] = RELATIONS[k].label; });
+      var REL = (typeof RELEASE !== 'undefined' && RELEASE) ? RELEASE.version : null;
+      var active = 'all', q = '', myMap = [], activeLevel = null;
+      function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (m) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[m]; }); }
+
+      document.getElementById('count').textContent = nodes.length + ' concepts';
+      (function () { var f = document.querySelector('.m-foot'); if (f && typeof RELEASE !== 'undefined' && RELEASE) f.insertAdjacentHTML('beforeend', ' · <span style="opacity:.6">' + (RELEASE.label || ('v' + RELEASE.version)) + '</span>'); })();
+
+      // cluster chips (rebuilt when My Map changes)
+      var chipsEl = document.getElementById('chips');
+      function buildChips() {
+        var ch = '';
+        if (myMap.length) ch += '<button class="chip' + (active === 'mymap' ? ' active' : '') + '" data-cluster="mymap">★ My Map</button>';
+        ch += '<button class="chip' + (active === 'all' ? ' active' : '') + '" data-cluster="all">All</button>';
+        Object.keys(CLUSTERS).forEach(function (id) {
+          ch += '<button class="chip' + (active === id ? ' active' : '') + '" data-cluster="' + id + '"><span class="dot" style="background:' + CLUSTERS[id].color + '"></span>' + esc(CLUSTERS[id].label) + '</button>';
+        });
+        chipsEl.innerHTML = ch;
+      }
+      chipsEl.addEventListener('click', function (e) {
+        var b = e.target.closest('.chip'); if (!b) return;
+        active = b.getAttribute('data-cluster');
+        buildChips(); updateCustomBtn(); render();
+      });
+
+      var searchEl = document.getElementById('search');
+      searchEl.addEventListener('input', function () { q = searchEl.value.trim().toLowerCase(); render(); });
+
+      // level (1–5) filter
+      var levelsEl = document.getElementById('levels');
+      function buildLevels() {
+        var lv = '<button class="lchip' + (activeLevel === null ? ' active' : '') + '" data-level="all">All levels</button>';
+        Object.keys(LEVELS).forEach(function (l) {
+          lv += '<button class="lchip' + (String(activeLevel) === l ? ' active' : '') + '" data-level="' + l + '" title="' + esc(LEVELS[l]) + '">L' + l + '</button>';
+        });
+        levelsEl.innerHTML = lv;
+      }
+      levelsEl.addEventListener('click', function (e) {
+        var b = e.target.closest('.lchip'); if (!b) return;
+        var v = b.getAttribute('data-level');
+        activeLevel = (v === 'all') ? null : parseInt(v, 10);
+        buildLevels(); render();
+      });
+
+      // ---- My Map: personalized learning map (topics -> saved, shareable path) ----
+      var customBtn = document.getElementById('customize');
+      var pickSheet = document.getElementById('pickSheet'), pickPanel = document.getElementById('pickPanel');
+      function updateCustomBtn() {
+        customBtn.textContent = myMap.length ? '★ My Map' : '★ Build map';
+        customBtn.classList.toggle('on', active === 'mymap');
+      }
+      function setMyMap(arr) {
+        var seen = {}; myMap = arr.filter(function (id) { if (!CLUSTERS[id] || seen[id]) return false; seen[id] = 1; return true; });
+        try { if (myMap.length) localStorage.setItem('bodhi-mymap', myMap.join(',')); else localStorage.removeItem('bodhi-mymap'); } catch (e) {}
+      }
+      function toast(msg) {
+        var t = document.getElementById('mtoast');
+        if (!t) { t = document.createElement('div'); t.id = 'mtoast'; t.className = 'm-toast'; document.body.appendChild(t); }
+        t.textContent = msg; t.classList.add('show');
+        clearTimeout(t._h); t._h = setTimeout(function () { t.classList.remove('show'); }, 1800);
+      }
+      function shareMap(sel) {
+        sel = (sel && sel.length) ? sel : myMap;
+        var url = location.origin + location.pathname + (sel.length ? '#map=' + sel.join(',') : '');
+        if (navigator.share) { navigator.share({ title: 'My Kuber Map', text: 'My FIBO concept map', url: url }).catch(function () {}); }
+        else if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(url).then(function () { toast('Link copied'); }).catch(function () { prompt('Copy your map link:', url); }); }
+        else { prompt('Copy your map link:', url); }
+      }
+      function openPicker() {
+        var checks = Object.keys(CLUSTERS).map(function (id) {
+          var c = CLUSTERS[id], on = myMap.indexOf(id) !== -1;
+          var cnt = nodes.filter(function (n) { return n.cluster === id; }).length;
+          return '<label><input type="checkbox" value="' + id + '"' + (on ? ' checked' : '') + '><span class="dot" style="background:' + c.color + '"></span><span class="pc">' + esc(c.label) + '</span><span class="pn">' + cnt + '</span></label>';
+        }).join('');
+        pickPanel.innerHTML =
+          '<div class="m-head"><div class="m-grab"></div><button class="m-close" aria-label="Close">×</button>' +
+          '<div class="m-tag" style="--c:var(--green)">Build your learning map</div><h2>Pick your topics</h2></div>' +
+          '<div class="m-body"><div class="m-path-note">Choose the clusters you want to focus on. Your map is saved on this device and shareable as a link.</div>' +
+          '<div class="m-pick">' + checks + '</div>' +
+          '<div class="m-actions"><button class="m-btn" id="pkShare" type="button">🔗 Share</button><button class="m-btn primary" id="pkSave" type="button">Save &amp; view</button></div>' +
+          (myMap.length ? '<div class="m-hint"><a href="#" id="pkClear">Clear my map</a></div>' : '') +
+          '</div>';
+        pickSheet.classList.add('open'); pickPanel.scrollTop = 0; document.body.style.overflow = 'hidden';
+      }
+      function closePicker() { pickSheet.classList.remove('open'); document.body.style.overflow = ''; }
+      function selectedInPicker() { return [].slice.call(pickPanel.querySelectorAll('input:checked')).map(function (i) { return i.value; }); }
+      customBtn.addEventListener('click', openPicker);
+      pickSheet.addEventListener('click', function (e) {
+        if (e.target.classList.contains('m-backdrop') || e.target.classList.contains('m-close')) { closePicker(); return; }
+        var id = e.target.id;
+        if (id === 'pkSave') {
+          setMyMap(selectedInPicker()); closePicker();
+          active = myMap.length ? 'mymap' : 'all';
+          buildChips(); updateCustomBtn(); render();
+          if (myMap.length) toast('Saved your map');
+        } else if (id === 'pkShare') {
+          var s = selectedInPicker();
+          if (!s.length) { toast('Pick at least one topic first'); return; }
+          shareMap(s);
+        } else if (id === 'pkClear') {
+          e.preventDefault(); setMyMap([]); closePicker(); active = 'all'; buildChips(); updateCustomBtn(); render();
+        }
+      });
+
+      var listEl = document.getElementById('list');
+      function matches(n) {
+        if (active === 'mymap') { if (myMap.indexOf(n.cluster) === -1) return false; }
+        else if (active !== 'all' && n.cluster !== active) return false;
+        if (activeLevel !== null && n.level !== activeLevel) return false;
+        if (q && (n.label + ' ' + n.summary).toLowerCase().indexOf(q) === -1) return false;
+        return true;
+      }
+      function card(n) {
+        var c = CLUSTERS[n.cluster] || { color: '#888' };
+        var isNew = REL && n.added === REL;
+        return '<div class="card" data-id="' + n.id + '" style="--c:' + c.color + '">' +
+          '<h3>' + esc(n.label) + (isNew ? ' <span class="newb">NEW</span>' : '') + '<span class="lvl">L' + n.level + '</span></h3>' +
+          '<p>' + sumOf(n) + '</p></div>';
+      }
+      function render() {
+        var items = nodes.filter(matches);
+        if (!items.length) { listEl.innerHTML = '<div class="empty">No concepts match “' + esc(q) + '”.</div>'; return; }
+        var html = '';
+        if (active === 'mymap' && !q) {
+          html += '<div class="m-path-note">Your map · ' + myMap.length + ' topics · ' + items.length + ' concepts, ordered <b>foundations → advanced</b>. <a href="#" id="editmap">Edit</a> · <a href="#" id="sharemap">Share</a></div>';
+          Object.keys(LEVELS).forEach(function (lvl) {
+            var g = items.filter(function (n) { return String(n.level) === String(lvl); });
+            if (!g.length) return;
+            html += '<div class="m-group-title">Level ' + lvl + ' · ' + esc(LEVELS[lvl]) + '</div>';
+            g.forEach(function (n) { html += card(n); });
+          });
+        } else if (active === 'all' && !q) {
+          Object.keys(CLUSTERS).forEach(function (cid) {
+            var g = items.filter(function (n) { return n.cluster === cid; });
+            if (!g.length) return;
+            html += '<div class="m-group-title">' + esc(CLUSTERS[cid].label) + ' · ' + g.length + '</div>';
+            g.forEach(function (n) { html += card(n); });
+          });
+        } else {
+          items.forEach(function (n) { html += card(n); });
+        }
+        listEl.innerHTML = html;
+      }
+      listEl.addEventListener('click', function (e) {
+        if (e.target.id === 'editmap') { e.preventDefault(); openPicker(); return; }
+        if (e.target.id === 'sharemap') { e.preventDefault(); shareMap(myMap); return; }
+        var c = e.target.closest('.card'); if (!c) return;
+        openSheet(c.getAttribute('data-id'));
+      });
+
+      // detail sheet
+      var sheet = document.getElementById('sheet'), panel = document.getElementById('panel');
+      function connsFor(id) {
+        var out = [];
+        edges.forEach(function (edge) {
+          if (edge.r === 'path') return;
+          if (edge.s === id && byId[edge.t]) out.push({ rel: relLabel[edge.r] || edge.r, to: byId[edge.t] });
+          else if (edge.t === id && byId[edge.s]) out.push({ rel: relLabel[edge.r] || edge.r, to: byId[edge.s], rev: true });
+        });
+        return out;
+      }
+      function openSheet(id) {
+        var n = byId[id]; if (!n) return;
+        var c = CLUSTERS[n.cluster] || { color: '#888', label: '' };
+        var isNew = REL && n.added === REL, conns = connsFor(id);
+        var html = '<div class="m-head"><div class="m-grab"></div><button class="m-close" aria-label="Close">×</button>' +
+          '<div class="m-tag" style="--c:' + c.color + '">' + esc(c.label) + ' · L' + n.level + ' — ' + esc(LEVELS[n.level] || '') + (isNew ? ' <span class="newb">NEW</span>' : '') + '</div>' +
+          '<h2>' + esc(n.label) + '</h2></div>' +
+          '<div class="m-body"><div class="m-sum" style="--c:' + c.color + '">' + sumOf(n) + '</div>';
+        if (n.useCases && n.useCases.length) html += '<div class="m-badges">' + n.useCases.map(function (u) { return '<span class="m-badge">' + esc(ucShort(u)) + '</span>'; }).join('') + '</div>';
+        if (n.detail) html += '<div class="m-detail">' + esc(n.detail) + (n.detailProvenance === 'curated' ? ' <span class="m-prov">curated</span>' : '') + '</div>';
+        if (n.examples && n.examples.length) html += '<div class="m-h">Examples</div><ul class="m-ex">' + n.examples.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
+        if (n.synonyms && n.synonyms.length) html += '<div class="m-h">Also known as</div><div class="m-syn">' + n.synonyms.map(esc).join(' · ') + '</div>';
+        if (conns.length) {
+          html += '<div class="m-h">Connections</div><div class="m-conns">';
+          conns.forEach(function (cn) {
+            var cc = CLUSTERS[cn.to.cluster] || { color: '#888' };
+            html += '<div class="m-conn" data-id="' + cn.to.id + '"><span class="dot" style="background:' + cc.color + '"></span><span class="rel">' + esc(cn.rel) + (cn.rev ? ' ←' : '') + '</span><span class="to">' + esc(cn.to.label) + '</span></div>';
+          });
+          html += '</div>';
+        }
+        if (n.refs && n.refs.length) {
+          html += '<div class="m-h">FIBO source (citation)</div><div class="m-refs">';
+          n.refs.forEach(function (r) { html += '<a href="' + esc(r.u) + '" target="_blank" rel="noopener">' + esc(r.t) + ' ↗</a>'; });
+          html += '</div>';
+        }
+        html += '</div>';
+        panel.innerHTML = html;
+        sheet.classList.add('open');
+        requestAnimationFrame(function () { panel.scrollTop = 0; });
+        document.body.style.overflow = 'hidden';
+      }
+      function closeSheet() { sheet.classList.remove('open'); document.body.style.overflow = ''; }
+      sheet.addEventListener('click', function (e) {
+        if (e.target.classList.contains('m-backdrop') || e.target.classList.contains('m-close')) { closeSheet(); return; }
+        var conn = e.target.closest('.m-conn'); if (conn) openSheet(conn.getAttribute('data-id'));
+      });
+      // ---- Interactive tools: decision wizard, guided path, compare (parity with desktop) ----
+      var toolSheet = document.getElementById('toolSheet'), toolPanel = document.getElementById('toolPanel');
+      function setTool(headHtml, bodyHtml) {
+        toolPanel.innerHTML =
+          '<div class="m-head"><div class="m-grab"></div><button class="m-close" aria-label="Close">×</button>' + headHtml + '</div>' +
+          '<div class="m-body">' + bodyHtml + '</div>';
+        toolSheet.classList.add('open');
+        requestAnimationFrame(function () { toolPanel.scrollTop = 0; });
+        document.body.style.overflow = 'hidden';
+      }
+      function closeTool() { toolSheet.classList.remove('open'); document.body.style.overflow = ''; }
+
+      // Decision wizard
+      var DT = GRAPH.decisionTree;
+      function startWizard() { renderWizardStep(DT.start); }
+      function renderWizardStep(id) {
+        var step = DT.steps[id]; if (!step) return;
+        var ans = step.a.map(function (a, i) {
+          return '<button class="m-btn m-ans" data-w="ans" data-step="' + id + '" data-i="' + i + '">' + esc(a.label) + '</button>';
+        }).join('');
+        setTool('<div class="m-tag" style="--c:var(--green)">Which concept?</div><h2>' + esc(step.q) + '</h2>',
+          '<div class="m-anslist">' + ans + '</div>');
+      }
+      function renderWizardRec(a) {
+        var n = byId[a.rec], c = n ? (CLUSTERS[n.cluster] || { color: '#888', label: '' }) : { color: 'var(--green)', label: '' };
+        var body = '<div class="m-reccard" style="--c:' + c.color + '">' +
+          '<div class="m-tag" style="--c:' + c.color + '">' + esc(c.label) + ' · Recommended</div>' +
+          '<h2>' + esc(n ? n.label : a.rec) + '</h2>' +
+          (n ? '<div class="m-sum" style="--c:' + c.color + '">' + esc(n.summary) + '</div>' : '') +
+          (a.why ? '<div class="m-detail">' + esc(a.why) + '</div>' : '') + '</div>' +
+          '<div class="m-actions"><button class="m-btn" data-w="restart">↺ Start over</button>' +
+          (n ? '<button class="m-btn primary" data-w="open" data-id="' + a.rec + '">Open in graph →</button>' : '') + '</div>' +
+          (a.then ? '<div class="m-hint" style="text-align:center"><a href="#" data-w="cont" data-step="' + a.then + '">Continue — one more question ↓</a></div>' : '');
+        setTool('<div class="m-tag" style="--c:var(--green)">Recommendation</div><h2>' + esc(n ? n.label : a.rec) + '</h2>', body);
+      }
+
+      // Guided path
+      var GP = GRAPH.guidedPath, pathIdx = 0;
+      function startPath() { pathIdx = 0; renderPathStep(); }
+      function renderPathStep() {
+        var s = GP.steps[pathIdx], n = byId[s.id], c = n ? (CLUSTERS[n.cluster] || { color: '#888', label: '' }) : { color: 'var(--green)', label: '' };
+        var body = '<div class="m-path-note">Step ' + (pathIdx + 1) + ' / ' + GP.steps.length + '</div>' +
+          '<div class="m-reccard" style="--c:' + c.color + '">' +
+          '<div class="m-tag" style="--c:' + c.color + '">' + esc(c.label) + (n ? ' · L' + n.level : '') + '</div>' +
+          '<h2>' + esc(n ? n.label : s.id) + '</h2>' +
+          '<div class="m-detail">' + esc(s.note) + '</div></div>' +
+          '<div class="m-actions">' +
+          '<button class="m-btn" data-w="pprev"' + (pathIdx === 0 ? ' disabled' : '') + '>← Prev</button>' +
+          (n ? '<button class="m-btn" data-w="popen">Open detail</button>' : '') +
+          '<button class="m-btn primary" data-w="pnext"' + (pathIdx === GP.steps.length - 1 ? ' disabled' : '') + '>' + (pathIdx === GP.steps.length - 1 ? 'Done ✓' : 'Next →') + '</button></div>';
+        setTool('<div class="m-tag" style="--c:var(--green)">Guided Path</div><h2>' + esc(GP.title) + '</h2>', body);
+      }
+
+      // Compare tables
+      var CMP = GRAPH.comparisons, cmpIdx = 0;
+      function startCompare() { cmpIdx = 0; renderCompare(); }
+      function renderCompare() {
+        var set = CMP[cmpIdx];
+        var tabs = CMP.map(function (s, i) {
+          return '<button class="tchip' + (i === cmpIdx ? ' active' : '') + '" data-w="ctab" data-i="' + i + '">' + esc(s.title) + '</button>';
+        }).join('');
+        var thead = '<th>Technique</th>' + set.dimensions.map(function (d) { return '<th>' + esc(d.label) + '</th>'; }).join('');
+        var rows = set.rows.map(function (r) {
+          var n = byId[r.id];
+          var name = n ? '<td class="m-cmp-name" data-w="copen" data-id="' + r.id + '">' + esc(n.label) + '</td>' : '<td>' + esc(r.id) + '</td>';
+          var tds = set.dimensions.map(function (d) { return '<td>' + esc(r[d.key] == null ? '' : r[d.key]) + '</td>'; }).join('');
+          return '<tr>' + name + tds + '</tr>';
+        }).join('');
+        var body = '<div class="m-cmp-tabs">' + tabs + '</div>' +
+          '<div class="m-detail">' + esc(set.blurb) + '</div>' +
+          '<div class="m-cmp-scroll"><table class="m-cmp"><thead><tr>' + thead + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
+          '<div class="m-hint">Tap a concept to open its detail.</div>';
+        setTool('<div class="m-tag" style="--c:var(--green)">Compare</div><h2>' + esc(set.title) + '</h2>', body);
+      }
+
+      toolSheet.addEventListener('click', function (e) {
+        if (e.target.classList.contains('m-backdrop') || e.target.classList.contains('m-close')) { closeTool(); return; }
+        var t = e.target.closest('[data-w]'); if (!t) return;
+        var w = t.getAttribute('data-w');
+        if (w === 'ans') {
+          var st = DT.steps[t.getAttribute('data-step')], a = st.a[parseInt(t.getAttribute('data-i'), 10)];
+          if (a.rec) renderWizardRec(a); else if (a.next) renderWizardStep(a.next);
+        } else if (w === 'restart') { startWizard(); }
+        else if (w === 'cont') { e.preventDefault(); renderWizardStep(t.getAttribute('data-step')); }
+        else if (w === 'pprev') { if (pathIdx > 0) { pathIdx--; renderPathStep(); } }
+        else if (w === 'pnext') { if (pathIdx < GP.steps.length - 1) { pathIdx++; renderPathStep(); } }
+        else if (w === 'ctab') { cmpIdx = parseInt(t.getAttribute('data-i'), 10); renderCompare(); }
+        else if (w === 'open' || w === 'popen' || w === 'copen') {
+          var id = w === 'popen' ? GP.steps[pathIdx].id : t.getAttribute('data-id');
+          closeTool(); openSheet(id);
+        }
+      });
+      document.getElementById('mWizard').addEventListener('click', startWizard);
+      document.getElementById('mPath').addEventListener('click', startPath);
+      document.getElementById('mCompare').addEventListener('click', startCompare);
+
+      window.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeSheet(); closePicker(); closeTool(); } });
+
+      // init My Map from a shared link (#map=cluster,cluster) or saved preference
+      var hm = (location.hash.match(/map=([^&]+)/) || [])[1];
+      if (hm) { setMyMap(decodeURIComponent(hm).split(',')); active = myMap.length ? 'mymap' : 'all'; }
+      else { try { var sv = localStorage.getItem('bodhi-mymap'); if (sv) myMap = sv.split(',').filter(function (id) { return CLUSTERS[id]; }); } catch (e) {} }
+      buildChips(); buildLevels(); updateCustomBtn();
+      render();
+    })();
+  </script>
+
+  <script src="js/sw-register.js"></script>
+</body>
+</html>
