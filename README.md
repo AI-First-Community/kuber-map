@@ -90,7 +90,8 @@ The lift is domain- and model-robust — a stronger model does **not** close the
   `context.md` (prompt injection), a self-contained OKF slice, plus a stdlib **MCP retrieval server**
   (`etl/mcp_server.py`). See the wiki [For AI Teams](https://github.com/AI-First-Community/kuber-map/wiki/For-AI-Teams).
 - **The bridge contribution** (`contrib/`) — the 19 bridges packaged as an EDM Council proposal
-  (methodology doc + RDF/Turtle).
+  (methodology doc + RDF/Turtle), plus outreach copy and a one-page brief. Start at
+  **[`contrib/README.md`](contrib/README.md)** — the single hub for everything EDM-Council-related.
 
 > **A note on the edge counts.** You'll see three, describing the same graph at different stages: **6,676** typed relations extracted from FIBO, **6,687** edges in the interactive map (those + the 19 curated bridges + a few guided-tour path edges), and **6,896** frontmatter edges in the OKF bundle (including cross-cluster targets awaiting their domain).
 
