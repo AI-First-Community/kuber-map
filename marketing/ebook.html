@@ -102,6 +102,27 @@
   .road .tx h4{ font-size:30px; font-weight:800;} .road .tx p{ font-size:20px; color:var(--muted); margin-top:4px;}
   .road.j{ margin-top:64px;} .road.j .s{ grid-template-columns:82px 1fr; gap:30px; padding:28px 0;} .road.j .s::before{ left:40px; top:52px;} .road.j .n{ width:82px; height:82px; border-radius:20px; font-size:32px;} .road.j .tx h4{ font-size:38px;} .road.j .tx p{ font-size:23px; margin-top:6px;}
 
+  /* ===== HISTORY TIMELINE ===== */
+  .hist .tline{ position:relative; margin-top:50px; display:flex; align-items:flex-start; gap:20px;}
+  .hist .tline::before{ content:''; position:absolute; top:29px; left:16%; right:16%; height:2px; background:linear-gradient(90deg, var(--std), var(--gold)); opacity:.65; z-index:0;}
+  .hist .tcard{ flex:1; text-align:center; position:relative; z-index:1;}
+  .hist .ticon{ width:58px; height:58px; margin:0 auto 18px; border-radius:15px; background:var(--card); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; color:var(--std);}
+  .hist .ticon svg{ width:28px; height:28px;}
+  .hist .tyr{ font-size:38px; font-weight:800; color:var(--gold); line-height:1;}
+  .hist .tt{ font-size:21px; font-weight:800; margin-top:12px; line-height:1.15;}
+  .hist .tp{ font-size:15.5px; color:var(--muted); margin-top:10px; line-height:1.4; padding:0 4px;}
+  .hist .tdown{ display:flex; flex-direction:column; align-items:center; margin-top:30px;}
+  .hist .tdown .ln{ width:2px; height:30px; background:linear-gradient(180deg, transparent, var(--gold));}
+  .hist .tdown .lbl{ font-size:15px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); font-weight:800; margin-top:12px;}
+  .hist .fibo{ margin-top:22px; border:1.5px solid color-mix(in srgb,var(--gold) 45%,transparent); border-radius:24px; padding:36px 42px; background:radial-gradient(780px 340px at 50% -30%, color-mix(in srgb,var(--gold) 13%,transparent), transparent 60%), color-mix(in srgb,var(--gold) 5%,var(--card));}
+  .hist .fclabel{ font-size:15px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); font-weight:800;}
+  .hist .fcmain{ display:flex; align-items:center; gap:26px; margin-top:18px;}
+  .hist .fcicon{ width:82px; height:82px; flex:0 0 82px; border-radius:20px; background:color-mix(in srgb,var(--gold) 14%,transparent); border:1px solid color-mix(in srgb,var(--gold) 40%,transparent); display:flex; align-items:center; justify-content:center; color:var(--gold);}
+  .hist .fcicon svg{ width:44px; height:44px;}
+  .hist .fcname{ font-size:74px; font-weight:800; letter-spacing:-.02em; line-height:1; color:var(--ink);}
+  .hist .fcfull{ font-size:22px; color:var(--muted); font-weight:700; margin-top:5px;}
+  .hist .fcdesc{ font-size:20px; color:var(--muted); margin-top:26px; line-height:1.5;} .hist .fcdesc b{color:var(--ink); font-weight:800;}
+
   /* ===== QUOTE ===== */
   .quote .pad{ justify-content:center; padding:104px 110px;}
   .quote .mk{ font-size:190px; line-height:.55; height:92px; color:var(--green); opacity:.4; font-weight:800;}
@@ -292,17 +313,33 @@
     <div class="foot"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
   </div></section>
 
-  <!-- 6 · HISTORY -->
-  <section class="page"><div class="pad">
+  <!-- 6 · HISTORY (horizontal timeline -> FIBO culmination) -->
+  <section class="page hist"><div class="pad">
     <div class="kicker">A pattern across 500 years</div>
     <h2>Every leap began with<br><span class="g">a shared language.</span></h2>
-    <div class="road" style="margin-top:44px">
-      <div class="s"><div class="n" style="color:var(--gold);font-size:22px">1494</div><div class="tx"><h4>Double-entry bookkeeping</h4><p>Luca Pacioli codifies it in print — a shared grammar for value.</p></div></div>
-      <div class="s"><div class="n" style="color:var(--gold);font-size:22px">1973</div><div class="tx"><h4>SWIFT</h4><p>One messaging standard, so money moves between institutions.</p></div></div>
-      <div class="s"><div class="n" style="color:var(--gold);font-size:22px">2012</div><div class="tx"><h4>Legal Entity Identifier</h4><p>After 2008, the LEI (ISO 17442) gives every entity one global name.</p></div></div>
-      <div class="s"><div class="n" style="color:var(--green);font-size:22px">now</div><div class="tx"><h4>FIBO</h4><p>The EDM Council models the <i>concepts</i> as one open, machine-readable ontology.</p></div></div>
+    <div class="tline">
+      <div class="tcard">
+        <div class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M12 4 V20 M7 9 H9.5 M14.5 9 H17 M7 13 H9.5 M14.5 13 H17"/></svg></div>
+        <div class="tyr">1494</div><div class="tt">Double-entry<br>bookkeeping</div><div class="tp">Pacioli codifies it in print — a shared grammar for value.</div>
+      </div>
+      <div class="tcard">
+        <div class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 H21 M12 3 C14.5 6 14.5 18 12 21 C9.5 18 9.5 6 12 3"/></svg></div>
+        <div class="tyr">1973</div><div class="tt">SWIFT</div><div class="tp">One messaging standard, so money moves between banks.</div>
+      </div>
+      <div class="tcard">
+        <div class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 15.6 C6.6 13.9 11.4 13.9 12 15.6 M14.5 10 H18 M14.5 13 H18"/></svg></div>
+        <div class="tyr">2012</div><div class="tt">Legal Entity<br>Identifier</div><div class="tp">The LEI (ISO 17442) gives every entity one global name.</div>
+      </div>
     </div>
-    <div class="take"><div class="t">Takeaway</div><p>Finance advances when it agrees on a <b>shared, precise vocabulary</b> — FIBO is the latest.</p></div>
+    <div class="tdown"><div class="ln"></div><div class="lbl">the natural next step ▾</div></div>
+    <div class="fibo">
+      <div class="fclabel">◆ Today — the culmination</div>
+      <div class="fcmain">
+        <div class="fcicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.4"/><circle cx="5" cy="6" r="1.8"/><circle cx="19" cy="6" r="1.8"/><circle cx="5" cy="18" r="1.8"/><circle cx="19" cy="18" r="1.8"/><path d="M6.6 7 10 10.5 M17.4 7 14 10.5 M6.6 17 10 13.5 M17.4 17 14 13.5"/></svg></div>
+        <div class="fctext"><div class="fcname">FIBO</div><div class="fcfull">Financial Industry Business Ontology</div></div>
+      </div>
+      <div class="fcdesc">The EDM Council models the <i>concepts</i> themselves — loans, securities, owners, reports — as one open, machine-readable ontology. <b>Five centuries of standardization, made computable.</b></div>
+    </div>
     <div class="foot"><span class="b">Kuber <span>Map</span></span><span class="ch">The pattern</span><span class="pn"></span></div>
   </div></section>
 
