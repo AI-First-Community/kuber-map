@@ -5,15 +5,16 @@ A curated, learner-first knowledge map of the **Financial Industry Business Onto
 financial AI agents**. Every concept carries its FIBO IRI as a citation; provenance (`fibo` vs
 `curated`) is never blurred.
 
-[![Live demo](https://img.shields.io/badge/%E2%9C%A6%20live%20demo-open-4fe08a)](https://ai-first-community.github.io/kuber-map/)
+[![Live app](https://img.shields.io/badge/%E2%9C%A6%20live%20app-launch-4fe08a)](https://ai-first-community.github.io/kuber-map/)
 [![gate](https://github.com/AI-First-Community/kuber-map/actions/workflows/ci.yml/badge.svg)](https://github.com/AI-First-Community/kuber-map/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-informational)](LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
 [![Wiki](https://img.shields.io/badge/docs-wiki-blue)](https://github.com/AI-First-Community/kuber-map/wiki)
 
-> **▶ Try it: <https://ai-first-community.github.io/kuber-map/>** — runs in the browser, works
-> offline, and installs as a PWA (desktop: address-bar install; mobile: Add to Home Screen, or scan
-> the QR on the landing page). Nothing to sign up for, nothing to pay.
+> **▶ Open the app: <https://ai-first-community.github.io/kuber-map/>** — a live, installable app,
+> not a mockup: it runs in the browser, works offline, and installs as a PWA (desktop: address-bar
+> install; mobile: Add to Home Screen, or scan the QR on the landing page). Nothing to sign up for,
+> nothing to pay.
 
 Named for **Kubera**, the treasurer and god of wealth. Inspired by the
 [Bodhi Map](https://github.com/AI-First-Community/Bodhi) approach: reveal how concepts *connect*,
