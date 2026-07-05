@@ -179,6 +179,17 @@
   .prodnotes{ margin-top:26px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:22px;}
   .pn2{ font-size:19px; line-height:1.4; color:var(--muted);} .pn2 .k{ display:block; font-size:15px; letter-spacing:.06em; text-transform:uppercase; font-weight:800; margin-bottom:6px;}
 
+  /* ===== PRODUCT HERO ===== */
+  .prod .phead{ padding:104px 96px 0;}
+  .prod .pintro{ font-size:23px; color:var(--muted); margin-top:22px; line-height:1.5; max-width:820px;} .prod .pintro b{color:var(--ink); font-weight:800;}
+  .prod .hero-shot{ margin-top:44px; position:relative;}
+  .prod .hero-shot .bar{ height:52px; display:flex; align-items:center; gap:9px; padding:0 26px; background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .prod .hero-shot .bar i{ width:12px; height:12px; border-radius:50%; background:var(--faint); opacity:.5;}
+  .prod .hero-shot .bar .u{ margin-left:16px; font-size:16px; color:var(--faint);}
+  .prod .imgwrap{ position:relative; line-height:0;}
+  .prod .imgwrap img{ width:100%; display:block;}
+  .prod .co{ position:absolute; transform:translateY(-50%); display:flex; align-items:center; gap:10px; padding:9px 16px; background:rgba(8,16,12,.86); border:1px solid rgba(255,255,255,.18); border-radius:999px; font-size:16px; font-weight:800; color:#fff; box-shadow:0 8px 24px rgba(0,0,0,.5);}
+  .prod .co .dot{ width:11px; height:11px; border-radius:50%; flex:0 0 11px;}
   /* ===== PRINCIPLES ===== */
   .princ{ margin-top:52px; display:flex; flex-direction:column;}
   .princ .p{ display:grid; grid-template-columns:110px 1fr; gap:28px; align-items:baseline; padding:32px 0; border-top:1px solid var(--line);}
@@ -454,22 +465,24 @@
     <div class="foot"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
   </div></section>
 
-  <!-- 13 · WHAT IS KUBER MAP + PRODUCT -->
-  <section class="page"><div class="pad">
-    <div class="kicker">What this is</div>
-    <h2>Kuber Map, <span class="g">in one screen.</span></h2>
-    <div class="browser">
+  <!-- 13 · WHAT IS — product hero -->
+  <section class="page prod">
+    <div class="phead">
+      <div class="kicker">What this is</div>
+      <h1>This is <span class="g">Kuber Map.</span></h1>
+      <div class="pintro">The industry's ontology, made explorable — and every concept carries its <b>FIBO citation</b>.</div>
+    </div>
+    <div class="hero-shot">
       <div class="bar"><i></i><i></i><i></i><a class="u" href="https://ai-first-community.github.io/kuber-map">ai-first-community.github.io/kuber-map</a></div>
-      <img src="ebook-product.png" alt="The Kuber Map interactive graph showing the concept 'loan' with its FIBO definition, provenance, and cited relationships" />
+      <div class="imgwrap">
+        <img src="ebook-product.png" alt="The Kuber Map interactive graph: the concept 'loan' with its FIBO definition, provenance, and cited relationships" />
+        <div class="co" style="top:44%;left:17%"><span class="dot" style="background:var(--green)"></span>Curated concepts</div>
+        <div class="co" style="top:47%;left:60%"><span class="dot" style="background:var(--gold)"></span>Provenance</div>
+        <div class="co" style="top:64%;left:60%"><span class="dot" style="background:var(--std)"></span>Cited relations</div>
+      </div>
     </div>
-    <div class="prodnotes">
-      <div class="pn2"><span class="k" style="color:var(--green)">Curated concept</span>A learner-first "core" of the ontology — not the whole thing at once.</div>
-      <div class="pn2"><span class="k" style="color:var(--gold)">Provenance</span>Every fact tagged <b>standard</b> or <b>curated</b> — never blurred.</div>
-      <div class="pn2"><span class="k" style="color:var(--std)">Cited relations</span>Each connection resolves to a real FIBO IRI — the audit trail.</div>
-    </div>
-    <div class="take"><div class="t">Takeaway</div><p>The same data drives an <b>interactive map</b> and the <b>context packs an agent consumes</b>.</p></div>
     <div class="foot"><span class="b">Kuber <span>Map</span></span><span class="ch">The answer</span><span class="pn"></span></div>
-  </div></section>
+  </section>
 
   <!-- 14 · PHILOSOPHY -->
   <section class="page"><div class="pad">
