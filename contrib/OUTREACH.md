@@ -47,8 +47,9 @@ well-cited) rather than all 19 at once.
 
 ## A) Intro note — FIBO Community of Practice / EDMConnect / OKG Innovation Lab
 
-> Post to the FIBO CoP (EDMConnect) or email the OKG Innovation Lab. Keep it short; attach or link
-> `edmc-bridge-contribution.md`.
+> Post to the FIBO CoP (EDMConnect) or email the OKG Innovation Lab. Keep it short; attach the
+> one-page **`bridge-brief.pdf`** (the six strongest bridges, diagrammed — dark or `-light` variant)
+> and link `edmc-bridge-contribution.md` for the full 19.
 
 **Subject:** Proposed cross-domain relations for FIBO — 19 grounded, cited bridges for review
 

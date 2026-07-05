@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Kuber Map — cross-domain bridge brief</title>
+<style>
+  @font-face { font-family:'Manrope'; font-weight:400; src:url('../fonts/manrope-400.woff2') format('woff2'); }
+  @font-face { font-family:'Manrope'; font-weight:600; src:url('../fonts/manrope-600.woff2') format('woff2'); }
+  @font-face { font-family:'Manrope'; font-weight:700; src:url('../fonts/manrope-700.woff2') format('woff2'); }
+  @font-face { font-family:'Manrope'; font-weight:800; src:url('../fonts/manrope-800.woff2') format('woff2'); }
+  :root{
+    --bg:#0a1410; --card:#12211a; --line:rgba(159,188,171,.16);
+    --ink:#eaf3ee; --muted:#9fbcab; --green:#4fe08a; --gold:#f3c969;
+    --grad-g:rgba(60,170,100,.15); --page:#05100b;
+    --LOAN:#4fe08a; --SEC:#f3c969; --FND:#6fb3ff; --BE:#c99bf5; --DER:#ff9e6b; --FBC:#5fd0c0; --CMNS:#9fbcab;
+  }
+  .sheet.light{
+    --bg:#f6f8f4; --card:#ffffff; --line:rgba(20,60,40,.14);
+    --ink:#10201a; --muted:#51705f; --green:#12894a; --gold:#a9781a; --grad-g:rgba(40,150,85,.10);
+    --LOAN:#12894a; --SEC:#a9781a; --FND:#2f6fb0; --BE:#7d4bb0; --DER:#c25a1e; --FBC:#1a8a7a; --CMNS:#5b7a6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--page)}
+  body:has(.sheet.light){background:#e9ece6}
+  .sheet{
+    width:210mm; min-height:297mm; position:relative; overflow:hidden;
+    font-family:'Manrope',-apple-system,sans-serif; color:var(--ink);
+    background:radial-gradient(620px 460px at 84% -4%, var(--grad-g), transparent 60%), var(--bg);
+    padding:15mm 15mm 12mm; display:flex; flex-direction:column;
+  }
+  .brand{display:flex; align-items:center; gap:11px;}
+  .brand img{width:38px; height:38px;}
+  .brand .wm{font-weight:800; font-size:22px; letter-spacing:-.01em;}
+  .brand .wm span{color:var(--green);}
+  .brand .meta{margin-left:auto; text-align:right; font-size:10.5px; color:var(--muted); line-height:1.45;}
+  .brand .meta b{color:var(--ink);}
+
+  h1{margin-top:6mm; font-size:24px; font-weight:800; letter-spacing:-.01em;}
+  h1 .g{color:var(--green);}
+  .lede{margin-top:3mm; font-size:12px; line-height:1.55; color:var(--muted); max-width:180mm;}
+  .lede b{color:var(--ink);}
+  .lede code{font-family:ui-monospace,Menlo,monospace; font-size:11px; color:var(--gold);}
+
+  .bridges{margin-top:6mm; display:flex; flex-direction:column; gap:3.4mm;}
+  .bridge{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:4mm 5mm;}
+  .flow{display:flex; align-items:center; gap:9px; flex-wrap:wrap;}
+  .node{display:inline-flex; align-items:baseline; gap:7px; padding:4px 11px; border-radius:9px;
+    background:color-mix(in srgb, var(--c) 15%, transparent);
+    border:1px solid color-mix(in srgb, var(--c) 48%, transparent);
+    font-weight:700; font-size:13px; color:var(--ink);}
+  .node small{font-size:9px; font-weight:800; letter-spacing:.5px; color:var(--c); text-transform:uppercase;}
+  .arrow{display:inline-flex; flex-direction:column; align-items:center; min-width:78px;}
+  .arrow .lbl{font-size:10px; font-weight:800; color:var(--gold); letter-spacing:.02em; white-space:nowrap;}
+  .arrow .ln{width:100%; height:0; border-top:2px solid color-mix(in srgb, var(--gold) 60%, transparent); position:relative; margin-top:2px;}
+  .arrow .ln::after{content:''; position:absolute; right:-1px; top:-4px; border-left:6px solid color-mix(in srgb, var(--gold) 60%, transparent); border-top:4px solid transparent; border-bottom:4px solid transparent;}
+  .rat{margin-top:2.6mm; font-size:11px; line-height:1.5; color:var(--muted);}
+  .rat .cite{color:var(--ink); font-weight:700;}
+  .rat .kind{display:inline-block; font-size:9px; font-weight:800; letter-spacing:.4px; text-transform:uppercase; color:var(--green); border:1px solid color-mix(in srgb,var(--green) 40%,transparent); border-radius:999px; padding:0 6px; margin-right:6px; vertical-align:1px;}
+
+  .foot{margin-top:auto; padding-top:5mm; display:flex; align-items:center; justify-content:space-between; gap:10px; font-size:10px; color:var(--muted); border-top:1px solid var(--line);}
+  .foot .gate b{color:var(--green);}
+  .byline{display:flex; align-items:center; gap:7px; font-size:11px; font-weight:800; color:var(--ink); white-space:nowrap;}
+  .byline b{color:var(--green);}
+  .byline .spark{width:11px; height:11px; border-radius:4px; background:linear-gradient(135deg,var(--green),var(--gold));}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="brand">
+    <img src="../images/kuber-map.png" alt="" />
+    <div class="wm">Kuber <span>Map</span></div>
+    <div class="meta">Cross-domain bridge brief · for <b>FIBO working-group review</b><br>Full proposal: <b>contrib/edmc-bridge-contribution.md</b></div>
+  </div>
+
+  <h1>Six representative <span class="g">cross-domain relations</span> FIBO doesn't yet draw</h1>
+  <p class="lede">From <b>19 grounded relations</b> surfaced while building learner-first, agent-grounding maps of FIBO across five use cases.
+  Both endpoints are real FIBO/Commons classes; none duplicates an edge FIBO already asserts; each carries a rationale + citation.
+  Shown in a neutral <code>kmb:</code> namespace — we identify the <b>gap</b>, not the property.</p>
+
+  <div class="bridges">
+    <div class="bridge">
+      <div class="flow">
+        <span class="node" style="--c:var(--SEC)">mortgage-backed security <small>SEC</small></span>
+        <span class="arrow"><span class="lbl">backed-by</span><span class="ln"></span></span>
+        <span class="node" style="--c:var(--LOAN)">mortgage <small>LOAN</small></span>
+      </div>
+      <div class="rat"><span class="kind">SEC ↔ LOAN</span>Pooled mortgage loans back an MBS; FIBO models both, but draws no edge from the security to the loans that back it. <span class="cite">SEC Regulation AB · 17 CFR 229.1100</span></div>
+    </div>
+
+    <div class="bridge">
+      <div class="flow">
+        <span class="node" style="--c:var(--SEC)">asset-backed security <small>SEC</small></span>
+        <span class="arrow"><span class="lbl">backed-by</span><span class="ln"></span></span>
+        <span class="node" style="--c:var(--LOAN)">loan <small>LOAN</small></span>
+      </div>
+      <div class="rat"><span class="kind">SEC ↔ LOAN</span>An ABS is collateralized by a pool of receivables such as consumer or auto loans; the backing relationship is left implicit. <span class="cite">SEC Regulation AB · 17 CFR 229.1100</span></div>
+    </div>
+
+    <div class="bridge">
+      <div class="flow">
+        <span class="node" style="--c:var(--FND)">reporting party <small>FND</small></span>
+        <span class="arrow"><span class="lbl">identified-by</span><span class="ln"></span></span>
+        <span class="node" style="--c:var(--BE)">legal entity identifier <small>BE</small></span>
+      </div>
+      <div class="rat"><span class="kind">FND ↔ BE</span>The party that submits a supervisory or transaction report is identified by its LEI; FIBO defines both, but not the link. <span class="cite">ISO 17442 (LEI) · MiFID II / CFTC reporting</span></div>
+    </div>
+
+    <div class="bridge">
+      <div class="flow">
+        <span class="node" style="--c:var(--DER)">credit default swap <small>DER</small></span>
+        <span class="arrow"><span class="lbl">references</span><span class="ln"></span></span>
+        <span class="node" style="--c:var(--SEC)">bond <small>SEC</small></span>
+      </div>
+      <div class="rat"><span class="kind">DER ↔ SEC</span>A CDS transfers the credit risk of a reference obligation — typically a bond of the reference entity — but FIBO draws no edge from the swap to it. <span class="cite">ISDA Credit Derivatives Definitions</span></div>
+    </div>
+
+    <div class="bridge">
+      <div class="flow">
+        <span class="node" style="--c:var(--CMNS)">regulatory report <small>CMNS</small></span>
+        <span class="arrow"><span class="lbl">submitted-to</span><span class="ln"></span></span>
+        <span class="node" style="--c:var(--CMNS)">regulatory agency <small>CMNS</small></span>
+      </div>
+      <div class="rat"><span class="kind">intra-domain</span>A report is submitted to the agency that requires it; Commons models both classes but not the filing edge between them. <span class="cite">Supervisory practice · HMDA→CFPB, MiFID II→NCAs</span></div>
+    </div>
+
+    <div class="bridge">
+      <div class="flow">
+        <span class="node" style="--c:var(--BE)">beneficial owner <small>BE</small></span>
+        <span class="arrow"><span class="lbl">beneficial-owner-of</span><span class="ln"></span></span>
+        <span class="node" style="--c:var(--CMNS)">legal entity <small>CMNS</small></span>
+      </div>
+      <div class="rat"><span class="kind">BE ↔ CMNS</span>The party that ultimately owns or controls a legal entity — core to UBO resolution; FIBO models the role but draws no edge to the entity owned. <span class="cite">FATF Recommendations 24 &amp; 25 · 31 CFR 1010.230</span></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="gate">Grounding gate: <b>real FIBO/Commons endpoints</b> · <b>not already asserted in FIBO</b> · <b>rationale + external citation</b> · MIT · github.com/AI-First-Community/kuber-map</div>
+    <div class="byline"><span class="spark"></span>Innovate With <b>Sanjeev</b></div>
+  </div>
+</div>
+</body>
+</html>
