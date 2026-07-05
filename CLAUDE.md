@@ -9,7 +9,7 @@ alongside this file.
 **Kuber Map for FIBO** — a curated, learner-first knowledge map of the Financial Industry
 Business Ontology (FIBO), stored in Google's Open Knowledge Format (OKF), that doubles as
 **audit-ready grounding context for financial AI agents**. Value ranking (drives priorities):
-agent-grounding (product) > cross-domain bridges (moat) > the map UI (demo/curation surface).
+agent-grounding (product) > cross-domain bridges (moat) > the map UI (showcase/curation surface).
 See `PLAN.md` §1.
 
 ## Repository map

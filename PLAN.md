@@ -14,12 +14,12 @@ Status: **Building — Loan-Origination MLV (Phase 1)** · Owner: Sanjeev Azad �
 
 > **We turn FIBO into audit-ready grounding for financial AI agents — so they stop hallucinating on financial semantics, and you can prove to a regulator exactly which concepts justified every decision.**
 
-The interactive map is the **demo and the curation surface**, not the product. The product is a **curated FIBO subgraph + cross-domain bridges, exportable as per-use-case grounding context** for financial AI agents, with provenance/citation for audit.
+the interactive map is the **showcase and the curation surface**, not the product. The product is a **curated FIBO subgraph + cross-domain bridges, exportable as per-use-case grounding context** for financial AI agents, with provenance/citation for audit.
 
 **Value ranking (drives the roadmap):**
 1. **Agent-grounding (~70%)** — the only pillar touching a pain with a budget: financial AI agents hallucinate on domain semantics and can't show a regulator *why* they answered. → **Phase 1.**
 2. **Cross-domain bridges (~25%)** — near-zero standalone value, but the **moat**: they make multi-domain use cases coherent and are hard to copy (curation, not code). → the connective tissue that makes pillar 1 work.
-3. **The map (~5%)** — a fork of Bodhi's Cytoscape UI; its jobs are (a) sales/demo and (b) the human review surface for curating bridges. Not a business on its own.
+3. **The map (~5%)** — a fork of Bodhi's Cytoscape UI; its jobs are (a) sales/showcase and (b) the human review surface for curating bridges. Not a business on its own.
 
 The old v1 ordering (map → bridges → agents) was inverted relative to value and has been corrected.
 
@@ -195,7 +195,7 @@ Fork Bodhi (own it), pin FIBO submodule to a Production tag, stub `okf.config.js
 
 **Phase 1 — Minimum Lovable Version: prove the value** (the answer to "is this just fancy tech?")
 - **One use case end-to-end: Loan Origination** (LOAN+FND+FBC+BE). Hand-curate ~40–60 concepts + the 5–10 lateral bridges it needs (skip full extraction).
-- Ship the **context pack + retrieval endpoint** (the product), and the curated map (the demo/curation UI) with LOD.
+- Ship the **context pack + retrieval endpoint** (the product), and the curated map (the showcase/curation UI) with LOD.
 - **Value-proof eval:** loan-underwriting agent on a 50–100 Q financial-semantics benchmark, **grounded vs ungrounded** — score accuracy, hallucination rate, and % of answers carrying a valid FIBO provenance citation. **Target: ≥15–20pt accuracy lift + 100% auditable answers.** If it doesn't move, we learned cheaply.
 
 **Phase 2 — Harden the moat**
