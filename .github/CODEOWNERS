@@ -1,0 +1,9 @@
+# Code owners for Kuber Map.
+# Every pull request automatically requests a review from the owner(s) below.
+# Combined with branch protection ("require review from Code Owners"), nothing
+# merges into main without an owner's approval.
+#
+# Syntax: <path pattern>  <@owner ...>  — last matching rule wins.
+
+# Default owner for everything in the repo.
+*       @Innovate-With-Sanjeev
