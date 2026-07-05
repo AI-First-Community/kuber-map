@@ -1,7 +1,7 @@
 /* Kuber Map for FIBO — service worker (offline + installable PWA).
    Precaches the app shell so the map works offline after install; runtime-caches
    everything else same-origin (cache-first). Bump CACHE to invalidate. */
-const CACHE = 'kuber-map-v1.5.0';
+const CACHE = 'kuber-map-v1.6.0';
 const PRECACHE = [
   './', './index.html', './app.html', './m.html',
   './css/style.css',

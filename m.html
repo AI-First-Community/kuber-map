@@ -96,6 +96,8 @@
     .m-ex{margin:2px 0 0;padding-left:19px;}
     .m-ex li{font-size:14.5px;line-height:1.55;color:var(--ink);margin:4px 0;}
     .m-syn{font-size:13.5px;color:var(--muted);}
+    .m-cbridge{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:#ffd7de;background:rgba(225,29,72,.85);padding:1px 6px;border-radius:999px;margin-left:6px;vertical-align:middle;}
+    .l-cap{align-self:center;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-right:2px;white-space:nowrap;}
     .m-prov{font-size:10px;font-weight:700;color:var(--gold);border:1px solid rgba(243,201,105,.45);border-radius:999px;padding:1px 6px;margin-left:5px;vertical-align:middle;}
     .m-detail{margin-top:14px;font-size:14px;line-height:1.65;color:var(--muted);}
     .m-h{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted);font-weight:800;margin:20px 0 8px;}
@@ -180,21 +182,22 @@
       function sumOf(n){ var t=(n.summary||'').trim(); if(t) return esc(t); var p=superclasses(n.id).slice(0,3).map(esc); return p.length ? ('A type of '+p.join(', ')+'. FIBO defines this class through its superclass and axioms rather than a text definition.') : 'A FIBO class defined structurally, through axioms rather than a text definition.'; }
       var relLabel = {}; Object.keys(RELATIONS).forEach(function (k) { relLabel[k] = RELATIONS[k].label; });
       var REL = (typeof RELEASE !== 'undefined' && RELEASE) ? RELEASE.version : null;
-      var active = 'all', q = '', myMap = [], activeLevel = null;
+      var active = 'core', q = '', myMap = [], activeLevel = null;
       function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (m) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[m]; }); }
 
-      document.getElementById('count').textContent = nodes.length + ' concepts';
+      var countEl = document.getElementById('count');
+      var UC = (function () { var seen = {}, out = []; nodes.forEach(function (n) { (n.useCases || []).forEach(function (u) { if (!seen[u]) { seen[u] = 1; out.push(u); } }); }); var order = ['Loan', 'KYC', 'Securities', 'Reg reporting', 'Derivatives']; out.sort(function (a, b) { return order.indexOf(ucShort(a)) - order.indexOf(ucShort(b)); }); return out; })();
       (function () { var f = document.querySelector('.m-foot'); if (f && typeof RELEASE !== 'undefined' && RELEASE) f.insertAdjacentHTML('beforeend', ' · <span style="opacity:.6">' + (RELEASE.label || ('v' + RELEASE.version)) + '</span>'); })();
 
       // cluster chips (rebuilt when My Map changes)
       var chipsEl = document.getElementById('chips');
+      function chip(key, label) { return '<button class="chip' + (active === key ? ' active' : '') + '" data-cluster="' + esc(key) + '">' + esc(label) + '</button>'; }
       function buildChips() {
         var ch = '';
-        if (myMap.length) ch += '<button class="chip' + (active === 'mymap' ? ' active' : '') + '" data-cluster="mymap">★ My Map</button>';
-        ch += '<button class="chip' + (active === 'all' ? ' active' : '') + '" data-cluster="all">All</button>';
-        Object.keys(CLUSTERS).forEach(function (id) {
-          ch += '<button class="chip' + (active === id ? ' active' : '') + '" data-cluster="' + id + '"><span class="dot" style="background:' + CLUSTERS[id].color + '"></span>' + esc(CLUSTERS[id].label) + '</button>';
-        });
+        if (myMap.length) ch += chip('mymap', '★ My Map');
+        ch += chip('core', '★ Core');
+        UC.forEach(function (u) { ch += chip(u, ucShort(u)); });
+        ch += chip('all', 'All ' + nodes.length);
         chipsEl.innerHTML = ch;
       }
       chipsEl.addEventListener('click', function (e) {
@@ -209,9 +212,9 @@
       // level (1–5) filter
       var levelsEl = document.getElementById('levels');
       function buildLevels() {
-        var lv = '<button class="lchip' + (activeLevel === null ? ' active' : '') + '" data-level="all">All levels</button>';
+        var lv = '<span class="l-cap">Maturity</span><button class="lchip' + (activeLevel === null ? ' active' : '') + '" data-level="all">All</button>';
         Object.keys(LEVELS).forEach(function (l) {
-          lv += '<button class="lchip' + (String(activeLevel) === l ? ' active' : '') + '" data-level="' + l + '" title="' + esc(LEVELS[l]) + '">L' + l + '</button>';
+          lv += '<button class="lchip' + (String(activeLevel) === l ? ' active' : '') + '" data-level="' + l + '">' + esc(LEVELS[l]) + '</button>';
         });
         levelsEl.innerHTML = lv;
       }
@@ -231,7 +234,7 @@
       }
       function setMyMap(arr) {
         var seen = {}; myMap = arr.filter(function (id) { if (!CLUSTERS[id] || seen[id]) return false; seen[id] = 1; return true; });
-        try { if (myMap.length) localStorage.setItem('bodhi-mymap', myMap.join(',')); else localStorage.removeItem('bodhi-mymap'); } catch (e) {}
+        try { if (myMap.length) localStorage.setItem('kuber-mymap', myMap.join(',')); else localStorage.removeItem('kuber-mymap'); } catch (e) {}
       }
       function toast(msg) {
         var t = document.getElementById('mtoast');
@@ -285,31 +288,36 @@
       var listEl = document.getElementById('list');
       function matches(n) {
         if (active === 'mymap') { if (myMap.indexOf(n.cluster) === -1) return false; }
-        else if (active !== 'all' && n.cluster !== active) return false;
+        else if (active === 'core') { if (!n.core) return false; }
+        else if (active !== 'all') { if (!n.useCases || n.useCases.indexOf(active) === -1) return false; }
         if (activeLevel !== null && n.level !== activeLevel) return false;
-        if (q && (n.label + ' ' + n.summary).toLowerCase().indexOf(q) === -1) return false;
+        if (q) {
+          var hay = (n.label + ' ' + n.summary + ' ' + (n.synonyms || []).join(' ') + ' ' + (n.useCases || []).map(ucShort).join(' ')).toLowerCase();
+          if (hay.indexOf(q) === -1) return false;
+        }
         return true;
       }
       function card(n) {
         var c = CLUSTERS[n.cluster] || { color: '#888' };
         var isNew = REL && n.added === REL;
         return '<div class="card" data-id="' + n.id + '" style="--c:' + c.color + '">' +
-          '<h3>' + esc(n.label) + (isNew ? ' <span class="newb">NEW</span>' : '') + '<span class="lvl">L' + n.level + '</span></h3>' +
+          '<h3>' + esc(n.label) + (isNew ? ' <span class="newb">NEW</span>' : '') + '<span class="lvl" title="' + esc(LEVELS[n.level] || '') + '">' + esc((LEVELS[n.level] || '?').charAt(0)) + '</span></h3>' +
           '<p>' + sumOf(n) + '</p></div>';
       }
       function render() {
         var items = nodes.filter(matches);
+        countEl.textContent = items.length + (active === 'all' ? ' total' : active === 'core' ? ' curated core' : active === 'mymap' ? ' in your map' : ' concepts');
         if (!items.length) { listEl.innerHTML = '<div class="empty">No concepts match “' + esc(q) + '”.</div>'; return; }
         var html = '';
         if (active === 'mymap' && !q) {
-          html += '<div class="m-path-note">Your map · ' + myMap.length + ' topics · ' + items.length + ' concepts, ordered <b>foundations → advanced</b>. <a href="#" id="editmap">Edit</a> · <a href="#" id="sharemap">Share</a></div>';
+          html += '<div class="m-path-note">Your map · ' + myMap.length + ' topics · ' + items.length + ' concepts, grouped by <b>FIBO maturity</b>. <a href="#" id="editmap">Edit</a> · <a href="#" id="sharemap">Share</a></div>';
           Object.keys(LEVELS).forEach(function (lvl) {
             var g = items.filter(function (n) { return String(n.level) === String(lvl); });
             if (!g.length) return;
-            html += '<div class="m-group-title">Level ' + lvl + ' · ' + esc(LEVELS[lvl]) + '</div>';
+            html += '<div class="m-group-title">' + esc(LEVELS[lvl]) + ' · ' + g.length + '</div>';
             g.forEach(function (n) { html += card(n); });
           });
-        } else if (active === 'all' && !q) {
+        } else if (!q) {
           Object.keys(CLUSTERS).forEach(function (cid) {
             var g = items.filter(function (n) { return n.cluster === cid; });
             if (!g.length) return;
@@ -334,8 +342,9 @@
         var out = [];
         edges.forEach(function (edge) {
           if (edge.r === 'path') return;
-          if (edge.s === id && byId[edge.t]) out.push({ rel: relLabel[edge.r] || edge.r, to: byId[edge.t] });
-          else if (edge.t === id && byId[edge.s]) out.push({ rel: relLabel[edge.r] || edge.r, to: byId[edge.s], rev: true });
+          var br = !!(edge.bridge || edge.provenance === 'curated');
+          if (edge.s === id && byId[edge.t]) out.push({ rel: relLabel[edge.r] || edge.r, to: byId[edge.t], bridge: br });
+          else if (edge.t === id && byId[edge.s]) out.push({ rel: relLabel[edge.r] || edge.r, to: byId[edge.s], rev: true, bridge: br });
         });
         return out;
       }
@@ -344,7 +353,7 @@
         var c = CLUSTERS[n.cluster] || { color: '#888', label: '' };
         var isNew = REL && n.added === REL, conns = connsFor(id);
         var html = '<div class="m-head"><div class="m-grab"></div><button class="m-close" aria-label="Close">×</button>' +
-          '<div class="m-tag" style="--c:' + c.color + '">' + esc(c.label) + ' · L' + n.level + ' — ' + esc(LEVELS[n.level] || '') + (isNew ? ' <span class="newb">NEW</span>' : '') + '</div>' +
+          '<div class="m-tag" style="--c:' + c.color + '">' + esc(c.label) + ' · ' + esc(LEVELS[n.level] || '') + (isNew ? ' <span class="newb">NEW</span>' : '') + '</div>' +
           '<h2>' + esc(n.label) + '</h2></div>' +
           '<div class="m-body"><div class="m-sum" style="--c:' + c.color + '">' + sumOf(n) + '</div>';
         if (n.useCases && n.useCases.length) html += '<div class="m-badges">' + n.useCases.map(function (u) { return '<span class="m-badge">' + esc(ucShort(u)) + '</span>'; }).join('') + '</div>';
@@ -355,7 +364,7 @@
           html += '<div class="m-h">Connections</div><div class="m-conns">';
           conns.forEach(function (cn) {
             var cc = CLUSTERS[cn.to.cluster] || { color: '#888' };
-            html += '<div class="m-conn" data-id="' + cn.to.id + '"><span class="dot" style="background:' + cc.color + '"></span><span class="rel">' + esc(cn.rel) + (cn.rev ? ' ←' : '') + '</span><span class="to">' + esc(cn.to.label) + '</span></div>';
+            html += '<div class="m-conn" data-id="' + cn.to.id + '"><span class="dot" style="background:' + cc.color + '"></span><span class="rel">' + esc(cn.rel) + (cn.rev ? ' ←' : '') + (cn.bridge ? ' <span class="m-cbridge">bridge</span>' : '') + '</span><span class="to">' + esc(cn.to.label) + '</span></div>';
           });
           html += '</div>';
         }
@@ -476,7 +485,7 @@
       // init My Map from a shared link (#map=cluster,cluster) or saved preference
       var hm = (location.hash.match(/map=([^&]+)/) || [])[1];
       if (hm) { setMyMap(decodeURIComponent(hm).split(',')); active = myMap.length ? 'mymap' : 'all'; }
-      else { try { var sv = localStorage.getItem('bodhi-mymap'); if (sv) myMap = sv.split(',').filter(function (id) { return CLUSTERS[id]; }); } catch (e) {} }
+      else { try { var sv = localStorage.getItem('kuber-mymap'); if (sv) myMap = sv.split(',').filter(function (id) { return CLUSTERS[id]; }); } catch (e) {} }
       buildChips(); buildLevels(); updateCustomBtn();
       render();
     })();
