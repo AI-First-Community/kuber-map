@@ -96,6 +96,14 @@
     .m-ex{margin:2px 0 0;padding-left:19px;}
     .m-ex li{font-size:14.5px;line-height:1.55;color:var(--ink);margin:4px 0;}
     .m-syn{font-size:13.5px;color:var(--muted);}
+    .m-share{float:right;margin:2px 9px 0 0;height:38px;padding:0 15px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);font:700 12.5px/1 var(--sans);cursor:pointer;display:inline-flex;align-items:center;}
+    .m-share:active{border-color:var(--green);color:var(--ink);}
+    .card:focus-visible,.m-conn:focus-visible,.chip:focus-visible,.lchip:focus-visible,.tchip:focus-visible,.m-close:focus-visible,.m-btn:focus-visible,.m-share:focus-visible,.m-cmp-name:focus-visible{outline:2px solid var(--green);outline-offset:2px;border-radius:8px;}
+    .chip,.lchip,.tchip{min-height:44px;}
+    .m-close{width:44px !important;height:44px !important;}
+    .m-conn{cursor:pointer;}
+    .m-top{padding-left:calc(16px + env(safe-area-inset-left));padding-right:calc(16px + env(safe-area-inset-right));}
+    .m-chips,.m-levels,.m-tools,.m-list{padding-left:calc(16px + env(safe-area-inset-left));padding-right:calc(16px + env(safe-area-inset-right));}
     .m-cbridge{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:#ffd7de;background:rgba(225,29,72,.85);padding:1px 6px;border-radius:999px;margin-left:6px;vertical-align:middle;}
     .l-cap{align-self:center;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-right:2px;white-space:nowrap;}
     .m-prov{font-size:10px;font-weight:700;color:var(--gold);border:1px solid rgba(243,201,105,.45);border-radius:999px;padding:1px 6px;margin-left:5px;vertical-align:middle;}
@@ -240,7 +248,7 @@
       }
       function toast(msg) {
         var t = document.getElementById('mtoast');
-        if (!t) { t = document.createElement('div'); t.id = 'mtoast'; t.className = 'm-toast'; document.body.appendChild(t); }
+        if (!t) { t = document.createElement('div'); t.id = 'mtoast'; t.className = 'm-toast'; t.setAttribute('role', 'status'); t.setAttribute('aria-live', 'polite'); document.body.appendChild(t); }
         t.textContent = msg; t.classList.add('show');
         clearTimeout(t._h); t._h = setTimeout(function () { t.classList.remove('show'); }, 1800);
       }
@@ -258,20 +266,22 @@
           return '<label><input type="checkbox" value="' + id + '"' + (on ? ' checked' : '') + '><span class="dot" style="background:' + c.color + '"></span><span class="pc">' + esc(c.label) + '</span><span class="pn">' + cnt + '</span></label>';
         }).join('');
         pickPanel.innerHTML =
-          '<div class="m-head"><div class="m-grab"></div><button class="m-close" aria-label="Close">×</button>' +
+          '<div class="m-head"><div class="m-grab"></div><button class="m-close" aria-label="Close">×</button><button class="m-share" data-share="' + id + '" aria-label="Share this concept">Share</button>' +
           '<div class="m-tag" style="--c:var(--green)">Build your learning map</div><h2>Pick your topics</h2></div>' +
           '<div class="m-body"><div class="m-path-note">Choose the clusters you want to focus on. Your map is saved on this device and shareable as a link.</div>' +
           '<div class="m-pick">' + checks + '</div>' +
           '<div class="m-actions"><button class="m-btn" id="pkShare" type="button">🔗 Share</button><button class="m-btn primary" id="pkSave" type="button">Save &amp; view</button></div>' +
           (myMap.length ? '<div class="m-hint"><a href="#" id="pkClear">Clear my map</a></div>' : '') +
           '</div>';
+        if (!anyOpen()) _trigger = document.activeElement;
         pickSheet.classList.add('open'); pickPanel.scrollTop = 0; document.body.style.overflow = 'hidden';
+        bgLock(); onSheetOpen(null); focusSheet(pickPanel);
       }
       function closePicker() { pickSheet.classList.remove('open'); document.body.style.overflow = ''; }
       function selectedInPicker() { return [].slice.call(pickPanel.querySelectorAll('input:checked')).map(function (i) { return i.value; }); }
       customBtn.addEventListener('click', openPicker);
       pickSheet.addEventListener('click', function (e) {
-        if (e.target.classList.contains('m-backdrop') || e.target.classList.contains('m-close')) { closePicker(); return; }
+        if (e.target.classList.contains('m-backdrop') || e.target.classList.contains('m-close')) { requestClose(); return; }
         var id = e.target.id;
         if (id === 'pkSave') {
           setMyMap(selectedInPicker()); closePicker();
@@ -302,7 +312,7 @@
       function card(n) {
         var c = CLUSTERS[n.cluster] || { color: '#888' };
         var isNew = REL && n.added === REL;
-        return '<div class="card" data-id="' + n.id + '" style="--c:' + c.color + '">' +
+        return '<div class="card" role="button" tabindex="0" data-id="' + n.id + '" style="--c:' + c.color + '">' +
           '<h3>' + esc(n.label) + (isNew ? ' <span class="newb">NEW</span>' : '') + '<span class="lvl" title="' + esc(LEVELS[n.level] || '') + '">' + esc((LEVELS[n.level] || '?').charAt(0)) + '</span></h3>' +
           '<p>' + sumOf(n) + '</p></div>';
       }
@@ -353,6 +363,38 @@
 
       // detail sheet
       var sheet = document.getElementById('sheet'), panel = document.getElementById('panel');
+      // ---- a11y + history: focus trap via inert, focus restore, hardware-back closes sheets ----
+      var _bgEls = ['header.m-top', '#tools', '#chips', '#levels', '#list', '.m-foot'].map(function (x) { return document.querySelector(x); });
+      var _trigger = null, _pushed = false;
+      function bgLock() { _bgEls.forEach(function (el) { if (el) el.setAttribute('inert', ''); }); }
+      function bgUnlock() { _bgEls.forEach(function (el) { if (el) el.removeAttribute('inert'); }); }
+      function anyOpen() { return sheet.classList.contains('open') || pickSheet.classList.contains('open') || toolSheet.classList.contains('open'); }
+      function focusSheet(pnl) { var f = pnl.querySelector('.m-close'); if (f) setTimeout(function () { try { f.focus(); } catch (e) {} }, 30); }
+      function onSheetOpen(hash) {
+        if (!_pushed) { _pushed = true; try { history.pushState({ kmSheet: 1 }, ''); } catch (e) {} }
+        if (hash != null) { try { history.replaceState(history.state || { kmSheet: 1 }, '', '#c=' + hash); } catch (e) {} }
+      }
+      function closeAll() {
+        sheet.classList.remove('open'); pickSheet.classList.remove('open'); toolSheet.classList.remove('open');
+        bgUnlock(); document.body.style.overflow = '';
+        if (location.hash.indexOf('c=') !== -1) { try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} }
+        if (_trigger && _trigger.focus) { try { _trigger.focus(); } catch (e) {} } _trigger = null;
+      }
+      function requestClose() { if (_pushed) { _pushed = false; try { history.back(); return; } catch (e) {} } closeAll(); }
+      window.addEventListener('popstate', function () { if (anyOpen()) { _pushed = false; closeAll(); } });
+      function shareConcept(id) {
+        var n = byId[id]; if (!n) return;
+        var url = location.origin + location.pathname + '#c=' + id;
+        if (navigator.share) { navigator.share({ title: n.label + ' — Kuber Map', url: url }).catch(function () {}); }
+        else if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(url).then(function () { toast('Link copied'); }).catch(function () { prompt('Copy link:', url); }); }
+        else { prompt('Copy link:', url); }
+      }
+      // Enter/Space activates role="button" content controls (cards, connection rows, compare cells)
+      document.addEventListener('keydown', function (e) {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        var b = e.target && e.target.closest && e.target.closest('.card[role="button"], .m-conn[role="button"], .m-cmp-name[role="button"]');
+        if (b && e.target === b) { e.preventDefault(); b.click(); }
+      });
       function connsFor(id) {
         var out = [];
         edges.forEach(function (edge) {
@@ -365,11 +407,12 @@
       }
       function openSheet(id) {
         var n = byId[id]; if (!n) return;
+        if (!anyOpen()) _trigger = document.activeElement;
         var c = CLUSTERS[n.cluster] || { color: '#888', label: '' };
         var isNew = REL && n.added === REL, conns = connsFor(id);
         var html = '<div class="m-head"><div class="m-grab"></div><button class="m-close" aria-label="Close">×</button>' +
           '<div class="m-tag" style="--c:' + c.color + '">' + esc(c.label) + ' · ' + esc(LEVELS[n.level] || '') + (isNew ? ' <span class="newb">NEW</span>' : '') + '</div>' +
-          '<h2>' + esc(n.label) + '</h2></div>' +
+          '<h2 id="sheetTitle">' + esc(n.label) + '</h2></div>' +
           '<div class="m-body"><div class="m-sum" style="--c:' + c.color + '">' + sumOf(n) + '</div>';
         if (n.useCases && n.useCases.length) html += '<div class="m-badges">' + n.useCases.map(function (u) { return '<span class="m-badge">' + esc(ucShort(u)) + '</span>'; }).join('') + '</div>';
         if (n.detail) html += '<div class="m-detail">' + esc(n.detail) + (n.detailProvenance === 'curated' ? ' <span class="m-prov">curated</span>' : '') + '</div>';
@@ -379,7 +422,7 @@
           html += '<div class="m-h">Connections</div><div class="m-conns">';
           conns.forEach(function (cn) {
             var cc = CLUSTERS[cn.to.cluster] || { color: '#888' };
-            html += '<div class="m-conn" data-id="' + cn.to.id + '"><span class="dot" style="background:' + cc.color + '"></span><span class="rel">' + esc(cn.rel) + (cn.rev ? ' ←' : '') + (cn.bridge ? ' <span class="m-cbridge">bridge</span>' : '') + '</span><span class="to">' + esc(cn.to.label) + '</span></div>';
+            html += '<div class="m-conn" role="button" tabindex="0" data-id="' + cn.to.id + '"><span class="dot" style="background:' + cc.color + '"></span><span class="rel">' + esc(cn.rel) + (cn.rev ? ' ←' : '') + (cn.bridge ? ' <span class="m-cbridge">bridge</span>' : '') + '</span><span class="to">' + esc(cn.to.label) + '</span></div>';
           });
           html += '</div>';
         }
@@ -390,24 +433,28 @@
         }
         html += '</div>';
         panel.innerHTML = html;
+        sheet.setAttribute('aria-labelledby', 'sheetTitle');
         sheet.classList.add('open');
         requestAnimationFrame(function () { panel.scrollTop = 0; });
         document.body.style.overflow = 'hidden';
+        bgLock(); onSheetOpen(id); focusSheet(panel);
       }
-      function closeSheet() { sheet.classList.remove('open'); document.body.style.overflow = ''; }
       sheet.addEventListener('click', function (e) {
-        if (e.target.classList.contains('m-backdrop') || e.target.classList.contains('m-close')) { closeSheet(); return; }
+        if (e.target.classList.contains('m-backdrop') || e.target.classList.contains('m-close')) { requestClose(); return; }
+        var sh = e.target.closest('[data-share]'); if (sh) { shareConcept(sh.getAttribute('data-share')); return; }
         var conn = e.target.closest('.m-conn'); if (conn) openSheet(conn.getAttribute('data-id'));
       });
       // ---- Interactive tools: decision wizard, guided path, compare (parity with desktop) ----
       var toolSheet = document.getElementById('toolSheet'), toolPanel = document.getElementById('toolPanel');
       function setTool(headHtml, bodyHtml) {
+        var wasOpen = anyOpen(); if (!wasOpen) _trigger = document.activeElement;
         toolPanel.innerHTML =
           '<div class="m-head"><div class="m-grab"></div><button class="m-close" aria-label="Close">×</button>' + headHtml + '</div>' +
           '<div class="m-body">' + bodyHtml + '</div>';
         toolSheet.classList.add('open');
         requestAnimationFrame(function () { toolPanel.scrollTop = 0; });
         document.body.style.overflow = 'hidden';
+        bgLock(); onSheetOpen(null); if (!wasOpen) focusSheet(toolPanel);
       }
       function closeTool() { toolSheet.classList.remove('open'); document.body.style.overflow = ''; }
 
@@ -463,7 +510,7 @@
         var thead = '<th>Technique</th>' + set.dimensions.map(function (d) { return '<th>' + esc(d.label) + '</th>'; }).join('');
         var rows = set.rows.map(function (r) {
           var n = byId[r.id];
-          var name = n ? '<td class="m-cmp-name" data-w="copen" data-id="' + r.id + '">' + esc(n.label) + '</td>' : '<td>' + esc(r.id) + '</td>';
+          var name = n ? '<td class="m-cmp-name" role="button" tabindex="0" data-w="copen" data-id="' + r.id + '">' + esc(n.label) + '</td>' : '<td>' + esc(r.id) + '</td>';
           var tds = set.dimensions.map(function (d) { return '<td>' + esc(r[d.key] == null ? '' : r[d.key]) + '</td>'; }).join('');
           return '<tr>' + name + tds + '</tr>';
         }).join('');
@@ -475,7 +522,7 @@
       }
 
       toolSheet.addEventListener('click', function (e) {
-        if (e.target.classList.contains('m-backdrop') || e.target.classList.contains('m-close')) { closeTool(); return; }
+        if (e.target.classList.contains('m-backdrop') || e.target.classList.contains('m-close')) { requestClose(); return; }
         var t = e.target.closest('[data-w]'); if (!t) return;
         var w = t.getAttribute('data-w');
         if (w === 'ans') {
@@ -495,7 +542,7 @@
       document.getElementById('mPath').addEventListener('click', startPath);
       document.getElementById('mCompare').addEventListener('click', startCompare);
 
-      window.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeSheet(); closePicker(); closeTool(); } });
+      window.addEventListener('keydown', function (e) { if (e.key === 'Escape' && anyOpen()) requestClose(); });
 
       // init My Map from a shared link (#map=cluster,cluster) or saved preference
       var hm = (location.hash.match(/map=([^&]+)/) || [])[1];
@@ -503,6 +550,7 @@
       else { try { var sv = localStorage.getItem('kuber-mymap'); if (sv) myMap = sv.split(',').filter(function (id) { return CLUSTERS[id]; }); } catch (e) {} }
       buildChips(); buildLevels(); updateCustomBtn();
       render();
+      (function () { var hc = (location.hash.match(/[#&]c=([^&]+)/) || [])[1]; if (hc) { hc = decodeURIComponent(hc); if (byId[hc]) openSheet(hc); } })();
     })();
   </script>
 
