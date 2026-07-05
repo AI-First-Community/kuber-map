@@ -14,7 +14,7 @@ convey the **product's value**.
 ## P0 — blockers
 
 1. **Wrong default & no curated navigation.** Opens on **all 3,104** concepts grouped by **68 raw FIBO
-   clusters**; `n.core` (188 curated) and the **5 use cases** are never read. The value is invisible; the
+   clusters**; `n.core` (284 curated) and the **5 use cases** are never read. The value is invisible; the
    overwhelming thing is the default.
 2. **Performance: 4.6 MB parsed + 3,104 cards rendered synchronously.** `data.js` = 466 KB gzip / 4.6 MB
    parsed on every load; `render()` builds ~15k DOM nodes in one pass and **re-renders on every

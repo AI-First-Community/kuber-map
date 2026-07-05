@@ -87,8 +87,8 @@ EVAL_LLM_CMD='python eval/openai_cli.py' python eval/harness.py --adapter llm --
 
 It scores accuracy, hallucination, and the share of answers carrying a valid FIBO citation.
 Benchmarks ship for four use cases (`eval/benchmark.json` = loan, plus `kyc-`, `securities-`,
-`regulatory-reporting-benchmark.json`). Current result: **+44.5pt aggregate accuracy lift over 209
-questions (four domains), 96.2% auditable, 0% grounded hallucination**, corroborated on gpt-4o —
+`regulatory-reporting-benchmark.json`). Current result: **+45.3pt aggregate accuracy lift over 263
+questions (five use cases), 97.0% auditable, 0% grounded hallucination**, corroborated on gpt-4o —
 see [`SPIKE_RESULTS.md`](../SPIKE_RESULTS.md).
 
 ## The quality gate

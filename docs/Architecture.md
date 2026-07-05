@@ -146,6 +146,6 @@ context pack, scoring accuracy, hallucination, and auditability deterministicall
 The model is pluggable (`eval/adapters.py`): an offline oracle for gate tests, or any model via a
 user command (`EVAL_LLM_CMD`). Every benchmark question is grounded in a real pack IRI, enforced by
 a test. Benchmarks ship for four use cases (loan, KYC, securities, regulatory reporting). The
-result, across **209 questions in four domains on gpt-4o-mini (corroborated on gpt-4o)**: a
-**+44.5-point aggregate accuracy lift, 96.2% auditable, 0% grounded hallucination** — the lift is
+result, across **263 questions in five use cases on gpt-4o-mini (corroborated on gpt-4o)**: a
+**+45.3-point aggregate accuracy lift, 97.0% auditable, 0% grounded hallucination** — the lift is
 domain- and model-robust (see [`SPIKE_RESULTS.md`](../SPIKE_RESULTS.md)).

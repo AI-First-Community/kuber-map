@@ -4,6 +4,12 @@
 stored in Google's Open Knowledge Format (OKF), that doubles as audit-ready grounding context
 for financial AI agents.**
 
+<p align="center">
+  <a href="https://ai-first-community.github.io/kuber-map/"><img src="images/demo-explore.gif" alt="Exploring a FIBO concept in Kuber Map — definition, provenance, FIBO citation, and connections" width="820"></a>
+</p>
+
+> **▶ Open the live app: <https://ai-first-community.github.io/kuber-map/>** — runs in the browser, installs as a PWA. See more demos in the [README](https://github.com/AI-First-Community/kuber-map#readme).
+
 FIBO is a formal, exhaustive ontology built for modelers. Kuber Map reshapes it into three things
 it isn't today:
 
@@ -31,7 +37,7 @@ why grounding (not a bigger model) is the answer, and how this concept works.
 | FIBO coverage | all **10 domains** + Commons — **3,104 concepts**, 6,676 typed relations, 68 sub-clusters |
 | Curated use cases | **5** — loan origination, KYC, securities, regulatory reporting, derivatives (**284 core concepts**) |
 | Cross-domain bridges | **19** validated, packaged as an EDM contribution proposal |
-| Value proof | grounding lifts accuracy **+44.5pt** (209 questions, 4 domains, 2 models), **96.2% auditable**, **0% grounded hallucination** |
+| Value proof | grounding lifts accuracy **+45.3pt** (263 questions, 5 use cases, gpt-4o-mini; held on gpt-4o), **97.0% auditable**, **0% grounded hallucination** |
 
 See **[Use Cases](Use-Cases)**, **[Value Proof](Value-Proof)**, and **[Cross-Domain Bridges](Cross-Domain-Bridges)**.
 

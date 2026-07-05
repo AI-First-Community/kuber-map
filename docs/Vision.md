@@ -126,7 +126,7 @@ The claim that grounding matters is easy to make and easy to doubt. So we measur
 same agent over the same questions, once **with** the curated FIBO grounding pack and once
 **without**, and scored accuracy, auditability, and hallucination deterministically.
 
-Across **209 questions in four independent financial domains, on two different models**, grounding:
+Across **263 questions in five independent financial domains** (gpt-4o-mini, corroborated on a stronger model), grounding:
 
 - **lifted accuracy by roughly 45 points** (from the mid-40s to the low-90s),
 - **took auditability from 0% to over 95%** (nearly every grounded answer cites a real, checkable

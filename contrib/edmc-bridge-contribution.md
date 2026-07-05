@@ -1,6 +1,6 @@
 # Cross-domain bridges — FIBO contribution proposal
 
-**19 curated cross-domain relations** that FIBO does not currently draw, surfaced while building learner-first, agent-grounding maps of FIBO for four financial use cases. Each is offered back to the EDM Council for consideration.
+**19 curated cross-domain relations** that FIBO does not currently draw, surfaced while building learner-first, agent-grounding maps of FIBO for 5 financial use cases. Each is offered back to the EDM Council for consideration.
 
 *Author:* Sanjeev Azad <sanjeev.azad@gmail.com> · *License:* MIT · *Source project:* Kuber Map for FIBO.
 

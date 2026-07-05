@@ -76,11 +76,12 @@ def label(labels, iri):
 
 def emit_md(bridges, labels):
     edges = sorted({b["edge"] for b in bridges})
+    n_uc = len({b["use_case"] for b in bridges})
     lines = [
         "# Cross-domain bridges — FIBO contribution proposal",
         "",
         f"**{len(bridges)} curated cross-domain relations** that FIBO does not currently draw, "
-        "surfaced while building learner-first, agent-grounding maps of FIBO for four financial "
+        f"surfaced while building learner-first, agent-grounding maps of FIBO for {n_uc} financial "
         "use cases. Each is offered back to the EDM Council for consideration.",
         "",
         "*Author:* Sanjeev Azad <sanjeev.azad@gmail.com> · *License:* MIT · "

@@ -93,8 +93,9 @@ justified an answer and a regulator can trace it.
    present in the context.
 4. **Verify** if you need to: the IRIs are real and checkable against FIBO.
 
-This is model-agnostic. The [eval harness](Value-Proof) measured a **+44.5pt accuracy lift, 96.2%
-auditability, 0% grounded hallucination** across four domains and two models with exactly this
+This is model-agnostic. The [eval harness](Value-Proof) measured a **+45.3pt accuracy lift, 97.0%
+auditability, 0% grounded hallucination** across five use cases (263 questions on gpt-4o-mini,
+corroborated on gpt-4o) with exactly this
 pattern. Point `eval/harness.py` at your own benchmark and pack to measure it on your stack:
 
 ```bash

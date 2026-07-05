@@ -144,8 +144,8 @@ flowchart LR
   S --> R["accuracy · auditability · hallucination"]
 ```
 
-Result across **209 questions in four domains, on gpt-4o-mini (corroborated on gpt-4o)**: a
-**+44.5-point aggregate accuracy lift, 96.2% auditable, 0% grounded hallucination**. See
+Result across **263 questions in five use cases, on gpt-4o-mini (corroborated on gpt-4o)**: a
+**+45.3-point aggregate accuracy lift, 97.0% auditable, 0% grounded hallucination**. See
 **[Value Proof](Value-Proof)**.
 
 ## Provenance model
