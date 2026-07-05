@@ -58,20 +58,29 @@
   .split .art svg{ width:340px; height:auto; display:block;}
   .split .art .cap{ position:absolute; left:44px; right:44px; bottom:70px; font-size:17px; color:var(--faint); line-height:1.45; text-align:center;}
 
-  /* ===== COVER ===== */
-  .cover .txt{ justify-content:center;}
-  .cover .emblem{ width:118px; height:118px; margin-bottom:32px;}
-  .cover h1{ font-size:104px; margin-top:20px;}
-  .cover .sub{ font-size:29px; color:var(--muted); margin-top:34px; line-height:1.45; max-width:560px;}
-  .cover .sub b{color:var(--ink);}
-  .cover .by{ margin-top:64px; display:flex; align-items:center; gap:12px; font-size:21px; font-weight:800;}
-  .cover .by .spark{ width:18px; height:18px; border-radius:6px; background:linear-gradient(135deg,var(--green),var(--gold));}
-  .cover .by b{color:var(--green);}
-  .cover .art{ flex-basis:520px; background:
-      radial-gradient(620px 560px at 54% 40%, color-mix(in srgb, var(--green) 20%, transparent), transparent 68%),
-      radial-gradient(480px 460px at 60% 96%, color-mix(in srgb, var(--gold) 12%, transparent), transparent 60%), var(--panel);}
-  .cover .art svg{ width:440px;}
-  .cover .art .tag{ position:absolute; right:44px; bottom:60px; font-size:17px; color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:9px 18px;}
+  /* ===== COVER (always dark, gold-lit hero around the Kuber emblem) ===== */
+  .cover{ background:
+      radial-gradient(720px 720px at 50% 33%, rgba(243,201,105,.20), transparent 60%),
+      radial-gradient(560px 560px at 50% 33%, rgba(79,224,138,.14), transparent 58%),
+      radial-gradient(1100px 820px at 50% 116%, rgba(0,0,0,.55), transparent 56%),
+      linear-gradient(180deg, #0b1712, #05100b 62%);}
+  .cover .pad{ align-items:center; text-align:center; justify-content:center; padding:110px 96px;}
+  .cover .emblemwrap{ position:relative; width:340px; height:340px; margin-bottom:44px; display:flex; align-items:center; justify-content:center;}
+  .cover .halo{ position:absolute; inset:-30px; border-radius:50%; background:radial-gradient(circle, rgba(243,201,105,.30), rgba(243,201,105,.06) 52%, transparent 70%);}
+  .cover .rings{ position:absolute; inset:0; width:100%; height:100%;}
+  .cover .emblem{ position:relative; z-index:2; width:270px; height:270px; filter:drop-shadow(0 0 44px rgba(243,201,105,.5)) drop-shadow(0 16px 40px rgba(0,0,0,.6));}
+  .cover .kicker{ color:#f3c969;}
+  .cover h1{ font-size:104px; margin-top:24px; color:#eef5f0;}
+  .cover h1 .g{ color:#4fe08a;}
+  .cover .forfibo{ font-size:38px; font-weight:800; letter-spacing:.18em; text-transform:uppercase; margin-top:10px;
+    background:linear-gradient(180deg,#f7d98a,#e0a93c); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;}
+  .cover .rule{ width:130px; height:4px; border-radius:3px; margin:36px 0 0; background:linear-gradient(90deg, transparent, #f3c969, transparent);}
+  .cover .sub{ font-size:28px; color:#9db9a9; margin-top:34px; line-height:1.45; max-width:680px;}
+  .cover .sub b{color:#eef5f0;}
+  .cover .by{ margin-top:52px; display:flex; align-items:center; gap:12px; font-size:21px; font-weight:800; color:#eef5f0;}
+  .cover .by .spark{ width:18px; height:18px; border-radius:6px; background:linear-gradient(135deg,#4fe08a,#f3c969);}
+  .cover .by b{color:#4fe08a;}
+  .cover .tag{ position:absolute; left:50%; transform:translateX(-50%); bottom:64px; font-size:17px; color:#9db9a9; border:1px solid rgba(243,201,105,.28); border-radius:999px; padding:10px 22px; letter-spacing:.04em;}
 
   /* ===== QUOTE ===== */
   .quote .pad{ justify-content:center; padding:120px 110px;}
@@ -209,32 +218,27 @@
 <div class="book">
 
   <!-- 1 · COVER -->
-  <section class="page split cover">
-    <div class="txt">
-      <img class="emblem" src="../images/kuber-map.png" alt="" />
-      <div class="kicker">The treasury of financial knowledge</div>
-      <h1>Kuber <span class="g">Map</span></h1>
-      <div class="sub">Finance already has a language precise enough to trust. Here's how an AI agent finally learns to speak it. <b>— an illustrated guide.</b></div>
-      <div class="by"><span class="spark"></span>Innovate With&nbsp;<b>Sanjeev</b></div>
-    </div>
-    <div class="art">
-      <svg viewBox="0 0 600 640" fill="none" aria-hidden="true">
-        <defs><radialGradient id="hg" cx="50%" cy="44%" r="52%"><stop offset="0%" stop-color="var(--green)" stop-opacity=".22"/><stop offset="60%" stop-color="var(--green)" stop-opacity=".04"/><stop offset="100%" stop-color="var(--green)" stop-opacity="0"/></radialGradient><linearGradient id="ht" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--green)"/><stop offset="100%" stop-color="var(--green-deep)"/></linearGradient></defs>
-        <circle cx="300" cy="290" r="290" fill="url(#hg)"/>
-        <g stroke="var(--faint)" fill="none" stroke-opacity=".5"><path d="M80 300 A220 220 0 0 1 520 300" stroke-width="1.5"/><path d="M120 300 A180 180 0 0 1 480 300" stroke-width="1.5" stroke-opacity=".28"/></g>
-        <g stroke="var(--green)" stroke-opacity=".5" stroke-width="1.8" stroke-linecap="round"><path d="M300 300 L300 118"/><path d="M300 300 L186 208"/><path d="M300 300 L414 208"/><path d="M300 300 L150 290"/><path d="M300 300 L450 290"/><path d="M300 118 L186 208"/><path d="M300 118 L414 208"/><path d="M186 208 L150 290"/><path d="M414 208 L450 290"/><path d="M300 300 L232 156"/><path d="M300 300 L368 156"/></g>
-        <g fill="var(--green)"><circle cx="300" cy="118" r="7"/><circle cx="186" cy="208" r="6"/><circle cx="414" cy="208" r="6"/><circle cx="150" cy="290" r="5"/><circle cx="450" cy="290" r="5"/><circle cx="232" cy="156" r="4.5"/><circle cx="368" cy="156" r="4.5"/></g>
-        <g fill="none" stroke="var(--green)" stroke-opacity=".3" stroke-width="1.3"><circle cx="300" cy="118" r="14"/><circle cx="186" cy="208" r="11"/><circle cx="414" cy="208" r="11"/></g>
-        <circle cx="300" cy="300" r="13" fill="var(--gold)"/><circle cx="300" cy="300" r="24" fill="none" stroke="var(--gold)" stroke-opacity=".5" stroke-width="1.6"/><circle cx="300" cy="300" r="36" fill="none" stroke="var(--gold)" stroke-opacity=".22" stroke-width="1.6"/>
-        <path d="M291 476 L294 312 Q300 300 306 312 L309 476 Z" fill="url(#ht)" fill-opacity=".5"/><path d="M300 306 L300 476" stroke="var(--green)" stroke-width="2.4" stroke-opacity=".55"/>
-        <g stroke="var(--green)" stroke-opacity=".45" stroke-width="1.8" fill="none" stroke-linecap="round"><path d="M300 476 C300 520 248 528 210 570"/><path d="M300 476 C300 520 352 528 390 570"/><path d="M300 476 C300 528 300 548 300 592"/></g>
-        <g fill="var(--gold)" fill-opacity=".85"><circle cx="210" cy="570" r="5"/><circle cx="390" cy="570" r="5"/><circle cx="300" cy="592" r="5"/></g>
-        <path d="M150 476 L450 476" stroke="var(--faint)" stroke-opacity=".55" stroke-width="1.5"/>
-        <g stroke="var(--faint)" stroke-opacity=".3" stroke-width="1.5"><path d="M180 476 V494"/><path d="M220 476 V489"/><path d="M260 476 V494"/><path d="M340 476 V494"/><path d="M380 476 V489"/><path d="M420 476 V494"/></g>
+  <section class="page cover"><div class="pad">
+    <div class="emblemwrap">
+      <div class="halo"></div>
+      <svg class="rings" viewBox="0 0 340 340" fill="none" aria-hidden="true">
+        <circle cx="170" cy="170" r="164" stroke="#f3c969" stroke-opacity=".38" stroke-width="1.5"/>
+        <circle cx="170" cy="170" r="150" stroke="#f3c969" stroke-opacity=".16" stroke-width="1"/>
+        <g stroke="#f3c969" stroke-opacity=".5" stroke-width="2" stroke-linecap="round">
+          <path d="M170 6 v13"/><path d="M170 321 v13"/><path d="M6 170 h13"/><path d="M321 170 h13"/>
+          <path d="M54 54 l9 9"/><path d="M277 277 l9 9"/><path d="M286 54 l-9 9"/><path d="M63 277 l-9 9"/>
+        </g>
       </svg>
-      <div class="tag">grounded · auditable · open</div>
+      <img class="emblem" src="../images/kuber-map.png" alt="Kuber Map emblem" />
     </div>
-  </section>
+    <div class="kicker">The treasury of financial knowledge</div>
+    <h1>Kuber <span class="g">Map</span></h1>
+    <div class="forfibo">for FIBO</div>
+    <div class="rule"></div>
+    <div class="sub">Finance already has a language precise enough to trust. Here's how an AI agent finally learns to speak it. <b>— an illustrated guide.</b></div>
+    <div class="by"><span class="spark"></span>Innovate With&nbsp;<b>Sanjeev</b></div>
+    <div class="tag">grounded · auditable · open</div>
+  </div></section>
 
   <!-- 2 · QUOTE Wittgenstein -->
   <section class="page quote"><div class="pad">
