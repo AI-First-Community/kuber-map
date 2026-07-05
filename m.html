@@ -266,7 +266,7 @@
           return '<label><input type="checkbox" value="' + id + '"' + (on ? ' checked' : '') + '><span class="dot" style="background:' + c.color + '"></span><span class="pc">' + esc(c.label) + '</span><span class="pn">' + cnt + '</span></label>';
         }).join('');
         pickPanel.innerHTML =
-          '<div class="m-head"><div class="m-grab"></div><button class="m-close" aria-label="Close">×</button><button class="m-share" data-share="' + id + '" aria-label="Share this concept">Share</button>' +
+          '<div class="m-head"><div class="m-grab"></div><button class="m-close" aria-label="Close">×</button>' +
           '<div class="m-tag" style="--c:var(--green)">Build your learning map</div><h2>Pick your topics</h2></div>' +
           '<div class="m-body"><div class="m-path-note">Choose the clusters you want to focus on. Your map is saved on this device and shareable as a link.</div>' +
           '<div class="m-pick">' + checks + '</div>' +
@@ -411,7 +411,7 @@
         if (!anyOpen()) _trigger = document.activeElement;
         var c = CLUSTERS[n.cluster] || { color: '#888', label: '' };
         var isNew = REL && n.added === REL, conns = connsFor(id);
-        var html = '<div class="m-head"><div class="m-grab"></div><button class="m-close" aria-label="Close">×</button>' +
+        var html = '<div class="m-head"><div class="m-grab"></div><button class="m-close" aria-label="Close">×</button><button class="m-share" data-share="' + id + '" aria-label="Share this concept">Share</button>' +
           '<div class="m-tag" style="--c:' + c.color + '">' + esc(c.label) + ' · ' + esc(LEVELS[n.level] || '') + (isNew ? ' <span class="newb">NEW</span>' : '') + '</div>' +
           '<h2 id="sheetTitle">' + esc(n.label) + '</h2></div>' +
           '<div class="m-body"><div class="m-sum" style="--c:' + c.color + '">' + sumOf(n) + '</div>';

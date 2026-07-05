@@ -3,7 +3,7 @@
    1.3 MB hero image are NOT precached — they runtime-cache on first use if the desktop graph
    is ever opened). Static assets are served stale-while-revalidate (instant from cache, refreshed
    in the background); HTML navigations are network-first. Bump CACHE to invalidate. */
-const CACHE = 'kuber-map-v1.10.0';
+const CACHE = 'kuber-map-v1.11.0';
 
 // Mobile-first shell: the pages, the shared data, the fonts actually used, icons, manifests.
 const PRECACHE = [
