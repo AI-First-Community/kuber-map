@@ -14,7 +14,9 @@ By participating you agree to the [Code of Conduct](CODE_OF_CONDUCT.md).
   regulation/standard citation. Bridges are the project's contribution back to the EDM Council, so
   they must be defensible; the gate rejects any that isn't grounded or that FIBO already asserts.
 - **Improve the map or the mobile app** — UX, accessibility, or performance. Desktop (`app.html` +
-  `js/graph.js`) and mobile (`m.html`) are **separate UIs over the same** `js/data.js`.
+  `js/graph.js`) and mobile (`m.html`) are **separate UIs over the same** `js/data.js`. The README
+  demo GIFs are captured from the running app — regenerate them after a UI change with
+  `node scripts/record-demos.mjs` (see the header of that file for the one-time setup).
 - **Report a FIBO fidelity issue** — if the map misrepresents FIBO, file a **FIBO fidelity** issue
   and cite the source IRI. These take priority over cosmetics.
 - **Improve docs** — the [wiki](https://github.com/AI-First-Community/kuber-map/wiki) is the home for
