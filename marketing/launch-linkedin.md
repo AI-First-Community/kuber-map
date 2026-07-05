@@ -22,7 +22,7 @@ The results, measured — same model, same questions, with the grounding vs. wit
  • **97% of answers cite a real FIBO IRI** (up from 0%)
  • **0% hallucinated citations** (down from 55%)
 
-Across 263 questions, 5 use cases, 2 models, scored deterministically — no LLM grading itself. And
+Across 263 questions and 5 use cases on gpt-4o-mini, scored deterministically — no LLM grading itself. And
 the lift is model-robust: a stronger model does **not** close the gap. Grounding does what scale
 can't.
 

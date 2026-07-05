@@ -22,8 +22,8 @@ result from [`../SPIKE_RESULTS.md`](../SPIKE_RESULTS.md), not a claim.
 - **The problem:** LLMs are fluent but not grounded; in finance, approximately-right is wrong — the
   kind of wrong that passes a demo and fails an audit.
 - **The answer:** grounding in FIBO (the industry's open standard), not a bigger model.
-- **The proof:** +45.3pt accuracy · 97% auditable · 0% hallucinated citations — 263 questions,
-  5 use cases, 2 models, scored deterministically.
+- **The proof:** +45.3pt accuracy · 97% auditable · 0% hallucinated citations — 263 questions across
+  5 use cases on gpt-4o-mini, corroborated on gpt-4o, scored deterministically.
 - **The ask:** try the live app; contribute a use case or a bridge.
 
 Always pair claims with the "measured, not claimed" framing, and keep the EDM Council / OMG

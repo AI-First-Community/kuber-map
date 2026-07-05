@@ -15,7 +15,7 @@ community input. The design source of truth is [`PLAN.md`](PLAN.md); the detaile
 - **The product: grounding for agents** — per-use-case context packs (`pack.json` for RAG,
   `context.md` for prompt injection, a self-contained OKF slice) + a stdlib **MCP retrieval
   server**. Every concept carries its FIBO IRI as an audit citation.
-- **Value, measured** — grounded vs ungrounded eval across 5 domains and 2 models: **+45.3 pt
+- **Value, measured** — grounded vs ungrounded eval across 5 use cases on gpt-4o-mini (and it held on a stronger model, gpt-4o): **+45.3 pt
   accuracy, 97% auditable, 0% hallucinated citations**. The lift is model-robust.
 - **The map** — an interactive Cytoscape graph (desktop) and a purpose-built mobile PWA, both over
   one generated data layer: use-case lens, provenance-styled bridges, IRI-citation panel, offline.

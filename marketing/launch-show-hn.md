@@ -34,8 +34,8 @@ checks — no LLM judging itself):
 - Hallucinated citations: 55% → 0%
 
 Across 263 questions over 5 use cases (loan origination, KYC, securities, regulatory reporting,
-derivatives) and 2 models (gpt-4o-mini, gpt-4o). The lift held on the stronger model — grounding,
-not scale, is doing the work.
+derivatives) on gpt-4o-mini, then corroborated on gpt-4o (the same three of those benchmarks, 157
+questions). The lift held on the stronger model — grounding, not scale, is doing the work.
 
 How it's built:
 - Deterministic ETL: FIBO OWL/RDF → an intermediate JSON → Open Knowledge Format bundle. Relations
@@ -73,9 +73,9 @@ standard ontology) packaged as context an agent can cite. Every answer traces ba
 IRI, and "standard vs. our curation" provenance is never blurred, so it's auditable.
 
 I measured grounded vs. ungrounded on the same model/questions: accuracy 47.5% → 92.8%, auditable
-answers 0% → 97%, hallucinated citations 55% → 0% (263 questions, 5 use cases, 2 models,
-deterministic scoring). The lift held on a stronger model, so it's grounding doing the work, not
-scale.
+answers 0% → 97%, hallucinated citations 55% → 0% (263 questions, 5 use cases on gpt-4o-mini,
+deterministic scoring; corroborated on gpt-4o). The lift held on the stronger model, so it's
+grounding doing the work, not scale.
 
 It's free and open — runs in the browser, installs as an app, MIT-licensed. Live app and repo:
 - https://ai-first-community.github.io/kuber-map/
@@ -99,7 +99,7 @@ doc + an MCP retrieval server). Concepts carry their IRI; provenance (extracted 
 tracked and CI-enforced.
 
 Eval: grounded vs. ungrounded, same model and questions, deterministic scoring (no LLM-as-judge).
-263 questions, 5 use cases, 2 models (gpt-4o-mini, gpt-4o):
+263 questions across 5 use cases on gpt-4o-mini (corroborated on gpt-4o, 157 questions in 3 domains):
 - accuracy 47.5% → 92.8% (+45.3pt)
 - answers citing a valid IRI 0% → 97%
 - hallucinated citations 55% → 0%

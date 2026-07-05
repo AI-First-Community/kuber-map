@@ -57,8 +57,9 @@ deterministically, with string and IRI checks rather than another model grading 
 - **Auditable answers** — ones that cite a real FIBO IRI — went from **0% to 97%**.
 - **Hallucinated citations** fell from **55% to 0%**.
 
-That's across 263 questions, five use cases (loan origination, KYC and beneficial ownership,
-securities, regulatory reporting, and derivatives), and two models. The most important result is the
+That's across 263 questions and five use cases (loan origination, KYC and beneficial ownership,
+securities, regulatory reporting, and derivatives) on gpt-4o-mini, corroborated on a stronger model
+(gpt-4o, 157 questions across three of them). The most important result is the
 one that's easy to miss: the lift **held on the stronger model**. The bigger model did not close the
 gap. Grounding does something scale doesn't.
 

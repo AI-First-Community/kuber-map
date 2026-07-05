@@ -33,7 +33,7 @@ Same model, same questions — with the grounding vs. without:
 🚫 0% hallucinated citations (from 55%)
 
 **5/**
-263 questions · 5 use cases · 2 models. Scored deterministically — no LLM judging itself.
+263 questions · 5 use cases on gpt-4o-mini. Scored deterministically — no LLM judging itself.
 
 And the lift is model-robust: a stronger model does NOT close the gap. Grounding does what scale
 can't.

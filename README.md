@@ -74,7 +74,7 @@ curated FIBO context pack vs **without** it, scored deterministically (no LLM ju
 |---|---|---|---|
 | **Accuracy** | 47.5% | **92.8%** (+45.3 pt) | 263 questions |
 | **Auditable** (cites a real FIBO IRI) | 0% | **97.0%** | 5 use cases |
-| **Hallucinated citations** | 55% | **0%** | 2 models (gpt-4o-mini, gpt-4o) |
+| **Hallucinated citations** | 55% | **0%** | gpt-4o-mini |
 
 The lift is domain- and model-robust — a stronger model does **not** close the gap. Full write-up:
 **[SPIKE_RESULTS.md](SPIKE_RESULTS.md)**.
