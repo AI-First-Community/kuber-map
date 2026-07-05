@@ -16,6 +16,31 @@ financial AI agents**. Every concept carries its FIBO IRI as a citation; provena
 > install; mobile: Add to Home Screen, or scan the QR on the landing page). Nothing to sign up for,
 > nothing to pay.
 
+<p align="center">
+  <a href="https://ai-first-community.github.io/kuber-map/"><img src="images/demo-explore.gif" alt="Exploring a FIBO concept in Kuber Map — its definition, provenance, FIBO citation, and cross-domain connections" width="880"></a>
+</p>
+
+<details>
+<summary><b>▶ More demos</b> — decision guide · guided path · compare · mobile app · grounding for agents</summary>
+<br>
+
+**Which concept?** — a decision guide from a plain need to the right FIBO class.
+<p align="center"><img src="images/demo-wizard.gif" alt="A decision guide recommending the right FIBO class" width="760"></p>
+
+**Guided path** — a curated walkthrough of the loan-origination arc.
+<p align="center"><img src="images/demo-guided.gif" alt="A guided walkthrough stepping through connected FIBO concepts" width="820"></p>
+
+**Compare** — concepts side by side across FIBO's separately-governed domains.
+<p align="center"><img src="images/demo-compare.gif" alt="Comparing concepts side by side in a table" width="820"></p>
+
+**Mobile app** — the installable PWA: dark & light themes, provenance pills, FIBO citations, offline.
+<p align="center"><img src="images/demo-mobile.gif" alt="The Kuber Map mobile PWA — browsing, filtering, and a concept detail sheet" width="300"></p>
+
+**Built for agents** — every use case exports a citable context pack; grounding is measured, not claimed.
+<p align="center"><img src="images/demo-agents.gif" alt="The For-agents view showing the measured grounding lift" width="300"></p>
+
+</details>
+
 Named for **Kubera**, the treasurer and god of wealth. Inspired by the
 [Bodhi Map](https://github.com/AI-First-Community/Bodhi) approach: reveal how concepts *connect*,
 not just what they mean.
