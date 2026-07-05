@@ -304,6 +304,20 @@
   .contrib .c .sym{ font-size:30px; color:var(--green);} .contrib .c.gold .sym{ color:var(--gold);}
   .contrib .c p{ font-size:19px; color:var(--muted); margin-top:10px; line-height:1.4;}
 
+  /* ===== TAKEAWAY CARDS ===== */
+  .tcards{ margin-top:44px; display:grid; grid-template-columns:1fr 1fr; gap:22px;}
+  .tcard{ border:1px solid var(--line); border-radius:20px; padding:30px 32px; background:var(--panel);}
+  .tcard .tic{ width:56px; height:56px; border-radius:15px; display:flex; align-items:center; justify-content:center; margin-bottom:20px;}
+  .tcard .tic svg{ width:28px; height:28px;}
+  .tic.g{ background:color-mix(in srgb,var(--green) 12%,transparent); border:1px solid color-mix(in srgb,var(--green) 40%,transparent); color:var(--green);}
+  .tic.b{ background:color-mix(in srgb,var(--std) 12%,transparent); border:1px solid color-mix(in srgb,var(--std) 40%,transparent); color:var(--std);}
+  .tic.o{ background:color-mix(in srgb,var(--gold) 13%,transparent); border:1px solid color-mix(in srgb,var(--gold) 42%,transparent); color:var(--gold);}
+  .tcard .th{ font-size:24px; font-weight:800; line-height:1.1;}
+  .tcard .tp{ font-size:18px; color:var(--muted); margin-top:11px; line-height:1.45;}
+  .tcard.cta{ grid-column:1 / -1; background:color-mix(in srgb,var(--green) 10%,var(--panel)); border-color:color-mix(in srgb,var(--green) 35%,transparent); display:flex; align-items:center; gap:26px; padding:28px 36px;}
+  .tcard.cta .tic{ margin-bottom:0; flex:0 0 56px;}
+  .tcard.cta .tp{ margin-top:6px;}
+  .tcard.cta .ctaurl{ margin-left:auto; font-size:19px; font-weight:800; color:var(--green); white-space:nowrap;}
   /* ===== CLOSING ===== */
   .closing .pad{ justify-content:center;} .closing .emblem{ width:88px; height:88px; margin-bottom:28px;}
   .closing h1{ font-size:82px;} .closing .sub{ font-size:28px; color:var(--muted); margin-top:32px; max-width:720px; line-height:1.5;} .closing .sub b{color:var(--ink);}
@@ -717,12 +731,12 @@
   <section class="page"><div class="pad">
     <div class="kicker">Key takeaways</div>
     <h2>Five things worth <span class="g">remembering.</span></h2>
-    <div class="keys">
-      <div class="key"><div class="num">1</div><div class="kt"><b>The blocker to AI in finance is grounding, not model size.</b></div></div>
-      <div class="key"><div class="num">2</div><div class="kt"><b>FIBO is the industry's shared language</b> — Kuber Map makes it usable and citable.</div></div>
-      <div class="key"><div class="num">3</div><div class="kt"><b>Grounding is measured:</b> +45pt accuracy, 97% auditable, 0% hallucinated citations.</div></div>
-      <div class="key"><div class="num">4</div><div class="kt"><b>Agentic AI needs it most</b> — chained, cross-domain, autonomous decisions demand a trail.</div></div>
-      <div class="key"><div class="num">5</div><div class="kt"><b>It's open, free, and community-built</b> — try it, use it, contribute.</div></div>
+    <div class="tcards">
+      <div class="tcard"><div class="tic g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.4"/><path d="M12 7.4 V21 M5 13 a7 7 0 0 0 14 0 M4.5 13 H7.5 M16.5 13 H19.5"/></svg></div><div class="th">Grounding, not scale</div><div class="tp">The real blocker to AI in finance is grounding — not a bigger model.</div></div>
+      <div class="tcard"><div class="tic b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.3"/><circle cx="5" cy="6" r="1.7"/><circle cx="19" cy="6" r="1.7"/><circle cx="5" cy="18" r="1.7"/><circle cx="19" cy="18" r="1.7"/><path d="M6.5 7 10 10.5 M17.5 7 14 10.5 M6.5 17 10 13.5 M17.5 17 14 13.5"/></svg></div><div class="th">FIBO is the language</div><div class="tp">The industry's shared standard, made usable and citable.</div></div>
+      <div class="tcard"><div class="tic o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 H20"/><rect x="5.5" y="13" width="3.2" height="5" rx="1"/><rect x="10.4" y="9" width="3.2" height="9" rx="1"/><rect x="15.3" y="5" width="3.2" height="13" rx="1"/></svg></div><div class="th">Measured, not claimed</div><div class="tp">+45pt accuracy · 97% auditable · 0% hallucinated citations.</div></div>
+      <div class="tcard"><div class="tic g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="8" width="15" height="11" rx="2.2"/><path d="M12 8 V4.5 M9 3.5 h6"/><circle cx="9.5" cy="13" r="1.1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="13" r="1.1" fill="currentColor" stroke="none"/><path d="M9.5 16 h5"/></svg></div><div class="th">Agentic AI needs it most</div><div class="tp">Chained, cross-domain, autonomous decisions demand an audit trail.</div></div>
+      <div class="tcard cta"><div class="tic g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8.5 11 V7.5 a3.5 3.5 0 0 1 6.8 -1.2"/><circle cx="12" cy="15.3" r="1.2" fill="currentColor" stroke="none"/></svg></div><div><div class="th">Open, free, and yours</div><div class="tp">Try it, ground an agent, or contribute — free &amp; MIT-licensed.</div></div><span class="ctaurl">→ kuber-map</span></div>
     </div>
     <div class="foot"><span class="b">Kuber <span>Map</span></span><span class="ch">Take it</span><span class="pn"></span></div>
   </div></section>
