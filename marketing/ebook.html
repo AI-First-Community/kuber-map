@@ -146,18 +146,29 @@
   .split .art svg{ width:330px; height:auto; display:block;}
   .split .art .cap{ position:absolute; left:44px; right:44px; bottom:60px; font-size:16px; color:var(--faint); line-height:1.45; text-align:center;}
 
-  /* ===== BEFORE / AFTER ===== */
-  .ba{ margin-top:44px; display:grid; grid-template-columns:1fr 1fr; gap:30px;}
-  .lane{ border:1px solid var(--line); border-radius:22px; padding:30px 26px; display:flex; flex-direction:column; gap:14px;}
-  .lane.bad{ border-color:color-mix(in srgb,var(--risk) 42%,transparent); background:color-mix(in srgb,var(--risk) 7%,transparent);}
-  .lane.good{ border-color:color-mix(in srgb,var(--green) 42%,transparent); background:color-mix(in srgb,var(--green) 7%,transparent);}
-  .lane .h{ font-size:24px; font-weight:800; display:flex; align-items:center; gap:12px; margin-bottom:6px;}
-  .lane.bad .h{ color:var(--risk);} .lane.good .h{ color:var(--green);}
-  .stepbox{ background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 20px; font-size:21px; font-weight:700; text-align:center; color:var(--ink);}
-  .lane .arw{ text-align:center; font-size:22px; line-height:.6; color:var(--faint);}
-  .stepbox.end{ font-weight:800; font-size:22px;}
-  .lane.bad .stepbox.end{ background:color-mix(in srgb,var(--risk) 16%,transparent); border-color:var(--risk); color:var(--risk);}
-  .lane.good .stepbox.end{ background:color-mix(in srgb,var(--green) 16%,transparent); border-color:var(--green); color:var(--green);}
+  /* ===== BEFORE / AFTER (two-column infographic) ===== */
+  .ba{ margin-top:40px; display:grid; grid-template-columns:1fr 1fr; gap:28px;}
+  .lane{ border-radius:22px; padding:36px 28px; display:flex; flex-direction:column;}
+  .lane.bad{ background:color-mix(in srgb,var(--risk) 9%,transparent); border:1px solid color-mix(in srgb,var(--risk) 32%,transparent);}
+  .lane.good{ background:color-mix(in srgb,var(--green) 9%,transparent); border:1px solid color-mix(in srgb,var(--green) 32%,transparent);}
+  .lane .lh{ font-size:24px; font-weight:800; display:flex; align-items:center; gap:12px; margin-bottom:30px;}
+  .lane.bad .lh{ color:var(--risk);} .lane.good .lh{ color:var(--green);}
+  .lane .lh .b{ width:34px; height:34px; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:19px; color:var(--page); font-weight:800;}
+  .lane.bad .lh .b{ background:var(--risk);} .lane.good .lh .b{ background:var(--green);}
+  .steps{ position:relative; display:flex; flex-direction:column; gap:34px;}
+  .steps::before{ content:''; position:absolute; left:30px; top:30px; bottom:30px; width:2px; z-index:0;}
+  .lane.bad .steps::before{ background:color-mix(in srgb,var(--risk) 32%,transparent);}
+  .lane.good .steps::before{ background:color-mix(in srgb,var(--green) 32%,transparent);}
+  .st{ display:flex; align-items:center; gap:16px; position:relative; z-index:1;}
+  .st .ic{ width:60px; height:60px; flex:0 0 60px; border-radius:15px; display:flex; align-items:center; justify-content:center; background:var(--card); border:1px solid var(--line);}
+  .st .ic svg{ width:30px; height:30px;}
+  .lane.bad .st .ic{ color:var(--risk);} .lane.good .st .ic{ color:var(--green);}
+  .st .lb{ font-size:22px; font-weight:800; color:var(--ink); line-height:1.12;}
+  .result{ margin-top:34px; border-radius:16px; padding:24px 26px; display:flex; align-items:center; gap:16px; font-size:28px; font-weight:800; color:var(--page);}
+  .result .ic{ width:40px; height:40px; flex:0 0 40px; display:flex; align-items:center; justify-content:center; color:var(--page);}
+  .result .ic svg{ width:32px; height:32px;}
+  .bacap{ text-align:center; font-size:24px; color:var(--muted); margin-top:44px; font-weight:600; line-height:1.4;} .bacap b{color:var(--green); font-weight:800;}
+  .lane.bad .result{ background:var(--risk);} .lane.good .result{ background:var(--green);}
 
   /* ===== PRODUCT ===== */
   .browser{ margin-top:40px; border:1px solid var(--line); border-radius:18px; overflow:hidden; box-shadow:0 30px 80px rgba(0,0,0,.4); background:var(--card);}
@@ -382,25 +393,31 @@
   <section class="page"><div class="pad">
     <div class="kicker">The difference in one picture</div>
     <h2>Same question. <span class="gr">Two</span> <span class="g">outcomes.</span></h2>
+    <div class="grow"></div>
     <div class="ba">
       <div class="lane bad">
-        <div class="h">✕ Without grounding</div>
-        <div class="stepbox">Question</div><div class="arw">↓</div>
-        <div class="stepbox">LLM alone</div><div class="arw">↓</div>
-        <div class="stepbox">Approximate answer</div><div class="arw">↓</div>
-        <div class="stepbox">Hallucinated citation</div><div class="arw">↓</div>
-        <div class="stepbox end">Audit failure</div>
+        <div class="lh"><span class="b">✕</span> Without grounding</div>
+        <div class="steps">
+          <div class="st"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4 H4 a1 1 0 0 0 -1 1 v10 a1 1 0 0 0 1 1 h3 v3 l4 -3 h9 a1 1 0 0 0 1 -1 V5 a1 1 0 0 0 -1 -1 Z"/><path d="M9.2 9.3 a2.8 2.8 0 0 1 4.6 2 c0 1.6 -2 1.8 -2 3.2"/><path d="M11.8 16.5 h.01"/></svg></div><div class="lb">Question</div></div>
+          <div class="st"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1.5"/><rect x="10" y="10" width="4" height="4" rx="1"/><path d="M9 3.5v3 M15 3.5v3 M9 17.5v3 M15 17.5v3 M3.5 9h3 M3.5 15h3 M17.5 9h3 M17.5 15h3"/></svg></div><div class="lb">LLM alone</div></div>
+          <div class="st"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9 q2.5 -3.4 5 0 t 5 0 t 5 0"/><path d="M4 15 q2.5 -3.4 5 0 t 5 0 t 5 0"/></svg></div><div class="lb">Approximate answer</div></div>
+          <div class="st"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20 v-8 a7 7 0 0 1 14 0 v8 l-2.3 -1.7 -2.3 1.7 -2.4 -1.7 -2.3 1.7 -2.4 -1.7 Z"/><circle cx="9.3" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="14.7" cy="11" r="1" fill="currentColor" stroke="none"/></svg></div><div class="lb">Hallucinated citation</div></div>
+        </div>
+        <div class="result"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6 L18 18 M18 6 L6 18"/></svg></div>Audit failure</div>
       </div>
       <div class="lane good">
-        <div class="h">✓ With Kuber Map</div>
-        <div class="stepbox">Question</div><div class="arw">↓</div>
-        <div class="stepbox">Context pack (FIBO)</div><div class="arw">↓</div>
-        <div class="stepbox">Grounded agent</div><div class="arw">↓</div>
-        <div class="stepbox">Cited answer</div><div class="arw">↓</div>
-        <div class="stepbox end">Audit-ready</div>
+        <div class="lh"><span class="b">✓</span> With Kuber Map</div>
+        <div class="steps">
+          <div class="st"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4 H4 a1 1 0 0 0 -1 1 v10 a1 1 0 0 0 1 1 h3 v3 l4 -3 h9 a1 1 0 0 0 1 -1 V5 a1 1 0 0 0 -1 -1 Z"/><path d="M9.2 9.3 a2.8 2.8 0 0 1 4.6 2 c0 1.6 -2 1.8 -2 3.2"/><path d="M11.8 16.5 h.01"/></svg></div><div class="lb">Question</div></div>
+          <div class="st"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L21 8 L12 13 L3 8 Z"/><path d="M3 12 L12 17 L21 12"/><path d="M3 16 L12 21 L21 16"/></svg></div><div class="lb">Context pack (FIBO)</div></div>
+          <div class="st"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.4"/><path d="M12 7.4 V21 M5 13 a7 7 0 0 0 14 0 M4.5 13 H7.5 M16.5 13 H19.5"/></svg></div><div class="lb">Grounded agent</div></div>
+          <div class="st"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3 H7 a1 1 0 0 0 -1 1 v16 a1 1 0 0 0 1 1 h10 a1 1 0 0 0 1 -1 V8 Z"/><path d="M14 3 v5 h5"/><path d="M9 14.5 l2 2 4 -4.5"/></svg></div><div class="lb">Cited answer</div></div>
+        </div>
+        <div class="result"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13 l4.5 4.5 L19.5 6.5"/></svg></div>Audit-ready</div>
       </div>
     </div>
-    <div class="take"><div class="t">Takeaway</div><p>The difference isn't the model — it's whether the answer can be <b>traced.</b></p></div>
+    <div class="bacap">The difference isn't the model — it's whether the answer can be <b>traced.</b></div>
+    <div class="grow"></div>
     <div class="foot"><span class="b">Kuber <span>Map</span></span><span class="ch">The problem</span><span class="pn"></span></div>
   </div></section>
 
