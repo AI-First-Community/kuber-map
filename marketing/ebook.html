@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Kuber Map — the storybook</title>
+<style>
+  @font-face { font-family:'Manrope'; font-weight:400; src:url('../fonts/manrope-400.woff2') format('woff2'); }
+  @font-face { font-family:'Manrope'; font-weight:600; src:url('../fonts/manrope-600.woff2') format('woff2'); }
+  @font-face { font-family:'Manrope'; font-weight:700; src:url('../fonts/manrope-700.woff2') format('woff2'); }
+  @font-face { font-family:'Manrope'; font-weight:800; src:url('../fonts/manrope-800.woff2') format('woff2'); }
+  :root{
+    --bg:#0a1410; --bg2:#0f1c16; --card:#12211a; --line:rgba(159,188,171,.16);
+    --ink:#eaf3ee; --muted:#9fbcab; --green:#4fe08a; --green-deep:#1f9d57; --gold:#f3c969;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{background:#05100b; font-family:'Manrope',-apple-system,sans-serif; color:var(--ink);}
+  @page { size:1080px 1350px; margin:0; }
+  .book{ counter-reset:pg; }
+  .page{
+    counter-increment:pg; position:relative; width:1080px; height:1350px; overflow:hidden;
+    padding:86px 84px 74px; display:flex; flex-direction:column;
+    background:radial-gradient(760px 560px at 84% -6%, rgba(60,170,100,.13), transparent 60%),
+               radial-gradient(680px 520px at 4% 104%, rgba(243,201,105,.07), transparent 60%), var(--bg);
+    break-after:page;
+  }
+  .page:last-child{ break-after:auto; }
+  .furn{ position:absolute; left:84px; right:84px; bottom:44px; display:flex; justify-content:space-between; align-items:center; font-size:15px; color:var(--muted); letter-spacing:.02em;}
+  .furn .b{font-weight:800; color:var(--ink);} .furn .b span{color:var(--green);}
+  .furn .pn::before{ content:counter(pg,decimal-leading-zero); font-weight:800; color:var(--gold);}
+  .eyebrow{ font-size:19px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); font-weight:800;}
+  h1{ font-size:62px; line-height:1.06; font-weight:800; letter-spacing:-.02em; margin-top:14px;}
+  h1 .g{color:var(--green);} h1 .go{color:var(--gold);}
+  h2{ font-size:44px; line-height:1.1; font-weight:800; letter-spacing:-.015em; margin-top:12px;}
+  h2 .g{color:var(--green);}
+  .lead{ font-size:27px; line-height:1.5; color:var(--muted); margin-top:26px; max-width:860px;}
+  .lead b{color:var(--ink); font-weight:700;} .lead .gg{color:var(--green); font-weight:800;}
+  .big{ font-size:31px; line-height:1.5; color:var(--ink); margin-top:26px;}
+  .spacer{flex:1;}
+
+  /* cover */
+  .cover{ align-items:flex-start; justify-content:center; background:
+      radial-gradient(820px 640px at 78% 8%, rgba(60,170,100,.20), transparent 62%),
+      radial-gradient(720px 560px at 6% 96%, rgba(243,201,105,.12), transparent 60%), var(--bg);}
+  .cover .emblem{ width:150px; height:150px; margin-bottom:30px; filter:drop-shadow(0 10px 30px rgba(0,0,0,.4));}
+  .cover .kicker{ font-size:21px; letter-spacing:.26em; text-transform:uppercase; color:var(--gold); font-weight:800;}
+  .cover h1{ font-size:96px; line-height:1.02; margin-top:22px;}
+  .cover .sub{ font-size:32px; color:var(--muted); margin-top:30px; line-height:1.45; max-width:880px;}
+  .cover .sub b{color:var(--ink);}
+  .cover .foot{ position:absolute; left:84px; bottom:80px; display:flex; align-items:center; gap:12px; font-size:22px; font-weight:800;}
+  .cover .foot .spark{ width:20px; height:20px; border-radius:6px; background:linear-gradient(135deg,var(--green),var(--gold));}
+  .cover .foot b{color:var(--green);}
+  .cover .tagpill{ position:absolute; right:84px; bottom:84px; font-size:18px; color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:10px 20px;}
+
+  /* quote page */
+  .quote{ justify-content:center; align-items:flex-start;}
+  .quote .mark{ font-size:180px; line-height:.6; color:var(--green); opacity:.5; font-weight:800; height:90px;}
+  .quote blockquote{ font-size:58px; line-height:1.18; font-weight:800; letter-spacing:-.01em; max-width:900px; margin-top:10px;}
+  .quote blockquote .g{color:var(--green);} .quote blockquote .go{color:var(--gold);}
+  .quote .by{ font-size:24px; color:var(--muted); margin-top:40px; font-weight:700;}
+  .quote .by b{color:var(--ink);}
+
+  /* divider */
+  .divider{ justify-content:center;}
+  .divider .no{ font-size:150px; font-weight:800; color:var(--card); -webkit-text-stroke:2px var(--green); line-height:1;}
+  .divider h2{ font-size:64px; margin-top:6px;}
+
+  /* components */
+  .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:26px; margin-top:40px;}
+  .grid3{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:22px; margin-top:40px;}
+  .tile{ background:var(--card); border:1px solid var(--line); border-radius:22px; padding:34px 32px;}
+  .tile .ic{ width:46px; height:46px; color:var(--green); margin-bottom:18px;}
+  .tile h3{ font-size:26px; font-weight:800;}
+  .tile p{ font-size:20px; line-height:1.5; color:var(--muted); margin-top:12px;}
+  .tile .n{ font-size:64px; font-weight:800; color:var(--green); line-height:1; letter-spacing:-.02em;}
+  .tile .n.gold{color:var(--gold);}
+  .tile .l{ font-size:22px; font-weight:700; margin-top:16px;}
+  .tile .s{ font-size:18px; color:var(--muted); margin-top:8px; line-height:1.4;}
+
+  /* timeline */
+  .tl{ margin-top:44px; display:flex; flex-direction:column; gap:0;}
+  .tl .row{ display:flex; gap:30px; align-items:flex-start; position:relative; padding-bottom:38px;}
+  .tl .row::before{ content:''; position:absolute; left:59px; top:20px; bottom:-14px; width:2px; background:var(--line);}
+  .tl .row:last-child::before{ display:none;}
+  .tl .yr{ flex:0 0 120px; font-size:30px; font-weight:800; color:var(--gold); text-align:right; padding-top:4px;}
+  .tl .dot{ flex:0 0 20px; width:20px; height:20px; border-radius:50%; background:var(--green); margin-top:8px; z-index:1; box-shadow:0 0 0 6px rgba(79,224,138,.15);}
+  .tl .tx{ flex:1;}
+  .tl .tx h4{ font-size:26px; font-weight:800;}
+  .tl .tx p{ font-size:20px; color:var(--muted); margin-top:6px; line-height:1.45;}
+
+  /* voices (CXO cards) */
+  .voices{ margin-top:40px; display:flex; flex-direction:column; gap:22px;}
+  .voice{ background:var(--card); border:1px solid var(--line); border-radius:20px 20px 20px 4px; padding:28px 32px; max-width:820px;}
+  .voice.alt{ align-self:flex-end; border-radius:20px 20px 4px 20px; background:rgba(243,201,105,.06); border-color:rgba(243,201,105,.22);}
+  .voice p{ font-size:28px; font-weight:700; line-height:1.35;}
+  .voice .who{ font-size:18px; color:var(--muted); margin-top:12px; font-weight:700; letter-spacing:.02em;}
+
+  /* flow */
+  .flow{ margin-top:50px; display:flex; align-items:stretch; gap:14px;}
+  .flow .step{ flex:1; background:var(--card); border:1px solid var(--line); border-radius:18px; padding:26px 22px; text-align:center;}
+  .flow .step .k{ font-size:17px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); font-weight:800;}
+  .flow .step h4{ font-size:23px; font-weight:800; margin-top:12px;}
+  .flow .step p{ font-size:17px; color:var(--muted); margin-top:8px; line-height:1.4;}
+  .flow .arw{ align-self:center; color:var(--green); font-size:34px; font-weight:800;}
+
+  /* bridges mini */
+  .brs{ margin-top:40px; display:flex; flex-direction:column; gap:20px;}
+  .br{ display:flex; align-items:center; gap:18px; flex-wrap:wrap; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px 28px;}
+  .node{ padding:10px 18px; border-radius:11px; font-weight:800; font-size:23px; background:color-mix(in srgb, var(--c) 16%, transparent); border:1px solid color-mix(in srgb, var(--c) 48%, transparent);}
+  .node small{ font-size:14px; color:var(--c); font-weight:800; margin-left:8px; text-transform:uppercase;}
+  .br .lbl{ color:var(--gold); font-weight:800; font-size:21px;}
+  .br .cite{ margin-left:auto; font-size:17px; color:var(--muted); font-weight:700;}
+
+  /* use-case chips */
+  .chips{ margin-top:40px; display:flex; flex-wrap:wrap; gap:18px;}
+  .chip{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:24px 28px; font-size:26px; font-weight:800; display:flex; align-items:center; gap:14px;}
+  .chip .dot{ width:16px; height:16px; border-radius:50%; background:var(--c);}
+  .chip small{ display:block; font-size:17px; color:var(--muted); font-weight:600; margin-top:4px;}
+
+  /* takeaways */
+  .keys{ margin-top:36px; display:flex; flex-direction:column; gap:24px;}
+  .key{ display:flex; gap:24px; align-items:flex-start;}
+  .key .num{ flex:0 0 58px; height:58px; border-radius:14px; background:linear-gradient(180deg,var(--green),var(--green-deep)); color:#06250f; font-size:30px; font-weight:800; display:flex; align-items:center; justify-content:center;}
+  .key .kt{ font-size:25px; line-height:1.45; padding-top:6px;} .key .kt b{color:var(--ink); font-weight:800;} .key .kt{color:var(--muted);}
+
+  /* access */
+  .access{ margin-top:40px; display:flex; gap:34px; align-items:center;}
+  .access .qr{ width:230px; height:230px; background:#fff; border-radius:20px; padding:16px; flex:0 0 auto;}
+  .access .qr img{ width:100%; height:100%;}
+  .links{ display:flex; flex-direction:column; gap:20px;}
+  .link{ display:flex; flex-direction:column;}
+  .link .k{ font-size:17px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); font-weight:800;}
+  .link .u{ font-size:27px; font-weight:800; margin-top:4px;} .link .u b{color:var(--green);}
+
+  .cta-final{ justify-content:center; align-items:flex-start;}
+  .cta-final h1{ font-size:80px;}
+  .cta-final .sub{ font-size:30px; color:var(--muted); margin-top:30px; line-height:1.5; max-width:860px;}
+  .cta-final .sub b{color:var(--ink);}
+</style>
+</head>
+<body>
+<div class="book">
+
+  <!-- 1 · COVER -->
+  <section class="page cover">
+    <img class="emblem" src="../images/kuber-map.png" alt="" />
+    <div class="kicker">The treasury of financial knowledge</div>
+    <h1>Kuber <span class="g">Map</span><br>for FIBO</h1>
+    <div class="sub">How the industry's own language becomes the missing ingredient that finally makes AI <b>trustworthy</b> in finance — an illustrated guide.</div>
+    <div class="foot"><span class="spark"></span>Innovate With&nbsp;<b>Sanjeev</b></div>
+    <div class="tagpill">grounded · auditable · open</div>
+  </section>
+
+  <!-- 2 · OPENING QUOTE -->
+  <section class="page quote">
+    <div class="mark">“</div>
+    <blockquote>The limits of my language mean the limits of <span class="g">my world.</span></blockquote>
+    <div class="by">— Ludwig Wittgenstein, <b>Tractatus Logico-Philosophicus</b></div>
+    <div class="spacer"></div>
+    <div class="big" style="color:var(--muted); max-width:820px">Give an intelligence the right language, and you expand what it can safely do. Finance already has that language. It's called <b style="color:var(--ink)">FIBO</b>.</div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 3 · HISTORY -->
+  <section class="page">
+    <div class="eyebrow">A pattern across 500 years</div>
+    <h1>Every leap in finance<br>came from agreeing on<br><span class="g">a shared language.</span></h1>
+    <div class="tl">
+      <div class="row"><div class="yr">1494</div><div class="dot"></div><div class="tx"><h4>Double-entry bookkeeping</h4><p>Luca Pacioli codifies it in print — a shared grammar for value that still underpins every ledger.</p></div></div>
+      <div class="row"><div class="yr">1973</div><div class="dot"></div><div class="tx"><h4>SWIFT</h4><p>Banks agree on one messaging standard so money can move between institutions that don't share systems.</p></div></div>
+      <div class="row"><div class="yr">2012</div><div class="dot"></div><div class="tx"><h4>The Legal Entity Identifier</h4><p>After 2008, regulators couldn't reliably say who was who. The LEI (ISO 17442) gives every entity one global name.</p></div></div>
+      <div class="row"><div class="yr">2010s</div><div class="dot"></div><div class="tx"><h4>FIBO</h4><p>The EDM Council models the <i>concepts</i> themselves — loans, securities, owners, reports — as one open, machine-readable ontology.</p></div></div>
+    </div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 4 · HISTORY -> TODAY -->
+  <section class="page">
+    <div class="eyebrow">And now, a new participant</div>
+    <h2>A new kind of actor has entered finance —<br>and it doesn't speak <span class="g">the language yet.</span></h2>
+    <div class="lead">Every prior leap gave <b>people and systems</b> a shared, precise vocabulary. Today the newest actor on the desk is an <b>AI agent</b> — fluent in words, but not grounded in what a mortgage, a beneficial owner, or a regulatory report actually <i>is</i>.</div>
+    <div class="big"><span class="gg">The next shared language isn't for humans or machines that move money.</span> It's for the machines that now reason about it.</div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 5 · THE PROBLEM (CXO voices) -->
+  <section class="page">
+    <div class="eyebrow">Where this thought came from</div>
+    <h2>In the rooms where I listened,<br>the verdict on AI was <span class="g">the same.</span></h2>
+    <div class="voices">
+      <div class="voice"><p>"We tried GenAI. The demo dazzled. Then it couldn't go near a regulated decision."</p><div class="who">— Chief Risk Officer, retail bank</div></div>
+      <div class="voice alt"><p>"Honestly? I see noise, not ROI. It sounds confident and gets the details wrong."</p><div class="who">— CFO, lending fintech</div></div>
+      <div class="voice"><p>"If it can't show me <i>why</i> it answered, I can't put it in front of a regulator."</p><div class="who">— Head of Compliance, asset manager</div></div>
+    </div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 6 · THE INSIGHT -->
+  <section class="page">
+    <div class="eyebrow">The insight</div>
+    <h1>Fluent is not<br><span class="go">grounded.</span></h1>
+    <div class="lead">A large language model talks about a mortgage or a beneficial owner convincingly — but <b>approximately</b>. In finance, approximately-right is the kind of wrong that passes a demo and fails an audit.</div>
+    <div class="big"><span class="gg">The fix isn't a bigger model. It's grounding</span> — giving the agent the industry's precise, shared, auditable definitions, so every answer can cite its source.</div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 7 · WHAT IS THIS -->
+  <section class="page">
+    <div class="eyebrow">What this is</div>
+    <h1>Kuber <span class="g">Map</span> turns FIBO into<br>grounding an agent <span class="g">can cite.</span></h1>
+    <div class="lead">FIBO is rigorous but built for modelers — exhaustive and hard to use directly. <b>Kuber Map reshapes it</b> into a teachable map and into portable context packs a financial AI agent retrieves and cites, with a FIBO provenance trail for audit.</div>
+    <div class="big" style="color:var(--muted)">Named for <b style="color:var(--ink)">Kubera</b>, the treasurer and keeper of wealth — a guardian of the knowledge finance runs on.</div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 8 · PHILOSOPHY -->
+  <section class="page">
+    <div class="eyebrow">The philosophy</div>
+    <h2>Three convictions <span class="g">behind it.</span></h2>
+    <div class="grid3">
+      <div class="tile"><div class="n">01</div><h3>Teach, don't dump</h3><p>A hand-picked, learner-first "core" — not the whole ontology firehosed at an expert.</p></div>
+      <div class="tile"><div class="n" style="color:var(--gold)">02</div><h3>Never blur provenance</h3><p>Every fact is labeled <b>standard</b> or <b>curated</b>. You always know who is talking.</p></div>
+      <div class="tile"><div class="n">03</div><h3>Audit over hype</h3><p>Every concept carries its FIBO citation, so an answer is traceable — for a reviewer or a regulator.</p></div>
+    </div>
+    <div class="lead">Value is <b>measured, not claimed</b> — and the whole thing is open, MIT-licensed, and free.</div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 9 · HOW IT WORKS -->
+  <section class="page">
+    <div class="eyebrow">How it works</div>
+    <h2>From an open standard<br>to a <span class="g">grounded answer.</span></h2>
+    <div class="flow">
+      <div class="step"><div class="k">Extract</div><h4>FIBO</h4><p>10 domains + Commons — 3,104 concepts, deterministically.</p></div>
+      <div class="arw">→</div>
+      <div class="step"><div class="k">Curate</div><h4>Core view</h4><p>A learner-first 284 across 5 real use cases.</p></div>
+      <div class="arw">→</div>
+      <div class="step"><div class="k">Package</div><h4>Context pack</h4><p>RAG + prompt doc + an MCP endpoint, with IRIs.</p></div>
+      <div class="arw">→</div>
+      <div class="step"><div class="k">Ground</div><h4>The agent</h4><p>Answers, and cites the FIBO concept behind each one.</p></div>
+    </div>
+    <div class="lead">One generated data layer drives an interactive map (desktop + mobile) <b>and</b> the packs an agent consumes.</div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 10 · THE PROOF -->
+  <section class="page">
+    <div class="eyebrow">The proof — measured, not claimed</div>
+    <h2>Same model, same questions —<br>grounded <span class="g">vs. not.</span></h2>
+    <div class="grid3">
+      <div class="tile"><div class="n">+45<span style="font-size:34px">pt</span></div><div class="l">Accuracy lift</div><div class="s">47.5% → 92.8%</div></div>
+      <div class="tile"><div class="n gold">97%</div><div class="l">Auditable answers</div><div class="s">cite a real FIBO IRI — from 0%</div></div>
+      <div class="tile"><div class="n">0%</div><div class="l">Hallucinated citations</div><div class="s">down from 55%</div></div>
+    </div>
+    <div class="lead">Across <b>263 questions in five financial domains</b> on gpt-4o-mini, corroborated on the stronger gpt-4o — where the lift <b>held</b>. Scored deterministically; no model grading itself.</div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 11 · WHY ESSENTIAL FOR AGENTS -->
+  <section class="page">
+    <div class="eyebrow">Why this is essential for agentic AI</div>
+    <h2>Autonomy raises the <span class="g">stakes</span> on being right.</h2>
+    <div class="grid2">
+      <div class="tile"><h3>Agents chain steps</h3><p>An agent doesn't answer once — it reasons across many hops. One wrong semantic early poisons the whole chain.</p></div>
+      <div class="tile"><h3>Cross-domain by nature</h3><p>Real tasks span loans, securities, entities, reports. Grounding must connect domains — exactly what curated bridges do.</p></div>
+      <div class="tile"><h3>No human in every loop</h3><p>Autonomy removes the reviewer who once caught the confident mistake. The citation trail becomes the control.</p></div>
+      <div class="tile"><h3>Trust is the unlock</h3><p>Institutions deploy what they can prove. Grounding turns "impressive demo" into "audit-ready system."</p></div>
+    </div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 12 · THE MOAT: BRIDGES -->
+  <section class="page">
+    <div class="eyebrow">The connective tissue</div>
+    <h2>Cross-domain <span class="g">bridges</span> — the links FIBO doesn't draw.</h2>
+    <div class="brs">
+      <div class="br"><span class="node" style="--c:var(--gold)">mortgage-backed security <small>SEC</small></span><span class="lbl">backed-by →</span><span class="node" style="--c:var(--green)">mortgage <small>LOAN</small></span><span class="cite">SEC Reg AB</span></div>
+      <div class="br"><span class="node" style="--c:#6fb3ff">reporting party <small>FND</small></span><span class="lbl">identified-by →</span><span class="node" style="--c:#c99bf5">legal entity identifier <small>BE</small></span><span class="cite">ISO 17442</span></div>
+      <div class="br"><span class="node" style="--c:#ff9e6b">credit default swap <small>DER</small></span><span class="lbl">references →</span><span class="node" style="--c:var(--gold)">bond <small>SEC</small></span><span class="cite">ISDA</span></div>
+    </div>
+    <div class="lead"><b>19 curated bridges</b>, each grounded + cited, offered back to the EDM Council. They're what let an agent reason across FIBO's separately-governed domains — and the moat that's hard to copy.</div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 13 · USE CASES -->
+  <section class="page">
+    <div class="eyebrow">Grounded, end to end</div>
+    <h2>Five real use cases <span class="g">today.</span></h2>
+    <div class="chips">
+      <div class="chip"><span class="dot" style="--c:var(--green)"></span><div>Loan origination<small>underwriting a mortgage</small></div></div>
+      <div class="chip"><span class="dot" style="--c:#c99bf5"></span><div>KYC &amp; beneficial ownership<small>entity resolution</small></div></div>
+      <div class="chip"><span class="dot" style="--c:var(--gold)"></span><div>Securities<small>instruments &amp; issuance</small></div></div>
+      <div class="chip"><span class="dot" style="--c:#6fb3ff"></span><div>Regulatory reporting<small>supervisory filings</small></div></div>
+      <div class="chip"><span class="dot" style="--c:#ff9e6b"></span><div>Derivatives<small>options, futures, swaps</small></div></div>
+    </div>
+    <div class="lead">Each is a curated slice + a context pack — and adding a new one is a <b>spec-driven JSON file</b>, no code. Payments, insurance, and ESG are next.</div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 14 · INTERSTITIAL QUOTE -->
+  <section class="page quote">
+    <div class="mark">“</div>
+    <blockquote>An AI that cannot cite its source isn't intelligent — it's <span class="go">confident.</span> Finance cannot bank on confidence.</blockquote>
+    <div class="by">— the thesis behind <b>Kuber Map</b></div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 15 · KEY TAKEAWAYS -->
+  <section class="page">
+    <div class="eyebrow">Key takeaways</div>
+    <h2>If you remember <span class="g">five things.</span></h2>
+    <div class="keys">
+      <div class="key"><div class="num">1</div><div class="kt"><b>The blocker to AI in finance is grounding, not model size.</b></div></div>
+      <div class="key"><div class="num">2</div><div class="kt"><b>FIBO is the industry's shared language</b> — Kuber Map makes it usable and citable.</div></div>
+      <div class="key"><div class="num">3</div><div class="kt"><b>Grounding is measured:</b> +45pt accuracy, 97% auditable, 0% hallucinated citations.</div></div>
+      <div class="key"><div class="num">4</div><div class="kt"><b>Agentic AI needs it most</b> — chained, cross-domain, autonomous decisions demand a trail.</div></div>
+      <div class="key"><div class="num">5</div><div class="kt"><b>It's open, free, and community-built</b> — try it, use it, contribute to it.</div></div>
+    </div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 16 · HOW TO USE / ACCESS -->
+  <section class="page">
+    <div class="eyebrow">How to use it</div>
+    <h2>Explore, or <span class="g">ground your agent.</span></h2>
+    <div class="access">
+      <div class="qr"><img src="../images/install-qr.png" alt="Scan to open Kuber Map" /></div>
+      <div class="links">
+        <div class="link"><span class="k">Try the live app — free, installable</span><span class="u">ai-first-community.github.io/<b>kuber-map</b></span></div>
+        <div class="link"><span class="k">For AI teams — use a context pack</span><span class="u">github.com/AI-First-Community/<b>kuber-map</b>/wiki</span></div>
+      </div>
+    </div>
+    <div class="lead">Scan to open on your phone, or visit on desktop for the full interactive graph. Each use case exports a <b>ready-to-ground context pack</b> with an MCP endpoint an agent can call.</div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 17 · CONTRIBUTE -->
+  <section class="page">
+    <div class="eyebrow">Build it with us</div>
+    <h2>The best contributions<br>need <span class="g">no code.</span></h2>
+    <div class="grid2">
+      <div class="tile"><div class="n" style="font-size:44px">＋</div><h3>Add a use case</h3><p>A curated slice for a real financial task — one JSON file; the tooling verifies every FIBO id.</p></div>
+      <div class="tile"><div class="n gold" style="font-size:44px">⇄</div><h3>Propose a bridge</h3><p>A cross-domain link FIBO doesn't draw, with a rationale + citation — offered back to the EDM Council.</p></div>
+    </div>
+    <div class="lead">MIT-licensed, CI-gated, and welcoming. Good first issues are open now at <b>github.com/AI-First-Community/kuber-map</b>.</div>
+    <div class="furn"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
+  </section>
+
+  <!-- 18 · CLOSING CTA -->
+  <section class="page cta-final">
+    <img class="emblem" src="../images/kuber-map.png" alt="" style="width:96px;height:96px;margin-bottom:26px" />
+    <h1>Give AI the <span class="g">language</span><br>of finance.</h1>
+    <div class="sub">Kuber Map is open, free, and ready. Explore the map, ground an agent, or add the next use case — and help turn "we tried AI" into "we run on it."</div>
+    <div class="spacer"></div>
+    <div style="display:flex;align-items:center;gap:14px;font-size:24px;font-weight:800;">
+      <span style="width:20px;height:20px;border-radius:6px;background:linear-gradient(135deg,var(--green),var(--gold))"></span>
+      Innovate With&nbsp;<b style="color:var(--green)">Sanjeev</b>
+      <span style="margin-left:auto;color:var(--muted);font-weight:700;font-size:20px">ai-first-community.github.io/kuber-map</span>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

@@ -16,6 +16,7 @@ result from [`../SPIKE_RESULTS.md`](../SPIKE_RESULTS.md), not a claim.
 | `launch-x-thread.md` | X / Twitter thread (8 tweets). |
 | `launch-show-hn.md` | Show HN post + r/fintech and r/MachineLearning variants (candid, technical). |
 | `launch-announcement.md` | Long-form announcement / blog / Discussions post. |
+| `ebook.html` → `kuber-map-ebook.pdf` | **18-page illustrated storybook** for a LinkedIn *document* post (swipeable 4:5 slides): history → the CXO problem → philosophy → the measured proof → why agentic AI needs it → takeaways → access/contribute. `render-ebook.mjs` regenerates it; `kuber-map-ebook-cover.png` is the lead image. |
 
 ## The message (keep it consistent)
 
