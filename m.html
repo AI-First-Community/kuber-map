@@ -277,23 +277,24 @@
         pickSheet.classList.add('open'); pickPanel.scrollTop = 0; document.body.style.overflow = 'hidden';
         bgLock(); onSheetOpen(null); focusSheet(pickPanel);
       }
-      function closePicker() { pickSheet.classList.remove('open'); document.body.style.overflow = ''; }
+      function closePicker() { pickSheet.classList.remove('open'); document.body.style.overflow = ''; bgUnlock(); }
       function selectedInPicker() { return [].slice.call(pickPanel.querySelectorAll('input:checked')).map(function (i) { return i.value; }); }
       customBtn.addEventListener('click', openPicker);
       pickSheet.addEventListener('click', function (e) {
         if (e.target.classList.contains('m-backdrop') || e.target.classList.contains('m-close')) { requestClose(); return; }
         var id = e.target.id;
         if (id === 'pkSave') {
-          setMyMap(selectedInPicker()); closePicker();
+          setMyMap(selectedInPicker());
           active = myMap.length ? 'mymap' : 'all';
           buildChips(); updateCustomBtn(); render();
+          requestClose();
           if (myMap.length) toast('Saved your map');
         } else if (id === 'pkShare') {
           var s = selectedInPicker();
           if (!s.length) { toast('Pick at least one topic first'); return; }
           shareMap(s);
         } else if (id === 'pkClear') {
-          e.preventDefault(); setMyMap([]); closePicker(); active = 'all'; buildChips(); updateCustomBtn(); render();
+          e.preventDefault(); setMyMap([]); active = 'all'; buildChips(); updateCustomBtn(); render(); requestClose();
         }
       });
 
@@ -456,7 +457,7 @@
         document.body.style.overflow = 'hidden';
         bgLock(); onSheetOpen(null); if (!wasOpen) focusSheet(toolPanel);
       }
-      function closeTool() { toolSheet.classList.remove('open'); document.body.style.overflow = ''; }
+      function closeTool() { toolSheet.classList.remove('open'); document.body.style.overflow = ''; bgUnlock(); }
 
       // Decision wizard
       var DT = GRAPH.decisionTree;
