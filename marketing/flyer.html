@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Kuber Map for FIBO — flyer</title>
+<style>
+  @font-face { font-family:'Manrope'; font-weight:400; src:url('../fonts/manrope-400.woff2') format('woff2'); }
+  @font-face { font-family:'Manrope'; font-weight:600; src:url('../fonts/manrope-600.woff2') format('woff2'); }
+  @font-face { font-family:'Manrope'; font-weight:700; src:url('../fonts/manrope-700.woff2') format('woff2'); }
+  @font-face { font-family:'Manrope'; font-weight:800; src:url('../fonts/manrope-800.woff2') format('woff2'); }
+  :root{
+    --bg:#0a1410; --bg2:#0f1c16; --card:#12211a; --line:rgba(159,188,171,.16);
+    --ink:#eaf3ee; --muted:#9fbcab; --green:#4fe08a; --green-deep:#1f9d57; --gold:#f3c969;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#05100b}
+  .sheet{
+    width:210mm; height:297mm; position:relative; overflow:hidden;
+    font-family:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:var(--ink);
+    background:
+      radial-gradient(620px 460px at 84% -4%, rgba(60,170,100,.16), transparent 60%),
+      radial-gradient(520px 420px at 6% 104%, rgba(243,201,105,.09), transparent 60%),
+      var(--bg);
+    padding:16mm 15mm;
+    display:flex; flex-direction:column;
+  }
+  .brand{display:flex; align-items:center; gap:12px;}
+  .brand img{width:44px; height:44px;}
+  .brand .wm{font-weight:800; font-size:26px; letter-spacing:-.01em;}
+  .brand .wm span{color:var(--green);}
+  .brand .fibo{margin-left:auto; text-align:right; font-size:11px; color:var(--muted); line-height:1.4;}
+  .brand .fibo b{color:var(--ink); font-weight:700;}
+
+  .tagline{margin-top:5mm; font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); font-weight:700;}
+  h1{margin-top:2.5mm; font-size:33px; line-height:1.14; font-weight:800; letter-spacing:-.02em; max-width:170mm;}
+  h1 .g{color:var(--green);}
+  .lede{margin-top:4mm; font-size:14.5px; line-height:1.6; color:var(--muted); max-width:172mm;}
+  .lede b{color:var(--ink); font-weight:700;}
+
+  .stats{display:grid; grid-template-columns:repeat(3,1fr); gap:5mm; margin-top:7mm;}
+  .stat{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:6mm 5mm; text-align:center;}
+  .stat .n{font-size:38px; font-weight:800; letter-spacing:-.02em; color:var(--green); line-height:1;}
+  .stat .n.gold{color:var(--gold);}
+  .stat .l{margin-top:3mm; font-size:12px; color:var(--ink); font-weight:700;}
+  .stat .s{margin-top:1.5mm; font-size:10.5px; color:var(--muted); line-height:1.35;}
+  .measured{margin-top:3mm; font-size:10.5px; color:var(--muted); text-align:center;}
+  .measured b{color:var(--green-deep); color:var(--green);}
+
+  .split{margin-top:8mm; display:grid; grid-template-columns:1fr 1fr; gap:7mm;}
+  .col h3{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:3mm;}
+  .col p{font-size:12.5px; line-height:1.55; color:var(--muted);}
+  .col p b{color:var(--ink); font-weight:700;}
+  .feat{list-style:none; display:flex; flex-direction:column; gap:2.5mm;}
+  .feat li{font-size:12.5px; line-height:1.4; color:var(--ink); padding-left:20px; position:relative;}
+  .feat li::before{content:''; position:absolute; left:0; top:5px; width:9px; height:9px; border-radius:3px; background:var(--green);}
+  .feat li b{color:#fff;}
+  .feat li span{color:var(--muted); font-weight:400;}
+
+  .cta{margin-top:auto; display:flex; align-items:center; gap:7mm; background:linear-gradient(180deg, rgba(79,224,138,.10), rgba(79,224,138,.03)); border:1px solid rgba(79,224,138,.28); border-radius:16px; padding:6mm 7mm;}
+  .cta .qr{width:30mm; height:30mm; background:#fff; border-radius:10px; padding:2mm; flex:0 0 auto;}
+  .cta .qr img{width:100%; height:100%; display:block;}
+  .cta .txt{flex:1;}
+  .cta .txt .k{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); font-weight:700;}
+  .cta .txt .u{font-size:21px; font-weight:800; margin-top:1.5mm; letter-spacing:-.01em;}
+  .cta .txt .u b{color:var(--green);}
+  .cta .txt .d{font-size:12px; color:var(--muted); margin-top:2mm; line-height:1.5;}
+  .cta .txt .d code{font-family:ui-monospace,Menlo,monospace; color:var(--ink); font-size:11.5px;}
+
+  .foot{margin-top:5mm; display:flex; align-items:center; gap:10px; font-size:10.5px; color:var(--muted);}
+  .foot .dot{opacity:.5;}
+  .foot b{color:var(--ink); font-weight:700;}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="brand">
+    <img src="../images/kuber-map.png" alt="" />
+    <div class="wm">Kuber <span>Map</span></div>
+    <div class="fibo">for the <b>Financial Industry Business Ontology</b><br>FIBO · an open EDM Council standard</div>
+  </div>
+
+  <div class="tagline">The treasury of financial knowledge</div>
+  <h1>Put AI into production in finance —<br><span class="g">grounded, auditable,</span> and built on the industry's own standard.</h1>
+  <p class="lede">A large language model is <b>fluent but not grounded</b>: it talks about a mortgage or a beneficial
+  owner convincingly, but approximately — and in finance, approximately-right is wrong. Kuber Map gives your
+  agents the <b>precise, shared, auditable language of the business</b> — the industry's standard ontology (FIBO),
+  curated and packaged as grounding context every answer can cite.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="n">+45<span style="font-size:22px">pt</span></div><div class="l">Accuracy lift</div><div class="s">47.5% &rarr; 92.8%, grounded vs not</div></div>
+    <div class="stat"><div class="n gold">97%</div><div class="l">Auditable answers</div><div class="s">cite a real FIBO IRI &mdash; up from 0%</div></div>
+    <div class="stat"><div class="n">0%</div><div class="l">Hallucinated citations</div><div class="s">down from 55% ungrounded</div></div>
+  </div>
+  <p class="measured">Measured, not claimed — <b>263 questions · 5 use cases · 2 models</b>, scored deterministically (no LLM judge).</p>
+
+  <div class="split">
+    <div class="col">
+      <h3>Why it's different</h3>
+      <p><b>Grounding, not a bigger model.</b> The lift is model-robust — a stronger LLM does not close the gap.
+      Every concept carries its <b>FIBO IRI as a citation</b>, and provenance (standard vs. curated) is never
+      blurred, so answers are traceable for audit and regulators.</p>
+      <ul class="feat" style="margin-top:4mm">
+        <li><b>Standards-based</b> <span>— FIBO, the EDM Council's open ontology</span></li>
+        <li><b>Audit-ready</b> <span>— citation + provenance on every claim</span></li>
+        <li><b>Open &amp; free</b> <span>— MIT, runs in the browser, installable</span></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>What's inside</h3>
+      <ul class="feat">
+        <li><b>5 curated use cases</b> <span>— loan origination, KYC, securities, regulatory reporting, derivatives</span></li>
+        <li><b>Context packs + MCP</b> <span>— drop-in grounding for RAG or an agent, with citations</span></li>
+        <li><b>19 cross-domain bridges</b> <span>— links FIBO doesn't draw, offered back to the EDM Council</span></li>
+        <li><b>Interactive map</b> <span>— explore the ontology; desktop graph + mobile app</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div class="qr"><img src="../images/install-qr.png" alt="Scan to open Kuber Map" /></div>
+    <div class="txt">
+      <div class="k">Try the live app — free, nothing to install</div>
+      <div class="u">ai-first-community.github.io/<b>kuber-map</b></div>
+      <div class="d">Runs in the browser, works offline, installs as an app. Source &amp; docs: <code>github.com/AI-First-Community/kuber-map</code></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <b>MIT-licensed</b> <span class="dot">•</span> Built on FIBO (© EDM Council / OMG) <span class="dot">•</span>
+    An independent community project <span class="dot">•</span> <b>Contributions welcome</b>
+  </div>
+</div>
+</body>
+</html>
