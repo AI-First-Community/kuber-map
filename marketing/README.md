@@ -16,7 +16,7 @@ result from [`../SPIKE_RESULTS.md`](../SPIKE_RESULTS.md), not a claim.
 | `launch-x-thread.md` | X / Twitter thread (8 tweets). |
 | `launch-show-hn.md` | Show HN post + r/fintech and r/MachineLearning variants (candid, technical). |
 | `launch-announcement.md` | Long-form announcement / blog / Discussions post. |
-| `ebook.html` → `kuber-map-ebook.pdf` / `-light.pdf` | **20-page illustrated storybook** for a LinkedIn *document* post (4:5 slides), **dark + light**. Editorial layout: two-panel **split spreads** with integrated art + captions, **chapter dividers** structuring five acts, a **bar-chart** proof page, and real quotes (Wittgenstein, Deming). Narrative: history → the CXO problem → the answer → the measured proof → take it. `render-ebook.mjs` regenerates both; `kuber-map-ebook-cover.png` is the lead image. |
+| `ebook.html` → `kuber-map-ebook.pdf` / `-light.pdf` | **24-page executive guide** for a LinkedIn *document* post (4:5 slides), **dark + light**. Premium editorial design (Apple/Stripe/Linear register): gold-lit emblem cover, a scannable **executive summary**, a **story roadmap** + chapter dividers with a progress rail, a **before-vs-after** comparison, a **real product screenshot** shown early, an **architecture diagram**, an Apple-keynote **metrics-hero**, a bar-chart proof, per-page **takeaway callouts**, and a consistent **color language** (green=grounded · orange=risk · blue=standards · gold=citation). `render-ebook.mjs` regenerates both; `kuber-map-ebook-cover.png` is the lead image. |
 
 ## The message (keep it consistent)
 
