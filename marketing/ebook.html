@@ -267,6 +267,19 @@
   .pt .d{ flex:0 0 14px; width:14px; height:14px; border-radius:50%; background:var(--green); margin-top:9px;}
   .pt h4{ font-size:25px; font-weight:800;} .pt p{ font-size:19px; color:var(--muted); margin-top:7px; line-height:1.4;}
 
+  /* ===== AGENTIC CHAIN ===== */
+  .chainflow{ margin-top:40px; position:relative;}
+  .chainflow::before{ content:''; position:absolute; left:32px; top:46px; bottom:46px; width:3px; border-radius:2px; background:linear-gradient(180deg, var(--risk), var(--gold) 44%, var(--green));}
+  .cnode{ display:flex; align-items:center; gap:24px; position:relative; padding:14px 0; z-index:1;}
+  .cnode .cic{ width:64px; height:64px; flex:0 0 64px; border-radius:17px; background:var(--card); border:1px solid var(--line); display:flex; align-items:center; justify-content:center;}
+  .cnode .cic svg{ width:32px; height:32px;}
+  .cnode.n1 .cic,.cnode.n2 .cic{ color:var(--risk);}
+  .cnode.n4 .cic,.cnode.n5 .cic,.cnode.n6 .cic{ color:var(--green);}
+  .cnode.hinge .cic{ color:var(--gold); background:color-mix(in srgb,var(--gold) 12%,transparent); border-color:color-mix(in srgb,var(--gold) 46%,transparent); box-shadow:0 0 0 6px color-mix(in srgb,var(--gold) 10%,transparent);}
+  .cnode .ct{ font-size:26px; font-weight:800; display:flex; align-items:center; gap:14px; flex-wrap:wrap;}
+  .cnode .cs{ font-size:18px; color:var(--muted); margin-top:5px;}
+  .cnode .htag{ font-size:13px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); border:1px solid color-mix(in srgb,var(--gold) 42%,transparent); border-radius:999px; padding:4px 12px;}
+  .chaincap{ margin-top:38px; font-size:22px; color:var(--muted); line-height:1.5; max-width:840px;} .chaincap b{color:var(--ink); font-weight:800;}
   /* ===== CHIPS ===== */
   .chips{ margin-top:44px; display:flex; flex-direction:column; gap:16px; max-width:800px;}
   .chip{ display:flex; align-items:center; gap:22px; padding:22px 28px; background:var(--card); border:1px solid var(--line); border-radius:16px;}
@@ -673,13 +686,15 @@
   <section class="page"><div class="pad">
     <div class="kicker">Why this matters for agentic AI</div>
     <h2>The more autonomous the agent,<br>the less room to <span class="g">be wrong.</span></h2>
-    <div class="points">
-      <div class="pt"><span class="d"></span><div><h4>Agents chain steps</h4><p>One wrong semantic early poisons the whole chain.</p></div></div>
-      <div class="pt"><span class="d"></span><div><h4>Cross-domain by nature</h4><p>Real tasks span loans, securities, entities, reports.</p></div></div>
-      <div class="pt"><span class="d"></span><div><h4>No human in every loop</h4><p>The citation trail becomes the control.</p></div></div>
-      <div class="pt"><span class="d"></span><div><h4>Trust is the unlock</h4><p>Institutions deploy what they can prove.</p></div></div>
+    <div class="chainflow">
+      <div class="cnode n1"><div class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="8" width="15" height="11" rx="2.2"/><path d="M12 8 V4.5 M9 3.5 h6"/><circle cx="9.5" cy="13" r="1.1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="13" r="1.1" fill="currentColor" stroke="none"/><path d="M9.5 16 h5"/></svg></div><div><div class="ct">Autonomous agent</div><div class="cs">acts on its own, across many chained steps</div></div></div>
+      <div class="cnode n2"><div class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.3"/><circle cx="5" cy="6" r="1.7"/><circle cx="19" cy="6" r="1.7"/><circle cx="5" cy="18" r="1.7"/><circle cx="19" cy="18" r="1.7"/><path d="M6.5 7 10 10.5 M17.5 7 14 10.5 M6.5 17 10 13.5 M17.5 17 14 13.5"/></svg></div><div><div class="ct">Semantic reasoning</div><div class="cs">it must know what a mortgage or a beneficial owner <i>is</i></div></div></div>
+      <div class="cnode hinge"><div class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.4"/><path d="M12 7.4 V21 M5 13 a7 7 0 0 0 14 0 M4.5 13 H7.5 M16.5 13 H19.5"/></svg></div><div><div class="ct">Grounded knowledge <span class="htag">the link that holds</span></div><div class="cs">real, shared, cited definitions — FIBO</div></div></div>
+      <div class="cnode n4"><div class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3 H7 a1 1 0 0 0 -1 1 v16 a1 1 0 0 0 1 1 h10 a1 1 0 0 0 1 -1 V8 Z"/><path d="M14 3 v5 h5"/><path d="M9 14.5 l2 2 4 -4.5"/></svg></div><div><div class="ct">Cited decisions</div><div class="cs">every output traces back to a source</div></div></div>
+      <div class="cnode n5"><div class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 19 6 v5 c0 5 -3 8.5 -7 10 -4 -1.5 -7 -5 -7 -10 V6 Z"/><path d="M9 12 l2 2 4 -4"/></svg></div><div><div class="ct">Trust</div><div class="cs">a reviewer — or a regulator — can verify it</div></div></div>
+      <div class="cnode n6"><div class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 c3 2.2 4.5 5.2 4.5 8.5 l-1.8 4 h-5.4 l-1.8 -4 c0 -3.3 1.5 -6.3 4.5 -8.5 Z"/><circle cx="12" cy="9" r="1.7"/><path d="M9.3 16.5 c-1.6 1 -2 3.2 -2 4.5 1.6 0 3.2 -.6 4.2 -2.2 M14.7 16.5 c1.6 1 2 3.2 2 4.5 -1.6 0 -3.2 -.6 -4.2 -2.2"/></svg></div><div><div class="ct">Production</div><div class="cs">what an institution will actually deploy</div></div></div>
     </div>
-    <div class="take"><div class="t">Takeaway</div><p>Grounding turns an <b>impressive demo</b> into an <b>audit-ready system.</b></p></div>
+    <div class="chaincap">The more autonomous the agent, the fewer humans are left to catch a confident mistake. <b>Grounding is the link that holds the whole chain</b> — remove it, and everything above it collapses.</div>
     <div class="foot"><span class="b">Kuber <span>Map</span></span><span class="ch">The proof</span><span class="pn"></span></div>
   </div></section>
 
