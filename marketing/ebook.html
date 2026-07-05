@@ -197,15 +197,26 @@
   .princ .no{ font-size:48px; font-weight:800; color:var(--green); line-height:1;} .princ .p.gold .no{ color:var(--gold);}
   .princ h3{ font-size:32px; font-weight:800;} .princ p{ font-size:21px; color:var(--muted); margin-top:8px; line-height:1.4; max-width:640px;} .princ p b{color:var(--ink);}
 
-  /* ===== ARCHITECTURE ===== */
-  .arch{ margin-top:48px; display:grid; grid-template-columns:1fr 60px 1fr; gap:0; align-items:stretch;}
-  .lane2{ display:flex; flex-direction:column; gap:14px;}
-  .lane2 .lh{ font-size:16px; letter-spacing:.12em; text-transform:uppercase; font-weight:800; color:var(--gold); margin-bottom:6px;}
-  .anode{ display:flex; align-items:center; gap:16px; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 22px;}
-  .anode .ic{ width:20px; height:20px; border-radius:6px; flex:0 0 20px;}
-  .anode .t{ font-size:22px; font-weight:800;} .anode .t small{ display:block; font-size:15px; color:var(--muted); font-weight:600;}
-  .aconn{ display:flex; align-items:center; justify-content:center; color:var(--green); font-size:30px;}
-  .adown{ text-align:center; color:var(--faint); font-size:20px; line-height:.4; margin:-4px 0;}
+  /* ===== ARCHITECTURE DIAGRAM ===== */
+  .archdiag{ margin-top:36px; display:flex; flex-direction:column;}
+  .agroup{ border:1px solid var(--line); border-radius:22px; padding:24px 26px 28px; background:var(--panel);}
+  .agroup.g1{ border-color:color-mix(in srgb,var(--std) 32%,var(--line));}
+  .agroup.g2{ border-color:color-mix(in srgb,var(--green) 32%,var(--line));}
+  .ghdr{ display:flex; align-items:center; gap:14px; margin-bottom:24px;}
+  .ghdr .gnum{ width:36px; height:36px; flex:0 0 36px; border-radius:10px; color:var(--page); display:flex; align-items:center; justify-content:center; font-size:19px; font-weight:800;}
+  .agroup.g1 .gnum{ background:var(--std);} .agroup.g2 .gnum{ background:var(--green);}
+  .ghdr .gtitle{ font-size:23px; font-weight:800;}
+  .ghdr .gsub{ margin-left:auto; font-size:14px; letter-spacing:.1em; text-transform:uppercase; color:var(--faint); font-weight:800;}
+  .gflow{ display:flex; align-items:flex-start; gap:0;}
+  .anode2{ flex:1; text-align:center; display:flex; flex-direction:column; align-items:center; padding:0 4px;}
+  .anode2 .aic{ width:58px; height:58px; border-radius:16px; background:var(--card); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; margin-bottom:14px;}
+  .anode2 .aic svg{ width:30px; height:30px;}
+  .anode2 .at{ font-size:18px; font-weight:800; line-height:1.15;}
+  .anode2 .as{ font-size:13.5px; color:var(--muted); margin-top:6px; line-height:1.3;}
+  .aarrow{ align-self:flex-start; margin-top:16px; color:var(--faint); font-size:22px; flex:0 0 20px; text-align:center;}
+  .gconn{ display:flex; flex-direction:column; align-items:center; padding:4px 0;}
+  .gconn .gl{ width:2px; height:20px;} .gconn .gl.a{ background:linear-gradient(var(--std),var(--green));} .gconn .gl.b{ background:var(--green);}
+  .gconn .glbl{ font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:800; margin:8px 0;}
 
   /* ===== METRICS HERO ===== */
   .methero{ background:radial-gradient(760px 600px at 50% 24%, color-mix(in srgb,var(--green) 12%,transparent), transparent 62%), var(--bg);}
@@ -501,19 +512,25 @@
   <section class="page"><div class="pad">
     <div class="kicker">How it works</div>
     <h2>From open standard<br>to a <span class="g">cited answer.</span></h2>
-    <div class="arch">
-      <div class="lane2"><div class="lh">Build the map</div>
-        <div class="anode"><span class="ic" style="background:var(--std)"></span><span class="t">FIBO<small>the open standard</small></span></div><div class="adown">↓</div>
-        <div class="anode"><span class="ic" style="background:var(--std)"></span><span class="t">Extraction<small>OWL → intermediate</small></span></div><div class="adown">↓</div>
-        <div class="anode"><span class="ic" style="background:var(--muted)"></span><span class="t">Knowledge bundle<small>OKF · 3,104 concepts</small></span></div><div class="adown">↓</div>
-        <div class="anode"><span class="ic" style="background:var(--green)"></span><span class="t">Curated core<small>284 · 5 use cases</small></span></div>
+    <div class="archdiag">
+      <div class="agroup g1">
+        <div class="ghdr"><span class="gnum">1</span><span class="gtitle">Build the Knowledge Layer</span><span class="gsub">offline · the map</span></div>
+        <div class="gflow">
+          <div class="anode2"><div class="aic" style="color:var(--std)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.3"/><circle cx="5" cy="6" r="1.7"/><circle cx="19" cy="6" r="1.7"/><circle cx="5" cy="18" r="1.7"/><circle cx="19" cy="18" r="1.7"/><path d="M6.5 7 10 10.5 M17.5 7 14 10.5 M6.5 17 10 13.5 M17.5 17 14 13.5"/></svg></div><div class="at">FIBO</div><div class="as">open standard · 10 domains</div></div><div class="aarrow">→</div>
+          <div class="anode2"><div class="aic" style="color:var(--std)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4 H20 L14.5 11.5 V19 L9.5 21.5 V11.5 Z"/></svg></div><div class="at">Extraction</div><div class="as">OWL → JSON</div></div><div class="aarrow">→</div>
+          <div class="anode2"><div class="aic" style="color:var(--muted)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L21 8 L12 13 L3 8 Z"/><path d="M3 12 L12 17 L21 12"/><path d="M3 16 L12 21 L21 16"/></svg></div><div class="at">Knowledge bundle</div><div class="as">OKF · 3,104 concepts</div></div><div class="aarrow">→</div>
+          <div class="anode2"><div class="aic" style="color:var(--green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg></div><div class="at">Curated core</div><div class="as">284 · 5 use cases</div></div>
+        </div>
       </div>
-      <div class="aconn">→</div>
-      <div class="lane2"><div class="lh">Ground the agent</div>
-        <div class="anode"><span class="ic" style="background:var(--green)"></span><span class="t">Context pack<small>RAG + prompt doc</small></span></div><div class="adown">↓</div>
-        <div class="anode"><span class="ic" style="background:var(--green)"></span><span class="t">Retrieval / MCP<small>an agent calls it</small></span></div><div class="adown">↓</div>
-        <div class="anode"><span class="ic" style="background:var(--green)"></span><span class="t">Agent<small>grounded response</small></span></div><div class="adown">↓</div>
-        <div class="anode"><span class="ic" style="background:var(--gold)"></span><span class="t">Citation<small>a real FIBO IRI</small></span></div>
+      <div class="gconn"><div class="gl a"></div><div class="glbl">the grounding closure ▾</div><div class="gl b"></div></div>
+      <div class="agroup g2">
+        <div class="ghdr"><span class="gnum">2</span><span class="gtitle">Ground the Agent</span><span class="gsub">runtime · the product</span></div>
+        <div class="gflow">
+          <div class="anode2"><div class="aic" style="color:var(--green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8.5 L12 3.5 3 8.5 v7 l9 5 9 -5 Z"/><path d="M3 8.5 l9 5 9 -5 M12 13.5 v7"/></svg></div><div class="at">Context pack</div><div class="as">RAG + prompt doc</div></div><div class="aarrow">→</div>
+          <div class="anode2"><div class="aic" style="color:var(--green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2.5 v5 M15 2.5 v5 M6.5 7.5 h11 v2.5 a5.5 5.5 0 0 1 -11 0 Z M12 15.5 v6"/></svg></div><div class="at">Retrieval / MCP</div><div class="as">an agent calls it</div></div><div class="aarrow">→</div>
+          <div class="anode2"><div class="aic" style="color:var(--green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="8" width="15" height="11" rx="2.2"/><path d="M12 8 V4.5 M9 3.5 h6"/><circle cx="9.5" cy="13" r="1.1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="13" r="1.1" fill="currentColor" stroke="none"/><path d="M9.5 16 h5"/></svg></div><div class="at">Agent</div><div class="as">grounded response</div></div><div class="aarrow">→</div>
+          <div class="anode2"><div class="aic" style="color:var(--gold)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 14.5 L14.5 9.5"/><path d="M8 11 L6.5 12.5 a3.5 3.5 0 0 0 5 5 L13 16"/><path d="M16 13 L17.5 11.5 a3.5 3.5 0 0 0 -5 -5 L11 8"/></svg></div><div class="at">Citation</div><div class="as">a real FIBO IRI</div></div>
+        </div>
       </div>
     </div>
     <div class="take"><div class="t">Takeaway</div><p>Stored once in the <b>Open Knowledge Format (OKF)</b>, one data layer feeds both the map and the agent.</p></div>
