@@ -14,3 +14,6 @@ eval/kyc-gpt4o-result.json
 eval/securities-gpt4o-result.json
 eval/regulatory-reporting-result.json
 eval/derivatives-result.json
+
+# macOS
+.DS_Store
