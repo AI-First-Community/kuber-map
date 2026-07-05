@@ -2,9 +2,9 @@
 
 > A curated, **learner-first** knowledge map for the **Financial Industry Business Ontology (FIBO)** that doubles as **audit-ready grounding for financial AI agents** — with a provenance-tagged **cross-domain bridge layer** contributed back to EDM Council.
 
-Status: **Building — Loan-Origination MLV (Phase 1)** · Owner: Sanjeev Azad · Last updated: 2026-07-04
+Status: **Shipped & publicly launched** — Phases 0–3 complete (5 use cases; value proven, +45.3pt); Phase 4 in progress (map published; EDM Council contribution packaged, engagement is the user's call). · Owner: Sanjeev Azad · Last updated: 2026-07-05
 
-> **Execution status lives in [`BACKLOG.md`](BACKLOG.md)** (what's done / what's next). Snapshot: pipeline + quality gates + FND/LOAN/FBC/BE extraction done; 71 core concepts + 4 cross-domain bridges curated; published private to `AI-First-Community/kuber-map`. Next: wire `core:` into the bundle → context-pack export → grounded-vs-ungrounded eval. Fresh checkout: `make setup && make fibo && make all`.
+> **Execution status lives in [`BACKLOG.md`](BACKLOG.md)** (what's done / what's next). Snapshot: all 10 FIBO domains + Commons extracted (**3,104 concepts, 19 cross-domain bridges**); **5 curated use cases** with context packs + an MCP endpoint; **value proven** (grounded vs ungrounded: **+45.3pt accuracy, 97.0% auditable, 0% hallucination**; 263 Q, gpt-4o-mini, corroborated on gpt-4o); desktop map + mobile PWA; **public FOSS launch** (GitHub Pages, 9-page wiki, CI, community scaffolding). Next: EDM Council engagement (user's call) + more use cases. Fresh checkout: `make setup && make fibo && make commons && make all`.
 
 > **v2 changelog.** This revision followed a three-lens adversarial audit (readiness, ROI, uniqueness). Major changes: (1) **re-sequenced roadmap** — agent-grounding is now Phase 1, not Phase 3; (2) **corrected two overstated claims** — FIBO cross-domain linking and OKF typed-frontmatter (§3, §6); (3) added an **OWL-restriction extraction spike** and **level-of-detail rendering** as hard Phase-1 requirements; (4) reframed the value prop and novelty around **pedagogical curation + intra-FIBO bridges**, treating OKF and agent-grounding as enablers, not the thesis. See §12 for the audit trail.
 
@@ -182,6 +182,8 @@ rationale: Documented justification + citation, for EDM Council review.
 ---
 
 ## 10. Roadmap (re-sequenced: value first)
+
+> **Status (2026-07-05): Phases 0–3 ✅ complete and exceeded** (5 use cases vs the 1 planned MLV; **+45.3pt** vs the +15–20pt target). **Phase 4 🟡 in progress** — map published (public, GitHub Pages); bridge contribution packaged (`contrib/`); formal `owl:Restriction` re-modeling + EDM Council engagement remain (outward-facing, user's call).
 
 **Phase 0 — Scaffold** (can start today 🟢)
 Fork Bodhi (own it), pin FIBO submodule to a Production tag, stub `okf.config.js`, ETL skeleton.

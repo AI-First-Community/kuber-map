@@ -3,7 +3,7 @@
 Living execution tracker. `PLAN.md` = design/source-of-truth; this file = what's done and what's next.
 Pick the top unchecked item under **Immediate next** to continue. Every change must pass `make check`.
 
-Last updated: 2026-07-04
+Last updated: 2026-07-05
 
 ---
 
@@ -21,15 +21,16 @@ Last updated: 2026-07-04
 - ✅ **Context-pack export** (the product, `etl/export_pack.py` + `make pack`) — `export/loan-origination/` with `pack.json` (structured RAG records), `context.md` (LLM-injectable grounding doc), and a self-contained `okf/` slice. 71 concepts + 4 bridges, each carrying its FIBO IRI as citation + `provenance` on every edge/definition.
 - ✅ **MCP retrieval endpoint** — `etl/mcp_server.py` (stdlib-only MCP stdio server) + `etl/retrieval.py` (weighted keyword search). Tools: `search_concepts`, `get_concept`, `list_bridges`; every hit carries citation IRI + provenance. Reusable by the eval runner.
 - ✅ **Eval harness + benchmark** — `eval/` with pluggable model adapter (`make eval` = offline mechanism check; `--adapter llm` = live via a user `EVAL_LLM_CMD`, no vendor SDK), deterministic scoring (accuracy / hallucination / auditability), every question grounded in a real pack IRI (test-enforced).
-- ✅ **Value proof, four domains + two models** — grounded-vs-ungrounded benchmarks for loan (53), KYC (50), securities (54), regulatory reporting (52). gpt-4o-mini: **+44.5pt aggregate accuracy lift over 209 questions, 96.2% auditable, 0% grounded hallucination**; corroborated on **gpt-4o** (lift is model-robust). See `SPIKE_RESULTS.md`.
+- ✅ **Value proof, five use cases + two models** — grounded-vs-ungrounded benchmarks for loan (53), KYC (50), securities (54), regulatory reporting (52), derivatives (54). gpt-4o-mini: **+45.3pt aggregate accuracy lift over 263 questions, 97.0% auditable, 0% grounded hallucination**; corroborated on **gpt-4o** (157 Q across 3 domains — lift is model-robust). See `SPIKE_RESULTS.md`.
 - ✅ **Five curated use cases** — loan origination (71), KYC / beneficial ownership (58), securities (59), regulatory reporting (52, most cross-domain — 8 clusters), derivatives (60). 284 `core:` concepts + **19 validated cross-domain bridges**, each use case with worked card examples + a context pack (`export/`), all spec-driven under `curation/usecases/`.
 - ✅ **Use-case lens + card badges** — the map default core spans all five use cases; a lens focuses one, cards show use-case membership. Fed by `use_cases:` frontmatter.
 - ✅ **EDM contribution package** — `etl/export_bridges.py` (`make contrib`) → `contrib/` (proposal MD + RDF/Turtle for the 19 bridges).
-- ✅ Published to GitHub (private): `AI-First-Community/kuber-map`, reproducible via `make fibo`.
+- ✅ Published to GitHub (**public**): `AI-First-Community/kuber-map`, reproducible via `make fibo`.
+- ✅ **Public FOSS launch & community scaffolding** — GitHub Pages live, 9-page wiki, CI gate on every PR, CODEOWNERS + SECURITY/SUPPORT/CoC, issue/PR templates, Discussions, `ROADMAP.md`, THIRD_PARTY_NOTICES. A separate **mobile PWA** (`m.html`) over the same knowledge. Recorded demo GIFs (`scripts/record-demos.mjs`) + a marketing kit (`marketing/`: branded flyer + launch copy). Seeded `good first issue`s (#1–#4).
 
-**Map UI (E2):** data layer + vendored frontend + FIBO `app.html`/`graph.js` shipped (core-default view, domain/maturity filters, provenance-styled bridges, IRI-citation panel, offline PWA). Needs browser visual verification.
+**Map UI (E2):** data layer + vendored frontend + FIBO `app.html`/`graph.js` shipped (core-default view, domain/maturity filters, provenance-styled bridges, IRI-citation panel, offline PWA). **Verified live** on desktop + mobile.
 
-**Not started:** per-domain lazy loading for the full-graph view, further use cases, and actually engaging EDM Council with the packaged contribution (user's call — it's outward-facing).
+**Still open:** engaging EDM Council with the packaged contribution + re-modeling accepted bridges as formal `owl:Restriction` axioms (outward-facing — user's call); more use cases (payments/insurance/ESG — now community `good first issue`s); per-domain lazy loading (scale optimization, fine at 3,104 nodes); SME review of the eval gold set; tech-debt (orphan review, FIBO-pin refresh doc).
 
 **Fresh-checkout setup:** `make setup && make fibo && make commons && make all` then `make check`.
 
@@ -37,10 +38,17 @@ Last updated: 2026-07-04
 
 ## Immediate next (in order)
 
-1. ✅ **Wire `core:` into the bundle** — done. `to_okf.py` reads `curation/loan-origination.json`, stamps `core: true` on all 71 concepts + marks them in each `index.md`; `make curate` runs nominate + bridges + rebuild.
-2. ✅ **Learner-friendly definition rewrites** — done. `curation/definitions.json` covers the 7 empty-definition core concepts (*mortgage product*, *loan phase*, *consumer credit protection law*, the lifecycle phases/status, *borrower disclosure requirement*); applied as `definition_provenance: curated`, grounded in each class's FIBO superclass. The other 6 thin-but-present defs were left as FIBO's (Rule 1 — don't replace real FIBO text).
-3. ✅ **Context-pack export** (the product) — done. `export_pack.py`/`make pack` emit OKF slice + flat JSON + `context.md`; `etl/mcp_server.py` + `etl/retrieval.py` provide the MCP retrieval endpoint.
-4. ✅ **Grounded-vs-ungrounded eval** (the value proof) — DONE. gpt-4o-mini: **+39.6pt accuracy lift**, auditability 0%→**98.1%**, hallucination 0% (SPIKE_RESULTS.md). Corroborate with gpt-4o + a 2nd use case (KYC) — pick the model, review the gold questions, run `--adapter llm` (EVAL_LLM_CMD), and write the accuracy/hallucination/auditability numbers into `SPIKE_RESULTS.md`. **Target: ≥15–20pt accuracy lift + 100% auditable.** ◀ **next (needs a user call: model + question review)**
+Phases 0→3 are complete and the project is **publicly launched**. The MLV value proof was met and
+exceeded (5 use cases vs 1 planned; **+45.3pt** vs the +15–20pt target). Remaining work is
+outward-facing or optional:
+
+1. **Engage the EDM Council** with the packaged bridge contribution (`contrib/`) — outward-facing,
+   **user's call on timing**. Prep: re-model accepted bridges as formal `owl:Restriction` axioms once
+   reviewers map each edge to a FIBO/Commons property (E5).
+2. **More use cases** — payments & settlement, insurance underwriting, ESG (spec-driven under
+   `curation/usecases/`; now open as `good first issue`s).
+3. **SME review** of the eval gold answers before the numbers are treated as externally authoritative.
+4. **Tech-debt** (E6): orphan-node review, edge-label edge cases, a documented FIBO-pin refresh process.
 
 ---
 
@@ -93,7 +101,7 @@ Last updated: 2026-07-04
 ---
 
 ## Open decisions (need a call)
-- **Repo visibility:** currently private; flip to public when ready for FOSS launch.
+- **Repo visibility:** ✅ RESOLVED — public since the FOSS launch.
 - **Commit generated `knowledge/`?** currently yes (browsable without rebuild). Revisit if it gets noisy at scale.
 - **Intra-domain bridges** in the EDM contribution set — include or agent-only? (see E3)
 - **Eval agent/model** — benchmark now drafted in-repo (53 Q, `eval/benchmark.json`, grounded in the pack); still open: which model runs the live agent, and SME review of the gold answers before numbers are treated as authoritative.
