@@ -218,16 +218,20 @@
   .gconn .gl{ width:2px; height:20px;} .gconn .gl.a{ background:linear-gradient(var(--std),var(--green));} .gconn .gl.b{ background:var(--green);}
   .gconn .glbl{ font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:800; margin:8px 0;}
 
-  /* ===== METRICS HERO ===== */
-  .methero{ background:radial-gradient(760px 600px at 50% 24%, color-mix(in srgb,var(--green) 12%,transparent), transparent 62%), var(--bg);}
-  .methero .pad{ justify-content:center; align-items:center; text-align:center;}
-  .methero .ep{ font-size:22px; color:var(--gold); font-weight:700; font-style:italic; max-width:640px; line-height:1.4;}
-  .metrow{ margin-top:64px; display:flex; flex-direction:column; gap:56px; width:100%;}
-  .met{ display:flex; flex-direction:column; align-items:center;}
-  .met .n{ font-size:150px; font-weight:800; letter-spacing:-.02em; line-height:1.1; padding:0 10px; color:var(--green);}
-  .met .n.gold{ color:var(--gold);}
-  .met .l{ font-size:26px; font-weight:800; margin-top:14px;} .met .s{ font-size:19px; color:var(--muted); margin-top:6px;}
-  .methero .base{ font-size:19px; color:var(--muted); margin-top:64px; max-width:720px; line-height:1.5;} .methero .base b{color:var(--ink);}
+  /* ===== METRICS HERO — KPI CARDS ===== */
+  .methero{ background:radial-gradient(920px 720px at 50% 34%, color-mix(in srgb,var(--green) 11%,transparent), transparent 62%), var(--bg);}
+  .methero .pad{ justify-content:center;}
+  .kpis{ display:flex; flex-direction:column; gap:24px;}
+  .kpi{ border:1px solid var(--line); border-radius:22px; padding:32px 42px; background:var(--panel); display:grid; grid-template-columns:330px 1fr; gap:44px; align-items:center;}
+  .kpi .mname{ font-size:16px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:800; display:flex; align-items:center; gap:11px;}
+  .kpi .mname .d{ width:13px; height:13px; border-radius:50%; flex:0 0 13px;}
+  .kpi .big{ font-size:92px; font-weight:800; letter-spacing:-.03em; line-height:1; margin-top:8px;}
+  .kpi .delta{ display:inline-block; font-size:17px; font-weight:800; padding:6px 15px; border-radius:999px; margin-top:16px; background:color-mix(in srgb,var(--green) 15%,transparent); color:var(--green);}
+  .kpi .ptrack{ position:relative; height:26px; border-radius:13px; background:color-mix(in srgb,var(--muted) 13%,transparent);}
+  .kpi .pfill{ position:absolute; left:0; top:0; height:100%; border-radius:13px;}
+  .kpi .pmark{ position:absolute; top:-7px; bottom:-7px; width:3px; border-radius:2px; background:var(--ink); opacity:.5;}
+  .kpi .plabels{ display:flex; justify-content:space-between; font-size:17px; color:var(--muted); font-weight:700; margin-top:16px;} .kpi .plabels b{color:var(--ink);}
+  .methero .base{ font-size:18px; color:var(--muted); max-width:800px; line-height:1.5;} .methero .base b{color:var(--ink);}
 
   /* ===== CHART ===== */
   .chart{ margin-top:52px; display:flex; flex-direction:column; gap:40px; max-width:820px;}
@@ -242,6 +246,21 @@
   .fill.grd{ background:linear-gradient(90deg,var(--green-deep),var(--green));}
   .fill.gold{ background:linear-gradient(90deg,color-mix(in srgb,var(--gold) 70%,#000),var(--gold));}
 
+  /* ===== ROBUSTNESS ===== */
+  .rob{ margin-top:44px; display:flex; flex-direction:column; gap:22px;}
+  .robcard{ border:1px solid var(--line); border-radius:22px; padding:32px 40px; background:var(--panel);}
+  .rlbl{ font-size:16px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); font-weight:800; display:flex; align-items:center; gap:11px; margin-bottom:24px;}
+  .rlbl .d{ width:12px; height:12px; border-radius:50%; flex:0 0 12px;}
+  .rrow{ display:flex; align-items:center;}
+  .rstat{ flex:1; text-align:center;}
+  .rstat .rn{ font-size:62px; font-weight:800; letter-spacing:-.02em; line-height:1; color:var(--green);} .rstat .rn small{ font-size:26px; font-weight:800;}
+  .rstat .rc{ font-size:16px; color:var(--muted); margin-top:10px; font-weight:700;}
+  .rdiv{ width:1px; align-self:stretch; background:var(--line); margin:4px 0;}
+  .rnote{ font-size:20px; color:var(--muted); margin-top:24px; line-height:1.5; text-align:center;} .rnote b{color:var(--ink);}
+  .rrange{ font-size:66px; font-weight:800; color:var(--green); letter-spacing:-.02em; line-height:1;} .rrange .to{ font-size:28px; color:var(--muted); font-weight:700; margin:0 8px;} .rrange small{ font-size:28px;}
+  .robcard .rc2{ font-size:18px; color:var(--muted); margin-top:14px; font-weight:700;} .robcard .rc2 b{color:var(--ink);}
+  .trust{ margin-top:26px; display:flex; flex-wrap:wrap; gap:13px;}
+  .tbadge{ background:var(--card); border:1px solid var(--line); border-radius:999px; padding:12px 22px; font-size:18px; color:var(--muted); font-weight:700;} .tbadge b{color:var(--ink); font-weight:800;}
   /* ===== POINTS ===== */
   .points{ margin-top:48px; display:grid; grid-template-columns:1fr 1fr; gap:26px 44px;}
   .pt{ display:flex; gap:20px; align-items:flex-start;}
@@ -575,31 +594,78 @@
     <div class="foot"><span class="b">Kuber <span>Map</span></span><span class="pn"></span></div>
   </div></section>
 
-  <!-- 18 · METRICS HERO -->
+  <!-- 18 · METRICS HERO — KPI cards -->
   <section class="page methero"><div class="pad">
-    <div class="ep">Same model, same questions — with the FIBO context pack, vs without.</div>
-    <div class="metrow">
-      <div class="met"><div class="n">+45.3</div><div class="l">Points of accuracy</div><div class="s">47.5% → 92.8%</div></div>
-      <div class="met"><div class="n gold">97%</div><div class="l">Answers cite a real FIBO IRI</div><div class="s">up from 0%</div></div>
-      <div class="met"><div class="n">0%</div><div class="l">Hallucinated citations</div><div class="s">down from 55%</div></div>
+    <div class="kicker">The proof — measured, not claimed</div>
+    <h2>Three numbers to <span class="g">remember.</span></h2>
+    <div class="kpis" style="margin-top:50px">
+      <div class="kpi">
+        <div>
+          <div class="mname"><span class="d" style="background:var(--green)"></span>Accuracy</div>
+          <div class="big" style="color:var(--green)">92.8%</div>
+          <div class="delta">▲ +45.3 pt</div>
+        </div>
+        <div>
+          <div class="ptrack"><div class="pfill" style="width:92.8%;background:linear-gradient(90deg,var(--green-deep),var(--green))"></div><div class="pmark" style="left:47.5%"></div></div>
+          <div class="plabels"><span>from <b>47.5%</b></span><span>to <b>92.8%</b></span></div>
+        </div>
+      </div>
+      <div class="kpi">
+        <div>
+          <div class="mname"><span class="d" style="background:var(--gold)"></span>Citation coverage</div>
+          <div class="big" style="color:var(--gold)">97%</div>
+          <div class="delta" style="background:color-mix(in srgb,var(--gold) 16%,transparent);color:var(--gold)">▲ from 0%</div>
+        </div>
+        <div>
+          <div class="ptrack"><div class="pfill" style="width:97%;background:linear-gradient(90deg,color-mix(in srgb,var(--gold) 65%,#000),var(--gold))"></div></div>
+          <div class="plabels"><span>answers citing a real <b>FIBO IRI</b></span><span>to <b>97%</b></span></div>
+        </div>
+      </div>
+      <div class="kpi">
+        <div>
+          <div class="mname"><span class="d" style="background:var(--risk)"></span>Hallucinated citations</div>
+          <div class="big" style="color:var(--green)">0%</div>
+          <div class="delta">▼ from 55%</div>
+        </div>
+        <div>
+          <div class="ptrack"><div class="pfill" style="width:55%;background:repeating-linear-gradient(45deg,color-mix(in srgb,var(--risk) 60%,transparent),color-mix(in srgb,var(--risk) 60%,transparent) 7px,transparent 7px,transparent 14px)"></div></div>
+          <div class="plabels"><span>was <b style="color:var(--risk)">55%</b> — now eliminated</span><span>to <b>0%</b></span></div>
+        </div>
+      </div>
     </div>
-    <div class="base">Across <b>263 questions in five financial domains</b> on gpt-4o-mini, corroborated on the stronger gpt-4o — where the lift held.</div>
+    <div class="base" style="margin-top:48px">Same model, same <b>263 questions in five financial domains</b> — with the FIBO context pack vs without · gpt-4o-mini, corroborated on gpt-4o.</div>
     <div class="foot"><span class="b">Kuber <span>Map</span></span><span class="ch">The proof</span><span class="pn"></span></div>
   </div></section>
 
-  <!-- 19 · PROOF CHART -->
+  <!-- 19 · PROOF — robustness -->
   <section class="page"><div class="pad">
-    <div class="kicker">The proof — in detail</div>
-    <h2>Grounded <span class="g">vs.</span> not.</h2>
-    <div class="chart">
-      <div class="metric"><div class="ml"><span class="name">Accuracy</span><span class="delta">+45.3 pt</span></div>
-        <div class="row2"><div class="barrow"><span class="tag">Ungrounded</span><div class="track"><div class="fill ung" style="width:47.5%">47.5%</div></div></div><div class="barrow"><span class="tag">Grounded</span><div class="track"><div class="fill grd" style="width:92.8%">92.8%</div></div></div></div></div>
-      <div class="metric"><div class="ml"><span class="name">Answers citing a real FIBO IRI</span><span class="delta">0% → 97%</span></div>
-        <div class="row2"><div class="barrow"><span class="tag">Ungrounded</span><div class="track"><span style="position:absolute;left:14px;top:8px;font-size:17px;font-weight:800;color:var(--faint)">0%</span></div></div><div class="barrow"><span class="tag">Grounded</span><div class="track"><div class="fill gold" style="width:97%">97.0%</div></div></div></div></div>
-      <div class="metric"><div class="ml"><span class="name">Hallucinated citations <span style="color:var(--faint);font-size:17px">(lower is better)</span></span><span class="delta">55% → 0%</span></div>
-        <div class="row2"><div class="barrow"><span class="tag">Ungrounded</span><div class="track"><div class="fill ung" style="width:55%">55%</div></div></div><div class="barrow"><span class="tag">Grounded</span><div class="track"><span style="position:absolute;left:14px;top:8px;font-size:17px;font-weight:800;color:var(--green)">0%</span></div></div></div></div>
+    <div class="kicker">The proof — and it holds</div>
+    <h2>Not a fluke. <span class="g">Model-robust.</span></h2>
+    <div class="rob">
+      <div class="robcard">
+        <div class="rlbl"><span class="d" style="background:var(--std)"></span>Re-run on the stronger gpt-4o — 157 questions</div>
+        <div class="rrow">
+          <div class="rstat"><div class="rn">+45.2<small>pt</small></div><div class="rc">accuracy lift</div></div>
+          <div class="rdiv"></div>
+          <div class="rstat"><div class="rn">95.5%</div><div class="rc">auditable</div></div>
+          <div class="rdiv"></div>
+          <div class="rstat"><div class="rn">0%</div><div class="rc">hallucination</div></div>
+        </div>
+        <div class="rnote">The bigger model did <b>not</b> close the gap. Grounding does what scale can't.</div>
+      </div>
+      <div class="robcard">
+        <div class="rlbl"><span class="d" style="background:var(--green)"></span>Every one of the five domains improved</div>
+        <div class="rrange">+36.5 <span class="to">to</span> +53.7<small>pt</small></div>
+        <div class="rc2">accuracy lift, per domain — loan · KYC · securities · reg reporting · derivatives</div>
+      </div>
     </div>
-    <div class="take"><div class="t">Takeaway</div><p>The lift <b>held on a stronger model</b> — proof the value is in the grounding, not the model.</p></div>
+    <div class="trust">
+      <div class="tbadge"><b>263</b> questions</div>
+      <div class="tbadge"><b>5</b> financial domains</div>
+      <div class="tbadge"><b>2</b> models</div>
+      <div class="tbadge">Deterministic scoring — <b>no LLM judge</b></div>
+    </div>
+    <div class="take"><div class="t">Takeaway</div><p>Grounding is the unlock — and <b>every number is reproducible</b> from the open harness.</p></div>
     <div class="foot"><span class="b">Kuber <span>Map</span></span><span class="ch">The proof</span><span class="pn"></span></div>
   </div></section>
 
