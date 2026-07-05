@@ -18,6 +18,19 @@ make curate     # nominate core + bridges for all use cases, rebuild the bundle
 make map        # knowledge/ + okf.config.js -> js/data.js (the Cytoscape map data)
 ```
 
+## Install it as an app (PWA)
+
+Kuber Map is an installable Progressive Web App: it works offline and opens in its own window.
+
+- **On your phone** — scan this code (or open the URL), then use **Add to Home Screen** (iOS Safari:
+  Share -> Add to Home Screen; Android Chrome: menu -> Install app):
+
+  ![Scan to install Kuber Map](https://raw.githubusercontent.com/AI-First-Community/kuber-map/main/images/install-qr.png)
+
+  <https://ai-first-community.github.io/kuber-map/>
+
+- **On desktop** (Chrome/Edge) — open the app and click the **install** icon in the address bar.
+
 ## Open the map
 
 Serve the repo root over http (so the offline/PWA service worker works) and open `index.html`
