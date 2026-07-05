@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Kuber Map — FIBO, on your phone</title>
   <!-- PWA -->
-  <link rel="manifest" href="manifest.json" />
+  <link rel="manifest" href="manifest-m.json" />
   <meta name="theme-color" content="#0a1410" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -178,7 +178,8 @@
       var nodes = GRAPH.nodes, edges = GRAPH.edges;
       var byId = {}; nodes.forEach(function (n) { byId[n.id] = n; });
       function ucShort(u){ if(/^Loan/i.test(u))return'Loan'; if(/^KYC/i.test(u))return'KYC'; if(/^Securities/i.test(u))return'Securities'; if(/^Regulatory/i.test(u))return'Reg reporting'; if(/^Derivatives/i.test(u))return'Derivatives'; return String(u).split(' (')[0]; }
-      function superclasses(id){ var o=[]; edges.forEach(function(e){ if(e.s===id && e.r==='is-a' && byId[e.t]) o.push(byId[e.t].label); }); return o; }
+      var SUPER = {}; edges.forEach(function (e) { if (e.r === 'is-a' && byId[e.t]) (SUPER[e.s] = SUPER[e.s] || []).push(byId[e.t].label); });
+      function superclasses(id) { return SUPER[id] || []; }
       function sumOf(n){ var t=(n.summary||'').trim(); if(t) return esc(t); var p=superclasses(n.id).slice(0,3).map(esc); return p.length ? ('A type of '+p.join(', ')+'. FIBO defines this class through its superclass and axioms rather than a text definition.') : 'A FIBO class defined structurally, through axioms rather than a text definition.'; }
       var relLabel = {}; Object.keys(RELATIONS).forEach(function (k) { relLabel[k] = RELATIONS[k].label; });
       var REL = (typeof RELEASE !== 'undefined' && RELEASE) ? RELEASE.version : null;
@@ -207,7 +208,8 @@
       });
 
       var searchEl = document.getElementById('search');
-      searchEl.addEventListener('input', function () { q = searchEl.value.trim().toLowerCase(); render(); });
+      var _searchT;
+      searchEl.addEventListener('input', function () { clearTimeout(_searchT); _searchT = setTimeout(function () { q = searchEl.value.trim().toLowerCase(); render(); }, 130); });
 
       // level (1–5) filter
       var levelsEl = document.getElementById('levels');
@@ -304,30 +306,43 @@
           '<h3>' + esc(n.label) + (isNew ? ' <span class="newb">NEW</span>' : '') + '<span class="lvl" title="' + esc(LEVELS[n.level] || '') + '">' + esc((LEVELS[n.level] || '?').charAt(0)) + '</span></h3>' +
           '<p>' + sumOf(n) + '</p></div>';
       }
+      var CHUNK = 50, _rows = [], _ri = 0, _io = null;
       function render() {
         var items = nodes.filter(matches);
         countEl.textContent = items.length + (active === 'all' ? ' total' : active === 'core' ? ' curated core' : active === 'mymap' ? ' in your map' : ' concepts');
+        if (_io) { _io.disconnect(); _io = null; }
+        _rows = []; _ri = 0; listEl.innerHTML = '';
         if (!items.length) { listEl.innerHTML = '<div class="empty">No concepts match “' + esc(q) + '”.</div>'; return; }
-        var html = '';
         if (active === 'mymap' && !q) {
-          html += '<div class="m-path-note">Your map · ' + myMap.length + ' topics · ' + items.length + ' concepts, grouped by <b>FIBO maturity</b>. <a href="#" id="editmap">Edit</a> · <a href="#" id="sharemap">Share</a></div>';
+          _rows.push('<div class="m-path-note">Your map · ' + myMap.length + ' topics · ' + items.length + ' concepts, grouped by <b>FIBO maturity</b>. <a href="#" id="editmap">Edit</a> · <a href="#" id="sharemap">Share</a></div>');
           Object.keys(LEVELS).forEach(function (lvl) {
             var g = items.filter(function (n) { return String(n.level) === String(lvl); });
             if (!g.length) return;
-            html += '<div class="m-group-title">' + esc(LEVELS[lvl]) + ' · ' + g.length + '</div>';
-            g.forEach(function (n) { html += card(n); });
+            _rows.push('<div class="m-group-title">' + esc(LEVELS[lvl]) + ' · ' + g.length + '</div>');
+            g.forEach(function (n) { _rows.push(card(n)); });
           });
         } else if (!q) {
           Object.keys(CLUSTERS).forEach(function (cid) {
             var g = items.filter(function (n) { return n.cluster === cid; });
             if (!g.length) return;
-            html += '<div class="m-group-title">' + esc(CLUSTERS[cid].label) + ' · ' + g.length + '</div>';
-            g.forEach(function (n) { html += card(n); });
+            _rows.push('<div class="m-group-title">' + esc(CLUSTERS[cid].label) + ' · ' + g.length + '</div>');
+            g.forEach(function (n) { _rows.push(card(n)); });
           });
         } else {
-          items.forEach(function (n) { html += card(n); });
+          items.forEach(function (n) { _rows.push(card(n)); });
         }
-        listEl.innerHTML = html;
+        appendChunk();
+      }
+      function appendChunk() {
+        var end = Math.min(_ri + CHUNK, _rows.length), html = '';
+        for (; _ri < end; _ri++) html += _rows[_ri];
+        var sent = listEl.querySelector('.m-sentinel'); if (sent) sent.remove();
+        listEl.insertAdjacentHTML('beforeend', html);
+        if (_ri < _rows.length) {
+          listEl.insertAdjacentHTML('beforeend', '<div class="m-sentinel" style="height:1px"></div>');
+          if (!_io) _io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) appendChunk(); }, { rootMargin: '800px' });
+          _io.observe(listEl.querySelector('.m-sentinel'));
+        } else if (_io) { _io.disconnect(); _io = null; }
       }
       listEl.addEventListener('click', function (e) {
         if (e.target.id === 'editmap') { e.preventDefault(); openPicker(); return; }

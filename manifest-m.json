@@ -1,0 +1,37 @@
+{
+  "name": "Kuber Map \u2014 the treasury of financial knowledge",
+  "short_name": "Kuber Map",
+  "description": "A curated, learner-first map of the Financial Industry Business Ontology (FIBO) \u2014 audit-ready grounding for financial AI agents. Inspired by Bodhi Map. Fully offline.",
+  "start_url": "m.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#060d09",
+  "theme_color": "#0e1a13",
+  "lang": "en",
+  "categories": [
+    "finance",
+    "reference",
+    "education"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
