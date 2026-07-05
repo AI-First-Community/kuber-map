@@ -8,18 +8,23 @@ This whole `contrib/` folder is self-contained — you can hand it (or a zip of 
 
 ## Start here (recommended order)
 
-1. **[bridge-brief.pdf](bridge-brief.pdf)** — the 30-second version: the six strongest bridges,
-   diagrammed, each with a rationale + citation. (`-light` variant for print/formal use.)
-2. **[edmc-bridge-contribution.md](edmc-bridge-contribution.md)** — the full proposal: methodology,
-   the grounding gate, and all **19** relations with source/target IRIs, rationale, and citation.
-3. **[OUTREACH.md](OUTREACH.md)** — how to actually engage: a pre-send checklist, a **Community-of-
-   Practice intro note** (draft A), and a **DCO-signed pull-request description** (draft B).
+1. **[edm-council-proposal.pdf](edm-council-proposal.pdf)** — 📨 **the document to send.** A formal,
+   professionally-formatted proposal (source: `edm-council-proposal.md`) that introduces the project,
+   the contribution, and the measured value, and states the ask.
+2. **[bridge-brief.pdf](bridge-brief.pdf)** — the 30-second visual: the six strongest bridges,
+   diagrammed, each with a rationale + citation. **Attach it to the proposal.** (`-light` for print.)
+3. **[edmc-bridge-contribution.md](edmc-bridge-contribution.md)** — the full technical detail: all
+   **19** relations with source/target IRIs, rationale, and citation, plus the methodology.
+4. **[OUTREACH.md](OUTREACH.md)** — the posting mechanics: a pre-send checklist, a short **CoP intro
+   note** (draft A), and a **DCO-signed pull-request description** (draft B).
 
 ## In this folder
 
 | File | What | Origin |
 |---|---|---|
-| `edmc-bridge-contribution.md` | Full proposal — 19 bridges, methodology, per-use-case tables | **generated** (`make contrib`) |
+| `edm-council-proposal.md` / `.pdf` | **The formal proposal to send** — cover, contribution, measured value, the ask | hand-authored / rendered |
+| `render-proposal.mjs` | Regenerate the proposal PDF from the `.md` (needs pandoc + playwright) | hand-authored |
+| `edmc-bridge-contribution.md` | Full technical proposal — 19 bridges, methodology, per-use-case tables | **generated** (`make contrib`) |
 | `fibo-bridges.ttl` | RDF/Turtle — each bridge a `kmb:` triple + an `owl:Axiom` carrying rationale/citation/provenance (parses in rdflib) | **generated** (`make contrib`) |
 | `OUTREACH.md` | Checklist + CoP intro note + DCO-signed PR description | hand-authored |
 | `bridge-brief.html` | Source of the one-page brief (theme-aware) | hand-authored |
