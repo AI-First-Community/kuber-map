@@ -45,6 +45,9 @@
   .kicker + h1, .kicker + h2{ margin-top:20px;} h1 + .lead, h2 + .lead{ margin-top:28px;}
   .insight{ font-size:27px; line-height:1.4; color:var(--ink); font-weight:700; margin-top:26px; max-width:800px;} .insight .g{color:var(--green);}
 
+  /* footnote / glossary */
+  .fn{ margin-top:24px; padding-top:18px; border-top:1px solid var(--line); font-size:15px; line-height:1.6; color:var(--faint);}
+  .fn b{ color:var(--muted); font-weight:800;}
   /* takeaway callout */
   .take{ margin-top:auto; display:flex; gap:16px; align-items:flex-start; padding:26px 30px; background:var(--card); border:1px solid var(--line); border-left:5px solid var(--green); border-radius:0 16px 16px 0;}
   .take .t{ font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--green); font-weight:800; flex:0 0 130px; padding-top:3px;}
@@ -166,9 +169,8 @@
   .methero .ep{ font-size:22px; color:var(--gold); font-weight:700; font-style:italic; max-width:640px; line-height:1.4;}
   .metrow{ margin-top:64px; display:flex; flex-direction:column; gap:56px; width:100%;}
   .met{ display:flex; flex-direction:column; align-items:center;}
-  .met .n{ font-size:150px; font-weight:800; letter-spacing:-.04em; line-height:.9;
-    background:linear-gradient(180deg,var(--green),var(--green-deep)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;}
-  .met .n.gold{ background:linear-gradient(180deg,var(--gold),color-mix(in srgb,var(--gold) 60%,#000)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;}
+  .met .n{ font-size:150px; font-weight:800; letter-spacing:-.02em; line-height:1.1; padding:0 10px; color:var(--green);}
+  .met .n.gold{ color:var(--gold);}
   .met .l{ font-size:26px; font-weight:800; margin-top:14px;} .met .s{ font-size:19px; color:var(--muted); margin-top:6px;}
   .methero .base{ font-size:19px; color:var(--muted); margin-top:64px; max-width:720px; line-height:1.5;} .methero .base b{color:var(--ink);}
 
@@ -219,6 +221,7 @@
   .closing .pad{ justify-content:center;} .closing .emblem{ width:88px; height:88px; margin-bottom:28px;}
   .closing h1{ font-size:82px;} .closing .sub{ font-size:28px; color:var(--muted); margin-top:32px; max-width:720px; line-height:1.5;} .closing .sub b{color:var(--ink);}
   .closing .credit{ font-size:17px; color:var(--faint); margin-top:56px; line-height:1.5; max-width:760px;} .closing .credit b{color:var(--muted);}
+  .closing .author{ font-size:21px; color:var(--muted); margin-top:20px; font-weight:600;} .closing .author b{color:var(--ink); font-weight:800;}
   .closing .by{ margin-top:24px; display:flex; align-items:center; gap:13px; font-size:21px; font-weight:800;}
   .closing .by .spark{ width:17px; height:17px; border-radius:6px; background:linear-gradient(135deg,var(--green),var(--gold));} .closing .by b{color:var(--green);} .closing .by .url{ margin-left:auto; color:var(--muted); font-weight:700; font-size:18px;}
 </style>
@@ -434,7 +437,7 @@
       <div class="lane2"><div class="lh">Build the map</div>
         <div class="anode"><span class="ic" style="background:var(--std)"></span><span class="t">FIBO<small>the open standard</small></span></div><div class="adown">↓</div>
         <div class="anode"><span class="ic" style="background:var(--std)"></span><span class="t">Extraction<small>OWL → intermediate</small></span></div><div class="adown">↓</div>
-        <div class="anode"><span class="ic" style="background:var(--muted)"></span><span class="t">Knowledge graph<small>3,104 concepts</small></span></div><div class="adown">↓</div>
+        <div class="anode"><span class="ic" style="background:var(--muted)"></span><span class="t">Knowledge bundle<small>OKF · 3,104 concepts</small></span></div><div class="adown">↓</div>
         <div class="anode"><span class="ic" style="background:var(--green)"></span><span class="t">Curated core<small>284 · 5 use cases</small></span></div>
       </div>
       <div class="aconn">→</div>
@@ -445,7 +448,8 @@
         <div class="anode"><span class="ic" style="background:var(--gold)"></span><span class="t">Citation<small>a real FIBO IRI</small></span></div>
       </div>
     </div>
-    <div class="take"><div class="t">Takeaway</div><p>One generated data layer feeds <b>both the map and the agent.</b></p></div>
+    <div class="take"><div class="t">Takeaway</div><p>Stored once in the <b>Open Knowledge Format (OKF)</b>, one data layer feeds both the map and the agent.</p></div>
+    <div class="fn"><b>* Terms —</b> OWL Web Ontology Language · <b>OKF</b> Open Knowledge Format, an open standard for knowledge bundles · RAG retrieval-augmented generation · MCP Model Context Protocol · IRI a concept's unique web address.</div>
     <div class="foot"><span class="b">Kuber <span>Map</span></span><span class="ch">The answer</span><span class="pn"></span></div>
   </div></section>
 
@@ -460,6 +464,7 @@
         <div class="li"><span class="dot" style="background:var(--std)"></span><p><b>reporting party → LEI</b> <span style="font-size:16px">(FND↔BE · ISO 17442)</span></p></div>
         <div class="li"><span class="dot" style="background:var(--risk)"></span><p><b>credit default swap → bond</b> <span style="font-size:16px">(DER↔SEC · ISDA)</span></p></div>
       </div>
+      <div class="fn"><b>* Terms —</b> MBS mortgage-backed security · LEI Legal Entity Identifier · CDS credit default swap · Reg AB U.S. SEC Regulation AB · ISO 17442 the LEI standard · ISDA Int'l Swaps &amp; Derivatives Association.</div>
     </div>
     <div class="art">
       <svg viewBox="0 0 360 300" fill="none" aria-hidden="true">
@@ -582,6 +587,7 @@
     <div class="sub">Kuber Map is open, free, and ready. Explore the map, ground an agent, or add the next use case — and help turn "we tried AI" into "we run on it."</div>
     <div class="grow"></div>
     <div class="credit">Built on <b>FIBO</b> (© EDM Council / OMG) · inspired by <b>Bodhi Map</b>, the open knowledge graph of modern AI · MIT-licensed &amp; community-built.</div>
+    <div class="author">Created by <b>Sanjeev Azad</b> — maintainer of Kuber Map for FIBO · <span style="color:var(--faint)">sanjeev.azad@gmail.com</span></div>
     <div class="by"><span class="spark"></span>Innovate With&nbsp;<b>Sanjeev</b><span class="url">ai-first-community.github.io/kuber-map</span></div>
   </div></section>
 
