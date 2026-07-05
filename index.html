@@ -117,17 +117,22 @@
     @keyframes shine{ 0%{ background-position:175% -75%, 0 0; } 55%,100%{ background-position:-75% 175%, 0 0; } }
     @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
     @media (max-width:900px){
-      .emblem-wrap{ width:100%; align-items:center; }
-      .emblem{ height:auto; width:min(78vw,440px); opacity:.42; }
-      .panel{ width:100%; left:0; right:0; align-items:center; text-align:center; padding:0 26px;
-        background:linear-gradient(180deg, rgba(6,13,9,.35), rgba(6,13,9,.72) 55%); }
-      .content{ align-items:center; text-align:center; width:100%; }
+      /* Mobile: stack + SCROLL (the desktop hero is fixed & non-scrolling, which clips
+         the content on a phone). Emblem on top, text below, footer in flow. */
+      html,body{ height:auto; min-height:100%; overflow-x:hidden; overflow-y:auto; }
+      .emblem-wrap{ position:relative; width:100%; height:auto; padding:5.5vh 20px 1vh; }
+      .emblem{ height:auto; width:min(56vw,300px); max-width:80%; opacity:.95; animation:rise 1.1s both .1s; }
+      .panel{ position:relative; width:100%; left:0; right:0; top:auto; bottom:auto;
+        min-height:0; padding:1vh 24px 2vh; background:none; }
+      .content{ align-items:center; text-align:center; width:100%; max-width:560px; margin:0 auto; }
       .credit{ align-self:center; }
-      .brandrow h1{ white-space:normal; }
-      .lead,.sub2,.proofnote{ margin-left:auto; margin-right:auto; } .enter{ align-self:center; margin-left:0; }
+      .brandrow h1{ white-space:normal; font-size:clamp(46px,14vw,76px); }
+      .tag{ align-self:center; text-align:center; }
+      .lead,.sub2,.proofnote{ margin-left:auto; margin-right:auto; max-width:100%; }
+      .enter{ align-self:center; margin-left:0; }
       .proof{ justify-content:center; margin-left:auto; margin-right:auto; }
-      .social{ top:14px; right:14px; gap:7px; }
-      footer{ left:0; right:0; text-align:center; }
+      .social{ position:fixed; top:12px; right:12px; gap:7px; }
+      footer{ position:relative; left:0; right:0; bottom:auto; margin:6px 0 22px; text-align:center; }
       .install-qr{ display:none; }   /* on mobile you're already here — no need to scan */
     }
 
