@@ -1,0 +1,13 @@
+# Optional: enable a "Sponsor" button on the repo.
+# Every line is commented out, so no button shows until you opt in. Uncomment a
+# platform once you've actually set up an account there — an unconfigured link
+# would 404 for visitors.
+#
+# GitHub Sponsors (set up at https://github.com/sponsors first):
+# github: [Innovate-With-Sanjeev]
+#
+# Other platforms:
+# ko_fi: your_handle
+# buy_me_a_coffee: your_handle
+# open_collective: your_project
+# custom: ["https://example.org/donate"]
