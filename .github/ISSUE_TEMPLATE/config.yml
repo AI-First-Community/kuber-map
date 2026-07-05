@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation (wiki)
+    url: https://github.com/AI-First-Community/kuber-map/wiki
+    about: Vision, architecture, use cases, and the "For AI Teams" guide.
+  - name: Authoring a use case
+    url: https://github.com/AI-First-Community/kuber-map/wiki/Use-Case-Authoring
+    about: Step-by-step guide before proposing a new use case.

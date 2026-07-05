@@ -1,0 +1,48 @@
+name: Bug report
+description: Something in the map, the pipeline, or the packs is broken.
+labels: [bug]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Map — desktop (app.html)
+        - Map — mobile (m.html)
+        - Landing page (index.html)
+        - ETL / build (etl/, make)
+        - Context pack / MCP (export/, etl/mcp_server.py)
+        - Eval (eval/)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What went wrong, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Tap / run …
+        3. See …
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: Browser + OS (for the app), or Python/Node versions (for the pipeline).
+      placeholder: e.g. iOS Safari 17 / Chrome 120 on Windows / Python 3.12
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before filing
+      options:
+        - label: I hard-refreshed / cleared the cached service worker (for app bugs).
+        - label: I searched existing issues.

@@ -1,0 +1,30 @@
+name: FIBO fidelity issue
+description: The map misrepresents FIBO (wrong definition, IRI, relationship, or maturity).
+labels: [fidelity, high-priority]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fidelity bugs take priority — a wrong FIBO fact undermines the whole point. Please cite
+        the source so it can be verified against `fibo-source/`.
+  - type: input
+    id: concept
+    attributes:
+      label: Concept
+      placeholder: e.g. beneficial owner
+    validations:
+      required: true
+  - type: input
+    id: iri
+    attributes:
+      label: FIBO IRI
+      placeholder: https://spec.edmcouncil.org/fibo/ontology/…
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What the map shows vs what FIBO says
+      description: Quote the map, then the authoritative FIBO source (definition, superclass, relationship, maturity).
+    validations:
+      required: true

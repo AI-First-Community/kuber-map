@@ -1,0 +1,42 @@
+name: Use-case proposal
+description: Propose a new curated use case (a financial task to map + ground).
+labels: [use-case, enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A use case is a curated, learner-first slice of FIBO for one real task, plus its
+        cross-domain bridges and a context pack. It is spec-driven — see the
+        [Authoring guide](https://github.com/AI-First-Community/kuber-map/wiki/Use-Case-Authoring).
+  - type: input
+    id: name
+    attributes:
+      label: Use case
+      placeholder: e.g. Payments & settlement, Insurance underwriting, ESG reporting
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: The real task it serves
+      description: What financial task would an agent (or a learner) use this for?
+    validations:
+      required: true
+  - type: textarea
+    id: concepts
+    attributes:
+      label: Anchor FIBO concepts
+      description: A few headline FIBO classes it should cover (with domain if you know it). These must be real FIBO classes — the tooling verifies them.
+    validations:
+      required: true
+  - type: textarea
+    id: bridges
+    attributes:
+      label: Cross-domain bridges (optional)
+      description: Any links FIBO does not draw that this task needs — each with a rationale + a regulation/standard citation.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Grounding
+      options:
+        - label: The concepts I listed are real FIBO classes (not invented).
