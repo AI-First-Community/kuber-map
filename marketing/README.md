@@ -8,10 +8,10 @@ result from [`../SPIKE_RESULTS.md`](../SPIKE_RESULTS.md), not a claim.
 
 | File | Use |
 |---|---|
-| `flyer.html` | Source of the one-page flyer (self-contained, brand palette + emblem). |
-| `kuber-map-flyer.pdf` | Print/share-ready A4 flyer. |
-| `kuber-map-flyer.png` | Flyer as an image — attach to posts, embed in slides. |
-| `render-flyer.mjs` | Regenerate the PDF + PNG from `flyer.html` (see its header). |
+| `flyer.html` | Source of the one-page flyer — theme-aware (dark default; add `.light` on `.sheet`). |
+| `kuber-map-flyer.pdf` / `.png` | **Dark** A4 flyer — print/share-ready + image for posts and slides. |
+| `kuber-map-flyer-light.pdf` / `.png` | **Light** A4 flyer — for light decks, print, and light-mode feeds. |
+| `render-flyer.mjs` | Regenerate both themes (PDF + PNG) from `flyer.html` (see its header). |
 | `launch-linkedin.md` | LinkedIn launch post (business tone). |
 | `launch-x-thread.md` | X / Twitter thread (8 tweets). |
 | `launch-show-hn.md` | Show HN post + r/fintech and r/MachineLearning variants (candid, technical). |
@@ -36,6 +36,8 @@ trademark disclaimer when space allows (it's on the flyer and in the announcemen
 - **Palette:** deep green `#0a1410` (bg) · accent green `#4fe08a` · gold `#f3c969` · ink `#eaf3ee`.
 - **Type:** Manrope (vendored in `../fonts/`).
 - **Emblem:** `../images/kuber-map.png`. **QR to the app:** `../images/install-qr.png`.
+- **Maker byline:** "Innovate With **Sanjeev**" with a green→gold spark mark, in the flyer footer.
+  Both a dark and a light flyer set are provided — use whichever suits the channel/background.
 
 ## Assets to attach
 
