@@ -1,0 +1,19 @@
+name: Auto Comment Bot
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto Comment
+        uses: wow-actions/auto-comment@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issuesOpened: |
+            👋 @${{ github.actor }} Thank you for raising an issue! The team will look into this as soon as possible.
+          pullRequestOpened: |
+            🎉 @${{ github.actor }} Thank you for your pull request! We will review your code shortly.
